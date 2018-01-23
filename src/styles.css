@@ -1,0 +1,68 @@
+body {
+  position: relative;
+}
+
+.about-island {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+#bulb {
+  position: absolute;
+  top: 312px;
+  left: 295px;
+}
+
+#bulb-hover {
+  position: absolute;
+  display: none;
+}
+
+#company {
+  position: absolute;
+  top: 65px;
+  left: 162px;
+}
+
+#company-hover {
+  position: absolute;
+  display: none;
+}
+
+#ourstory {
+  position: absolute;
+  top: 249px;
+  left: 42px;
+}
+
+#ourstory-hover {
+  position: absolute;
+  display: none;
+}
+
+#team {
+  position: absolute;
+}
+
+#team-hover {
+  position: absolute;
+  display: none;
+}
+
+#advisors {
+  position: absolute;
+  top: 290px;
+  left: 122px;
+}
+
+#contactus {
+  position: absolute;
+  top: 382px;
+  left: 0px;
+}
+
+#contactus-hover {
+  position: absolute;
+  display: none;
+}
