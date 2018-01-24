@@ -5,6 +5,20 @@
   border-radius: 50%;
   border: 5px solid transparent;
   box-sizing: border-box;
+  margin: 15px 30px;
+  padding: 2px;
+}
+
+.avatar-row {
+  text-align: center;
+}
+
+.advisor {
+  display: inline-block;
+  h5 {
+    font-family: '04b_03', monospace;
+    margin: 0 0 15px 0;
+  }
 }
 
 .avatar:hover {
@@ -37,7 +51,7 @@
   margin-bottom: 10px;
   margin-left: -10px;
   margin-right: -10px;
-  height: 250px;
+  // height: 250px;
 }
 
 .modal-footer {
