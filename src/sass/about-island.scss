@@ -13,12 +13,23 @@
 #bulb {
   top: 313px;
   left: 251px;
+  width: 118px;
+  height: 124px;
+  background-image: url('img/Bulb.png');
+}
+
+#bulb:hover {
+  background-image: url('img/Bulb_hover.png');
+  width: 127px;
+  height: 178px;
+  top: 259px;
+  left: 248px;
 }
 
 #bulb-hover {
   top: 259px;
   left: 248px;
-  display: block;
+  display: none;
 }
 
 #company {
