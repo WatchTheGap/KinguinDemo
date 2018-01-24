@@ -1,0 +1,53 @@
+
+.avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.popup-outer-wrapper{
+  margin: 30px;
+  width: 700px;
+  height: auto;
+  float: left;
+  border-left: 10px solid black;
+  border-right: 10px solid black;
+  position: relative;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.popup-outer-wrapper .popup-inner-wrapper{
+  background-color: white;
+  display: block;
+  color: black;
+  padding: 40px;
+  margin: -20px 10px;
+  border-top: 10px solid black;
+  border-bottom: 10px solid black;
+}
+
+.popup-outer-wrapper::before,
+.popup-outer-wrapper::after,
+.popup-outer-wrapper .popup-inner-wrapper::before,
+.popup-outer-wrapper .popup-inner-wrapper::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  background: black;
+}
+.popup-outer-wrapper::before {
+  top: -10px; left: 0px;
+}
+.popup-outer-wrapper::after {
+   top: -10px; right: 0px;
+ }
+.popup-outer-wrapper .popup-inner-wrapper::before {
+  bottom: -10px; left: 0px;
+}
+.popup-outer-wrapper .popup-inner-wrapper::after {
+  bottom: -10px; right: 0px;
+}
