@@ -5,15 +5,20 @@
   img {
     position: absolute;
   }
+  div {
+    position: absolute;
+  }
 }
 
 #bulb {
-  top: 312px;
-  left: 295px;
+  top: 313px;
+  left: 251px;
 }
 
 #bulb-hover {
-  display: none;
+  top: 259px;
+  left: 248px;
+  display: block;
 }
 
 #company {
