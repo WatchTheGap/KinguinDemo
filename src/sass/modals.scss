@@ -6,7 +6,17 @@
   border: 2px solid black;
 }
 
+#close-x {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
 .modal-header {
+  h1 {
+    font-family: 'EightBitWonder', monospace;
+    color: white;
+    text-align: center;
+  }
   padding: 20px;
   background-color: #5f8db0;
   border-top: 10px solid #8ac0d4;
@@ -20,6 +30,7 @@
 }
 
 .modal-footer {
+  font-family: '04b_03', monospace;
   margin: 0;
   background-color: #e0e0e0;
   padding: 20px;

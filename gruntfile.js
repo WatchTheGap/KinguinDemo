@@ -24,6 +24,16 @@ module.exports = function (grunt){
             expand: true
           }
         ]
+      },
+      fonts: {
+        files: [
+          {
+            cwd: 'fonts/',
+            src: ['*.ttf'],
+            dest: 'build/fonts/',
+            expand: true
+          }
+        ]
       }
     },
     sass: {
