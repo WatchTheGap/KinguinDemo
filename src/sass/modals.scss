@@ -1,9 +1,14 @@
 
 .avatar {
-  height: 50px;
-  width: 50px;
+  height: 90px;
+  width: 90px;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 5px solid transparent;
+  box-sizing: border-box;
+}
+
+.avatar:hover {
+  border: 5px solid #5f8db0;
 }
 
 #close-x {
@@ -22,11 +27,17 @@
   border-top: 10px solid #8ac0d4;
   margin-left: -10px;
   margin-right: -10px;
+  height: 100px;
 }
 .modal-body {
   background-color: white;
   margin: 0;
   padding: 20px;
+  border-bottom: 10px solid #b5b5b5;
+  margin-bottom: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  height: 250px;
 }
 
 .modal-footer {
@@ -36,9 +47,7 @@
   padding: 20px;
   margin-left: -10px;
   margin-right: -10px;
-  h6, p {
-    margin: 0;
-  }
+  height: 200px;
   border-bottom: 10px solid #b5b5b5;
 }
 
