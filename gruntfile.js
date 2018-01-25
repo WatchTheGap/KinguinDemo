@@ -43,6 +43,12 @@ module.exports = function (grunt){
         }
       }
     },
+    concat: {
+        dist: {
+          src: ['node_modules/jquery/dist/jquery.min.js', 'src/js/**/*.js'],
+          dest: 'build/js/app.js'
+        }
+      },
     watch: {
       css: {
         files:['src/sass/*.scss'],
@@ -62,6 +68,6 @@ module.exports = function (grunt){
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('build', ['clean', 'sass', 'copy']);
+  grunt.registerTask('build', ['clean', 'sass', 'copy', 'concat']);
 
 };

@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/Kinguin-io/digital_strategy/issues"
   },
-  "homepage": "https://github.com/Kinguin-io/digital_strategy#readme"
+  "homepage": "https://github.com/Kinguin-io/digital_strategy#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
 }
