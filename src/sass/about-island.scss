@@ -1,7 +1,7 @@
 .about-island {
   position: absolute;
-  top: 50px;
-  left: 50px;
+  top: 100px;
+  left:100px;
   img {
     position: absolute;
   }
@@ -30,13 +30,17 @@
 #company {
   background-image: url('img/Company.png');
   top: 65px;
-  left: 162px;
+  left: 161px;
   width: 361px;
   height: 366px;
 }
 
 #company:hover {
   background-image: url('img/Company_hover.png');
+  top: 50px;
+  left: 161px;
+  width: 361px;
+  height: 366px;
 }
 
 #ourstory {
@@ -56,10 +60,19 @@
 }
 
 #team {
+  background-image: url('img/Team.png');
+  top: 0;
+  left: 0;
+  width: 482px;
+  height: 361px;
 }
 
-#team-hover {
-  display: none;
+#team:hover {
+  background-image: url('img/Team_hover.png');
+  top: -35px;
+  left: 0;
+  width: 323px;
+  height: 395px;
 }
 
 #advisors {

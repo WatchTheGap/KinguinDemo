@@ -45,7 +45,7 @@ module.exports = function (grunt){
     },
     concat: {
         dist: {
-          src: ['node_modules/jquery/dist/jquery.min.js', 'src/js/**/*.js'],
+          src: ['node_modules/jquery/dist/jquery.min.js', 'src/js/*.js'],
           dest: 'build/js/app.js'
         }
       },
