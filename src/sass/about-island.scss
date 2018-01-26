@@ -28,11 +28,15 @@
 }
 
 #company {
+  background-image: url('img/Company.png');
   top: 65px;
   left: 162px;
+  width: 361px;
+  height: 366px;
 }
 
 #company:hover {
+  background-image: url('img/Company_hover.png');
 
 }
 
