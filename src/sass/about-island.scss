@@ -58,10 +58,19 @@
 }
 
 #contactus {
+  background-image: url('img/ContactUs.png');
+  width: 241px;
+  height: 117px;
   top: 382px;
   left: 0px;
 }
 
-#contactus-hover {
-  display: none;
+
+#contactus:hover {
+  background-image: url('img/ContactUs_hover.png');
+  width: 257px;
+  height: 128px;
+  top: 382px;
+  left: -17px;
+
 }
