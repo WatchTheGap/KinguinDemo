@@ -37,12 +37,19 @@
 }
 
 #ourstory {
+  background-image: url('img/OurStory.png');
   top: 249px;
   left: 42px;
+  width: 201px;
+  height: 181px;
 }
 
-#ourstory-hover {
-  display: none;
+#ourstory:hover {
+  background-image: url('img/OurStory_hover.png');
+  top: 247px;
+  left: 43px;
+  width: 217px;
+  height: 193px;
 }
 
 #team {
