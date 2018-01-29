@@ -17,6 +17,21 @@
   text-align: center;
 }
 
+.dates-row {
+  a {
+    display: inline;
+    text-decoration: none;
+    margin: 20px;
+  }
+  a:active, a:focus {
+    color: black;
+  }
+// TODO: CHANGE THIS FOR INACTIVE LINK COLOR, NOT VISITED
+  a:visited {
+    color: #bbaea7;
+  }
+}
+
 .advisor, .team-member {
   display: inline-block;
   h5 {
@@ -52,6 +67,11 @@
     color: #dfba9d;
   }
 }
+
+#ourstory-header {
+  background-color: #bbaea7;
+  border-top: 10px solid #dad3cf;
+}
 .modal-header {
   h1 {
     font-family: 'EightBitWonder', monospace;
@@ -66,11 +86,13 @@
 }
 
 
-#company-body {
+#company-body, #ourstory-body {
   text-align: center;
   text-transform: uppercase;
   border: none;
 }
+
+
 .modal-body {
   font-family: '04b_03', monospace;
   background-color: white;

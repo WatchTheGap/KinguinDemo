@@ -13,6 +13,10 @@
     $('#company-popup').toggleClass('hide');
   });
 
+  $('#ourstory').click(function() {
+      $('#ourstory-popup').toggleClass('hide');
+  });
+
   $('.close-popup').click(function() {
     $(this).closest('.popup-outer-wrapper').toggleClass('hide');
   });
