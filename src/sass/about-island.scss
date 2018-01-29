@@ -12,15 +12,16 @@
 
 #bulb {
   background-image: url('img/Bulb.png');
+  background-repeat: no-repeat;
   top: 313px;
   left: 251px;
   width: 118px;
   height: 124px;
-
 }
 
 #bulb:hover {
   background-image: url('img/Bulb_hover.png');
+  background-repeat: no-repeat;
   top: 259px;
   left: 248px;
   width: 127px;
@@ -33,6 +34,8 @@
   left: 161px;
   width: 361px;
   height: 366px;
+  // TODO: find better transitions.
+  transition: all .25s ease-in-out;
 }
 
 #company:hover {
@@ -49,6 +52,7 @@
   left: 42px;
   width: 201px;
   height: 181px;
+  transition: all .25s ease-in-out;
 }
 
 #ourstory:hover {
@@ -65,6 +69,7 @@
   left: 0;
   width: 482px;
   height: 361px;
+  transition: all .25s ease-in-out;
 }
 
 #team:hover {
@@ -86,6 +91,7 @@
   height: 117px;
   top: 382px;
   left: 0px;
+  transition: all .25s ease-in-out;
 }
 
 

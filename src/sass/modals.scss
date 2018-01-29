@@ -3,6 +3,7 @@
 }
 
 .avatar {
+  // TODO: Make avatar sizing responsive.
   height: 90px;
   width: 90px;
   border-radius: 50%;
@@ -25,6 +26,7 @@
 }
 
 .avatar:hover {
+  // TODO: Variable to match header or footer color?
   border: 5px solid #5f8db0;
 }
 
@@ -34,6 +36,11 @@
   right: 30px;
 }
 
+#advisors-header {
+  background-color: #5f8db0;
+  border-top: 10px solid #8ac0d4;
+
+}
 .modal-header {
   h1 {
     font-family: 'EightBitWonder', monospace;
@@ -41,12 +48,12 @@
     text-align: center;
   }
   padding: 20px;
-  background-color: #5f8db0;
-  border-top: 10px solid #8ac0d4;
+  // INCLUDE BG COLOR AND BORER-TOP COLOR IN ID SECTION
   margin-left: -10px;
   margin-right: -10px;
   height: 100px;
 }
+
 .modal-body {
   background-color: white;
   margin: 0;
@@ -62,11 +69,14 @@
   font-family: '04b_03', monospace;
   margin: 0;
   background-color: #e0e0e0;
+  // TODO: ^^^Can this be white & make the info text have the full width/height bg color?
+  // TODO: also - HOW TO DO SPLIT COLOR [ a || b ]
   padding: 20px;
   margin-left: -10px;
   margin-right: -10px;
   height: 200px;
   border-bottom: 10px solid #b5b5b5;
+  // TODO: Use darken/lighten for bottom border shadow? Browser compatibility?
 }
 
 .popup-outer-wrapper{
@@ -102,14 +112,23 @@
   position: absolute;
   background: black;
 }
+
+// Use mixin for color matching? **** //
+
+#advisors-popup::before, #advisors-popup::after {
+  border-bottom: 10px solid #8ac0d4;
+
+}
+
 .popup-outer-wrapper::before {
   top: -10px; left: 0px;
-  border-bottom: 10px solid #8ac0d4;
 }
 .popup-outer-wrapper::after {
    top: -10px; right: 0px;
-   border-bottom: 10px solid #8ac0d4;
+   // border-bottom: 10px solid #8ac0d4;
  }
+ //********************************** //
+
 .popup-outer-wrapper .popup-inner-wrapper::before {
   bottom: -10px; left: 0px;
   border-top: 10px solid #b5b5b5;
