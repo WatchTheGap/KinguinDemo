@@ -17,7 +17,7 @@
   text-align: center;
 }
 
-.advisor {
+.advisor, .team-member {
   display: inline-block;
   h5 {
     font-family: '04b_03', monospace;
@@ -39,7 +39,10 @@
 #advisors-header {
   background-color: #5f8db0;
   border-top: 10px solid #8ac0d4;
-
+}
+#team-header {
+  background-color: #24b5cc;
+  border-top: 10px solid #34d6e3;
 }
 .modal-header {
   h1 {
@@ -68,15 +71,27 @@
 .modal-footer {
   font-family: '04b_03', monospace;
   margin: 0;
-  background-color: #e0e0e0;
+  background-color: white;
   // TODO: ^^^Can this be white & make the info text have the full width/height bg color?
   // TODO: also - HOW TO DO SPLIT COLOR [ a || b ]
-  padding: 20px;
-  margin-left: -10px;
-  margin-right: -10px;
+  // padding: 20px;
+
   height: 200px;
   border-bottom: 10px solid #b5b5b5;
   // TODO: Use darken/lighten for bottom border shadow? Browser compatibility?
+}
+
+.more-info-text {
+  background-color: #e0e0e0;
+  padding: 20px;
+
+
+  h3, p {
+    margin: 10px;
+  }
+  margin: -10px;
+  height: 160px;
+
 }
 
 .popup-outer-wrapper{
@@ -116,6 +131,9 @@
 
 #advisors-popup::before, #advisors-popup::after {
   border-bottom: 10px solid #8ac0d4;
+}
+#team-popup::before, #team-popup::after {
+  border-bottom: 10px solid #34d6e3;
 }
 
 .popup-outer-wrapper::before {

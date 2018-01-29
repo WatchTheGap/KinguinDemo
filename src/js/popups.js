@@ -5,6 +5,10 @@
     $('#advisors-popup').toggleClass('hide');
   });
 
+  $('#team').click(function() {
+    $('#team-popup').toggleClass('hide');
+  });
+
   $('.close-popup').click(function() {
     $(this).closest('.popup-outer-wrapper').toggleClass('hide');
   });
