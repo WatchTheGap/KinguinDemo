@@ -86,14 +86,15 @@
 }
 
 
-#company-body, #ourstory-body nav {
-  text-align: center;
+#company-body, #ourstory-body {
   text-transform: uppercase;
   border: none;
+  h3, nav {
+    text-align: center;
+  }
 }
 
 .year-summary {
-  text-transform: uppercase;
   p {
     color: #49423f;
   }
