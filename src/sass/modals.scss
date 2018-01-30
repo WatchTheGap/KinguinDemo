@@ -104,12 +104,16 @@
 }
 
 #pixel-button {
-  background-color: red;
+  background-color: #ef5e5e;
   a {
     padding: 10px;
-    border-top: 5px solid blue;
+    border-top: 5px solid #f68888;
     margin: -10px;
   }
+}
+
+#pixel-button.input-wrapper::before {
+  border-bottom: 5px solid #f68888;
 }
 
 .input-wrapper {
@@ -165,7 +169,6 @@
 }
 
 .input-wrapper::before {
-  border-bottom: 5px solid blue;
   top: -5px; left: 0px;
 }
 .input-wrapper::after {
