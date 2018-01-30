@@ -103,6 +103,15 @@
   }
 }
 
+#pixel-button {
+  background-color: red;
+  a {
+    padding: 10px;
+    border-top: 5px solid blue;
+    margin: -10px;
+  }
+}
+
 .input-wrapper {
   margin: 20px;
   border-left: 5px solid black;
@@ -113,7 +122,7 @@
   position: relative;
 }
 
-.pixel-input, .pixel-button {
+.pixel-input {
   padding: 15px 10px;
   input {
     border: none;
@@ -130,12 +139,11 @@
   a {
     font-family: '04b_03', monospace;
     text-decoration: none;
-    background-color: pink;
     color: white;
   }
 }
 
-.input-wrapper .pixel-input, .input-wrapper .pixel-button {
+.input-wrapper .pixel-input {
   background-color: white;
   display: block;
   color: black;
@@ -147,9 +155,7 @@
 .input-wrapper::before,
 .input-wrapper::after,
 .input-wrapper .pixel-input::before,
-.input-wrapper .pixel-input::after,
-.input-wrapper .pixel-button::before,
-.input-wrapper .pixel-button::after {
+.input-wrapper .pixel-input::after {
   content: '';
   width: 5px;
   height: 5px;
@@ -159,24 +165,18 @@
 }
 
 .input-wrapper::before {
+  border-bottom: 5px solid blue;
   top: -5px; left: 0px;
 }
 .input-wrapper::after {
-   top: -5px; right: 0px;
+  top: -5px; right: 0px;
  }
 
- .input-wrapper .pixel-button::before {
-   top: -5px; left: 0px;
-   border-bottom: 5px solid red;
- }
-
-.input-wrapper .pixel-input::before,
-.input-wrapper .pixel-button::before {
+.input-wrapper .pixel-input::before{
    bottom: -5px; left: 0px;
  }
 
- .input-wrapper .pixel-input::after,
- .input-wrapper .pixel-button::after {
+ .input-wrapper .pixel-input::after{
    bottom: -5px; right: 0px;
  }
 
