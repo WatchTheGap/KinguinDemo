@@ -86,12 +86,18 @@
 }
 
 
-#company-body, #ourstory-body {
+#company-body, #ourstory-body nav {
   text-align: center;
   text-transform: uppercase;
   border: none;
 }
 
+.year-summary {
+  text-transform: uppercase;
+  p {
+    color: #49423f;
+  }
+}
 
 .modal-body {
   font-family: '04b_03', monospace;
