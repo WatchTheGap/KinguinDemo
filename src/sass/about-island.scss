@@ -52,7 +52,7 @@
   left: 42px;
   width: 201px;
   height: 181px;
-  transition: all .25s ease-in-out;
+  // transition: all .25s ease-in-out;
 }
 
 #ourstory:hover {
@@ -69,7 +69,7 @@
   left: 0;
   width: 482px;
   height: 361px;
-  transition: all .25s ease-in-out;
+  // transition: all .25s ease-in-out;
 }
 
 #team:hover {
@@ -92,6 +92,7 @@
   top: 382px;
   left: 0px;
   transition: all .25s ease-in-out;
+  // TODO: the pencil looks weird here...
 }
 
 
