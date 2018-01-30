@@ -86,7 +86,7 @@
 }
 
 
-#company-body, #ourstory-body {
+#company-body, #ourstory-body, #contactus-body {
   text-transform: uppercase;
   border: none;
   h3, nav {
@@ -99,6 +99,64 @@
     color: #49423f;
   }
 }
+
+.input-wrapper {
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  float: left;
+  box-sizing: border-box;
+  background-color: white;
+  position: relative;
+}
+
+.pixel-input {
+  padding: 15px 10px;
+  input {
+    border: none;
+    height: 30px;
+  }
+  input::placeholder {
+    font-family: '04b_03', monospace;
+    color: #b5b5b5;
+    font-size: 14px;
+  }
+}
+
+.input-wrapper .pixel-input {
+  background-color: white;
+  display: block;
+  color: black;
+  margin: -10px 5px;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.input-wrapper::before,
+.input-wrapper::after,
+.input-wrapper .pixel-input::before,
+.input-wrapper .pixel-input::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  display: block;
+  position: absolute;
+  background: black;
+}
+
+.input-wrapper::before {
+  top: -5px; left: 0px;
+}
+.input-wrapper::after {
+   top: -5px; right: 0px;
+ }
+
+.input-wrapper .pixel-input::before {
+   bottom: -5px; left: 0px;
+ }
+
+ .input-wrapper .pixel-input::after {
+   bottom: -5px; right: 0px;
+ }
 
 .modal-body {
   font-family: '04b_03', monospace;
@@ -151,7 +209,7 @@
   background-color: white;
 }
 
-.popup-outer-wrapper .popup-inner-wrapper{
+.popup-outer-wrapper .popup-inner-wrapper {
   background-color: white;
   display: block;
   color: black;

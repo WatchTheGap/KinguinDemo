@@ -17,6 +17,10 @@
       $('#ourstory-popup').toggleClass('hide');
   });
 
+  $('#contactus').click(function() {
+    $('#contactus-popup').toggleClass('hide');
+  });
+
   $('.close-popup').click(function() {
     $(this).closest('.popup-outer-wrapper').toggleClass('hide');
   });
