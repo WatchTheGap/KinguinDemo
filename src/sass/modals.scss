@@ -92,6 +92,9 @@
   h3, nav {
     text-align: center;
   }
+  form {
+    height: 300px;
+  }
 }
 
 .year-summary {
@@ -101,6 +104,7 @@
 }
 
 .input-wrapper {
+  margin: 20px;
   border-left: 5px solid black;
   border-right: 5px solid black;
   float: left;
@@ -109,20 +113,29 @@
   position: relative;
 }
 
-.pixel-input {
+.pixel-input, .pixel-button {
   padding: 15px 10px;
   input {
     border: none;
     height: 30px;
   }
-  input::placeholder {
+  textarea {
+    border: none;
+  }
+  input::placeholder, textarea::placeholder {
     font-family: '04b_03', monospace;
     color: #b5b5b5;
     font-size: 14px;
   }
+  a {
+    font-family: '04b_03', monospace;
+    text-decoration: none;
+    background-color: pink;
+    color: white;
+  }
 }
 
-.input-wrapper .pixel-input {
+.input-wrapper .pixel-input, .input-wrapper .pixel-button {
   background-color: white;
   display: block;
   color: black;
@@ -134,7 +147,9 @@
 .input-wrapper::before,
 .input-wrapper::after,
 .input-wrapper .pixel-input::before,
-.input-wrapper .pixel-input::after {
+.input-wrapper .pixel-input::after,
+.input-wrapper .pixel-button::before,
+.input-wrapper .pixel-button::after {
   content: '';
   width: 5px;
   height: 5px;
@@ -150,11 +165,18 @@
    top: -5px; right: 0px;
  }
 
-.input-wrapper .pixel-input::before {
+ .input-wrapper .pixel-button::before {
+   top: -5px; left: 0px;
+   border-bottom: 5px solid red;
+ }
+
+.input-wrapper .pixel-input::before,
+.input-wrapper .pixel-button::before {
    bottom: -5px; left: 0px;
  }
 
- .input-wrapper .pixel-input::after {
+ .input-wrapper .pixel-input::after,
+ .input-wrapper .pixel-button::after {
    bottom: -5px; right: 0px;
  }
 
@@ -229,7 +251,6 @@
   position: absolute;
   background: black;
 }
-
 
 #advisors-popup::before, #advisors-popup::after {
   border-bottom: 10px solid #8ac0d4;
