@@ -72,6 +72,12 @@
   background-color: #bbaea7;
   border-top: 10px solid #dad3cf;
 }
+
+#contactus-header {
+  background-color: #93d558;
+  border-top: 10px solid #c4e880;
+}
+
 .modal-header {
   h1 {
     font-family: 'EightBitWonder', monospace;
@@ -101,6 +107,7 @@
   margin: 0 5%;
   width: 90%;
 }
+
 .year-summary {
   p {
     color: #49423f;
@@ -108,9 +115,10 @@
 }
 
 #pixel-button {
+  box-sizing: border-box;
   background-color: #ef5e5e;
   a {
-    padding: 10px;
+    padding: 10px 60px;
     border-top: 5px solid #f68888;
     margin: -10px;
   }
