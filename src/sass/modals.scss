@@ -115,8 +115,8 @@
 }
 
 #signup-form {
-  width: 50%;
-  margin: 10% 25%;
+  width: 40%;
+  margin: 5% 30%;
 
   input {
     width: 100%;
@@ -124,7 +124,7 @@
 
   .input-wrapper {
     width: 100%;
-    margin: 20px 0px;
+    margin: 25px 0px;
   }
 
   input::placeholder {
@@ -136,6 +136,47 @@
   .pixel-input {
     padding: 5px 30px;
   }
+}
+
+#signup-button-left, #signup-button-right {
+  width: 40%;
+  display: inline-block;
+  background-color: #ef5e5e;
+  .pixel-input {
+    background-color: #ef5e5e;
+    padding: 0px;
+  }
+  a {
+    box-sizing: border-box;
+    font-family: '04b_03', monospace;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    border-top: 5px solid #f68888;
+    display: block;
+    padding: 30px 10px;
+    min-height: 180px;
+  }
+  h3 {
+    margin: 10px;
+  }
+  img {
+    min-height: 61px;
+  }
+}
+
+#signup-button-left {
+  margin: 2% 2% 0% 8%;
+}
+
+#signup-button-right {
+  margin: 2% 8% 0% 2%;
+}
+
+#signup-popup .modal-footer {
+  overflow: auto;
+  padding-bottom: 5%;
 }
 
 .year-summary {
@@ -274,7 +315,7 @@
   // TODO: also - HOW TO DO SPLIT COLOR [ a || b ]
   // padding: 20px;
 
-  height: 200px;
+  min-height: 200px;
   border-bottom: 10px solid #b5b5b5;
   // TODO: Use darken/lighten for bottom border shadow? Browser compatibility?
 }
