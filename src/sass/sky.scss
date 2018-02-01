@@ -1,5 +1,16 @@
 html, body {
-  background: linear-gradient(#b5e8eb, #39bec5);
+  // background: linear-gradient(#b5e8eb, #39bec5);
+  background-color: #b5e8eb;
   height: 100%;
   background-repeat: no-repeat;
+}
+
+.islands {
+  position: absolute;
+  img {
+    position: absolute;
+  }
+  div {
+    position: absolute;
+  }
 }

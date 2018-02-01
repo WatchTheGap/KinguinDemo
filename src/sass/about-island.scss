@@ -1,13 +1,7 @@
-.about-island {
-  position: absolute;
+#about-island {
+  @extend .islands;
   top: 100px;
   left:100px;
-  img {
-    position: absolute;
-  }
-  div {
-    position: absolute;
-  }
 }
 
 #bulb {

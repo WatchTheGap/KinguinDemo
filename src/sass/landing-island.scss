@@ -1,0 +1,42 @@
+#landing-island {
+  @extend .islands;
+  top: 0px;
+  left: 800px;
+}
+
+#notify-btn {
+  background-image: url('img/NotifyBtn_Default.png');
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 347px;
+  left: 57px;
+  width: 92px;
+  height: 120px;;
+}
+#notify-btn:hover {
+  background-image: url('img/NotifyBtn_Hover.png');
+  background-repeat: no-repeat;
+  top: 347px;
+  left: 57px;
+  width: 97px;
+  height: 123px;
+}
+
+#go-btn {
+  background-image: url('img/GoBtn_Default.png');
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 100px;
+  left: 100px;
+  width: 82px;
+  height: 50px;
+}
+
+#go-btn:hover {
+  background-image: url('img/GoBtn_Hover.png');
+  background-repeat: no-repeat;
+  top: 100px;
+  left: 100px;
+  width: 82px;
+  height: 59px;
+}
