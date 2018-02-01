@@ -114,19 +114,7 @@
   }
 }
 
-#pixel-button {
-  box-sizing: border-box;
-  background-color: #ef5e5e;
-  a {
-    padding: 10px 60px;
-    border-top: 5px solid #f68888;
-    margin: -10px;
-  }
-}
 
-#pixel-button.input-wrapper::before {
-  border-bottom: 5px solid #f68888;
-}
 
 .input-wrapper {
   margin: 20px;
@@ -139,23 +127,20 @@
 }
 
 .pixel-input {
-  padding: 15px 10px;
+  padding: 10px 100px 10px 20px;
   input {
     border: none;
     height: 30px;
   }
   textarea {
     border: none;
+    width: 455px;
+    height: 200px;
   }
   input::placeholder, textarea::placeholder {
     font-family: '04b_03', monospace;
     color: #b5b5b5;
     font-size: 14px;
-  }
-  a {
-    font-family: '04b_03', monospace;
-    text-decoration: none;
-    color: white;
   }
 }
 
@@ -194,6 +179,44 @@
  .input-wrapper .pixel-input::after{
    bottom: -5px; right: 0px;
  }
+
+ .button-wrapper {
+   @extend .input-wrapper;
+   background-color: #ef5e5e;
+ }
+
+ .button-wrapper .button-pixel-input {
+   @extend .pixel-input;
+   background-color: #ef5e5e;
+   height: 30px;
+   a {
+     box-sizing: border-box;
+     font-family: '04b_03', monospace;
+     text-decoration: none;
+     font-size: 20px;
+     text-align: center;
+     color: white;
+     border-top: 5px solid #f68888;
+     display: block;
+     width: 200px;
+     padding: 10px 20px;
+     margin: -10px -100px 0px -20px;
+   }
+ }
+
+ #pixel-button {
+   box-sizing: border-box;
+   font-family: '04b_03', monospace;
+   text-decoration: none;
+   color: white;
+   border-top: 5px solid #f68888;
+ }
+
+ .button-input-wrapper::before, .button-wrapper::before {
+   border-bottom: 5px solid #f68888;
+ }
+
+//************************************
 
 .modal-body {
   font-family: '04b_03', monospace;
