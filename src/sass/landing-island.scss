@@ -40,3 +40,21 @@
   width: 82px;
   height: 59px;
 }
+
+#info-panel {
+  background-image: url('img/Info.png');
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 295px;
+  left: 244px;
+  width: 195px;
+  height: 284px;
+}
+
+#info-panel:hover {
+  background-image: url('img/Info_hover.png');
+  top: 317px;
+  left: 200px;
+  width: 228px;
+  height: 392px;
+}
