@@ -51,13 +51,12 @@
   left: 42px;
   width: 201px;
   height: 181px;
-  // transition: all .25s ease-in-out;
 }
 
 #ourstory:hover {
   background-image: url('img/OurStory_hover.png');
-  top: 237px;
-  left: 27px;
+  top: 238px;
+  left: 28px;
   width: 217px;
   height: 193px;
 }
@@ -68,6 +67,7 @@
   left: 0;
   width: 482px;
   height: 361px;
+  transition-delay: .25s;
   // TODO: find better transitions. ADD DELAYS???
   // transition: all .25s ease-in-out;
 }
