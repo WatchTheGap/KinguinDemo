@@ -202,34 +202,54 @@
             </div>
             <div class='input-wrapper'>
               <div class='pixel-input'>
-                  <input id='email' type='email' name='email' placeholder='EMAIL'>
+                <input id='email' type='email' name='email' placeholder='EMAIL'>
               </div>
             </div>
           </form>
-
           <h3>I WISH TO INVEST VIA<span style='font-size: 9px; letter-spacing: -2px;'>...</span></h3>
-
         </section>
         <section class='modal-footer'>
-
-            <div id='signup-button-left' class='input-wrapper'>
-              <div class='pixel-input'>
-                  <a href='#'>
+          <div id='signup-button-crypto' class='input-wrapper'>
+            <div class='pixel-input'>
+              <a href='#'>
                 <img src='img/BTC1.png' alt='bitcoin logo'>
                 <img src='img/crypto1.png' alt='cryptocurrency logo'>
                 <h3>CRYPTOCURRENCY</h3>
               </a>
-              </div>
             </div>
+          </div>
+          <div id='signup-button-fiat' class='input-wrapper'>
+            <div class='pixel-input'>
+              <a href='#'>
+                <img src='img/$.png' alt='dollar sign'>
+                <h3>MONEY TRANSFER</h3>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
 
-            <div id='signup-button-right' class='input-wrapper'>
+    <div id='validation-popup' class='popup hide popup-outer-wrapper'>
+      <div class='popup-inner-wrapper'>
+        <section id='validation-header' class='modal-header'>
+          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+          <h1>VALIDATION</h1>
+        </section>
+        <section id='validation-body' class='modal-body'>
+
+          <p>in order for us to know that your cryptocurrency wallet is valid, please submit your ERC20 wallet address</p>
+          <form id='validation-form' method='post'>
+            <div class='input-wrapper'>
               <div class='pixel-input'>
-                <a href='#'>
-                  <img src='img/$.png' alt='dollar sign'>
-                  <h3>MONEY TRANSFER</h3>
-                </a>
+                <input type='text' name='wallet-id' placeholder='INSERT ERC20 WALLET ADDRESS'>
               </div>
             </div>
+          </form>
+
+
+        </section>
+        <section class='modal-footer'>
 
         </section>
       </div>

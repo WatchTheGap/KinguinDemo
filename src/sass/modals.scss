@@ -79,7 +79,7 @@
   border-top: 10px solid #c4e880;
 }
 
-#signup-header {
+#signup-header, #validation-header {
   background-color: #9ac4bf;
   border-top: 10px solid #c8dfdc;
 }
@@ -98,7 +98,8 @@
 }
 
 #company-body, #ourstory-body,
-#contactus-body, #signup-body {
+#contactus-body, #signup-body,
+#validation-body {
   text-transform: uppercase;
   border: none;
   h3, nav {
@@ -114,10 +115,20 @@
   width: 90%;
 }
 
-#signup-body {
+#signup-body, #validation-body {
   font-family: 'EightBitWonder', monospace;
   form {
     height: 200px;
+    input::placeholder {
+      font-family: 'EightBitWonder', monospace;
+      font-size: 15px;
+      text-align: center;
+      color: #9ac4bf;
+    }
+  }
+  p {
+    font-family: '04b_03', monospace;
+    text-align: center;
   }
 }
 
@@ -132,18 +143,13 @@
     width: 100%;
     margin: 25px 0px;
   }
-  input::placeholder {
-    font-family: 'EightBitWonder', monospace;
-    font-size: 15px;
-    text-align: center;
-    color: #9ac4bf;
-  }
+
   .pixel-input {
     padding: 5px 30px;
   }
 }
 
-#signup-button-left, #signup-button-right {
+#signup-button-crypto, #signup-button-fiat {
   width: 40%;
   display: inline-block;
   background-color: #ef5e5e;
@@ -171,17 +177,22 @@
   }
 }
 
-#signup-button-left {
+#signup-button-crypto {
   margin: 2% 2% 0% 8%;
 }
 
-#signup-button-right {
+#signup-button-fiat {
   margin: 2% 8% 0% 2%;
 }
 
 #signup-popup .modal-footer {
   overflow: auto;
   padding-bottom: 5%;
+}
+
+#validation-form .input-wrapper {
+  width: 100%;
+  margin: 0px;
 }
 
 .year-summary {
@@ -370,7 +381,8 @@
   border-bottom: 10px solid #dfba9d;
 }
 
-#signup-popup::before, #signup-popup::after {
+#signup-popup::before, #signup-popup::after,
+#validation-popup::before, #validation-popup::after {
   border-bottom: 10px solid #c8dfdc;
 }
 
