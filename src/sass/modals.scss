@@ -78,6 +78,11 @@
   border-top: 10px solid #c4e880;
 }
 
+#signup-header {
+  background-color: #9ac4bf;
+  border-top: 10px solid #c8dfdc;
+}
+
 .modal-header {
   h1 {
     font-family: 'EightBitWonder', monospace;
@@ -305,6 +310,10 @@
 
 #company-popup::before, #company-popup::after {
   border-bottom: 10px solid #dfba9d;
+}
+
+#signup-popup::before, #signup-popup::after {
+  border-bottom: 10px solid #c8dfdc;
 }
 
 .popup-outer-wrapper::before {
