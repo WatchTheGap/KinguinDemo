@@ -129,10 +129,16 @@
 .pixel-input {
   padding: 10px 100px 10px 20px;
   input {
+    font-family: '04b_03', monospace;
+    font-size: 16px;
+    text-transform: uppercase;
     border: none;
     height: 30px;
   }
   textarea {
+    font-family: '04b_03', monospace;
+    font-size: 16px;
+    text-transform: uppercase;
     border: none;
     width: 455px;
     height: 200px;
