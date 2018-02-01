@@ -102,11 +102,12 @@
 #validation-body {
   text-transform: uppercase;
   border: none;
+  form {
+    overflow: auto;
+    min-height: 100px;
+  }
   h2, h3, nav {
     text-align: center;
-  }
-  form {
-    height: 300px;
   }
 }
 
@@ -119,7 +120,7 @@
   font-family: 'EightBitWonder', monospace;
   min-height: 200px;
   form {
-    height: 200px;
+    padding: 20px;
     input::placeholder {
       font-family: 'EightBitWonder', monospace;
       font-size: 15px;
@@ -138,8 +139,9 @@
 }
 
 #signup-form {
+  height: 200px;
   width: 40%;
-  margin: 5% 30%;
+  margin: 0 30%;
   input {
     width: 100%;
     text-align: center;
@@ -154,7 +156,8 @@
   }
 }
 
-#signup-button-crypto, #signup-button-fiat {
+#signup-button-crypto, #signup-button-fiat,
+#wallet-submit {
   width: 40%;
   display: inline-block;
   background-color: #ef5e5e;
@@ -172,7 +175,6 @@
     border-top: 5px solid #f68888;
     display: block;
     padding: 30px 10px;
-    min-height: 180px;
   }
   h3 {
     margin: 10px;
@@ -184,10 +186,25 @@
 
 #signup-button-crypto {
   margin: 2% 2% 0% 8%;
+  a {
+    min-height: 180px;
+  }
 }
 
 #signup-button-fiat {
   margin: 2% 8% 0% 2%;
+  a {
+    min-height: 180px;
+  }
+}
+
+#wallet-submit {
+  width: 60%;
+  margin: 0 20%;
+  a {
+    max-height: 60px;
+    padding: 0px;
+  }
 }
 
 #signup-popup .modal-footer {
