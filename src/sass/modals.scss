@@ -114,11 +114,19 @@
   width: 90%;
 }
 
+#signup-body {
+  font-family: 'EightBitWonder', monospace;
+  form {
+    height: 200px;
+  }
+}
+
 #signup-form {
   width: 40%;
   margin: 5% 30%;
   input {
     width: 100%;
+    text-align: center;
   }
   .input-wrapper {
     width: 100%;
