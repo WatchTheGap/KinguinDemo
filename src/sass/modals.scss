@@ -79,6 +79,11 @@
   border-top: 10px solid #c4e880;
 }
 
+#notify-header {
+  background-color: #6ebfb1;
+  border-top: 10px solid #a0dcd4;
+}
+
 #signup-header, #validation-header {
   background-color: #9ac4bf;
   border-top: 10px solid #c8dfdc;
@@ -98,8 +103,8 @@
 }
 
 #company-body, #ourstory-body,
-#contactus-body, #signup-body,
-#validation-body {
+#contactus-body, #notify-body,
+#signup-body, #validation-body {
   text-transform: uppercase;
   border: none;
   form {
@@ -324,7 +329,13 @@
    }
  }
 
- .button-input-wrapper::before, .button-wrapper::before {
+ .button-input-wrapper::before, .button-wrapper::before,
+ .button-input-wrapper::after, .button-wrapper::after,
+ #signup-button-crypto.input-wrapper::before, #signup-button-crypto.input-wrapper::after,
+ #signup-button-fiat.input-wrapper::before,
+ #signup-button-fiat.input-wrapper::after,
+ #wallet-submit.input-wrapper::before,
+ #wallet-submit.input-wrapper::after {
    border-bottom: 5px solid #f68888;
  }
 
@@ -408,6 +419,10 @@
 
 #company-popup::before, #company-popup::after {
   border-bottom: 10px solid #dfba9d;
+}
+
+#notify-popup::before, #notify-popup::after {
+  border-bottom: 10px solid #a0dcd4;
 }
 
 #signup-popup::before, #signup-popup::after,

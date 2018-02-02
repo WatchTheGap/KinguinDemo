@@ -21,6 +21,10 @@
     $('#contactus-popup').toggleClass('hide');
   });
 
+  $('#notify-btn').click(function() {
+    $('#notify-popup').toggleClass('hide');
+  });
+
   $('#go-btn').click(function() {
     $('#signup-popup').toggleClass('hide');
   });
