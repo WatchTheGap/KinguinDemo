@@ -1,29 +1,29 @@
 #info-island {
   @extend .islands;
   top: 800px;
-  left: 100px;
+  left: 300px;
 }
 
 #market-block {
   position: absolute;
-  top: 400px;
-  left: 0px;
+  top: 190px;
+  left: -80px;
 }
 
 #market {
   background-image: url('img/Market_default.png');
   background-repeat: no-repeat;
   position: absolute;
-  top: -22px;
-  left: 27px;
+  top: 164px;
+  left: -53px;
   width: 173px;
   height: 242px;
 }
 
 #market:hover {
   background-image: url('img/Market_hover.png');
-  top: -34px;
-  left: 22px;
+  top: 156px;
+  left: -57px;
   width: 177px;
   height: 255px;
 }
