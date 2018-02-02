@@ -12,8 +12,8 @@
 
 #market {
   background-image: url('img/Market_default.png');
-  background-repeat: no-repeat;
   position: absolute;
+  background-repeat: no-repeat;
   top: 161px;
   left: 67px;
   width: 173px;
@@ -28,12 +28,10 @@
   height: 255px;
 }
 
-#token-block {
-
-}
-
 #tokens {
   background-image: url('img/Tokens.png');
+  position: absolute;
+  background-repeat: no-repeat;
   top: -147px;
   left: 122px;
   width: 280px;
@@ -43,4 +41,22 @@
 
 #tokens:hover {
   top: -187px;
+}
+
+#whitepaper {
+  background-image: url('img/Whitepaper.png');
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 159px;
+  left: 272px;
+  width: 281px;
+  height: 169px;
+}
+
+#whitepaper:hover {
+  background-image: url('img/Whitepaper_hover.png');
+  top: 152px;
+  left: 270px;
+  width: 293px;
+  height: 182px;
 }
