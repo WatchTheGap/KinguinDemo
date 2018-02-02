@@ -1,7 +1,13 @@
 #info-island {
   @extend .islands;
-  top: 700px;
+  top: 800px;
   left: 100px;
+}
+
+#market-block {
+  position: absolute;
+  top: 400px;
+  left: 0px;
 }
 
 #market {
@@ -20,4 +26,21 @@
   left: 22px;
   width: 177px;
   height: 255px;
+}
+
+#token-block {
+
+}
+
+#tokens {
+  background-image: url('img/Tokens.png');
+  top: -147px;
+  left: 0px;
+  width: 280px;
+  height: 401px;
+  transition: top .25s ease-in-out;
+}
+
+#tokens:hover {
+  top: -187px;
 }
