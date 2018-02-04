@@ -634,10 +634,25 @@ html, body {
   top: 183px;
   left: 39px;
   width: 241px;
-  height: 186px; }
+  height: 186px;
+  transition: all .25s ease-in-out; }
 
 #roadmap:hover {
   top: 196px;
   left: 19px; }
+
+#projections {
+  background-image: url("img/Projections.png");
+  top: 330px;
+  left: 262px;
+  width: 120px;
+  height: 75px; }
+
+#projections:hover {
+  background-image: url("img/Projections_hover.png");
+  top: 314px;
+  left: 228px;
+  width: 154px;
+  height: 135px; }
 
 /*# sourceMappingURL=styles.css.map */
