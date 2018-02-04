@@ -15,8 +15,8 @@ left: 40px;
 }
 
 #distro {
-  top: 89px;
-  left: 440px;
+  top: 90px;
+  left: 439px;
 }
 
 #trees {
@@ -39,4 +39,17 @@ left: 40px;
   left: 159px;
   width: 321px;
   height: 371px;
+}
+
+#roadmap {
+  background-image: url('img/Roadmap.png');
+  top: 183px;
+  left: 39px;
+  width: 241px;
+  height: 186px;
+}
+
+#roadmap:hover {
+  top: 196px;
+  left: 19px;
 }
