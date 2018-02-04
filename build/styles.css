@@ -83,6 +83,10 @@ html, body {
   background-color: #9ac4bf;
   border-top: 10px solid #c8dfdc; }
 
+#tokens-header {
+  background-color: #f2ac59;
+  border-top: 10px solid #f8d181; }
+
 .modal-header {
   padding: 20px;
   margin-left: -10px;
