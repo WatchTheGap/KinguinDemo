@@ -97,24 +97,11 @@ html, body {
     color: white;
     text-align: center; }
 
-#company-body, #ourstory-body,
-#contactus-body, #notify-body,
-#signup-body, #validation-body {
-  text-transform: uppercase;
-  border: none; }
-  #company-body form, #ourstory-body form,
-  #contactus-body form, #notify-body form,
-  #signup-body form, #validation-body form {
-    overflow: auto;
-    min-height: 100px; }
-  #company-body h2, #company-body h3, #company-body nav, #ourstory-body h2, #ourstory-body h3, #ourstory-body nav,
-  #contactus-body h2,
-  #contactus-body h3,
-  #contactus-body nav, #notify-body h2, #notify-body h3, #notify-body nav,
-  #signup-body h2,
-  #signup-body h3,
-  #signup-body nav, #validation-body h2, #validation-body h3, #validation-body nav {
-    text-align: center; }
+#team-body, #advisors-body {
+  border-bottom: 10px solid #b5b5b5;
+  margin-bottom: 10px;
+  margin-left: -10px;
+  margin-right: -10px; }
 
 #company-body img {
   margin: 0 5%;
@@ -123,19 +110,19 @@ html, body {
 #notify-body {
   width: 80%;
   margin: auto; }
-  #notify-body .input-wrapper, #notify-body .button-wrapper {
+  #notify-body .input-wrapper {
     background-color: #f2f2f2;
     width: 60%;
     margin: 5% 20%; }
-    #notify-body .input-wrapper .pixel-input, #notify-body .button-wrapper .pixel-input, .button-wrapper #notify-body .input-wrapper .button-pixel-input, #notify-body .button-wrapper .button-pixel-input {
+    #notify-body .input-wrapper .pixel-input {
       background-color: inherit;
       padding: 10px; }
-    #notify-body .input-wrapper input, #notify-body .button-wrapper input {
+    #notify-body .input-wrapper input {
       background-color: inherit;
       width: 100%;
       text-align: center;
       font-size: 20px; }
-    #notify-body .input-wrapper input::placeholder, #notify-body .button-wrapper input::placeholder {
+    #notify-body .input-wrapper input::placeholder {
       font-family: 'EightBitWonder', monospace;
       font-size: 15px;
       text-align: center; }
@@ -164,25 +151,23 @@ html, body {
   #signup-form input {
     width: 100%;
     text-align: center; }
-  #signup-form .input-wrapper, #signup-form .button-wrapper {
+  #signup-form .input-wrapper {
     width: 100%;
     margin: 25px 0px; }
-  #signup-form .pixel-input, #signup-form .button-wrapper .button-pixel-input, .button-wrapper #signup-form .button-pixel-input {
+  #signup-form .pixel-input {
     padding: 5px 30px; }
 
-#signup-button-crypto, #signup-button-fiat,
-#wallet-submit {
+#send-btn, #signup-button-crypto,
+#signup-button-fiat, #wallet-submit {
   width: 40%;
   display: inline-block;
   background-color: #ef5e5e; }
-  #signup-button-crypto .pixel-input, #signup-button-crypto .button-wrapper .button-pixel-input, .button-wrapper #signup-button-crypto .button-pixel-input, #signup-button-fiat .pixel-input, #signup-button-fiat .button-wrapper .button-pixel-input, .button-wrapper #signup-button-fiat .button-pixel-input,
-  #wallet-submit .pixel-input,
-  #wallet-submit .button-wrapper .button-pixel-input,
-  .button-wrapper #wallet-submit .button-pixel-input {
+  #send-btn .pixel-input, #signup-button-crypto .pixel-input,
+  #signup-button-fiat .pixel-input, #wallet-submit .pixel-input {
     background-color: #ef5e5e;
     padding: 0px; }
-  #signup-button-crypto a, #signup-button-fiat a,
-  #wallet-submit a {
+  #send-btn a, #signup-button-crypto a,
+  #signup-button-fiat a, #wallet-submit a {
     box-sizing: border-box;
     font-family: '04b_03', monospace;
     text-decoration: none;
@@ -192,11 +177,11 @@ html, body {
     border-top: 5px solid #f68888;
     display: block;
     padding: 30px 10px; }
-  #signup-button-crypto h3, #signup-button-fiat h3,
-  #wallet-submit h3 {
+  #send-btn h3, #signup-button-crypto h3,
+  #signup-button-fiat h3, #wallet-submit h3 {
     margin: 10px; }
-  #signup-button-crypto img, #signup-button-fiat img,
-  #wallet-submit img {
+  #send-btn img, #signup-button-crypto img,
+  #signup-button-fiat img, #wallet-submit img {
     min-height: 61px; }
 
 #signup-button-crypto {
@@ -220,18 +205,18 @@ html, body {
   overflow: auto;
   padding-bottom: 5%; }
 
-#validation-form .input-wrapper, #validation-form .button-wrapper {
+#validation-form .input-wrapper {
   width: 100%;
   margin: 0px; }
-  #validation-form .input-wrapper input, #validation-form .button-wrapper input {
+  #validation-form .input-wrapper input {
     text-align: center; }
-  #validation-form .input-wrapper .pixel-input, #validation-form .button-wrapper .pixel-input, .button-wrapper #validation-form .input-wrapper .button-pixel-input, #validation-form .button-wrapper .button-pixel-input {
+  #validation-form .input-wrapper .pixel-input {
     padding: 10px; }
 
 .year-summary p {
   color: #49423f; }
 
-.input-wrapper, .button-wrapper {
+.input-wrapper {
   margin: 20px;
   border-left: 5px solid black;
   border-right: 5px solid black;
@@ -240,28 +225,28 @@ html, body {
   background-color: white;
   position: relative; }
 
-.pixel-input, .button-wrapper .button-pixel-input {
+.pixel-input {
   padding: 10px 100px 10px 20px; }
-  .pixel-input input, .button-wrapper .button-pixel-input input {
+  .pixel-input input {
     font-family: '04b_03', monospace;
     font-size: 16px;
     text-transform: uppercase;
     border: none;
     height: 30px;
     width: 100%; }
-  .pixel-input textarea, .button-wrapper .button-pixel-input textarea {
+  .pixel-input textarea {
     font-family: '04b_03', monospace;
     font-size: 16px;
     text-transform: uppercase;
     border: none;
     width: 455px;
     height: 200px; }
-  .pixel-input input::placeholder, .button-wrapper .button-pixel-input input::placeholder, .pixel-input textarea::placeholder, .button-wrapper .button-pixel-input textarea::placeholder {
+  .pixel-input input::placeholder, .pixel-input textarea::placeholder {
     font-family: '04b_03', monospace;
     color: #b5b5b5;
     font-size: 14px; }
 
-.input-wrapper .pixel-input, .button-wrapper .pixel-input, .button-wrapper .button-pixel-input {
+.input-wrapper .pixel-input {
   background-color: white;
   display: block;
   color: black;
@@ -269,15 +254,10 @@ html, body {
   border-top: 5px solid black;
   border-bottom: 5px solid black; }
 
-.input-wrapper::before, .button-wrapper::before,
+.input-wrapper::before,
 .input-wrapper::after,
-.button-wrapper::after,
 .input-wrapper .pixel-input::before,
-.button-wrapper .pixel-input::before,
-.button-wrapper .button-pixel-input::before,
-.input-wrapper .pixel-input::after,
-.button-wrapper .pixel-input::after,
-.button-wrapper .button-pixel-input::after {
+.input-wrapper .pixel-input::after {
   content: '';
   width: 5px;
   height: 5px;
@@ -285,53 +265,27 @@ html, body {
   position: absolute;
   background: black; }
 
-.input-wrapper::before, .button-wrapper::before {
+.input-wrapper::before {
   top: -5px;
   left: 0px; }
 
-.input-wrapper::after, .button-wrapper::after {
+.input-wrapper::after {
   top: -5px;
   right: 0px; }
 
-.input-wrapper .pixel-input::before, .button-wrapper .pixel-input::before, .button-wrapper .button-pixel-input::before {
+.input-wrapper .pixel-input::before {
   bottom: -5px;
   left: 0px; }
 
-.input-wrapper .pixel-input::after, .button-wrapper .pixel-input::after, .button-wrapper .button-pixel-input::after {
+.input-wrapper .pixel-input::after {
   bottom: -5px;
   right: 0px; }
 
-.button-wrapper {
-  background-color: #ef5e5e; }
-
-.button-wrapper .button-pixel-input {
-  background-color: #ef5e5e;
-  height: 30px; }
-  .button-wrapper .button-pixel-input a {
-    box-sizing: border-box;
-    font-family: '04b_03', monospace;
-    text-decoration: none;
-    font-size: 20px;
-    text-align: center;
-    color: white;
-    border-top: 5px solid #f68888;
-    display: block;
-    width: 200px;
-    padding: 10px 20px;
-    margin: -10px -100px 0px -20px; }
-
-.button-input-wrapper::before, .button-wrapper::before,
-.button-input-wrapper::after, .button-wrapper::after,
-#signup-button-crypto.input-wrapper::before,
-#signup-button-crypto.button-wrapper::before, #signup-button-crypto.input-wrapper::after, #signup-button-crypto.button-wrapper::after,
+#signup-button-crypto.input-wrapper::before, #signup-button-crypto.input-wrapper::after,
 #signup-button-fiat.input-wrapper::before,
-#signup-button-fiat.button-wrapper::before,
 #signup-button-fiat.input-wrapper::after,
-#signup-button-fiat.button-wrapper::after,
 #wallet-submit.input-wrapper::before,
-#wallet-submit.button-wrapper::before,
-#wallet-submit.input-wrapper::after,
-#wallet-submit.button-wrapper::after {
+#wallet-submit.input-wrapper::after {
   border-bottom: 5px solid #f68888; }
 
 .modal-body {
@@ -339,10 +293,12 @@ html, body {
   background-color: white;
   margin: 0;
   padding: 20px;
-  border-bottom: 10px solid #b5b5b5;
-  margin-bottom: 10px;
-  margin-left: -10px;
-  margin-right: -10px; }
+  text-transform: uppercase; }
+  .modal-body form {
+    overflow: auto;
+    min-height: 100px; }
+  .modal-body h2, .modal-body h3, .modal-body nav {
+    text-align: center; }
 
 .modal-footer {
   font-family: '04b_03', monospace;

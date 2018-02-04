@@ -107,18 +107,11 @@
   height: 100px;
 }
 
-#company-body, #ourstory-body,
-#contactus-body, #notify-body,
-#signup-body, #validation-body {
-  text-transform: uppercase;
-  border: none;
-  form {
-    overflow: auto;
-    min-height: 100px;
-  }
-  h2, h3, nav {
-    text-align: center;
-  }
+#team-body, #advisors-body {
+  border-bottom: 10px solid #b5b5b5;
+  margin-bottom: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 #company-body img {
@@ -186,14 +179,14 @@
     width: 100%;
     margin: 25px 0px;
   }
-
   .pixel-input {
     padding: 5px 30px;
   }
 }
 
-#signup-button-crypto, #signup-button-fiat,
-#wallet-submit {
+// TODO: ADJUST SEND-BTN SIZING
+#send-btn, #signup-button-crypto,
+#signup-button-fiat, #wallet-submit {
   width: 40%;
   display: inline-block;
   background-color: #ef5e5e;
@@ -336,32 +329,6 @@
    bottom: -5px; right: 0px;
  }
 
- .button-wrapper {
-   @extend .input-wrapper;
-   background-color: #ef5e5e;
- }
-
- .button-wrapper .button-pixel-input {
-   @extend .pixel-input;
-   background-color: #ef5e5e;
-   height: 30px;
-   a {
-     box-sizing: border-box;
-     font-family: '04b_03', monospace;
-     text-decoration: none;
-     font-size: 20px;
-     text-align: center;
-     color: white;
-     border-top: 5px solid #f68888;
-     display: block;
-     width: 200px;
-     padding: 10px 20px;
-     margin: -10px -100px 0px -20px;
-   }
- }
-
- .button-input-wrapper::before, .button-wrapper::before,
- .button-input-wrapper::after, .button-wrapper::after,
  #signup-button-crypto.input-wrapper::before, #signup-button-crypto.input-wrapper::after,
  #signup-button-fiat.input-wrapper::before,
  #signup-button-fiat.input-wrapper::after,
@@ -377,10 +344,15 @@
   background-color: white;
   margin: 0;
   padding: 20px;
-  border-bottom: 10px solid #b5b5b5;
-  margin-bottom: 10px;
-  margin-left: -10px;
-  margin-right: -10px;
+  text-transform: uppercase;
+  form {
+    overflow: auto;
+    min-height: 100px;
+  }
+  // TODO: DOUBLE CHECK WHAT NEEDS CENTERED VS LEFT
+  h2, h3, nav {
+    text-align: center;
+  }
   // height: 250px;
 }
 
