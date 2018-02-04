@@ -5,15 +5,12 @@
 }
 
 #market-block {
-  position: absolute;
   top: 183px;
   left: 40px;
 }
 
 #market {
   background-image: url('img/Market_default.png');
-  position: absolute;
-  background-repeat: no-repeat;
   top: 161px;
   left: 67px;
   width: 173px;
@@ -30,8 +27,6 @@
 
 #tokens {
   background-image: url('img/Tokens.png');
-  position: absolute;
-  background-repeat: no-repeat;
   top: -147px;
   left: 122px;
   width: 280px;
@@ -45,8 +40,6 @@
 
 #whitepaper {
   background-image: url('img/Whitepaper.png');
-  position: absolute;
-  background-repeat: no-repeat;
   top: 159px;
   left: 272px;
   width: 281px;

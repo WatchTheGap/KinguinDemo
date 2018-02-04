@@ -3,3 +3,40 @@
   top: 800px;
   left: 800px;
 }
+
+#strategy-a {
+top: 184px;
+left: 40px;
+}
+
+#strategy-b {
+  top: 0px;
+  left: 118px;
+}
+
+#distro {
+  top: 89px;
+  left: 440px;
+}
+
+#trees {
+  top: 130px;
+  left: 455px;
+}
+
+#problem-solution {
+  background-image: url('img/Problem.png');
+  top: -48px;
+  left: 159px;
+  width: 321px;
+  height: 371px;
+  transition: all .25s ease-in-out;
+}
+
+#problem-solution:hover {
+  background-image: url('img/Problem_hover.png');
+  top: -88px;
+  left: 159px;
+  width: 321px;
+  height: 371px;
+}

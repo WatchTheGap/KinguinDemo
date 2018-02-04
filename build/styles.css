@@ -11,10 +11,9 @@ html, body {
 
 .islands, #about-island, #landing-island, #info-island, #strategy-island {
   position: absolute; }
-  .islands img, #about-island img, #landing-island img, #info-island img, #strategy-island img {
-    position: absolute; }
-  .islands div, #about-island div, #landing-island div, #info-island div, #strategy-island div {
-    position: absolute; }
+  .islands img, #about-island img, #landing-island img, #info-island img, #strategy-island img, .islands div, #about-island div, #landing-island div, #info-island div, #strategy-island div, .islands a div, #about-island a div, #landing-island a div, #info-island a div, #strategy-island a div {
+    position: absolute;
+    background-repeat: no-repeat; }
 
 .hide {
   display: none; }
@@ -427,7 +426,6 @@ html, body {
 
 #bulb {
   background-image: url("img/Bulb.png");
-  background-repeat: no-repeat;
   top: 313px;
   left: 251px;
   width: 118px;
@@ -435,7 +433,6 @@ html, body {
 
 #bulb:hover {
   background-image: url("img/Bulb_hover.png");
-  background-repeat: no-repeat;
   top: 259px;
   left: 248px;
   width: 127px;
@@ -510,8 +507,6 @@ html, body {
 
 #notify-btn {
   background-image: url("img/NotifyBtn_Default.png");
-  position: absolute;
-  background-repeat: no-repeat;
   top: 347px;
   left: 57px;
   width: 92px;
@@ -519,7 +514,6 @@ html, body {
 
 #notify-btn:hover {
   background-image: url("img/NotifyBtn_Hover.png");
-  background-repeat: no-repeat;
   top: 347px;
   left: 57px;
   width: 97px;
@@ -527,8 +521,6 @@ html, body {
 
 #go-btn {
   background-image: url("img/GoBtn_Default.png");
-  position: absolute;
-  background-repeat: no-repeat;
   top: 275px;
   left: 424px;
   width: 82px;
@@ -536,7 +528,6 @@ html, body {
 
 #go-btn:hover {
   background-image: url("img/GoBtn_Hover.png");
-  background-repeat: no-repeat;
   top: 266px;
   left: 424px;
   width: 82px;
@@ -544,8 +535,6 @@ html, body {
 
 #info-panel {
   background-image: url("img/Info.png");
-  position: absolute;
-  background-repeat: no-repeat;
   top: 295px;
   left: 244px;
   width: 195px;
@@ -563,14 +552,11 @@ html, body {
   left: 200px; }
 
 #market-block {
-  position: absolute;
   top: 183px;
   left: 40px; }
 
 #market {
   background-image: url("img/Market_default.png");
-  position: absolute;
-  background-repeat: no-repeat;
   top: 161px;
   left: 67px;
   width: 173px;
@@ -585,8 +571,6 @@ html, body {
 
 #tokens {
   background-image: url("img/Tokens.png");
-  position: absolute;
-  background-repeat: no-repeat;
   top: -147px;
   left: 122px;
   width: 280px;
@@ -598,8 +582,6 @@ html, body {
 
 #whitepaper {
   background-image: url("img/Whitepaper.png");
-  position: absolute;
-  background-repeat: no-repeat;
   top: 159px;
   left: 272px;
   width: 281px;
@@ -615,5 +597,36 @@ html, body {
 #strategy-island {
   top: 800px;
   left: 800px; }
+
+#strategy-a {
+  top: 184px;
+  left: 40px; }
+
+#strategy-b {
+  top: 0px;
+  left: 118px; }
+
+#distro {
+  top: 89px;
+  left: 440px; }
+
+#trees {
+  top: 130px;
+  left: 455px; }
+
+#problem-solution {
+  background-image: url("img/Problem.png");
+  top: -48px;
+  left: 159px;
+  width: 321px;
+  height: 371px;
+  transition: all .25s ease-in-out; }
+
+#problem-solution:hover {
+  background-image: url("img/Problem_hover.png");
+  top: -88px;
+  left: 159px;
+  width: 321px;
+  height: 371px; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -7,10 +7,8 @@ html, body {
 
 .islands {
   position: absolute;
-  img {
+  img, div, a div {
     position: absolute;
-  }
-  div {
-    position: absolute;
+    background-repeat: no-repeat;
   }
 }

@@ -6,8 +6,6 @@
 
 #notify-btn {
   background-image: url('img/NotifyBtn_Default.png');
-  position: absolute;
-  background-repeat: no-repeat;
   top: 347px;
   left: 57px;
   width: 92px;
@@ -15,7 +13,6 @@
 }
 #notify-btn:hover {
   background-image: url('img/NotifyBtn_Hover.png');
-  background-repeat: no-repeat;
   top: 347px;
   left: 57px;
   width: 97px;
@@ -24,8 +21,6 @@
 
 #go-btn {
   background-image: url('img/GoBtn_Default.png');
-  position: absolute;
-  background-repeat: no-repeat;
   top: 275px;
   left: 424px;
   width: 82px;
@@ -34,7 +29,6 @@
 
 #go-btn:hover {
   background-image: url('img/GoBtn_Hover.png');
-  background-repeat: no-repeat;
   top: 266px;
   left: 424px;
   width: 82px;
@@ -43,8 +37,6 @@
 
 #info-panel {
   background-image: url('img/Info.png');
-  position: absolute;
-  background-repeat: no-repeat;
   top: 295px;
   left: 244px;
   width: 195px;
