@@ -655,4 +655,18 @@ html, body {
   width: 154px;
   height: 135px; }
 
+#why-now {
+  background-image: url("img/WhyNow.png");
+  top: 208px;
+  left: 331px;
+  width: 219px;
+  height: 134px; }
+
+#why-now:hover {
+  background-image: url("img/WhyNow_hover.png");
+  top: 202px;
+  left: 331px;
+  width: 219px;
+  height: 140px; }
+
 /*# sourceMappingURL=styles.css.map */
