@@ -75,6 +75,15 @@ html, body {
 #validation-popup::before, #validation-popup::after {
   border-bottom: 10px solid #c8dfdc; }
 
+#tokens-popup::before, #tokens-popup::after {
+  border-bottom: 10px solid #f8d181; }
+
+#tokens-popup.popup-outer-wrapper .popup-inner-wrapper::before {
+  border-top: 10px solid #b75554; }
+
+#tokens-popup.popup-outer-wrapper .popup-inner-wrapper::after {
+  border-top: 10px solid #1b8899; }
+
 .input-wrapper {
   margin: 20px;
   border-left: 5px solid black;
@@ -353,6 +362,35 @@ html, body {
   height: 160px; }
   .more-info-text h3, .more-info-text p {
     margin: 10px; }
+
+#tokens-footer {
+  border-bottom: none; }
+  #tokens-footer table {
+    width: 680px;
+    margin: 0 -10px;
+    padding: 0;
+    border-spacing: 0;
+    border-left: 10px solid #ef5e5e;
+    border-right: 10px solid #24b3c9; }
+    #tokens-footer table tr {
+      width: 100%; }
+      #tokens-footer table tr td {
+        width: 50%;
+        height: 200px;
+        padding: 0;
+        margin: -10px; }
+  #tokens-footer .popup-outer-wrapper .popup-inner-wrapper::before {
+    border-top: 10px solid #b75554; }
+  #tokens-footer .popup-outer-wrapper .popup-inner-wrapper::after {
+    border-top: 10px solid #1b8899; }
+
+#phase-1 {
+  background-color: #ef5e5e;
+  border-bottom: 10px solid #b75554; }
+
+#phase-2 {
+  background-color: #24b3c9;
+  border-bottom: 10px solid #1b8899; }
 
 #about-island {
   top: 100px;
