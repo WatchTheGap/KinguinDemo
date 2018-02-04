@@ -669,4 +669,18 @@ html, body {
   width: 219px;
   height: 140px; }
 
+#distribution {
+  background-image: url("img/Distribution.png");
+  top: 110px;
+  left: 504px;
+  width: 83px;
+  height: 55px; }
+
+#distribution:hover {
+  background-image: url("img/Distribution_hover.png");
+  top: 99px;
+  left: 504px;
+  width: 87px;
+  height: 66px; }
+
 /*# sourceMappingURL=styles.css.map */
