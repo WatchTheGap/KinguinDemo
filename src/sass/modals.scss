@@ -2,47 +2,159 @@
   display: none;
 }
 
-.avatar {
-  // TODO: Make avatar sizing responsive.
-  height: 90px;
-  width: 90px;
-  border-radius: 50%;
-  border: 5px solid transparent;
+//************************************
+
+.popup-outer-wrapper{
+  margin: 5% 35%;
+  min-width: 700px;
+  width: 30%;
+  height: auto;
+  float: left;
+  border-left: 10px solid black;
+  border-right: 10px solid black;
+  position: relative;
   box-sizing: border-box;
-  margin: 15px 30px;
-  padding: 2px;
-}
-
-.avatar-row {
-  text-align: center;
-}
-
-.dates-row {
-  a {
-    display: inline;
-    text-decoration: none;
-    margin: 20px;
+  background-color: white;
+  &::before {
+    @extend .corner-blocks;
+    top: -10px; left: 0px;
   }
-  a:active, a:focus {
+  &::after {
+    @extend .corner-blocks;
+    top: -10px; right: 0px;
+  }
+  .popup-inner-wrapper {
+    background-color: white;
+    display: block;
     color: black;
-  }
-// TODO: CHANGE THIS FOR INACTIVE LINK COLOR, NOT VISITED
-  a:visited {
-    color: #bbaea7;
+    margin: -20px 10px;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    &::before {
+      @extend .corner-blocks;
+      bottom: -10px; left: 0px;
+      border-top: 10px solid #b5b5b5;
+    }
+    &::after {
+      @extend .corner-blocks;
+      bottom: -10px; right: 0px;
+      border-top: 10px solid #b5b5b5;
+    }
   }
 }
 
-.advisor, .team-member {
-  display: inline-block;
-  h5 {
+.corner-blocks {
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  background: black;
+}
+
+#advisors-popup::before, #advisors-popup::after {
+  border-bottom: 10px solid #8ac0d4;
+}
+#team-popup::before, #team-popup::after {
+  border-bottom: 10px solid #34d6e3;
+}
+
+#company-popup::before, #company-popup::after {
+  border-bottom: 10px solid #dfba9d;
+}
+
+#notify-popup::before, #notify-popup::after {
+  border-bottom: 10px solid #a0dcd4;
+}
+
+#signup-popup::before, #signup-popup::after,
+#validation-popup::before, #validation-popup::after {
+  border-bottom: 10px solid #c8dfdc;
+}
+
+//************************************
+
+.input-wrapper {
+  margin: 20px;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  float: left;
+  box-sizing: border-box;
+  background-color: white;
+  position: relative;
+  &::before {
+    @extend .mini-blocks;
+    top: -5px; left: 0px;
+  }
+  &::after {
+    @extend .mini-blocks;
+    top: -5px; right: 0px;
+  }
+  .pixel-input {
+    background-color: white;
+    display: block;
+    color: black;
+    margin: -10px 5px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    &::before {
+      @extend .mini-blocks;
+      bottom: -5px; left: 0px;
+    }
+    &::after {
+      @extend .mini-blocks;
+      bottom: -5px; right: 0px;
+    }
+  }
+}
+
+.pixel-input {
+  padding: 10px 100px 10px 20px;
+  input {
     font-family: '04b_03', monospace;
-    margin: 0 0 15px 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    height: 30px;
+    width: 100%;
+  }
+  textarea {
+    font-family: '04b_03', monospace;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    width: 455px;
+    height: 200px;
+  }
+  input::placeholder, textarea::placeholder {
+    font-family: '04b_03', monospace;
+    color: #b5b5b5;
+    font-size: 14px;
   }
 }
 
-.avatar:hover {
-  // TODO: Variable to match header or footer color?
-  border: 5px solid #5f8db0;
+.mini-blocks {
+  content: '';
+  width: 5px;
+  height: 5px;
+  display: block;
+  position: absolute;
+  background: black;
+}
+
+ //************************************
+
+.modal-header {
+  h1 {
+    // INCLUDE BG COLOR AND BORER-TOP COLOR IN ID SECTION
+    font-family: 'EightBitWonder', monospace;
+    color: white;
+    text-align: center;
+  }
+  padding: 20px;
+  margin-left: -10px;
+  margin-right: -10px;
+  height: 100px;
 }
 
 #close-x {
@@ -94,18 +206,6 @@
   border-top: 10px solid #f8d181;
 }
 
-.modal-header {
-  h1 {
-    font-family: 'EightBitWonder', monospace;
-    color: white;
-    text-align: center;
-  }
-  padding: 20px;
-  // INCLUDE BG COLOR AND BORER-TOP COLOR IN ID SECTION
-  margin-left: -10px;
-  margin-right: -10px;
-  height: 100px;
-}
 
 #team-body, #advisors-body {
   border-bottom: 10px solid #b5b5b5;
@@ -117,6 +217,10 @@
 #company-body img {
   margin: 0 5%;
   width: 90%;
+}
+
+#ourstory-body p {
+  color: #49423f;
 }
 
 #notify-body {
@@ -184,9 +288,7 @@
   }
 }
 
-// TODO: ADJUST SEND-BTN SIZING
-#send-btn, #signup-button-crypto,
-#signup-button-fiat, #wallet-submit {
+.red-btn {
   width: 40%;
   display: inline-block;
   background-color: #ef5e5e;
@@ -211,9 +313,18 @@
   img {
     min-height: 61px;
   }
+  &::before, &::after {
+    border-bottom: 5px solid #f68888;
+  }
+}
+
+#send-btn {
+  @extend .red-btn;
+  // TODO: ADJUST SEND-BTN SIZING
 }
 
 #signup-button-crypto {
+  @extend .red-btn;
   margin: 2% 2% 0% 8%;
   a {
     min-height: 180px;
@@ -221,6 +332,7 @@
 }
 
 #signup-button-fiat {
+  @extend .red-btn;
   margin: 2% 8% 0% 2%;
   a {
     min-height: 180px;
@@ -228,6 +340,7 @@
 }
 
 #wallet-submit {
+  @extend .red-btn;
   width: 60%;
   margin: 0 20%;
   a {
@@ -252,90 +365,6 @@
   }
 }
 
-.year-summary {
-  p {
-    color: #49423f;
-  }
-}
-
-.input-wrapper {
-  margin: 20px;
-  border-left: 5px solid black;
-  border-right: 5px solid black;
-  float: left;
-  box-sizing: border-box;
-  background-color: white;
-  position: relative;
-}
-
-.pixel-input {
-  padding: 10px 100px 10px 20px;
-  input {
-    font-family: '04b_03', monospace;
-    font-size: 16px;
-    text-transform: uppercase;
-    border: none;
-    height: 30px;
-    width: 100%;
-  }
-  textarea {
-    font-family: '04b_03', monospace;
-    font-size: 16px;
-    text-transform: uppercase;
-    border: none;
-    width: 455px;
-    height: 200px;
-  }
-  input::placeholder, textarea::placeholder {
-    font-family: '04b_03', monospace;
-    color: #b5b5b5;
-    font-size: 14px;
-  }
-}
-
-.input-wrapper .pixel-input {
-  background-color: white;
-  display: block;
-  color: black;
-  margin: -10px 5px;
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
-}
-
-.input-wrapper::before,
-.input-wrapper::after,
-.input-wrapper .pixel-input::before,
-.input-wrapper .pixel-input::after {
-  content: '';
-  width: 5px;
-  height: 5px;
-  display: block;
-  position: absolute;
-  background: black;
-}
-
-.input-wrapper::before {
-  top: -5px; left: 0px;
-}
-.input-wrapper::after {
-  top: -5px; right: 0px;
- }
-
-.input-wrapper .pixel-input::before{
-   bottom: -5px; left: 0px;
- }
-
- .input-wrapper .pixel-input::after{
-   bottom: -5px; right: 0px;
- }
-
- #signup-button-crypto.input-wrapper::before, #signup-button-crypto.input-wrapper::after,
- #signup-button-fiat.input-wrapper::before,
- #signup-button-fiat.input-wrapper::after,
- #wallet-submit.input-wrapper::before,
- #wallet-submit.input-wrapper::after {
-   border-bottom: 5px solid #f68888;
- }
 
 //************************************
 
@@ -355,6 +384,51 @@
   }
   // height: 250px;
 }
+
+.avatar {
+  // TODO: Make avatar sizing responsive.
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  box-sizing: border-box;
+  margin: 15px 30px;
+  padding: 2px;
+}
+
+.avatar-row {
+  text-align: center;
+}
+
+.dates-row {
+  a {
+    display: inline;
+    text-decoration: none;
+    margin: 20px;
+  }
+  a:active, a:focus {
+    color: black;
+  }
+// TODO: CHANGE THIS FOR INACTIVE LINK COLOR, NOT VISITED
+  a:visited {
+    color: #bbaea7;
+  }
+}
+
+.advisor, .team-member {
+  display: inline-block;
+  h5 {
+    font-family: '04b_03', monospace;
+    margin: 0 0 15px 0;
+  }
+}
+
+.avatar:hover {
+  // TODO: Variable to match header or footer color?
+  border: 5px solid #5f8db0;
+}
+
+//************************************
 
 .modal-footer {
   font-family: '04b_03', monospace;
@@ -378,73 +452,4 @@
   margin: -10px;
   height: 160px;
 }
-
-.popup-outer-wrapper{
-  margin: 5% 35%;
-  min-width: 700px;
-  width: 30%;
-  height: auto;
-  float: left;
-  border-left: 10px solid black;
-  border-right: 10px solid black;
-  position: relative;
-  box-sizing: border-box;
-  background-color: white;
-}
-
-.popup-outer-wrapper .popup-inner-wrapper {
-  background-color: white;
-  display: block;
-  color: black;
-  margin: -20px 10px;
-  border-top: 10px solid black;
-  border-bottom: 10px solid black;
-}
-
-.popup-outer-wrapper::before,
-.popup-outer-wrapper::after,
-.popup-outer-wrapper .popup-inner-wrapper::before,
-.popup-outer-wrapper .popup-inner-wrapper::after {
-  content: '';
-  width: 10px;
-  height: 10px;
-  display: block;
-  position: absolute;
-  background: black;
-}
-
-#advisors-popup::before, #advisors-popup::after {
-  border-bottom: 10px solid #8ac0d4;
-}
-#team-popup::before, #team-popup::after {
-  border-bottom: 10px solid #34d6e3;
-}
-
-#company-popup::before, #company-popup::after {
-  border-bottom: 10px solid #dfba9d;
-}
-
-#notify-popup::before, #notify-popup::after {
-  border-bottom: 10px solid #a0dcd4;
-}
-
-#signup-popup::before, #signup-popup::after,
-#validation-popup::before, #validation-popup::after {
-  border-bottom: 10px solid #c8dfdc;
-}
-
-.popup-outer-wrapper::before {
-  top: -10px; left: 0px;
-}
-.popup-outer-wrapper::after {
-   top: -10px; right: 0px;
- }
-
-.popup-outer-wrapper .popup-inner-wrapper::before {
-  bottom: -10px; left: 0px;
-  border-top: 10px solid #b5b5b5;
-}
-.popup-outer-wrapper .popup-inner-wrapper::after {
-  bottom: -10px; right: 0px;
-  border-top: 10px solid #b5b5b5;
-}
+//************************************
