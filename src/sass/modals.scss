@@ -466,6 +466,9 @@
 
 #tokens-footer {
   border-bottom: none;
+  text-transform: uppercase;
+  min-height: 150px;
+  font-kerning: none;
   table {
     width: 680px;
     margin: 0 -10px;
@@ -474,12 +477,18 @@
     border-left: 10px solid #ef5e5e;
     border-right: 10px solid #24b3c9;
     tr {
+      vertical-align: top;
       width: 100%;
       td {
         width: 50%;
-        height: 200px;
-        padding: 0;
         margin: -10px;
+        h1, h2 {
+          color: white;
+          margin: 0;
+        }
+        p {
+          margin: 5px;
+        }
       }
     }
   }
@@ -495,10 +504,25 @@
 #phase-1 {
   background-color: #ef5e5e;
   border-bottom: 10px solid #b75554;
+  padding: 15px 30px 30px 20px;
+  p {
+    color: #912f2d;
+  }
+  h1 {
+    font-size: 50px;
+  }
 }
 
 #phase-2 {
   background-color: #24b3c9;
   border-bottom: 10px solid #1b8899;
+  padding: 15px 20px 30px 30px;
+
+  p {
+    color: #164f68;
+  }
+  h2 {
+    font-size: 30px;
+  }
 
 }

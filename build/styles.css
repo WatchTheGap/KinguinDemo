@@ -364,7 +364,10 @@ html, body {
     margin: 10px; }
 
 #tokens-footer {
-  border-bottom: none; }
+  border-bottom: none;
+  text-transform: uppercase;
+  min-height: 150px;
+  font-kerning: none; }
   #tokens-footer table {
     width: 680px;
     margin: 0 -10px;
@@ -373,12 +376,16 @@ html, body {
     border-left: 10px solid #ef5e5e;
     border-right: 10px solid #24b3c9; }
     #tokens-footer table tr {
+      vertical-align: top;
       width: 100%; }
       #tokens-footer table tr td {
         width: 50%;
-        height: 200px;
-        padding: 0;
         margin: -10px; }
+        #tokens-footer table tr td h1, #tokens-footer table tr td h2 {
+          color: white;
+          margin: 0; }
+        #tokens-footer table tr td p {
+          margin: 5px; }
   #tokens-footer .popup-outer-wrapper .popup-inner-wrapper::before {
     border-top: 10px solid #b75554; }
   #tokens-footer .popup-outer-wrapper .popup-inner-wrapper::after {
@@ -386,11 +393,21 @@ html, body {
 
 #phase-1 {
   background-color: #ef5e5e;
-  border-bottom: 10px solid #b75554; }
+  border-bottom: 10px solid #b75554;
+  padding: 15px 30px 30px 20px; }
+  #phase-1 p {
+    color: #912f2d; }
+  #phase-1 h1 {
+    font-size: 50px; }
 
 #phase-2 {
   background-color: #24b3c9;
-  border-bottom: 10px solid #1b8899; }
+  border-bottom: 10px solid #1b8899;
+  padding: 15px 20px 30px 30px; }
+  #phase-2 p {
+    color: #164f68; }
+  #phase-2 h2 {
+    font-size: 30px; }
 
 #about-island {
   top: 100px;
