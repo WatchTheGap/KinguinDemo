@@ -35,7 +35,7 @@
 
   $('#signup-button-crypto').click(function() {
     $('#signup-popup').toggleClass('hide');
-    $('#validation-popup').toggleClass('hide');
+    $('#choose-crypto-popup').toggleClass('hide');
   });
 
 // *** Info Island ***

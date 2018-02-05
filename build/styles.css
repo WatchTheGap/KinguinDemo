@@ -182,10 +182,10 @@ html, body {
   background-color: #6ebfb1;
   border-top: 10px solid #a0dcd4; }
 
-#signup-header, #validation-header {
+.signup {
   background-color: #9ac4bf;
   border-top: 10px solid #c8dfdc; }
-  #signup-header h1, #validation-header h1 {
+  .signup h1 {
     color: black; }
 
 #tokens-header {
@@ -225,31 +225,31 @@ html, body {
       font-size: 15px;
       text-align: center; }
 
-#signup-body, #validation-body {
+.signup-body {
   font-family: 'EightBitWonder', monospace; }
-  #signup-body form input::placeholder, #validation-body form input::placeholder {
+  .signup-body form input::placeholder {
     font-family: 'EightBitWonder', monospace;
     font-size: 15px;
     text-align: center;
     color: #9ac4bf; }
-  #signup-body h2, #validation-body h2 {
+  .signup-body h2 {
     font-family: '04b_03', monospace;
     font-size: 20px;
     width: 75%;
     margin: 5% auto;
     height: 5em; }
 
-#signup-form {
+#crypto-form {
   height: 200px;
   width: 40%;
   margin: 0 30%; }
-  #signup-form input {
+  #crypto-form input {
     width: 100%;
     text-align: center; }
-  #signup-form .input-wrapper {
+  #crypto-form .input-wrapper {
     width: 100%;
     margin: 25px 0px; }
-  #signup-form .pixel-input {
+  #crypto-form .pixel-input {
     padding: 5px 30px; }
 
 .red-btn, #send-btn, #signup-button-crypto, #signup-button-fiat, #wallet-submit {

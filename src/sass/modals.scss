@@ -207,7 +207,7 @@
   border-top: 10px solid #a0dcd4;
 }
 
-#signup-header, #validation-header {
+.signup {
   background-color: #9ac4bf;
   border-top: 10px solid #c8dfdc;
   h1 {
@@ -263,7 +263,7 @@
 
 }
 
-#signup-body, #validation-body {
+.signup-body {
   font-family: 'EightBitWonder', monospace;
   form {
     input::placeholder {
@@ -283,7 +283,7 @@
   }
 }
 
-#signup-form {
+#crypto-form {
   height: 200px;
   width: 40%;
   margin: 0 30%;
