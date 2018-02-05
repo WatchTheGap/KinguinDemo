@@ -71,10 +71,6 @@ html, body {
 #notify-popup::before, #notify-popup::after {
   border-bottom: 10px solid #a0dcd4; }
 
-#signup-popup::before, #signup-popup::after,
-#validation-popup::before, #validation-popup::after {
-  border-bottom: 10px solid #c8dfdc; }
-
 #tokens-popup::before, #tokens-popup::after {
   border-bottom: 10px solid #f8d181; }
 
@@ -182,12 +178,6 @@ html, body {
   background-color: #6ebfb1;
   border-top: 10px solid #a0dcd4; }
 
-.signup {
-  background-color: #9ac4bf;
-  border-top: 10px solid #c8dfdc; }
-  .signup h1 {
-    color: black; }
-
 #tokens-header {
   background-color: #f2ac59;
   border-top: 10px solid #f8d181; }
@@ -225,33 +215,6 @@ html, body {
       font-size: 15px;
       text-align: center; }
 
-.signup-body {
-  font-family: 'EightBitWonder', monospace; }
-  .signup-body form input::placeholder {
-    font-family: 'EightBitWonder', monospace;
-    font-size: 15px;
-    text-align: center;
-    color: #9ac4bf; }
-  .signup-body h2 {
-    font-family: '04b_03', monospace;
-    font-size: 20px;
-    width: 75%;
-    margin: 5% auto;
-    height: 5em; }
-
-#crypto-form {
-  height: 200px;
-  width: 40%;
-  margin: 0 30%; }
-  #crypto-form input {
-    width: 100%;
-    text-align: center; }
-  #crypto-form .input-wrapper {
-    width: 100%;
-    margin: 25px 0px; }
-  #crypto-form .pixel-input {
-    padding: 5px 30px; }
-
 .red-btn, #send-btn, #signup-button-crypto, #signup-button-fiat, #wallet-submit {
   width: 40%;
   display: inline-block;
@@ -275,38 +238,6 @@ html, body {
     min-height: 61px; }
   .red-btn::before, #send-btn::before, #signup-button-crypto::before, #signup-button-fiat::before, #wallet-submit::before, .red-btn::after, #send-btn::after, #signup-button-crypto::after, #signup-button-fiat::after, #wallet-submit::after {
     border-bottom: 5px solid #f68888; }
-
-#signup-button-crypto {
-  margin: 2% 2% 0% 8%; }
-  #signup-button-crypto a {
-    min-height: 180px; }
-
-#signup-button-fiat {
-  margin: 2% 8% 0% 2%; }
-  #signup-button-fiat a {
-    min-height: 180px; }
-
-#wallet-submit {
-  width: 60%;
-  margin: 0 20%; }
-  #wallet-submit a {
-    max-height: 60px;
-    padding: 0px; }
-
-#signup-footer {
-  overflow: auto; }
-
-#progress-bar {
-  width: 70%;
-  margin: 5% 15%; }
-
-#validation-form .input-wrapper {
-  width: 100%;
-  margin: 0px; }
-  #validation-form .input-wrapper input {
-    text-align: center; }
-  #validation-form .input-wrapper .pixel-input {
-    padding: 10px; }
 
 .modal-body {
   font-family: '04b_03', monospace;
@@ -410,6 +341,75 @@ html, body {
     color: #164f68; }
   #phase-2 h2 {
     font-size: 30px; }
+
+#signup-popup::before, #signup-popup::after,
+#validation-popup::before, #validation-popup::after {
+  border-bottom: 10px solid #c8dfdc; }
+
+.signup {
+  background-color: #9ac4bf;
+  border-top: 10px solid #c8dfdc; }
+  .signup h1 {
+    color: black; }
+
+.signup-body {
+  font-family: 'EightBitWonder', monospace; }
+  .signup-body form input::placeholder {
+    font-family: 'EightBitWonder', monospace;
+    font-size: 15px;
+    text-align: center;
+    color: #9ac4bf; }
+  .signup-body h2 {
+    font-family: '04b_03', monospace;
+    font-size: 20px;
+    width: 75%;
+    margin: 5% auto;
+    height: 5em; }
+
+#crypto-form {
+  height: 200px;
+  width: 40%;
+  margin: 0 30%; }
+  #crypto-form input {
+    width: 100%;
+    text-align: center; }
+  #crypto-form .input-wrapper {
+    width: 100%;
+    margin: 25px 0px; }
+  #crypto-form .pixel-input {
+    padding: 5px 30px; }
+
+#signup-button-crypto {
+  margin: 2% 2% 0% 8%; }
+  #signup-button-crypto a {
+    min-height: 180px; }
+
+#signup-button-fiat {
+  margin: 2% 8% 0% 2%; }
+  #signup-button-fiat a {
+    min-height: 180px; }
+
+#signup-footer {
+  overflow: auto; }
+
+#progress-bar {
+  width: 70%;
+  margin: 5% 15%; }
+
+#wallet-submit {
+  width: 60%;
+  margin: 0 20%; }
+  #wallet-submit a {
+    max-height: 60px;
+    padding: 0px; }
+
+#validation-form .input-wrapper {
+  width: 100%;
+  margin: 0px; }
+  #validation-form .input-wrapper input {
+    text-align: center; }
+  #validation-form .input-wrapper .pixel-input {
+    padding: 10px; }
 
 #about-island {
   top: 100px;

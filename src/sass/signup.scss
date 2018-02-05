@@ -1,0 +1,100 @@
+
+#signup-popup::before, #signup-popup::after,
+#validation-popup::before, #validation-popup::after {
+  border-bottom: 10px solid #c8dfdc;
+}
+
+//signup header?
+.signup {
+  background-color: #9ac4bf;
+  border-top: 10px solid #c8dfdc;
+  h1 {
+    color: black;
+  }
+}
+
+.signup-body {
+  font-family: 'EightBitWonder', monospace;
+  form {
+    input::placeholder {
+      font-family: 'EightBitWonder', monospace;
+      font-size: 15px;
+      text-align: center;
+      color: #9ac4bf;
+    }
+  }
+  h2 {
+    font-family: '04b_03', monospace;
+    font-size: 20px;
+    width: 75%;
+    margin: 5% auto;
+    height: 5em;
+
+  }
+}
+
+#crypto-form {
+  height: 200px;
+  width: 40%;
+  margin: 0 30%;
+  input {
+    width: 100%;
+    text-align: center;
+  }
+  .input-wrapper {
+    width: 100%;
+    margin: 25px 0px;
+  }
+  .pixel-input {
+    padding: 5px 30px;
+  }
+}
+
+//buttons
+#signup-button-crypto {
+  @extend .red-btn;
+  margin: 2% 2% 0% 8%;
+  a {
+    min-height: 180px;
+  }
+}
+
+#signup-button-fiat {
+  @extend .red-btn;
+  margin: 2% 8% 0% 2%;
+  a {
+    min-height: 180px;
+  }
+}
+
+#signup-footer {
+  overflow: auto;
+}
+
+#progress-bar {
+  width: 70%;
+  margin: 5% 15%;
+}
+
+//****** AM I USING THIS STUFF?
+//****** RENAME???
+#wallet-submit {
+  @extend .red-btn;
+  width: 60%;
+  margin: 0 20%;
+  a {
+    max-height: 60px;
+    padding: 0px;
+  }
+}
+
+#validation-form .input-wrapper {
+  width: 100%;
+  margin: 0px;
+  input {
+    text-align: center;
+  }
+  .pixel-input {
+    padding: 10px;
+  }
+}

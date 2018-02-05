@@ -32,14 +32,6 @@
     $('#notify-popup').toggleClass('hide');
   });
 
-  $('#go-btn').click(function() {
-    $('#signup-popup').toggleClass('hide');
-  });
-
-  $('#signup-button-crypto').click(function() {
-    $('#signup-popup').toggleClass('hide');
-    $('#choose-crypto-popup').toggleClass('hide');
-  });
 
 // *** Info Island ***
 
@@ -57,6 +49,20 @@
 // *** Basic ***
   $('.close-popup').click(function() {
     $(this).closest('.popup-outer-wrapper').toggleClass('hide');
+  });
+
+}());
+
+(function() {
+  'use strict';
+
+  $('#go-btn').click(function() {
+    $('#signup-popup').toggleClass('hide');
+  });
+
+  $('#signup-button-crypto').click(function() {
+    $('#signup-popup').toggleClass('hide');
+    $('#choose-crypto-popup').toggleClass('hide');
   });
 
 }());
