@@ -34,6 +34,38 @@ module.exports = function (grunt){
             expand: true
           }
         ]
+      },
+      angular: {
+        files:[
+          {
+            cwd: 'node_modules/angular/',
+            src: ['angular.min.js'],
+            dest: 'build/',
+            expand: true
+          },
+          {
+            cwd: 'node_modules/@uirouter/angularjs/release/',
+            src: ['angular-ui-router.js'],
+            dest: 'build/',
+            expand: true
+          },
+          {
+            cwd: 'node_modules/angular-ui-router.statehelper/',
+            src: ['statehelper.min.js'],
+            dest: 'build/',
+            expand: true
+          }
+        ]
+      },
+      jquery: {
+        files: [
+          {
+            cwd: 'node_modules/jquery/dist/',
+            src: ['jquery.min.js'],
+            dest: 'build/',
+            expand: true
+          }
+        ]
       }
     },
     sass: {
@@ -45,7 +77,7 @@ module.exports = function (grunt){
     },
     concat: {
         dist: {
-          src: ['node_modules/jquery/dist/jquery.min.js', 'src/js/*.js'],
+          src: ['src/js/*.js'],
           dest: 'build/js/app.js'
         }
       },

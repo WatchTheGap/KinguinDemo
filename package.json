@@ -27,6 +27,9 @@
   },
   "homepage": "https://github.com/Kinguin-io/digital_strategy#readme",
   "dependencies": {
+    "@uirouter/angularjs": "^1.0.14",
+    "angular": "^1.6.9",
+    "angular-ui-router.statehelper": "^1.3.1",
     "jquery": "^3.3.1"
   }
 }
