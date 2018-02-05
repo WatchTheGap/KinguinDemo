@@ -185,6 +185,8 @@ html, body {
 #signup-header, #validation-header {
   background-color: #9ac4bf;
   border-top: 10px solid #c8dfdc; }
+  #signup-header h1, #validation-header h1 {
+    color: black; }
 
 #tokens-header {
   background-color: #f2ac59;
@@ -224,15 +226,12 @@ html, body {
       text-align: center; }
 
 #signup-body, #validation-body {
-  font-family: 'EightBitWonder', monospace;
-  min-height: 200px; }
-  #signup-body form, #validation-body form {
-    padding: 20px; }
-    #signup-body form input::placeholder, #validation-body form input::placeholder {
-      font-family: 'EightBitWonder', monospace;
-      font-size: 15px;
-      text-align: center;
-      color: #9ac4bf; }
+  font-family: 'EightBitWonder', monospace; }
+  #signup-body form input::placeholder, #validation-body form input::placeholder {
+    font-family: 'EightBitWonder', monospace;
+    font-size: 15px;
+    text-align: center;
+    color: #9ac4bf; }
   #signup-body h2, #validation-body h2 {
     font-family: '04b_03', monospace;
     font-size: 20px;
@@ -294,9 +293,12 @@ html, body {
     max-height: 60px;
     padding: 0px; }
 
-#signup-popup .modal-footer {
-  overflow: auto;
-  padding-bottom: 5%; }
+#signup-footer {
+  overflow: auto; }
+
+#progress-bar {
+  width: 70%;
+  margin: 5% 15%; }
 
 #validation-form .input-wrapper {
   width: 100%;
