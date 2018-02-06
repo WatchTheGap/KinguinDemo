@@ -124,7 +124,7 @@
           <h1>CONTACT US</h1>
         </section>
         <section id='contactus-body' class='modal-body'>
-          <form class='' method="post">
+          <form id='email-signup' class='' method="post">
             <div class='input-wrapper'>
               <div class='pixel-input'>
                   <input id='email' type='email' name='email' placeholder='EMAIL'>
@@ -280,7 +280,7 @@
                 <input type='text' name='currency-amt' placeholder='BTC'>
               </div>
             </div>
-            <div id='crypto-continue' class='input-wrapper'>
+            <div id='crypto-continue' class='input-wrapper continue-btn'>
               <div class='pixel-input'>
               <a href="#">CONTINUE</a>
               </div>
@@ -320,7 +320,7 @@
                 <input type='text' name='currency-amt' placeholder='USD'>
               </div>
             </div>
-            <div id='fiat-continue' class='input-wrapper'>
+            <div id='fiat-continue' class='input-wrapper continue-btn'>
               <div class='pixel-input'>
               <a href="#">CONTINUE</a>
               </div>
@@ -365,7 +365,7 @@
       </div>
     </div>
 
-    <div id='investor-popup' class='signup-corners popup  popup-outer-wrapper'>
+    <div id='investor-popup' class='signup-corners popup hide popup-outer-wrapper'>
       <div class='popup-inner-wrapper'>
         <section id='signup-header' class='modal-header signup'>
           <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
@@ -394,6 +394,52 @@
       </div>
     </div>
 
+    <div id='investor-private-popup' class='signup-corners popup hide popup-outer-wrapper'>
+      <div class='popup-inner-wrapper'>
+        <section class='modal-header signup'>
+          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+          <h1>SIGN UP TO PRE-ICO</h1>
+        </section>
+        <section id='investor-private-body' class='modal-body'>
+          <h2>fill in data</h2>
+          <form id='personal-data-form' method='post'>
+            <div class='input-wrapper'>
+              <div class='pixel-input'>
+                <input id='full-name' type='text' align='center' name='name' placeholder='FULL NAME'>
+              </div>
+            </div>
+            <div class='input-wrapper'>
+              <div class='pixel-input'>
+                <input id='nationality' type='select' name='nationality' placeholder='NATIONALITY'>
+              </div>
+            </div>
+            <div class='input-wrapper'>
+              <div class='pixel-input'>
+                <input id='address' type='text' name='address' placeholder='STREET ADDRESS'>
+              </div>
+            </div>
+            <div class='input-wrapper'>
+              <div class='pixel-input'>
+                <input id='zip-code' type='text' name='zip-code' placeholder='ZIP'>
+              </div>
+            </div>
+            <div class='input-wrapper'>
+              <div class='pixel-input'>
+                <input id='country' type='text' name='country' placeholder='COUNTRY'>
+              </div>
+            </div>
+            <div id='investor-private-continue' class='input-wrapper'>
+              <div class='pixel-input'>
+              <a href="#">CONTINUE</a>
+              </div>
+            </div>
+          </form>
+        </section>
+        <section class='modal-footer'>
+        <img id='progress-bar' src='img/Progress_Bar_2.png' alt='progress bar'>
+        </section>
+      </div>
+    </div>
 
     <!--**************************-->
 

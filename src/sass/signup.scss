@@ -163,6 +163,12 @@
   }
 }
 
+// TODO: make this a class for consistent continue buttons
+#crypto-continue, #fiat-continue {
+  width: 70%;
+  margin: 10% 15%;
+}
+
 #signup-footer {
   overflow: auto;
 }
