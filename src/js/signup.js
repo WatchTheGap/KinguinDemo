@@ -10,4 +10,9 @@
     $('#choose-crypto-popup').toggleClass('hide');
   });
 
+  $('#signup-button-fiat').click(function() {
+    $('#signup-popup').toggleClass('hide');
+    $('#choose-fiat-popup').toggleClass('hide');
+  });
+
 }());
