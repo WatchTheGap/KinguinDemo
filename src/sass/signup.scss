@@ -129,6 +129,11 @@
     text-align: left;
     color: #9c9b9b;
     width: 100%;
+    &:focus {
+      font-family: 'EightBitWonder', monospace;
+      font-size: 15px;
+      width: 100%;
+    }
   }
   #kyc-continue {
     @extend .red-btn;
