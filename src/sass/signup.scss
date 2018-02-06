@@ -33,12 +33,22 @@
   }
 }
 
-
+.full-input {
+  width: 80%;
+  margin: 10%;
+}
 
 #crypto-form {
   height: 200px;
-  width: 40%;
-  margin: 0 30%;
+  margin: 0 10%;
+  .selector-buttons {
+    width: 60%;
+    margin: 0 20%;
+  }
+  h2 {
+    display: inline-block;
+    width: 100%;
+  }
   input {
     width: 100%;
     text-align: center;
@@ -50,10 +60,18 @@
   .pixel-input {
     padding: 5px 30px;
   }
+
+  .active {
+    background-color: #ef5e5e;
+
+  }
+  .inactive {
+    background-color: #d9d9d9;
+  }
+
   #BTC-select {
     width: 50%;
     border-right: none;
-    background-color: red;
     &::after {
       background-color: transparent;
     }
@@ -74,7 +92,6 @@
   }
   #ETH-select {
     width: 50%;
-    background-color: blue;
     &::before {
       background-color: transparent;
     }

@@ -263,16 +263,19 @@
           <h2>choose crypto</h2>
 
           <form id='crypto-form' method='post'>
-            <div id='BTC-select' class='input-wrapper'>
-              <div class='pixel-input'>
-                <button  type="button" name="BTC-select"></button>
+            <div class='selector-buttons'>
+              <div id='BTC-select' class='input-wrapper active'>
+                <div class='pixel-input'>
+                  <button  type="button" name="BTC-select"></button>
+                </div>
+              </div>
+              <div id='ETH-select' class='input-wrapper inactive'>
+                <div class='pixel-input'>
+                  <button  type="button" name="ETH-select"></button>
+                </div>
               </div>
             </div>
-            <div id='ETH-select' class='input-wrapper'>
-              <div class='pixel-input'>
-                <button  type="button" name="ETH-select"></button>
-              </div>
-            </div>
+            <h2>input amount</h2>
             <div class='input-wrapper'>
               <div class='pixel-input'>
                 <input type='number' name='crypto-ammount' placeholder='BTC'>
@@ -281,11 +284,7 @@
           </form>
         </section>
         <section class='modal-footer'>
-          <div id='wallet-submit' class='input-wrapper'>
-            <div class='pixel-input'>
-              <a href='#'><h1>SUBMIT</h1></a>
-            </div>
-          </div>
+        <img id='progress-bar' src='img/Progress_Bar_1.png' alt='progress bar'>
         </section>
       </div>
     </div>
