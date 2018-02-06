@@ -1,6 +1,5 @@
 
-#signup-popup::before, #signup-popup::after,
-#validation-popup::before, #validation-popup::after {
+.signup-corners::before, .signup-corners::after{
   border-bottom: 10px solid #c8dfdc;
 }
 
@@ -33,10 +32,6 @@
   }
 }
 
-.full-input {
-  width: 80%;
-  margin: 10%;
-}
 
 #crypto-form {
   height: 200px;
@@ -109,6 +104,10 @@
         background-color: inherit;
       }
     }
+  }
+  .crypto-amt {
+    width: 90%;
+    margin: 0 5%;
   }
 }
 
