@@ -80,7 +80,6 @@
 //************************************
 
 .input-wrapper {
-  margin: 20px;
   border-left: 5px solid black;
   border-right: 5px solid black;
   float: left;
@@ -224,6 +223,9 @@
 
 #contactus-body {
   height: 300px;
+  .input-wrapper {
+    margin: 3% 10%;
+  }
   input {
     padding: 10px;
     width: auto;
