@@ -65,6 +65,9 @@ html, body {
 #team-popup::before, #team-popup::after {
   border-bottom: 10px solid #34d6e3; }
 
+#contactus-popup::before, #contactus-popup::after {
+  border-bottom: 10px solid #c4e880; }
+
 #company-popup::before, #company-popup::after {
   border-bottom: 10px solid #dfba9d; }
 
@@ -81,7 +84,6 @@ html, body {
   border-top: 10px solid #1b8899; }
 
 .input-wrapper {
-  margin: 20px;
   border-left: 5px solid black;
   border-right: 5px solid black;
   float: left;
@@ -108,26 +110,24 @@ html, body {
       bottom: -5px;
       right: 0px; }
 
-.pixel-input {
-  padding: 10px 100px 10px 20px; }
-  .pixel-input input {
-    font-family: '04b_03', monospace;
-    font-size: 16px;
-    text-transform: uppercase;
-    border: none;
-    height: 30px;
-    width: 100%; }
-  .pixel-input textarea {
-    font-family: '04b_03', monospace;
-    font-size: 16px;
-    text-transform: uppercase;
-    border: none;
-    width: 455px;
-    height: 200px; }
-  .pixel-input input::placeholder, .pixel-input textarea::placeholder {
-    font-family: '04b_03', monospace;
-    color: #b5b5b5;
-    font-size: 14px; }
+.pixel-input input {
+  font-family: '04b_03', monospace;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  height: 30px;
+  width: 100%; }
+.pixel-input textarea {
+  font-family: '04b_03', monospace;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  width: 455px;
+  height: 200px; }
+.pixel-input input::placeholder, .pixel-input textarea::placeholder {
+  font-family: '04b_03', monospace;
+  color: #b5b5b5;
+  font-size: 14px; }
 
 .mini-blocks, .input-wrapper::before, .input-wrapper::after, .input-wrapper .pixel-input::before, .input-wrapper .pixel-input::after {
   content: '';
@@ -195,6 +195,14 @@ html, body {
 #ourstory-body p {
   color: #49423f; }
 
+#contactus-body {
+  height: 300px; }
+  #contactus-body .input-wrapper {
+    margin: 3% 10%; }
+  #contactus-body input {
+    padding: 10px;
+    width: auto; }
+
 #notify-body {
   width: 80%;
   margin: auto; }
@@ -215,16 +223,17 @@ html, body {
       font-size: 15px;
       text-align: center; }
 
-.red-btn, #send-btn, #signup-button-crypto, #signup-button-fiat, #wallet-submit {
+.red-btn, #send-btn, #signup-button-crypto, #signup-button-fiat, #investor-button-private, #investor-button-company, #kyc-continue, #crypto-continue, #fiat-continue {
   width: 40%;
   display: inline-block;
   background-color: #ef5e5e; }
-  .red-btn .pixel-input, #send-btn .pixel-input, #signup-button-crypto .pixel-input, #signup-button-fiat .pixel-input, #wallet-submit .pixel-input {
+  .red-btn .pixel-input, #send-btn .pixel-input, #signup-button-crypto .pixel-input, #signup-button-fiat .pixel-input, #investor-button-private .pixel-input, #investor-button-company .pixel-input, #kyc-continue .pixel-input, #crypto-continue .pixel-input, #fiat-continue .pixel-input {
     background-color: #ef5e5e;
     padding: 0px; }
-  .red-btn a, #send-btn a, #signup-button-crypto a, #signup-button-fiat a, #wallet-submit a {
+  .red-btn a, #send-btn a, #signup-button-crypto a, #signup-button-fiat a, #investor-button-private a, #investor-button-company a, #kyc-continue a, #crypto-continue a, #fiat-continue a {
     box-sizing: border-box;
     font-family: '04b_03', monospace;
+    text-transform: uppercase;
     text-decoration: none;
     font-size: 20px;
     text-align: center;
@@ -232,11 +241,11 @@ html, body {
     border-top: 5px solid #f68888;
     display: block;
     padding: 30px 10px; }
-  .red-btn h3, #send-btn h3, #signup-button-crypto h3, #signup-button-fiat h3, #wallet-submit h3 {
+  .red-btn h3, #send-btn h3, #signup-button-crypto h3, #signup-button-fiat h3, #investor-button-private h3, #investor-button-company h3, #kyc-continue h3, #crypto-continue h3, #fiat-continue h3 {
     margin: 10px; }
-  .red-btn img, #send-btn img, #signup-button-crypto img, #signup-button-fiat img, #wallet-submit img {
+  .red-btn img, #send-btn img, #signup-button-crypto img, #signup-button-fiat img, #investor-button-private img, #investor-button-company img, #kyc-continue img, #crypto-continue img, #fiat-continue img {
     min-height: 61px; }
-  .red-btn::before, #send-btn::before, #signup-button-crypto::before, #signup-button-fiat::before, #wallet-submit::before, .red-btn::after, #send-btn::after, #signup-button-crypto::after, #signup-button-fiat::after, #wallet-submit::after {
+  .red-btn::before, #send-btn::before, #signup-button-crypto::before, #signup-button-fiat::before, #investor-button-private::before, #investor-button-company::before, #kyc-continue::before, #crypto-continue::before, #fiat-continue::before, .red-btn::after, #send-btn::after, #signup-button-crypto::after, #signup-button-fiat::after, #investor-button-private::after, #investor-button-company::after, #kyc-continue::after, #crypto-continue::after, #fiat-continue::after {
     border-bottom: 5px solid #f68888; }
 
 .modal-body {
@@ -246,7 +255,6 @@ html, body {
   padding: 20px;
   text-transform: uppercase; }
   .modal-body form {
-    overflow: auto;
     min-height: 100px; }
   .modal-body h2, .modal-body h3, .modal-body nav {
     text-align: center; }
@@ -342,8 +350,7 @@ html, body {
   #phase-2 h2 {
     font-size: 30px; }
 
-#signup-popup::before, #signup-popup::after,
-#validation-popup::before, #validation-popup::after {
+.signup-corners::before, .signup-corners::after {
   border-bottom: 10px solid #c8dfdc; }
 
 .signup {
@@ -366,18 +373,70 @@ html, body {
     margin: 5% auto;
     height: 5em; }
 
-#crypto-form {
+.currency-form {
   height: 200px;
-  width: 40%;
-  margin: 0 30%; }
-  #crypto-form input {
+  margin: 0 10%; }
+  .currency-form .selector-buttons {
+    width: 60%;
+    margin: 0 20%; }
+  .currency-form h2 {
+    display: inline-block;
+    width: 100%; }
+  .currency-form input {
     width: 100%;
     text-align: center; }
-  #crypto-form .input-wrapper {
+  .currency-form .input-wrapper {
     width: 100%;
     margin: 25px 0px; }
-  #crypto-form .pixel-input {
+  .currency-form .pixel-input {
     padding: 5px 30px; }
+  .currency-form .active {
+    background-color: #ef5e5e; }
+  .currency-form .inactive {
+    background-color: #d9d9d9; }
+  .currency-form #BTC-select, .currency-form #USD-select {
+    width: 50%;
+    border-right: none; }
+    .currency-form #BTC-select::after, .currency-form #USD-select::after {
+      background-color: transparent; }
+    .currency-form #BTC-select .pixel-input, .currency-form #USD-select .pixel-input {
+      padding: 0;
+      margin-right: -5px;
+      background-color: inherit;
+      height: 60px; }
+      .currency-form #BTC-select .pixel-input::after, .currency-form #USD-select .pixel-input::after {
+        background-color: transparent; }
+      .currency-form #BTC-select .pixel-input button, .currency-form #USD-select .pixel-input button {
+        height: 60px;
+        width: 100%;
+        background-color: inherit; }
+  .currency-form #ETH-select, .currency-form #EUR-select {
+    width: 50%; }
+    .currency-form #ETH-select::before, .currency-form #EUR-select::before {
+      background-color: transparent; }
+    .currency-form #ETH-select .pixel-input, .currency-form #EUR-select .pixel-input {
+      padding: 0;
+      background-color: inherit;
+      height: 60px;
+      margin-left: -5px; }
+      .currency-form #ETH-select .pixel-input::before, .currency-form #EUR-select .pixel-input::before {
+        background-color: transparent; }
+      .currency-form #ETH-select .pixel-input button, .currency-form #EUR-select .pixel-input button {
+        height: 60px;
+        width: 100%;
+        background-color: inherit; }
+  .currency-form .currency-amt {
+    width: 90%;
+    margin: 0 5%; }
+
+#signup-form .input-wrapper {
+  width: 70%;
+  margin: 3% 15%; }
+#signup-form input::placeholder {
+  font-family: 'EightBitWonder', monospace;
+  font-size: 15px;
+  text-align: left;
+  color: #9c9b9b; }
 
 #signup-button-crypto {
   margin: 2% 2% 0% 8%; }
@@ -389,27 +448,32 @@ html, body {
   #signup-button-fiat a {
     min-height: 180px; }
 
+#investor-button-private {
+  margin: 2% 2% 2% 8%; }
+  #investor-button-private a {
+    padding: 10px; }
+
+#investor-button-company {
+  margin: 2% 8% 2% 2%; }
+  #investor-button-company a {
+    padding: 10px; }
+
+#kyc-continue a, #crypto-continue a, #fiat-continue a {
+  font-family: 'EightBitWonder', monospace;
+  font-size: 15px;
+  text-align: center;
+  padding: 15px; }
+
+#crypto-continue, #fiat-continue {
+  width: 70%;
+  margin: 10% 15%; }
+
 #signup-footer {
   overflow: auto; }
 
 #progress-bar {
   width: 70%;
   margin: 5% 15%; }
-
-#wallet-submit {
-  width: 60%;
-  margin: 0 20%; }
-  #wallet-submit a {
-    max-height: 60px;
-    padding: 0px; }
-
-#validation-form .input-wrapper {
-  width: 100%;
-  margin: 0px; }
-  #validation-form .input-wrapper input {
-    text-align: center; }
-  #validation-form .input-wrapper .pixel-input {
-    padding: 10px; }
 
 #about-island {
   top: 100px;
