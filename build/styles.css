@@ -449,6 +449,23 @@ html, body {
     font-family: 'EightBitWonder', monospace;
     font-size: 15px;
     width: 100%; }
+#signup-form .up-left, #personal-data-form .up-left {
+  margin: 3% 0% 3% 15%; }
+#signup-form .up-right, #personal-data-form .up-right {
+  margin: 3% 0% 3% 2%; }
+#signup-form .file-upload, #personal-data-form .file-upload {
+  width: 34%;
+  font-family: 'EightBitWonder', monospace;
+  color: #9c9b9b; }
+  #signup-form .file-upload label, #personal-data-form .file-upload label {
+    text-align: center; }
+  #signup-form .file-upload .pixel-input, #personal-data-form .file-upload .pixel-input {
+    height: 120px; }
+  #signup-form .file-upload img, #personal-data-form .file-upload img {
+    width: 40%;
+    margin: 7% 30%; }
+  #signup-form .file-upload p, #personal-data-form .file-upload p {
+    margin: 0; }
 #signup-form #kyc-continue, #personal-data-form #kyc-continue {
   width: 70%;
   margin-top: 10%; }

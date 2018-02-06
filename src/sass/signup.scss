@@ -135,6 +135,34 @@
       width: 100%;
     }
   }
+
+.up-left{
+  margin: 3% 0% 3% 15%;
+}
+
+.up-right {
+  margin: 3% 0% 3% 2%;
+}
+
+.file-upload{
+  width: 34%;
+  font-family: 'EightBitWonder', monospace;
+  label {
+    text-align: center;
+  }
+  color: #9c9b9b;
+  .pixel-input {
+    height: 120px;
+  }
+  img {
+    width: 40%;
+    margin: 7% 30%;
+  }
+  p {
+    margin: 0;
+  }
+}
+
   #kyc-continue {
     @extend .red-btn;
     width: 70%;
