@@ -138,6 +138,21 @@
     min-height: 180px;
   }
 }
+
+#investor-button-private {
+  @extend .red-btn;
+  margin: 2% 2% 2% 8%;
+  a {
+    padding: 10px;
+  }
+}
+#investor-button-company {
+  @extend .red-btn;
+  margin: 2% 8% 2% 2%;
+  a {
+    padding: 10px;
+  }
+}
 #kyc-continue {
   @extend .red-btn;
   a {
