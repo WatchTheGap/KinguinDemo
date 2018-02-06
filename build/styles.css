@@ -223,14 +223,14 @@ html, body {
       font-size: 15px;
       text-align: center; }
 
-.red-btn, #send-btn, #signup-form #kyc-continue, #signup-button-crypto, #signup-button-fiat, #investor-button-private, #investor-button-company, .continue-btn {
+.red-btn, #send-btn, #signup-form #kyc-continue, #personal-data-form #kyc-continue, #signup-button-crypto, #signup-button-fiat, #investor-button-private, #investor-button-company, .continue-btn {
   width: 40%;
   display: inline-block;
   background-color: #ef5e5e; }
-  .red-btn .pixel-input, #send-btn .pixel-input, #signup-form #kyc-continue .pixel-input, #signup-button-crypto .pixel-input, #signup-button-fiat .pixel-input, #investor-button-private .pixel-input, #investor-button-company .pixel-input, .continue-btn .pixel-input {
+  .red-btn .pixel-input, #send-btn .pixel-input, #signup-form #kyc-continue .pixel-input, #personal-data-form #kyc-continue .pixel-input, #signup-button-crypto .pixel-input, #signup-button-fiat .pixel-input, #investor-button-private .pixel-input, #investor-button-company .pixel-input, .continue-btn .pixel-input {
     background-color: #ef5e5e;
     padding: 0px; }
-  .red-btn a, #send-btn a, #signup-form #kyc-continue a, #signup-button-crypto a, #signup-button-fiat a, #investor-button-private a, #investor-button-company a, .continue-btn a {
+  .red-btn a, #send-btn a, #signup-form #kyc-continue a, #personal-data-form #kyc-continue a, #signup-button-crypto a, #signup-button-fiat a, #investor-button-private a, #investor-button-company a, .continue-btn a {
     box-sizing: border-box;
     font-family: '04b_03', monospace;
     text-transform: uppercase;
@@ -241,11 +241,11 @@ html, body {
     border-top: 5px solid #f68888;
     display: block;
     padding: 30px 10px; }
-  .red-btn h3, #send-btn h3, #signup-form #kyc-continue h3, #signup-button-crypto h3, #signup-button-fiat h3, #investor-button-private h3, #investor-button-company h3, .continue-btn h3 {
+  .red-btn h3, #send-btn h3, #signup-form #kyc-continue h3, #personal-data-form #kyc-continue h3, #signup-button-crypto h3, #signup-button-fiat h3, #investor-button-private h3, #investor-button-company h3, .continue-btn h3 {
     margin: 10px; }
-  .red-btn img, #send-btn img, #signup-form #kyc-continue img, #signup-button-crypto img, #signup-button-fiat img, #investor-button-private img, #investor-button-company img, .continue-btn img {
+  .red-btn img, #send-btn img, #signup-form #kyc-continue img, #personal-data-form #kyc-continue img, #signup-button-crypto img, #signup-button-fiat img, #investor-button-private img, #investor-button-company img, .continue-btn img {
     min-height: 61px; }
-  .red-btn::before, #send-btn::before, #signup-form #kyc-continue::before, #signup-button-crypto::before, #signup-button-fiat::before, #investor-button-private::before, #investor-button-company::before, .continue-btn::before, .red-btn::after, #send-btn::after, #signup-form #kyc-continue::after, #signup-button-crypto::after, #signup-button-fiat::after, #investor-button-private::after, #investor-button-company::after, .continue-btn::after {
+  .red-btn::before, #send-btn::before, #signup-form #kyc-continue::before, #personal-data-form #kyc-continue::before, #signup-button-crypto::before, #signup-button-fiat::before, #investor-button-private::before, #investor-button-company::before, .continue-btn::before, .red-btn::after, #send-btn::after, #signup-form #kyc-continue::after, #personal-data-form #kyc-continue::after, #signup-button-crypto::after, #signup-button-fiat::after, #investor-button-private::after, #investor-button-company::after, .continue-btn::after {
     border-bottom: 5px solid #f68888; }
 
 .modal-body {
@@ -426,20 +426,29 @@ html, body {
     width: 90%;
     margin: 0 5%; }
 
-#signup-form .input-wrapper {
+#signup-form .input-wrapper, #personal-data-form .input-wrapper {
   width: 70%;
   margin: 3% 15%; }
-#signup-form input::placeholder {
+#signup-form input::placeholder, #personal-data-form input::placeholder {
   font-family: 'EightBitWonder', monospace;
   font-size: 15px;
   text-align: left;
   color: #9c9b9b; }
-#signup-form input {
+#signup-form input, #personal-data-form input {
   height: 50px; }
-#signup-form #kyc-continue {
+#signup-form select, #personal-data-form select {
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-family: 'EightBitWonder', monospace;
+  font-size: 15px;
+  text-align: left;
+  color: #9c9b9b;
+  width: 100%; }
+#signup-form #kyc-continue, #personal-data-form #kyc-continue {
   width: 70%;
   margin-top: 10%; }
-  #signup-form #kyc-continue a {
+  #signup-form #kyc-continue a, #personal-data-form #kyc-continue a {
     font-family: 'EightBitWonder', monospace;
     font-size: 15px;
     text-align: center;
