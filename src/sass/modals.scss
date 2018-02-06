@@ -289,6 +289,32 @@
   }
 }
 
+.blue-btn {
+  width: 70%;
+  margin: 5% 15%;
+  display: inline-block;
+  background-color: #9ac4bf;
+  .pixel-input {
+    background-color: #9ac4bf;
+    padding: 0px;
+  }
+  a {
+    box-sizing: border-box;
+    font-family: 'EightBitWonder', monospace;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    border-top: 5px solid #c8dfdc;
+    display: block;
+    padding: 15px;
+  }
+  &::before, &::after {
+    border-bottom: 5px solid #c8dfdc;
+  }
+}
+
 #send-btn {
   @extend .red-btn;
   // TODO: ADJUST SEND-BTN SIZING

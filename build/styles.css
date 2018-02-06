@@ -223,14 +223,17 @@ html, body {
       font-size: 15px;
       text-align: center; }
 
-.red-btn, #send-btn, #signup-form #kyc-continue, #personal-data-form #kyc-continue, #signup-button-crypto, #signup-button-fiat, #investor-button-private, #investor-button-company, .continue-btn {
+.red-btn, #send-btn, #signup-form #kyc-continue, #personal-data-form #kyc-continue,
+#company-data-form #kyc-continue, #funding-form #kyc-continue, #signup-button-crypto, #signup-button-fiat, #investor-button-private, #investor-button-company, .continue-btn {
   width: 40%;
   display: inline-block;
   background-color: #ef5e5e; }
-  .red-btn .pixel-input, #send-btn .pixel-input, #signup-form #kyc-continue .pixel-input, #personal-data-form #kyc-continue .pixel-input, #signup-button-crypto .pixel-input, #signup-button-fiat .pixel-input, #investor-button-private .pixel-input, #investor-button-company .pixel-input, .continue-btn .pixel-input {
+  .red-btn .pixel-input, #send-btn .pixel-input, #signup-form #kyc-continue .pixel-input, #personal-data-form #kyc-continue .pixel-input,
+  #company-data-form #kyc-continue .pixel-input, #funding-form #kyc-continue .pixel-input, #signup-button-crypto .pixel-input, #signup-button-fiat .pixel-input, #investor-button-private .pixel-input, #investor-button-company .pixel-input, .continue-btn .pixel-input {
     background-color: #ef5e5e;
     padding: 0px; }
-  .red-btn a, #send-btn a, #signup-form #kyc-continue a, #personal-data-form #kyc-continue a, #signup-button-crypto a, #signup-button-fiat a, #investor-button-private a, #investor-button-company a, .continue-btn a {
+  .red-btn a, #send-btn a, #signup-form #kyc-continue a, #personal-data-form #kyc-continue a,
+  #company-data-form #kyc-continue a, #funding-form #kyc-continue a, #signup-button-crypto a, #signup-button-fiat a, #investor-button-private a, #investor-button-company a, .continue-btn a {
     box-sizing: border-box;
     font-family: '04b_03', monospace;
     text-transform: uppercase;
@@ -241,12 +244,38 @@ html, body {
     border-top: 5px solid #f68888;
     display: block;
     padding: 30px 10px; }
-  .red-btn h3, #send-btn h3, #signup-form #kyc-continue h3, #personal-data-form #kyc-continue h3, #signup-button-crypto h3, #signup-button-fiat h3, #investor-button-private h3, #investor-button-company h3, .continue-btn h3 {
+  .red-btn h3, #send-btn h3, #signup-form #kyc-continue h3, #personal-data-form #kyc-continue h3,
+  #company-data-form #kyc-continue h3, #funding-form #kyc-continue h3, #signup-button-crypto h3, #signup-button-fiat h3, #investor-button-private h3, #investor-button-company h3, .continue-btn h3 {
     margin: 10px; }
-  .red-btn img, #send-btn img, #signup-form #kyc-continue img, #personal-data-form #kyc-continue img, #signup-button-crypto img, #signup-button-fiat img, #investor-button-private img, #investor-button-company img, .continue-btn img {
+  .red-btn img, #send-btn img, #signup-form #kyc-continue img, #personal-data-form #kyc-continue img,
+  #company-data-form #kyc-continue img, #funding-form #kyc-continue img, #signup-button-crypto img, #signup-button-fiat img, #investor-button-private img, #investor-button-company img, .continue-btn img {
     min-height: 61px; }
-  .red-btn::before, #send-btn::before, #signup-form #kyc-continue::before, #personal-data-form #kyc-continue::before, #signup-button-crypto::before, #signup-button-fiat::before, #investor-button-private::before, #investor-button-company::before, .continue-btn::before, .red-btn::after, #send-btn::after, #signup-form #kyc-continue::after, #personal-data-form #kyc-continue::after, #signup-button-crypto::after, #signup-button-fiat::after, #investor-button-private::after, #investor-button-company::after, .continue-btn::after {
+  .red-btn::before, #send-btn::before, #signup-form #kyc-continue::before, #personal-data-form #kyc-continue::before,
+  #company-data-form #kyc-continue::before, #funding-form #kyc-continue::before, #signup-button-crypto::before, #signup-button-fiat::before, #investor-button-private::before, #investor-button-company::before, .continue-btn::before, .red-btn::after, #send-btn::after, #signup-form #kyc-continue::after, #personal-data-form #kyc-continue::after,
+  #company-data-form #kyc-continue::after, #funding-form #kyc-continue::after, #signup-button-crypto::after, #signup-button-fiat::after, #investor-button-private::after, #investor-button-company::after, .continue-btn::after {
     border-bottom: 5px solid #f68888; }
+
+.blue-btn {
+  width: 70%;
+  margin: 5% 15%;
+  display: inline-block;
+  background-color: #9ac4bf; }
+  .blue-btn .pixel-input {
+    background-color: #9ac4bf;
+    padding: 0px; }
+  .blue-btn a {
+    box-sizing: border-box;
+    font-family: 'EightBitWonder', monospace;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    border-top: 5px solid #c8dfdc;
+    display: block;
+    padding: 15px; }
+  .blue-btn::before, .blue-btn::after {
+    border-bottom: 5px solid #c8dfdc; }
 
 .modal-body {
   font-family: '04b_03', monospace;
@@ -361,6 +390,13 @@ html, body {
 
 .signup-body {
   font-family: 'EightBitWonder', monospace; }
+  .signup-body form h4 {
+    font-family: 'EightBitWonder', monospace;
+    font-size: 20px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%; }
   .signup-body form input::placeholder {
     font-family: 'EightBitWonder', monospace;
     font-size: 15px;
@@ -372,6 +408,9 @@ html, body {
     width: 75%;
     margin: 5% auto;
     height: 5em; }
+  .signup-body h3 {
+    font-family: 'EightBitWonder', monospace;
+    font-size: 20px; }
 
 .currency-form {
   height: 200px;
@@ -381,12 +420,14 @@ html, body {
     margin: 0 20%; }
   .currency-form h2 {
     display: inline-block;
-    width: 100%; }
+    width: 100%;
+    font-family: 'EightBitWonder', monospace;
+    font-size: 20px; }
   .currency-form input {
     width: 100%;
     text-align: center; }
   .currency-form .pixel-input {
-    padding: 5px 30px; }
+    padding: 10px 30px; }
   .currency-form .active {
     background-color: #ef5e5e; }
   .currency-form .inactive {
@@ -426,17 +467,40 @@ html, body {
     width: 90%;
     margin: 0 5%; }
 
-#signup-form .input-wrapper, #personal-data-form .input-wrapper {
+#signup-form #btc-fund-continue,
+#signup-form #eth-fund-continue, #personal-data-form #btc-fund-continue,
+#personal-data-form #eth-fund-continue,
+#company-data-form #btc-fund-continue,
+#company-data-form #eth-fund-continue, #funding-form #btc-fund-continue,
+#funding-form #eth-fund-continue {
+  margin-top: 25%; }
+#signup-form #aml-continue, #signup-form #aml-eth-continue, #signup-form #aml-btc-continue, #personal-data-form #aml-continue, #personal-data-form #aml-eth-continue, #personal-data-form #aml-btc-continue,
+#company-data-form #aml-continue,
+#company-data-form #aml-eth-continue,
+#company-data-form #aml-btc-continue, #funding-form #aml-continue, #funding-form #aml-eth-continue, #funding-form #aml-btc-continue {
+  margin-top: 10%; }
+#signup-form #btc-fund::placeholder,
+#signup-form #eth-fund::placeholder, #personal-data-form #btc-fund::placeholder,
+#personal-data-form #eth-fund::placeholder,
+#company-data-form #btc-fund::placeholder,
+#company-data-form #eth-fund::placeholder, #funding-form #btc-fund::placeholder,
+#funding-form #eth-fund::placeholder {
+  text-align: center; }
+#signup-form .input-wrapper, #personal-data-form .input-wrapper,
+#company-data-form .input-wrapper, #funding-form .input-wrapper {
   width: 70%;
   margin: 3% 15%; }
-#signup-form input::placeholder, #personal-data-form input::placeholder {
+#signup-form input::placeholder, #personal-data-form input::placeholder,
+#company-data-form input::placeholder, #funding-form input::placeholder {
   font-family: 'EightBitWonder', monospace;
   font-size: 15px;
   text-align: left;
   color: #9c9b9b; }
-#signup-form input, #personal-data-form input {
+#signup-form input, #personal-data-form input,
+#company-data-form input, #funding-form input {
   height: 50px; }
-#signup-form select, #personal-data-form select {
+#signup-form select, #personal-data-form select,
+#company-data-form select, #funding-form select {
   height: 50px;
   background: transparent;
   border: none;
@@ -445,31 +509,41 @@ html, body {
   text-align: left;
   color: #9c9b9b;
   width: 100%; }
-  #signup-form select:focus, #personal-data-form select:focus {
+  #signup-form select:focus, #personal-data-form select:focus,
+  #company-data-form select:focus, #funding-form select:focus {
     font-family: 'EightBitWonder', monospace;
     font-size: 15px;
     width: 100%; }
-#signup-form .up-left, #personal-data-form .up-left {
+#signup-form .up-left, #personal-data-form .up-left,
+#company-data-form .up-left, #funding-form .up-left {
   margin: 3% 0% 3% 15%; }
-#signup-form .up-right, #personal-data-form .up-right {
+#signup-form .up-right, #personal-data-form .up-right,
+#company-data-form .up-right, #funding-form .up-right {
   margin: 3% 0% 3% 2%; }
-#signup-form .file-upload, #personal-data-form .file-upload {
+#signup-form .file-upload, #personal-data-form .file-upload,
+#company-data-form .file-upload, #funding-form .file-upload {
   width: 34%;
   font-family: 'EightBitWonder', monospace;
   color: #9c9b9b; }
-  #signup-form .file-upload label, #personal-data-form .file-upload label {
+  #signup-form .file-upload label, #personal-data-form .file-upload label,
+  #company-data-form .file-upload label, #funding-form .file-upload label {
     text-align: center; }
-  #signup-form .file-upload .pixel-input, #personal-data-form .file-upload .pixel-input {
+  #signup-form .file-upload .pixel-input, #personal-data-form .file-upload .pixel-input,
+  #company-data-form .file-upload .pixel-input, #funding-form .file-upload .pixel-input {
     height: 120px; }
-  #signup-form .file-upload img, #personal-data-form .file-upload img {
+  #signup-form .file-upload img, #personal-data-form .file-upload img,
+  #company-data-form .file-upload img, #funding-form .file-upload img {
     width: 40%;
     margin: 7% 30%; }
-  #signup-form .file-upload p, #personal-data-form .file-upload p {
+  #signup-form .file-upload p, #personal-data-form .file-upload p,
+  #company-data-form .file-upload p, #funding-form .file-upload p {
     margin: 0; }
-#signup-form #kyc-continue, #personal-data-form #kyc-continue {
+#signup-form #kyc-continue, #personal-data-form #kyc-continue,
+#company-data-form #kyc-continue, #funding-form #kyc-continue {
   width: 70%;
   margin-top: 10%; }
-  #signup-form #kyc-continue a, #personal-data-form #kyc-continue a {
+  #signup-form #kyc-continue a, #personal-data-form #kyc-continue a,
+  #company-data-form #kyc-continue a, #funding-form #kyc-continue a {
     font-family: 'EightBitWonder', monospace;
     font-size: 15px;
     text-align: center;
@@ -496,8 +570,8 @@ html, body {
     padding: 10px; }
 
 .continue-btn {
-  width: 90%;
-  margin: 5%; }
+  margin: 10% 5%;
+  width: 90%; }
   .continue-btn .pixel-input {
     padding: 0; }
   .continue-btn a {
