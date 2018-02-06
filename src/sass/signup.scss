@@ -153,7 +153,7 @@
     padding: 10px;
   }
 }
-#kyc-continue {
+#kyc-continue, #crypto-continue, #fiat-continue {
   @extend .red-btn;
   a {
     font-family: 'EightBitWonder', monospace;
