@@ -47,10 +47,6 @@
     width: 100%;
     text-align: center;
   }
-  .input-wrapper {
-    width: 100%;
-    margin: 25px 0px;
-  }
   .pixel-input {
     padding: 5px 30px;
   }
@@ -121,6 +117,20 @@
     text-align: left;
     color: #9c9b9b;
   }
+  input {
+    height: 50px;
+  }
+  #kyc-continue {
+    @extend .red-btn;
+    width: 70%;
+    margin-top: 10%;
+    a {
+      font-family: 'EightBitWonder', monospace;
+      font-size: 15px;
+      text-align: center;
+      padding: 15px;
+    }
+  }
 }
 //buttons
 #signup-button-crypto {
@@ -153,9 +163,16 @@
     padding: 10px;
   }
 }
-#kyc-continue, #crypto-continue, #fiat-continue {
+
+
+.continue-btn {
   @extend .red-btn;
-  a {
+  width: 90%;
+  margin: 5%;
+  .pixel-input {
+    padding: 0;
+  }
+ a {
     font-family: 'EightBitWonder', monospace;
     font-size: 15px;
     text-align: center;
@@ -164,10 +181,7 @@
 }
 
 // TODO: make this a class for consistent continue buttons
-#crypto-continue, #fiat-continue {
-  width: 70%;
-  margin: 10% 15%;
-}
+
 
 #signup-footer {
   overflow: auto;
