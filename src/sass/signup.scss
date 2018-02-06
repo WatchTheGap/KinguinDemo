@@ -33,6 +33,8 @@
   }
 }
 
+
+
 #crypto-form {
   height: 200px;
   width: 40%;
@@ -47,6 +49,49 @@
   }
   .pixel-input {
     padding: 5px 30px;
+  }
+  #BTC-select {
+    width: 50%;
+    border-right: none;
+    background-color: red;
+    &::after {
+      background-color: transparent;
+    }
+    .pixel-input {
+      padding: 0;
+      margin-right: -5px;
+      background-color: inherit;
+      height: 60px;
+      &::after {
+        background-color: transparent;
+      }
+      button {
+        height: 60px;
+        width: 100%;
+        background-color: inherit;
+      }
+    }
+  }
+  #ETH-select {
+    width: 50%;
+    background-color: blue;
+    &::before {
+      background-color: transparent;
+    }
+    .pixel-input {
+      padding: 0;
+      background-color: inherit;
+      height: 60px;
+      margin-left: -5px;
+      &::before {
+        background-color: transparent;
+      }
+      button {
+        height: 60px;
+        width: 100%;
+        background-color: inherit;
+      }
+    }
   }
 }
 
