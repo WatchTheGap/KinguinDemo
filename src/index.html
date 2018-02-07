@@ -718,6 +718,7 @@
         <section id='bank-info-body' class='modal-body signup-body'>
           <h3>bank transfer information</h3>
           <form id='bank-info-form' method='post'>
+            <label for='acct-num'>account number</label>
             <div class='input-wrapper bank-input'>
               <div class='pixel-input'>
                 <input id='acct-num' type='number' align='center' name='acct-num' placeholder='000.000.000'>
@@ -728,12 +729,37 @@
                 <a href="#">COPY</a>
               </div>
             </div>
+            <label for='reg-num'>registration number</label>
+            <div class='input-wrapper bank-input'>
+              <div class='pixel-input'>
+                <input id='reg-num' type='number' align='center' name='reg-num' placeholder='0000'>
+              </div>
+            </div>
+            <div class='input-wrapper copy-sm'>
+              <div class='pixel-input'>
+                <a href="#">COPY</a>
+              </div>
+            </div>
+            <label for='transfer-ref'>transfer reference (add this in the description)</label>
+            <div class='input-wrapper bank-input'>
+              <div class='pixel-input'>
+                <input id='transfer-ref' type='number' align='center' name='transfer-ref' placeholder='0000'>
+              </div>
+            </div>
+            <div class='input-wrapper copy-sm'>
+              <div class='pixel-input'>
+                <a href="#">COPY</a>
+              </div>
+            </div>
             <div id='bank-info-continue' class='input-wrapper continue-btn'>
               <div class='pixel-input'>
-              <a href="#">CONTINUE</a>
+              <a href="#">close window</a>
               </div>
             </div>
           </form>
+        </section>
+        <section class='modal-footer'>
+          <img id='progress-bar' src='img/Progress_Bar_4.png' alt='progress bar'>
         </section>
       </div>
     </div>
