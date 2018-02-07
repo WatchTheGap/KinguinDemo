@@ -15,6 +15,26 @@ html, body {
     position: absolute;
     background-repeat: no-repeat; }
 
+#stairs-top {
+  top: 197px;
+  left: 394px; }
+
+#stairs-mid {
+  top: 384px;
+  left: 399px; }
+
+#stairs-end {
+  top: 161px;
+  left: -359px; }
+
+#end-connector {
+  top: 415px;
+  left: 280px; }
+
+#info-stairs {
+  top: 296px;
+  left: 241px; }
+
 .hide {
   display: none; }
 
@@ -588,8 +608,8 @@ html, body {
   margin: 5% 15%; }
 
 #about-island {
-  top: 100px;
-  left: 100px; }
+  top: 250px;
+  left: 300px; }
 
 #bulb {
   background-image: url("img/Bulb.png");
@@ -669,8 +689,8 @@ html, body {
   left: -17px; }
 
 #landing-island {
-  top: 0px;
-  left: 800px; }
+  top: 250px;
+  left: 1000px; }
 
 #notify-btn {
   background-image: url("img/NotifyBtn_Default.png");
@@ -715,8 +735,8 @@ html, body {
   height: 392px; }
 
 #info-island {
-  top: 800px;
-  left: 200px; }
+  top: 961px;
+  left: 187px; }
 
 #market-block {
   top: 183px;
@@ -762,8 +782,8 @@ html, body {
   height: 182px; }
 
 #strategy-island {
-  top: 800px;
-  left: 800px; }
+  top: 799px;
+  left: 787px; }
 
 #strategy-a {
   top: 184px;
