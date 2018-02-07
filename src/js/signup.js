@@ -52,6 +52,5 @@
     $('#aml-eth-popup').toggleClass('hide');
     $('#aml-popup').toggleClass('hide');
   });
-// TODO: ADD BTC AML POPUP TRIGGER BASED ON PREVIOUS SELECTION
 
 }());

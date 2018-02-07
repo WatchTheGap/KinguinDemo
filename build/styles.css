@@ -449,22 +449,20 @@ html, body {
     text-align: center; }
   .currency-form .pixel-input {
     padding: 10px 30px; }
-  .currency-form #BTC-select button {
+  .currency-form #BTC-select {
     background-color: #d9d9d9;
     background-image: url("img/BTC1.png");
     background-repeat: no-repeat; }
-    .currency-form #BTC-select button:focus {
+    .currency-form #BTC-select:focus {
       background-color: #ef5e5e;
-      background-image: url("img/trees.png");
-      background-repeat: no-repeat; }
-  .currency-form #USD-select button {
+      background-image: url("img/trees.png"); }
+  .currency-form #USD-select {
     background-color: #d9d9d9;
     background-image: url("img/$.png");
     background-repeat: no-repeat; }
-    .currency-form #USD-select button:focus {
+    .currency-form #USD-select:focus {
       background-color: #ef5e5e;
-      background-image: url("img/trees.png");
-      background-repeat: no-repeat; }
+      background-image: url("img/trees.png"); }
   .currency-form .left-select {
     width: 50%;
     border-right: none; }
@@ -481,22 +479,20 @@ html, body {
         height: 60px;
         width: 100%;
         background-color: inherit; }
-  .currency-form #ETH-select button {
+  .currency-form #ETH-select {
     background-color: #d9d9d9;
     background-image: url("img/ETH.png");
     background-repeat: no-repeat; }
-    .currency-form #ETH-select button:focus {
+    .currency-form #ETH-select:focus {
       background-color: #ef5e5e;
-      background-image: url("img/trees.png");
-      background-repeat: no-repeat; }
-  .currency-form #EUR-select button {
+      background-image: url("img/trees.png"); }
+  .currency-form #EUR-select {
     background-color: #d9d9d9;
     background-image: url("img/euro.png");
     background-repeat: no-repeat; }
-    .currency-form #EUR-select button:focus {
+    .currency-form #EUR-select:focus {
       background-color: #ef5e5e;
-      background-image: url("img/trees.png");
-      background-repeat: no-repeat; }
+      background-image: url("img/trees.png"); }
   .currency-form .right-select {
     width: 50%; }
     .currency-form .right-select::before {
