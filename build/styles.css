@@ -275,15 +275,15 @@ html, body {
   #company-data-form #kyc-continue::after, #funding-form #kyc-continue::after, #signup-button-crypto::after, #signup-button-fiat::after, #investor-button-private::after, #investor-button-company::after, .continue-btn::after {
     border-bottom: 5px solid #f68888; }
 
-.blue-btn {
+.blue-btn, #bank-info-form .copy-sm {
   width: 70%;
   margin: 5% 15%;
   display: inline-block;
   background-color: #9ac4bf; }
-  .blue-btn .pixel-input {
+  .blue-btn .pixel-input, #bank-info-form .copy-sm .pixel-input {
     background-color: #9ac4bf;
     padding: 0px; }
-  .blue-btn a {
+  .blue-btn a, #bank-info-form .copy-sm a {
     box-sizing: border-box;
     font-family: 'EightBitWonder', monospace;
     font-size: 15px;
@@ -294,7 +294,7 @@ html, body {
     border-top: 5px solid #c8dfdc;
     display: block;
     padding: 15px; }
-  .blue-btn::before, .blue-btn::after {
+  .blue-btn::before, #bank-info-form .copy-sm::before, .blue-btn::after, #bank-info-form .copy-sm::after {
     border-bottom: 5px solid #c8dfdc; }
 
 .modal-body {
@@ -486,6 +486,28 @@ html, body {
   .currency-form .currency-amt {
     width: 90%;
     margin: 0 5%; }
+
+#bank-info-form {
+  margin: 3% 15%;
+  min-height: 200px; }
+  #bank-info-form .bank-input {
+    width: 70%;
+    float: left; }
+    #bank-info-form .bank-input .pixel-input {
+      height: 40px; }
+  #bank-info-form .copy-sm {
+    width: 25%;
+    float: right;
+    margin: 0; }
+    #bank-info-form .copy-sm a {
+      padding: 10px;
+      text-align: center; }
+  #bank-info-form input::placeholder {
+    font-family: 'EightBitWonder', monospace;
+    font-size: 15px;
+    text-align: left;
+    color: #9c9b9b;
+    padding: 10px 20px; }
 
 #signup-form #btc-fund-continue,
 #signup-form #eth-fund-continue, #personal-data-form #btc-fund-continue,

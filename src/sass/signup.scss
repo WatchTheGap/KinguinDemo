@@ -120,6 +120,35 @@
   }
 }
 
+#bank-info-form {
+  margin: 3% 15%;
+  min-height: 200px;
+  .bank-input {
+    width: 70%;
+    float: left;
+    .pixel-input {
+      height: 40px;
+    }
+  }
+  .copy-sm {
+    width: 25%;
+    float: right;
+    margin: 0;
+    @extend .blue-btn;
+    a{
+      padding: 10px;
+      text-align: center;
+    }
+  }
+  input::placeholder {
+    font-family: 'EightBitWonder', monospace;
+    font-size: 15px;
+    text-align: left;
+    color: #9c9b9b;
+    padding: 10px 20px;
+  }
+}
+
 #signup-form, #personal-data-form,
 #company-data-form, #funding-form {
   #btc-fund-continue,

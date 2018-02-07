@@ -70,7 +70,7 @@
 
   $('#crypto-continue').click(function () {
     $('#choose-crypto-popup').toggleClass('hide');
-    $('#kyc-popup').toggleClass('hide');
+    $('#aml-popup').toggleClass('hide');
   });
 
   $('#fiat-continue').click(function () {
@@ -94,12 +94,10 @@
   });
 
   $('#investor-private-continue').click(function () {
-    $('#aml-popup').toggleClass('hide');
     $('#investor-private-popup').toggleClass('hide');
   });
 
   $('#investor-company-continue').click(function () {
-    $('#aml-popup').toggleClass('hide');
     $('#investor-company-popup').toggleClass('hide');
   });
 
