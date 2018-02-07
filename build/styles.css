@@ -449,38 +449,66 @@ html, body {
     text-align: center; }
   .currency-form .pixel-input {
     padding: 10px 30px; }
-  .currency-form .active {
-    background-color: #ef5e5e; }
-  .currency-form .inactive {
-    background-color: #d9d9d9; }
-  .currency-form #BTC-select, .currency-form #USD-select {
+  .currency-form #BTC-select button {
+    background-color: #d9d9d9;
+    background-image: url("img/BTC1.png");
+    background-repeat: no-repeat; }
+    .currency-form #BTC-select button:focus {
+      background-color: #ef5e5e;
+      background-image: url("img/trees.png");
+      background-repeat: no-repeat; }
+  .currency-form #USD-select button {
+    background-color: #d9d9d9;
+    background-image: url("img/$.png");
+    background-repeat: no-repeat; }
+    .currency-form #USD-select button:focus {
+      background-color: #ef5e5e;
+      background-image: url("img/trees.png");
+      background-repeat: no-repeat; }
+  .currency-form .left-select {
     width: 50%;
     border-right: none; }
-    .currency-form #BTC-select::after, .currency-form #USD-select::after {
+    .currency-form .left-select::after {
       background-color: transparent; }
-    .currency-form #BTC-select .pixel-input, .currency-form #USD-select .pixel-input {
+    .currency-form .left-select .pixel-input {
       padding: 0;
       margin-right: -5px;
       background-color: inherit;
       height: 60px; }
-      .currency-form #BTC-select .pixel-input::after, .currency-form #USD-select .pixel-input::after {
+      .currency-form .left-select .pixel-input::after {
         background-color: transparent; }
-      .currency-form #BTC-select .pixel-input button, .currency-form #USD-select .pixel-input button {
+      .currency-form .left-select .pixel-input button {
         height: 60px;
         width: 100%;
         background-color: inherit; }
-  .currency-form #ETH-select, .currency-form #EUR-select {
+  .currency-form #ETH-select button {
+    background-color: #d9d9d9;
+    background-image: url("img/ETH.png");
+    background-repeat: no-repeat; }
+    .currency-form #ETH-select button:focus {
+      background-color: #ef5e5e;
+      background-image: url("img/trees.png");
+      background-repeat: no-repeat; }
+  .currency-form #EUR-select button {
+    background-color: #d9d9d9;
+    background-image: url("img/euro.png");
+    background-repeat: no-repeat; }
+    .currency-form #EUR-select button:focus {
+      background-color: #ef5e5e;
+      background-image: url("img/trees.png");
+      background-repeat: no-repeat; }
+  .currency-form .right-select {
     width: 50%; }
-    .currency-form #ETH-select::before, .currency-form #EUR-select::before {
+    .currency-form .right-select::before {
       background-color: transparent; }
-    .currency-form #ETH-select .pixel-input, .currency-form #EUR-select .pixel-input {
+    .currency-form .right-select .pixel-input {
       padding: 0;
       background-color: inherit;
       height: 60px;
       margin-left: -5px; }
-      .currency-form #ETH-select .pixel-input::before, .currency-form #EUR-select .pixel-input::before {
+      .currency-form .right-select .pixel-input::before {
         background-color: transparent; }
-      .currency-form #ETH-select .pixel-input button, .currency-form #EUR-select .pixel-input button {
+      .currency-form .right-select .pixel-input button {
         height: 60px;
         width: 100%;
         background-color: inherit; }

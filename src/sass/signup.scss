@@ -65,15 +65,33 @@
     padding: 10px 30px;
   }
 
-  .active {
-    background-color: #ef5e5e;
-
+  #BTC-select {
+    button {
+      background-color: #d9d9d9;
+      background-image: url('img/BTC1.png');
+      background-repeat: no-repeat;
+      &:focus {
+        background-color: #ef5e5e;
+        background-image: url('img/trees.png');
+        background-repeat: no-repeat;
+      }
+    }
   }
-  .inactive {
-    background-color: #d9d9d9;
+
+  #USD-select {
+    button {
+      background-color: #d9d9d9;
+      background-image: url('img/$.png');
+      background-repeat: no-repeat;
+      &:focus {
+        background-color: #ef5e5e;
+        background-image: url('img/trees.png');
+        background-repeat: no-repeat;
+      }
+    }
   }
 
-  #BTC-select, #USD-select {
+  .left-select {
     width: 50%;
     border-right: none;
     &::after {
@@ -94,7 +112,32 @@
       }
     }
   }
-  #ETH-select, #EUR-select {
+  #ETH-select {
+    button {
+      background-color: #d9d9d9;
+      background-image: url('img/ETH.png');
+      background-repeat: no-repeat;
+      &:focus {
+        background-color: #ef5e5e;
+        background-image: url('img/trees.png');
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  #EUR-select {
+    button {
+      background-color: #d9d9d9;
+      background-image: url('img/euro.png');
+      background-repeat: no-repeat;
+      &:focus {
+        background-color: #ef5e5e;
+        background-image: url('img/trees.png');
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  .right-select {
     width: 50%;
     &::before {
       background-color: transparent;
