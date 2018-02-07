@@ -508,6 +508,15 @@ html, body {
     float: left; }
     #bank-info-form .bank-input .pixel-input {
       height: 40px; }
+      #bank-info-form .bank-input .pixel-input input {
+        height: 40px; }
+        #bank-info-form .bank-input .pixel-input input::placeholder {
+          font-family: 'EightBitWonder', monospace;
+          font-size: 15px;
+          text-align: left;
+          color: #9c9b9b;
+          padding: 20px;
+          height: 40px; }
   #bank-info-form .copy-sm {
     width: 25%;
     float: right;
@@ -515,12 +524,6 @@ html, body {
     #bank-info-form .copy-sm a {
       padding: 10px;
       text-align: center; }
-  #bank-info-form input::placeholder {
-    font-family: 'EightBitWonder', monospace;
-    font-size: 15px;
-    text-align: left;
-    color: #9c9b9b;
-    padding: 10px 20px; }
 
 #signup-form #btc-fund-continue,
 #signup-form #eth-fund-continue, #personal-data-form #btc-fund-continue,

@@ -144,6 +144,17 @@
     float: left;
     .pixel-input {
       height: 40px;
+      input {
+        height: 40px;
+        &::placeholder {
+          font-family: 'EightBitWonder', monospace;
+          font-size: 15px;
+          text-align: left;
+          color: #9c9b9b;
+          padding: 20px;
+          height: 40px;
+        }
+      }
     }
   }
   .copy-sm {
@@ -156,13 +167,7 @@
       text-align: center;
     }
   }
-  input::placeholder {
-    font-family: 'EightBitWonder', monospace;
-    font-size: 15px;
-    text-align: left;
-    color: #9c9b9b;
-    padding: 10px 20px;
-  }
+
 }
 
 #signup-form, #personal-data-form,
