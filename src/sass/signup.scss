@@ -73,23 +73,11 @@ input:active, button:active {
   }
 
   #BTC-select {
-    background-color: #d9d9d9;
-    background-image: url('img/trees.png');
-    background-repeat: no-repeat;
-    // &:focus {
-      // background-color: #ef5e5e;
-      // background-image: url('img/trees.png');
-    // }
+    background-image: url('img/BTC2.png');
   }
 
   #USD-select {
-    background-color: #d9d9d9;
-    background-image: url('img/$.png');
-    background-repeat: no-repeat;
-    &:focus {
-      background-color: #ef5e5e;
-      background-image: url('img/trees.png');
-    }
+    background-image: url('img/USD2.png');
   }
 
   .left-select {
@@ -98,6 +86,7 @@ input:active, button:active {
     &::after {
       background-color: transparent;
     }
+    background-color: #d9d9d9;
     .pixel-input {
       padding: 0;
       margin-right: -5px;
@@ -110,26 +99,17 @@ input:active, button:active {
         height: 60px;
         width: 100%;
         background-color: inherit;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30px;
       }
     }
   }
   #ETH-select {
-    // background-color: #d9d9d9;
-    // background-image: url('img/trees.png');
-    background-repeat: no-repeat;
-    // &:focus {
-    //   background-color: #ef5e5e;
-    //   background-image: url('img/trees.png');
-    // }
+    background-image: url('img/ETH2.png');
   }
   #EUR-select {
-    background-color: #d9d9d9;
-    background-image: url('img/euro.png');
-    background-repeat: no-repeat;
-    &:focus {
-      background-color: #ef5e5e;
-      background-image: url('img/trees.png');
-    }
+    background-image: url('img/EUR2.png');
   }
 
   .right-select {
@@ -137,6 +117,7 @@ input:active, button:active {
     &::before {
       background-color: transparent;
     }
+    background-color: #d9d9d9;
     .pixel-input {
       padding: 0;
       background-color: inherit;
@@ -149,9 +130,32 @@ input:active, button:active {
         height: 60px;
         width: 100%;
         background-color: inherit;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30px;
       }
     }
   }
+
+  .selected  {
+    background-color: #ef5e5e;
+    button {
+      background-color: #ef5e5e;
+    }
+    #BTC-select {
+      background-image: url('img/BTC1.png');
+    }
+    #ETH-select {
+      background-image: url('img/ETH1.png');
+    }
+    #USD-select {
+      background-image: url('img/USD1.png');
+    }
+    #EUR-select {
+      background-image: url('img/EUR1.png');
+    }
+  }
+
   .currency-amt {
     width: 90%;
     margin: 0 5%;
