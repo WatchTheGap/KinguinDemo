@@ -67,12 +67,12 @@
 
   #BTC-select {
     background-color: #d9d9d9;
-    background-image: url('img/BTC1.png');
+    background-image: url('img/trees.png');
     background-repeat: no-repeat;
-    &:focus {
-      background-color: #ef5e5e;
-      background-image: url('img/trees.png');
-    }
+    // &:focus {
+      // background-color: #ef5e5e;
+      // background-image: url('img/trees.png');
+    // }
   }
 
   #USD-select {
@@ -107,13 +107,13 @@
     }
   }
   #ETH-select {
-    background-color: #d9d9d9;
-    background-image: url('img/ETH.png');
+    // background-color: #d9d9d9;
+    // background-image: url('img/trees.png');
     background-repeat: no-repeat;
-    &:focus {
-      background-color: #ef5e5e;
-      background-image: url('img/trees.png');
-    }
+    // &:focus {
+    //   background-color: #ef5e5e;
+    //   background-image: url('img/trees.png');
+    // }
   }
   #EUR-select {
     background-color: #d9d9d9;
