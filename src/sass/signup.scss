@@ -1,3 +1,10 @@
+input, button,
+input:focus, button:focus,
+input:active, button:active {
+  outline: none;
+  border: none;
+}
+
 .signup-corners::before, .signup-corners::after{
   border-bottom: 10px solid #c8dfdc;
 }
