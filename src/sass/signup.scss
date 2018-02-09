@@ -159,6 +159,13 @@ input:active, button:active {
   .currency-amt {
     width: 90%;
     margin: 0 5%;
+    input {
+      text-align: left;
+      &::placeholder {
+        color: black;
+        text-align: right;
+      }
+    }
   }
 }
 

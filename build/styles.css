@@ -517,6 +517,11 @@ input:active, button:active {
   .currency-form .currency-amt {
     width: 90%;
     margin: 0 5%; }
+    .currency-form .currency-amt input {
+      text-align: left; }
+      .currency-form .currency-amt input::placeholder {
+        color: black;
+        text-align: right; }
 
 #bank-info-form {
   margin: 5% 15%;
