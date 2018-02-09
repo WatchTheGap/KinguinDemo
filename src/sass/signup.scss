@@ -1,6 +1,6 @@
-input, button,
-input:focus, button:focus,
-input:active, button:active {
+input, button, select,
+input:focus, button:focus, select:focus,
+input:active, button:active, select:active {
   outline: none;
   border: none;
 }
