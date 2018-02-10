@@ -254,6 +254,15 @@ input:active, button:active, select:active {
   input {
     height: 50px;
   }
+  #ident-img, #address-doc {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    opacity: 0;
+    background-color: green;
+    height: 120px;
+    width: 200px;
+  }
   select {
     height: 50px;
     background: transparent;
@@ -360,8 +369,6 @@ input:active, button:active, select:active {
      }
   }
 }
-
-
 
 // TODO: make this a class for consistent continue buttons
 
