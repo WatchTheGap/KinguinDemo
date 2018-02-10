@@ -3,6 +3,8 @@
 
     let currencyType;
     let donationAmt;
+    let name;
+    let userEmail;
 
     $('#BTC-select').click(function () {
       currencyType = 'BTC';
@@ -40,12 +42,30 @@
     });
 
 
-    $('#crypto-continue').click(function () {
-      $('input[name=donation-amt]').val(function () {
-        localStorage.setItem('donationAmt', this.value);
-        console.log(localStorage);
-      });
 
+
+    $('#choose-fiat-popup input').keypress(function (e) {
+      if (e.which == 13) {
+        $('#fiat-continue').click();
+        console.log(localStorage);
+      }
+    });
+
+
+
+    $('#aml-popup input').keypress(function (e) {
+      if (e.which == 13) {
+        $('#aml-continue').click();
+        console.log(localStorage);
+      }
+    });
+
+
+    $('#kyc-popup input').keypress(function (e) {
+      if (e.which == 13) {
+        $('#kyc-continue').click();
+        console.log(localStorage);
+      }
     });
 
 }());
@@ -121,16 +141,28 @@
   });
 
   $('#crypto-continue').click(function () {
+    $('input[name=crypto-amt]').val(function () {
+      localStorage.setItem('donationAmt', this.value);
+    });
     $('#choose-crypto-popup').toggleClass('hide');
     $('#aml-popup').toggleClass('hide');
   });
 
   $('#fiat-continue').click(function () {
+    $('input[name=donation-amt]').val(function () {
+      localStorage.setItem('donationAmt', this.value);
+    });
     $('#choose-fiat-popup').toggleClass('hide');
     $('#kyc-popup').toggleClass('hide');
   });
 
   $('#kyc-continue').click(function () {
+    $('input[name=name-kyc]').val(function () {
+      localStorage.setItem('name', this.value);
+    });
+    $('input[name=user-email-kyc]').val(function () {
+      localStorage.setItem('userEmail', this.value);
+    });
     $('#investor-popup').toggleClass('hide');
     $('#kyc-popup').toggleClass('hide');
   });
@@ -154,6 +186,12 @@
   });
 
   $('#aml-continue').click(function () {
+    $('input[name=name]').val(function () {
+      localStorage.setItem('name', this.value);
+    });
+    $('input[name=user-email]').val(function () {
+      localStorage.setItem('userEmail', this.value);
+    });
     $('#aml-eth-popup').toggleClass('hide');
     $('#aml-popup').toggleClass('hide');
   });
