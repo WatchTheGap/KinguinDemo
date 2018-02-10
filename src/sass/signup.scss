@@ -349,13 +349,15 @@ input:active, button:active, select:active {
   margin: 10% 5%;
   width: 90%;
   .pixel-input {
+    height: 52px;
     padding: 0;
-  }
- a {
-    font-family: 'EightBitWonder', monospace;
-    font-size: 15px;
-    text-align: center;
-    padding: 15px;
+    input {
+       font-family: 'EightBitWonder', monospace;
+       font-size: 15px;
+       text-align: center;
+       padding: 0;
+       height: inherit;
+     }
   }
 }
 

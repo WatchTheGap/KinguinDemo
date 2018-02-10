@@ -266,7 +266,7 @@
     background-color: #ef5e5e;
     padding: 0px;
   }
-  a {
+  a, input {
     box-sizing: border-box;
     font-family: '04b_03', monospace;
     text-transform: uppercase;
@@ -277,6 +277,7 @@
     border-top: 5px solid #f68888;
     display: block;
     padding: 30px 10px;
+    background-color: inherit;
   }
   h3 {
     margin: 10px;

@@ -253,7 +253,8 @@ html, body {
     background-color: #ef5e5e;
     padding: 0px; }
   .red-btn a, #send-btn a, #signup-form #kyc-continue a, #personal-data-form #kyc-continue a,
-  #company-data-form #kyc-continue a, #funding-form #kyc-continue a, #signup-button-crypto a, #signup-button-fiat a, #investor-button-private a, #investor-button-company a, .continue-btn a {
+  #company-data-form #kyc-continue a, #funding-form #kyc-continue a, #signup-button-crypto a, #signup-button-fiat a, #investor-button-private a, #investor-button-company a, .continue-btn a, .red-btn input, #send-btn input, #signup-form #kyc-continue input, #personal-data-form #kyc-continue input,
+  #company-data-form #kyc-continue input, #funding-form #kyc-continue input, #signup-button-crypto input, #signup-button-fiat input, #investor-button-private input, #investor-button-company input, .continue-btn input {
     box-sizing: border-box;
     font-family: '04b_03', monospace;
     text-transform: uppercase;
@@ -263,7 +264,8 @@ html, body {
     color: white;
     border-top: 5px solid #f68888;
     display: block;
-    padding: 30px 10px; }
+    padding: 30px 10px;
+    background-color: inherit; }
   .red-btn h3, #send-btn h3, #signup-form #kyc-continue h3, #personal-data-form #kyc-continue h3,
   #company-data-form #kyc-continue h3, #funding-form #kyc-continue h3, #signup-button-crypto h3, #signup-button-fiat h3, #investor-button-private h3, #investor-button-company h3, .continue-btn h3 {
     margin: 10px; }
@@ -673,12 +675,14 @@ input:active, button:active, select:active {
   margin: 10% 5%;
   width: 90%; }
   .continue-btn .pixel-input {
+    height: 52px;
     padding: 0; }
-  .continue-btn a {
-    font-family: 'EightBitWonder', monospace;
-    font-size: 15px;
-    text-align: center;
-    padding: 15px; }
+    .continue-btn .pixel-input input {
+      font-family: 'EightBitWonder', monospace;
+      font-size: 15px;
+      text-align: center;
+      padding: 0;
+      height: inherit; }
 
 #signup-footer {
   overflow: auto; }

@@ -43,29 +43,29 @@
 
 
 
-
-    $('#choose-fiat-popup input').keypress(function (e) {
-      if (e.which == 13) {
-        $('#fiat-continue').click();
-        console.log(localStorage);
-      }
-    });
-
-
-
-    $('#aml-popup input').keypress(function (e) {
-      if (e.which == 13) {
-        $('#aml-continue').click();
-        console.log(localStorage);
-      }
-    });
-
-
-    $('#kyc-popup input').keypress(function (e) {
-      if (e.which == 13) {
-        $('#kyc-continue').click();
-        console.log(localStorage);
-      }
-    });
+    //
+    // $('#choose-fiat-popup input').keypress(function (e) {
+    //   if (e.which == 13) {
+    //     $('#fiat-continue').click();
+    //     console.log(localStorage);
+    //   }
+    // });
+    //
+    //
+    //
+    // $('#aml-popup input').keypress(function (e) {
+    //   if (e.which == 13) {
+    //     $('#aml-continue').click();
+    //     console.log(localStorage);
+    //   }
+    // });
+    //
+    //
+    // $('#kyc-popup input').keypress(function (e) {
+    //   if (e.which == 13) {
+    //     $('#kyc-continue').click();
+    //     console.log(localStorage);
+    //   }
+    // });
 
 }());
