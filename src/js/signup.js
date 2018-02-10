@@ -21,6 +21,7 @@
     });
     $('#choose-crypto-popup').toggleClass('hide');
     $('#aml-popup').toggleClass('hide');
+    console.log(localStorage);
   });
 
   $('#fiat-continue').click(function () {
@@ -60,7 +61,8 @@
     $('#investor-company-popup').toggleClass('hide');
   });
 
-  $('#aml-continue').click(function () {
+  $('#aml-continue').click(function (e) {
+    e.preventDefault();
     $('input[name=name]').val(function () {
       localStorage.setItem('name', this.value);
     });

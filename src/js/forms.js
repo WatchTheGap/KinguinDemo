@@ -1,6 +1,10 @@
 (function() {
   'use strict';
 
+  $('form').submit(function (e) {
+    e.preventDefault();
+  }); 
+
     let currencyType;
     let donationAmt;
     let name;
