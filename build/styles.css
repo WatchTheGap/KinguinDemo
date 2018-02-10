@@ -518,10 +518,17 @@ input:active, button:active, select:active {
     width: 90%;
     margin: 0 5%; }
     .currency-form .currency-amt input {
-      text-align: left; }
+      text-align: left;
+      width: 70%; }
       .currency-form .currency-amt input::placeholder {
         color: black;
-        text-align: right; }
+        text-align: left; }
+  .currency-form .currency-placeholder {
+    margin: 0;
+    text-align: right;
+    float: right;
+    width: 20%;
+    padding-top: 5px; }
 
 #bank-info-form {
   margin: 5% 15%;

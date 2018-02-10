@@ -161,11 +161,20 @@ input:active, button:active, select:active {
     margin: 0 5%;
     input {
       text-align: left;
+      width: 70%;
       &::placeholder {
         color: black;
-        text-align: right;
+        text-align: left;
       }
     }
+  }
+
+  .currency-placeholder {
+    margin: 0;
+    text-align: right;
+    float: right;
+    width: 20%;
+    padding-top: 5px;
   }
 }
 

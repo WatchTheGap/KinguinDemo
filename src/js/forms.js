@@ -9,7 +9,7 @@
       console.log(localStorage);
       $('.left-select').addClass('selected')
         .siblings('.right-select').removeClass('selected');
-      $('.currency-amt').find('input').attr('placeholder', 'BTC');
+      $('.currency-placeholder').text('BTC');
     });
 
     $('#ETH-select').click(function () {
@@ -18,7 +18,7 @@
       console.log(localStorage);
       $('.right-select').addClass('selected')
       .siblings('.left-select').removeClass('selected');
-      $('.currency-amt').find('input').attr('placeholder', 'ETH');
+      $('.currency-placeholder').text('ETH');
 
     });
 
@@ -28,7 +28,7 @@
       console.log(localStorage);
       $('.left-select').addClass('selected')
       .siblings('.right-select').removeClass('selected');
-      $('.currency-amt').find('input').attr('placeholder', 'USD');
+      $('.currency-placeholder').text('USD');
 
     });
 
@@ -38,7 +38,7 @@
       console.log(localStorage);
       $('.right-select').addClass('selected')
         .siblings('.left-select').removeClass('selected');
-      $('.currency-amt').find('input').attr('placeholder', 'EUR');
+        $('.currency-placeholder').text('EUR');
 
     });
 
