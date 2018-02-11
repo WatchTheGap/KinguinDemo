@@ -39,7 +39,7 @@ html, body {
   display: none; }
 
 .popup-outer-wrapper {
-  margin: 5% 35%;
+  margin: 5% 30%;
   min-width: 700px;
   width: 30%;
   height: auto;
@@ -318,11 +318,14 @@ html, body {
   border-radius: 50%;
   border: 5px solid transparent;
   box-sizing: border-box;
-  margin: 15px 30px;
-  padding: 2px; }
+  padding: 2px;
+  flex: 1; }
 
 .avatar-row {
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
 
 .dates-row a {
   display: inline;

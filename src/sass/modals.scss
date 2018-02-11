@@ -5,9 +5,9 @@
 //************************************
 
 .popup-outer-wrapper{
-  margin: 5% 35%; // TODO: CHANGE THIS
-  min-width: 700px; // TODO: CHANGE THIS
-  width: 30%; // TODO: CHANGE THIS
+  margin: 5% 30%; // TODO: CHANGE THIS
+  min-width: 700px;
+  width: 40%; // TODO: CHANGE THIS
   height: auto;
   float: left;
   border-left: 10px solid black;
@@ -347,12 +347,14 @@
   border-radius: 50%;
   border: 5px solid transparent;
   box-sizing: border-box;
-  margin: 15px 30px;
   padding: 2px;
-}
+  flex: 1;}
 
 .avatar-row {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .dates-row {
