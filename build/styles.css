@@ -645,6 +645,7 @@ input:active, button:active, select:active {
 #signup-form #ident-img, #signup-form #address-doc, #personal-data-form #ident-img, #personal-data-form #address-doc,
 #company-data-form #ident-img,
 #company-data-form #address-doc, #funding-form #ident-img, #funding-form #address-doc {
+  cursor: pointer;
   position: absolute;
   top: -5px;
   left: 0;
@@ -654,6 +655,7 @@ input:active, button:active, select:active {
   width: 200px; }
 #signup-form select, #personal-data-form select,
 #company-data-form select, #funding-form select {
+  cursor: pointer;
   height: 50px;
   background: transparent;
   border: none;
