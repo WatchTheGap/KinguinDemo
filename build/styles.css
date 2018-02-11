@@ -16,8 +16,12 @@ html, body {
     background-repeat: no-repeat; }
 
 #stairs-top {
-  top: 197px;
+  top: 277px;
   left: 394px; }
+
+#stairs-top-2 {
+  top: 345px;
+  left: 95px; }
 
 #stairs-mid {
   top: 384px;
@@ -41,7 +45,7 @@ html, body {
 .popup-outer-wrapper {
   margin: 5% 30%;
   min-width: 700px;
-  width: 30%;
+  width: 40%;
   height: auto;
   float: left;
   border-left: 10px solid black;
