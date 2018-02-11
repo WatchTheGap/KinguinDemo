@@ -39,6 +39,22 @@ html, body {
   top: 296px;
   left: 241px; }
 
+#cloud1 {
+  top: -85px;
+  left: -75px; }
+
+#cloud2 {
+  top: 476px;
+  left: -147px; }
+
+#cloud3 {
+  top: 315px;
+  left: 584px; }
+
+#cloud4 {
+  top: 416px;
+  left: 172px; }
+
 .hide {
   display: none; }
 
