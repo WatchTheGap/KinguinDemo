@@ -48,6 +48,9 @@ input:active, button:active, select:active {
     font-family: 'EightBitWonder', monospace;
     font-size: 20px;
   }
+  button {
+    cursor: pointer;
+  }
 
 }
 
@@ -310,7 +313,7 @@ input:active, button:active, select:active {
     @extend .red-btn;
     width: 70%;
     margin-top: 10%;
-    a {
+    a, input, input:active {
       font-family: 'EightBitWonder', monospace;
       font-size: 15px;
       text-align: center;
