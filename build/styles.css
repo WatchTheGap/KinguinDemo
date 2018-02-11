@@ -55,6 +55,19 @@ html, body {
   top: 416px;
   left: 172px; }
 
+#tiny-cloud {
+  top: 0;
+  left: 0;
+  height: 111px;
+  width: auto; }
+
+#big-cloud {
+  top: 0;
+  left: 0px;
+  opacity: .5;
+  height: 800px;
+  width: auto; }
+
 .hide {
   display: none; }
 
