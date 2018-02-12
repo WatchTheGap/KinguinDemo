@@ -136,6 +136,9 @@ html, body {
 #tokens-popup.popup-outer-wrapper .popup-inner-wrapper::after {
   border-top: 10px solid #1b8899; }
 
+#market-popup::before, #market-popup::after {
+  border-bottom: 10px solid #c7f8bc; }
+
 .input-wrapper {
   border-left: 5px solid black;
   border-right: 5px solid black;
@@ -198,7 +201,8 @@ html, body {
   .modal-header h1 {
     font-family: 'EightBitWonder', monospace;
     color: white;
-    text-align: center; }
+    text-align: center;
+    font-size: 34px; }
 
 #close-x {
   position: absolute;
@@ -235,11 +239,27 @@ html, body {
   background-color: #f2ac59;
   border-top: 10px solid #f8d181; }
 
+#market-header {
+  background-color: #a5d19b;
+  border-top: 10px solid #c7f8bc; }
+
 #team-body, #advisors-body {
   border-bottom: 10px solid #b5b5b5;
   margin-bottom: 10px;
   margin-left: -10px;
   margin-right: -10px; }
+
+#market-body {
+  text-align: center; }
+  #market-body img {
+    margin: 5%; }
+  #market-body p {
+    font-size: 14px;
+    margin: 5px;
+    line-height: 20px; }
+  #market-body h3 {
+    font-size: 22px;
+    margin: 0 0 3% 0; }
 
 #company-body img {
   margin: 0 5%;
@@ -385,6 +405,9 @@ html, body {
   background-color: white;
   min-height: 200px;
   border-bottom: 10px solid #b5b5b5; }
+
+#market-footer {
+  min-height: 50px; }
 
 .more-info-text {
   background-color: #e0e0e0;

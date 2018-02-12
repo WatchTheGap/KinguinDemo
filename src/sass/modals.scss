@@ -77,6 +77,10 @@
   border-top: 10px solid #1b8899;
 }
 
+#market-popup::before, #market-popup::after {
+  border-bottom: 10px solid #c7f8bc; //check for alt color
+
+}
 //************************************
 
 .input-wrapper {
@@ -153,6 +157,7 @@
     font-family: 'EightBitWonder', monospace;
     color: white;
     text-align: center;
+    font-size: 34px;
   }
   padding: 20px;
   margin-left: -10px;
@@ -204,12 +209,33 @@
   border-top: 10px solid #f8d181;
 }
 
+#market-header {
+  background-color: #a5d19b;
+  border-top: 10px solid #c7f8bc; //check for alt color
+}
+
 
 #team-body, #advisors-body {
   border-bottom: 10px solid #b5b5b5;
   margin-bottom: 10px;
   margin-left: -10px;
   margin-right: -10px;
+}
+
+#market-body {
+  text-align: center;
+  img {
+    margin: 5%;
+  }
+  p {
+    font-size: 14px;
+    margin: 5px;
+    line-height: 20px;
+  }
+  h3 {
+    font-size: 22px;
+    margin: 0 0 3% 0;;
+  }
 }
 
 #company-body img {
@@ -399,6 +425,10 @@
   min-height: 200px;
   border-bottom: 10px solid #b5b5b5;
   // TODO: Use darken/lighten for bottom border shadow? Browser compatibility?
+}
+
+#market-footer {
+  min-height: 50px;
 }
 
 .more-info-text {
