@@ -137,7 +137,7 @@ html, body {
   border-top: 10px solid #1b8899; }
 
 #market-popup::before, #market-popup::after {
-  border-bottom: 10px solid #c7f8bc; }
+  border-bottom: 10px solid #c8e8c1; }
 
 .input-wrapper {
   border-left: 5px solid black;
@@ -241,7 +241,11 @@ html, body {
 
 #market-header {
   background-color: #a5d19b;
-  border-top: 10px solid #c7f8bc; }
+  border-top: 10px solid #c8e8c1; }
+
+#problem-solution-header {
+  padding: 0;
+  height: 50px; }
 
 #team-body, #advisors-body {
   border-bottom: 10px solid #b5b5b5;
@@ -295,6 +299,35 @@ html, body {
       font-family: 'EightBitWonder', monospace;
       font-size: 15px;
       text-align: center; }
+
+#problem-solution-body {
+  height: auto;
+  text-align: center; }
+  #problem-solution-body h1 {
+    font-family: 'EightBitWonder', monospace;
+    color: white;
+    font-size: 22px;
+    padding: 35px;
+    margin: 0 -30px;
+    position: relative; }
+  #problem-solution-body #problem-title {
+    background-color: #c82e3d;
+    margin-top: 10%; }
+    #problem-solution-body #problem-title span {
+      border: 15px solid transparent;
+      border-bottom: 15px solid #c82e3d;
+      position: absolute;
+      top: -30px;
+      left: 320px; }
+  #problem-solution-body #solution-title {
+    background-color: #89cf79;
+    margin-bottom: 10%; }
+    #problem-solution-body #solution-title span {
+      border: 15px solid transparent;
+      border-top: 15px solid #89cf79;
+      position: absolute;
+      bottom: -30px;
+      left: 320px; }
 
 .red-btn, #send-btn, #signup-form #kyc-continue, #personal-data-form #kyc-continue,
 #company-data-form #kyc-continue, #funding-form #kyc-continue, #signup-button-crypto, #signup-button-fiat, #investor-button-private, #investor-button-company, .continue-btn {
@@ -462,6 +495,9 @@ html, body {
     color: #164f68; }
   #phase-2 h2 {
     font-size: 30px; }
+
+#problem-solution-footer {
+  min-height: 40px; }
 
 input, button, select,
 input:focus, button:focus, select:focus,

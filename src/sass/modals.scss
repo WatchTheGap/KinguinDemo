@@ -78,7 +78,7 @@
 }
 
 #market-popup::before, #market-popup::after {
-  border-bottom: 10px solid #c7f8bc; //check for alt color
+  border-bottom: 10px solid #c8e8c1; //check for alt color
 
 }
 //************************************
@@ -211,7 +211,12 @@
 
 #market-header {
   background-color: #a5d19b;
-  border-top: 10px solid #c7f8bc; //check for alt color
+  border-top: 10px solid #c8e8c1; //check for alt color
+}
+
+#problem-solution-header {
+padding: 0;
+height: 50px;
 }
 
 
@@ -281,8 +286,43 @@
       text-align: center;
     }
   }
-
 }
+
+#problem-solution-body {
+  height: auto;
+  text-align: center;
+  h1{
+    font-family: 'EightBitWonder', monospace;
+    color: white;
+    font-size: 22px;
+    padding: 35px;
+    margin: 0 -30px;
+    position: relative;
+  }
+  #problem-title {
+    background-color: #c82e3d;
+    margin-top: 10%;
+    span {
+      border: 15px solid transparent;
+      border-bottom: 15px solid #c82e3d;
+      position: absolute;
+      top: -30px;
+      left: 320px;
+    }
+  }
+  #solution-title {
+    background-color: #89cf79;
+    margin-bottom: 10%;
+    span {
+      border: 15px solid transparent;
+      border-top: 15px solid #89cf79;
+      position: absolute;
+      bottom: -30px;
+      left: 320px;
+    }
+  }
+}
+
 
 .red-btn {
   width: 40%;
@@ -502,4 +542,8 @@
     font-size: 30px;
   }
 
+}
+
+#problem-solution-footer {
+  min-height: 40px;
 }
