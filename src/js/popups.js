@@ -41,7 +41,9 @@
   });
 
 // *** Strategy Island ***
-
+$('#problem-solution').click(function () {
+  $('#problem-solution-popup').toggleClass('hide');
+});
 
 // *** Basic ***
   $('.close-popup').click(function() {

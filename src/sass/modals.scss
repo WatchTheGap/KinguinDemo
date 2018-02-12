@@ -79,7 +79,15 @@
 
 #market-popup::before, #market-popup::after {
   border-bottom: 10px solid #c8e8c1; //check for alt color
+}
 
+#distribution-popup::before, #distribution-popup::after {
+  border-bottom: 10px solid #edd191;
+}
+
+#distribution-popup {
+  min-width: 900px;
+  text-align: center;
 }
 //************************************
 
@@ -219,6 +227,10 @@ padding: 0;
 height: 50px;
 }
 
+#distribution-header {
+  background-color: #dfac64;
+  border-top: 10px solid #edd191;
+}
 
 #team-body, #advisors-body {
   border-bottom: 10px solid #b5b5b5;
@@ -323,6 +335,12 @@ height: 50px;
   }
 }
 
+#distribution-body {
+  padding-top: 0;
+  h2 {
+    margin-top: 10%;
+  }
+}
 
 .red-btn {
   width: 40%;
@@ -544,6 +562,7 @@ height: 50px;
 
 }
 
-#problem-solution-footer {
+#problem-solution-footer,
+#distribution-footer {
   min-height: 40px;
 }
