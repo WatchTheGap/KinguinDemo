@@ -2,6 +2,9 @@
   @extend .islands;
   top: 101px;
   left: 859px;
+  div {
+    cursor: pointer;
+  }
 }
 
 #notify-btn {
@@ -35,15 +38,14 @@
   height: 59px;
 }
 
-#info-panel {
+.info-panel {
   background-image: url('img/Info.png');
   top: 295px;
   left: 244px;
   width: 195px;
   height: 284px;
 }
-
-#info-panel:hover {
+.info-clicked {
   background-image: url('img/Info_hover.png');
   top: 317px;
   left: 200px;

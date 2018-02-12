@@ -3,6 +3,7 @@
 
   $('#go-btn').click(function () {
     $('#signup-popup').toggleClass('hide');
+    $('#islands').addClass('blur');
   });
 
   $('#signup-button-crypto').click(function () {
@@ -55,10 +56,12 @@
 
   $('#investor-private-continue').click(function () {
     $('#investor-private-popup').toggleClass('hide');
+    $('#islands').removeClass('blur');
   });
 
   $('#investor-company-continue').click(function () {
     $('#investor-company-popup').toggleClass('hide');
+    $('#islands').removeClass('blur');
   });
 
   $('#aml-continue').click(function (e) {

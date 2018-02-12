@@ -2,6 +2,9 @@
   @extend .islands;
   top: 799px;
   left: 787px;
+  div {
+    cursor: pointer;
+  }
 }
 
 #strategy-a {

@@ -71,6 +71,9 @@ html, body {
 .hide {
   display: none; }
 
+.blur {
+  filter: blur(5px); }
+
 .popup-outer-wrapper {
   margin: 5% 30%;
   min-width: 700px;
@@ -826,6 +829,8 @@ input:active, button:active, select:active {
 #about-island {
   top: 250px;
   left: 300px; }
+  #about-island div {
+    cursor: pointer; }
 
 #bulb {
   background-image: url("img/Bulb.png");
@@ -907,6 +912,8 @@ input:active, button:active, select:active {
 #landing-island {
   top: 101px;
   left: 859px; }
+  #landing-island div {
+    cursor: pointer; }
 
 #notify-btn {
   background-image: url("img/NotifyBtn_Default.png");
@@ -936,14 +943,14 @@ input:active, button:active, select:active {
   width: 82px;
   height: 59px; }
 
-#info-panel {
+.info-panel {
   background-image: url("img/Info.png");
   top: 295px;
   left: 244px;
   width: 195px;
   height: 284px; }
 
-#info-panel:hover {
+.info-clicked {
   background-image: url("img/Info_hover.png");
   top: 317px;
   left: 200px;
@@ -953,6 +960,8 @@ input:active, button:active, select:active {
 #info-island {
   top: 961px;
   left: 187px; }
+  #info-island div {
+    cursor: pointer; }
 
 #market-block {
   top: 183px;
@@ -1000,6 +1009,8 @@ input:active, button:active, select:active {
 #strategy-island {
   top: 799px;
   left: 787px; }
+  #strategy-island div {
+    cursor: pointer; }
 
 #strategy-a {
   top: 184px;
