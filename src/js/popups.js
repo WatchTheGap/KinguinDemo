@@ -45,6 +45,10 @@ $('#problem-solution').click(function () {
   $('#problem-solution-popup').toggleClass('hide');
 });
 
+$('#distribution').click(function () {
+  $('#distribution-popup').toggleClass('hide');
+});
+
 // *** Basic ***
   $('.close-popup').click(function() {
     $(this).closest('.popup-outer-wrapper').toggleClass('hide');
