@@ -473,6 +473,27 @@ html, body {
 .avatar:hover {
   border: 5px solid #5f8db0; }
 
+.node-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .node-row img {
+    height: 15px;
+    width: 33px;
+    margin-bottom: 20px; }
+
+.node-wrapper {
+  display: flex;
+  width: 90px;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .node-wrapper h4 {
+    min-height: 2em;
+    margin: 0 0 0 6px; }
+
 .roadmap-node {
   height: 90px;
   width: 90px;
