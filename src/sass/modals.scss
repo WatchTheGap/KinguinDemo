@@ -99,6 +99,15 @@
   border-bottom: 10px solid #68abba;
 }
 
+#roadmap-popup::before, #roadmap-popup::after {
+  border-bottom: 10px solid #4e6b7b;
+}
+
+#roadmap-popup.popup-outer-wrapper .popup-inner-wrapper::before,
+#roadmap-popup.popup-outer-wrapper .popup-inner-wrapper::after {
+    border-top: 10px solid #0b72a2;
+  }
+
 .wide-pop {
   min-width: 900px;
   text-align: center;
@@ -250,6 +259,11 @@ height: 50px;
 #projections-header {
   background-color: #487681;
   border-top: 10px solid #68abba;
+}
+
+#roadmap-header {
+  background-color: #364a55;
+  border-top: 10px solid #4e6b7b;
 }
 
 #team-body, #advisors-body {
@@ -494,6 +508,38 @@ height: 50px;
   border: 5px solid #5f8db0;
 }
 
+
+.roadmap-node {
+  height: 90px;
+  width: 90px;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  &:hover {
+    border-color: #0e96d5;
+  }
+}
+.inner-node {
+  text-align: center;
+  height: inherit;
+  width: inherit;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-sizing: border-box;
+  background-color: #9eb1bb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    margin: 0 0 0 6px;
+    font-size: 26px;
+  }
+  p {
+    margin: 0 0 0 6px;
+    font-size: 18px;
+  }
+}
+
 //************************************
 
 .modal-footer {
@@ -589,4 +635,10 @@ height: 50px;
 #problem-solution-footer,
 #distribution-footer, #projections-footer {
   min-height: 40px;
+}
+
+#roadmap-footer {
+  background-color: #0e96d5;
+  border-bottom: 10px solid #0b72a2;
+  margin: 0 -10px;
 }
