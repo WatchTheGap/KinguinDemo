@@ -595,7 +595,14 @@ html, body {
 #roadmap-footer {
   background-color: #0e96d5;
   border-bottom: 10px solid #0b72a2;
-  margin: 0 -10px; }
+  margin: 0 -10px;
+  color: white;
+  text-align: left;
+  padding: 3% 10%; }
+  #roadmap-footer h2 {
+    font-size: 26px; }
+  #roadmap-footer p {
+    font-size: 18px; }
 
 input, button, select,
 input:focus, button:focus, select:focus,

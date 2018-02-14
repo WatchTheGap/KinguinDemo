@@ -150,6 +150,11 @@ $('#projections').click(function () {
   $('#islands').addClass('blur');
 });
 
+$('#roadmap').click(function () {
+  $('#roadmap-popup').toggleClass('hide');
+  $('#islands').addClass('blur');
+});
+
 
 // *** Basic ***
   $('.close-popup').click(function() {
