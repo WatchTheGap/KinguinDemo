@@ -819,9 +819,6 @@ input:active, button:active, select:active {
       padding: 0;
       height: inherit; }
 
-#signup-footer {
-  overflow: auto; }
-
 #progress-bar {
   width: 70%;
   margin: 5% 15%; }
