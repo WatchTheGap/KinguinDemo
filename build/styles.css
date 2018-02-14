@@ -145,7 +145,7 @@ html, body {
 #distribution-popup::before, #distribution-popup::after {
   border-bottom: 10px solid #edd191; }
 
-#distribution-popup {
+.wide-pop {
   min-width: 900px;
   text-align: center; }
 
@@ -332,7 +332,7 @@ html, body {
       border-bottom: 15px solid #c82e3d;
       position: absolute;
       top: -30px;
-      left: 320px; }
+      left: 420px; }
   #problem-solution-body #solution-title {
     background-color: #89cf79;
     margin-bottom: 10%; }
@@ -341,7 +341,7 @@ html, body {
       border-top: 15px solid #89cf79;
       position: absolute;
       bottom: -30px;
-      left: 320px; }
+      left: 420px; }
 
 #distribution-body {
   padding-top: 0; }

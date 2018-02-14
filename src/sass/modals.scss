@@ -94,10 +94,11 @@
   border-bottom: 10px solid #edd191;
 }
 
-#distribution-popup {
+.wide-pop {
   min-width: 900px;
   text-align: center;
 }
+
 //************************************
 
 .input-wrapper {
@@ -328,7 +329,7 @@ height: 50px;
       border-bottom: 15px solid #c82e3d;
       position: absolute;
       top: -30px;
-      left: 320px;
+      left: 420px;
     }
   }
   #solution-title {
@@ -339,7 +340,7 @@ height: 50px;
       border-top: 15px solid #89cf79;
       position: absolute;
       bottom: -30px;
-      left: 320px;
+      left: 420px;
     }
   }
 }

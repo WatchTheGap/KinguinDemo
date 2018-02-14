@@ -9,7 +9,6 @@ input:active, button:active, select:active {
   border-bottom: 10px solid #c8dfdc;
 }
 
-//signup header?
 .signup {
   background-color: #9ac4bf;
   border-top: 10px solid #c8dfdc;
@@ -182,7 +181,6 @@ input:active, button:active, select:active {
 }
 
 #bank-info-form {
-
   .continue-btn {
     margin: 20% 0 0 0;
     width: 100%;
@@ -228,7 +226,6 @@ input:active, button:active, select:active {
       text-align: center;
     }
   }
-
 }
 
 #signup-form, #personal-data-form,
@@ -325,8 +322,6 @@ input:active, button:active, select:active {
   }
 }
 
-
-//buttons
 #signup-button-crypto {
   @extend .red-btn;
   margin: 2% 2% 0% 8%;
@@ -358,7 +353,6 @@ input:active, button:active, select:active {
   }
 }
 
-
 .continue-btn {
   @extend .red-btn;
   margin: 10% 5%;
@@ -375,9 +369,6 @@ input:active, button:active, select:active {
      }
   }
 }
-
-// TODO: make this a class for consistent continue buttons
-
 
 #progress-bar {
   width: 70%;
