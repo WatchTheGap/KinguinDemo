@@ -145,6 +145,10 @@ html, body {
 #distribution-popup::before, #distribution-popup::after {
   border-bottom: 10px solid #edd191; }
 
+#projections-popup::before,
+#projections-popup::after {
+  border-bottom: 10px solid #68abba; }
+
 .wide-pop {
   min-width: 900px;
   text-align: center; }
@@ -261,6 +265,10 @@ html, body {
   background-color: #dfac64;
   border-top: 10px solid #edd191; }
 
+#projections-header {
+  background-color: #487681;
+  border-top: 10px solid #68abba; }
+
 #team-body, #advisors-body {
   border-bottom: 10px solid #b5b5b5;
   margin-bottom: 10px;
@@ -347,6 +355,9 @@ html, body {
   padding-top: 0; }
   #distribution-body h2 {
     margin-top: 10%; }
+
+#projections-body p {
+  margin: 5%; }
 
 .red-btn, #send-btn, #signup-form #kyc-continue, #personal-data-form #kyc-continue,
 #company-data-form #kyc-continue, #funding-form #kyc-continue, #signup-button-crypto, #signup-button-fiat, #investor-button-private, #investor-button-company, .continue-btn {
@@ -516,7 +527,7 @@ html, body {
     font-size: 30px; }
 
 #problem-solution-footer,
-#distribution-footer {
+#distribution-footer, #projections-footer {
   min-height: 40px; }
 
 input, button, select,

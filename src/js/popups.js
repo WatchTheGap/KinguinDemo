@@ -68,6 +68,12 @@ $('#distribution').click(function () {
   $('#islands').addClass('blur');
 });
 
+$('#projections').click(function () {
+  $('#projections-popup').toggleClass('hide');
+  $('#islands').addClass('blur');
+});
+
+
 // *** Basic ***
   $('.close-popup').click(function() {
     $(this).closest('.popup-outer-wrapper').toggleClass('hide');
