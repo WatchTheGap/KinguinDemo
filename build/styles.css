@@ -537,12 +537,12 @@ html, body {
 .why-tabs {
   list-style: none;
   box-sizing: border-box;
-  width: 40%;
-  margin: 0;
+  width: 45%;
+  margin: 0 0 -20px 0;
   padding: 0; }
 
-.why-btn {
-  margin: 0 0 5px 0;
+.why-btn, .why-active, .last-active, .last-btn {
+  margin: 0 0 5px -30px;
   padding: 0;
   border-top: 5px solid white;
   border-bottom: 5px solid #6e959f;
@@ -554,6 +554,20 @@ html, body {
   font-size: 20px;
   vertical-align: middle;
   line-height: 80px; }
+
+.why-active, .last-active {
+  box-shadow: 0 5px 0 0 black;
+  border: none;
+  background-color: white; }
+
+.last-btn {
+  border-bottom: 10px solid #6e959f;
+  margin: 0 0 0 -30px; }
+
+.last-active {
+  margin: 0 0 0 -30px;
+  border-bottom: 10px solid #b5b5b5;
+  box-shadow: none; }
 
 .modal-footer {
   font-family: '04b_03', monospace;
@@ -634,6 +648,10 @@ html, body {
     font-size: 26px; }
   #roadmap-footer p {
     font-size: 18px; }
+
+#why-now-footer {
+  min-height: 0;
+  border-bottom: none; }
 
 input, button, select,
 input:focus, button:focus, select:focus,
