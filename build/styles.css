@@ -571,6 +571,19 @@ html, body {
   border-bottom: 10px solid #b5b5b5;
   box-shadow: none; }
 
+.why-info-text {
+  width: 45%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 170px;
+  right: 35px;
+  text-align: left; }
+  .why-info-text p {
+    font-size: 18px;
+    line-height: 2em;
+    margin: 0; }
+
 .modal-footer {
   font-family: '04b_03', monospace;
   margin: 0;
