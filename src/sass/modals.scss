@@ -108,6 +108,13 @@
     border-top: 10px solid #0b72a2;
   }
 
+#why-now-popup::before, #why-now-popup::after {
+  border-bottom: 10px solid #d4dddf;
+}
+#why-now-popup.popup-outer-wrapper .popup-inner-wrapper::before {
+  border-top: 10px solid #6e959f;
+}
+
 .wide-pop {
   min-width: 900px;
   text-align: center;
@@ -264,6 +271,11 @@ height: 50px;
 #roadmap-header {
   background-color: #364a55;
   border-top: 10px solid #4e6b7b;
+}
+
+#why-now-header {
+  background-color: #b0c1c5;
+  border-top: 10px solid #d4dddf;
 }
 
 #team-body, #advisors-body {
@@ -567,6 +579,31 @@ height: 50px;
     font-size: 18px;
   }
 }
+
+
+.why-tabs {
+  list-style: none;
+  box-sizing: border-box;
+  width: 40%;
+  margin: 0;
+  padding: 0;
+}
+
+.why-btn {
+  margin: 0 0 5px 0;
+  padding: 0;
+  border-top: 5px solid white;
+  border-bottom: 5px solid #6e959f;
+  box-shadow: 0 0 0 5px black;
+  height: 90px;
+  box-sizing: border-box;
+  background-color: #cee1e6;
+  font-family: '04b_03', monospace;
+  font-size: 20px;
+  vertical-align: middle;
+  line-height: 80px;
+}
+
 
 //************************************
 
