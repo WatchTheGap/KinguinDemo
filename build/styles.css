@@ -76,7 +76,7 @@ html, body {
 
 .popup-outer-wrapper {
   position: relative;
-  margin: 5% auto;
+  margin: 10%;
   min-width: 700px;
   width: 40%;
   height: auto;
@@ -442,15 +442,15 @@ html, body {
   .blue-btn::before, #bank-info-form .copy-sm::before, .blue-btn::after, #bank-info-form .copy-sm::after {
     border-bottom: 5px solid #c8dfdc; }
 
-.modal-body {
+.modal-body, #why-now-footer {
   font-family: '04b_03', monospace;
   background-color: white;
   margin: 0;
   padding: 20px;
   text-transform: uppercase; }
-  .modal-body form {
+  .modal-body form, #why-now-footer form {
     min-height: 100px; }
-  .modal-body h2, .modal-body h3, .modal-body nav {
+  .modal-body h2, #why-now-footer h2, .modal-body h3, #why-now-footer h3, .modal-body nav, #why-now-footer nav {
     text-align: center; }
 
 .avatar {
@@ -553,23 +553,25 @@ html, body {
   font-family: '04b_03', monospace;
   font-size: 24px;
   vertical-align: middle;
-  line-height: 80px;
+  line-height: 85px;
   text-align: left; }
 
 .why-active, .last-active {
   box-shadow: 0 4px 0 0 black;
-  border: 5px solid white;
+  border: none;
   background-color: white; }
 
 .last-btn {
-  border-bottom: 10px solid #6e959f;
+  line-height: 90px;
+  border: none;
+  border-top: 5px solid white;
   margin: 0 0 0 -30px;
-  box-shadow: 2px -2px 0 2px black; }
+  box-shadow: 0px 10px 0 0px #6e959f, 2px -2px 0 2px black, 4px 10px 0px 0px black; }
 
 .last-active {
-  margin: 0 0 0 -30px;
-  border-bottom: 10px solid #b5b5b5;
-  box-shadow: none; }
+  line-height: 90px;
+  margin-bottom: -1px;
+  box-shadow: 0px 10px 0 0 #b5b5b5; }
 
 .why-info-text {
   width: 45%;
@@ -664,8 +666,7 @@ html, body {
     font-size: 18px; }
 
 #why-now-footer {
-  min-height: 0;
-  border-bottom: none; }
+  min-height: 0; }
 
 input, button, select,
 input:focus, button:focus, select:focus,

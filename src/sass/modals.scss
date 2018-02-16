@@ -13,7 +13,7 @@
   // position: fixed;
   // top: 5%;
   // left: 5%;
-  margin: 5% auto; // TODO: CHANGE THIS
+  margin: 10%; // TODO: CHANGE THIS
   min-width: 700px;
   width: 40%; // TODO: CHANGE THIS
   // height: 90vh;
@@ -600,30 +600,32 @@ height: 50px;
   font-family: '04b_03', monospace;
   font-size: 24px;
   vertical-align: middle;
-  line-height: 80px;
+  line-height: 85px;
   text-align: left;
 }
 
 .why-active {
   @extend .why-btn;
   box-shadow: 0 4px 0 0 black;
-  border: 5px solid white;
+  border: none;
   background-color: white;
 }
 
 .last-btn {
   @extend .why-btn;
-  border-bottom: 10px solid #6e959f;
+  line-height: 90px;
+  border: none;
+  border-top: 5px solid white;
   margin: 0 0 0 -30px;
-  box-shadow: 2px -2px 0 2px black;
+  box-shadow: 0px 10px 0 0px #6e959f, 2px -2px 0 2px black, 4px 10px 0px 0px black;
 
 }
 
 .last-active {
   @extend .why-active;
-  margin: 0 0 0 -30px;
-  border-bottom: 10px solid #b5b5b5;
-  box-shadow: none;
+  line-height: 90px;
+  margin-bottom: -1px;
+  box-shadow: 0px 10px 0 0 #b5b5b5;
 }
 
 .why-info-text {
@@ -754,5 +756,5 @@ height: 50px;
 
 #why-now-footer {
   min-height: 0;
-  border-bottom: none;
+  @extend .modal-body;
 }
