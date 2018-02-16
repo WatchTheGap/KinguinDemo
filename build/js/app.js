@@ -135,26 +135,30 @@
   });
 
 // *** Strategy Island ***
-$('#problem-solution').click(function () {
-  $('#problem-solution-popup').toggleClass('hide');
-  $('#islands').addClass('blur');
-});
+  $('#problem-solution').click(function () {
+    $('#problem-solution-popup').toggleClass('hide');
+    $('#islands').addClass('blur');
+  });
 
-$('#distribution').click(function () {
-  $('#distribution-popup').toggleClass('hide');
-  $('#islands').addClass('blur');
-});
+  $('#distribution').click(function () {
+    $('#distribution-popup').toggleClass('hide');
+    $('#islands').addClass('blur');
+  });
 
-$('#projections').click(function () {
-  $('#projections-popup').toggleClass('hide');
-  $('#islands').addClass('blur');
-});
+  $('#projections').click(function () {
+    $('#projections-popup').toggleClass('hide');
+    $('#islands').addClass('blur');
+  });
 
-$('#roadmap').click(function () {
-  $('#roadmap-popup').toggleClass('hide');
-  $('#islands').addClass('blur');
-});
+  $('#roadmap').click(function () {
+    $('#roadmap-popup').toggleClass('hide');
+    $('#islands').addClass('blur');
+  });
 
+  $('#why-now').click(function() {
+    $('#why-now-popup').toggleClass('hide');
+    $('#islands').addClass('blur');
+  });
 
 // *** Basic ***
   $('.close-popup').click(function() {
@@ -294,11 +298,5 @@ $('#roadmap').click(function () {
 
       $('.why-info-text').find('p').text('Technology has now reached the point where global trade between gamers can be easy, secure and nearly instant - thanks to blockchain and smart contracts. In just five years, the annual secondary market for digital games has gone from zero to one billion dollars. As new technologies gradually eliminate mistrust from the value chain, we believe the global market for player-to-player trade will dramatically increase.');
     });
-
-
-
-
-
-
 
 }());

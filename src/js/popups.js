@@ -58,26 +58,30 @@
   });
 
 // *** Strategy Island ***
-$('#problem-solution').click(function () {
-  $('#problem-solution-popup').toggleClass('hide');
-  $('#islands').addClass('blur');
-});
+  $('#problem-solution').click(function () {
+    $('#problem-solution-popup').toggleClass('hide');
+    $('#islands').addClass('blur');
+  });
 
-$('#distribution').click(function () {
-  $('#distribution-popup').toggleClass('hide');
-  $('#islands').addClass('blur');
-});
+  $('#distribution').click(function () {
+    $('#distribution-popup').toggleClass('hide');
+    $('#islands').addClass('blur');
+  });
 
-$('#projections').click(function () {
-  $('#projections-popup').toggleClass('hide');
-  $('#islands').addClass('blur');
-});
+  $('#projections').click(function () {
+    $('#projections-popup').toggleClass('hide');
+    $('#islands').addClass('blur');
+  });
 
-$('#roadmap').click(function () {
-  $('#roadmap-popup').toggleClass('hide');
-  $('#islands').addClass('blur');
-});
+  $('#roadmap').click(function () {
+    $('#roadmap-popup').toggleClass('hide');
+    $('#islands').addClass('blur');
+  });
 
+  $('#why-now').click(function() {
+    $('#why-now-popup').toggleClass('hide');
+    $('#islands').addClass('blur');
+  });
 
 // *** Basic ***
   $('.close-popup').click(function() {
