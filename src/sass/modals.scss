@@ -306,10 +306,6 @@ height: 50px;
   width: 90%;
 }
 
-#ourstory-body p {
-  color: #49423f;
-}
-
 #contactus-body {
   height: 300px;
   .input-wrapper {
@@ -497,16 +493,22 @@ height: 50px;
 }
 
 .dates-row {
-  a {
+  margin-bottom: 5%;
+  text-align: center;
+  padding: 0;
+  li {
     display: inline;
     text-decoration: none;
     margin: 20px;
+    p {
+      display: inline;
+    }
   }
-  a:active, a:focus {
+  .date-active {
     color: black;
   }
-// TODO: CHANGE THIS FOR INACTIVE LINK COLOR, NOT VISITED
-  a:visited {
+
+  .date-inactive {
     color: #bbaea7;
   }
 }
