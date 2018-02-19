@@ -480,7 +480,6 @@ height: 50px;
 }
 
 .avatar {
-  // TODO: Make avatar sizing responsive.
   height: 90px;
   width: 90px;
   border-radius: 50%;
@@ -517,11 +516,45 @@ height: 50px;
   }
 }
 
-.advisor, .team-member {
+.advisor {
   display: inline-block;
+  text-transform: uppercase;
   h5 {
     font-family: '04b_03', monospace;
     margin: 0 0 15px 0;
+  }
+}
+
+.team-member {
+  @extend .advisor;
+  img {
+    height: 150px;
+    width: 150px;
+    border: 10px solid transparent;
+
+    &:hover {
+      border: 10px solid #ef5e5e;
+
+    }
+  }
+  h5 {
+    color: #24b5cc;
+    font-size: 16px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .input-wrapper {
+    @extend .red-btn;
+    width: 90%;
+    margin: 20% 5%;
+    a {
+      font-size: 18px;
+      padding: 5px;
+      min-height: 34px;
+      min-width: 120px;
+      text-align: center;
+    }
   }
 }
 

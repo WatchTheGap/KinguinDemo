@@ -383,19 +383,19 @@ html, body {
 #roadmap-body {
   padding: 8% 5%; }
 
-.red-btn, #send-btn, #signup-form #kyc-continue, #personal-data-form #kyc-continue,
+.red-btn, #send-btn, .team-member .input-wrapper, #signup-form #kyc-continue, #personal-data-form #kyc-continue,
 #company-data-form #kyc-continue, #funding-form #kyc-continue, #signup-button-crypto, #signup-button-fiat, #investor-button-private, #investor-button-company, .continue-btn {
   width: 40%;
   display: inline-block;
   background-color: #ef5e5e; }
-  .red-btn .pixel-input, #send-btn .pixel-input, #signup-form #kyc-continue .pixel-input, #personal-data-form #kyc-continue .pixel-input,
+  .red-btn .pixel-input, #send-btn .pixel-input, .team-member .input-wrapper .pixel-input, #signup-form #kyc-continue .pixel-input, #personal-data-form #kyc-continue .pixel-input,
   #company-data-form #kyc-continue .pixel-input, #funding-form #kyc-continue .pixel-input, #signup-button-crypto .pixel-input, #signup-button-fiat .pixel-input, #investor-button-private .pixel-input, #investor-button-company .pixel-input, .continue-btn .pixel-input {
     background-color: #ef5e5e;
     padding: 0px; }
-  .red-btn a, #send-btn a, #signup-form #kyc-continue a, #personal-data-form #kyc-continue a,
-  #company-data-form #kyc-continue a, #funding-form #kyc-continue a, #signup-button-crypto a, #signup-button-fiat a, #investor-button-private a, #investor-button-company a, .continue-btn a, .red-btn input, #send-btn input, #signup-form #kyc-continue input, #personal-data-form #kyc-continue input,
-  #company-data-form #kyc-continue input, #funding-form #kyc-continue input, #signup-button-crypto input, #signup-button-fiat input, #investor-button-private input, #investor-button-company input, .continue-btn input, .red-btn input:active, #send-btn input:active, #signup-form #kyc-continue input:active, #personal-data-form #kyc-continue input:active,
-  #company-data-form #kyc-continue input:active, #funding-form #kyc-continue input:active, #signup-button-crypto input:active, #signup-button-fiat input:active, #investor-button-private input:active, #investor-button-company input:active, .continue-btn input:active, .red-btn input:focus, #send-btn input:focus, #signup-form #kyc-continue input:focus, #personal-data-form #kyc-continue input:focus,
+  .red-btn a, #send-btn a, .team-member .input-wrapper a, #signup-form #kyc-continue a, #personal-data-form #kyc-continue a,
+  #company-data-form #kyc-continue a, #funding-form #kyc-continue a, #signup-button-crypto a, #signup-button-fiat a, #investor-button-private a, #investor-button-company a, .continue-btn a, .red-btn input, #send-btn input, .team-member .input-wrapper input, #signup-form #kyc-continue input, #personal-data-form #kyc-continue input,
+  #company-data-form #kyc-continue input, #funding-form #kyc-continue input, #signup-button-crypto input, #signup-button-fiat input, #investor-button-private input, #investor-button-company input, .continue-btn input, .red-btn input:active, #send-btn input:active, .team-member .input-wrapper input:active, #signup-form #kyc-continue input:active, #personal-data-form #kyc-continue input:active,
+  #company-data-form #kyc-continue input:active, #funding-form #kyc-continue input:active, #signup-button-crypto input:active, #signup-button-fiat input:active, #investor-button-private input:active, #investor-button-company input:active, .continue-btn input:active, .red-btn input:focus, #send-btn input:focus, .team-member .input-wrapper input:focus, #signup-form #kyc-continue input:focus, #personal-data-form #kyc-continue input:focus,
   #company-data-form #kyc-continue input:focus, #funding-form #kyc-continue input:focus, #signup-button-crypto input:focus, #signup-button-fiat input:focus, #investor-button-private input:focus, #investor-button-company input:focus, .continue-btn input:focus {
     cursor: pointer;
     box-sizing: border-box;
@@ -409,14 +409,14 @@ html, body {
     display: block;
     padding: 30px 10px;
     background-color: inherit; }
-  .red-btn h3, #send-btn h3, #signup-form #kyc-continue h3, #personal-data-form #kyc-continue h3,
+  .red-btn h3, #send-btn h3, .team-member .input-wrapper h3, #signup-form #kyc-continue h3, #personal-data-form #kyc-continue h3,
   #company-data-form #kyc-continue h3, #funding-form #kyc-continue h3, #signup-button-crypto h3, #signup-button-fiat h3, #investor-button-private h3, #investor-button-company h3, .continue-btn h3 {
     margin: 10px; }
-  .red-btn img, #send-btn img, #signup-form #kyc-continue img, #personal-data-form #kyc-continue img,
+  .red-btn img, #send-btn img, .team-member .input-wrapper img, #signup-form #kyc-continue img, #personal-data-form #kyc-continue img,
   #company-data-form #kyc-continue img, #funding-form #kyc-continue img, #signup-button-crypto img, #signup-button-fiat img, #investor-button-private img, #investor-button-company img, .continue-btn img {
     min-height: 61px; }
-  .red-btn::before, #send-btn::before, #signup-form #kyc-continue::before, #personal-data-form #kyc-continue::before,
-  #company-data-form #kyc-continue::before, #funding-form #kyc-continue::before, #signup-button-crypto::before, #signup-button-fiat::before, #investor-button-private::before, #investor-button-company::before, .continue-btn::before, .red-btn::after, #send-btn::after, #signup-form #kyc-continue::after, #personal-data-form #kyc-continue::after,
+  .red-btn::before, #send-btn::before, .team-member .input-wrapper::before, #signup-form #kyc-continue::before, #personal-data-form #kyc-continue::before,
+  #company-data-form #kyc-continue::before, #funding-form #kyc-continue::before, #signup-button-crypto::before, #signup-button-fiat::before, #investor-button-private::before, #investor-button-company::before, .continue-btn::before, .red-btn::after, #send-btn::after, .team-member .input-wrapper::after, #signup-form #kyc-continue::after, #personal-data-form #kyc-continue::after,
   #company-data-form #kyc-continue::after, #funding-form #kyc-continue::after, #signup-button-crypto::after, #signup-button-fiat::after, #investor-button-private::after, #investor-button-company::after, .continue-btn::after {
     border-bottom: 5px solid #f68888; }
 
@@ -484,10 +484,32 @@ html, body {
     color: #bbaea7; }
 
 .advisor, .team-member {
-  display: inline-block; }
+  display: inline-block;
+  text-transform: uppercase; }
   .advisor h5, .team-member h5 {
     font-family: '04b_03', monospace;
     margin: 0 0 15px 0; }
+
+.team-member img {
+  height: 150px;
+  width: 150px;
+  border: 10px solid transparent; }
+  .team-member img:hover {
+    border: 10px solid #ef5e5e; }
+.team-member h5 {
+  color: #24b5cc;
+  font-size: 16px; }
+.team-member p {
+  font-size: 12px; }
+.team-member .input-wrapper {
+  width: 90%;
+  margin: 20% 5%; }
+  .team-member .input-wrapper a {
+    font-size: 18px;
+    padding: 5px;
+    min-height: 34px;
+    min-width: 120px;
+    text-align: center; }
 
 .avatar:hover {
   border: 5px solid #5f8db0; }
