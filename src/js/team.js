@@ -8,18 +8,14 @@
     // }
     //
     // else
-    if ($(this).is(':contains("COLLAPSE")')) {
+    if ($(this).is(':contains("collapse")')) {
       $('.more-info-text').hide();
+      $(this).text('read more');
     } else if ($(this).is(':contains("read more")')) {
       $('.more-info-text').show();
-    }
+      $(this).text('collapse');
 
+    }
   });
 
 }());
-//
-// if ($('.team-member a').closest('h5:contains("KIM")')) {
-//   $('.more-info-text').html('<h1>KIM ROM</h1> <p>kim kim kim kim kim</p>');
-// } else {
-//   $('.more-info-text').html('<h1>not kim</h1>');
-// }
