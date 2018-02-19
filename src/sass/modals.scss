@@ -549,15 +549,23 @@ height: 50px;
   }
 }
 
+.node-active {
+  border: 3px solid #0e96d5;
+}
+
+.node-inactive {
+  border: 3px solid transparent;
+  &:hover {
+    border: 3px solid #0e96d5;
+  }
+}
+
 .roadmap-node {
   height: 90px;
   width: 90px;
-  border: 3px solid transparent;
   border-radius: 50%;
-  &:hover {
-    border-color: #0e96d5;
-  }
 }
+
 .inner-node {
   text-align: center;
   height: inherit;
