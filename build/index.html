@@ -115,15 +115,16 @@
           <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
           <h1>OUR STORY</h1>
         </section>
-        <section id='ourstory-body' class='modal-body'>
-          <nav class='dates-row'>
-            <a href="#">2013</a>
-            <a href="#">2014</a>
-            <a href="#">2015</a>
-            <a href="#">2016</a>
-            <a href="#">2017</a>
-          </nav>
-          <div>
+        <section class='modal-body'>
+          <!-- TODO: ADD FIXED HEIGHT SO THE WINDOW DOESN'T JUMP WHEN CLICKED -->
+          <ul class='dates-row'>
+            <li class='date-active'>2013</li>
+            <li class='date-inactive'>2014</li>
+            <li class='date-inactive'>2015</li>
+            <li class='date-inactive'>2016</li>
+            <li class='date-inactive'>2017</li>
+          </ul>
+          <div id='story-info-text'>
             <p>text text text</p>
             <h4>Title Thing</h4>
             <p>even more text</p>

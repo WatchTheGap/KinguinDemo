@@ -121,6 +121,9 @@ html, body {
 #team-popup::before, #team-popup::after {
   border-bottom: 10px solid #34d6e3; }
 
+#ourstory-popup::before, #contactus-popup::after {
+  border-bottom: 10px solid #dad3cf; }
+
 #contactus-popup::before, #contactus-popup::after {
   border-bottom: 10px solid #c4e880; }
 
@@ -312,9 +315,6 @@ html, body {
   margin: 0 5%;
   width: 90%; }
 
-#ourstory-body p {
-  color: #49423f; }
-
 #contactus-body {
   height: 300px; }
   #contactus-body .input-wrapper {
@@ -468,14 +468,20 @@ html, body {
   flex-wrap: wrap;
   justify-content: space-around; }
 
-.dates-row a {
-  display: inline;
-  text-decoration: none;
-  margin: 20px; }
-.dates-row a:active, .dates-row a:focus {
-  color: black; }
-.dates-row a:visited {
-  color: #bbaea7; }
+.dates-row {
+  margin-bottom: 5%;
+  text-align: center;
+  padding: 0; }
+  .dates-row li {
+    display: inline;
+    text-decoration: none;
+    margin: 20px; }
+    .dates-row li p {
+      display: inline; }
+  .dates-row .date-active {
+    color: black; }
+  .dates-row .date-inactive {
+    color: #bbaea7; }
 
 .advisor, .team-member {
   display: inline-block; }
