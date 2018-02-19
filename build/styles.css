@@ -293,12 +293,6 @@ html, body {
   background-color: #b0c1c5;
   border-top: 10px solid #d4dddf; }
 
-#team-body, #advisors-body {
-  border-bottom: 10px solid #b5b5b5;
-  margin-bottom: 10px;
-  margin-left: -10px;
-  margin-right: -10px; }
-
 #market-body {
   text-align: center; }
   #market-body img {
@@ -622,6 +616,7 @@ html, body {
   font-family: '04b_03', monospace;
   margin: 0;
   background-color: white;
+  padding-bottom: 10px;
   min-height: 200px;
   border-bottom: 10px solid #b5b5b5; }
 
@@ -629,6 +624,8 @@ html, body {
   min-height: 50px; }
 
 .more-info-text {
+  border-top: 10px solid #b5b5b5;
+  box-shadow: inset 0px 10px 0px 0px white;
   background-color: #e0e0e0;
   padding: 20px;
   margin: -10px;
@@ -640,7 +637,8 @@ html, body {
   border-bottom: none;
   text-transform: uppercase;
   min-height: 150px;
-  font-kerning: none; }
+  font-kerning: none;
+  padding: 0; }
   #tokens-footer table {
     width: 680px;
     margin: 0 -10px;

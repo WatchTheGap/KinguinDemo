@@ -282,13 +282,6 @@ height: 50px;
   border-top: 10px solid #d4dddf;
 }
 
-#team-body, #advisors-body {
-  border-bottom: 10px solid #b5b5b5;
-  margin-bottom: 10px;
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
 #market-body {
   text-align: center;
   img {
@@ -531,10 +524,8 @@ height: 50px;
     height: 150px;
     width: 150px;
     border: 10px solid transparent;
-
     &:hover {
       border: 10px solid #ef5e5e;
-
     }
   }
   h5 {
@@ -695,13 +686,9 @@ height: 50px;
   font-family: '04b_03', monospace;
   margin: 0;
   background-color: white;
-  // TODO: ^^^Can this be white & make the info text have the full width/height bg color?
-  // TODO: also - HOW TO DO SPLIT COLOR [ a || b ]
-  // padding: 20px;
-
+  padding-bottom: 10px;
   min-height: 200px;
   border-bottom: 10px solid #b5b5b5;
-  // TODO: Use darken/lighten for bottom border shadow? Browser compatibility?
 }
 
 #market-footer {
@@ -709,6 +696,8 @@ height: 50px;
 }
 
 .more-info-text {
+  border-top: 10px solid #b5b5b5;
+  box-shadow: inset 0px 10px 0px 0px white;
   background-color: #e0e0e0;
   padding: 20px;
   h3, p {
@@ -723,6 +712,7 @@ height: 50px;
   text-transform: uppercase;
   min-height: 150px;
   font-kerning: none;
+  padding: 0;
   table {
     width: 680px;
     margin: 0 -10px;
