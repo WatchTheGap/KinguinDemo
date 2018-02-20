@@ -484,8 +484,6 @@ html, body {
     font-family: '04b_03', monospace;
     margin: 0 0 15px 0; }
 
-.team-member .team-active {
-  border: 10px solid #ef5e5e; }
 .team-member .avatar-bg {
   height: 120px;
   width: 120px;
@@ -494,6 +492,7 @@ html, body {
 .team-member .team-avatar {
   height: 150px;
   width: 150px;
+  border: 10px solid transparent;
   padding: 5px;
   outline: none;
   background-color: white;
@@ -504,6 +503,8 @@ html, body {
   margin: 3% 0; }
   .team-member .team-avatar:hover {
     border: 10px solid #ef5e5e; }
+.team-member .team-active {
+  border: 10px solid #ef5e5e; }
 .team-member h5 {
   color: #24b5cc;
   font-size: 16px; }

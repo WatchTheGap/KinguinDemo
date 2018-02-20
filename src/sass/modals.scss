@@ -521,9 +521,6 @@ height: 50px;
 
 .team-member {
   @extend .advisor;
-  .team-active {
-    border: 10px solid #ef5e5e;
-  }
 
   .avatar-bg {
     height: 120px;
@@ -535,7 +532,7 @@ height: 50px;
 
     height: 150px;
     width: 150px;
-    // border: 10px solid transparent;
+    border: 10px solid transparent;
     padding: 5px;
     outline: none;
     background-color: white;
@@ -548,6 +545,9 @@ height: 50px;
     &:hover {
       border: 10px solid #ef5e5e;
     }
+  }
+  .team-active {
+    border: 10px solid #ef5e5e;
   }
   h5 {
     color: #24b5cc;
