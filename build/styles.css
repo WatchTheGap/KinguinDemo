@@ -484,6 +484,8 @@ html, body {
     font-family: '04b_03', monospace;
     margin: 0 0 15px 0; }
 
+.team-member .team-active {
+  border-color: #ef5e5e; }
 .team-member img {
   height: 150px;
   width: 150px;
@@ -617,7 +619,7 @@ html, body {
   margin: 0;
   background-color: white;
   padding-bottom: 10px;
-  min-height: 200px;
+  min-height: 20px;
   border-bottom: 10px solid #b5b5b5; }
 
 #market-footer {

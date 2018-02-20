@@ -518,8 +518,13 @@ height: 50px;
   }
 }
 
+
+
 .team-member {
   @extend .advisor;
+  .team-active {
+    border-color: #ef5e5e;
+  }
   img {
     height: 150px;
     width: 150px;
@@ -687,7 +692,7 @@ height: 50px;
   margin: 0;
   background-color: white;
   padding-bottom: 10px;
-  min-height: 200px;
+  min-height: 20px;
   border-bottom: 10px solid #b5b5b5;
 }
 
