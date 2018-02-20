@@ -7,14 +7,14 @@
     if ($(this).is(':contains("collapse")')) {
       $('.more-info-text').hide();
       $(this).text('read more');
-      $($(this).parents('.team-member').find('img').removeClass('team-active'));
+      $($(this).parents('.team-member').find('.team-avatar').removeClass('team-active'));
 
 
     } else if ($(this).is(':contains("read more")')) {
       $('.team-member a:contains("collapse")').text('read more');
       $('.more-info-text').show();
       $(this).text('collapse');
-      $($(this).parents('.team-member').find('img').addClass('team-active'));
+      $($(this).parents('.team-member').find('.team-avatar').addClass('team-active'));
       $($(this).parents('.team-member').siblings().find('.team-active').removeClass('team-active'));
     }
 
