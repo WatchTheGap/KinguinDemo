@@ -436,6 +436,9 @@ html, body {
   .blue-btn::before, #bank-info-form .copy-sm::before, .blue-btn::after, #bank-info-form .copy-sm::after {
     border-bottom: 5px solid #c8dfdc; }
 
+#team-popup .modal-body, #team-popup #why-now-footer {
+  padding: 10px 20px; }
+
 .modal-body, #why-now-footer {
   font-family: '04b_03', monospace;
   background-color: white;
@@ -485,24 +488,34 @@ html, body {
     margin: 0 0 15px 0; }
 
 .team-member .avatar-bg {
-  height: 120px;
-  width: 120px;
+  height: 145px;
+  width: 145px;
   background-color: #e0e0e0;
-  border-radius: 50%; }
+  border-radius: 50%;
+  position: relative; }
+  .team-member .avatar-bg #viktor-img {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+  .team-member .avatar-bg #nashat-img {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+  .team-member .avatar-bg #kim-img {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
 .team-member .team-avatar {
-  height: 150px;
-  width: 150px;
+  height: 175px;
+  width: 175px;
   border: 10px solid transparent;
   padding: 5px;
   outline: none;
   background-color: white;
   box-sizing: border-box;
-  padding: 5px;
   flex: 1;
   border-radius: 50%;
-  margin: 3% 0; }
-  .team-member .team-avatar:hover {
-    border: 10px solid #ef5e5e; }
+  margin: 0; }
 .team-member .team-active {
   border: 10px solid #ef5e5e; }
 .team-member h5 {
