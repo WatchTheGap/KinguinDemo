@@ -496,14 +496,17 @@ html, body {
   color: #24b5cc;
   font-size: 16px; }
 .team-member p {
-  font-size: 12px; }
+  font-size: 12px;
+  width: 80%;
+  margin: 0 10%;
+  min-height: 24px; }
 .team-member .input-wrapper {
   width: 90%;
-  margin: 20% 5%; }
+  margin: 2em 5%; }
   .team-member .input-wrapper a {
     font-size: 18px;
     padding: 5px;
-    min-height: 34px;
+    min-height: 2em;
     min-width: 120px;
     text-align: center; }
 

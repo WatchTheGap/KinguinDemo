@@ -539,15 +539,18 @@ height: 50px;
   }
   p {
     font-size: 12px;
+    width: 80%;
+    margin: 0 10%;
+    min-height: 24px;
   }
   .input-wrapper {
     @extend .red-btn;
     width: 90%;
-    margin: 20% 5%;
+    margin: 2em 5%;
     a {
       font-size: 18px;
       padding: 5px;
-      min-height: 34px;
+      min-height: 2em;
       min-width: 120px;
       text-align: center;
     }
