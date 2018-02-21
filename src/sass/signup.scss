@@ -282,32 +282,32 @@ input:active, button:active, select:active {
     }
   }
 
-.up-left{
-  margin: 3% 0% 3% 15%;
-}
+  .up-left{
+    margin: 3% 0% 3% 15%;
+  }
 
-.up-right {
-  margin: 3% 0% 3% 2%;
-}
+  .up-right {
+    margin: 3% 0% 3% 2%;
+  }
 
-.file-upload{
-  width: 34%;
-  font-family: 'EightBitWonder', monospace;
-  label {
-    text-align: center;
+  .file-upload{
+    width: 34%;
+    font-family: 'EightBitWonder', monospace;
+    label {
+      text-align: center;
+    }
+    color: #9c9b9b;
+    .pixel-input {
+      height: 120px;
+    }
+    img {
+      width: 40%;
+      margin: 7% 30%;
+    }
+    p {
+      margin: 0;
+    }
   }
-  color: #9c9b9b;
-  .pixel-input {
-    height: 120px;
-  }
-  img {
-    width: 40%;
-    margin: 7% 30%;
-  }
-  p {
-    margin: 0;
-  }
-}
 
   #kyc-continue {
     @extend .red-btn;
@@ -361,12 +361,12 @@ input:active, button:active, select:active {
     height: 52px;
     padding: 0;
     input {
-       font-family: 'EightBitWonder', monospace;
-       font-size: 15px;
-       text-align: center;
-       padding: 0;
-       height: inherit;
-     }
+      font-family: 'EightBitWonder', monospace;
+      font-size: 15px;
+      text-align: center;
+      padding: 0;
+      height: inherit;
+    }
   }
 }
 

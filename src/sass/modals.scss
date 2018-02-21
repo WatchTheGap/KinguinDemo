@@ -10,13 +10,9 @@
 
 .popup-outer-wrapper{
   position: relative;
-  // position: fixed;
-  // top: 5%;
-  // left: 5%;
-  margin: 10%; // TODO: CHANGE THIS
+  margin: 10%;
   min-width: 700px;
-  width: 40%; // TODO: CHANGE THIS
-  // height: 90vh;
+  width: 40%;
   height: auto;
   float: left;
   border-left: 10px solid black;
@@ -32,7 +28,6 @@
     top: -10px; right: 0px;
   }
   .popup-inner-wrapper {
-    // height: inherit;
     background-color: white;
     display: block;
     color: black;
@@ -61,68 +56,316 @@
   background: black;
 }
 
-#advisors-popup::before, #advisors-popup::after {
-  border-bottom: 10px solid #8ac0d4;
-}
-#team-popup::before, #team-popup::after {
-  border-bottom: 10px solid #34d6e3;
-}
-
-#ourstory-popup::before, #contactus-popup::after {
-  border-bottom: 10px solid #dad3cf;
-}
-#contactus-popup::before, #contactus-popup::after {
-  border-bottom: 10px solid #c4e880;
-}
-#company-popup::before, #company-popup::after {
-  border-bottom: 10px solid #dfba9d;
-}
-#notify-popup::before, #notify-popup::after {
-  border-bottom: 10px solid #a0dcd4;
-}
-#tokens-popup::before, #tokens-popup::after {
-  border-bottom: 10px solid #f8d181;
-}
-#tokens-popup.popup-outer-wrapper .popup-inner-wrapper::before {
-  border-top: 10px solid #b75554;
-}
-#tokens-popup.popup-outer-wrapper .popup-inner-wrapper::after {
-  border-top: 10px solid #1b8899;
-}
-
-#market-popup::before, #market-popup::after {
-  border-bottom: 10px solid #c8e8c1; //check for alt color
-}
-
-#distribution-popup::before, #distribution-popup::after {
-  border-bottom: 10px solid #edd191;
-}
-
-#projections-popup::before,
-#projections-popup::after {
-  border-bottom: 10px solid #68abba;
-}
-
-#roadmap-popup::before, #roadmap-popup::after {
-  border-bottom: 10px solid #4e6b7b;
-}
-
-#roadmap-popup.popup-outer-wrapper .popup-inner-wrapper::before,
-#roadmap-popup.popup-outer-wrapper .popup-inner-wrapper::after {
-    border-top: 10px solid #0b72a2;
-  }
-
-#why-now-popup::before, #why-now-popup::after {
-  border-bottom: 10px solid #d4dddf;
-}
-#why-now-popup.popup-outer-wrapper .popup-inner-wrapper::before {
-  border-top: 10px solid #6e959f;
-}
-
 .wide-pop {
   min-width: 900px;
   text-align: center;
 }
+
+//************************************
+#advisors-popup {
+  &::before, &::after {
+    border-bottom: 10px solid #8ac0d4;
+  }
+  .modal-header {
+    background-color: #5f8db0;
+    border-top: 10px solid #8ac0d4;
+  }
+}
+
+//************************************
+#team-popup {
+  &::before, &::after {
+    border-bottom: 10px solid #34d6e3;
+  }
+  .modal-header {
+    background-color: #24b5cc;
+    border-top: 10px solid #34d6e3;
+  }
+  .modal-body {
+    padding: 10px 20px;
+  }
+}
+
+//************************************
+#ourstory-popup {
+  &::before, &::after {
+    border-bottom: 10px solid #dad3cf;
+  }
+  .modal-header {
+    background-color: #bbaea7;
+    border-top: 10px solid #dad3cf;
+  }
+}
+
+//************************************
+#contactus-popup {
+  &::before, &::after {
+    border-bottom: 10px solid #c4e880;
+  }
+  .modal-header {
+    background-color: #93d558;
+    border-top: 10px solid #c4e880;
+  }
+  .modal-body {
+    height: 300px;
+    .input-wrapper {
+      margin: 3% 10%;
+    }
+    input {
+      padding: 10px;
+      width: auto;
+    }
+  }
+}
+
+//************************************
+#company-popup {
+  &::before, &::after {
+    border-bottom: 10px solid #dfba9d;
+  }
+  .modal-header {
+    background-color: #c5816c;
+    border-top: 10px solid #dfba9d;
+    h1 {
+      color: #dfba9d;
+    }
+  }
+  .modal-body img {
+    margin: 0 5%;
+    width: 90%;
+  }
+}
+
+//************************************
+#notify-popup {
+  &::before, &::after {
+    border-bottom: 10px solid #a0dcd4;
+  }
+  .modal-header {
+    background-color: #6ebfb1;
+    border-top: 10px solid #a0dcd4;
+  }
+  .modal-body {
+    width: 80%;
+    margin: auto;
+    .input-wrapper {
+      background-color: #f2f2f2;
+      width: 60%;
+      margin: 5% 20%;
+      .pixel-input {
+        background-color: inherit;
+        padding: 10px;
+      }
+      input {
+        background-color: inherit;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+      }
+      input::placeholder {
+        font-family: 'EightBitWonder', monospace;
+        font-size: 15px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+//************************************
+#tokens-popup {
+  &::before, &::after {
+    border-bottom: 10px solid #f8d181;
+  }
+  .popup-inner-wrapper::before {
+    border-top: 10px solid #b75554;
+  }
+  .popup-inner-wrapper::after {
+    border-top: 10px solid #1b8899;
+  }
+  .modal-header {
+    background-color: #f2ac59;
+    border-top: 10px solid #f8d181;
+  }
+  .modal-footer {
+    border-bottom: none;
+    text-transform: uppercase;
+    min-height: 150px;
+    font-kerning: none;
+    padding: 0;
+    table {
+      width: 680px;
+      margin: 0 -10px;
+      padding: 0;
+      border-spacing: 0;
+      border-left: 10px solid #ef5e5e;
+      border-right: 10px solid #24b3c9;
+      tr {
+        vertical-align: top;
+        width: 100%;
+        td {
+          width: 50%;
+          margin: -10px;
+          h1, h2 {
+            color: white;
+            margin: 0;
+          }
+          p {
+            margin: 5px;
+          }
+        }
+      }
+    }
+    .popup-outer-wrapper .popup-inner-wrapper::before {
+      border-top: 10px solid #b75554;
+    }
+    .popup-outer-wrapper .popup-inner-wrapper::after {
+      border-top: 10px solid #1b8899;
+    }
+  }
+  #phase-1 {
+    background-color: #ef5e5e;
+    border-bottom: 10px solid #b75554;
+    padding: 15px 30px 30px 20px;
+    p {
+      color: #912f2d;
+    }
+    h1 {
+      font-size: 50px;
+    }
+  }
+  #phase-2 {
+    background-color: #24b3c9;
+    border-bottom: 10px solid #1b8899;
+    padding: 15px 20px 30px 30px;
+
+    p {
+      color: #164f68;
+    }
+    h2 {
+      font-size: 30px;
+    }
+  }
+}
+
+//************************************
+#market-popup {
+  &::before, &::after {
+    border-bottom: 10px solid #c8e8c1; //check for alt color
+  }
+  .modal-header {
+    background-color: #a5d19b;
+    border-top: 10px solid #c8e8c1; //check for alt color
+  }
+  .modal-body {
+    text-align: center;
+    img {
+      margin: 5%;
+    }
+    p {
+      font-size: 14px;
+      margin: 5px;
+      line-height: 20px;
+    }
+    h3 {
+      font-size: 22px;
+      margin: 0 0 3% 0;;
+    }
+  }
+  .modal-footer {
+    min-height: 50px;
+  }
+}
+
+//************************************
+#distribution-popup {
+  &::before, &::after {
+    border-bottom: 10px solid #edd191;
+  }
+  .modal-header {
+    background-color: #dfac64;
+    border-top: 10px solid #edd191;
+  }
+  .modal-body {
+    padding-top: 0;
+    h2 {
+      margin-top: 10%;
+    }
+  }
+  .modal-footer {
+    min-height: 40px;
+  }
+}
+
+//************************************
+#projections-popup {
+  &::before, &::after {
+    border-bottom: 10px solid #68abba;
+  }
+  .modal-header {
+    background-color: #487681;
+    border-top: 10px solid #68abba;
+  }
+  .modal-body p {
+    margin: 5%;
+  }
+  .modal-footer {
+    min-height: 40px;
+  }
+}
+
+//************************************
+#roadmap-popup {
+  &::before, &::after {
+    border-bottom: 10px solid #4e6b7b;
+  }
+  .popup-inner-wrapper::before,
+  .popup-inner-wrapper::after {
+    border-top: 10px solid #0b72a2;
+  }
+  .modal-header {
+    background-color: #364a55;
+    border-top: 10px solid #4e6b7b;
+  }
+  .modal-body {
+    padding: 8% 5%;
+  }
+  .modal-footer {
+    background-color: #0e96d5;
+    border-bottom: 10px solid #0b72a2;
+    margin: 0 -10px;
+    color: white;
+    text-align: left;
+    padding: 3% 10%;
+    h2 {
+      font-size: 26px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+//************************************
+#why-now-popup {
+  &::before, &::after {
+    border-bottom: 10px solid #d4dddf;
+  }
+  .popup-inner-wrapper::before {
+    border-top: 10px solid #6e959f;
+  }
+
+  .modal-header {
+    background-color: #b0c1c5;
+    border-top: 10px solid #d4dddf;
+  }
+  .modal-footer {
+    min-height: 0;
+    @extend .modal-body;
+    // this is so that the bottom button and text are flush with the bottom of the popup window as this popup contains no modal-body section.
+  }
+}
+
+//************************************
 
 //************************************
 
@@ -196,7 +439,6 @@
 
 .modal-header {
   h1 {
-    // INCLUDE BG COLOR AND BORER-TOP COLOR IN ID SECTION
     font-family: 'EightBitWonder', monospace;
     color: white;
     text-align: center;
@@ -214,130 +456,29 @@
   right: 30px;
 }
 
-#advisors-header {
-  background-color: #5f8db0;
-  border-top: 10px solid #8ac0d4;
-}
 
-#team-header {
-  background-color: #24b5cc;
-  border-top: 10px solid #34d6e3;
-}
 
-#company-header {
-  background-color: #c5816c;
-  border-top: 10px solid #dfba9d;
-  h1 {
-    color: #dfba9d;
-  }
-}
 
-#ourstory-header {
-  background-color: #bbaea7;
-  border-top: 10px solid #dad3cf;
-}
 
-#contactus-header {
-  background-color: #93d558;
-  border-top: 10px solid #c4e880;
-}
 
-#notify-header {
-  background-color: #6ebfb1;
-  border-top: 10px solid #a0dcd4;
-}
 
-#tokens-header {
-  background-color: #f2ac59;
-  border-top: 10px solid #f8d181;
-}
 
-#market-header {
-  background-color: #a5d19b;
-  border-top: 10px solid #c8e8c1; //check for alt color
-}
+
+
 
 #problem-solution-header {
 padding: 0;
 height: 50px;
 }
 
-#distribution-header {
-  background-color: #dfac64;
-  border-top: 10px solid #edd191;
-}
 
-#projections-header {
-  background-color: #487681;
-  border-top: 10px solid #68abba;
-}
 
-#roadmap-header {
-  background-color: #364a55;
-  border-top: 10px solid #4e6b7b;
-}
 
-#why-now-header {
-  background-color: #b0c1c5;
-  border-top: 10px solid #d4dddf;
-}
 
-#market-body {
-  text-align: center;
-  img {
-    margin: 5%;
-  }
-  p {
-    font-size: 14px;
-    margin: 5px;
-    line-height: 20px;
-  }
-  h3 {
-    font-size: 22px;
-    margin: 0 0 3% 0;;
-  }
-}
 
-#company-body img {
-  margin: 0 5%;
-  width: 90%;
-}
 
-#contactus-body {
-  height: 300px;
-  .input-wrapper {
-    margin: 3% 10%;
-  }
-  input {
-    padding: 10px;
-    width: auto;
-  }
-}
 
-#notify-body {
-  width: 80%;
-  margin: auto;
-  .input-wrapper {
-    background-color: #f2f2f2;
-    width: 60%;
-    margin: 5% 20%;
-    .pixel-input {
-      background-color: inherit;
-      padding: 10px;
-    }
-    input {
-      background-color: inherit;
-      width: 100%;
-      text-align: center;
-      font-size: 20px;
-    }
-    input::placeholder {
-      font-family: 'EightBitWonder', monospace;
-      font-size: 15px;
-      text-align: center;
-    }
-  }
-}
+
 
 #problem-solution-body {
   height: auto;
@@ -374,20 +515,8 @@ height: 50px;
   }
 }
 
-#distribution-body {
-  padding-top: 0;
-  h2 {
-    margin-top: 10%;
-  }
-}
 
-#projections-body p {
-  margin: 5%;
-}
 
-#roadmap-body {
-  padding: 8% 5%;
-}
 
 .red-btn {
   width: 40%;
@@ -448,16 +577,9 @@ height: 50px;
   }
 }
 
-#send-btn {
-  @extend .red-btn;
-  // TODO: ADJUST SEND-BTN SIZING
-}
-
 
 //************************************
-#team-popup .modal-body {
-  padding: 10px 20px;
-}
+
 
 .modal-body {
   font-family: '04b_03', monospace;
@@ -730,9 +852,7 @@ height: 50px;
   border-bottom: 10px solid #b5b5b5;
 }
 
-#market-footer {
-  min-height: 50px;
-}
+
 
 .more-info-text {
   border-top: 10px solid #b5b5b5;
@@ -746,91 +866,9 @@ height: 50px;
   height: 160px;
 }
 
-#tokens-footer {
-  border-bottom: none;
-  text-transform: uppercase;
-  min-height: 150px;
-  font-kerning: none;
-  padding: 0;
-  table {
-    width: 680px;
-    margin: 0 -10px;
-    padding: 0;
-    border-spacing: 0;
-    border-left: 10px solid #ef5e5e;
-    border-right: 10px solid #24b3c9;
-    tr {
-      vertical-align: top;
-      width: 100%;
-      td {
-        width: 50%;
-        margin: -10px;
-        h1, h2 {
-          color: white;
-          margin: 0;
-        }
-        p {
-          margin: 5px;
-        }
-      }
-    }
-  }
-  .popup-outer-wrapper .popup-inner-wrapper::before {
-    border-top: 10px solid #b75554;
-  }
-  .popup-outer-wrapper .popup-inner-wrapper::after {
-    border-top: 10px solid #1b8899;
-  }
 
-}
 
-#phase-1 {
-  background-color: #ef5e5e;
-  border-bottom: 10px solid #b75554;
-  padding: 15px 30px 30px 20px;
-  p {
-    color: #912f2d;
-  }
-  h1 {
-    font-size: 50px;
-  }
-}
 
-#phase-2 {
-  background-color: #24b3c9;
-  border-bottom: 10px solid #1b8899;
-  padding: 15px 20px 30px 30px;
-
-  p {
-    color: #164f68;
-  }
-  h2 {
-    font-size: 30px;
-  }
-
-}
-
-#problem-solution-footer,
-#distribution-footer, #projections-footer {
+#problem-solution-footer {
   min-height: 40px;
-}
-
-#roadmap-footer {
-  background-color: #0e96d5;
-  border-bottom: 10px solid #0b72a2;
-  margin: 0 -10px;
-  color: white;
-  text-align: left;
-  padding: 3% 10%;
-  h2 {
-    font-size: 26px;
-  }
-  p {
-    font-size: 18px;
-  }
-}
-
-#why-now-footer {
-  min-height: 0;
-  @extend .modal-body;
 }

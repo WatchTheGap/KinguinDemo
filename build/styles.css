@@ -115,59 +115,205 @@ html, body {
   position: absolute;
   background: black; }
 
-#advisors-popup::before, #advisors-popup::after {
-  border-bottom: 10px solid #8ac0d4; }
-
-#team-popup::before, #team-popup::after {
-  border-bottom: 10px solid #34d6e3; }
-
-#ourstory-popup::before, #contactus-popup::after {
-  border-bottom: 10px solid #dad3cf; }
-
-#contactus-popup::before, #contactus-popup::after {
-  border-bottom: 10px solid #c4e880; }
-
-#company-popup::before, #company-popup::after {
-  border-bottom: 10px solid #dfba9d; }
-
-#notify-popup::before, #notify-popup::after {
-  border-bottom: 10px solid #a0dcd4; }
-
-#tokens-popup::before, #tokens-popup::after {
-  border-bottom: 10px solid #f8d181; }
-
-#tokens-popup.popup-outer-wrapper .popup-inner-wrapper::before {
-  border-top: 10px solid #b75554; }
-
-#tokens-popup.popup-outer-wrapper .popup-inner-wrapper::after {
-  border-top: 10px solid #1b8899; }
-
-#market-popup::before, #market-popup::after {
-  border-bottom: 10px solid #c8e8c1; }
-
-#distribution-popup::before, #distribution-popup::after {
-  border-bottom: 10px solid #edd191; }
-
-#projections-popup::before,
-#projections-popup::after {
-  border-bottom: 10px solid #68abba; }
-
-#roadmap-popup::before, #roadmap-popup::after {
-  border-bottom: 10px solid #4e6b7b; }
-
-#roadmap-popup.popup-outer-wrapper .popup-inner-wrapper::before,
-#roadmap-popup.popup-outer-wrapper .popup-inner-wrapper::after {
-  border-top: 10px solid #0b72a2; }
-
-#why-now-popup::before, #why-now-popup::after {
-  border-bottom: 10px solid #d4dddf; }
-
-#why-now-popup.popup-outer-wrapper .popup-inner-wrapper::before {
-  border-top: 10px solid #6e959f; }
-
 .wide-pop {
   min-width: 900px;
   text-align: center; }
+
+#advisors-popup::before, #advisors-popup::after {
+  border-bottom: 10px solid #8ac0d4; }
+#advisors-popup .modal-header {
+  background-color: #5f8db0;
+  border-top: 10px solid #8ac0d4; }
+
+#team-popup::before, #team-popup::after {
+  border-bottom: 10px solid #34d6e3; }
+#team-popup .modal-header {
+  background-color: #24b5cc;
+  border-top: 10px solid #34d6e3; }
+#team-popup .modal-body, #team-popup #why-now-popup .modal-footer, #why-now-popup #team-popup .modal-footer {
+  padding: 10px 20px; }
+
+#ourstory-popup::before, #ourstory-popup::after {
+  border-bottom: 10px solid #dad3cf; }
+#ourstory-popup .modal-header {
+  background-color: #bbaea7;
+  border-top: 10px solid #dad3cf; }
+
+#contactus-popup::before, #contactus-popup::after {
+  border-bottom: 10px solid #c4e880; }
+#contactus-popup .modal-header {
+  background-color: #93d558;
+  border-top: 10px solid #c4e880; }
+#contactus-popup .modal-body, #contactus-popup #why-now-popup .modal-footer, #why-now-popup #contactus-popup .modal-footer {
+  height: 300px; }
+  #contactus-popup .modal-body .input-wrapper, #contactus-popup #why-now-popup .modal-footer .input-wrapper, #why-now-popup #contactus-popup .modal-footer .input-wrapper {
+    margin: 3% 10%; }
+  #contactus-popup .modal-body input, #contactus-popup #why-now-popup .modal-footer input, #why-now-popup #contactus-popup .modal-footer input {
+    padding: 10px;
+    width: auto; }
+
+#company-popup::before, #company-popup::after {
+  border-bottom: 10px solid #dfba9d; }
+#company-popup .modal-header {
+  background-color: #c5816c;
+  border-top: 10px solid #dfba9d; }
+  #company-popup .modal-header h1 {
+    color: #dfba9d; }
+#company-popup .modal-body img, #company-popup #why-now-popup .modal-footer img, #why-now-popup #company-popup .modal-footer img {
+  margin: 0 5%;
+  width: 90%; }
+
+#notify-popup::before, #notify-popup::after {
+  border-bottom: 10px solid #a0dcd4; }
+#notify-popup .modal-header {
+  background-color: #6ebfb1;
+  border-top: 10px solid #a0dcd4; }
+#notify-popup .modal-body, #notify-popup #why-now-popup .modal-footer, #why-now-popup #notify-popup .modal-footer {
+  width: 80%;
+  margin: auto; }
+  #notify-popup .modal-body .input-wrapper, #notify-popup #why-now-popup .modal-footer .input-wrapper, #why-now-popup #notify-popup .modal-footer .input-wrapper {
+    background-color: #f2f2f2;
+    width: 60%;
+    margin: 5% 20%; }
+    #notify-popup .modal-body .input-wrapper .pixel-input, #notify-popup #why-now-popup .modal-footer .input-wrapper .pixel-input, #why-now-popup #notify-popup .modal-footer .input-wrapper .pixel-input {
+      background-color: inherit;
+      padding: 10px; }
+    #notify-popup .modal-body .input-wrapper input, #notify-popup #why-now-popup .modal-footer .input-wrapper input, #why-now-popup #notify-popup .modal-footer .input-wrapper input {
+      background-color: inherit;
+      width: 100%;
+      text-align: center;
+      font-size: 20px; }
+    #notify-popup .modal-body .input-wrapper input::placeholder, #notify-popup #why-now-popup .modal-footer .input-wrapper input::placeholder, #why-now-popup #notify-popup .modal-footer .input-wrapper input::placeholder {
+      font-family: 'EightBitWonder', monospace;
+      font-size: 15px;
+      text-align: center; }
+
+#tokens-popup::before, #tokens-popup::after {
+  border-bottom: 10px solid #f8d181; }
+#tokens-popup .popup-inner-wrapper::before {
+  border-top: 10px solid #b75554; }
+#tokens-popup .popup-inner-wrapper::after {
+  border-top: 10px solid #1b8899; }
+#tokens-popup .modal-header {
+  background-color: #f2ac59;
+  border-top: 10px solid #f8d181; }
+#tokens-popup .modal-footer {
+  border-bottom: none;
+  text-transform: uppercase;
+  min-height: 150px;
+  font-kerning: none;
+  padding: 0; }
+  #tokens-popup .modal-footer table {
+    width: 680px;
+    margin: 0 -10px;
+    padding: 0;
+    border-spacing: 0;
+    border-left: 10px solid #ef5e5e;
+    border-right: 10px solid #24b3c9; }
+    #tokens-popup .modal-footer table tr {
+      vertical-align: top;
+      width: 100%; }
+      #tokens-popup .modal-footer table tr td {
+        width: 50%;
+        margin: -10px; }
+        #tokens-popup .modal-footer table tr td h1, #tokens-popup .modal-footer table tr td h2 {
+          color: white;
+          margin: 0; }
+        #tokens-popup .modal-footer table tr td p {
+          margin: 5px; }
+  #tokens-popup .modal-footer .popup-outer-wrapper .popup-inner-wrapper::before {
+    border-top: 10px solid #b75554; }
+  #tokens-popup .modal-footer .popup-outer-wrapper .popup-inner-wrapper::after {
+    border-top: 10px solid #1b8899; }
+#tokens-popup #phase-1 {
+  background-color: #ef5e5e;
+  border-bottom: 10px solid #b75554;
+  padding: 15px 30px 30px 20px; }
+  #tokens-popup #phase-1 p {
+    color: #912f2d; }
+  #tokens-popup #phase-1 h1 {
+    font-size: 50px; }
+#tokens-popup #phase-2 {
+  background-color: #24b3c9;
+  border-bottom: 10px solid #1b8899;
+  padding: 15px 20px 30px 30px; }
+  #tokens-popup #phase-2 p {
+    color: #164f68; }
+  #tokens-popup #phase-2 h2 {
+    font-size: 30px; }
+
+#market-popup::before, #market-popup::after {
+  border-bottom: 10px solid #c8e8c1; }
+#market-popup .modal-header {
+  background-color: #a5d19b;
+  border-top: 10px solid #c8e8c1; }
+#market-popup .modal-body, #market-popup #why-now-popup .modal-footer, #why-now-popup #market-popup .modal-footer {
+  text-align: center; }
+  #market-popup .modal-body img, #market-popup #why-now-popup .modal-footer img, #why-now-popup #market-popup .modal-footer img {
+    margin: 5%; }
+  #market-popup .modal-body p, #market-popup #why-now-popup .modal-footer p, #why-now-popup #market-popup .modal-footer p {
+    font-size: 14px;
+    margin: 5px;
+    line-height: 20px; }
+  #market-popup .modal-body h3, #market-popup #why-now-popup .modal-footer h3, #why-now-popup #market-popup .modal-footer h3 {
+    font-size: 22px;
+    margin: 0 0 3% 0; }
+#market-popup .modal-footer {
+  min-height: 50px; }
+
+#distribution-popup::before, #distribution-popup::after {
+  border-bottom: 10px solid #edd191; }
+#distribution-popup .modal-header {
+  background-color: #dfac64;
+  border-top: 10px solid #edd191; }
+#distribution-popup .modal-body, #distribution-popup #why-now-popup .modal-footer, #why-now-popup #distribution-popup .modal-footer {
+  padding-top: 0; }
+  #distribution-popup .modal-body h2, #distribution-popup #why-now-popup .modal-footer h2, #why-now-popup #distribution-popup .modal-footer h2 {
+    margin-top: 10%; }
+#distribution-popup .modal-footer {
+  min-height: 40px; }
+
+#projections-popup::before, #projections-popup::after {
+  border-bottom: 10px solid #68abba; }
+#projections-popup .modal-header {
+  background-color: #487681;
+  border-top: 10px solid #68abba; }
+#projections-popup .modal-body p, #projections-popup #why-now-popup .modal-footer p, #why-now-popup #projections-popup .modal-footer p {
+  margin: 5%; }
+#projections-popup .modal-footer {
+  min-height: 40px; }
+
+#roadmap-popup::before, #roadmap-popup::after {
+  border-bottom: 10px solid #4e6b7b; }
+#roadmap-popup .popup-inner-wrapper::before,
+#roadmap-popup .popup-inner-wrapper::after {
+  border-top: 10px solid #0b72a2; }
+#roadmap-popup .modal-header {
+  background-color: #364a55;
+  border-top: 10px solid #4e6b7b; }
+#roadmap-popup .modal-body, #roadmap-popup #why-now-popup .modal-footer, #why-now-popup #roadmap-popup .modal-footer {
+  padding: 8% 5%; }
+#roadmap-popup .modal-footer {
+  background-color: #0e96d5;
+  border-bottom: 10px solid #0b72a2;
+  margin: 0 -10px;
+  color: white;
+  text-align: left;
+  padding: 3% 10%; }
+  #roadmap-popup .modal-footer h2 {
+    font-size: 26px; }
+  #roadmap-popup .modal-footer p {
+    font-size: 18px; }
+
+#why-now-popup::before, #why-now-popup::after {
+  border-bottom: 10px solid #d4dddf; }
+#why-now-popup .popup-inner-wrapper::before {
+  border-top: 10px solid #6e959f; }
+#why-now-popup .modal-header {
+  background-color: #b0c1c5;
+  border-top: 10px solid #d4dddf; }
+#why-now-popup .modal-footer {
+  min-height: 0; }
 
 .input-wrapper {
   border-left: 5px solid black;
@@ -239,103 +385,9 @@ html, body {
   top: 20px;
   right: 30px; }
 
-#advisors-header {
-  background-color: #5f8db0;
-  border-top: 10px solid #8ac0d4; }
-
-#team-header {
-  background-color: #24b5cc;
-  border-top: 10px solid #34d6e3; }
-
-#company-header {
-  background-color: #c5816c;
-  border-top: 10px solid #dfba9d; }
-  #company-header h1 {
-    color: #dfba9d; }
-
-#ourstory-header {
-  background-color: #bbaea7;
-  border-top: 10px solid #dad3cf; }
-
-#contactus-header {
-  background-color: #93d558;
-  border-top: 10px solid #c4e880; }
-
-#notify-header {
-  background-color: #6ebfb1;
-  border-top: 10px solid #a0dcd4; }
-
-#tokens-header {
-  background-color: #f2ac59;
-  border-top: 10px solid #f8d181; }
-
-#market-header {
-  background-color: #a5d19b;
-  border-top: 10px solid #c8e8c1; }
-
 #problem-solution-header {
   padding: 0;
   height: 50px; }
-
-#distribution-header {
-  background-color: #dfac64;
-  border-top: 10px solid #edd191; }
-
-#projections-header {
-  background-color: #487681;
-  border-top: 10px solid #68abba; }
-
-#roadmap-header {
-  background-color: #364a55;
-  border-top: 10px solid #4e6b7b; }
-
-#why-now-header {
-  background-color: #b0c1c5;
-  border-top: 10px solid #d4dddf; }
-
-#market-body {
-  text-align: center; }
-  #market-body img {
-    margin: 5%; }
-  #market-body p {
-    font-size: 14px;
-    margin: 5px;
-    line-height: 20px; }
-  #market-body h3 {
-    font-size: 22px;
-    margin: 0 0 3% 0; }
-
-#company-body img {
-  margin: 0 5%;
-  width: 90%; }
-
-#contactus-body {
-  height: 300px; }
-  #contactus-body .input-wrapper {
-    margin: 3% 10%; }
-  #contactus-body input {
-    padding: 10px;
-    width: auto; }
-
-#notify-body {
-  width: 80%;
-  margin: auto; }
-  #notify-body .input-wrapper {
-    background-color: #f2f2f2;
-    width: 60%;
-    margin: 5% 20%; }
-    #notify-body .input-wrapper .pixel-input {
-      background-color: inherit;
-      padding: 10px; }
-    #notify-body .input-wrapper input {
-      background-color: inherit;
-      width: 100%;
-      text-align: center;
-      font-size: 20px; }
-    #notify-body .input-wrapper input::placeholder {
-      font-family: 'EightBitWonder', monospace;
-      font-size: 15px;
-      text-align: center; }
 
 #problem-solution-body {
   height: auto;
@@ -366,30 +418,19 @@ html, body {
       bottom: -30px;
       left: 420px; }
 
-#distribution-body {
-  padding-top: 0; }
-  #distribution-body h2 {
-    margin-top: 10%; }
-
-#projections-body p {
-  margin: 5%; }
-
-#roadmap-body {
-  padding: 8% 5%; }
-
-.red-btn, #send-btn, .team-member .input-wrapper, #signup-form #kyc-continue, #personal-data-form #kyc-continue,
+.red-btn, .team-member .input-wrapper, #signup-form #kyc-continue, #personal-data-form #kyc-continue,
 #company-data-form #kyc-continue, #funding-form #kyc-continue, #signup-button-crypto, #signup-button-fiat, #investor-button-private, #investor-button-company, .continue-btn {
   width: 40%;
   display: inline-block;
   background-color: #ef5e5e; }
-  .red-btn .pixel-input, #send-btn .pixel-input, .team-member .input-wrapper .pixel-input, #signup-form #kyc-continue .pixel-input, #personal-data-form #kyc-continue .pixel-input,
+  .red-btn .pixel-input, .team-member .input-wrapper .pixel-input, #signup-form #kyc-continue .pixel-input, #personal-data-form #kyc-continue .pixel-input,
   #company-data-form #kyc-continue .pixel-input, #funding-form #kyc-continue .pixel-input, #signup-button-crypto .pixel-input, #signup-button-fiat .pixel-input, #investor-button-private .pixel-input, #investor-button-company .pixel-input, .continue-btn .pixel-input {
     background-color: #ef5e5e;
     padding: 0px; }
-  .red-btn a, #send-btn a, .team-member .input-wrapper a, #signup-form #kyc-continue a, #personal-data-form #kyc-continue a,
-  #company-data-form #kyc-continue a, #funding-form #kyc-continue a, #signup-button-crypto a, #signup-button-fiat a, #investor-button-private a, #investor-button-company a, .continue-btn a, .red-btn input, #send-btn input, .team-member .input-wrapper input, #signup-form #kyc-continue input, #personal-data-form #kyc-continue input,
-  #company-data-form #kyc-continue input, #funding-form #kyc-continue input, #signup-button-crypto input, #signup-button-fiat input, #investor-button-private input, #investor-button-company input, .continue-btn input, .red-btn input:active, #send-btn input:active, .team-member .input-wrapper input:active, #signup-form #kyc-continue input:active, #personal-data-form #kyc-continue input:active,
-  #company-data-form #kyc-continue input:active, #funding-form #kyc-continue input:active, #signup-button-crypto input:active, #signup-button-fiat input:active, #investor-button-private input:active, #investor-button-company input:active, .continue-btn input:active, .red-btn input:focus, #send-btn input:focus, .team-member .input-wrapper input:focus, #signup-form #kyc-continue input:focus, #personal-data-form #kyc-continue input:focus,
+  .red-btn a, .team-member .input-wrapper a, #signup-form #kyc-continue a, #personal-data-form #kyc-continue a,
+  #company-data-form #kyc-continue a, #funding-form #kyc-continue a, #signup-button-crypto a, #signup-button-fiat a, #investor-button-private a, #investor-button-company a, .continue-btn a, .red-btn input, .team-member .input-wrapper input, #signup-form #kyc-continue input, #personal-data-form #kyc-continue input,
+  #company-data-form #kyc-continue input, #funding-form #kyc-continue input, #signup-button-crypto input, #signup-button-fiat input, #investor-button-private input, #investor-button-company input, .continue-btn input, .red-btn input:active, .team-member .input-wrapper input:active, #signup-form #kyc-continue input:active, #personal-data-form #kyc-continue input:active,
+  #company-data-form #kyc-continue input:active, #funding-form #kyc-continue input:active, #signup-button-crypto input:active, #signup-button-fiat input:active, #investor-button-private input:active, #investor-button-company input:active, .continue-btn input:active, .red-btn input:focus, .team-member .input-wrapper input:focus, #signup-form #kyc-continue input:focus, #personal-data-form #kyc-continue input:focus,
   #company-data-form #kyc-continue input:focus, #funding-form #kyc-continue input:focus, #signup-button-crypto input:focus, #signup-button-fiat input:focus, #investor-button-private input:focus, #investor-button-company input:focus, .continue-btn input:focus {
     cursor: pointer;
     box-sizing: border-box;
@@ -403,14 +444,14 @@ html, body {
     display: block;
     padding: 30px 10px;
     background-color: inherit; }
-  .red-btn h3, #send-btn h3, .team-member .input-wrapper h3, #signup-form #kyc-continue h3, #personal-data-form #kyc-continue h3,
+  .red-btn h3, .team-member .input-wrapper h3, #signup-form #kyc-continue h3, #personal-data-form #kyc-continue h3,
   #company-data-form #kyc-continue h3, #funding-form #kyc-continue h3, #signup-button-crypto h3, #signup-button-fiat h3, #investor-button-private h3, #investor-button-company h3, .continue-btn h3 {
     margin: 10px; }
-  .red-btn img, #send-btn img, .team-member .input-wrapper img, #signup-form #kyc-continue img, #personal-data-form #kyc-continue img,
+  .red-btn img, .team-member .input-wrapper img, #signup-form #kyc-continue img, #personal-data-form #kyc-continue img,
   #company-data-form #kyc-continue img, #funding-form #kyc-continue img, #signup-button-crypto img, #signup-button-fiat img, #investor-button-private img, #investor-button-company img, .continue-btn img {
     min-height: 61px; }
-  .red-btn::before, #send-btn::before, .team-member .input-wrapper::before, #signup-form #kyc-continue::before, #personal-data-form #kyc-continue::before,
-  #company-data-form #kyc-continue::before, #funding-form #kyc-continue::before, #signup-button-crypto::before, #signup-button-fiat::before, #investor-button-private::before, #investor-button-company::before, .continue-btn::before, .red-btn::after, #send-btn::after, .team-member .input-wrapper::after, #signup-form #kyc-continue::after, #personal-data-form #kyc-continue::after,
+  .red-btn::before, .team-member .input-wrapper::before, #signup-form #kyc-continue::before, #personal-data-form #kyc-continue::before,
+  #company-data-form #kyc-continue::before, #funding-form #kyc-continue::before, #signup-button-crypto::before, #signup-button-fiat::before, #investor-button-private::before, #investor-button-company::before, .continue-btn::before, .red-btn::after, .team-member .input-wrapper::after, #signup-form #kyc-continue::after, #personal-data-form #kyc-continue::after,
   #company-data-form #kyc-continue::after, #funding-form #kyc-continue::after, #signup-button-crypto::after, #signup-button-fiat::after, #investor-button-private::after, #investor-button-company::after, .continue-btn::after {
     border-bottom: 5px solid #f68888; }
 
@@ -436,18 +477,15 @@ html, body {
   .blue-btn::before, #bank-info-form .copy-sm::before, .blue-btn::after, #bank-info-form .copy-sm::after {
     border-bottom: 5px solid #c8dfdc; }
 
-#team-popup .modal-body, #team-popup #why-now-footer {
-  padding: 10px 20px; }
-
-.modal-body, #why-now-footer {
+.modal-body, #why-now-popup .modal-footer {
   font-family: '04b_03', monospace;
   background-color: white;
   margin: 0;
   padding: 20px;
   text-transform: uppercase; }
-  .modal-body form, #why-now-footer form {
+  .modal-body form, #why-now-popup .modal-footer form {
     min-height: 100px; }
-  .modal-body h2, #why-now-footer h2, .modal-body h3, #why-now-footer h3, .modal-body nav, #why-now-footer nav {
+  .modal-body h2, #why-now-popup .modal-footer h2, .modal-body h3, #why-now-popup .modal-footer h3, .modal-body nav, #why-now-popup .modal-footer nav {
     text-align: center; }
 
 .avatar {
@@ -651,9 +689,6 @@ html, body {
   min-height: 20px;
   border-bottom: 10px solid #b5b5b5; }
 
-#market-footer {
-  min-height: 50px; }
-
 .more-info-text {
   border-top: 10px solid #b5b5b5;
   box-shadow: inset 0px 10px 0px 0px white;
@@ -664,71 +699,8 @@ html, body {
   .more-info-text h3, .more-info-text p {
     margin: 10px; }
 
-#tokens-footer {
-  border-bottom: none;
-  text-transform: uppercase;
-  min-height: 150px;
-  font-kerning: none;
-  padding: 0; }
-  #tokens-footer table {
-    width: 680px;
-    margin: 0 -10px;
-    padding: 0;
-    border-spacing: 0;
-    border-left: 10px solid #ef5e5e;
-    border-right: 10px solid #24b3c9; }
-    #tokens-footer table tr {
-      vertical-align: top;
-      width: 100%; }
-      #tokens-footer table tr td {
-        width: 50%;
-        margin: -10px; }
-        #tokens-footer table tr td h1, #tokens-footer table tr td h2 {
-          color: white;
-          margin: 0; }
-        #tokens-footer table tr td p {
-          margin: 5px; }
-  #tokens-footer .popup-outer-wrapper .popup-inner-wrapper::before {
-    border-top: 10px solid #b75554; }
-  #tokens-footer .popup-outer-wrapper .popup-inner-wrapper::after {
-    border-top: 10px solid #1b8899; }
-
-#phase-1 {
-  background-color: #ef5e5e;
-  border-bottom: 10px solid #b75554;
-  padding: 15px 30px 30px 20px; }
-  #phase-1 p {
-    color: #912f2d; }
-  #phase-1 h1 {
-    font-size: 50px; }
-
-#phase-2 {
-  background-color: #24b3c9;
-  border-bottom: 10px solid #1b8899;
-  padding: 15px 20px 30px 30px; }
-  #phase-2 p {
-    color: #164f68; }
-  #phase-2 h2 {
-    font-size: 30px; }
-
-#problem-solution-footer,
-#distribution-footer, #projections-footer {
+#problem-solution-footer {
   min-height: 40px; }
-
-#roadmap-footer {
-  background-color: #0e96d5;
-  border-bottom: 10px solid #0b72a2;
-  margin: 0 -10px;
-  color: white;
-  text-align: left;
-  padding: 3% 10%; }
-  #roadmap-footer h2 {
-    font-size: 26px; }
-  #roadmap-footer p {
-    font-size: 18px; }
-
-#why-now-footer {
-  min-height: 0; }
 
 input, button, select,
 input:focus, button:focus, select:focus,
