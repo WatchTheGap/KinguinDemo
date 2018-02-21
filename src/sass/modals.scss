@@ -251,6 +251,7 @@
 .advisor {
   display: inline-block;
   text-transform: uppercase;
+  width: 25%;
   h5 {
     font-family: '04b_03', monospace;
     margin: 0 0 15px 0;
@@ -261,7 +262,8 @@
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .avatar {

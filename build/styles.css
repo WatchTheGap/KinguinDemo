@@ -277,7 +277,8 @@ html, body {
 
 .advisor, .team-member {
   display: inline-block;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  width: 25%; }
   .advisor h5, .team-member h5 {
     font-family: '04b_03', monospace;
     margin: 0 0 15px 0; }
@@ -286,7 +287,8 @@ html, body {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  flex-flow: row wrap;
+  justify-content: center; }
 
 .avatar {
   height: 90px;
