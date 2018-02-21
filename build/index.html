@@ -76,14 +76,14 @@
                 <input id='notify-signup' type='email' name='notify-signup' placeholder='EMAIL'>
               </div>
             </div>
-            <div class='input-wrapper continue-btn'>
-              <div class='pixel-input'>
-                <input type='submit' name='keep-me-posted' value='KEEP ME POSTED!'>
-              </div>
-            </div>
           </form>
         </section>
         <section class='modal-footer'>
+          <div class='input-wrapper continue-btn'>
+            <div class='pixel-input'>
+              <input type='submit' name='keep-me-posted' value='KEEP ME POSTED!'>
+            </div>
+          </div>
         </section>
       </div>
     </div>
@@ -724,7 +724,7 @@
       </div>
     </div>
 
-    <div id='contactus-popup' class='popup hide popup-outer-wrapper'>
+    <div id='contactus-popup' class='popup  popup-outer-wrapper'>
       <div class='popup-inner-wrapper'>
         <section class='modal-header'>
           <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
@@ -732,24 +732,25 @@
         </section>
         <section class='modal-body'>
           <form id='email-signup-form' class='' method="post">
-            <div class='input-wrapper'>
+            <div class='input-wrapper' style='width: 70%;'>
               <div class='pixel-input'>
-                <input id='email' type='email' name='email' placeholder='EMAIL'>
+                <input id='user-email' type='email' name='email' placeholder='EMAIL'>
               </div>
             </div>
-            <div class='input-wrapper'>
+            <div class='input-wrapper' style='width: 100%'>
               <div class='pixel-input'>
                 <textarea id='message' name='message' placeholder='MESSAGE'></textarea>
               </div>
             </div>
-            <div class='input-wrapper continue-btn'>
-              <div class='pixel-input'>
-                <input type='submit' name='send-btn' value='SEND'>
-              </div>
-            </div>
           </form>
         </section>
-        <section class='modal-footer'></section>
+        <section class='modal-footer'>
+          <div class='input-wrapper continue-btn'>
+            <div class='pixel-input'>
+              <input type='submit' name='send-btn' value='SEND'>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
 

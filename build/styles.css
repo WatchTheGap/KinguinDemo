@@ -210,19 +210,19 @@ html, body {
   position: absolute;
   background: black; }
 
-.red-btn, .team-member .input-wrapper, #signup-form #kyc-continue, #personal-data-form #kyc-continue,
+.red-btn, .team-member .input-wrapper, #notify-popup .modal-footer input[type='submit'], #signup-form #kyc-continue, #personal-data-form #kyc-continue,
 #company-data-form #kyc-continue, #funding-form #kyc-continue, #signup-button-crypto, #signup-button-fiat, #investor-button-private, #investor-button-company, .continue-btn {
   width: 40%;
   display: inline-block;
   background-color: #ef5e5e; }
-  .red-btn .pixel-input, .team-member .input-wrapper .pixel-input, #signup-form #kyc-continue .pixel-input, #personal-data-form #kyc-continue .pixel-input,
+  .red-btn .pixel-input, .team-member .input-wrapper .pixel-input, #notify-popup .modal-footer input[type='submit'] .pixel-input, #signup-form #kyc-continue .pixel-input, #personal-data-form #kyc-continue .pixel-input,
   #company-data-form #kyc-continue .pixel-input, #funding-form #kyc-continue .pixel-input, #signup-button-crypto .pixel-input, #signup-button-fiat .pixel-input, #investor-button-private .pixel-input, #investor-button-company .pixel-input, .continue-btn .pixel-input {
     background-color: #ef5e5e;
     padding: 0px; }
-  .red-btn a, .team-member .input-wrapper a, #signup-form #kyc-continue a, #personal-data-form #kyc-continue a,
-  #company-data-form #kyc-continue a, #funding-form #kyc-continue a, #signup-button-crypto a, #signup-button-fiat a, #investor-button-private a, #investor-button-company a, .continue-btn a, .red-btn input, .team-member .input-wrapper input, #signup-form #kyc-continue input, #personal-data-form #kyc-continue input,
-  #company-data-form #kyc-continue input, #funding-form #kyc-continue input, #signup-button-crypto input, #signup-button-fiat input, #investor-button-private input, #investor-button-company input, .continue-btn input, .red-btn input:active, .team-member .input-wrapper input:active, #signup-form #kyc-continue input:active, #personal-data-form #kyc-continue input:active,
-  #company-data-form #kyc-continue input:active, #funding-form #kyc-continue input:active, #signup-button-crypto input:active, #signup-button-fiat input:active, #investor-button-private input:active, #investor-button-company input:active, .continue-btn input:active, .red-btn input:focus, .team-member .input-wrapper input:focus, #signup-form #kyc-continue input:focus, #personal-data-form #kyc-continue input:focus,
+  .red-btn a, .team-member .input-wrapper a, #notify-popup .modal-footer input[type='submit'] a, #signup-form #kyc-continue a, #personal-data-form #kyc-continue a,
+  #company-data-form #kyc-continue a, #funding-form #kyc-continue a, #signup-button-crypto a, #signup-button-fiat a, #investor-button-private a, #investor-button-company a, .continue-btn a, .red-btn input, .team-member .input-wrapper input, #notify-popup .modal-footer input[type='submit'] input, #signup-form #kyc-continue input, #personal-data-form #kyc-continue input,
+  #company-data-form #kyc-continue input, #funding-form #kyc-continue input, #signup-button-crypto input, #signup-button-fiat input, #investor-button-private input, #investor-button-company input, .continue-btn input, .red-btn input:active, .team-member .input-wrapper input:active, #notify-popup .modal-footer input[type='submit'] input:active, #signup-form #kyc-continue input:active, #personal-data-form #kyc-continue input:active,
+  #company-data-form #kyc-continue input:active, #funding-form #kyc-continue input:active, #signup-button-crypto input:active, #signup-button-fiat input:active, #investor-button-private input:active, #investor-button-company input:active, .continue-btn input:active, .red-btn input:focus, .team-member .input-wrapper input:focus, #notify-popup .modal-footer input[type='submit'] input:focus, #signup-form #kyc-continue input:focus, #personal-data-form #kyc-continue input:focus,
   #company-data-form #kyc-continue input:focus, #funding-form #kyc-continue input:focus, #signup-button-crypto input:focus, #signup-button-fiat input:focus, #investor-button-private input:focus, #investor-button-company input:focus, .continue-btn input:focus {
     cursor: pointer;
     box-sizing: border-box;
@@ -236,14 +236,14 @@ html, body {
     display: block;
     padding: 30px 10px;
     background-color: inherit; }
-  .red-btn h3, .team-member .input-wrapper h3, #signup-form #kyc-continue h3, #personal-data-form #kyc-continue h3,
+  .red-btn h3, .team-member .input-wrapper h3, #notify-popup .modal-footer input[type='submit'] h3, #signup-form #kyc-continue h3, #personal-data-form #kyc-continue h3,
   #company-data-form #kyc-continue h3, #funding-form #kyc-continue h3, #signup-button-crypto h3, #signup-button-fiat h3, #investor-button-private h3, #investor-button-company h3, .continue-btn h3 {
     margin: 10px; }
-  .red-btn img, .team-member .input-wrapper img, #signup-form #kyc-continue img, #personal-data-form #kyc-continue img,
+  .red-btn img, .team-member .input-wrapper img, #notify-popup .modal-footer input[type='submit'] img, #signup-form #kyc-continue img, #personal-data-form #kyc-continue img,
   #company-data-form #kyc-continue img, #funding-form #kyc-continue img, #signup-button-crypto img, #signup-button-fiat img, #investor-button-private img, #investor-button-company img, .continue-btn img {
     min-height: 61px; }
-  .red-btn::before, .team-member .input-wrapper::before, #signup-form #kyc-continue::before, #personal-data-form #kyc-continue::before,
-  #company-data-form #kyc-continue::before, #funding-form #kyc-continue::before, #signup-button-crypto::before, #signup-button-fiat::before, #investor-button-private::before, #investor-button-company::before, .continue-btn::before, .red-btn::after, .team-member .input-wrapper::after, #signup-form #kyc-continue::after, #personal-data-form #kyc-continue::after,
+  .red-btn::before, .team-member .input-wrapper::before, #notify-popup .modal-footer input[type='submit']::before, #signup-form #kyc-continue::before, #personal-data-form #kyc-continue::before,
+  #company-data-form #kyc-continue::before, #funding-form #kyc-continue::before, #signup-button-crypto::before, #signup-button-fiat::before, #investor-button-private::before, #investor-button-company::before, .continue-btn::before, .red-btn::after, .team-member .input-wrapper::after, #notify-popup .modal-footer input[type='submit']::after, #signup-form #kyc-continue::after, #personal-data-form #kyc-continue::after,
   #company-data-form #kyc-continue::after, #funding-form #kyc-continue::after, #signup-button-crypto::after, #signup-button-fiat::after, #investor-button-private::after, #investor-button-company::after, .continue-btn::after {
     border-bottom: 5px solid #f68888; }
 
@@ -394,12 +394,32 @@ html, body {
   background-color: #93d558;
   border-top: 10px solid #c4e880; }
 #contactus-popup .modal-body, #contactus-popup #why-now-popup .modal-footer, #why-now-popup #contactus-popup .modal-footer {
-  height: 300px; }
+  padding: 5% 10%;
+  height: 360px; }
   #contactus-popup .modal-body .input-wrapper, #contactus-popup #why-now-popup .modal-footer .input-wrapper, #why-now-popup #contactus-popup .modal-footer .input-wrapper {
-    margin: 3% 10%; }
-  #contactus-popup .modal-body input, #contactus-popup #why-now-popup .modal-footer input, #why-now-popup #contactus-popup .modal-footer input {
-    padding: 10px;
-    width: auto; }
+    margin: 5% 0; }
+  #contactus-popup .modal-body input[type='email'], #contactus-popup #why-now-popup .modal-footer input[type='email'], #why-now-popup #contactus-popup .modal-footer input[type='email'] {
+    padding: 20px 25px;
+    width: inherit; }
+    #contactus-popup .modal-body input[type='email']::placeholder, #contactus-popup #why-now-popup .modal-footer input[type='email']::placeholder, #why-now-popup #contactus-popup .modal-footer input[type='email']::placeholder {
+      font-size: 16px; }
+  #contactus-popup .modal-body textarea, #contactus-popup #why-now-popup .modal-footer textarea, #why-now-popup #contactus-popup .modal-footer textarea {
+    padding: 20px 25px;
+    width: inherit; }
+    #contactus-popup .modal-body textarea::placeholder, #contactus-popup #why-now-popup .modal-footer textarea::placeholder, #why-now-popup #contactus-popup .modal-footer textarea::placeholder {
+      font-size: 16px; }
+#contactus-popup .modal-footer {
+  padding: 5% 10%;
+  min-height: 80px; }
+  #contactus-popup .modal-footer .input-wrapper {
+    margin: 0;
+    width: 40%;
+    height: 52px; }
+    #contactus-popup .modal-footer .input-wrapper .pixel-input {
+      height: 62px; }
+      #contactus-popup .modal-footer .input-wrapper .pixel-input input {
+        font-family: '04b_03', monospace;
+        font-size: 22px; }
 
 #company-popup::before, #company-popup::after {
   border-bottom: 10px solid #dfba9d; }
@@ -418,24 +438,39 @@ html, body {
   background-color: #6ebfb1;
   border-top: 10px solid #a0dcd4; }
 #notify-popup .modal-body, #notify-popup #why-now-popup .modal-footer, #why-now-popup #notify-popup .modal-footer {
-  width: 80%;
-  margin: auto; }
+  min-height: 230px;
+  margin: auto;
+  font-family: 'EightBitWonder', monospace; }
+  #notify-popup .modal-body h2, #notify-popup #why-now-popup .modal-footer h2, #why-now-popup #notify-popup .modal-footer h2 {
+    font-size: 18px;
+    line-height: 1.2em; }
   #notify-popup .modal-body .input-wrapper, #notify-popup #why-now-popup .modal-footer .input-wrapper, #why-now-popup #notify-popup .modal-footer .input-wrapper {
-    background-color: #f2f2f2;
     width: 60%;
-    margin: 5% 20%; }
+    margin: 10% 20%; }
     #notify-popup .modal-body .input-wrapper .pixel-input, #notify-popup #why-now-popup .modal-footer .input-wrapper .pixel-input, #why-now-popup #notify-popup .modal-footer .input-wrapper .pixel-input {
-      background-color: inherit;
-      padding: 10px; }
-    #notify-popup .modal-body .input-wrapper input, #notify-popup #why-now-popup .modal-footer .input-wrapper input, #why-now-popup #notify-popup .modal-footer .input-wrapper input {
-      background-color: inherit;
+      padding: 10px;
+      height: 50px; }
+    #notify-popup .modal-body .input-wrapper input[type='email'], #notify-popup #why-now-popup .modal-footer .input-wrapper input[type='email'], #why-now-popup #notify-popup .modal-footer .input-wrapper input[type='email'] {
+      height: inherit;
       width: 100%;
       text-align: center;
       font-size: 20px; }
-    #notify-popup .modal-body .input-wrapper input::placeholder, #notify-popup #why-now-popup .modal-footer .input-wrapper input::placeholder, #why-now-popup #notify-popup .modal-footer .input-wrapper input::placeholder {
-      font-family: 'EightBitWonder', monospace;
-      font-size: 15px;
-      text-align: center; }
+      #notify-popup .modal-body .input-wrapper input[type='email']::placeholder, #notify-popup #why-now-popup .modal-footer .input-wrapper input[type='email']::placeholder, #why-now-popup #notify-popup .modal-footer .input-wrapper input[type='email']::placeholder {
+        font-family: 'EightBitWonder', monospace;
+        font-size: 15px;
+        text-align: center; }
+#notify-popup .modal-footer {
+  min-height: 160px; }
+  #notify-popup .modal-footer .input-wrapper {
+    width: 80%;
+    margin: 0 10%; }
+    #notify-popup .modal-footer .input-wrapper .pixel-input {
+      height: 100px; }
+  #notify-popup .modal-footer input[type='submit'] {
+    margin: 0;
+    width: 100%;
+    font-family: '04b_03', monospace;
+    font-size: 40px; }
 
 #tokens-popup::before, #tokens-popup::after {
   border-bottom: 10px solid #f8d181; }

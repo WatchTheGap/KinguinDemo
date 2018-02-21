@@ -408,13 +408,40 @@
     border-top: 10px solid #c4e880;
   }
   .modal-body {
-    height: 300px;
+    padding: 5% 10%;
+    height: 360px;
     .input-wrapper {
-      margin: 3% 10%;
+      margin: 5% 0;
     }
-    input {
-      padding: 10px;
-      width: auto;
+    input[type='email'] {
+      padding: 20px 25px;
+      width: inherit;
+      &::placeholder {
+        font-size: 16px;
+      }
+    }
+    textarea {
+      padding: 20px 25px;
+      width: inherit;
+      &::placeholder {
+        font-size: 16px;
+      }
+    }
+  }
+  .modal-footer {
+    padding: 5% 10%;
+    min-height: 80px;
+    .input-wrapper {
+      margin: 0;
+      width: 40%;
+      height: 52px;
+      .pixel-input {
+        height: 62px;
+        input {
+          font-family: '04b_03', monospace;
+          font-size: 22px;
+        }
+      }
     }
   }
 }
