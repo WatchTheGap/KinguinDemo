@@ -35,28 +35,6 @@ module.exports = function (grunt){
           }
         ]
       },
-      angular: {
-        files:[
-          {
-            cwd: 'node_modules/angular/',
-            src: ['angular.min.js'],
-            dest: 'build/',
-            expand: true
-          },
-          {
-            cwd: 'node_modules/@uirouter/angularjs/release/',
-            src: ['angular-ui-router.js'],
-            dest: 'build/',
-            expand: true
-          },
-          {
-            cwd: 'node_modules/angular-ui-router.statehelper/',
-            src: ['statehelper.min.js'],
-            dest: 'build/',
-            expand: true
-          }
-        ]
-      },
       jquery: {
         files: [
           {
