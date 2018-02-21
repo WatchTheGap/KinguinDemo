@@ -19,11 +19,11 @@
     }
 
     if($(this).is('#kim-bio')) {
-      $('.more-info-text').text('kim');
+      $('#team-popup .more-info-text').text('kim');
     } else if ($(this).is('#nashat-bio')){
-      $('.more-info-text').text('nashat');
+      $('#team-popup .more-info-text').text('nashat');
     } else if ($(this).is('#viktor-bio')) {
-      $('.more-info-text').text('viktor');
+      $('#team-popup .more-info-text').text('viktor');
     } else {
       return;
     }
