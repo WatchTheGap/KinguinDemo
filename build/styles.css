@@ -119,11 +119,186 @@ html, body {
   min-width: 900px;
   text-align: center; }
 
+.modal-header {
+  padding: 20px;
+  margin-left: -10px;
+  margin-right: -10px;
+  height: 100px; }
+  .modal-header h1 {
+    font-family: 'EightBitWonder', monospace;
+    color: white;
+    text-align: center;
+    font-size: 34px; }
+  .modal-header #close-x {
+    position: absolute;
+    top: 20px;
+    right: 30px; }
+
+.modal-body, #why-now-popup .modal-footer {
+  font-family: '04b_03', monospace;
+  background-color: white;
+  margin: 0;
+  padding: 20px;
+  text-transform: uppercase; }
+  .modal-body form, #why-now-popup .modal-footer form {
+    min-height: 100px; }
+  .modal-body h2, #why-now-popup .modal-footer h2, .modal-body h3, #why-now-popup .modal-footer h3, .modal-body nav, #why-now-popup .modal-footer nav {
+    text-align: center; }
+
+.modal-footer {
+  font-family: '04b_03', monospace;
+  margin: 0;
+  background-color: white;
+  padding-bottom: 10px;
+  min-height: 20px;
+  border-bottom: 10px solid #b5b5b5; }
+
+.input-wrapper {
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  float: left;
+  box-sizing: border-box;
+  background-color: white;
+  position: relative; }
+  .input-wrapper::before {
+    top: -5px;
+    left: 0px; }
+  .input-wrapper::after {
+    top: -5px;
+    right: 0px; }
+  .input-wrapper .pixel-input {
+    background-color: white;
+    display: block;
+    color: black;
+    margin: -10px 5px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black; }
+    .input-wrapper .pixel-input::before {
+      bottom: -5px;
+      left: 0px; }
+    .input-wrapper .pixel-input::after {
+      bottom: -5px;
+      right: 0px; }
+    .input-wrapper .pixel-input input {
+      font-family: '04b_03', monospace;
+      font-size: 16px;
+      text-transform: uppercase;
+      border: none;
+      height: 30px;
+      width: 100%; }
+      .input-wrapper .pixel-input input::placeholder {
+        font-family: '04b_03', monospace;
+        color: #b5b5b5;
+        font-size: 14px; }
+    .input-wrapper .pixel-input textarea {
+      font-family: '04b_03', monospace;
+      font-size: 16px;
+      text-transform: uppercase;
+      border: none;
+      width: 455px;
+      height: 200px; }
+      .input-wrapper .pixel-input textarea::placeholder {
+        font-family: '04b_03', monospace;
+        color: #b5b5b5;
+        font-size: 14px; }
+
+.mini-blocks, .input-wrapper::before, .input-wrapper::after, .input-wrapper .pixel-input::before, .input-wrapper .pixel-input::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  display: block;
+  position: absolute;
+  background: black; }
+
+.red-btn, .team-member .input-wrapper, #signup-form #kyc-continue, #personal-data-form #kyc-continue,
+#company-data-form #kyc-continue, #funding-form #kyc-continue, #signup-button-crypto, #signup-button-fiat, #investor-button-private, #investor-button-company, .continue-btn {
+  width: 40%;
+  display: inline-block;
+  background-color: #ef5e5e; }
+  .red-btn .pixel-input, .team-member .input-wrapper .pixel-input, #signup-form #kyc-continue .pixel-input, #personal-data-form #kyc-continue .pixel-input,
+  #company-data-form #kyc-continue .pixel-input, #funding-form #kyc-continue .pixel-input, #signup-button-crypto .pixel-input, #signup-button-fiat .pixel-input, #investor-button-private .pixel-input, #investor-button-company .pixel-input, .continue-btn .pixel-input {
+    background-color: #ef5e5e;
+    padding: 0px; }
+  .red-btn a, .team-member .input-wrapper a, #signup-form #kyc-continue a, #personal-data-form #kyc-continue a,
+  #company-data-form #kyc-continue a, #funding-form #kyc-continue a, #signup-button-crypto a, #signup-button-fiat a, #investor-button-private a, #investor-button-company a, .continue-btn a, .red-btn input, .team-member .input-wrapper input, #signup-form #kyc-continue input, #personal-data-form #kyc-continue input,
+  #company-data-form #kyc-continue input, #funding-form #kyc-continue input, #signup-button-crypto input, #signup-button-fiat input, #investor-button-private input, #investor-button-company input, .continue-btn input, .red-btn input:active, .team-member .input-wrapper input:active, #signup-form #kyc-continue input:active, #personal-data-form #kyc-continue input:active,
+  #company-data-form #kyc-continue input:active, #funding-form #kyc-continue input:active, #signup-button-crypto input:active, #signup-button-fiat input:active, #investor-button-private input:active, #investor-button-company input:active, .continue-btn input:active, .red-btn input:focus, .team-member .input-wrapper input:focus, #signup-form #kyc-continue input:focus, #personal-data-form #kyc-continue input:focus,
+  #company-data-form #kyc-continue input:focus, #funding-form #kyc-continue input:focus, #signup-button-crypto input:focus, #signup-button-fiat input:focus, #investor-button-private input:focus, #investor-button-company input:focus, .continue-btn input:focus {
+    cursor: pointer;
+    box-sizing: border-box;
+    font-family: '04b_03', monospace;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    border-top: 5px solid #f68888;
+    display: block;
+    padding: 30px 10px;
+    background-color: inherit; }
+  .red-btn h3, .team-member .input-wrapper h3, #signup-form #kyc-continue h3, #personal-data-form #kyc-continue h3,
+  #company-data-form #kyc-continue h3, #funding-form #kyc-continue h3, #signup-button-crypto h3, #signup-button-fiat h3, #investor-button-private h3, #investor-button-company h3, .continue-btn h3 {
+    margin: 10px; }
+  .red-btn img, .team-member .input-wrapper img, #signup-form #kyc-continue img, #personal-data-form #kyc-continue img,
+  #company-data-form #kyc-continue img, #funding-form #kyc-continue img, #signup-button-crypto img, #signup-button-fiat img, #investor-button-private img, #investor-button-company img, .continue-btn img {
+    min-height: 61px; }
+  .red-btn::before, .team-member .input-wrapper::before, #signup-form #kyc-continue::before, #personal-data-form #kyc-continue::before,
+  #company-data-form #kyc-continue::before, #funding-form #kyc-continue::before, #signup-button-crypto::before, #signup-button-fiat::before, #investor-button-private::before, #investor-button-company::before, .continue-btn::before, .red-btn::after, .team-member .input-wrapper::after, #signup-form #kyc-continue::after, #personal-data-form #kyc-continue::after,
+  #company-data-form #kyc-continue::after, #funding-form #kyc-continue::after, #signup-button-crypto::after, #signup-button-fiat::after, #investor-button-private::after, #investor-button-company::after, .continue-btn::after {
+    border-bottom: 5px solid #f68888; }
+
+.blue-btn, #bank-info-form .copy-sm {
+  width: 70%;
+  margin: 5% 15%;
+  display: inline-block;
+  background-color: #9ac4bf; }
+  .blue-btn .pixel-input, #bank-info-form .copy-sm .pixel-input {
+    background-color: #9ac4bf;
+    padding: 0px; }
+  .blue-btn a, #bank-info-form .copy-sm a {
+    box-sizing: border-box;
+    font-family: 'EightBitWonder', monospace;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    border-top: 5px solid #c8dfdc;
+    display: block;
+    padding: 15px; }
+  .blue-btn::before, #bank-info-form .copy-sm::before, .blue-btn::after, #bank-info-form .copy-sm::after {
+    border-bottom: 5px solid #c8dfdc; }
+
 #advisors-popup::before, #advisors-popup::after {
   border-bottom: 10px solid #8ac0d4; }
 #advisors-popup .modal-header {
   background-color: #5f8db0;
   border-top: 10px solid #8ac0d4; }
+
+.advisor, .team-member {
+  display: inline-block;
+  text-transform: uppercase; }
+  .advisor h5, .team-member h5 {
+    font-family: '04b_03', monospace;
+    margin: 0 0 15px 0; }
+
+.avatar-row {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.avatar {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  box-sizing: border-box;
+  padding: 2px;
+  flex: 1; }
+
+.avatar:hover {
+  border: 5px solid #5f8db0; }
 
 #team-popup::before, #team-popup::after {
   border-bottom: 10px solid #34d6e3; }
@@ -133,11 +308,85 @@ html, body {
 #team-popup .modal-body, #team-popup #why-now-popup .modal-footer, #why-now-popup #team-popup .modal-footer {
   padding: 10px 20px; }
 
+.team-member .avatar-bg {
+  height: 145px;
+  width: 145px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  position: relative; }
+  .team-member .avatar-bg #viktor-img {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+  .team-member .avatar-bg #nashat-img {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+  .team-member .avatar-bg #kim-img {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+.team-member .team-avatar {
+  height: 175px;
+  width: 175px;
+  border: 10px solid transparent;
+  padding: 5px;
+  outline: none;
+  background-color: white;
+  box-sizing: border-box;
+  flex: 1;
+  border-radius: 50%;
+  margin: 0; }
+.team-member .team-active {
+  border: 10px solid #ef5e5e; }
+.team-member h5 {
+  color: #24b5cc;
+  font-size: 16px; }
+.team-member p {
+  font-size: 12px;
+  width: 80%;
+  margin: 0 10%;
+  min-height: 24px; }
+.team-member .input-wrapper {
+  width: 90%;
+  margin: 2em 5%; }
+  .team-member .input-wrapper a {
+    font-size: 18px;
+    padding: 5px;
+    min-height: 2em;
+    min-width: 120px;
+    text-align: center; }
+
+.more-info-text {
+  border-top: 10px solid #b5b5b5;
+  box-shadow: inset 0px 10px 0px 0px white;
+  background-color: #e0e0e0;
+  padding: 20px;
+  margin: -10px;
+  height: 160px; }
+  .more-info-text h3, .more-info-text p {
+    margin: 10px; }
+
 #ourstory-popup::before, #ourstory-popup::after {
   border-bottom: 10px solid #dad3cf; }
 #ourstory-popup .modal-header {
   background-color: #bbaea7;
   border-top: 10px solid #dad3cf; }
+
+.dates-row {
+  margin-bottom: 5%;
+  text-align: center;
+  padding: 0; }
+  .dates-row li {
+    display: inline;
+    text-decoration: none;
+    margin: 20px; }
+    .dates-row li p {
+      display: inline; }
+  .dates-row .date-active {
+    color: black; }
+  .dates-row .date-inactive {
+    color: #bbaea7; }
 
 #contactus-popup::before, #contactus-popup::after {
   border-bottom: 10px solid #c4e880; }
@@ -305,278 +554,6 @@ html, body {
   #roadmap-popup .modal-footer p {
     font-size: 18px; }
 
-#why-now-popup::before, #why-now-popup::after {
-  border-bottom: 10px solid #d4dddf; }
-#why-now-popup .popup-inner-wrapper::before {
-  border-top: 10px solid #6e959f; }
-#why-now-popup .modal-header {
-  background-color: #b0c1c5;
-  border-top: 10px solid #d4dddf; }
-#why-now-popup .modal-footer {
-  min-height: 0; }
-
-.input-wrapper {
-  border-left: 5px solid black;
-  border-right: 5px solid black;
-  float: left;
-  box-sizing: border-box;
-  background-color: white;
-  position: relative; }
-  .input-wrapper::before {
-    top: -5px;
-    left: 0px; }
-  .input-wrapper::after {
-    top: -5px;
-    right: 0px; }
-  .input-wrapper .pixel-input {
-    background-color: white;
-    display: block;
-    color: black;
-    margin: -10px 5px;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black; }
-    .input-wrapper .pixel-input::before {
-      bottom: -5px;
-      left: 0px; }
-    .input-wrapper .pixel-input::after {
-      bottom: -5px;
-      right: 0px; }
-
-.pixel-input input {
-  font-family: '04b_03', monospace;
-  font-size: 16px;
-  text-transform: uppercase;
-  border: none;
-  height: 30px;
-  width: 100%; }
-.pixel-input textarea {
-  font-family: '04b_03', monospace;
-  font-size: 16px;
-  text-transform: uppercase;
-  border: none;
-  width: 455px;
-  height: 200px; }
-.pixel-input input::placeholder, .pixel-input textarea::placeholder {
-  font-family: '04b_03', monospace;
-  color: #b5b5b5;
-  font-size: 14px; }
-
-.mini-blocks, .input-wrapper::before, .input-wrapper::after, .input-wrapper .pixel-input::before, .input-wrapper .pixel-input::after {
-  content: '';
-  width: 5px;
-  height: 5px;
-  display: block;
-  position: absolute;
-  background: black; }
-
-.modal-header {
-  padding: 20px;
-  margin-left: -10px;
-  margin-right: -10px;
-  height: 100px; }
-  .modal-header h1 {
-    font-family: 'EightBitWonder', monospace;
-    color: white;
-    text-align: center;
-    font-size: 34px; }
-
-#close-x {
-  position: absolute;
-  top: 20px;
-  right: 30px; }
-
-#problem-solution-header {
-  padding: 0;
-  height: 50px; }
-
-#problem-solution-body {
-  height: auto;
-  text-align: center; }
-  #problem-solution-body h1 {
-    font-family: 'EightBitWonder', monospace;
-    color: white;
-    font-size: 22px;
-    padding: 35px;
-    margin: 0 -30px;
-    position: relative; }
-  #problem-solution-body #problem-title {
-    background-color: #c82e3d;
-    margin-top: 10%; }
-    #problem-solution-body #problem-title span {
-      border: 15px solid transparent;
-      border-bottom: 15px solid #c82e3d;
-      position: absolute;
-      top: -30px;
-      left: 420px; }
-  #problem-solution-body #solution-title {
-    background-color: #89cf79;
-    margin-bottom: 10%; }
-    #problem-solution-body #solution-title span {
-      border: 15px solid transparent;
-      border-top: 15px solid #89cf79;
-      position: absolute;
-      bottom: -30px;
-      left: 420px; }
-
-.red-btn, .team-member .input-wrapper, #signup-form #kyc-continue, #personal-data-form #kyc-continue,
-#company-data-form #kyc-continue, #funding-form #kyc-continue, #signup-button-crypto, #signup-button-fiat, #investor-button-private, #investor-button-company, .continue-btn {
-  width: 40%;
-  display: inline-block;
-  background-color: #ef5e5e; }
-  .red-btn .pixel-input, .team-member .input-wrapper .pixel-input, #signup-form #kyc-continue .pixel-input, #personal-data-form #kyc-continue .pixel-input,
-  #company-data-form #kyc-continue .pixel-input, #funding-form #kyc-continue .pixel-input, #signup-button-crypto .pixel-input, #signup-button-fiat .pixel-input, #investor-button-private .pixel-input, #investor-button-company .pixel-input, .continue-btn .pixel-input {
-    background-color: #ef5e5e;
-    padding: 0px; }
-  .red-btn a, .team-member .input-wrapper a, #signup-form #kyc-continue a, #personal-data-form #kyc-continue a,
-  #company-data-form #kyc-continue a, #funding-form #kyc-continue a, #signup-button-crypto a, #signup-button-fiat a, #investor-button-private a, #investor-button-company a, .continue-btn a, .red-btn input, .team-member .input-wrapper input, #signup-form #kyc-continue input, #personal-data-form #kyc-continue input,
-  #company-data-form #kyc-continue input, #funding-form #kyc-continue input, #signup-button-crypto input, #signup-button-fiat input, #investor-button-private input, #investor-button-company input, .continue-btn input, .red-btn input:active, .team-member .input-wrapper input:active, #signup-form #kyc-continue input:active, #personal-data-form #kyc-continue input:active,
-  #company-data-form #kyc-continue input:active, #funding-form #kyc-continue input:active, #signup-button-crypto input:active, #signup-button-fiat input:active, #investor-button-private input:active, #investor-button-company input:active, .continue-btn input:active, .red-btn input:focus, .team-member .input-wrapper input:focus, #signup-form #kyc-continue input:focus, #personal-data-form #kyc-continue input:focus,
-  #company-data-form #kyc-continue input:focus, #funding-form #kyc-continue input:focus, #signup-button-crypto input:focus, #signup-button-fiat input:focus, #investor-button-private input:focus, #investor-button-company input:focus, .continue-btn input:focus {
-    cursor: pointer;
-    box-sizing: border-box;
-    font-family: '04b_03', monospace;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 20px;
-    text-align: center;
-    color: white;
-    border-top: 5px solid #f68888;
-    display: block;
-    padding: 30px 10px;
-    background-color: inherit; }
-  .red-btn h3, .team-member .input-wrapper h3, #signup-form #kyc-continue h3, #personal-data-form #kyc-continue h3,
-  #company-data-form #kyc-continue h3, #funding-form #kyc-continue h3, #signup-button-crypto h3, #signup-button-fiat h3, #investor-button-private h3, #investor-button-company h3, .continue-btn h3 {
-    margin: 10px; }
-  .red-btn img, .team-member .input-wrapper img, #signup-form #kyc-continue img, #personal-data-form #kyc-continue img,
-  #company-data-form #kyc-continue img, #funding-form #kyc-continue img, #signup-button-crypto img, #signup-button-fiat img, #investor-button-private img, #investor-button-company img, .continue-btn img {
-    min-height: 61px; }
-  .red-btn::before, .team-member .input-wrapper::before, #signup-form #kyc-continue::before, #personal-data-form #kyc-continue::before,
-  #company-data-form #kyc-continue::before, #funding-form #kyc-continue::before, #signup-button-crypto::before, #signup-button-fiat::before, #investor-button-private::before, #investor-button-company::before, .continue-btn::before, .red-btn::after, .team-member .input-wrapper::after, #signup-form #kyc-continue::after, #personal-data-form #kyc-continue::after,
-  #company-data-form #kyc-continue::after, #funding-form #kyc-continue::after, #signup-button-crypto::after, #signup-button-fiat::after, #investor-button-private::after, #investor-button-company::after, .continue-btn::after {
-    border-bottom: 5px solid #f68888; }
-
-.blue-btn, #bank-info-form .copy-sm {
-  width: 70%;
-  margin: 5% 15%;
-  display: inline-block;
-  background-color: #9ac4bf; }
-  .blue-btn .pixel-input, #bank-info-form .copy-sm .pixel-input {
-    background-color: #9ac4bf;
-    padding: 0px; }
-  .blue-btn a, #bank-info-form .copy-sm a {
-    box-sizing: border-box;
-    font-family: 'EightBitWonder', monospace;
-    font-size: 15px;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    border-top: 5px solid #c8dfdc;
-    display: block;
-    padding: 15px; }
-  .blue-btn::before, #bank-info-form .copy-sm::before, .blue-btn::after, #bank-info-form .copy-sm::after {
-    border-bottom: 5px solid #c8dfdc; }
-
-.modal-body, #why-now-popup .modal-footer {
-  font-family: '04b_03', monospace;
-  background-color: white;
-  margin: 0;
-  padding: 20px;
-  text-transform: uppercase; }
-  .modal-body form, #why-now-popup .modal-footer form {
-    min-height: 100px; }
-  .modal-body h2, #why-now-popup .modal-footer h2, .modal-body h3, #why-now-popup .modal-footer h3, .modal-body nav, #why-now-popup .modal-footer nav {
-    text-align: center; }
-
-.avatar {
-  height: 90px;
-  width: 90px;
-  border-radius: 50%;
-  border: 5px solid transparent;
-  box-sizing: border-box;
-  padding: 2px;
-  flex: 1; }
-
-.avatar-row {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-
-.dates-row {
-  margin-bottom: 5%;
-  text-align: center;
-  padding: 0; }
-  .dates-row li {
-    display: inline;
-    text-decoration: none;
-    margin: 20px; }
-    .dates-row li p {
-      display: inline; }
-  .dates-row .date-active {
-    color: black; }
-  .dates-row .date-inactive {
-    color: #bbaea7; }
-
-.advisor, .team-member {
-  display: inline-block;
-  text-transform: uppercase; }
-  .advisor h5, .team-member h5 {
-    font-family: '04b_03', monospace;
-    margin: 0 0 15px 0; }
-
-.team-member .avatar-bg {
-  height: 145px;
-  width: 145px;
-  background-color: #e0e0e0;
-  border-radius: 50%;
-  position: relative; }
-  .team-member .avatar-bg #viktor-img {
-    position: absolute;
-    bottom: 0;
-    left: 0; }
-  .team-member .avatar-bg #nashat-img {
-    position: absolute;
-    bottom: 0;
-    left: 0; }
-  .team-member .avatar-bg #kim-img {
-    position: absolute;
-    bottom: 0;
-    left: 0; }
-.team-member .team-avatar {
-  height: 175px;
-  width: 175px;
-  border: 10px solid transparent;
-  padding: 5px;
-  outline: none;
-  background-color: white;
-  box-sizing: border-box;
-  flex: 1;
-  border-radius: 50%;
-  margin: 0; }
-.team-member .team-active {
-  border: 10px solid #ef5e5e; }
-.team-member h5 {
-  color: #24b5cc;
-  font-size: 16px; }
-.team-member p {
-  font-size: 12px;
-  width: 80%;
-  margin: 0 10%;
-  min-height: 24px; }
-.team-member .input-wrapper {
-  width: 90%;
-  margin: 2em 5%; }
-  .team-member .input-wrapper a {
-    font-size: 18px;
-    padding: 5px;
-    min-height: 2em;
-    min-width: 120px;
-    text-align: center; }
-
-.avatar:hover {
-  border: 5px solid #5f8db0; }
-
 .node-row {
   display: flex;
   flex-direction: row;
@@ -630,6 +607,16 @@ html, body {
     margin: 0 0 0 6px;
     font-size: 18px; }
 
+#why-now-popup::before, #why-now-popup::after {
+  border-bottom: 10px solid #d4dddf; }
+#why-now-popup .popup-inner-wrapper::before {
+  border-top: 10px solid #6e959f; }
+#why-now-popup .modal-header {
+  background-color: #b0c1c5;
+  border-top: 10px solid #d4dddf; }
+#why-now-popup .modal-footer {
+  min-height: 0; }
+
 .why-tabs {
   list-style: none;
   box-sizing: border-box;
@@ -681,25 +668,38 @@ html, body {
     font-size: 18px;
     line-height: 2em; }
 
-.modal-footer {
-  font-family: '04b_03', monospace;
-  margin: 0;
-  background-color: white;
-  padding-bottom: 10px;
-  min-height: 20px;
-  border-bottom: 10px solid #b5b5b5; }
-
-.more-info-text {
-  border-top: 10px solid #b5b5b5;
-  box-shadow: inset 0px 10px 0px 0px white;
-  background-color: #e0e0e0;
-  padding: 20px;
-  margin: -10px;
-  height: 160px; }
-  .more-info-text h3, .more-info-text p {
-    margin: 10px; }
-
-#problem-solution-footer {
+#problem-solution-popup .modal-header {
+  padding: 0;
+  height: 50px; }
+#problem-solution-popup .modal-body, #problem-solution-popup #why-now-popup .modal-footer, #why-now-popup #problem-solution-popup .modal-footer {
+  height: auto;
+  text-align: center; }
+  #problem-solution-popup .modal-body h1, #problem-solution-popup #why-now-popup .modal-footer h1, #why-now-popup #problem-solution-popup .modal-footer h1 {
+    font-family: 'EightBitWonder', monospace;
+    color: white;
+    font-size: 22px;
+    padding: 35px;
+    margin: 0 -30px;
+    position: relative; }
+  #problem-solution-popup .modal-body #problem-title, #problem-solution-popup #why-now-popup .modal-footer #problem-title, #why-now-popup #problem-solution-popup .modal-footer #problem-title {
+    background-color: #c82e3d;
+    margin-top: 10%; }
+    #problem-solution-popup .modal-body #problem-title span, #problem-solution-popup #why-now-popup .modal-footer #problem-title span, #why-now-popup #problem-solution-popup .modal-footer #problem-title span {
+      border: 15px solid transparent;
+      border-bottom: 15px solid #c82e3d;
+      position: absolute;
+      top: -30px;
+      left: 420px; }
+  #problem-solution-popup .modal-body #solution-title, #problem-solution-popup #why-now-popup .modal-footer #solution-title, #why-now-popup #problem-solution-popup .modal-footer #solution-title {
+    background-color: #89cf79;
+    margin-bottom: 10%; }
+    #problem-solution-popup .modal-body #solution-title span, #problem-solution-popup #why-now-popup .modal-footer #solution-title span, #why-now-popup #problem-solution-popup .modal-footer #solution-title span {
+      border: 15px solid transparent;
+      border-top: 15px solid #89cf79;
+      position: absolute;
+      bottom: -30px;
+      left: 420px; }
+#problem-solution-popup .modal-footer {
   min-height: 40px; }
 
 input, button, select,
@@ -1000,7 +1000,8 @@ input:active, button:active, select:active {
       font-size: 15px;
       text-align: center;
       padding: 0;
-      height: inherit; }
+      height: inherit;
+      border-top: 5px solid #f68888; }
 
 #progress-bar {
   width: 70%;
