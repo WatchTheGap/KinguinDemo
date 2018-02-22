@@ -298,6 +298,11 @@
     padding: 10px 20px;
   }
 }
+.team-row {
+  @extend .avatar-row;
+  justify-content: space-around;
+  margin: 0;
+}
 
 .team-member {
   @extend .advisor;
