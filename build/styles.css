@@ -1071,6 +1071,11 @@ input:active, button:active, select:active {
     left: 248px;
     width: 127px;
     height: 178px; }
+  #bulb::before {
+    content: url("img/Bulb_hover.png");
+    width: 0;
+    height: 0;
+    visibility: hidden; }
 
 #company {
   background-image: url("img/Company.png");
@@ -1085,8 +1090,14 @@ input:active, button:active, select:active {
     left: 161px;
     width: 361px;
     height: 366px; }
+  #company::before {
+    content: url("img/Company_hover.png");
+    width: 0;
+    height: 0;
+    visibility: hidden; }
 
 #ourstory {
+  background-image: image();
   background-image: url("img/OurStory.png");
   top: 249px;
   left: 42px;
@@ -1098,7 +1109,13 @@ input:active, button:active, select:active {
     top: 238px;
     left: 28px;
     width: 217px;
-    height: 193px; }
+    height: 193px;
+    transition-delay: 10ms; }
+  #ourstory::before {
+    content: url("img/OurStory_hover.png");
+    width: 0;
+    height: 0;
+    visibility: hidden; }
 
 #team {
   background-image: url("img/Team.png");
@@ -1114,6 +1131,11 @@ input:active, button:active, select:active {
     width: 323px;
     height: 395px;
     transition-delay: 10ms; }
+  #team::before {
+    content: url("img/Team_hover.png");
+    width: 0;
+    height: 0;
+    visibility: hidden; }
 
 #advisors {
   top: 290px;
@@ -1130,7 +1152,13 @@ input:active, button:active, select:active {
     background-image: url("img/ContactUs_hover.png");
     width: 257px;
     height: 128px;
-    right: -210px; }
+    right: -210px;
+    transition-delay: 10ms; }
+  #contactus::before {
+    content: url("img/ContactUs_hover.png");
+    width: 0;
+    height: 0;
+    visibility: hidden; }
 
 #landing-island {
   top: 101px;
@@ -1151,6 +1179,11 @@ input:active, button:active, select:active {
     left: 57px;
     width: 97px;
     height: 123px; }
+  #notify-btn::before {
+    content: url("img/NotifyBtn_Hover.png");
+    width: 0;
+    height: 0;
+    visibility: hidden; }
 
 #go-btn {
   background-image: url("img/GoBtn_Default.png");
@@ -1165,6 +1198,11 @@ input:active, button:active, select:active {
     left: 424px;
     width: 82px;
     height: 59px; }
+  #go-btn::before {
+    content: url("img/GoBtn_Hover.png");
+    width: 0;
+    height: 0;
+    visibility: hidden; }
 
 .info-panel {
   background-image: url("img/Info.png");
@@ -1172,6 +1210,11 @@ input:active, button:active, select:active {
   left: 244px;
   width: 195px;
   height: 284px; }
+  .info-panel::before {
+    content: url("img/Info_hover.png");
+    width: 0;
+    height: 0;
+    visibility: hidden; }
 
 .info-clicked {
   background-image: url("img/Info_hover.png");
@@ -1203,6 +1246,11 @@ input:active, button:active, select:active {
     left: 63px;
     width: 177px;
     height: 255px; }
+  #market::before {
+    content: url("img/Market_hover.png");
+    width: 0;
+    height: 0;
+    visibility: hidden; }
 
 #tokens {
   background-image: url("img/Tokens.png");
@@ -1227,6 +1275,11 @@ input:active, button:active, select:active {
     left: 270px;
     width: 293px;
     height: 182px; }
+  #whitepaper::before {
+    content: url("img/Whitepaper_hover.png");
+    width: 0;
+    height: 0;
+    visibility: hidden; }
 
 #strategy-island {
   top: 799px;
@@ -1257,13 +1310,17 @@ input:active, button:active, select:active {
   width: 321px;
   height: 371px;
   transition: all .25s ease-in-out; }
-
-#problem-solution:hover {
-  background-image: url("img/Problem_hover.png");
-  top: -88px;
-  left: 159px;
-  width: 321px;
-  height: 371px; }
+  #problem-solution:hover {
+    background-image: url("img/Problem_hover.png");
+    top: -88px;
+    left: 159px;
+    width: 321px;
+    height: 371px; }
+  #problem-solution::before {
+    content: url("img/Problem_hover.png");
+    width: 0;
+    height: 0;
+    visibility: hidden; }
 
 #roadmap {
   background-image: url("img/Roadmap.png");
@@ -1272,10 +1329,9 @@ input:active, button:active, select:active {
   width: 241px;
   height: 186px;
   transition: all .25s ease-in-out; }
-
-#roadmap:hover {
-  top: 196px;
-  left: 19px; }
+  #roadmap:hover {
+    top: 196px;
+    left: 19px; }
 
 #projections {
   background-image: url("img/Projections.png");
@@ -1290,6 +1346,11 @@ input:active, button:active, select:active {
     left: 228px;
     width: 154px;
     height: 135px; }
+  #projections::before {
+    content: url("img/Projections_hover.png");
+    width: 0;
+    height: 0;
+    visibility: hidden; }
 
 #why-now {
   background-image: url("img/WhyNow.png");
@@ -1304,6 +1365,11 @@ input:active, button:active, select:active {
     left: 331px;
     width: 219px;
     height: 140px; }
+  #why-now::before {
+    content: url("img/WhyNow_hover.png");
+    width: 0;
+    height: 0;
+    visibility: hidden; }
 
 #distribution {
   background-image: url("img/Distribution.png");
@@ -1318,5 +1384,10 @@ input:active, button:active, select:active {
     left: 504px;
     width: 87px;
     height: 66px; }
+  #distribution::before {
+    content: url("img/Distribution_hover.png");
+    width: 0;
+    height: 0;
+    visibility: hidden; }
 
 /*# sourceMappingURL=styles.css.map */

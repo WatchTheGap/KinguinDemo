@@ -21,6 +21,12 @@
     width: 127px;
     height: 178px;
   }
+  &::before {
+    content: url('img/Bulb_hover.png');
+    width:0;
+    height:0;
+    visibility: hidden;
+  }
 }
 
 #company {
@@ -37,9 +43,16 @@
     width: 361px;
     height: 366px;
   }
+  &::before {
+    content: url('img/Company_hover.png');
+    width:0;
+    height:0;
+    visibility: hidden;
+  }
 }
 
 #ourstory {
+  background-image: image();
   background-image: url('img/OurStory.png');
   top: 249px;
   left: 42px;
@@ -52,6 +65,13 @@
     left: 28px;
     width: 217px;
     height: 193px;
+    transition-delay: 10ms;
+  }
+  &::before {
+    content: url('img/OurStory_hover.png');
+    width:0;
+    height:0;
+    visibility: hidden;
   }
 }
 
@@ -69,6 +89,12 @@
     width: 323px;
     height: 395px;
     transition-delay: 10ms;
+  }
+  &::before {
+    content: url('img/Team_hover.png');
+    width:0;
+    height:0;
+    visibility: hidden;
   }
 }
 
@@ -90,5 +116,12 @@
     width: 257px;
     height: 128px;
     right: -210px;
+    transition-delay: 10ms;
+  }
+  &::before {
+    content: url('img/ContactUs_hover.png');
+    width:0;
+    height:0;
+    visibility: hidden;
   }
 }

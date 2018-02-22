@@ -34,14 +34,19 @@ left: 40px;
   width: 321px;
   height: 371px;
   transition: all .25s ease-in-out;
-}
-
-#problem-solution:hover {
-  background-image: url('img/Problem_hover.png');
-  top: -88px;
-  left: 159px;
-  width: 321px;
-  height: 371px;
+  &:hover {
+    background-image: url('img/Problem_hover.png');
+    top: -88px;
+    left: 159px;
+    width: 321px;
+    height: 371px;
+  }
+  &::before {
+    content: url('img/Problem_hover.png');
+    width:0;
+    height:0;
+    visibility: hidden;
+  }
 }
 
 #roadmap {
@@ -51,11 +56,10 @@ left: 40px;
   width: 241px;
   height: 186px;
   transition: all .25s ease-in-out;
-}
-
-#roadmap:hover {
-  top: 196px;
-  left: 19px;
+  &:hover {
+    top: 196px;
+    left: 19px;
+  }
 }
 
 #projections {
@@ -71,6 +75,12 @@ left: 40px;
     left: 228px;
     width: 154px;
     height: 135px;
+  }
+  &::before {
+    content: url('img/Projections_hover.png');
+    width:0;
+    height:0;
+    visibility: hidden;
   }
 }
 
@@ -88,6 +98,12 @@ left: 40px;
     width: 219px;
     height: 140px;
   }
+  &::before {
+    content: url('img/WhyNow_hover.png');
+    width:0;
+    height:0;
+    visibility: hidden;
+  }
 }
 
 #distribution {
@@ -103,5 +119,11 @@ left: 40px;
     left: 504px;
     width: 87px;
     height: 66px;
+  }
+  &::before {
+    content: url('img/Distribution_hover.png');
+    width:0;
+    height:0;
+    visibility: hidden;
   }
 }

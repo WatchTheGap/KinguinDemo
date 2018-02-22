@@ -21,6 +21,12 @@
     width: 97px;
     height: 123px;
   }
+  &::before {
+    content: url('img/NotifyBtn_Hover.png');
+    width:0;
+    height:0;
+    visibility: hidden;
+  }
 }
 
 #go-btn {
@@ -37,6 +43,12 @@
     width: 82px;
     height: 59px;
   }
+  &::before {
+    content: url('img/GoBtn_Hover.png');
+    width:0;
+    height:0;
+    visibility: hidden;
+  }
 }
 
 .info-panel {
@@ -45,6 +57,12 @@
   left: 244px;
   width: 195px;
   height: 284px;
+  &::before {
+    content: url('img/Info_hover.png');
+    width:0;
+    height:0;
+    visibility: hidden;
+  }
 }
 .info-clicked {
   background-image: url('img/Info_hover.png');

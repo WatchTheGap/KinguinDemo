@@ -26,6 +26,12 @@
     width: 177px;
     height: 255px;
   }
+  &::before {
+    content: url('img/Market_hover.png');
+    width:0;
+    height:0;
+    visibility: hidden;
+  }
 }
 
 #tokens {
@@ -53,5 +59,11 @@
     left: 270px;
     width: 293px;
     height: 182px;
+  }
+  &::before {
+    content: url('img/Whitepaper_hover.png');
+    width:0;
+    height:0;
+    visibility: hidden;
   }
 }
