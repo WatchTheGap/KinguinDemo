@@ -61,7 +61,7 @@ module.exports = function (grunt){
     },
     concat: {
         dist: {
-          src: ['src/js/*.js'],
+          src: ['src/js/img-load.js', 'src/js/*.js'],
           dest: 'build/js/app.js'
         }
       },
