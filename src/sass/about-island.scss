@@ -13,14 +13,14 @@
   left: 251px;
   width: 118px;
   height: 124px;
-}
-
-#bulb:hover {
-  background-image: url('img/Bulb_hover.png');
-  top: 259px;
-  left: 248px;
-  width: 127px;
-  height: 178px;
+  transition-delay: 10ms;
+  &:hover {
+    background-image: url('img/Bulb_hover.png');
+    top: 259px;
+    left: 248px;
+    width: 127px;
+    height: 178px;
+  }
 }
 
 #company {
@@ -30,14 +30,13 @@
   width: 361px;
   height: 366px;
   transition: all .25s ease-in-out;
-}
-
-#company:hover {
-  background-image: url('img/Company_hover.png');
-  top: 50px;
-  left: 161px;
-  width: 361px;
-  height: 366px;
+  &:hover {
+    background-image: url('img/Company_hover.png');
+    top: 50px;
+    left: 161px;
+    width: 361px;
+    height: 366px;
+  }
 }
 
 #ourstory {
@@ -46,14 +45,14 @@
   left: 42px;
   width: 201px;
   height: 181px;
-}
-
-#ourstory:hover {
-  background-image: url('img/OurStory_hover.png');
-  top: 238px;
-  left: 28px;
-  width: 217px;
-  height: 193px;
+  transition-delay: 10ms;
+  &:hover {
+    background-image: url('img/OurStory_hover.png');
+    top: 238px;
+    left: 28px;
+    width: 217px;
+    height: 193px;
+  }
 }
 
 #team {
@@ -62,17 +61,15 @@
   left: 0;
   width: 482px;
   height: 361px;
-  transition-delay: .25s;
-  // TODO: find better transitions. ADD DELAYS???
-  // transition: all .25s ease-in-out;
-}
-
-#team:hover {
-  background-image: url('img/Team_hover.png');
-  top: -35px;
-  left: 0;
-  width: 323px;
-  height: 395px;
+  transition-delay: 250ms;
+  &:hover {
+    background-image: url('img/Team_hover.png');
+    top: -35px;
+    left: 0;
+    width: 323px;
+    height: 395px;
+    transition-delay: 10ms;
+  }
 }
 
 #advisors {
@@ -85,17 +82,13 @@
   width: 241px;
   height: 117px;
   top: 382px;
-  left: 0px;
-  transition: all .25s ease-in-out;
+  right: -210px;
+  transition-delay: 10ms;
   // TODO: the pencil looks weird here...
-}
-
-
-#contactus:hover {
-  background-image: url('img/ContactUs_hover.png');
-  width: 257px;
-  height: 128px;
-  top: 382px;
-  left: -17px;
-
+  &:hover {
+    background-image: url('img/ContactUs_hover.png');
+    width: 257px;
+    height: 128px;
+    right: -210px;
+  }
 }

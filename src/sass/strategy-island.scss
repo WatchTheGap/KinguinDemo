@@ -64,14 +64,14 @@ left: 40px;
   left: 262px;
   width: 120px;
   height: 75px;
-}
-
-#projections:hover {
-  background-image: url('img/Projections_hover.png');
-  top: 314px;
-  left: 228px;
-  width: 154px;
-  height: 135px;
+  transition-delay: 10ms;
+  &:hover {
+    background-image: url('img/Projections_hover.png');
+    top: 314px;
+    left: 228px;
+    width: 154px;
+    height: 135px;
+  }
 }
 
 #why-now {
@@ -80,14 +80,14 @@ left: 40px;
   left: 331px;
   width: 219px;
   height: 134px;
-}
-
-#why-now:hover {
-  background-image: url('img/WhyNow_hover.png');
-  top: 202px;
-  left: 331px;
-  width: 219px;
-  height: 140px;
+  transition-delay: 10ms;
+  &:hover {
+    background-image: url('img/WhyNow_hover.png');
+    top: 202px;
+    left: 331px;
+    width: 219px;
+    height: 140px;
+  }
 }
 
 #distribution {
@@ -96,12 +96,12 @@ left: 40px;
   left: 504px;
   width: 83px;
   height: 55px;
-}
-
-#distribution:hover {
-  background-image: url('img/Distribution_hover.png');
-  top: 99px;
-  left: 504px;
-  width: 87px;
-  height: 66px;
+  transition-delay: 10ms;
+  &:hover {
+    background-image: url('img/Distribution_hover.png');
+    top: 99px;
+    left: 504px;
+    width: 87px;
+    height: 66px;
+  }
 }

@@ -13,13 +13,14 @@
   left: 57px;
   width: 92px;
   height: 120px;
-}
-#notify-btn:hover {
-  background-image: url('img/NotifyBtn_Hover.png');
-  top: 347px;
-  left: 57px;
-  width: 97px;
-  height: 123px;
+  transition-delay: 10ms;
+  &:hover {
+    background-image: url('img/NotifyBtn_Hover.png');
+    top: 347px;
+    left: 57px;
+    width: 97px;
+    height: 123px;
+  }
 }
 
 #go-btn {
@@ -28,14 +29,14 @@
   left: 424px;
   width: 82px;
   height: 50px;
-}
-
-#go-btn:hover {
-  background-image: url('img/GoBtn_Hover.png');
-  top: 266px;
-  left: 424px;
-  width: 82px;
-  height: 59px;
+  transition-delay: 10ms;
+  &:hover {
+    background-image: url('img/GoBtn_Hover.png');
+    top: 266px;
+    left: 424px;
+    width: 82px;
+    height: 59px;
+  }
 }
 
 .info-panel {

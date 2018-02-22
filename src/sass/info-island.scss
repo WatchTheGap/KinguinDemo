@@ -18,14 +18,14 @@
   left: 67px;
   width: 173px;
   height: 242px;
-}
-
-#market:hover {
-  background-image: url('img/Market_hover.png');
-  top: 147px;
-  left: 63px;
-  width: 177px;
-  height: 255px;
+  transition-delay: 10ms;
+  &:hover {
+    background-image: url('img/Market_hover.png');
+    top: 147px;
+    left: 63px;
+    width: 177px;
+    height: 255px;
+  }
 }
 
 #tokens {
@@ -35,10 +35,9 @@
   width: 280px;
   height: 401px;
   transition: top .25s ease-in-out;
-}
-
-#tokens:hover {
-  top: -187px;
+  &:hover {
+    top: -187px;
+  }
 }
 
 #whitepaper {
@@ -47,12 +46,12 @@
   left: 272px;
   width: 281px;
   height: 169px;
-}
-
-#whitepaper:hover {
-  background-image: url('img/Whitepaper_hover.png');
-  top: 152px;
-  left: 270px;
-  width: 293px;
-  height: 182px;
+  transition-delay: 10ms;
+  &:hover {
+    background-image: url('img/Whitepaper_hover.png');
+    top: 152px;
+    left: 270px;
+    width: 293px;
+    height: 182px;
+  }
 }
