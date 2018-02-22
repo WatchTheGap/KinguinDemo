@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/Kinguin-io/digital_strategy#readme",
   "dependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "jquery-prefetch": "^0.1.3"
   }
 }

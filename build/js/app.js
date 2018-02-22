@@ -109,6 +109,13 @@
 (function() {
   'use strict';
 
+  $('img, div').Prefetch();
+
+}());
+
+(function() {
+  'use strict';
+
   $('.dates-row li:contains("2013")').click(function () {
     $(this).addClass('date-active').removeClass('date-inactive');
     $(this).siblings('.date-active').addClass('date-inactive').removeClass('date-active');
