@@ -1221,7 +1221,8 @@ input:active, button:active, select:active {
   top: 317px;
   left: 200px;
   width: 228px;
-  height: 392px; }
+  height: 392px;
+  z-index: 1; }
 
 #info-island {
   top: 961px;
