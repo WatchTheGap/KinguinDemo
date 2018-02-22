@@ -44,8 +44,8 @@ module.exports = function (grunt){
             expand: true
           },
           {
-            cwd: 'node_modules/jquery-prefetch/',
-            src: ['jquery.prefetch.min.js'],
+            cwd: '',
+            src: ['jquery.preload.js'],
             dest: 'build/',
             expand: true
           }
