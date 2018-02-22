@@ -300,8 +300,11 @@ html, body {
   padding: 2px;
   flex: 1; }
 
-.avatar:hover {
+.avatar-selected {
   border: 5px solid #5f8db0; }
+
+.more-info-text {
+  display: none; }
 
 #team-popup::before, #team-popup::after {
   border-bottom: 10px solid #34d6e3; }

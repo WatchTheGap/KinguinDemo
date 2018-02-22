@@ -277,8 +277,12 @@
   flex: 1;
 }
 
-.avatar:hover {
+.avatar-selected {
   border: 5px solid #5f8db0;
+}
+
+.more-info-text {
+  display: none;
 }
 
 //************************************
