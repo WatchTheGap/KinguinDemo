@@ -59,6 +59,17 @@ module.exports = function (grunt){
         }
       }
     },
+    postcss: {
+      options: {
+        map: true,
+        processors: [
+          require('autoprefixer')({browsers: '> 1%, last 2 versions, Firefox > 20'})
+        ]
+      },
+      dist: {
+        src: 'build/styles.css'
+      }
+    },
     concat: {
       dist: {
         src: ['src/js/img-load.js', 'src/js/*.js'],
@@ -84,10 +95,11 @@ module.exports = function (grunt){
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-babel');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('build', ['clean', 'sass', 'copy', 'concat']);
+  grunt.registerTask('build', ['clean', 'sass', 'postcss', 'copy', 'concat']);
 
 };

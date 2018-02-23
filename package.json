@@ -4,6 +4,7 @@
   "description": "Kinguin ICO Digital Strategy",
   "main": "app.js",
   "devDependencies": {
+    "autoprefixer": "^8.0.0",
     "babel-core": "^6.26.0",
     "grunt": "^1.0.1",
     "grunt-babel": "^7.0.0",
@@ -11,7 +12,8 @@
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0"
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.9.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,6 +29,6 @@
   },
   "homepage": "https://github.com/Kinguin-io/digital_strategy#readme",
   "dependencies": {
-    "jquery": "^3.3.1",
+    "jquery": "^3.3.1"
   }
 }
