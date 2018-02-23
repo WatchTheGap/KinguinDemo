@@ -72,7 +72,7 @@ module.exports = function (grunt){
     },
     concat: {
       dist: {
-        src: ['src/js/img-load.js', 'src/js/*.js'],
+        src: ['src/js/*.js'],
         dest: 'build/js/app.js'
       }
     },
@@ -100,6 +100,6 @@ module.exports = function (grunt){
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('build', ['clean', 'sass', 'postcss', 'copy', 'concat']);
+  grunt.registerTask('build', ['clean', 'sass', 'copy', 'concat', 'postcss']);
 
 };

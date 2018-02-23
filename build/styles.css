@@ -1329,9 +1329,7 @@ input:active, button:active, select:active {
   top: 313px;
   left: 251px;
   width: 118px;
-  height: 124px;
-  -webkit-transition-delay: 10ms;
-          transition-delay: 10ms; }
+  height: 124px; }
   #bulb:hover {
     background-image: url("img/Bulb_hover.png");
     top: 259px;
@@ -1370,17 +1368,13 @@ input:active, button:active, select:active {
   top: 249px;
   left: 42px;
   width: 201px;
-  height: 181px;
-  -webkit-transition-delay: 10ms;
-          transition-delay: 10ms; }
+  height: 181px; }
   #ourstory:hover {
     background-image: url("img/OurStory_hover.png");
     top: 238px;
     left: 28px;
     width: 217px;
-    height: 193px;
-    -webkit-transition-delay: 10ms;
-            transition-delay: 10ms; }
+    height: 193px; }
   #ourstory::before {
     content: url("img/OurStory_hover.png");
     width: 0;
@@ -1392,17 +1386,13 @@ input:active, button:active, select:active {
   top: 0;
   left: 0;
   width: 482px;
-  height: 361px;
-  -webkit-transition-delay: 250ms;
-          transition-delay: 250ms; }
+  height: 361px; }
   #team:hover {
     background-image: url("img/Team_hover.png");
     top: -35px;
     left: 0;
     width: 323px;
-    height: 395px;
-    -webkit-transition-delay: 10ms;
-            transition-delay: 10ms; }
+    height: 395px; }
   #team::before {
     content: url("img/Team_hover.png");
     width: 0;
@@ -1418,16 +1408,12 @@ input:active, button:active, select:active {
   width: 241px;
   height: 117px;
   top: 382px;
-  right: -210px;
-  -webkit-transition-delay: 10ms;
-          transition-delay: 10ms; }
+  right: -210px; }
   #contactus:hover {
     background-image: url("img/ContactUs_hover.png");
     width: 257px;
     height: 128px;
-    right: -210px;
-    -webkit-transition-delay: 10ms;
-            transition-delay: 10ms; }
+    right: -210px; }
   #contactus::before {
     content: url("img/ContactUs_hover.png");
     width: 0;
@@ -1445,9 +1431,7 @@ input:active, button:active, select:active {
   top: 347px;
   left: 57px;
   width: 92px;
-  height: 120px;
-  -webkit-transition-delay: 10ms;
-          transition-delay: 10ms; }
+  height: 120px; }
   #notify-btn:hover {
     background-image: url("img/NotifyBtn_Hover.png");
     top: 347px;
@@ -1465,9 +1449,7 @@ input:active, button:active, select:active {
   top: 275px;
   left: 424px;
   width: 82px;
-  height: 50px;
-  -webkit-transition-delay: 10ms;
-          transition-delay: 10ms; }
+  height: 50px; }
   #go-btn:hover {
     background-image: url("img/GoBtn_Hover.png");
     top: 266px;
@@ -1515,9 +1497,7 @@ input:active, button:active, select:active {
   top: 161px;
   left: 67px;
   width: 173px;
-  height: 242px;
-  -webkit-transition-delay: 10ms;
-          transition-delay: 10ms; }
+  height: 242px; }
   #market:hover {
     background-image: url("img/Market_hover.png");
     top: 147px;
@@ -1546,9 +1526,7 @@ input:active, button:active, select:active {
   top: 159px;
   left: 272px;
   width: 281px;
-  height: 169px;
-  -webkit-transition-delay: 10ms;
-          transition-delay: 10ms; }
+  height: 169px; }
   #whitepaper:hover {
     background-image: url("img/Whitepaper_hover.png");
     top: 152px;
@@ -1620,9 +1598,7 @@ input:active, button:active, select:active {
   top: 330px;
   left: 262px;
   width: 120px;
-  height: 75px;
-  -webkit-transition-delay: 10ms;
-          transition-delay: 10ms; }
+  height: 75px; }
   #projections:hover {
     background-image: url("img/Projections_hover.png");
     top: 314px;
@@ -1640,9 +1616,7 @@ input:active, button:active, select:active {
   top: 208px;
   left: 331px;
   width: 219px;
-  height: 134px;
-  -webkit-transition-delay: 10ms;
-          transition-delay: 10ms; }
+  height: 134px; }
   #why-now:hover {
     background-image: url("img/WhyNow_hover.png");
     top: 202px;
@@ -1660,9 +1634,7 @@ input:active, button:active, select:active {
   top: 110px;
   left: 504px;
   width: 83px;
-  height: 55px;
-  -webkit-transition-delay: 10ms;
-          transition-delay: 10ms; }
+  height: 55px; }
   #distribution:hover {
     background-image: url("img/Distribution_hover.png");
     top: 99px;

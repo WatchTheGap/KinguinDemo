@@ -13,7 +13,6 @@
   left: 251px;
   width: 118px;
   height: 124px;
-  transition-delay: 10ms;
   &:hover {
     background-image: url('img/Bulb_hover.png');
     top: 259px;
@@ -58,14 +57,12 @@
   left: 42px;
   width: 201px;
   height: 181px;
-  transition-delay: 10ms;
   &:hover {
     background-image: url('img/OurStory_hover.png');
     top: 238px;
     left: 28px;
     width: 217px;
     height: 193px;
-    transition-delay: 10ms;
   }
   &::before {
     content: url('img/OurStory_hover.png');
@@ -81,14 +78,12 @@
   left: 0;
   width: 482px;
   height: 361px;
-  transition-delay: 250ms;
   &:hover {
     background-image: url('img/Team_hover.png');
     top: -35px;
     left: 0;
     width: 323px;
     height: 395px;
-    transition-delay: 10ms;
   }
   &::before {
     content: url('img/Team_hover.png');
@@ -109,14 +104,12 @@
   height: 117px;
   top: 382px;
   right: -210px;
-  transition-delay: 10ms;
   // TODO: the pencil looks weird here...
   &:hover {
     background-image: url('img/ContactUs_hover.png');
     width: 257px;
     height: 128px;
     right: -210px;
-    transition-delay: 10ms;
   }
   &::before {
     content: url('img/ContactUs_hover.png');
