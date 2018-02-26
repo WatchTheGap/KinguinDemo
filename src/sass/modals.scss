@@ -297,7 +297,11 @@
   .modal-body {
     padding: 10px 20px;
   }
+  .more-info-text h4 {
+    font-style: italic;
+  }
 }
+
 .team-row {
   @extend .avatar-row;
   justify-content: space-around;
@@ -372,7 +376,7 @@
   box-shadow: inset 0px 10px 0px 0px white;
   background-color: #e0e0e0;
   padding: 20px;
-  h3, p {
+  h3, h4, .bio-text {
     margin: 10px;
   }
   margin: -10px;
