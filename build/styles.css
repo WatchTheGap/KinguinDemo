@@ -442,6 +442,7 @@ html, body {
   margin: -10px;
   height: 160px; }
   .more-info-text h3, .more-info-text h4, .more-info-text .bio-text {
+    text-transform: uppercase;
     margin: 10px; }
 
 #ourstory-popup::before, #ourstory-popup::after {
