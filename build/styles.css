@@ -385,20 +385,40 @@ html, body {
   background-color: #bbaea7;
   border-top: 10px solid #dad3cf; }
 #ourstory-popup .modal-body, #ourstory-popup #why-now-popup .modal-footer, #why-now-popup #ourstory-popup .modal-footer {
-  height: 200px; }
+  height: 280px; }
+  #ourstory-popup .modal-body .summary, #ourstory-popup #why-now-popup .modal-footer .summary, #why-now-popup #ourstory-popup .modal-footer .summary {
+    margin: 5% 10%;
+    min-height: 3em; }
+  #ourstory-popup .modal-body p, #ourstory-popup #why-now-popup .modal-footer p, #why-now-popup #ourstory-popup .modal-footer p {
+    display: inline;
+    color: #49423f;
+    font-size: 18px; }
+  #ourstory-popup .modal-body h4, #ourstory-popup #why-now-popup .modal-footer h4, #why-now-popup #ourstory-popup .modal-footer h4 {
+    color: #010101;
+    font-size: 18px; }
 
 .dates-row {
-  margin-bottom: 5%;
+  margin: 5% 10%;
   text-align: center;
-  padding: 0; }
+  padding: 0;
+  display: flex;
+  justify-content: space-between; }
   .dates-row li {
     display: inline;
     text-decoration: none;
-    margin: 20px; }
-    .dates-row li p {
-      display: inline; }
+    margin: 20px;
+    font-size: 26px;
+    margin: 0;
+    position: relative; }
   .dates-row .date-active {
-    color: black; }
+    color: #010101; }
+    .dates-row .date-active::before {
+      content: '';
+      border: 4px solid transparent;
+      border-top: 6px solid #010101;
+      position: absolute;
+      top: 36px;
+      left: 40%; }
   .dates-row .date-inactive {
     color: #bbaea7; }
 

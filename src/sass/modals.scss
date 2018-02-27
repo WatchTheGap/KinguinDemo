@@ -393,26 +393,48 @@
     border-top: 10px solid #dad3cf;
   }
   .modal-body {
-    height: 200px;
+    height: 280px;
+    .summary {
+      margin: 5% 10%;
+      min-height: 3em;
+    }
+    p {
+      display: inline;
+      color: #49423f;
+      font-size: 18px;
+    }
+    h4 {
+      color: #010101;
+      font-size: 18px;
+    }
   }
 }
 
 .dates-row {
-  margin-bottom: 5%;
+  margin: 5% 10%;
   text-align: center;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
   li {
     display: inline;
     text-decoration: none;
     margin: 20px;
-    p {
-      display: inline;
-    }
+    font-size: 26px;
+    margin: 0;
+    position: relative;
   }
   .date-active {
-    color: black;
+    color: #010101;
+    &::before {
+      content: '';
+      border: 4px solid transparent;
+      border-top: 6px solid #010101;
+      position: absolute;
+      top: 36px;
+      left: 40%;
+    }
   }
-
   .date-inactive {
     color: #bbaea7;
   }
