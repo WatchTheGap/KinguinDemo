@@ -5,15 +5,30 @@
 .blur {
   filter: blur(5px);
 }
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup-wrapper {
+  @extend .centered;
+}
+
+.signup-wrapper {
+  margin: 10vh 25vw;
+  .popup-outer-wrapper {
+    width: 50vh;
+  }
+}
 
 //************************************
 //*** 8-BIT POPUP WINDOW *************
 //************************************
 .popup-outer-wrapper{
   position: relative;
-  margin: 10%;
   min-width: 700px;
-  width: 40%;
   height: auto;
   float: left;
   border-left: 10px solid black;
@@ -563,6 +578,7 @@
 
 //************************************
 #tokens-popup {
+  width: 700px;
   &::before, &::after {
     border-bottom: 10px solid #f8d181;
   }

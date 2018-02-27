@@ -60,998 +60,1010 @@
     </div> <!-- for bluring -->
 
     <!-- MODALS -->
+      <!-- Landing Island Popups -->
+    <div class='popup-wrapper'>
 
-    <!-- Landing Island Popups -->
-    <div id='notify-popup' class='popup hide popup-outer-wrapper'>
-      <div class='popup-inner-wrapper'>
-        <section class='modal-header'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          <h1>GET NOTIFIED</h1>
-        </section>
-        <section class='modal-body'>
-          <h2>get updates directly to your inbox regarding the kinguin ICO</h2>
-          <form id='notify-form' method='post'>
-            <div class='input-wrapper'>
-              <div class='pixel-input'>
-                <input id='notify-signup' type='email' name='notify-signup' placeholder='EMAIL'>
-              </div>
-            </div>
-          </form>
-        </section>
-        <section class='modal-footer'>
-          <div class='input-wrapper continue-btn'>
-            <div class='pixel-input'>
-              <input type='submit' name='keep-me-posted' value='KEEP ME POSTED!'>
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
-
-         <!-- signups -->
-    <div id='signup-popup' class='signup-corners popup hide popup-outer-wrapper'>
-      <div class='popup-inner-wrapper'>
-        <section id='signup-header' class='modal-header signup'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          <h1>SIGN UP TO PRE-ICO</h1>
-        </section>
-        <section id='signup-body' class='modal-body signup-body'>
-          <h3>choose funding currency</h3>
-        </section>
-        <section id='signup-footer' class='modal-footer'>
-          <div id='signup-button-crypto' class='input-wrapper'>
-            <div class='pixel-input'>
-              <a href='#'>
-                <img src='img/BTC1.png' alt='bitcoin logo'>
-                <img src='img/ETH1.png' alt='cryptocurrency logo'>
-                <h3>CRYPTOCURRENCY</h3>
-              </a>
-            </div>
-          </div>
-          <div id='signup-button-fiat' class='input-wrapper'>
-            <div class='pixel-input'>
-              <a href='#'>
-                <img src='img/USD1.png' alt='dollar sign'>
-                <img src='img/EUR1.png' alt='euro'>
-                <h3>MONEY TRANSFER</h3>
-              </a>
-            </div>
-          </div>
-          <img id='progress-bar' src='img/Progress_Bar_1.png' alt='progress bar'>
-        </section>
-      </div>
-    </div>
-
-    <div id='choose-crypto-popup' class='signup-corners popup hide popup-outer-wrapper'>
-      <div class='popup-inner-wrapper'>
-        <section class='modal-header signup'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          <h1>SIGN UP TO PRE-ICO</h1>
-        </section>
-        <section id='choose-crypto-body' class='modal-body signup-body'>
-          <form class='currency-form' method='post'>
-            <h4>choose crypto</h4>
-            <div class='selector-buttons'>
-              <div class='input-wrapper left-select selected'>
-                <div class='pixel-input'>
-                  <button  id='BTC-select' type='button' name="BTC-select"></button>
-                </div>
-              </div>
-              <div class='input-wrapper right-select'>
-                <div class='pixel-input'>
-                  <button id='ETH-select' type='button' name='ETH-select'></button>
-                </div>
-              </div>
-            </div>
-            <h4>input amount</h4>
-            <div class='input-wrapper currency-amt'>
-              <div class='pixel-input'>
-                <input type='text' name='crypto-amt' placeholder='0'>
-                <p class='currency-placeholder'>BTC</p>
-              </div>
-            </div>
-            <div id='crypto-continue' class='input-wrapper continue-btn'>
-              <div class='pixel-input'>
-                <input type='submit' value='continue'>
-              </div>
-            </div>
-          </form>
-        </section>
-        <section class='modal-footer'>
-          <img id='progress-bar' src='img/Progress_Bar_1.png' alt='progress bar'>
-        </section>
-      </div>
-    </div>
-
-    <div id='choose-fiat-popup' class='signup-corners popup hide popup-outer-wrapper'>
-      <div class='popup-inner-wrapper'>
-        <section class='modal-header signup'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          <h1>SIGN UP TO PRE-ICO</h1>
-        </section>
-        <section id='choose-fiat-body' class='modal-body signup-body'>
-          <h3>choose currency</h3>
-          <form class='currency-form' method='post'>
-            <div class='selector-buttons'>
-              <div class='input-wrapper left-select selected'>
-                <div class='pixel-input'>
-                  <button id='USD-select' type='button' name='USD-select'></button>
-                </div>
-              </div>
-              <div  class='input-wrapper right-select'>
-                <div class='pixel-input'>
-                  <button id='EUR-select'type='button' name='EUR-select'></button>
-                </div>
-              </div>
-            </div>
-            <h2>input amount</h2>
-            <div class='input-wrapper currency-amt'>
-              <div class='pixel-input'>
-                <input type='text' name='donation-amt'  placeholder='0'>
-                <p class='currency-placeholder'>USD</p>
-              </div>
-            </div>
-            <div id='fiat-continue' class='input-wrapper continue-btn'>
-              <div class='pixel-input'>
-                <input type='submit' value='continue'>
-              </div>
-            </div>
-          </form>
-        </section>
-        <section class='modal-footer'>
-          <img id='progress-bar' src='img/Progress_Bar_1.png' alt='progress bar'>
-        </section>
-      </div>
-    </div>
-
-    <div id='kyc-popup' class='signup-corners popup hide popup-outer-wrapper'>
-      <div class='popup-inner-wrapper'>
-        <section class='modal-header signup'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          <h1>SIGN UP TO PRE-ICO</h1>
-        </section>
-        <section id='kyc-body' class='modal-body signup-body'>
-          <h3>begin kyc process</h3>
-          <form id='signup-form' method='post'>
-            <div class='input-wrapper'>
-              <div class='pixel-input'>
-                <input type='text' align='center' name='name-kyc' placeholder='YOUR NAME'>
-              </div>
-            </div>
-            <div class='input-wrapper'>
-              <div class='pixel-input'>
-                <input type='email' name='user-email-kyc' placeholder='YOUR EMAIL'>
-              </div>
-            </div>
-            <div id='kyc-continue' class='input-wrapper'>
-              <div class='pixel-input'>
-                <input type='submit' value='continue'>
-              </div>
-            </div>
-          </form>
-        </section>
-        <section class='modal-footer'>
-          <img id='progress-bar' src='img/Progress_Bar_2.png' alt='progress bar'>
-        </section>
-      </div>
-    </div>
-
-    <div id='investor-popup' class='signup-corners popup hide popup-outer-wrapper'>
-      <div class='popup-inner-wrapper'>
-        <section id='signup-header' class='modal-header signup'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          <h1>SIGN UP TO PRE-ICO</h1>
-        </section>
-        <section id='signup-body' class='modal-body signup-body'>
-          <h3>I want to invest as a</h3>
-        </section>
-        <section id='signup-footer' class='modal-footer'>
-          <div id='investor-button-private' class='input-wrapper'>
-            <div class='pixel-input'>
-              <a href='#'>
-                <h3>private person</h3>
-              </a>
-            </div>
-          </div>
-          <div id='investor-button-company' class='input-wrapper'>
-            <div class='pixel-input'>
-              <a href='#'>
-                <h3>company</h3>
-              </a>
-            </div>
-          </div>
-          <img id='progress-bar' src='img/Progress_Bar_2.png' alt='progress bar'>
-        </section>
-      </div>
-    </div>
-
-    <div id='investor-private-popup' class='signup-corners popup hide popup-outer-wrapper'>
-      <div class='popup-inner-wrapper'>
-        <section class='modal-header signup'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          <h1>SIGN UP TO PRE-ICO</h1>
-        </section>
-        <section id='investor-private-body' class='modal-body signup-body'>
-          <h3>fill in data</h3>
-          <form id='personal-data-form' method='post'>
-            <div class='input-wrapper'>
-              <div class='pixel-input'>
-                <input id='full-name' type='text' align='center' name='name' placeholder='FULL NAME'>
-              </div>
-            </div>
-            <div class='input-wrapper'>
-              <div class='pixel-input'>
-                <select id='nationality' type='select' name='nationality' placeholder='NATIONALITY'>
-                  <option value='klingon'>klingon</option>
-                  <option value='human'>human</option>
-                  <option value='cardassian'>cardassian</option>
-                </select>
-              </div>
-            </div>
-            <div class='input-wrapper'>
-              <div class='pixel-input'>
-                <input id='address' type='text' name='address' placeholder='STREET ADDRESS'>
-              </div>
-            </div>
-            <div class='input-wrapper'>
-              <div class='pixel-input'>
-                <input id='zip-code' type='text' name='zip-code' placeholder='ZIP'>
-              </div>
-            </div>
-            <div class='input-wrapper'>
-              <div class='pixel-input'>
-                <input id='country' type='text' name='country' placeholder='COUNTRY'>
-              </div>
-            </div>
-            <div class='input-wrapper file-upload up-left'>
-              <div class='pixel-input'>
-                <!-- TODO: add file upload via jquery -->
-                <!-- <input id='ident-img' type='file' name='ident-img'> -->
-                <img src='img/upload_arrow.png' alt='arrow'>
-                <input id='ident-img' type='file'>
-                <label for='ident-img'><p>UPLOAD</p></label>
-              </div>
-            </div>
-            <div class='input-wrapper file-upload up-right'>
-              <div class='pixel-input'>
-                <!-- TODO: add file upload via jquery -->
-                <!-- <input id='address-doc' type='file' name='address-doc' placeholder='UPLOAD'> -->
-                <img src='img/upload_arrow.png' alt='arrow'>
-                <input id='address-doc' type='file'>
-                <label for='address-doc'><p>UPLOAD</p></label>
-              </div>
-            </div>
-            <div id='investor-private-continue' class='input-wrapper continue-btn'>
-              <div class='pixel-input'>
-                <input type='submit' value='continue'>
-              </div>
-            </div>
-          </form>
-        </section>
-        <section class='modal-footer'>
-          <img id='progress-bar' src='img/Progress_Bar_2.png' alt='progress bar'>
-        </section>
-      </div>
-    </div>
-
-    <div id='investor-company-popup' class='signup-corners popup hide popup-outer-wrapper'>
-      <div class='popup-inner-wrapper'>
-        <section class='modal-header signup'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          <h1>SIGN UP TO PRE-ICO</h1>
-        </section>
-        <section id='investor-company-body' class='modal-body signup-body'>
-          <h3>fill in data</h3>
-          <form id='company-data-form' method='post'>
-            <div class='input-wrapper'>
-              <div class='pixel-input'>
-                <input id='full-name' type='text' align='center' name='name' placeholder='FULL NAME'>
-              </div>
-            </div>
-            <div class='input-wrapper'>
-              <div class='pixel-input'>
-                <input id='company-name' type='text' align='center' name='company-name' placeholder='COMPANY NAME'>
-              </div>
-            </div>
-            <div class='input-wrapper'>
-              <div class='pixel-input'>
-                <input id='reg-id' type='text' align='center' name='reg-id' placeholder='COMPANY REG. ID'>
-              </div>
-            </div>
-            <div class='input-wrapper'>
-              <div class='pixel-input'>
-                <select id='nationality' type='select' name='nationality' placeholder='NATIONALITY'>
-                  <option value='klingon'>klingon</option>
-                  <option value='human'>human</option>
-                  <option value='cardassian'>cardassian</option>
-                </select>
-              </div>
-            </div>
-            <div class='input-wrapper'>
-              <div class='pixel-input'>
-                <input id='address' type='text' name='address' placeholder='STREET ADDRESS'>
-              </div>
-            </div>
-            <div class='input-wrapper'>
-              <div class='pixel-input'>
-                <input id='zip-code' type='text' name='zip-code' placeholder='ZIP'>
-              </div>
-            </div>
-            <div class='input-wrapper'>
-              <div class='pixel-input'>
-                <input id='country' type='text' name='country' placeholder='COUNTRY'>
-              </div>
-            </div>
-
-            <div id='investor-company-continue' class='input-wrapper continue-btn'>
-              <div class='pixel-input'>
-                <input type='submit' value='continue'>
-              </div>
-            </div>
-          </form>
-        </section>
-        <section class='modal-footer'>
-          <img id='progress-bar' src='img/Progress_Bar_2.png' alt='progress bar'>
-        </section>
-      </div>
-    </div>
-
-    <div id='aml-popup' class='signup-corners popup hide popup-outer-wrapper'>
-      <div class='popup-inner-wrapper'>
-        <section class='modal-header signup'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          <h1>SIGN UP TO PRE-ICO</h1>
-        </section>
-        <section id='aml-body' class='modal-body signup-body'>
-          <h3>begin aml process</h3>
-          <form id='signup-form' method='post'>
-            <div class='input-wrapper'>
-              <div class='pixel-input'>
-                <input type='text' align='center' name='name' placeholder='YOUR NAME'>
-              </div>
-            </div>
-            <div class='input-wrapper'>
-              <div class='pixel-input'>
-                <input type='email' name='user-email' placeholder='YOUR EMAIL'>
-              </div>
-            </div>
-            <div id='aml-continue' class='input-wrapper continue-btn'>
-              <div class='pixel-input'>
-                <input type='submit' value='continue'>
-              </div>
-            </div>
-          </form>
-        </section>
-        <section class='modal-footer'>
-          <img id='progress-bar' src='img/Progress_Bar_3.png' alt='progress bar'>
-        </section>
-      </div>
-    </div>
-
-    <div id='aml-eth-popup' class='signup-corners popup hide popup-outer-wrapper'>
-      <div class='popup-inner-wrapper'>
-        <section class='modal-header signup'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          <h1>SIGN UP TO PRE-ICO</h1>
-        </section>
-        <section id='aml-eth-body' class='modal-body signup-body'>
-          <h3>enter aml data</h3>
-          <form id='signup-form' method='post'>
-            <div class='input-wrapper'>
-              <div class='pixel-input'>
-                <input id='eth-email' type='email' align='center' name='email' placeholder='YOUR EMAIL'>
-              </div>
-            </div>
-            <div class='input-wrapper'>
-              <div class='pixel-input'>
-                <input id='eth-send' type='text' name='eth-send' placeholder='ETH SENDING ADDRESS'>
-              </div>
-            </div>
-            <div class='input-wrapper'>
-              <div class='pixel-input'>
-                <input id='eth-rec' type='text' name='eth-rec' placeholder='ETH RECEIVING ADDRESS'>
-              </div>
-            </div>
-            <div id='aml-eth-continue' class='input-wrapper continue-btn'>
-              <div class='pixel-input'>
-                <input type='submit' value='continue'>
-              </div>
-            </div>
-          </form>
-        </section>
-        <section class='modal-footer'>
-          <img id='progress-bar' src='img/Progress_Bar_3.png' alt='progress bar'>
-        </section>
-      </div>
-    </div>
-
-    <div id='aml-btc-popup' class='signup-corners popup hide popup-outer-wrapper'>
-      <div class='popup-inner-wrapper'>
-        <section class='modal-header signup'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          <h1>SIGN UP TO PRE-ICO</h1>
-        </section>
-        <section id='aml-btc-body' class='modal-body signup-body'>
-          <h3>enter aml data</h3>
-          <form id='signup-form' method='post'>
-            <div class='input-wrapper'>
-              <div class='pixel-input'>
-                <input id='btc-email' type='email' align='center' name='email' placeholder='YOUR EMAIL'>
-              </div>
-            </div>
-            <div class='input-wrapper'>
-              <div class='pixel-input'>
-                <input id='btc-send' type='text' name='btc-send' placeholder='BTC SENDING ADDRESS'>
-              </div>
-            </div>
-            <div class='input-wrapper'>
-              <div class='pixel-input'>
-                <input id='btc-rec' type='text' name='btc-rec' placeholder='BTC RECEIVING ADDRESS'>
-              </div>
-            </div>
-            <div id='aml-btc-continue' class='input-wrapper continue-btn'>
-              <div class='pixel-input'>
-                <input type='submit' value='continue'>
-              </div>
-            </div>
-          </form>
-        </section>
-        <section class='modal-footer'>
-          <img id='progress-bar' src='img/Progress_Bar_3.png' alt='progress bar'>
-        </section>
-      </div>
-    </div>
-
-    <div id='btc-fund-popup' class='signup-corners popup hide popup-outer-wrapper'>
-      <div class='popup-inner-wrapper'>
-        <section class='modal-header signup'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          <h1>SIGN UP TO PRE-ICO</h1>
-        </section>
-        <section id='btc-fund-body' class='modal-body signup-body'>
-          <h3>btc funding address</h3>
-          <form id='funding-form' method='post'>
-            <div class='input-wrapper'>
-              <div class='pixel-input'>
-                <input id='btc-fund' type='text' align='center' name='btc-fun' placeholder='314159265359'>
-              </div>
-            </div>
-            <div id='copy-btn' class='input-wrapper blue-btn'>
-              <div class='pixel-input'>
-                <a href="#">COPY TO CLIPBOARD</a>
-              </div>
-            </div>
-            <div id='btc-fund-continue' class='input-wrapper continue-btn'>
-              <div class='pixel-input'>
-                <a href="#">CLOSE WINDOW</a>
-              </div>
-            </div>
-          </form>
-        </section>
-        <section class='modal-footer'>
-          <img id='progress-bar' src='img/Progress_Bar_4.png' alt='progress bar'>
-        </section>
-      </div>
-    </div>
-
-    <div id='eth-fund-popup' class='signup-corners popup hide popup-outer-wrapper'>
-      <div class='popup-inner-wrapper'>
-        <section class='modal-header signup'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          <h1>SIGN UP TO PRE-ICO</h1>
-        </section>
-        <section id='eth-fund-body' class='modal-body signup-body'>
-          <h3>eth smart contract address</h3>
-          <form id='funding-form' method='post'>
-            <div class='input-wrapper'>
-              <div class='pixel-input'>
-                <input id='eth-fund' type='text' align='center' name='eth-fund' placeholder='314159265359'>
-              </div>
-            </div>
-            <div id='copy-btn' class='input-wrapper blue-btn'>
-              <div class='pixel-input'>
-                <a href="#">COPY TO CLIPBOARD</a>
-              </div>
-            </div>
-            <div id='eth-fund-continue' class='input-wrapper continue-btn'>
-              <div class='pixel-input'>
-                <a href="#">CLOSE WINDOW</a>
-              </div>
-            </div>
-          </form>
-        </section>
-        <section class='modal-footer'>
-          <img id='progress-bar' src='img/Progress_Bar_4.png' alt='progress bar'>
-        </section>
-      </div>
-    </div>
-
-    <div id='bank-info-popup'class='signup-corners popup hide popup-outer-wrapper'>
-      <div class='popup-inner-wrapper'>
-        <section class='modal-header signup'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          <h1>SIGN UP TO PRE-ICO</h1>
-        </section>
-        <section id='bank-info-body' class='modal-body signup-body'>
-          <h3>bank transfer information</h3>
-          <form id='bank-info-form' method='post'>
-            <label for='acct-num'>account number</label>
-            <div class='input-wrapper bank-input'>
-              <div class='pixel-input'>
-                <input id='acct-num' type='number' align='center' name='acct-num' placeholder='000.000.000'>
-              </div>
-            </div>
-            <div class='input-wrapper copy-sm'>
-              <div class='pixel-input'>
-                <a href="#">COPY</a>
-              </div>
-            </div>
-            <label for='reg-num'>registration number</label>
-            <div class='input-wrapper bank-input'>
-              <div class='pixel-input'>
-                <input id='reg-num' type='number' align='center' name='reg-num' placeholder='0000'>
-              </div>
-            </div>
-            <div class='input-wrapper copy-sm'>
-              <div class='pixel-input'>
-                <a href="#">COPY</a>
-              </div>
-            </div>
-            <label for='transfer-ref'>transfer reference (add this in the description)</label>
-            <div class='input-wrapper bank-input'>
-              <div class='pixel-input'>
-                <input id='transfer-ref' type='number' align='center' name='transfer-ref' placeholder='0000'>
-              </div>
-            </div>
-            <div class='input-wrapper copy-sm'>
-              <div class='pixel-input'>
-                <a href="#">COPY</a>
-              </div>
-            </div>
-            <div id='bank-info-continue' class='input-wrapper continue-btn'>
-              <div class='pixel-input'>
-                <a href="#">close window</a>
-              </div>
-            </div>
-          </form>
-        </section>
-        <section class='modal-footer'>
-          <img id='progress-bar' src='img/Progress_Bar_4.png' alt='progress bar'>
-        </section>
-      </div>
-    </div>
-    <!--**************************-->
-
-    <!-- About Island Popups -->
-    <div id='team-popup' class='popup hide popup-outer-wrapper'>
-      <div class='popup-inner-wrapper'>
-        <section class='modal-header'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          <h1>TEAM</h1>
-        </section>
-        <section class='modal-body'>
-          <div class='team-row'>
-            <div class='team-member'>
-              <div class='team-avatar'>
-                <div class='avatar-bg'>
-                  <img id='viktor-img' src='img/Viktor.png' alt='Viktor Wanli avatar'>
-                </div>
-              </div>
-              <h5 class='team-member-name'>Viktor Wanli</h5>
-              <p>Founder & CEO</p>
+      <div id='notify-popup' class='popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>GET NOTIFIED</h1>
+          </section>
+          <section class='modal-body'>
+            <h2>get updates directly to your inbox regarding the kinguin ICO</h2>
+            <form id='notify-form' method='post'>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <a id='viktor-bio' href="#">read more</a>
+                  <input id='notify-signup' type='email' name='notify-signup' placeholder='EMAIL'>
                 </div>
               </div>
-            </div>
-            <div class='team-member'>
-              <div class='team-avatar'>
-                <div class='avatar-bg'>
-                  <img id='nashat-img' src='img/Nashat.png' alt='Nashat Wanli avatar'>
-                </div>
-              </div>
-              <h5 class='team-member-name'>Nashat Wanli</h5>
-              <p>Chief Technology Officer</p>
-              <div class='input-wrapper'>
-                <div class='pixel-input'>
-                  <a id='nashat-bio' href="#">read more</a>
-                </div>
-              </div>
-            </div>
-            <div class='team-member'>
-              <div class='team-avatar'>
-                <div class='avatar-bg'>
-                  <img id='kim-img' src='img/Kim.png' alt='Kim Rom avatar'>
-                </div>
-              </div>
-              <h5 id='kim1'>Kim Rom</h5>
-              <p>Chief Gaming Officer</p>
-              <div class='input-wrapper'>
-                <div class='pixel-input'>
-                  <a id='kim-bio' href="#">read more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class='modal-footer'>
-          <div class='more-info-text'>
-            <h3></h3>
-            <h4></h4>
-            <div class='bio-text'></div>
-          </div>
-        </section>
-      </div>
-    </div>
-
-    <div id='company-popup' class='popup hide popup-outer-wrapper'>
-      <div class='popup-inner-wrapper'>
-        <section class='modal-header'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          <h1>COMPANY</h1>
-        </section>
-        <section class='modal-body'>
-          <h3>350 employees worldwide</h3>
-          <h3> incl <span style='color: #00c0c9;'>60 developers</span> and <span style='color: #ff5d48;'>100+ support staff</span></h3>
-          <img src='img/waddle.png' alt='large group of penguins'>
-        </section>
-        <section class='modal-footer'></section>
-      </div>
-    </div>
-
-    <div id='ourstory-popup' class='popup hide popup-outer-wrapper'>
-      <div class='popup-inner-wrapper'>
-        <section class='modal-header'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          <h1>OUR STORY</h1>
-        </section>
-        <section class='modal-body'>
-          <!-- TODO: ADD FIXED HEIGHT SO THE WINDOW DOESN'T JUMP WHEN CLICKED -->
-          <ul class='dates-row'>
-            <li class='date-active'>2013</li>
-            <li class='date-inactive'>2014</li>
-            <li class='date-inactive'>2015</li>
-            <li class='date-inactive'>2016</li>
-            <li class='date-inactive'>2017</li>
-          </ul>
-          <div class='summary'>
-            <p class='year-summary'>Kinguin.net comes online, the first marketplace for gamers with extra CD-keys.</p>
-          </div>
-          <div class='summary'>
-            <h4>END OF YEAR</h4>
-            <p class='end-year-sum'>2 Million Monthly visitors, $3.5 million in turnover.</p>
-          </div>
-        </section>
-        <section class='modal-footer'></section>
-      </div>
-    </div>
-
-    <div id='contactus-popup' class='popup hide popup-outer-wrapper'>
-      <div class='popup-inner-wrapper'>
-        <section class='modal-header'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          <h1>CONTACT US</h1>
-        </section>
-        <section class='modal-body'>
-          <form id='email-signup-form' class='' method="post">
-            <div class='input-wrapper' style='width: 70%;'>
+            </form>
+          </section>
+          <section class='modal-footer'>
+            <div class='input-wrapper continue-btn'>
               <div class='pixel-input'>
-                <input id='user-email' type='email' name='email' placeholder='EMAIL'>
-              </div>
-            </div>
-            <div class='input-wrapper' style='width: 100%'>
-              <div class='pixel-input'>
-                <textarea id='message' name='message' placeholder='MESSAGE'></textarea>
-              </div>
-            </div>
-          </form>
-        </section>
-        <section class='modal-footer'>
-          <div class='input-wrapper continue-btn'>
-            <div class='pixel-input'>
-              <input type='submit' name='send-btn' value='SEND'>
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
-
-    <div id='advisors-popup' class='popup hide popup-outer-wrapper'>
-      <div class='popup-inner-wrapper'>
-        <section class='modal-header'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          <h1>ADVISORS</h1>
-        </section>
-        <section class='modal-body'>
-          <div class='avatar-row'>
-            <div class='advisor'>
-              <img class='avatar' src='img/JohnLee.png' alt='John Lee'>
-              <h5>John Lee</h5>
-            </div>
-            <div class='advisor'>
-              <img class='avatar' src='img/JensHilgers.png' alt='Jens Hilgers'>
-              <h5>Jens Hilgers</h5>
-            </div>
-            <div class='advisor'>
-              <img class='avatar' src='img/ElieGalam.png' alt='Elie Galam'>
-              <h5>Elie Galam</h5>
-            </div>
-            <div class='advisor'>
-              <img class='avatar' src='img/CallumLang.png' alt='Callum Lang'>
-              <h5>Callum Lang</h5>
-            </div>
-            <div class='advisor'>
-              <img class='avatar' src='img/JoeZhou.png' alt='Joe Zhou'>
-              <h5>Joe Zhou</h5>
-            </div>
-            <div class='advisor'>
-              <img class='avatar' src='img/PierreMaarek.png' alt='Pierre Maarek'>
-              <h5>Pierre Maarek</h5>
-            </div>
-            <div class='advisor'>
-              <img class='avatar' src='img/StephenCrystal.png' alt='Stephen Crystal'>
-              <h5>Stephen Crystal</h5>
-            </div
-          </div>
-        </section>
-        <section class='modal-footer'>
-          <div class='more-info-text'>
-            <h3></h3>
-            <div class='bio-text'></div>
-          </div>
-        </section>
-      </div>
-    </div>
-    <!--**************************-->
-
-    <!-- Strategy Island Popups -->
-    <div id='problem-solution-popup' class='popup hide popup-outer-wrapper wide-pop'>
-      <div class='popup-inner-wrapper'>
-        <section id='problem-solution-header' class='modal-header'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-        </section>
-        <section id='problem-solution-body' class='modal-body'>
-          <p>A new generation of gamers and value creators are failing to monetize their biggest passion.</p>
-          <p>We believe that the global gaming community is underserved by current technology and trade options; which in turn negatively impacts value creation for millions of gamers.</p>
-          <p>We are witnessing rapid innovation in free-to-play mechanics and monetization design. Unfortunately, we are not seeing as much innovation for gamers to be able to share in the value creation.</p>
-          <h1 id='problem-title'>PROBLEM<span></span></h1>
-          <h1 id='solution-title'>SOLUTION<span></span></h1>
-          <h3>KINGUIN.IO</h3>
-          <p>A decentralized marketplace for digital games, items and services, enabling global player-to-player trade empowered by blockchain and smart contracts.
-          </p>
-          <h3>KROWNS.IO</h3>
-          <p>A cryptocurrency for a new generation of online players looking to monetize their game, enabling a global gaming community to profit from the buildout and adoption of a decentralized economy.</p>
-        </section>
-        <section id='problem-solution-footer' class='modal-footer'></section>
-      </div>
-    </div>
-
-    <div id='distribution-popup' class='popup hide popup-outer-wrapper wide-pop'>
-      <div class='popup-inner-wrapper'>
-        <section class='modal-header'>
-          <a class='close-popup' href='#'>
-            <img id='close-x' src='img/Close.png' alt='close window x'>
-          </a>
-          <h1>DISTRIBUTION</h1>
-        </section>
-        <section class='modal-body'>
-          <h2>use of funds</h2>
-          <p>2017-2020</p>
-          <img src='img/Use_Of_Funds.png' alt='graph of funding distribution'>
-          <h2>token distribution</h2>
-          <p>2018</p>
-          <img src='img/Token_Distro.png' alt='graph of token distribution'>
-        </section>
-        <section class='modal-footer'></section>
-      </div>
-    </div>
-
-    <div id='why-now-popup' class='popup hide popup-outer-wrapper wide-pop'>
-      <div class='popup-inner-wrapper'>
-        <section class='modal-header'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          <h1>WHY NOW</h1>
-        </section>
-        <section class='modal-footer'>
-          <ul class='why-tabs'>
-            <li class='why-btn why-active'>kinguin is ready</li>
-            <li class='why-btn'>the interface is ready</li>
-            <li class='why-btn'>the trade is ready</li>
-            <li class='why-btn'>the technology is ready</li>
-            <li class='why-btn'>the market is ready</li>
-            <li class='last-btn'>the community is ready</li>
-          </ul>
-          <div class='why-info-text'>
-            <p>Kinguin was founded on the belief that gamers should be able to freely trade their digital property. This belief is shared by a global community of seven million gamers: by the end of 2017 Kinguin customers will have saved more than $210 million dollars on digital games and in-game items. Now it’s time to evolve the platform to the next generation.</p>
-          </div>
-        </section>
-      </div>
-    </div>
-
-    <div id='roadmap-popup' class='popup hide popup-outer-wrapper wide-pop'>
-      <div class='popup-inner-wrapper'>
-        <section class='modal-header'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          <h1>ROADMAP</h1>
-        </section>
-        <section class='modal-body'>
-          <div class='node-row'>
-            <div id='project-start-node' class='node-wrapper'>
-              <div class='roadmap-node node-inactive'>
-                <div class='inner-node'>
-                  <p>Q3</p>
-                  <h3>2017</h3>
-                </div>
-              </div>
-              <h4>PROJECT START</h4>
-            </div>
-            <img src='img/roadmap-arrow.png' alt='arrow'>
-            <div id='announcement-node' class='node-wrapper'>
-              <div class='roadmap-node node-inactive'>
-                <div class='inner-node'>
-                  <p>Q3</p>
-                  <h3>2017</h3>
-                </div>
-              </div>
-              <h4>ANNOUNCEMENT</4>
-              </div>
-              <img src='img/roadmap-arrow.png' alt='arrow'>
-              <div id='pre-ico-node' class='node-wrapper'>
-                <div class='roadmap-node node-inactive'>
-                  <div class='inner-node'>
-                    <p>Q4</p>
-                    <h3> 2017</h3>
-                  </div>
-                </div>
-                <h4>PRE-ICO</h4>
-              </div>
-              <img src='img/roadmap-arrow.png' alt='arrow'>
-              <div id='ico-opens-node' class='node-wrapper'>
-                <div class='roadmap-node node-inactive'>
-                  <div class='inner-node'>
-                    <p>Q1</p>
-                    <h3>2018</h3>
-                  </div>
-                </div>
-                <h4>ICO OPENS</h4>
-              </div>
-            </div>
-            <img src='img/roadmap-next-line.png' alt='arrow to next row'>
-            <div class='node-row'>
-              <div id-'ico-closes-node' class='node-wrapper'>
-                <div class='roadmap-node node-inactive'>
-                  <div class='inner-node'>
-                    <p>Q1</p>
-                    <h3>2018</h3>
-                  </div>
-                </div>
-                <h4>ICO CLOSES</h4>
-              </div>
-              <img src='img/roadmap-arrow.png' alt='arrow'>
-              <div id='marketplace-transitions-node' class='node-wrapper'>
-                <div class='roadmap-node node-inactive'>
-                  <div class='inner-node'>
-                    <p>Q2</p>
-                    <h3>2018</h3>
-                  </div>
-                </div>
-                <h4>MARKETPLACE TRANSITIONS</h4>
-              </div>
-              <img src='img/roadmap-arrow.png' alt='arrow'>
-              <div id ='community-share-node' class='node-wrapper'>
-                <div class='roadmap-node node-inactive'>
-                  <div class='inner-node'>
-                    <p>Q2</p>
-                    <h3>2018</h3>
-                  </div>
-                </div>
-                <h4>COMMUNITY SHARE</h4>
-              </div>
-              <img src='img/roadmap-arrow.png' alt='arrow'>
-              <div id='transition-end-node' class='node-wrapper'>
-                <div class='roadmap-node node-inactive'>
-                  <div class='inner-node'>
-                    <p>Q2</p>
-                    <h3>2020</h3>
-                  </div>
-                </div>
-                <h4>TRANSITION END</h4>
+                <input type='submit' name='keep-me-posted' value='KEEP ME POSTED!'>
               </div>
             </div>
           </section>
-          <section class='modal-footer'>
-            <h2>PROJECT START</h2>
-            <p>text text text</p>
+        </div>
+      </div>
+    </div>
+
+           <!-- signups -->
+    <div class='signup-wrapper'>
+      <div id='signup-popup' class='signup-corners popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section id='signup-header' class='modal-header signup'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>SIGN UP TO PRE-ICO</h1>
+          </section>
+          <section id='signup-body' class='modal-body signup-body'>
+            <h3>choose funding currency</h3>
+          </section>
+          <section id='signup-footer' class='modal-footer'>
+            <div id='signup-button-crypto' class='input-wrapper'>
+              <div class='pixel-input'>
+                <a href='#'>
+                  <img src='img/BTC1.png' alt='bitcoin logo'>
+                  <img src='img/ETH1.png' alt='cryptocurrency logo'>
+                  <h3>CRYPTOCURRENCY</h3>
+                </a>
+              </div>
+            </div>
+            <div id='signup-button-fiat' class='input-wrapper'>
+              <div class='pixel-input'>
+                <a href='#'>
+                  <img src='img/USD1.png' alt='dollar sign'>
+                  <img src='img/EUR1.png' alt='euro'>
+                  <h3>MONEY TRANSFER</h3>
+                </a>
+              </div>
+            </div>
+            <img id='progress-bar' src='img/Progress_Bar_1.png' alt='progress bar'>
           </section>
         </div>
       </div>
 
-    <div id='projections-popup' class='popup hide popup-outer-wrapper wide-pop'>
-      <div class='popup-inner-wrapper'>
-        <section class='modal-header'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          <h1>PROJECTIONS</h1>
-        </section>
-        <section class='modal-body'>
-          <p>Over a two year period, we will transition the existing marketplace to the new platform. Even if assume zero growth in our business (very unlikely), that’s a $100 million dollars annually that will further add value to Kinguin.io.</p>
-          <img src='img/Projections_Graph.png' alt='projections graph'>
-        </section>
-        <section class='modal-footer'></section>
+      <div id='choose-crypto-popup' class='signup-corners popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header signup'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>SIGN UP TO PRE-ICO</h1>
+          </section>
+          <section id='choose-crypto-body' class='modal-body signup-body'>
+            <form class='currency-form' method='post'>
+              <h4>choose crypto</h4>
+              <div class='selector-buttons'>
+                <div class='input-wrapper left-select selected'>
+                  <div class='pixel-input'>
+                    <button  id='BTC-select' type='button' name="BTC-select"></button>
+                  </div>
+                </div>
+                <div class='input-wrapper right-select'>
+                  <div class='pixel-input'>
+                    <button id='ETH-select' type='button' name='ETH-select'></button>
+                  </div>
+                </div>
+              </div>
+              <h4>input amount</h4>
+              <div class='input-wrapper currency-amt'>
+                <div class='pixel-input'>
+                  <input type='text' name='crypto-amt' placeholder='0'>
+                  <p class='currency-placeholder'>BTC</p>
+                </div>
+              </div>
+              <div id='crypto-continue' class='input-wrapper continue-btn'>
+                <div class='pixel-input'>
+                  <input type='submit' value='continue'>
+                </div>
+              </div>
+            </form>
+          </section>
+          <section class='modal-footer'>
+            <img id='progress-bar' src='img/Progress_Bar_1.png' alt='progress bar'>
+          </section>
+        </div>
       </div>
-    </div>
-    <!--**************************-->
 
-    <!-- Info Island Popups -->
-    <div id='tokens-popup' class='popup hide popup-outer-wrapper'>
-      <div class='popup-inner-wrapper'>
-        <section class='modal-header'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          <h1>TOKENS</h1>
-        </section>
-        <section class='modal-body'>
-          <p>text text text</p>
-          <h4>use of krowns</h4>
-          <ol>
-            <li>text</li>
-            <li>text</li>
-            <li>text</li>
-          </ol>
-          <p>text text text</p>
-        </section>
-        <section class='modal-footer'>
-          <table>
-            <tr>
-              <td id='phase-1'>
-                <p>token distribution phase 1</p>
-                <p>invite only</p>
-                <h1>Q1 2018</h1>
-              </td>
-              <td id='phase-2'>
-                <p>token distribution phase 2</p>
-                <p>public</p>
-                <h2>round 1: q1 2018</h2>
-                <h2>round 2: q1 2018</h2>
-              </td>
-            </tr>
-          </table>
-        </section>
+      <div id='choose-fiat-popup' class='signup-corners popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header signup'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>SIGN UP TO PRE-ICO</h1>
+          </section>
+          <section id='choose-fiat-body' class='modal-body signup-body'>
+            <h3>choose currency</h3>
+            <form class='currency-form' method='post'>
+              <div class='selector-buttons'>
+                <div class='input-wrapper left-select selected'>
+                  <div class='pixel-input'>
+                    <button id='USD-select' type='button' name='USD-select'></button>
+                  </div>
+                </div>
+                <div  class='input-wrapper right-select'>
+                  <div class='pixel-input'>
+                    <button id='EUR-select'type='button' name='EUR-select'></button>
+                  </div>
+                </div>
+              </div>
+              <h2>input amount</h2>
+              <div class='input-wrapper currency-amt'>
+                <div class='pixel-input'>
+                  <input type='text' name='donation-amt'  placeholder='0'>
+                  <p class='currency-placeholder'>USD</p>
+                </div>
+              </div>
+              <div id='fiat-continue' class='input-wrapper continue-btn'>
+                <div class='pixel-input'>
+                  <input type='submit' value='continue'>
+                </div>
+              </div>
+            </form>
+          </section>
+          <section class='modal-footer'>
+            <img id='progress-bar' src='img/Progress_Bar_1.png' alt='progress bar'>
+          </section>
+        </div>
       </div>
+
+      <div id='kyc-popup' class='signup-corners popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header signup'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>SIGN UP TO PRE-ICO</h1>
+          </section>
+          <section id='kyc-body' class='modal-body signup-body'>
+            <h3>begin kyc process</h3>
+            <form id='signup-form' method='post'>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input type='text' align='center' name='name-kyc' placeholder='YOUR NAME'>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input type='email' name='user-email-kyc' placeholder='YOUR EMAIL'>
+                </div>
+              </div>
+              <div id='kyc-continue' class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input type='submit' value='continue'>
+                </div>
+              </div>
+            </form>
+          </section>
+          <section class='modal-footer'>
+            <img id='progress-bar' src='img/Progress_Bar_2.png' alt='progress bar'>
+          </section>
+        </div>
+      </div>
+
+      <div id='investor-popup' class='signup-corners popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section id='signup-header' class='modal-header signup'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>SIGN UP TO PRE-ICO</h1>
+          </section>
+          <section id='signup-body' class='modal-body signup-body'>
+            <h3>I want to invest as a</h3>
+          </section>
+          <section id='signup-footer' class='modal-footer'>
+            <div id='investor-button-private' class='input-wrapper'>
+              <div class='pixel-input'>
+                <a href='#'>
+                  <h3>private person</h3>
+                </a>
+              </div>
+            </div>
+            <div id='investor-button-company' class='input-wrapper'>
+              <div class='pixel-input'>
+                <a href='#'>
+                  <h3>company</h3>
+                </a>
+              </div>
+            </div>
+            <img id='progress-bar' src='img/Progress_Bar_2.png' alt='progress bar'>
+          </section>
+        </div>
+      </div>
+
+      <div id='investor-private-popup' class='signup-corners popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header signup'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>SIGN UP TO PRE-ICO</h1>
+          </section>
+          <section id='investor-private-body' class='modal-body signup-body'>
+            <h3>fill in data</h3>
+            <form id='personal-data-form' method='post'>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input id='full-name' type='text' align='center' name='name' placeholder='FULL NAME'>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <select id='nationality' type='select' name='nationality' placeholder='NATIONALITY'>
+                    <option value='klingon'>klingon</option>
+                    <option value='human'>human</option>
+                    <option value='cardassian'>cardassian</option>
+                  </select>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input id='address' type='text' name='address' placeholder='STREET ADDRESS'>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input id='zip-code' type='text' name='zip-code' placeholder='ZIP'>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input id='country' type='text' name='country' placeholder='COUNTRY'>
+                </div>
+              </div>
+              <div class='input-wrapper file-upload up-left'>
+                <div class='pixel-input'>
+                  <!-- TODO: add file upload via jquery -->
+                  <!-- <input id='ident-img' type='file' name='ident-img'> -->
+                  <img src='img/upload_arrow.png' alt='arrow'>
+                  <input id='ident-img' type='file'>
+                  <label for='ident-img'><p>UPLOAD</p></label>
+                </div>
+              </div>
+              <div class='input-wrapper file-upload up-right'>
+                <div class='pixel-input'>
+                  <!-- TODO: add file upload via jquery -->
+                  <!-- <input id='address-doc' type='file' name='address-doc' placeholder='UPLOAD'> -->
+                  <img src='img/upload_arrow.png' alt='arrow'>
+                  <input id='address-doc' type='file'>
+                  <label for='address-doc'><p>UPLOAD</p></label>
+                </div>
+              </div>
+              <div id='investor-private-continue' class='input-wrapper continue-btn'>
+                <div class='pixel-input'>
+                  <input type='submit' value='continue'>
+                </div>
+              </div>
+            </form>
+          </section>
+          <section class='modal-footer'>
+            <img id='progress-bar' src='img/Progress_Bar_2.png' alt='progress bar'>
+          </section>
+        </div>
+      </div>
+
+      <div id='investor-company-popup' class='signup-corners popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header signup'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>SIGN UP TO PRE-ICO</h1>
+          </section>
+          <section id='investor-company-body' class='modal-body signup-body'>
+            <h3>fill in data</h3>
+            <form id='company-data-form' method='post'>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input id='full-name' type='text' align='center' name='name' placeholder='FULL NAME'>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input id='company-name' type='text' align='center' name='company-name' placeholder='COMPANY NAME'>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input id='reg-id' type='text' align='center' name='reg-id' placeholder='COMPANY REG. ID'>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <select id='nationality' type='select' name='nationality' placeholder='NATIONALITY'>
+                    <option value='klingon'>klingon</option>
+                    <option value='human'>human</option>
+                    <option value='cardassian'>cardassian</option>
+                  </select>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input id='address' type='text' name='address' placeholder='STREET ADDRESS'>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input id='zip-code' type='text' name='zip-code' placeholder='ZIP'>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input id='country' type='text' name='country' placeholder='COUNTRY'>
+                </div>
+              </div>
+
+              <div id='investor-company-continue' class='input-wrapper continue-btn'>
+                <div class='pixel-input'>
+                  <input type='submit' value='continue'>
+                </div>
+              </div>
+            </form>
+          </section>
+          <section class='modal-footer'>
+            <img id='progress-bar' src='img/Progress_Bar_2.png' alt='progress bar'>
+          </section>
+        </div>
+      </div>
+
+      <div id='aml-popup' class='signup-corners popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header signup'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>SIGN UP TO PRE-ICO</h1>
+          </section>
+          <section id='aml-body' class='modal-body signup-body'>
+            <h3>begin aml process</h3>
+            <form id='signup-form' method='post'>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input type='text' align='center' name='name' placeholder='YOUR NAME'>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input type='email' name='user-email' placeholder='YOUR EMAIL'>
+                </div>
+              </div>
+              <div id='aml-continue' class='input-wrapper continue-btn'>
+                <div class='pixel-input'>
+                  <input type='submit' value='continue'>
+                </div>
+              </div>
+            </form>
+          </section>
+          <section class='modal-footer'>
+            <img id='progress-bar' src='img/Progress_Bar_3.png' alt='progress bar'>
+          </section>
+        </div>
+      </div>
+
+      <div id='aml-eth-popup' class='signup-corners popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header signup'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>SIGN UP TO PRE-ICO</h1>
+          </section>
+          <section id='aml-eth-body' class='modal-body signup-body'>
+            <h3>enter aml data</h3>
+            <form id='signup-form' method='post'>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input id='eth-email' type='email' align='center' name='email' placeholder='YOUR EMAIL'>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input id='eth-send' type='text' name='eth-send' placeholder='ETH SENDING ADDRESS'>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input id='eth-rec' type='text' name='eth-rec' placeholder='ETH RECEIVING ADDRESS'>
+                </div>
+              </div>
+              <div id='aml-eth-continue' class='input-wrapper continue-btn'>
+                <div class='pixel-input'>
+                  <input type='submit' value='continue'>
+                </div>
+              </div>
+            </form>
+          </section>
+          <section class='modal-footer'>
+            <img id='progress-bar' src='img/Progress_Bar_3.png' alt='progress bar'>
+          </section>
+        </div>
+      </div>
+
+      <div id='aml-btc-popup' class='signup-corners popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header signup'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>SIGN UP TO PRE-ICO</h1>
+          </section>
+          <section id='aml-btc-body' class='modal-body signup-body'>
+            <h3>enter aml data</h3>
+            <form id='signup-form' method='post'>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input id='btc-email' type='email' align='center' name='email' placeholder='YOUR EMAIL'>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input id='btc-send' type='text' name='btc-send' placeholder='BTC SENDING ADDRESS'>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input id='btc-rec' type='text' name='btc-rec' placeholder='BTC RECEIVING ADDRESS'>
+                </div>
+              </div>
+              <div id='aml-btc-continue' class='input-wrapper continue-btn'>
+                <div class='pixel-input'>
+                  <input type='submit' value='continue'>
+                </div>
+              </div>
+            </form>
+          </section>
+          <section class='modal-footer'>
+            <img id='progress-bar' src='img/Progress_Bar_3.png' alt='progress bar'>
+          </section>
+        </div>
+      </div>
+
+      <div id='btc-fund-popup' class='signup-corners popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header signup'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>SIGN UP TO PRE-ICO</h1>
+          </section>
+          <section id='btc-fund-body' class='modal-body signup-body'>
+            <h3>btc funding address</h3>
+            <form id='funding-form' method='post'>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input id='btc-fund' type='text' align='center' name='btc-fun' placeholder='314159265359'>
+                </div>
+              </div>
+              <div id='copy-btn' class='input-wrapper blue-btn'>
+                <div class='pixel-input'>
+                  <a href="#">COPY TO CLIPBOARD</a>
+                </div>
+              </div>
+              <div id='btc-fund-continue' class='input-wrapper continue-btn'>
+                <div class='pixel-input'>
+                  <a href="#">CLOSE WINDOW</a>
+                </div>
+              </div>
+            </form>
+          </section>
+          <section class='modal-footer'>
+            <img id='progress-bar' src='img/Progress_Bar_4.png' alt='progress bar'>
+          </section>
+        </div>
+      </div>
+
+      <div id='eth-fund-popup' class='signup-corners popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header signup'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>SIGN UP TO PRE-ICO</h1>
+          </section>
+          <section id='eth-fund-body' class='modal-body signup-body'>
+            <h3>eth smart contract address</h3>
+            <form id='funding-form' method='post'>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input id='eth-fund' type='text' align='center' name='eth-fund' placeholder='314159265359'>
+                </div>
+              </div>
+              <div id='copy-btn' class='input-wrapper blue-btn'>
+                <div class='pixel-input'>
+                  <a href="#">COPY TO CLIPBOARD</a>
+                </div>
+              </div>
+              <div id='eth-fund-continue' class='input-wrapper continue-btn'>
+                <div class='pixel-input'>
+                  <a href="#">CLOSE WINDOW</a>
+                </div>
+              </div>
+            </form>
+          </section>
+          <section class='modal-footer'>
+            <img id='progress-bar' src='img/Progress_Bar_4.png' alt='progress bar'>
+          </section>
+        </div>
+      </div>
+
+      <div id='bank-info-popup'class='signup-corners popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header signup'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>SIGN UP TO PRE-ICO</h1>
+          </section>
+          <section id='bank-info-body' class='modal-body signup-body'>
+            <h3>bank transfer information</h3>
+            <form id='bank-info-form' method='post'>
+              <label for='acct-num'>account number</label>
+              <div class='input-wrapper bank-input'>
+                <div class='pixel-input'>
+                  <input id='acct-num' type='number' align='center' name='acct-num' placeholder='000.000.000'>
+                </div>
+              </div>
+              <div class='input-wrapper copy-sm'>
+                <div class='pixel-input'>
+                  <a href="#">COPY</a>
+                </div>
+              </div>
+              <label for='reg-num'>registration number</label>
+              <div class='input-wrapper bank-input'>
+                <div class='pixel-input'>
+                  <input id='reg-num' type='number' align='center' name='reg-num' placeholder='0000'>
+                </div>
+              </div>
+              <div class='input-wrapper copy-sm'>
+                <div class='pixel-input'>
+                  <a href="#">COPY</a>
+                </div>
+              </div>
+              <label for='transfer-ref'>transfer reference (add this in the description)</label>
+              <div class='input-wrapper bank-input'>
+                <div class='pixel-input'>
+                  <input id='transfer-ref' type='number' align='center' name='transfer-ref' placeholder='0000'>
+                </div>
+              </div>
+              <div class='input-wrapper copy-sm'>
+                <div class='pixel-input'>
+                  <a href="#">COPY</a>
+                </div>
+              </div>
+              <div id='bank-info-continue' class='input-wrapper continue-btn'>
+                <div class='pixel-input'>
+                  <a href="#">close window</a>
+                </div>
+              </div>
+            </form>
+          </section>
+          <section class='modal-footer'>
+            <img id='progress-bar' src='img/Progress_Bar_4.png' alt='progress bar'>
+          </section>
+        </div>
+      </div>
+    </div>
+      <!--**************************-->
+      <!-- About Island Popups -->
+    <div class='popup-wrapper'>
+
+      <div id='team-popup' class='popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>TEAM</h1>
+          </section>
+          <section class='modal-body'>
+            <div class='team-row'>
+              <div class='team-member'>
+                <div class='team-avatar'>
+                  <div class='avatar-bg'>
+                    <img id='viktor-img' src='img/Viktor.png' alt='Viktor Wanli avatar'>
+                  </div>
+                </div>
+                <h5 class='team-member-name'>Viktor Wanli</h5>
+                <p>Founder & CEO</p>
+                <div class='input-wrapper'>
+                  <div class='pixel-input'>
+                    <a id='viktor-bio' href="#">read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class='team-member'>
+                <div class='team-avatar'>
+                  <div class='avatar-bg'>
+                    <img id='nashat-img' src='img/Nashat.png' alt='Nashat Wanli avatar'>
+                  </div>
+                </div>
+                <h5 class='team-member-name'>Nashat Wanli</h5>
+                <p>Chief Technology Officer</p>
+                <div class='input-wrapper'>
+                  <div class='pixel-input'>
+                    <a id='nashat-bio' href="#">read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class='team-member'>
+                <div class='team-avatar'>
+                  <div class='avatar-bg'>
+                    <img id='kim-img' src='img/Kim.png' alt='Kim Rom avatar'>
+                  </div>
+                </div>
+                <h5 id='kim1'>Kim Rom</h5>
+                <p>Chief Gaming Officer</p>
+                <div class='input-wrapper'>
+                  <div class='pixel-input'>
+                    <a id='kim-bio' href="#">read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class='modal-footer'>
+            <div class='more-info-text'>
+              <h3></h3>
+              <h4></h4>
+              <div class='bio-text'></div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div id='company-popup' class='popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>COMPANY</h1>
+          </section>
+          <section class='modal-body'>
+            <h3>350 employees worldwide</h3>
+            <h3> incl <span style='color: #00c0c9;'>60 developers</span> and <span style='color: #ff5d48;'>100+ support staff</span></h3>
+            <img src='img/waddle.png' alt='large group of penguins'>
+          </section>
+          <section class='modal-footer'></section>
+        </div>
+      </div>
+
+      <div id='ourstory-popup' class='popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>OUR STORY</h1>
+          </section>
+          <section class='modal-body'>
+            <!-- TODO: ADD FIXED HEIGHT SO THE WINDOW DOESN'T JUMP WHEN CLICKED -->
+            <ul class='dates-row'>
+              <li class='date-active'>2013</li>
+              <li class='date-inactive'>2014</li>
+              <li class='date-inactive'>2015</li>
+              <li class='date-inactive'>2016</li>
+              <li class='date-inactive'>2017</li>
+            </ul>
+            <div class='summary'>
+              <p class='year-summary'>Kinguin.net comes online, the first marketplace for gamers with extra CD-keys.</p>
+            </div>
+            <div class='summary'>
+              <h4>END OF YEAR</h4>
+              <p class='end-year-sum'>2 Million Monthly visitors, $3.5 million in turnover.</p>
+            </div>
+          </section>
+          <section class='modal-footer'></section>
+        </div>
+      </div>
+
+      <div id='contactus-popup' class='popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>CONTACT US</h1>
+          </section>
+          <section class='modal-body'>
+            <form id='email-signup-form' class='' method="post">
+              <div class='input-wrapper' style='width: 70%;'>
+                <div class='pixel-input'>
+                  <input id='user-email' type='email' name='email' placeholder='EMAIL'>
+                </div>
+              </div>
+              <div class='input-wrapper' style='width: 100%'>
+                <div class='pixel-input'>
+                  <textarea id='message' name='message' placeholder='MESSAGE'></textarea>
+                </div>
+              </div>
+            </form>
+          </section>
+          <section class='modal-footer'>
+            <div class='input-wrapper continue-btn'>
+              <div class='pixel-input'>
+                <input type='submit' name='send-btn' value='SEND'>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div id='advisors-popup' class='popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>ADVISORS</h1>
+          </section>
+          <section class='modal-body'>
+            <div class='avatar-row'>
+              <div class='advisor'>
+                <img class='avatar' src='img/JohnLee.png' alt='John Lee'>
+                <h5>John Lee</h5>
+              </div>
+              <div class='advisor'>
+                <img class='avatar' src='img/JensHilgers.png' alt='Jens Hilgers'>
+                <h5>Jens Hilgers</h5>
+              </div>
+              <div class='advisor'>
+                <img class='avatar' src='img/ElieGalam.png' alt='Elie Galam'>
+                <h5>Elie Galam</h5>
+              </div>
+              <div class='advisor'>
+                <img class='avatar' src='img/CallumLang.png' alt='Callum Lang'>
+                <h5>Callum Lang</h5>
+              </div>
+              <div class='advisor'>
+                <img class='avatar' src='img/JoeZhou.png' alt='Joe Zhou'>
+                <h5>Joe Zhou</h5>
+              </div>
+              <div class='advisor'>
+                <img class='avatar' src='img/PierreMaarek.png' alt='Pierre Maarek'>
+                <h5>Pierre Maarek</h5>
+              </div>
+              <div class='advisor'>
+                <img class='avatar' src='img/StephenCrystal.png' alt='Stephen Crystal'>
+                <h5>Stephen Crystal</h5>
+              </div
+            </div>
+          </section>
+          <section class='modal-footer'>
+            <div class='more-info-text'>
+              <h3></h3>
+              <div class='bio-text'></div>
+            </div>
+          </section>
+        </div>
+      </div>
+
     </div>
 
-    <div id='market-popup' class='popup hide popup-outer-wrapper'>
-      <div class='popup-inner-wrapper'>
-        <section class='modal-header'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          <h1>MARKET</h1>
-        </section>
-        <section class='modal-body'>
-          <img src='img/No1Cust.png' alt='number one customer'>
-          <p>Since 2013 we’ve built our business on serving one customer:</p>
-          <h3>THE GAMER</h3>
-          <p>Technically we’ve had more than six million customers, but we’ve worked hard to not get blinded by numbers or scale. We see the games market very similarly:</p>
-          <p style='margin-bottom: 3%;'>Technically there are billions of people in the world who play games.</p>
-          <p>A number so high that it doesn’t really mean anything, so we focus on making just one of them happy:</p>
-          <h3>THE GAMER</h3>
-        </section>
-        <section class='modal-footer'></section>
-      </div>
-    </div>
+      <!--**************************-->
 
-    <div id='whitepaper-popup' class='popup hide popup-outer-wrapper'>
-      <div class='popup-inner-wrapper'>
-        <section id='whitepaper-header' class='modal-header'>
-          <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          <h1>WHITEPAPER</h1>
-        </section>
-        <section id='whitepaper-body' class='modal-body'>
-          <h1>COMING SOON</h1>
-        </section>
-        <section id='whitepaper-footer' class='modal-footer'>
-        </section>
+      <!-- Strategy Island Popups -->
+    <div class='popup-wrapper'>
+      <div id='problem-solution-popup' class='popup hide popup-outer-wrapper wide-pop'>
+        <div class='popup-inner-wrapper'>
+          <section id='problem-solution-header' class='modal-header'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+          </section>
+          <section id='problem-solution-body' class='modal-body'>
+            <p>A new generation of gamers and value creators are failing to monetize their biggest passion.</p>
+            <p>We believe that the global gaming community is underserved by current technology and trade options; which in turn negatively impacts value creation for millions of gamers.</p>
+            <p>We are witnessing rapid innovation in free-to-play mechanics and monetization design. Unfortunately, we are not seeing as much innovation for gamers to be able to share in the value creation.</p>
+            <h1 id='problem-title'>PROBLEM<span></span></h1>
+            <h1 id='solution-title'>SOLUTION<span></span></h1>
+            <h3>KINGUIN.IO</h3>
+            <p>A decentralized marketplace for digital games, items and services, enabling global player-to-player trade empowered by blockchain and smart contracts.
+            </p>
+            <h3>KROWNS.IO</h3>
+            <p>A cryptocurrency for a new generation of online players looking to monetize their game, enabling a global gaming community to profit from the buildout and adoption of a decentralized economy.</p>
+          </section>
+          <section id='problem-solution-footer' class='modal-footer'></section>
+        </div>
+      </div>
+
+      <div id='distribution-popup' class='popup hide popup-outer-wrapper wide-pop'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header'>
+            <a class='close-popup' href='#'>
+              <img id='close-x' src='img/Close.png' alt='close window x'>
+            </a>
+            <h1>DISTRIBUTION</h1>
+          </section>
+          <section class='modal-body'>
+            <h2>use of funds</h2>
+            <p>2017-2020</p>
+            <img src='img/Use_Of_Funds.png' alt='graph of funding distribution'>
+            <h2>token distribution</h2>
+            <p>2018</p>
+            <img src='img/Token_Distro.png' alt='graph of token distribution'>
+          </section>
+          <section class='modal-footer'></section>
+        </div>
+      </div>
+
+      <div id='why-now-popup' class='popup hide popup-outer-wrapper wide-pop'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>WHY NOW</h1>
+          </section>
+          <section class='modal-footer'>
+            <ul class='why-tabs'>
+              <li class='why-btn why-active'>kinguin is ready</li>
+              <li class='why-btn'>the interface is ready</li>
+              <li class='why-btn'>the trade is ready</li>
+              <li class='why-btn'>the technology is ready</li>
+              <li class='why-btn'>the market is ready</li>
+              <li class='last-btn'>the community is ready</li>
+            </ul>
+            <div class='why-info-text'>
+              <p>Kinguin was founded on the belief that gamers should be able to freely trade their digital property. This belief is shared by a global community of seven million gamers: by the end of 2017 Kinguin customers will have saved more than $210 million dollars on digital games and in-game items. Now it’s time to evolve the platform to the next generation.</p>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div id='roadmap-popup' class='popup hide popup-outer-wrapper wide-pop'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>ROADMAP</h1>
+          </section>
+          <section class='modal-body'>
+            <div class='node-row'>
+              <div id='project-start-node' class='node-wrapper'>
+                <div class='roadmap-node node-inactive'>
+                  <div class='inner-node'>
+                    <p>Q3</p>
+                    <h3>2017</h3>
+                  </div>
+                </div>
+                <h4>PROJECT START</h4>
+              </div>
+              <img src='img/roadmap-arrow.png' alt='arrow'>
+              <div id='announcement-node' class='node-wrapper'>
+                <div class='roadmap-node node-inactive'>
+                  <div class='inner-node'>
+                    <p>Q3</p>
+                    <h3>2017</h3>
+                  </div>
+                </div>
+                <h4>ANNOUNCEMENT</4>
+                </div>
+                <img src='img/roadmap-arrow.png' alt='arrow'>
+                <div id='pre-ico-node' class='node-wrapper'>
+                  <div class='roadmap-node node-inactive'>
+                    <div class='inner-node'>
+                      <p>Q4</p>
+                      <h3> 2017</h3>
+                    </div>
+                  </div>
+                  <h4>PRE-ICO</h4>
+                </div>
+                <img src='img/roadmap-arrow.png' alt='arrow'>
+                <div id='ico-opens-node' class='node-wrapper'>
+                  <div class='roadmap-node node-inactive'>
+                    <div class='inner-node'>
+                      <p>Q1</p>
+                      <h3>2018</h3>
+                    </div>
+                  </div>
+                  <h4>ICO OPENS</h4>
+                </div>
+              </div>
+              <img src='img/roadmap-next-line.png' alt='arrow to next row'>
+              <div class='node-row'>
+                <div id-'ico-closes-node' class='node-wrapper'>
+                  <div class='roadmap-node node-inactive'>
+                    <div class='inner-node'>
+                      <p>Q1</p>
+                      <h3>2018</h3>
+                    </div>
+                  </div>
+                  <h4>ICO CLOSES</h4>
+                </div>
+                <img src='img/roadmap-arrow.png' alt='arrow'>
+                <div id='marketplace-transitions-node' class='node-wrapper'>
+                  <div class='roadmap-node node-inactive'>
+                    <div class='inner-node'>
+                      <p>Q2</p>
+                      <h3>2018</h3>
+                    </div>
+                  </div>
+                  <h4>MARKETPLACE TRANSITIONS</h4>
+                </div>
+                <img src='img/roadmap-arrow.png' alt='arrow'>
+                <div id ='community-share-node' class='node-wrapper'>
+                  <div class='roadmap-node node-inactive'>
+                    <div class='inner-node'>
+                      <p>Q2</p>
+                      <h3>2018</h3>
+                    </div>
+                  </div>
+                  <h4>COMMUNITY SHARE</h4>
+                </div>
+                <img src='img/roadmap-arrow.png' alt='arrow'>
+                <div id='transition-end-node' class='node-wrapper'>
+                  <div class='roadmap-node node-inactive'>
+                    <div class='inner-node'>
+                      <p>Q2</p>
+                      <h3>2020</h3>
+                    </div>
+                  </div>
+                  <h4>TRANSITION END</h4>
+                </div>
+              </div>
+            </section>
+            <section class='modal-footer'>
+              <h2>PROJECT START</h2>
+              <p>text text text</p>
+            </section>
+          </div>
+        </div>
+
+      <div id='projections-popup' class='popup hide popup-outer-wrapper wide-pop'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>PROJECTIONS</h1>
+          </section>
+          <section class='modal-body'>
+            <p>Over a two year period, we will transition the existing marketplace to the new platform. Even if assume zero growth in our business (very unlikely), that’s a $100 million dollars annually that will further add value to Kinguin.io.</p>
+            <img src='img/Projections_Graph.png' alt='projections graph'>
+          </section>
+          <section class='modal-footer'></section>
+        </div>
       </div>
     </div>
-    <!--**************************-->
+      <!--**************************-->
+
+      <!-- Info Island Popups -->
+    <div class='popup-wrapper'>
+      <div id='tokens-popup' class='popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>TOKENS</h1>
+          </section>
+          <section class='modal-body'>
+            <p>text text text</p>
+            <h4>use of krowns</h4>
+            <ol>
+              <li>text</li>
+              <li>text</li>
+              <li>text</li>
+            </ol>
+            <p>text text text</p>
+          </section>
+          <section class='modal-footer'>
+            <table>
+              <tr>
+                <td id='phase-1'>
+                  <p>token distribution phase 1</p>
+                  <p>invite only</p>
+                  <h1>Q1 2018</h1>
+                </td>
+                <td id='phase-2'>
+                  <p>token distribution phase 2</p>
+                  <p>public</p>
+                  <h2>round 1: q1 2018</h2>
+                  <h2>round 2: q1 2018</h2>
+                </td>
+              </tr>
+            </table>
+          </section>
+        </div>
+      </div>
+
+      <div id='market-popup' class='popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>MARKET</h1>
+          </section>
+          <section class='modal-body'>
+            <img src='img/No1Cust.png' alt='number one customer'>
+            <p>Since 2013 we’ve built our business on serving one customer:</p>
+            <h3>THE GAMER</h3>
+            <p>Technically we’ve had more than six million customers, but we’ve worked hard to not get blinded by numbers or scale. We see the games market very similarly:</p>
+            <p style='margin-bottom: 3%;'>Technically there are billions of people in the world who play games.</p>
+            <p>A number so high that it doesn’t really mean anything, so we focus on making just one of them happy:</p>
+            <h3>THE GAMER</h3>
+          </section>
+          <section class='modal-footer'></section>
+        </div>
+      </div>
+
+      <div id='whitepaper-popup' class='popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section id='whitepaper-header' class='modal-header'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>WHITEPAPER</h1>
+          </section>
+          <section id='whitepaper-body' class='modal-body'>
+            <h1>COMING SOON</h1>
+          </section>
+          <section id='whitepaper-footer' class='modal-footer'>
+          </section>
+        </div>
+      </div>
+      <!--**************************-->
+    </div>
 
     <!-- Scripts -->
     <script src='jquery.min.js'></script>
