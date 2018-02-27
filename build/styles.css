@@ -694,6 +694,7 @@ html, body {
   padding: 0; }
 
 .why-btn, .why-active, .last-active, .last-btn {
+  cursor: pointer;
   margin: 0 0 4px -30px;
   padding: 0 40px;
   border-top: 5px solid white;
@@ -711,7 +712,8 @@ html, body {
 .why-active, .last-active {
   box-shadow: 0 4px 0 0 black;
   border: none;
-  background-color: white; }
+  background-color: white;
+  cursor: default; }
 
 .last-btn {
   line-height: 90px;
