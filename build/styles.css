@@ -384,6 +384,8 @@ html, body {
 #ourstory-popup .modal-header {
   background-color: #bbaea7;
   border-top: 10px solid #dad3cf; }
+#ourstory-popup .modal-body, #ourstory-popup #why-now-popup .modal-footer, #why-now-popup #ourstory-popup .modal-footer {
+  height: 200px; }
 
 .dates-row {
   margin-bottom: 5%;
