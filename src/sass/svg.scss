@@ -1,0 +1,22 @@
+
+
+svg {
+  height: 26px;
+  width: 26px;
+  transform: skewY(-30deg);
+  margin: 5%;
+  padding: 1px;
+  border: 1px solid black;
+  &:hover {
+    filter: drop-shadow(-7px -4px 1px #000000);
+    transform: skewY(-30deg) translate(7px, 4px);
+  }
+  #Blog {
+    fill: red;
+    transform: scale(0.075) translate(-78px, -78px);
+
+  }
+  &:hover #Blog {
+    fill: blue;
+  }
+}
