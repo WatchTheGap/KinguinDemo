@@ -22,6 +22,8 @@
     transform: scale(0.045) translate(-78px, -78px); }
   .social-icons:hover .social-paths {
     fill: blue; }
+  .social-icons #Kinguin {
+    transform: scale(1) translate(-118px, -78px); }
 
 @font-face {
   font-family: 'EightBitWonder';
