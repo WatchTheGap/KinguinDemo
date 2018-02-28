@@ -1,3 +1,28 @@
+.social-media-wrapper {
+  position: absolute;
+  top: 335px;
+  left: 441px;
+  transform: skewY(-30deg);
+  width: 200px;
+  height: 140px;
+  border: 1px solid black;
+  box-sizing: border-box; }
+
+.social-icons {
+  width: 15px;
+  height: 15px;
+  margin: 5%;
+  padding: 1px;
+  border: 1px solid black; }
+  .social-icons:hover {
+    filter: drop-shadow(-7px -4px 1px #000000);
+    transform: translate(7px, 4px); }
+  .social-icons .social-paths {
+    fill: red;
+    transform: scale(0.045) translate(-78px, -78px); }
+  .social-icons:hover .social-paths {
+    fill: blue; }
+
 @font-face {
   font-family: 'EightBitWonder';
   src: url("fonts/8-BIT_WONDER.ttf") format("truetype"); }
