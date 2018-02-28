@@ -8,19 +8,20 @@
   border: 1px solid black;
   box-sizing: border-box; }
 
+.social-hover {
+  filter: drop-shadow(-7px -4px 1px #000000);
+  transform: translate(7px, 4px); }
+
 .social-icons {
   width: 15px;
   height: 15px;
   margin: 5%;
   padding: 1px;
   border: 1px solid black; }
-  .social-icons:hover {
-    filter: drop-shadow(-7px -4px 1px #000000);
-    transform: translate(7px, 4px); }
   .social-icons .social-paths {
     fill: red;
     transform: scale(0.045) translate(-78px, -78px); }
-  .social-icons:hover .social-paths {
+  .social-icons .path-hover {
     fill: blue; }
   .social-icons #Kinguin {
     transform: scale(1) translate(-118px, -78px); }

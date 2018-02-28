@@ -131,6 +131,20 @@
 (function() {
   'use strict';
 
+  $('.social-icons').hover(
+    function () {
+      $(this).addClass('social-hover').find('.social-paths').addClass('path-hover');
+    }, function () {
+      $(this).removeClass('social-hover').find('.social-paths').removeClass('path-hover');
+    }
+  );
+
+
+}());
+
+(function() {
+  'use strict';
+
   let sum2013 = 'Kinguin.net comes online, the first marketplace for gamers with extra CD-keys.';
   let end2013 = '2 Million Monthly visitors, $3.5 million in turnover.';
 
