@@ -1302,7 +1302,8 @@ input:active, button:active, select:active {
 .time-block {
   margin: 0;
   width: 50%;
-  text-align: center; }
+  text-align: center;
+  color: #181818; }
   .time-block h1 {
     margin: 0;
     font-size: 20px; }
@@ -1310,6 +1311,23 @@ input:active, button:active, select:active {
     margin: 0;
     text-align: center;
     font-size: 10px; }
+
+.savings-sign {
+  font-family: '04b_03', monospace;
+  transform: skewY(30deg);
+  width: 185px;
+  height: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  top: 63px;
+  left: 358px;
+  padding: 10px;
+  color: #181818; }
+  .savings-sign p {
+    font-size: 10px; }
+  .savings-sign h1 {
+    margin: 0;
+    font-size: 26px; }
 
 #info-island {
   top: 961px;
