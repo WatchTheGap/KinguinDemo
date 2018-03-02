@@ -138,8 +138,7 @@
       $(this).find('.social-icons').removeClass('social-hover').find('.social-paths').removeClass('path-hover');
     }
   );
-
-
+  
 }());
 
 (function() {

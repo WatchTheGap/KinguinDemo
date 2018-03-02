@@ -70,3 +70,34 @@
   height: 392px;
   z-index: 1;
 }
+
+
+.countdown-sign {
+  font-family: '04b_03', monospace;
+  transform: skewY(-30deg);
+  width: 120px;
+  height: 160px;
+  top: 123px;
+  left: 59px;
+  text-align: center;
+  text-transform: uppercase;
+  p {
+    font-size: 10px;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.time-block {
+  width: 50%;
+  text-align: center;
+  h1 {
+    margin: 0;
+    font-size: 26px;
+  }
+  p {
+    margin: 0;
+    text-align: center;
+  }
+}
