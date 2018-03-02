@@ -1,11 +1,11 @@
 (function() {
   'use strict';
 
-  $('.social-icons').hover(
+  $('.social-media-wrapper a').hover(
     function () {
-      $(this).addClass('social-hover').find('.social-paths').addClass('path-hover');
+      $(this).find('.social-icons').addClass('social-hover').find('.social-paths').addClass('path-hover');
     }, function () {
-      $(this).removeClass('social-hover').find('.social-paths').removeClass('path-hover');
+      $(this).find('.social-icons').removeClass('social-hover').find('.social-paths').removeClass('path-hover');
     }
   );
 
