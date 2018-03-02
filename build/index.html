@@ -8,7 +8,20 @@
   <body>
 
 
+<header>
+  <img src='img/kinguin-logo.png' alt='kinguin'>
 
+
+  <svg
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="0.375in" height="0.375in">
+<path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
+ d="M-0.000,27.000 L-0.000,21.000 L27.000,21.000 L27.000,27.000 L-0.000,27.000 ZM-0.000,11.000 L27.000,11.000 L27.000,17.000 L-0.000,17.000 L-0.000,11.000 ZM-0.000,-0.000 L27.000,-0.000 L27.000,6.000 L-0.000,6.000 L-0.000,-0.000 Z"/>
+</svg>
+
+
+</header>
     <div id='islands'> <!-- for bluring -->
 
       <div id='landing-island'>
@@ -42,8 +55,11 @@
           <h1>$175,464,578</h1>
         </div>
 
+
         <img id='stairs-top-2' src='img/Notify_Stairs.png' alt='stairs'>
         <div id='notify-btn'></div>
+        <img id='participate' src='img/participate-title.png' alt=''>
+
         <div id='go-btn'></div>
         <div class='info-panel'></div>
 
@@ -171,6 +187,7 @@
 
            <!-- signups -->
     <div class='signup-wrapper'>
+
       <div id='signup-popup' class='signup-corners popup hide popup-outer-wrapper'>
         <div class='popup-inner-wrapper'>
           <section id='signup-header' class='modal-header signup'>
@@ -707,7 +724,7 @@
       <!-- About Island Popups -->
     <div class='popup-wrapper'>
 
-      <div id='team-popup' class='popup hide popup-outer-wrapper'>
+      <div id='team-popup' class='popup hide popup-outer-wrapper' tabindex='-1'>
         <div class='popup-inner-wrapper'>
           <section class='modal-header'>
             <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
@@ -876,7 +893,7 @@
               <div class='advisor'>
                 <img class='avatar' src='img/StephenCrystal.png' alt='Stephen Crystal'>
                 <h5>Stephen Crystal</h5>
-              </div
+              </div>
             </div>
           </section>
           <section class='modal-footer'>
@@ -1143,6 +1160,9 @@
       </div>
       <!--**************************-->
     </div>
+<div class='signup-wrapper'>
+  <img id='roadmap2-popup' class='hide' src='img/roadmap_new.png' alt=''>
+</div>
 
     <!-- Scripts -->
     <script src='jquery.min.js'></script>

@@ -74,8 +74,12 @@
   });
 
   $('#roadmap').click(function () {
-    $('#roadmap-popup').toggleClass('hide');
+    $('#roadmap2-popup').toggleClass('hide');
     $('#islands').addClass('blur');
+  });
+  $('#roadmap2-popup').click(function () {
+    $(this).addClass('hide');
+    $('#islands').removeClass('blur');
   });
 
   $('#why-now').click(function() {

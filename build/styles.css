@@ -1329,6 +1329,12 @@ input:active, button:active, select:active {
     margin: 0;
     font-size: 26px; }
 
+#participate {
+  top: 230px;
+  left: 336px;
+  height: 77px;
+  width: 131px; }
+
 #info-island {
   top: 961px;
   left: 187px; }
@@ -1436,6 +1442,9 @@ input:active, button:active, select:active {
   #roadmap:hover {
     top: 196px;
     left: 19px; }
+
+#roadmap2-popup {
+  position: absolute; }
 
 #projections {
   background-image: url("img/Projections.png");
