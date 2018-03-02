@@ -1286,12 +1286,13 @@ input:active, button:active, select:active {
 .countdown-sign {
   font-family: '04b_03', monospace;
   transform: skewY(-30deg);
-  width: 120px;
+  width: 110px;
   height: 160px;
   top: 123px;
   left: 59px;
   text-align: center;
   text-transform: uppercase;
+  padding: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
@@ -1299,14 +1300,16 @@ input:active, button:active, select:active {
     font-size: 10px; }
 
 .time-block {
+  margin: 0;
   width: 50%;
   text-align: center; }
   .time-block h1 {
     margin: 0;
-    font-size: 26px; }
+    font-size: 20px; }
   .time-block p {
     margin: 0;
-    text-align: center; }
+    text-align: center;
+    font-size: 10px; }
 
 #info-island {
   top: 961px;

@@ -75,12 +75,13 @@
 .countdown-sign {
   font-family: '04b_03', monospace;
   transform: skewY(-30deg);
-  width: 120px;
+  width: 110px;
   height: 160px;
   top: 123px;
   left: 59px;
   text-align: center;
   text-transform: uppercase;
+  padding: 5px;
   p {
     font-size: 10px;
   }
@@ -90,14 +91,16 @@
 }
 
 .time-block {
+  margin: 0;
   width: 50%;
   text-align: center;
   h1 {
     margin: 0;
-    font-size: 26px;
+    font-size: 20px;
   }
   p {
     margin: 0;
     text-align: center;
+    font-size: 10px;
   }
 }
