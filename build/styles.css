@@ -349,7 +349,7 @@ header {
     padding: 0px; }
   .blue-btn a, #bank-info-form .copy-sm a {
     box-sizing: border-box;
-    font-family: 'EightBitWonder', monospace;
+    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     font-size: 15px;
     text-transform: uppercase;
     text-decoration: none;
@@ -567,7 +567,7 @@ header {
 #notify-popup .modal-body, #notify-popup #why-now-popup .modal-footer, #why-now-popup #notify-popup .modal-footer {
   min-height: 230px;
   margin: auto;
-  font-family: 'EightBitWonder', monospace; }
+  font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace; }
   #notify-popup .modal-body h2, #notify-popup #why-now-popup .modal-footer h2, #why-now-popup #notify-popup .modal-footer h2 {
     font-size: 18px;
     line-height: 1.2em; }
@@ -583,7 +583,7 @@ header {
       text-align: center;
       font-size: 20px; }
       #notify-popup .modal-body .input-wrapper input[type='email']::placeholder, #notify-popup #why-now-popup .modal-footer .input-wrapper input[type='email']::placeholder, #why-now-popup #notify-popup .modal-footer .input-wrapper input[type='email']::placeholder {
-        font-family: 'EightBitWonder', monospace;
+        font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
         font-size: 15px;
         text-align: center; }
 #notify-popup .modal-footer {
@@ -841,7 +841,7 @@ header {
   height: auto;
   text-align: center; }
   #problem-solution-popup .modal-body h1, #problem-solution-popup #why-now-popup .modal-footer h1, #why-now-popup #problem-solution-popup .modal-footer h1 {
-    font-family: 'EightBitWonder', monospace;
+    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     color: white;
     font-size: 22px;
     padding: 35px;
@@ -893,17 +893,17 @@ input:active, button:active, select:active {
     color: black; }
 
 .signup-body {
-  font-family: 'EightBitWonder', monospace;
+  font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
   overflow: auto; }
   .signup-body form h4 {
-    font-family: 'EightBitWonder', monospace;
+    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     font-size: 20px;
     display: inline-block;
     width: 100%;
     text-align: center;
     margin-top: 10%; }
   .signup-body form input::placeholder {
-    font-family: 'EightBitWonder', monospace;
+    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     font-size: 15px;
     text-align: center;
     color: #9ac4bf; }
@@ -914,7 +914,7 @@ input:active, button:active, select:active {
     margin: 5% auto;
     height: 5em; }
   .signup-body h3 {
-    font-family: 'EightBitWonder', monospace;
+    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     font-size: 20px; }
   .signup-body button {
     cursor: pointer; }
@@ -928,7 +928,7 @@ input:active, button:active, select:active {
   .currency-form h2 {
     display: inline-block;
     width: 100%;
-    font-family: 'EightBitWonder', monospace;
+    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     font-size: 20px; }
   .currency-form input {
     width: 100%;
@@ -1033,7 +1033,7 @@ input:active, button:active, select:active {
       #bank-info-form .bank-input .pixel-input input {
         height: 40px; }
         #bank-info-form .bank-input .pixel-input input::placeholder {
-          font-family: 'EightBitWonder', monospace;
+          font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
           font-size: 15px;
           text-align: left;
           color: #9c9b9b;
@@ -1072,7 +1072,7 @@ input:active, button:active, select:active {
   margin: 3% 15%; }
 #signup-form input::placeholder, #personal-data-form input::placeholder,
 #company-data-form input::placeholder, #funding-form input::placeholder {
-  font-family: 'EightBitWonder', monospace;
+  font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
   font-size: 15px;
   text-align: left;
   color: #9c9b9b;
@@ -1097,14 +1097,14 @@ input:active, button:active, select:active {
   height: 50px;
   background: transparent;
   border: none;
-  font-family: 'EightBitWonder', monospace;
+  font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
   font-size: 15px;
   text-align: left;
   color: #9c9b9b;
   width: 100%; }
   #signup-form select:focus, #personal-data-form select:focus,
   #company-data-form select:focus, #funding-form select:focus {
-    font-family: 'EightBitWonder', monospace;
+    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     font-size: 15px;
     width: 100%; }
 #signup-form .up-left, #personal-data-form .up-left,
@@ -1116,7 +1116,7 @@ input:active, button:active, select:active {
 #signup-form .file-upload, #personal-data-form .file-upload,
 #company-data-form .file-upload, #funding-form .file-upload {
   width: 34%;
-  font-family: 'EightBitWonder', monospace;
+  font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
   color: #9c9b9b; }
   #signup-form .file-upload label, #personal-data-form .file-upload label,
   #company-data-form .file-upload label, #funding-form .file-upload label {
@@ -1139,7 +1139,7 @@ input:active, button:active, select:active {
   #company-data-form #kyc-continue a,
   #company-data-form #kyc-continue input,
   #company-data-form #kyc-continue input:active, #funding-form #kyc-continue a, #funding-form #kyc-continue input, #funding-form #kyc-continue input:active {
-    font-family: 'EightBitWonder', monospace;
+    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     font-size: 15px;
     text-align: center;
     padding: 15px; }
@@ -1171,7 +1171,7 @@ input:active, button:active, select:active {
     height: 52px;
     padding: 0; }
     .continue-btn .pixel-input input {
-      font-family: 'EightBitWonder', monospace;
+      font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
       font-size: 15px;
       text-align: center;
       padding: 0;
