@@ -1,7 +1,5 @@
 html, body {
-  // background: linear-gradient(#b5e8eb, #39bec5);
-  background-color: #b5e8eb;
-  height: 100%;
+  background-image: url('img/BG_peach.jpg');
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
@@ -66,13 +64,5 @@ html, body {
   top: -93px;
   left: 127px;
   height: 111px;
-  width: auto;
-}
-
-#big-cloud {
-  top: -225px;
-  left: 660px;
-  opacity: .5;
-  height: 800px;
   width: auto;
 }
