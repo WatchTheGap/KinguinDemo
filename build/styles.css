@@ -39,6 +39,11 @@
   src: url("8-bit_wonder-webfont.woff2") format("woff2"), url("8-bit_wonder-webfont.woff") format("woff"), url("fonts/8-BIT_WONDER.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: '8bit_wondernominal';
+  src: url("8-bit_wonder-webfont.woff2") format("woff2"), url("8-bit_wonder-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 body {
   background-image: url("img/BG_peach.jpg");
   background-repeat: no-repeat;
@@ -212,7 +217,7 @@ header {
   margin-right: -10px;
   height: 100px; }
   .modal-header h1 {
-    font-family: 'EightBitWonder', monospace;
+    font-family: 'EightBitWonder', '8bit_wondernominal', monospace;
     color: white;
     text-align: center;
     font-size: 34px; }
