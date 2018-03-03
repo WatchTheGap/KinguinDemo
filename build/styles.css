@@ -107,9 +107,7 @@ html, body {
 
 #burger {
   margin-right: 20vw;
-  text-align: right;
-  height: 26px;
-  width: 26px; }
+  text-align: right; }
 
 header {
   height: 80px;
