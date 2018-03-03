@@ -1185,8 +1185,8 @@ input:active, button:active, select:active {
   margin: 5% 15%; }
 
 #about-island {
-  top: 250px;
-  left: 300px; }
+  top: 200px;
+  left: 200px; }
   #about-island div {
     cursor: pointer; }
 
@@ -1286,8 +1286,8 @@ input:active, button:active, select:active {
     visibility: hidden; }
 
 #landing-island {
-  top: 101px;
-  left: 859px; }
+  top: 51px;
+  left: 759px; }
   #landing-island div {
     cursor: pointer; }
 
@@ -1400,8 +1400,8 @@ input:active, button:active, select:active {
   width: 131px; }
 
 #info-island {
-  top: 961px;
-  left: 187px; }
+  top: 911px;
+  left: 87px; }
   #info-island div {
     cursor: pointer; }
 
@@ -1456,8 +1456,8 @@ input:active, button:active, select:active {
     visibility: hidden; }
 
 #strategy-island {
-  top: 799px;
-  left: 787px; }
+  top: 749px;
+  left: 687px; }
   #strategy-island div {
     cursor: pointer; }
 
