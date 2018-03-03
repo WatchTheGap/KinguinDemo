@@ -112,7 +112,7 @@ html, body {
   transform: translate(-50%, -50%); }
 
 .signup-wrapper {
-  margin: 10vh 25vw; }
+  margin: 2vh 25vw; }
   .signup-wrapper .popup-outer-wrapper {
     width: 50vh; }
 
@@ -316,6 +316,7 @@ html, body {
   border-top: 10px solid #8ac0d4; }
 
 .advisor, .team-member {
+  cursor: pointer;
   display: inline-block;
   text-transform: uppercase;
   width: 25%; }

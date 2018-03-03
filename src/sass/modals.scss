@@ -17,7 +17,7 @@
 }
 
 .signup-wrapper {
-  margin: 10vh 25vw;
+  margin: 2vh 25vw;
   .popup-outer-wrapper {
     width: 50vh;
   }
@@ -264,6 +264,7 @@
 }
 
 .advisor {
+  cursor: pointer;
   display: inline-block;
   text-transform: uppercase;
   width: 25%;
