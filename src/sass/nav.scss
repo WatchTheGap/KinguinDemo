@@ -17,7 +17,7 @@
 }
 
 .bg-white {
-  background-color: rgba(255, 255, 255, .75);
+  background-color: rgba(255, 255, 255, .5);
 }
 
 header {
@@ -50,6 +50,12 @@ header {
     margin: 2%;
     li {
       line-height: 2em;
+      cursor: pointer;
+      color: #181818;
+      &:hover {
+        font-weight: bold;
+        color: black;
+      }
     }
   }
 }

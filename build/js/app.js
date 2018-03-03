@@ -183,6 +183,7 @@
     $('.full-nav').show();
     $('.nav-x').show();
     $('.burger').hide();
+    $('#islands').addClass('blur');
   });
 
   $('a .nav-x').click(function (e) {
@@ -191,6 +192,7 @@
     $('.full-nav').hide();
     $('.burger').show();
     $('.nav-x').hide();
+    $('#islands').removeClass('blur');
   });
 
 
