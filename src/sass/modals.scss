@@ -593,6 +593,11 @@
     background-color: #f2ac59;
     border-top: 10px solid #f8d181;
   }
+  .modal-body {
+    h3 {
+      text-align: left;
+    }
+  }
   .modal-footer {
     border-bottom: none;
     text-transform: uppercase;
