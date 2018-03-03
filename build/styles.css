@@ -105,7 +105,7 @@ body {
   height: 58px; }
 
 .burger, .nav-x {
-  margin-right: 20vw;
+  margin-right: 2vw;
   text-align: right; }
 
 .nav-x {
@@ -126,10 +126,10 @@ header {
   width: 100%;
   max-width: 1920px; }
   header h1 {
-    margin: 0;
+    margin: 10px;
     font-size: 20px;
     line-height: 58px;
-    width: 50%; }
+    width: 75%; }
 
 .full-nav {
   display: none;
