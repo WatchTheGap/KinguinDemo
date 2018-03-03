@@ -105,9 +105,17 @@ html, body {
   margin-left: 20vw;
   height: 58px; }
 
-#burger {
+.burger, .nav-x {
   margin-right: 20vw;
   text-align: right; }
+
+.nav-x {
+  display: none;
+  width: 27px;
+  height: 27px; }
+
+.bg-white {
+  background-color: rgba(255, 255, 255, 0.75); }
 
 header {
   height: 80px;
@@ -123,10 +131,10 @@ header {
     width: 50%; }
 
 .full-nav {
+  display: none;
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.75);
   z-index: 999; }
   .full-nav ul {
     font-family: '04b_03', monospace;

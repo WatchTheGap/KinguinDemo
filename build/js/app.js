@@ -177,6 +177,28 @@
 (function() {
   'use strict';
 
+  $('a .burger').click(function (e) {
+    e.preventDefault();
+    $('header').addClass('bg-white');
+    $('.full-nav').show();
+    $('.nav-x').show();
+    $('.burger').hide();
+  });
+
+  $('a .nav-x').click(function (e) {
+    e.preventDefault();
+    $('header').removeClass('bg-white');
+    $('.full-nav').hide();
+    $('.burger').show();
+    $('.nav-x').hide();
+  });
+
+
+}());
+
+(function() {
+  'use strict';
+
   let sum2013 = 'Kinguin.net comes online, the first marketplace for gamers with extra CD-keys.';
   let end2013 = '2 Million Monthly visitors, $3.5 million in turnover.';
 
