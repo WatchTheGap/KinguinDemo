@@ -38,9 +38,6 @@
     fill: #56463e; }
   .social-icons .path-hover {
     fill: white; }
-  .social-icons #Blog {
-    -webkit-transform: scale(0.045) translate(200px, -78px);
-            transform: scale(0.045) translate(200px, -78px); }
 
 @font-face {
   font-family: '04b_03';
