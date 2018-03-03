@@ -124,7 +124,9 @@ header {
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  width: 100%;
+  max-width: 1920px; }
   header h1 {
     margin: 0;
     font-size: 20px;
@@ -136,8 +138,7 @@ header {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: 999;
-  max-width: 1920px; }
+  z-index: 999; }
   .full-nav ul {
     font-family: '04b_03', monospace;
     list-style: none;
