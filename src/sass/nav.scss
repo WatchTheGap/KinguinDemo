@@ -1,0 +1,46 @@
+#kinguin-logo {
+  margin-left: 20vw;
+  height: 58px;
+
+}
+
+#burger {
+  margin-right: 20vw;
+  text-align: right;
+  height: 26px;
+  width: 26px;
+}
+
+header {
+  height: 80px;
+  font-family: '04b_03', monospace;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 58px;
+    width: 50%;
+  }
+}
+
+.full-nav {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .75);
+  z-index: 999;
+
+  ul {
+    font-family: '04b_03', monospace;
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 2%;
+    li {
+      line-height: 2em;
+    }
+  }
+}
