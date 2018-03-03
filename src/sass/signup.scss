@@ -18,11 +18,11 @@ input:active, button:active, select:active {
 }
 
 .signup-body {
-  font-family: 'EightBitWonder', monospace;
+  font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
   overflow: auto;
   form {
     h4 {
-      font-family: 'EightBitWonder', monospace;
+      font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
       font-size: 20px;
       display: inline-block;
       width: 100%;
@@ -30,7 +30,7 @@ input:active, button:active, select:active {
       margin-top: 10%;
     }
     input::placeholder {
-      font-family: 'EightBitWonder', monospace;
+      font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
       font-size: 15px;
       text-align: center;
       color: #9ac4bf;
@@ -44,7 +44,7 @@ input:active, button:active, select:active {
     height: 5em;
   }
   h3 {
-    font-family: 'EightBitWonder', monospace;
+    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     font-size: 20px;
   }
   button {
@@ -63,7 +63,7 @@ input:active, button:active, select:active {
   h2 {
     display: inline-block;
     width: 100%;
-    font-family: 'EightBitWonder', monospace;
+    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     font-size: 20px;
   }
   input {
@@ -206,7 +206,7 @@ input:active, button:active, select:active {
       input {
         height: 40px;
         &::placeholder {
-          font-family: 'EightBitWonder', monospace;
+          font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
           font-size: 15px;
           text-align: left;
           color: #9c9b9b;
@@ -246,7 +246,7 @@ input:active, button:active, select:active {
     margin: 3% 15%;
   }
   input::placeholder {
-    font-family: 'EightBitWonder', monospace;
+    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     font-size: 15px;
     text-align: left;
     color: #9c9b9b;
@@ -270,13 +270,13 @@ input:active, button:active, select:active {
     height: 50px;
     background: transparent;
     border: none;
-    font-family: 'EightBitWonder', monospace;
+    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     font-size: 15px;
     text-align: left;
     color: #9c9b9b;
     width: 100%;
     &:focus {
-      font-family: 'EightBitWonder', monospace;
+      font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
       font-size: 15px;
       width: 100%;
     }
@@ -292,7 +292,7 @@ input:active, button:active, select:active {
 
   .file-upload{
     width: 34%;
-    font-family: 'EightBitWonder', monospace;
+    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     label {
       text-align: center;
     }
@@ -314,7 +314,7 @@ input:active, button:active, select:active {
     width: 70%;
     margin-top: 10%;
     a, input, input:active {
-      font-family: 'EightBitWonder', monospace;
+      font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
       font-size: 15px;
       text-align: center;
       padding: 15px;
@@ -361,7 +361,7 @@ input:active, button:active, select:active {
     height: 52px;
     padding: 0;
     input {
-      font-family: 'EightBitWonder', monospace;
+      font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
       font-size: 15px;
       text-align: center;
       padding: 0;
