@@ -862,6 +862,15 @@ header {
 #problem-solution-popup .modal-footer {
   min-height: 40px; }
 
+#maintenance-popup .modal-header {
+  height: 150px; }
+  #maintenance-popup .modal-header h1 {
+    color: black;
+    margin-top: 50px; }
+#maintenance-popup .modal-body, #maintenance-popup #why-now-popup .modal-footer, #why-now-popup #maintenance-popup .modal-footer {
+  text-align: center;
+  height: 150px; }
+
 input, button, select,
 input:focus, button:focus, select:focus,
 input:active, button:active, select:active {
