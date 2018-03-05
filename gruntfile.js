@@ -29,7 +29,7 @@ module.exports = function (grunt){
         files: [
           {
             cwd: 'fonts/',
-            src: ['*.ttf'],
+            src: ['*.ttf', '*.woff', '*.woff2'],
             dest: 'build/fonts/',
             expand: true
           }
