@@ -596,7 +596,8 @@ header {
       margin: 0;
       width: 100%;
       font-family: '04b_03', monospace;
-      font-size: 36px; }
+      font-size: 36px;
+      background-color: #ef5e5e; }
 #notify-popup .modal-footer {
   min-height: 160px; }
   #notify-popup .modal-footer .input-wrapper {
