@@ -6,9 +6,9 @@
     alert('Success!');
   });
 
-  // $('form').submit(function (e) {
-  //   e.preventDefault();
-  // });
+  $('.currency-form', '#signup-form', '#personal-data-form', '#company-data-form', '#funding-form', '#bank-info-form').submit(function (e) {
+    e.preventDefault();
+  });
 
     let currencyType;
     let donationAmt;

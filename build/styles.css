@@ -522,7 +522,7 @@ header {
   border-top: 10px solid #c4e880; }
 #contactus-popup .modal-body, #contactus-popup #why-now-popup .modal-footer, #why-now-popup #contactus-popup .modal-footer {
   padding: 5% 10%;
-  height: 360px; }
+  height: 400px; }
   #contactus-popup .modal-body .input-wrapper, #contactus-popup #why-now-popup .modal-footer .input-wrapper, #why-now-popup #contactus-popup .modal-footer .input-wrapper {
     margin: 5% 0; }
   #contactus-popup .modal-body input[type='email'], #contactus-popup #why-now-popup .modal-footer input[type='email'], #why-now-popup #contactus-popup .modal-footer input[type='email'] {
@@ -535,18 +535,17 @@ header {
     width: inherit; }
     #contactus-popup .modal-body textarea::placeholder, #contactus-popup #why-now-popup .modal-footer textarea::placeholder, #why-now-popup #contactus-popup .modal-footer textarea::placeholder {
       font-size: 16px; }
-#contactus-popup .modal-footer {
-  padding: 5% 10%;
-  min-height: 80px; }
-  #contactus-popup .modal-footer .input-wrapper {
-    margin: 0;
+  #contactus-popup .modal-body .continue-btn, #contactus-popup #why-now-popup .modal-footer .continue-btn, #why-now-popup #contactus-popup .modal-footer .continue-btn {
+    margin: 5% 0;
     width: 40%;
     height: 52px; }
-    #contactus-popup .modal-footer .input-wrapper .pixel-input {
+    #contactus-popup .modal-body .continue-btn .pixel-input, #contactus-popup #why-now-popup .modal-footer .continue-btn .pixel-input, #why-now-popup #contactus-popup .modal-footer .continue-btn .pixel-input {
       height: 62px; }
-      #contactus-popup .modal-footer .input-wrapper .pixel-input input {
+      #contactus-popup .modal-body .continue-btn .pixel-input input[type='submit'], #contactus-popup #why-now-popup .modal-footer .continue-btn .pixel-input input[type='submit'], #why-now-popup #contactus-popup .modal-footer .continue-btn .pixel-input input[type='submit'] {
         font-family: '04b_03', monospace;
         font-size: 22px; }
+#contactus-popup .modal-footer {
+  min-height: 100px; }
 
 #company-popup::before, #company-popup::after {
   border-bottom: 10px solid #dfba9d; }

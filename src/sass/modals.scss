@@ -466,7 +466,7 @@
   }
   .modal-body {
     padding: 5% 10%;
-    height: 360px;
+    height: 400px;
     .input-wrapper {
       margin: 5% 0;
     }
@@ -484,22 +484,24 @@
         font-size: 16px;
       }
     }
-  }
-  .modal-footer {
-    padding: 5% 10%;
-    min-height: 80px;
-    .input-wrapper {
-      margin: 0;
+    .continue-btn {
+      margin: 5% 0;
       width: 40%;
       height: 52px;
       .pixel-input {
         height: 62px;
-        input {
+        input[type='submit'] {
           font-family: '04b_03', monospace;
           font-size: 22px;
         }
       }
+
     }
+  }
+
+
+  .modal-footer {
+    min-height: 100px;
   }
 }
 
