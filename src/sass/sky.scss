@@ -1,5 +1,10 @@
+html {
+  height: 100%;
+}
+
 body {
-  background-image: url('img/BG_peach.jpg');
+  background: linear-gradient(#ff99b3, #ffe27d);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
