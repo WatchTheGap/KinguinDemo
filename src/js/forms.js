@@ -1,9 +1,14 @@
 (function() {
   'use strict';
 
-  $('form').submit(function (e) {
-    e.preventDefault();
-  }); 
+  $('#notify-form').submit(function () {
+    console.log('submit clicked');
+    alert('Success!');
+  });
+
+  // $('form').submit(function (e) {
+  //   e.preventDefault();
+  // });
 
     let currencyType;
     let donationAmt;
