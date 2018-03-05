@@ -557,6 +557,20 @@
         }
       }
     }
+    .continue-btn {
+      width: 80%;
+      margin: 0 10%;
+      .pixel-input {
+        padding: 0;
+        height: 100px;
+      }
+      input[type='submit'] {
+        margin: 0;
+        width: 100%;
+        font-family: '04b_03', monospace;
+        font-size: 36px;
+      }
+    }
   }
   .modal-footer {
     min-height: 160px;
@@ -566,13 +580,6 @@
       .pixel-input {
         height: 100px;
       }
-    }
-    input[type='submit'] {
-      @extend .red-btn;
-      margin: 0;
-      width: 100%;
-      font-family: '04b_03', monospace;
-      font-size: 40px;
     }
   }
 }
