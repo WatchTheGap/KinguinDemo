@@ -104,6 +104,17 @@ body {
   height: 111px;
   width: auto; }
 
+#big-cloud {
+  position: absolute;
+  opacity: .5;
+  background-image: url("img/cloud.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 330px;
+  top: -150px;
+  left: 630px; }
+
 #kinguin-logo {
   margin-left: 20vw;
   height: 58px; }
