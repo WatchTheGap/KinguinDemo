@@ -30,7 +30,10 @@
       let maarekBio = "<p>Pierre is currently the head of the Equity Derivatives activities of Exane America.</p> <p>With 15 years in the industry working for the largest players (JP Morgan†in London, Natixis in Paris and now Exane in New York), he will bring his deep knowledge of the financial industry and extensive network.</p>";
 
       let haoName = 'Jun Hao';
-      let haoBio = "<p>Jun Hao</p>"
+      let haoBio = "<p>Jun Hao</p>";
+
+      let strezynskaName = 'Anna Strezynska';
+      let strezynskaBio = "<p>Anna Strezynska</p>"
 
       let crystalName = 'Stephen A. Crystal, ESQ';
       let crystalBio = "<p>Stephen is an attorney and investor focusing on gaming and esports.</p><p>He has spent 25 years directly involved in all aspects of the casino and gaming technology industry as well as I-Gaming and esports worldwide. As an attorney he has represented public and private gaming companies before various state regulatory bodies and jurisdictions. Stephen has also been the President and CEO of numerous casino holding and public gaming technology companies, employing thousands of employees. Lastly, Stephen is an active investor and advisor on over $2 Billion dollars of project finance and mergers and acquisitions in the casino/gaming technology/I-Gaming/esports and energy and utility spaces.</p>";
