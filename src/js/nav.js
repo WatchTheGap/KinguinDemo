@@ -3,6 +3,7 @@
 
   $('a .burger').click(function (e) {
     e.preventDefault();
+    $('.popup').addClass('hide');
     $('header').addClass('bg-white');
     $('.full-nav').show();
     $('.nav-x').show();
