@@ -226,6 +226,7 @@
 
   $('.full-nav li').click(function () {
     hidePops();
+    $('.popup-bg').show();
     if ($(this).is(':contains("roadmap")')) {
       $('#roadmap2-popup').removeClass('hide');
       $('#close-x-1').removeClass('hide');
