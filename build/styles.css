@@ -107,11 +107,13 @@ body {
   width: auto; }
 
 #kinguin-logo {
-  height: 58px; }
+  height: 58px;
+  padding-left: 10vw; }
 
 .burger, .nav-x {
   text-align: right;
-  float: right; }
+  float: right;
+  padding-right: 10vw; }
 
 .nav-x {
   display: none;
@@ -129,8 +131,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80vw;
-  margin: auto; }
+  width: 100vw; }
   header h1 {
     width: 100%;
     margin: 10px;
