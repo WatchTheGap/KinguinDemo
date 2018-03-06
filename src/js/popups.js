@@ -1,12 +1,20 @@
 (function() {
   'use strict';
 
-  if (($(window).height()) <= 500 ){
-    $('.popup-wrapper').addClass('popup-wrapper-short').removeClass('popup-wrapper');
-  } else if (($(window).height()) > 500) {
-    $('.popup-wrapper-short').addClass('popup-wrapper').removeClass('popup-wrapper-short');
 
+
+  if (($(window).height()) <= 1000 ) {
+    $('.popup-wrapper').addClass('scale-pop').removeClass('popup-wrapper');
   }
+
+  $(window).resize(function () {
+  if (($(window).height()) <= 500 ) {
+      $('.popup-wrapper').addClass('popup-wrapper-short').removeClass('popup-wrapper');
+  } else if (($(window).height()) > 500) {
+      $('.popup-wrapper-short').addClass('popup-wrapper').removeClass('popup-wrapper-short');
+  }
+});
+
 
 
 // *** About Island ***

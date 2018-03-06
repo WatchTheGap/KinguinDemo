@@ -22,6 +22,11 @@
   left: 50vh;
 }
 
+.scale-pop {
+  @extend .centered;
+  transform: translate(-50%, -50%) scale(.75);
+}
+
 .signup-wrapper {
   margin: 20px 25vw;
   .popup-outer-wrapper {
@@ -35,8 +40,8 @@
 //************************************
 .popup-outer-wrapper{
   position: relative;
-  // min-width: 700px;
-  // height: auto;
+  min-width: 700px;
+  height: auto;
   width: 50vw;
   float: left;
   border-left: 10px solid black;

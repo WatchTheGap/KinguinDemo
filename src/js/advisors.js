@@ -34,7 +34,7 @@
       let haoBio = haoBio1 + "<p>Crypto JH strongly believes in giving back to the community, and has a passion for teaching people how to get started in cryptocurrency to start trading. That was the main impetus that led him to start his public Telegram and YouTube presence, teaching and informing the public about crypto.</p><p>With a wide network within the Singaporean crypto-community, Crypto JH has held engagements with prominent individuals such as the CEO of the Singapore stock exchange (SGX) and many crypto/blockchain developers. He is currently also playing advisory roles for numerous ICOs. Crypto JH has also graduated with High Distinction from a top school in Asia with a Bachelors in Finance.</p>";
 
       let strezynskaName = 'Anna Strezynska';
-      let strezynskaBio = "<p>Anna Strezynska</p>";
+      let strezynskaBio = "<p>Anna Strezynska is the former Minister of Digital Affairs in Poland (2015-2018), with the highest approval rating of any Polish politician at 80%. Much of Annaís career has been spent in public service in Poland where she worked on telecom and competition policy.</p><p>Today, Anna is the President of the Management Board for MC2. MC2 is a new technology company focused on implementation, training, and consultation of blockchain and smart technologies around the world.</p>";
 
       let crystalName = 'Stephen A. Crystal, ESQ';
       let crystalBio = "<p>Stephen is an attorney and investor focusing on gaming and esports.</p><p>He has spent 25 years directly involved in all aspects of the casino and gaming technology industry as well as I-Gaming and esports worldwide. As an attorney he has represented public and private gaming companies before various state regulatory bodies and jurisdictions. Stephen has also been the President and CEO of numerous casino holding and public gaming technology companies, employing thousands of employees. Lastly, Stephen is an active investor and advisor on over $2 Billion dollars of project finance and mergers and acquisitions in the casino/gaming technology/I-Gaming/esports and energy and utility spaces.</p>";
@@ -51,7 +51,9 @@
         $('#advisors-popup .more-info-text').find('h3').text(zhouName).siblings('.bio-text').empty('.bio-text').append(zhouBio);
       } else if ($(this).find('h5').is(':contains("Pierre Maarek")')) {
         $('#advisors-popup .more-info-text').find('h3').text(maarekName).siblings('.bio-text').empty('.bio-text').append(maarekBio);
-      } else if ($(this).find('h5').is(':contains("Jun Hao")')) {
+      } else if ($(this).find('h5').is(':contains("Anna Strezynska")')) {
+        $('#advisors-popup .more-info-text').find('h3').text(strezynskaName).siblings('.bio-text').empty('.bio-text').append(strezynskaBio);
+      }  else if ($(this).find('h5').is(':contains("Jun Hao")')) {
         $('#advisors-popup .more-info-text').find('h3').text(haoName).siblings('.bio-text').empty('.bio-text').append(haoBio);
       } else if ($(this).find('h5').is(':contains("Stephen Crystal")')) {
         $('#advisors-popup .more-info-text').find('h3').text(crystalName).siblings('.bio-text').empty('.bio-text').append(crystalBio);

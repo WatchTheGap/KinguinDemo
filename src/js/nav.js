@@ -51,8 +51,6 @@
       $('#company-popup').removeClass('hide');
     } else if ($(this).is(':contains("advisors")')) {
       $('#advisors-popup').removeClass('hide');
-    } else if ($(this).is(':contains("contact")')) {
-      $('#contactus-popup').removeClass('hide');
     } else {
       return;
     }
