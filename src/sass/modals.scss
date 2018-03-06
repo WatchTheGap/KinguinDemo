@@ -14,6 +14,7 @@
 
 .popup-wrapper {
   @extend .centered;
+  z-index: 2;
 }
 
 .popup-wrapper-short {
@@ -42,8 +43,8 @@
 .popup-outer-wrapper{
   position: relative;
   min-width: 700px;
+  max-width: 900px;
   height: auto;
-  width: 50vw;
   float: left;
   border-left: 10px solid black;
   border-right: 10px solid black;

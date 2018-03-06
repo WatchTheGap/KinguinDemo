@@ -175,6 +175,9 @@ header {
   left: 50%;
   transform: translate(-50%, -50%); }
 
+.popup-wrapper {
+  z-index: 2; }
+
 .popup-wrapper-short {
   position: absolute;
   top: 20vh;
@@ -193,8 +196,8 @@ header {
 .popup-outer-wrapper {
   position: relative;
   min-width: 700px;
+  max-width: 900px;
   height: auto;
-  width: 50vw;
   float: left;
   border-left: 10px solid black;
   border-right: 10px solid black;
