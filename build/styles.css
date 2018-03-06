@@ -537,6 +537,7 @@ header {
   display: flex;
   justify-content: space-between; }
   .dates-row li {
+    cursor: pointer;
     display: inline;
     text-decoration: none;
     margin: 20px;
