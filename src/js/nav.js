@@ -58,6 +58,11 @@
       return;
     }
 
+    $('.doc-link li').click(function () {
+      hidePops();
+      $('#islands-wrapper').removeClass('blur');
+    });
+
   });
 
 }());
