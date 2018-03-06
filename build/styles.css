@@ -425,15 +425,17 @@ header {
 .more-info-text {
   display: none; }
 
-#team-popup::before, #team-popup::after {
-  border-bottom: 10px solid #34d6e3; }
-#team-popup .modal-header {
-  background-color: #24b5cc;
-  border-top: 10px solid #34d6e3; }
-#team-popup .modal-body, #team-popup #why-now-popup .modal-footer, #why-now-popup #team-popup .modal-footer {
-  padding: 10px 20px; }
-#team-popup .more-info-text h4 {
-  font-style: italic; }
+#team-popup {
+  width: 700px; }
+  #team-popup::before, #team-popup::after {
+    border-bottom: 10px solid #34d6e3; }
+  #team-popup .modal-header {
+    background-color: #24b5cc;
+    border-top: 10px solid #34d6e3; }
+  #team-popup .modal-body, #team-popup #why-now-popup .modal-footer, #why-now-popup #team-popup .modal-footer {
+    padding: 10px 20px; }
+  #team-popup .more-info-text h4 {
+    font-style: italic; }
 
 .team-row {
   justify-content: space-around;
