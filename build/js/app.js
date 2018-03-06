@@ -328,6 +328,7 @@
     $('.popup').addClass('hide');
     $('.popup-bg').hide();
     $('#islands-wrapper').removeClass('blur');
+    $('.info-clicked').addClass('info-panel').removeClass('info-clicked');
   });
 
 // *** About Island ***
@@ -365,8 +366,13 @@
   });
 
   $('.info-panel').click(function () {
-    $(this).toggleClass('info-clicked');
-    $(this).toggleClass('info-panel');
+    $('.popup-bg').show();
+    $(this).addClass('info-clicked').removeClass('info-panel');
+  });
+
+  $('.info-clicked').click(function () {
+    $('.popup-bg').hide();
+    $(this).addClass('info-panel').removeClass('info-clicked');
   });
 
 // *** Info Island ***
