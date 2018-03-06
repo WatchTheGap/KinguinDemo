@@ -1,3 +1,6 @@
+@media screen and (min-width: 2500px) {
+  #islands-wrapper {
+    width: 50vw; } }
 .social-media-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -53,9 +56,9 @@ body {
   padding: 0; }
 
 #islands-wrapper {
-  height: 100%;
-  width: 80%;
-  margin: 80px auto; }
+  height: 100vh;
+  width: 80vw;
+  margin: 160px auto; }
 
 .islands, #about-island, #landing-island, #info-island, #strategy-island {
   position: relative; }
@@ -132,7 +135,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 80vw;
   margin: auto; }
   header h1 {
     width: 100%;
