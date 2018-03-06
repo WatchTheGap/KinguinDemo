@@ -410,9 +410,10 @@
     $('#close-x-1').removeClass('hide');
   });
   $('#close-x-1').click(function () {
-    blur();
     $(this).addClass('hide');
     $('#roadmap2-popup').addClass('hide');
+    $('#islands-wrapper').removeClass('blur');
+    $('.popup-bg').hide();
   });
 
   $('#why-now').click(function() {
