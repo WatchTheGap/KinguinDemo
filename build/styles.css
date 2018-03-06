@@ -52,8 +52,13 @@ body {
   margin: 0;
   padding: 0; }
 
+#islands {
+  height: 100%;
+  width: 80%;
+  margin: 80px auto; }
+
 .islands, #about-island, #landing-island, #info-island, #strategy-island {
-  position: absolute; }
+  position: relative; }
   .islands img, #about-island img, #landing-island img, #info-island img, #strategy-island img, .islands div, #about-island div, #landing-island div, #info-island div, #strategy-island div, .islands a div, #about-island a div, #landing-island a div, #info-island a div, #strategy-island a div {
     position: absolute;
     background-repeat: no-repeat; }
@@ -104,24 +109,12 @@ body {
   height: 111px;
   width: auto; }
 
-#big-cloud {
-  position: absolute;
-  opacity: .5;
-  background-image: url("img/cloud.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
-  width: 330px;
-  top: -150px;
-  left: 630px; }
-
 #kinguin-logo {
-  margin-left: 20vw;
   height: 58px; }
 
 .burger, .nav-x {
-  margin-right: 2vw;
-  text-align: right; }
+  text-align: right;
+  float: right; }
 
 .nav-x {
   display: none;
@@ -129,7 +122,8 @@ body {
   height: 27px; }
 
 .bg-white {
-  background-color: rgba(255, 255, 255, 0.5); }
+  background-color: rgba(255, 255, 255, 0.5);
+  background-attachment: fixed; }
 
 header {
   height: 80px;
@@ -138,13 +132,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 1920px; }
+  width: 80%;
+  margin: auto; }
   header h1 {
+    width: 100%;
     margin: 10px;
     font-size: 20px;
-    line-height: 58px;
-    width: 75%; }
+    line-height: 58px; }
 
 .full-nav {
   display: none;
@@ -159,6 +153,8 @@ header {
     text-align: center;
     margin: 2%; }
     .full-nav ul li {
+      max-width: 30%;
+      margin: auto;
       line-height: 2em;
       cursor: pointer;
       color: #181818; }
@@ -386,7 +382,7 @@ header {
   cursor: pointer;
   display: inline-block;
   text-transform: uppercase;
-  width: 25%; }
+  width: 20%; }
   .advisor h5, .team-member h5 {
     font-family: '04b_03', monospace;
     margin: 0 0 15px 0; }
@@ -1206,8 +1202,8 @@ input:active, button:active, select:active {
   margin: 5% 15%; }
 
 #about-island {
-  top: 200px;
-  left: 200px; }
+  top: 0;
+  left: 0; }
   #about-island div {
     cursor: pointer; }
 
@@ -1294,7 +1290,7 @@ input:active, button:active, select:active {
   width: 241px;
   height: 117px;
   top: 382px;
-  right: -210px; }
+  left: 0; }
   #contactus:hover {
     background-image: url("img/ContactUs_hover.png");
     width: 257px;
@@ -1307,8 +1303,8 @@ input:active, button:active, select:active {
     visibility: hidden; }
 
 #landing-island {
-  top: 51px;
-  left: 759px; }
+  top: -151px;
+  left: 559px; }
   #landing-island div {
     cursor: pointer; }
 
@@ -1421,8 +1417,8 @@ input:active, button:active, select:active {
   width: 131px; }
 
 #info-island {
-  top: 911px;
-  left: 87px; }
+  top: 711px;
+  left: -113px; }
   #info-island div {
     cursor: pointer; }
 
@@ -1477,8 +1473,8 @@ input:active, button:active, select:active {
     visibility: hidden; }
 
 #strategy-island {
-  top: 749px;
-  left: 687px; }
+  top: 549px;
+  left: 487px; }
   #strategy-island div {
     cursor: pointer; }
 
