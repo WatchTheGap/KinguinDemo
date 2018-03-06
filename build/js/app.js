@@ -198,7 +198,7 @@
     $('.full-nav').show();
     $('.nav-x').show();
     $('.burger').hide();
-    $('#islands').addClass('blur');
+    $('#islands-wrapper').addClass('blur');
   });
 
   $('a .nav-x').click(function (e) {
@@ -207,7 +207,7 @@
     $('.full-nav').hide();
     $('.burger').show();
     $('.nav-x').hide();
-    $('#islands').removeClass('blur');
+    $('#islands-wrapper').removeClass('blur');
   });
 
   let hidePops = function hidePops() {
@@ -216,14 +216,14 @@
     $('.full-nav').hide();
     $('.burger').show();
     $('.nav-x').hide();
+    $('#close-x-1').addClass('hide');
   };
 
   $('.full-nav li').click(function () {
     hidePops();
     if ($(this).is(':contains("roadmap")')) {
       $('#roadmap2-popup').removeClass('hide');
-    } else if ($(this).is(':contains("pre-ico")')) {
-      $('#signup-popup').removeClass('hide');
+      $('#close-x-1').removeClass('hide');
     } else if ($(this).is(':contains("tokens")')) {
       $('#tokens-popup').removeClass('hide');
     } else if ($(this).is(':contains("distribution")')) {
