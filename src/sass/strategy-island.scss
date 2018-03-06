@@ -61,25 +61,20 @@ left: 40px;
     left: 19px;
   }
 }
-#roadmap-wrapper {
-  position: relative;
-  @extend .centered;
-}
 
 #roadmap2-popup {
-  position: fixed;
-  width: 50vw;
-  margin: 0 25vw;
+  background-image: url('img/roadmap_new.png');
   z-index: 2;
+  height: 746px;
+  width: 740px;
 }
 
 #close-x-1 {
-  position: fixed;
+  position: absolute;
   cursor: pointer;
-  top: 15%;
   z-index: 2;
-  right: 27%;
-  height: 20px;
+  top: 40px;
+  right: 40px;
 }
 
 #projections {

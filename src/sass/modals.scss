@@ -25,6 +25,7 @@
 .scale-pop {
   @extend .centered;
   transform: translate(-50%, -50%) scale(.75);
+  z-index: 2;
 }
 
 .signup-wrapper {
