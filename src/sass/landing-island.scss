@@ -1,7 +1,7 @@
 #landing-island {
   @extend .islands;
-  top: 51px;
-  left: 759px;
+  top: -151px;
+  left: 559px;
   div {
     cursor: pointer;
   }
@@ -34,13 +34,13 @@
   left: 424px;
   width: 82px;
   height: 50px;
-  &:hover {
-    background-image: url('img/GoBtn_Hover.png');
-    top: 266px;
-    left: 424px;
-    width: 82px;
-    height: 59px;
-  }
+  // &:hover {
+  //   background-image: url('img/GoBtn_Hover.png');
+  //   top: 266px;
+  //   left: 424px;
+  //   width: 82px;
+  //   height: 59px;
+  // }
   &::before {
     content: url('img/GoBtn_Hover.png');
     width:0;

@@ -1,5 +1,5 @@
 html {
-  height: 100%;
+  // height: 100%;
 }
 
 body {
@@ -10,8 +10,15 @@ body {
   padding: 0;
 }
 
+
+.wrapper-island {
+  margin: 160px 10%;
+  width: fit-content;
+  min-width: 80%;
+}
+
 .islands {
-  position: absolute;
+  position: relative;
   img, div, a div {
     position: absolute;
     background-repeat: no-repeat;
@@ -70,16 +77,4 @@ body {
   left: 127px;
   height: 111px;
   width: auto;
-}
-
-#big-cloud {
-  position: absolute;
-  opacity: .5;
-  background-image: url('img/cloud.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
-  width: 330px;
-  top: -150px;
-  left: 630px;
 }

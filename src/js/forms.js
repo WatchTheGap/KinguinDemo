@@ -2,7 +2,6 @@
   'use strict';
 
   $('#notify-form').submit(function () {
-    console.log('submit clicked');
     alert('Success!');
   });
 

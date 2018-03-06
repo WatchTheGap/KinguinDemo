@@ -1,7 +1,7 @@
 #strategy-island {
   @extend .islands;
-  top: 749px;
-  left: 687px;
+  top: 549px;
+  left: 487px;
   div {
     cursor: pointer;
   }
@@ -64,9 +64,12 @@ left: 40px;
 
 #roadmap2-popup {
   position: absolute;
-  // top: 10vh;
-  // left: 25vw;
-  // width: 50vw;
+}
+#close-x-1 {
+  position: absolute;
+  cursor: pointer;
+  top: 40px;
+  left: 670px;
 }
 
 #projections {

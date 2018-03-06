@@ -1,10 +1,10 @@
 (function() {
   'use strict';
-
-  $('#go-btn').click(function () {
-    $('#signup-popup').toggleClass('hide');
-    $('#islands').addClass('blur');
-  });
+  //
+  // $('#go-btn').click(function () {
+  //   $('#signup-popup').toggleClass('hide');
+  //   $('#islands').addClass('blur');
+  // });
 
   $('#signup-button-crypto').click(function () {
     $('#signup-popup').toggleClass('hide');

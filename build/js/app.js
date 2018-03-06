@@ -377,10 +377,12 @@
 
   $('#roadmap').click(function () {
     $('#roadmap2-popup').toggleClass('hide');
+    $('#close-x-1').removeClass('hide');
     $('#islands-wrapper').addClass('blur');
   });
-  $('#roadmap2-popup').click(function () {
+  $('#close-x-1').click(function () {
     $(this).addClass('hide');
+    $('#roadmap2-popup').addClass('hide');
     $('#islands-wrapper').removeClass('blur');
   });
 
@@ -460,11 +462,11 @@
 
 (function() {
   'use strict';
-
-  $('#go-btn').click(function () {
-    $('#signup-popup').toggleClass('hide');
-    $('#islands').addClass('blur');
-  });
+  //
+  // $('#go-btn').click(function () {
+  //   $('#signup-popup').toggleClass('hide');
+  //   $('#islands').addClass('blur');
+  // });
 
   $('#signup-button-crypto').click(function () {
     $('#signup-popup').toggleClass('hide');

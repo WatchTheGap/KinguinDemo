@@ -1,6 +1,6 @@
-@media screen and (min-width: 2500px) {
-  #islands-wrapper {
-    width: 50vw; } }
+@media screen and (max-height: 700px) and (min-width: 900px) {
+  .popup {
+    transform: scale(0.6); } }
 .social-media-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -52,11 +52,10 @@ body {
   margin: 0;
   padding: 0; }
 
-#islands-wrapper {
-  height: 25vh;
-  width: 50vw;
-  margin: 0;
-  transform: translate(50%, 50%); }
+.wrapper-island {
+  margin: 160px 10%;
+  width: fit-content;
+  min-width: 80%; }
 
 .islands, #about-island, #landing-island, #info-island, #strategy-island {
   position: relative; }
@@ -178,7 +177,8 @@ header {
 .signup-wrapper {
   margin: 20px 25vw; }
   .signup-wrapper .popup-outer-wrapper {
-    width: 50vh; }
+    width: 50vh;
+    height: 60vh; }
 
 .popup-outer-wrapper {
   position: relative;
@@ -425,54 +425,56 @@ header {
   justify-content: space-around;
   margin: 0; }
 
-.team-member .avatar-bg {
-  height: 145px;
-  width: 145px;
-  background-color: #e0e0e0;
-  border-radius: 50%;
-  position: relative; }
-  .team-member .avatar-bg #viktor-img {
-    position: absolute;
-    bottom: 0;
-    left: 0; }
-  .team-member .avatar-bg #nashat-img {
-    position: absolute;
-    bottom: 0;
-    left: 0; }
-  .team-member .avatar-bg #kim-img {
-    position: absolute;
-    bottom: 0;
-    left: 0; }
-.team-member .team-avatar {
-  height: 175px;
-  width: 175px;
-  border: 10px solid transparent;
-  padding: 5px;
-  outline: none;
-  background-color: white;
-  box-sizing: border-box;
-  flex: 1;
-  border-radius: 50%;
-  margin: 0; }
-.team-member .team-active {
-  border: 10px solid #ef5e5e; }
-.team-member h5 {
-  color: #24b5cc;
-  font-size: 16px; }
-.team-member p {
-  font-size: 12px;
-  width: 80%;
-  margin: 0 10%;
-  min-height: 24px; }
-.team-member .input-wrapper {
-  width: 90%;
-  margin: 2em 5%; }
-  .team-member .input-wrapper a {
-    font-size: 18px;
+.team-member {
+  width: 25%; }
+  .team-member .avatar-bg {
+    height: 145px;
+    width: 145px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    position: relative; }
+    .team-member .avatar-bg #viktor-img {
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+    .team-member .avatar-bg #nashat-img {
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+    .team-member .avatar-bg #kim-img {
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+  .team-member .team-avatar {
+    height: 175px;
+    width: 175px;
+    border: 10px solid transparent;
     padding: 5px;
-    min-height: 2em;
-    min-width: 120px;
-    text-align: center; }
+    outline: none;
+    background-color: white;
+    box-sizing: border-box;
+    flex: 1;
+    border-radius: 50%;
+    margin: 0 -10px; }
+  .team-member .team-active {
+    border: 10px solid #ef5e5e; }
+  .team-member h5 {
+    color: #24b5cc;
+    font-size: 16px; }
+  .team-member p {
+    font-size: 12px;
+    width: 80%;
+    margin: 0 10%;
+    min-height: 24px; }
+  .team-member .input-wrapper {
+    width: 90%;
+    margin: 2em 5%; }
+    .team-member .input-wrapper a {
+      font-size: 18px;
+      padding: 5px;
+      min-height: 2em;
+      min-width: 120px;
+      text-align: center; }
 
 .more-info-text {
   border-top: 10px solid #b5b5b5;
@@ -1333,12 +1335,6 @@ input:active, button:active, select:active {
   left: 424px;
   width: 82px;
   height: 50px; }
-  #go-btn:hover {
-    background-image: url("img/GoBtn_Hover.png");
-    top: 266px;
-    left: 424px;
-    width: 82px;
-    height: 59px; }
   #go-btn::before {
     content: url("img/GoBtn_Hover.png");
     width: 0;
@@ -1527,6 +1523,12 @@ input:active, button:active, select:active {
 
 #roadmap2-popup {
   position: absolute; }
+
+#close-x-1 {
+  position: absolute;
+  cursor: pointer;
+  top: 40px;
+  left: 670px; }
 
 #projections {
   background-image: url("img/Projections.png");
