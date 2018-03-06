@@ -12,6 +12,15 @@
   transform: translate(-50%, -50%);
 }
 
+.popup-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+  display: none;
+}
+
 .popup-wrapper {
   @extend .centered;
   z-index: 2;

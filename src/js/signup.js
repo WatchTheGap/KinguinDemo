@@ -3,6 +3,7 @@
 
   $('#go-btn').click(function () {
     $('#pre-ico-popup').toggleClass('hide');
+    $('.popup-bg').show();
     $('#islands-wrapper').addClass('blur');
   });
 

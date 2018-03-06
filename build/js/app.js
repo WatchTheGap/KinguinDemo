@@ -319,28 +319,37 @@
   }
 });
 
+  let blur = function blur() {
+    $('.popup-bg').show();
+    $('#islands-wrapper').addClass('blur');
+  };
 
+  $('.popup-bg').click(function () {
+    $('.popup').addClass('hide');
+    $('.popup-bg').hide();
+    $('#islands-wrapper').removeClass('blur');
+  });
 
 // *** About Island ***
 
   $('#bulb').click(function() {
+    blur();
     $('#advisors-popup').toggleClass('hide');
-    $('#islands-wrapper').addClass('blur');
   });
 
   $('#team').click(function() {
+    blur();
     $('#team-popup').toggleClass('hide');
-    $('#islands-wrapper').addClass('blur');
   });
 
   $('#company').click(function() {
+    blur();
     $('#company-popup').toggleClass('hide');
-   $('#islands-wrapper').addClass('blur');
   });
 
   $('#ourstory').click(function() {
+    blur();
     $('#ourstory-popup').toggleClass('hide');
-    $('#islands-wrapper').addClass('blur');
   });
 
   // $('#contactus').click(function() {
@@ -351,8 +360,8 @@
 // *** Landing Island ***
 
   $('#notify-btn').click(function() {
+    blur();
     $('#notify-popup').toggleClass('hide');
-    $('#islands-wrapper').addClass('blur');
   });
 
   $('.info-panel').click(function () {
@@ -363,46 +372,46 @@
 // *** Info Island ***
 
   $('#tokens').click(function() {
+    blur();
     $('#tokens-popup').toggleClass('hide');
-    $('#islands-wrapper').addClass('blur');
   });
 
   $('#market').click(function() {
+    blur();
     $('#market-popup').toggleClass('hide');
-    $('#islands-wrapper').addClass('blur');
   });
 
 
 // *** Strategy Island ***
   $('#problem-solution').click(function () {
+    blur();
     $('#problem-solution-popup').toggleClass('hide');
-    $('#islands-wrapper').addClass('blur');
   });
 
   $('#distribution').click(function () {
+    blur();
     $('#distribution-popup').toggleClass('hide');
-    $('#islands-wrapper').addClass('blur');
   });
 
   $('#projections').click(function () {
+    blur();
     $('#projections-popup').toggleClass('hide');
-    $('#islands-wrapper').addClass('blur');
   });
 
   $('#roadmap').click(function () {
+    blur();
     $('#roadmap2-popup').toggleClass('hide');
     $('#close-x-1').removeClass('hide');
-    $('#islands-wrapper').addClass('blur');
   });
   $('#close-x-1').click(function () {
+    blur();
     $(this).addClass('hide');
     $('#roadmap2-popup').addClass('hide');
-    $('#islands-wrapper').removeClass('blur');
   });
 
   $('#why-now').click(function() {
+    blur();
     $('#why-now-popup').toggleClass('hide');
-    $('#islands-wrapper').addClass('blur');
   });
 
 // *** Basic ***
@@ -410,6 +419,7 @@
     e.preventDefault();
     $(this).closest('.popup-outer-wrapper').toggleClass('hide');
     $('#islands-wrapper').removeClass('blur');
+    $('.popup-bg').hide();
   });
 
 }());
@@ -480,6 +490,7 @@
 
   $('#go-btn').click(function () {
     $('#pre-ico-popup').toggleClass('hide');
+    $('.popup-bg').show();
     $('#islands-wrapper').addClass('blur');
   });
 
