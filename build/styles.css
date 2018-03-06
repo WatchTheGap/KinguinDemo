@@ -45,9 +45,6 @@
   src: url("fonts/8-bit_wonder-webfont.woff2") format("woff2"), url("fonts/8-bit_wonder-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-html {
-  height: 100%; }
-
 body {
   background: linear-gradient(#ff99b3, #ffe27d);
   background-attachment: fixed;
@@ -56,9 +53,10 @@ body {
   padding: 0; }
 
 #islands-wrapper {
-  height: 100vh;
-  width: 80vw;
-  margin: 160px auto; }
+  height: 25vh;
+  width: 50vw;
+  margin: 0;
+  transform: translate(50%, 50%); }
 
 .islands, #about-island, #landing-island, #info-island, #strategy-island {
   position: relative; }
