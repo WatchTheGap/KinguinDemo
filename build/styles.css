@@ -1298,7 +1298,7 @@ input:active, button:active, select:active {
     background-image: url("img/ContactUs_hover.png");
     width: 257px;
     height: 128px;
-    right: -210px; }
+    left: -20px; }
   #contactus::before {
     content: url("img/ContactUs_hover.png");
     width: 0;

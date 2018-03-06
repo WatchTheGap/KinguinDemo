@@ -325,10 +325,10 @@
     $('#islands-wrapper').addClass('blur');
   });
 
-  $('#contactus').click(function() {
-    $('#contactus-popup').toggleClass('hide');
-    $('#islands-wrapper').addClass('blur');
-  });
+  // $('#contactus').click(function() {
+  //   $('#contactus-popup').toggleClass('hide');
+  //   $('#islands-wrapper').addClass('blur');
+  // });
 
 // *** Landing Island ***
 
