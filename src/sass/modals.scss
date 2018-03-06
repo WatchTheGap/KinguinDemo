@@ -326,6 +326,7 @@
 
 .team-member {
   @extend .advisor;
+  width: 25%;
   .avatar-bg {
     height: 145px;
     width: 145px;
@@ -358,7 +359,7 @@
     box-sizing: border-box;
     flex: 1;
     border-radius: 50%;
-    margin: 0;
+    margin: 0 -10px;
   }
   .team-active {
     border: 10px solid #ef5e5e;
