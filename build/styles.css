@@ -906,12 +906,12 @@ header {
 #problem-solution-popup .modal-footer {
   min-height: 40px; }
 
-#maintenance-popup .modal-header {
+#pre-ico-popup .modal-header {
   height: 150px; }
-  #maintenance-popup .modal-header h1 {
+  #pre-ico-popup .modal-header h1 {
     color: black;
     margin-top: 50px; }
-#maintenance-popup .modal-body, #maintenance-popup #why-now-popup .modal-footer, #why-now-popup #maintenance-popup .modal-footer {
+#pre-ico-popup .modal-body, #pre-ico-popup #why-now-popup .modal-footer, #why-now-popup #pre-ico-popup .modal-footer {
   text-align: center;
   height: 150px; }
 
@@ -1351,6 +1351,12 @@ input:active, button:active, select:active {
   left: 424px;
   width: 82px;
   height: 50px; }
+  #go-btn:hover {
+    background-image: url("img/GoBtn_Hover.png");
+    top: 266px;
+    left: 424px;
+    width: 82px;
+    height: 59px; }
   #go-btn::before {
     content: url("img/GoBtn_Hover.png");
     width: 0;

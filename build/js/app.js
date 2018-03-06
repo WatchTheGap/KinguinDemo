@@ -242,9 +242,12 @@
       $('#company-popup').removeClass('hide');
     } else if ($(this).is(':contains("advisors")')) {
       $('#advisors-popup').removeClass('hide');
+    } else if ($(this).is(':contains("pre-ico")')) {
+      $('#pre-ico-popup').removeClass('hide');
     } else {
       return;
     }
+
   });
 
 }());
@@ -402,7 +405,8 @@
   });
 
 // *** Basic ***
-  $('.close-popup').click(function() {
+  $('.close-popup').click(function(e) {
+    e.preventDefault();
     $(this).closest('.popup-outer-wrapper').toggleClass('hide');
     $('#islands-wrapper').removeClass('blur');
   });
@@ -472,11 +476,11 @@
 
 (function() {
   'use strict';
-  //
-  // $('#go-btn').click(function () {
-  //   $('#signup-popup').toggleClass('hide');
-  //   $('#islands').addClass('blur');
-  // });
+
+  $('#go-btn').click(function () {
+    $('#pre-ico-popup').toggleClass('hide');
+    $('#islands-wrapper').addClass('blur');
+  });
 
   $('#signup-button-crypto').click(function () {
     $('#signup-popup').toggleClass('hide');

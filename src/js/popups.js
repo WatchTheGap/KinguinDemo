@@ -102,7 +102,8 @@
   });
 
 // *** Basic ***
-  $('.close-popup').click(function() {
+  $('.close-popup').click(function(e) {
+    e.preventDefault();
     $(this).closest('.popup-outer-wrapper').toggleClass('hide');
     $('#islands-wrapper').removeClass('blur');
   });

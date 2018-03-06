@@ -51,9 +51,12 @@
       $('#company-popup').removeClass('hide');
     } else if ($(this).is(':contains("advisors")')) {
       $('#advisors-popup').removeClass('hide');
+    } else if ($(this).is(':contains("pre-ico")')) {
+      $('#pre-ico-popup').removeClass('hide');
     } else {
       return;
     }
+
   });
 
 }());
