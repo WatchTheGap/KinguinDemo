@@ -220,6 +220,10 @@
     $('#close-x-1').addClass('hide');
   };
 
+  $('.doc-link').click(function () {
+    $('#islands-wrapper').removeClass('blur');
+  });
+
   $('.full-nav li').click(function () {
     hidePops();
     if ($(this).is(':contains("roadmap")')) {
@@ -249,10 +253,6 @@
       return;
     }
 
-    $('.doc-link li').click(function () {
-      hidePops();
-      $('#islands-wrapper').removeClass('blur');
-    });
 
   });
 
