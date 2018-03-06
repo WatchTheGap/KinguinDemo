@@ -48,8 +48,12 @@ header {
     text-transform: uppercase;
     text-align: center;
     margin: 2%;
+    a {
+      text-decoration: none;
+      max-width: 50%;
+    }
     li {
-      max-width: 30%;
+      max-width: 50%;
       margin: auto;
       line-height: 2em;
       cursor: pointer;

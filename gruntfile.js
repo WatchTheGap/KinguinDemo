@@ -35,6 +35,16 @@ module.exports = function (grunt){
           }
         ]
       },
+      docs: {
+        files: [
+          {
+            cwd: 'src/docs/',
+            src: ['*.pdf'],
+            dest: 'build/docs/',
+            expand: true
+          }
+        ]
+      },
       jquery: {
         files: [
           {

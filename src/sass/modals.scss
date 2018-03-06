@@ -16,6 +16,12 @@
   @extend .centered;
 }
 
+.popup-wrapper-short {
+  position: absolute;
+  top: 20vh;
+  left: 50vh;
+}
+
 .signup-wrapper {
   margin: 20px 25vw;
   .popup-outer-wrapper {
@@ -29,8 +35,9 @@
 //************************************
 .popup-outer-wrapper{
   position: relative;
-  min-width: 700px;
-  height: auto;
+  // min-width: 700px;
+  // height: auto;
+  width: 50vw;
   float: left;
   border-left: 10px solid black;
   border-right: 10px solid black;

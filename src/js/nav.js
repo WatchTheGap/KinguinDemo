@@ -29,9 +29,7 @@
 
   $('.full-nav li').click(function () {
     hidePops();
-    if ($(this).is(':contains("whitepaper")')) {
-      $('#whitepaper-popup').removeClass('hide');
-    } else if ($(this).is(':contains("roadmap")')) {
+    if ($(this).is(':contains("roadmap")')) {
       $('#roadmap2-popup').removeClass('hide');
     } else if ($(this).is(':contains("pre-ico")')) {
       $('#signup-popup').removeClass('hide');

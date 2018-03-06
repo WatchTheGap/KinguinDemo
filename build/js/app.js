@@ -218,9 +218,7 @@
 
   $('.full-nav li').click(function () {
     hidePops();
-    if ($(this).is(':contains("whitepaper")')) {
-      $('#whitepaper-popup').removeClass('hide');
-    } else if ($(this).is(':contains("roadmap")')) {
+    if ($(this).is(':contains("roadmap")')) {
       $('#roadmap2-popup').removeClass('hide');
     } else if ($(this).is(':contains("pre-ico")')) {
       $('#signup-popup').removeClass('hide');
@@ -303,6 +301,14 @@
 (function() {
   'use strict';
 
+  if (($(window).height()) <= 500 ){
+    $('.popup-wrapper').addClass('popup-wrapper-short').removeClass('popup-wrapper');
+  } else if (($(window).height()) > 500) {
+    $('.popup-wrapper-short').addClass('popup-wrapper').removeClass('popup-wrapper-short');
+
+  }
+
+
 // *** About Island ***
 
   $('#bulb').click(function() {
@@ -354,10 +360,6 @@
     $('#islands-wrapper').addClass('blur');
   });
 
-  $('#whitepaper').click(function () {
-    $('#whitepaper-popup').toggleClass('hide');
-    $('#islands-wrapper').addClass('blur');
-  });
 
 // *** Strategy Island ***
   $('#problem-solution').click(function () {

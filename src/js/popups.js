@@ -1,6 +1,14 @@
 (function() {
   'use strict';
 
+  if (($(window).height()) <= 500 ){
+    $('.popup-wrapper').addClass('popup-wrapper-short').removeClass('popup-wrapper');
+  } else if (($(window).height()) > 500) {
+    $('.popup-wrapper-short').addClass('popup-wrapper').removeClass('popup-wrapper-short');
+
+  }
+
+
 // *** About Island ***
 
   $('#bulb').click(function() {
@@ -52,10 +60,6 @@
     $('#islands-wrapper').addClass('blur');
   });
 
-  $('#whitepaper').click(function () {
-    $('#whitepaper-popup').toggleClass('hide');
-    $('#islands-wrapper').addClass('blur');
-  });
 
 // *** Strategy Island ***
   $('#problem-solution').click(function () {
