@@ -1,6 +1,16 @@
-@media screen and (max-height: 700px) and (min-width: 900px) {
-  .popup {
-    transform: scale(0.6); } }
+@media screen and (max-width: 600px) {
+  #landing-island #info-stairs {
+    display: none; }
+  #landing-island #end-connector {
+    display: none; }
+  #landing-island #stairs-end {
+    display: none; }
+  #landing-island #stairs-mid {
+    display: none; }
+  #landing-island #stairs-top {
+    display: none; }
+  #landing-island #stairs-top-2 {
+    display: none; } }
 .social-media-wrapper {
   display: flex;
   flex-wrap: wrap;
