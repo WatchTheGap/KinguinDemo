@@ -62,11 +62,20 @@ left: 40px;
   }
 }
 
+
+.roadmap-wrapper {
+  position: absolute;
+  min-width: 740px;
+  margin: 0 25vw;
+  z-index: 2;
+}
+
 #roadmap2-popup {
   background-image: url('img/roadmap_new.png');
+  background-repeat: no-repeat;
   z-index: 2;
-  height: 746px;
-  width: 740px;
+  min-height: 746px;
+  min-width: 740px;
 }
 
 #close-x-1 {
