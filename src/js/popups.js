@@ -1,8 +1,6 @@
 (function() {
   'use strict';
 
-
-
   if (($(window).height()) <= 1000 ) {
     $('.popup-wrapper').addClass('scale-pop').removeClass('popup-wrapper');
   }
