@@ -48,8 +48,8 @@
   });
 
   $('#contactus').click(function() {
+    blur();
     $('#contactus-popup').toggleClass('hide');
-    $('#islands-wrapper').addClass('blur');
   });
 
 // *** Landing Island ***
