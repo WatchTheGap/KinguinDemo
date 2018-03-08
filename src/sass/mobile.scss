@@ -57,4 +57,38 @@
       }
     }
 
+    #about-island {
+      background-image: url('img/About_Mobile.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 400px;
+      height: 1500px;
+      top: -200px;
+      right: 0;
+
+      .team-title {
+        top: 220px;
+      }
+      .company-title {
+        top: 60px;
+        left: 255px;
+      }
+      .story-title {
+        transform: rotate(-30deg) skew(30deg);
+        text-shadow: -2px -1px 0 #84bf4f;
+        top: 315px;
+        left: 120px;
+        font-size: 19px;
+      }
+      .advisors-title {
+        top: 245px;
+      }
+      .contact-title {
+        font-size: 17px;
+        top: 445px;
+        left: 160px;
+      }
+
+    }
+
 }

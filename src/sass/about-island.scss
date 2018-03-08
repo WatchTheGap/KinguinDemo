@@ -7,6 +7,42 @@
   }
 }
 
+.team-title {
+  transform: skewY(30deg);
+  color: #c39f8e;
+  font-size: 30px;
+  top: 169px;
+  left: 65px;
+}
+.company-title {
+  transform: skewY(-30deg);
+  color: #ebcda3;
+  font-size: 17px;
+  top: 188px;
+  left: 375px;
+}
+.story-title {
+  transform: skewY(-30deg);
+  color: white;
+  font-size: 17px;
+  top: 255px;
+  left: 82px;
+}
+.advisors-title {
+  transform: skewY(-30deg);
+  color: #111111;
+  font-size: 9px;
+  top: 389px;
+  left: 319px;
+}
+.contact-title {
+  transform: skewY(30deg);
+  color: #c39f8e;
+  font-size: 11px;
+  top: 448px;
+  left: 8px;
+}
+
 #bulb {
   background-image: url('img/Bulb.png');
   top: 313px;
