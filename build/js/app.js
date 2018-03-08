@@ -250,6 +250,8 @@
       $('#advisors-popup').removeClass('hide');
     } else if ($(this).is(':contains("pre-ico")')) {
       $('#pre-ico-popup').removeClass('hide');
+    } else if ($(this).is(':contains("contact")')) {
+      $('#contactus-popup').removeClass('hide');
     } else {
       return;
     }
@@ -357,10 +359,10 @@
     $('#ourstory-popup').toggleClass('hide');
   });
 
-  // $('#contactus').click(function() {
-  //   $('#contactus-popup').toggleClass('hide');
-  //   $('#islands-wrapper').addClass('blur');
-  // });
+  $('#contactus').click(function() {
+    $('#contactus-popup').toggleClass('hide');
+    $('#islands-wrapper').addClass('blur');
+  });
 
 // *** Landing Island ***
 

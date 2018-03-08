@@ -59,6 +59,8 @@
       $('#advisors-popup').removeClass('hide');
     } else if ($(this).is(':contains("pre-ico")')) {
       $('#pre-ico-popup').removeClass('hide');
+    } else if ($(this).is(':contains("contact")')) {
+      $('#contactus-popup').removeClass('hide');
     } else {
       return;
     }

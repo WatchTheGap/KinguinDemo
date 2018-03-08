@@ -495,9 +495,22 @@
   }
   .modal-body {
     padding: 5% 10%;
-    height: 400px;
+    // height: 400px;
     .input-wrapper {
       margin: 5% 0;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    p {
+      text-align: center;
+      font-size: 20px;
+    }
+    h2 {
+      font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
+      text-align: center;
+      font-size: 30px;
     }
     input[type='email'] {
       padding: 20px 25px;
@@ -527,7 +540,7 @@
     }
   }
   .modal-footer {
-    min-height: 100px;
+    min-height: 20px;
   }
 }
 
