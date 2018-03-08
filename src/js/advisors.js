@@ -20,8 +20,8 @@
       let galamBio = "<p>A mathemetician and financier, Elie is Chief Investments Officer of the Eastmore Group, a hedge fund with offices in the US, Canada, Europe, Hong Kong and Japan. He received a Masters in Applied Mathematics from Harvard University and a Masters in Engineering from Ecole Centrale Paris.</p> <p>Elie is an experienced crypto investor and influencer, as well as financial advisor to Bancor, a project that raised $153MM in an ICO in June 2017 - the biggest ever at the time. Furthermore, Elie is an active investor in multiple esports companies and sits on the board of O'Gaming, the largest French language stream platform on Twitch</p>";
 
 
-      let langName = 'Callum Lang';
-      let langBio = "<p>Callum is a partner at Unity Group Private Equity and High Commissioner for the World Business Angel Forum in Singapore. Callum is a New Zealander who has started, built, bought, and sold half a dozen businesses in a range of industries across two continents. He is a director of multiple companies and is cofounder of The Marketing Group PLC, listed in Europe. Callum sits on multiple Boards of listed and private companies and is the author of two bestselling books; 'Progressive Partnerships - The FUTURE of business' and 'Agglomerate - Idea to IPO in 12 months'. Widely published he is regularly invited to speak at conferences and on television around the world. Callum has been based in Asia for nearly 20 years with the last 6 of those in Singapore, where he resides with his young family.</p>";
+      let liangName = 'Callum Liang';
+      let liangBio = "<p>Callum is a partner at Unity Group Private Equity and High Commissioner for the World Business Angel Forum in Singapore. Callum is a New Zealander who has started, built, bought, and sold half a dozen businesses in a range of industries across two continents. He is a director of multiple companies and is cofounder of The Marketing Group PLC, listed in Europe. Callum sits on multiple Boards of listed and private companies and is the author of two bestselling books; 'Progressive Partnerships - The FUTURE of business' and 'Agglomerate - Idea to IPO in 12 months'. Widely published he is regularly invited to speak at conferences and on television around the world. Callum has been based in Asia for nearly 20 years with the last 6 of those in Singapore, where he resides with his young family.</p>";
 
       let zhouName = 'Joe Zhou';
       let zhouBio = "<p>Joe is the CEO and Co-Founder at†FirstBlood, a blockchain based esports competition platform and also one of the first companies that successfully rose funding through Ethereum blockchain.</p> <p>Prior to FirstBlood, he was the Founder and CEO at†Alt-Options, the first Bitcoin options trading platform based in the US. Additionally, Joe is also an avid investor and advisor in the blockchain space. He's a partner at NewBlock Capital - an investment fund that focuses in FinTech and Blockchain -- and a chartered anti-money laundering specialist (ACAMS).</p>";
@@ -45,8 +45,8 @@
         $('#advisors-popup .more-info-text').find('h3').text(hilgersName).siblings('.bio-text').empty('.bio-text').append(hilgersBio);
       } else if ($(this).find('h5').is(':contains("Elie Galam")')) {
         $('#advisors-popup .more-info-text').find('h3').text(galamName).siblings('.bio-text').empty('.bio-text').append(galamBio);
-      } else if ($(this).find('h5').is(':contains("Callum Lang")')) {
-        $('#advisors-popup .more-info-text').find('h3').text(langName).siblings('.bio-text').empty('.bio-text').append(langBio);
+      } else if ($(this).find('h5').is(':contains("Callum Liang")')) {
+        $('#advisors-popup .more-info-text').find('h3').text(liangName).siblings('.bio-text').empty('.bio-text').append(liangBio);
       } else if ($(this).find('h5').is(':contains("Joe Zhou")')) {
         $('#advisors-popup .more-info-text').find('h3').text(zhouName).siblings('.bio-text').empty('.bio-text').append(zhouBio);
       } else if ($(this).find('h5').is(':contains("Pierre Maarek")')) {

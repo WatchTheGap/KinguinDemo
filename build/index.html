@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kinguin ICO Digital Strategy</title>
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -50,21 +51,20 @@
       </ul>
     </nav>
 
+    <!-- for closing popups on click outside -->
     <div class='popup-bg'></div>
 
     <div class='roadmap-wrapper'>
-
       <div id='roadmap2-popup' class='popup hide'>
         <img id='close-x-1' class='hide' src='img/Close.png' alt=''>
       </div>
-
     </div>
 
     <div id='islands-wrapper' class='wrapper-island'> <!-- for bluring -->
 
       <div id='landing-island'>
         <img id='cloud3' src='img/cloud.png' alt='clouds'>
-        <img src='img/Landing1.png' alt''>
+        <img class='mobile-hide' src='img/Landing1.png' alt''>
 
         <div class='countdown-sign'>
           <p>ICO will start in...</p>
@@ -89,13 +89,15 @@
 
         <div class='savings-sign'>
           <p>community savings</p>
-          <h1>$175,464,578</h1>
+          <h1 class='mobile-hide'>$175,464,578</h1>
+          <h1 class='mobile-show'>$175 MIL</h1>
+
         </div>
 
 
-        <img id='stairs-top-2' src='img/Notify_Stairs.png' alt='stairs'>
+        <img id='stairs-top-2'class='mobile-hide' src='img/Notify_Stairs.png' alt='stairs'>
         <div id='notify-btn'></div>
-        <img id='participate' src='img/participate-title.png' alt=''>
+        <img class='mobile-hide' id='participate' src='img/participate-title.png' alt=''>
 
         <div id='go-btn'></div>
         <div class='info-panel'></div>
@@ -150,7 +152,7 @@
 
       </div>
 
-      <div id='about-island'>
+      <div class='mobile-hide' id='about-island'>
         <img id='cloud1' src='img/cloud.png' alt='clouds'>
         <div id='team'></div>
         <div id='company'></div>
@@ -158,14 +160,14 @@
         <div id='ourstory'></div>
         <img id='advisors' src='img/Advisors.png'>
         <div id='bulb'></div>
-        <img id='stairs-top' src='img/Landing_About_Stairs.png' alt='floating stairs'>
-        <img id='stairs-mid' src='img/Middle_Stairs.png' alt='floating stairs'>
+        <img id='stairs-top' class='mobile-hide' src='img/Landing_About_Stairs.png' alt='floating stairs'>
+        <img id='stairs-mid' class='mobile-hide' src='img/Middle_Stairs.png' alt='floating stairs'>
         <img id='cloud2' src='img/cloud.png' alt='clouds'>
       </div>
 
-      <div id='strategy-island'>
+      <div class='mobile-hide' id='strategy-island'>
         <img id='tiny-cloud' src='img/cloud.png' alt='clouds'>
-        <img id='stairs-end' src='img/Info_Strategy_Stairs.png' alt='floating stairs'>
+        <img id='stairs-end' class='mobile-hide' src='img/Info_Strategy_Stairs.png' alt='floating stairs'>
         <img id='strategy-b' src='img/Strategy_B.png' alt='strategy and analysis'>
         <div id='problem-solution'></div>
         <img id='distro' src='img/Distro.png' alt='distribution'>
@@ -175,19 +177,19 @@
         <div id='projections'></div>
         <div id='why-now'></div>
         <div id='distribution'></div>
-        <img id='end-connector' src='img/Strategy_Connector.png' alt='walkway'>
+        <img id='end-connector' class='mobile-hide' src='img/Strategy_Connector.png' alt='walkway'>
         <img id='cloud4' src='img/cloud.png' alt='clouds'>
 
 
       </div>
 
-      <div id='info-island'>
+      <div class='mobile-hide' id='info-island'>
         <img id='info-block' src='img/Info_block.png'>
         <div id='tokens'></div>
         <a href='docs/KINGUIN_DOT_IO_Whitepaper_2.1.1.pdf' target='_blank'><div id='whitepaper'></div></a>
         <img id='market-block' src='img/Market.png' alt='market size'>
         <div id='market'></div>
-        <img id='info-stairs' src='img/Info_Stairs.png' alt='floating stairs'>
+        <img id='info-stairs' class='mobile-hide' src='img/Info_Stairs.png' alt='floating stairs'>
       </div>
     </div> <!-- for bluring -->
 
@@ -914,8 +916,8 @@
                 <h5>Elie Galam</h5>
               </div>
               <div class='advisor'>
-                <img class='avatar' src='img/CallumLang.png' alt='Callum Lang'>
-                <h5>Callum Lang</h5>
+                <img class='avatar' src='img/CallumLiang.png' alt='Callum Liang'>
+                <h5>Callum Liang</h5>
               </div>
               <div class='advisor'>
                 <img class='avatar' src='img/JoeZhou.png' alt='Joe Zhou'>
