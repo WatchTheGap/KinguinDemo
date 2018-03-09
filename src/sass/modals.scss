@@ -1013,3 +1013,30 @@
     height: 150px;
   }
 }
+
+#consent-popup {
+  &::before, &::after {
+    border-bottom: 10px solid #f68888;
+  }
+  .modal-header {
+    background-color: #ef5e5e;
+    border-top: 10px solid #f68888;
+  }
+  .modal-body {
+    .input-wrapper {
+      height: 14px;
+      margin: 20px;
+    }
+    .pixel-input {
+    }
+    input[type='checkbox'] {
+      visibility: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    label {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

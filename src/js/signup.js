@@ -17,14 +17,7 @@
     $('#choose-fiat-popup').toggleClass('hide');
   });
 
-  $('#crypto-continue').click(function () {
-    $('input[name=crypto-amt]').val(function () {
-      localStorage.setItem('donationAmt', this.value);
-    });
-    $('#choose-crypto-popup').toggleClass('hide');
-    $('#aml-popup').toggleClass('hide');
-    console.log(localStorage);
-  });
+
 
   $('#fiat-continue').click(function () {
     $('input[name=donation-amt]').val(function () {
@@ -43,6 +36,7 @@
     });
     $('#investor-popup').toggleClass('hide');
     $('#kyc-popup').toggleClass('hide');
+    console.log(localStorage);
   });
 
   $('#investor-button-private').click(function () {
@@ -65,16 +59,5 @@
     $('#islands').removeClass('blur');
   });
 
-  $('#aml-continue').click(function (e) {
-    e.preventDefault();
-    $('input[name=name]').val(function () {
-      localStorage.setItem('name', this.value);
-    });
-    $('input[name=user-email]').val(function () {
-      localStorage.setItem('userEmail', this.value);
-    });
-    $('#aml-eth-popup').toggleClass('hide');
-    $('#aml-popup').toggleClass('hide');
-  });
 
 }());

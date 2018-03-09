@@ -5,6 +5,11 @@ input:active, button:active, select:active {
   border: none;
 }
 
+#signup-popup {
+  height: auto;
+  width: 700px;
+}
+
 .signup-corners::before, .signup-corners::after{
   border-bottom: 10px solid #c8dfdc;
 }

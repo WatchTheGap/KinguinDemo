@@ -10,9 +10,28 @@
   });
 
     let currencyType;
-    let donationAmt;
+    let donationAmt = 0;
     let name;
     let userEmail;
+
+
+    function createProfile(userProfile) {
+      $.ajax({
+        url: "http://34.242.252.61:8090/api/create-profile",
+        type: "POST",
+        headers: {
+          "Authorization": "Basic a2luZ3VpbjpLIzg3Z3VpIQ=="
+        },
+        data: {
+          "uid": name + "1234",
+          "username": name,
+          "email": userEmail,
+          "currency": currencyType,
+          "amount": donationAmt
+        }
+      });
+      console.log('inside createProfile');
+    }
 
     $('#BTC-select').click(function () {
       currencyType = 'BTC';
@@ -50,30 +69,35 @@
     });
 
 
+    $('#crypto-continue').click(function (e) {
+      e.preventDefault();
+      $('input[name=crypto-amt]').val(function () {
+        donationAmt = this.value;
+        localStorage.setItem('donationAmt', this.value);
+      });
+      $('#choose-crypto-popup').toggleClass('hide');
+      $('#aml-popup').toggleClass('hide');
+      console.log(localStorage, donationAmt);
+    });
 
-    //
-    // $('#choose-fiat-popup input').keypress(function (e) {
-    //   if (e.which == 13) {
-    //     $('#fiat-continue').click();
-    //     console.log(localStorage);
-    //   }
-    // });
-    //
-    //
-    //
-    // $('#aml-popup input').keypress(function (e) {
-    //   if (e.which == 13) {
-    //     $('#aml-continue').click();
-    //     console.log(localStorage);
-    //   }
-    // });
-    //
-    //
-    // $('#kyc-popup input').keypress(function (e) {
-    //   if (e.which == 13) {
-    //     $('#kyc-continue').click();
-    //     console.log(localStorage);
-    //   }
-    // });
+
+      $('#aml-continue').click(function (e) {
+        e.preventDefault();
+        $('input[name=name]').val(function () {
+          name = this.value;
+          localStorage.setItem('name', this.value);
+        });
+        $('input[name=user-email]').val(function () {
+          userEmail = this.value;
+          localStorage.setItem('userEmail', this.value);
+        });
+        $('#aml-eth-popup').toggleClass('hide');
+        $('#aml-popup').toggleClass('hide');
+        console.log(localStorage);
+        createProfile();
+      });
+
+//*******************************************************
+
 
 }());
