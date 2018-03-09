@@ -209,7 +209,7 @@
 
     <div class='popup-wrapper'>
 
-            <div id='consent-popup' class='popup hide popup-outer-wrapper'>
+            <div id='consent-popup' class='popup  popup-outer-wrapper'>
               <div class='popup-inner-wrapper'>
                 <section class='modal-header'>
                   <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
@@ -225,7 +225,7 @@
                   </div>
 
 
-                  <p>Check here to confirm that you have read, understand and agree to the <a href='docs/KINGUIN_DOT_IO_TOS.pdf' target='_blank'>Terms of Use</a></p>
+                  <p>Check here to confirm that you have read, understand and agree to the <a href='docs/KINGUIN_DOT_IO_TOS.pdf' target='_blank'>Terms of Use</a>.</p>
 
 
                   <div class='input-wrapper'>
@@ -237,7 +237,7 @@
 
 
 
-                  <p>Check here to confirm that you consent to giving us your personal information in accordance with our <a href='docs/KINGUIN_DOT_IO_PRIVACY_POLICY.pdf' target='_blank'>Privacy Policy</a></p>
+                  <p>Check here to confirm that you consent to giving us your personal information in accordance with our <a href='docs/KINGUIN_DOT_IO_PRIVACY_POLICY.pdf' target='_blank'>Privacy Policy</a>.</p>
 
                 </section>
                 <section class='modal-footer'>
@@ -357,7 +357,7 @@
               <h4>input amount</h4>
               <div class='input-wrapper currency-amt'>
                 <div class='pixel-input'>
-                  <input type='text' name='crypto-amt' placeholder='0'>
+                  <input type='text' name='crypto-amt' placeholder='0' required>
                   <p class='currency-placeholder'>BTC</p>
                 </div>
               </div>
@@ -398,7 +398,7 @@
               <h2>input amount</h2>
               <div class='input-wrapper currency-amt'>
                 <div class='pixel-input'>
-                  <input type='text' name='donation-amt'  placeholder='0'>
+                  <input type='text' name='donation-amt'  placeholder='0' required>
                   <p class='currency-placeholder'>USD</p>
                 </div>
               </div>
@@ -426,12 +426,12 @@
             <form id='signup-form' method='post'>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input type='text' align='center' name='name-kyc' placeholder='YOUR NAME'>
+                  <input type='text' align='center' name='name-kyc' placeholder='YOUR NAME' required>
                 </div>
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input type='email' name='user-email-kyc' placeholder='YOUR EMAIL'>
+                  <input type='email' name='user-email-kyc' placeholder='YOUR EMAIL' required>
                 </div>
               </div>
               <div id='kyc-continue' class='input-wrapper'>

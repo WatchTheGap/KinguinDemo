@@ -2,19 +2,19 @@
   'use strict';
 
   $('#go-btn').click(function () {
-    $('#pre-ico-popup').toggleClass('hide');
+    $('#pre-ico-popup').removeClass('hide');
     $('.popup-bg').show();
     $('#islands-wrapper').addClass('blur');
   });
 
   $('#signup-button-crypto').click(function () {
-    $('#signup-popup').toggleClass('hide');
-    $('#choose-crypto-popup').toggleClass('hide');
+    $('#signup-popup').addClass('hide');
+    $('#choose-crypto-popup').removeClass('hide');
   });
 
   $('#signup-button-fiat').click(function () {
-    $('#signup-popup').toggleClass('hide');
-    $('#choose-fiat-popup').toggleClass('hide');
+    $('#signup-popup').addClass('hide');
+    $('#choose-fiat-popup').removeClass('hide');
   });
 
 

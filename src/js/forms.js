@@ -16,6 +16,10 @@
 
 
     function createProfile(userProfile) {
+      if (name.length < 1 || userEmail.length < 1) {
+        alert('omg this field is required.');
+        return;
+      }
       $.ajax({
         url: "http://kinguin-test.global.ssl.fastly.net/api/create-profile",
         type: "POST",
@@ -30,6 +34,7 @@
           "amount": donationAmt
         }
       });
+      $('#confirmation-popup').removeClass('hide');
     }
 
     $('#BTC-select').click(function () {
@@ -69,8 +74,8 @@
       $('input[name=crypto-amt]').val(function () {
         donationAmt = this.value;
       });
-      $('#choose-crypto-popup').toggleClass('hide');
-      $('#aml-popup').toggleClass('hide');
+      $('#choose-crypto-popup').addClass('hide');
+      $('#aml-popup').removeClass('hide');
     });
 
 
@@ -82,9 +87,9 @@
         $('input[name=user-email]').val(function () {
           userEmail = this.value;
         });
-        $('#aml-eth-popup').toggleClass('hide');
-        $('#confirmation-popup').removeClass('hide');
+        $('#aml-eth-popup').addClass('hide');
         createProfile();
+        $('#aml-popup').addClass('hide');
       });
 
 

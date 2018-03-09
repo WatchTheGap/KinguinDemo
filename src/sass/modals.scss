@@ -1024,19 +1024,39 @@
   }
   .modal-body {
     .input-wrapper {
-      height: 14px;
+      height: 25px;
       margin: 20px;
     }
     .pixel-input {
+      padding: 2px 14px;
     }
     input[type='checkbox'] {
       visibility: hidden;
       margin: 0;
       padding: 0;
     }
+    input[type='checkbox']:checked + label {
+      background-image: url('img/Close.png');
+      background-size: 15px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
     label {
-      margin: 0;
-      padding: 0;
+      display: block;
+        height: 26px;
+        width: 28px;
+        position: absolute;
+        top: 0px;
+        left: 5px;
+    }
+    a {
+      text-decoration: none;
+      &:hover {
+        color: #ef5e5e;
+      }
+      &:visited {
+        color: grey;
+      }
     }
   }
 }
