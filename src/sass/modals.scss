@@ -1023,9 +1023,11 @@
     border-top: 10px solid #f68888;
   }
   .modal-body {
+
     .input-wrapper {
+      margin: 0 25%;
+      float: right;
       height: 25px;
-      margin: 20px;
     }
     .pixel-input {
       padding: 2px 14px;
@@ -1057,6 +1059,19 @@
       &:visited {
         color: grey;
       }
+    }
+    .checkbox-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .checkbox-wrapper {
+      width: 25%;
+      margin-bottom: 5px;
+    }
+    p {
+      width: 60%;
+      min-height: 3em;
     }
   }
 }
