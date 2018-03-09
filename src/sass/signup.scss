@@ -380,3 +380,17 @@ input:active, button:active, select:active {
   width: 70%;
   margin: 5% 15%;
 }
+
+#confirmation-popup {
+  .modal-body {
+    height: 300px;
+    text-align: center;
+    p {
+      font-size: 20px;
+    }
+    h1 {
+      font-family: '04b_03', monospace;
+      font-size: 36px;
+    }
+  }
+}

@@ -17,7 +17,7 @@
 
     function createProfile(userProfile) {
       $.ajax({
-        url: "http://34.242.252.61:8090/api/create-profile",
+        url: "http://kinguin-test.global.ssl.fastly.net/api/create-profile",
         type: "POST",
         headers: {
           "Authorization": "Basic a2luZ3VpbjpLIzg3Z3VpIQ=="
@@ -30,12 +30,10 @@
           "amount": donationAmt
         }
       });
-      console.log('inside createProfile');
     }
 
     $('#BTC-select').click(function () {
       currencyType = 'BTC';
-      localStorage.setItem('currency', currencyType);
       $('.left-select').addClass('selected')
         .siblings('.right-select').removeClass('selected');
       $('.currency-placeholder').text('BTC');
@@ -43,7 +41,6 @@
 
     $('#ETH-select').click(function () {
       currencyType = 'ETH';
-      localStorage.setItem('currency', currencyType);
       $('.right-select').addClass('selected')
       .siblings('.left-select').removeClass('selected');
       $('.currency-placeholder').text('ETH');
@@ -52,7 +49,6 @@
 
     $('#USD-select').focus(function () {
       currencyType = 'USD';
-      localStorage.setItem('currency', currencyType);
       $('.left-select').addClass('selected')
       .siblings('.right-select').removeClass('selected');
       $('.currency-placeholder').text('USD');
@@ -61,7 +57,6 @@
 
     $('#EUR-select').focus(function () {
       currencyType = 'EUR';
-      localStorage.setItem('currency', currencyType);
       $('.right-select').addClass('selected')
         .siblings('.left-select').removeClass('selected');
         $('.currency-placeholder').text('EUR');
@@ -73,11 +68,9 @@
       e.preventDefault();
       $('input[name=crypto-amt]').val(function () {
         donationAmt = this.value;
-        localStorage.setItem('donationAmt', this.value);
       });
       $('#choose-crypto-popup').toggleClass('hide');
       $('#aml-popup').toggleClass('hide');
-      console.log(localStorage, donationAmt);
     });
 
 
@@ -85,18 +78,20 @@
         e.preventDefault();
         $('input[name=name]').val(function () {
           name = this.value;
-          localStorage.setItem('name', this.value);
         });
         $('input[name=user-email]').val(function () {
           userEmail = this.value;
-          localStorage.setItem('userEmail', this.value);
         });
         $('#aml-eth-popup').toggleClass('hide');
-        $('#aml-popup').toggleClass('hide');
-        console.log(localStorage);
+        $('#confirmation-popup').removeClass('hide');
         createProfile();
       });
 
+
+      $('input[name="confirm-close"]').click(function (e) {
+        e.preventDefault();
+        $('#confirmation-popup').addClass('hide');
+      });
 //*******************************************************
 
 
