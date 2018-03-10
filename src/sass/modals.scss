@@ -1023,55 +1023,57 @@
     border-top: 10px solid #f68888;
   }
   .modal-body {
+    height: 300px;
 
-    .input-wrapper {
-      margin: 0 25%;
-      float: right;
-      height: 25px;
-    }
-    .pixel-input {
-      padding: 2px 14px;
-    }
-    input[type='checkbox'] {
-      visibility: hidden;
-      margin: 0;
-      padding: 0;
-    }
-    input[type='checkbox']:checked + label {
-      background-image: url('img/Close.png');
-      background-size: 15px;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    label {
-      display: block;
-        height: 26px;
-        width: 28px;
-        position: absolute;
-        top: 0px;
-        left: 5px;
-    }
-    a {
-      text-decoration: none;
-      &:hover {
-        color: #ef5e5e;
-      }
-      &:visited {
-        color: grey;
-      }
-    }
     .checkbox-row {
+      margin-top: 3%;
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-    }
-    .checkbox-wrapper {
-      width: 25%;
-      margin-bottom: 5px;
-    }
-    p {
-      width: 60%;
-      min-height: 3em;
+      .input-wrapper {
+        margin: 0 25%;
+        float: right;
+        height: 25px;
+      }
+      .pixel-input {
+        padding: 2px 14px;
+      }
+      input[type='checkbox'] {
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+      }
+      input[type='checkbox']:checked + label {
+        background-image: url('img/Close.png');
+        background-size: 15px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      label {
+        display: block;
+          height: 26px;
+          width: 28px;
+          position: absolute;
+          top: 0px;
+          left: 5px;
+      }
+      a {
+        text-decoration: none;
+        &:hover {
+          color: #ef5e5e;
+        }
+        &:visited {
+          color: grey;
+        }
+      }
+      .checkbox-wrapper {
+        width: 25%;
+        margin-bottom: 5px;
+      }
+      p {
+        width: 60%;
+        min-height: 3em;
+      }
     }
   }
 }

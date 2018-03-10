@@ -25,10 +25,15 @@ body {
   }
 }
 
+.title-wrapper {
+
+}
 .titles {
   font-family: '04b_03', monospace;
   text-align: center;
   position: absolute;
+  cursor: pointer;
+  margin: 0;
 }
 
 #stairs-top {

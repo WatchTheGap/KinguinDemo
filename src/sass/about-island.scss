@@ -6,14 +6,52 @@
     cursor: pointer;
   }
 }
+#about-block {
+  top: 14px;
+}
+.figures {
+  top: 0;
+  left: 150px;
+  transition: top .25s ease-in-out;
+}
+.figures-hover {
+  top: -80px;
+}
+.shadows {
+  top: 56px;
+  left: 152px;
+  opacity: 0;
+  transition: all .25s ease-in-out;
+}
+.shadows-hover {
+  top: 0;
+  opacity: 1;
+}
+.team {
+  top: 14px;
+  left: 0;
+  transition: top .25s ease-in-out;
+}
+.team-hover {
+  top: -31px;
+  left: 0;
+
+}
 
 .team-title {
+  height: 30px;
   transform: skewY(30deg);
   color: #c39f8e;
   font-size: 30px;
-  top: 169px;
+  top: 205px;
   left: 65px;
+  transition: top .25s ease-in-out;
 }
+.team-title-hover {
+  top: 160px;
+  height: 200px;
+}
+
 .company-title {
   transform: skewY(-30deg);
   color: #ebcda3;
@@ -108,26 +146,6 @@
   }
 }
 
-#team {
-  background-image: url('img/Team.png');
-  top: 0;
-  left: 0;
-  width: 482px;
-  height: 361px;
-  &:hover {
-    background-image: url('img/Team_hover.png');
-    top: -35px;
-    left: 0;
-    width: 323px;
-    height: 395px;
-  }
-  &::before {
-    content: url('img/Team_hover.png');
-    width:0;
-    height:0;
-    visibility: hidden;
-  }
-}
 
 #advisors {
   top: 290px;
