@@ -32,9 +32,13 @@
     $('#advisors-popup').toggleClass('hide');
   });
 
-  $('#team').click(function() {
+  $('.team-title').click(function() {
     blur();
-    $('#team-popup').toggleClass('hide');
+    $('#team-popup').removeClass('hide');
+  });
+  $('.figures-mobile').click(function () {
+    blur();
+    $('#team-popup').removeClass('hide');
   });
 
   $('#company').click(function() {
