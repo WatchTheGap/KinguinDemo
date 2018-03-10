@@ -41,7 +41,11 @@
     $('#team-popup').removeClass('hide');
   });
 
-  $('#company').click(function() {
+  $('.company-title').click(function() {
+    blur();
+    $('#company-popup').toggleClass('hide');
+  });
+  $('.company-penguin').click(function () {
     blur();
     $('#company-popup').toggleClass('hide');
   });

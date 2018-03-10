@@ -24,4 +24,30 @@
     }
   );
 
+  $('.company-title').hover(
+    function () {
+      $(this).addClass('company-title-hover');
+      $('.company').addClass('company-hover');
+      $('.company-penguin').addClass('company-penguin-hover');
+    },
+    function () {
+      $(this).removeClass('company-title-hover');
+      $('.company').removeClass('company-hover');
+      $('.company-penguin').removeClass('company-penguin-hover');
+    }
+  );
+
+  $('.company-penguin').hover(
+    function () {
+      $(this).addClass('company-penguin-hover');
+      $('.company').addClass('company-hover');
+      $('.company-title').addClass('company-title-hover');
+    },
+    function () {
+      $(this).removeClass('company-penguin-hover');
+      $('.company').removeClass('company-hover');
+      $('.company-title').removeClass('company-title-hover');
+    }
+  );
+
 }());
