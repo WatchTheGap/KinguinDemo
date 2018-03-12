@@ -24,6 +24,21 @@
     }
   );
 
+  // $('.figures').hover(
+  //   function () {
+  //     $(this).addClass('figures-hover');
+  //     $('.team').addClass('team-hover');
+  //     $('.team-title').addClass('team-title-hover');
+  //     $('.shadows').addClass('shadows-hover');
+  //   },
+  //   function () {
+  //     $(this).removeClass('figures-hover');
+  //     $('.team').removeClass('team-hover');
+  //     $('.team-title').removeClass('team-title-hover');
+  //     $('.shadows').removeClass('shadows-hover');
+  //   }
+  // );
+
   $('.company-title').hover(
     function () {
       $(this).addClass('company-title-hover');
@@ -47,6 +62,17 @@
       $(this).removeClass('company-penguin-hover');
       $('.company').removeClass('company-hover');
       $('.company-title').removeClass('company-title-hover');
+    }
+  );
+
+  $('.ourstory').hover(
+    function () {
+      $(this).addClass('ourstory-hover');
+      $('.story-title').addClass('story-title-hover');
+    },
+    function () {
+      $(this).removeClass('ourstory-hover');
+      $('.story-title').removeClass('story-title-hover');
     }
   );
 

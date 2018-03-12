@@ -16,6 +16,7 @@
 }
 .figures-hover {
   top: -80px;
+  // border-bottom: 50px solid transparent;
 }
 .shadows {
   top: 56px;
@@ -79,8 +80,12 @@
   transform: skewY(-30deg);
   color: white;
   font-size: 17px;
-  top: 255px;
-  left: 82px;
+  top: 272px;
+  left: 81px;
+}
+.story-title-hover {
+  top: 264px;
+  left: 65px;
 }
 .advisors-title {
   transform: skewY(-30deg);
@@ -127,28 +132,27 @@
   top: 50px;
 }
 
-#ourstory {
-  background-image: image();
-  background-image: url('img/OurStory.png');
-  top: 249px;
-  left: 42px;
-  width: 201px;
-  height: 181px;
-  &:hover {
-    background-image: url('img/OurStory_hover.png');
-    top: 238px;
-    left: 28px;
-    width: 217px;
-    height: 193px;
-  }
-  &::before {
-    content: url('img/OurStory_hover.png');
-    width:0;
-    height:0;
-    visibility: hidden;
-  }
-}
+.ourstory {
 
+  top: 287px;
+  left: 40px;
+  // width: 201px;
+  // height: 181px;
+
+  //   width: 217px;
+  //   height: 193px;
+  // }
+  // &::before {
+  //   content: url('img/OurStory_hover.png');
+  //   width:0;
+  //   height:0;
+  //   visibility: hidden;
+  // }
+}
+.ourstory-hover {
+  top: 279px;
+  left: 25px;
+}
 
 #advisors {
   top: 290px;
