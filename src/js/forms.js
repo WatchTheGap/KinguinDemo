@@ -21,7 +21,7 @@
         return;
       }
       $.ajax({
-        url: "http://kinguin-test.global.ssl.fastly.net/api/create-profile",
+        url: "https://api.kinguin.io/api/create-profile/kyc",
         type: "POST",
         headers: {
           "Authorization": "Basic a2luZ3VpbjpLIzg3Z3VpIQ=="
@@ -113,8 +113,8 @@
 
   let kycProfile = function kycProfile() {
     $.ajax({
-      url: 'api/update-profile/kyc/:uid',
-      type: 'PUT',
+      url: "https://api.kinguin.io/api/update-profile/kyc/:testUser1234",
+      type: "PUT",
       headers: {
         "Authorization": "Basic a2luZ3VpbjpLIzg3Z3VpIQ=="
       },
@@ -127,10 +127,11 @@
         "COUNTRY": country,
         "NATIONAL ID PICTURE": identImg,
         "ADDRESS VERIFICATION DOCUMENT": addressDoc,
-        "UID": 'testingUID_001',
+        "UID": "testUser1234",
         "EMAIL": userEmail
       }
     });
+    $('#islands-wrapper').removeClass('blur');
     alert('GIRL LOOKIT DAT AJAX');
   };
 

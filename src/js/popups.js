@@ -130,7 +130,7 @@
 // *** Basic ***
   $('.close-popup').click(function(e) {
     e.preventDefault();
-    $(this).closest('.popup-outer-wrapper').toggleClass('hide');
+    $(this).closest('.popup-outer-wrapper').addClass('hide');
     $('#islands-wrapper').removeClass('blur');
     $('.popup-bg').hide();
   });
