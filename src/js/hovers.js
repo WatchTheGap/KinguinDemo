@@ -65,13 +65,27 @@
     }
   );
 
-  $('.ourstory').hover(
+  $('.story-title').hover(
     function () {
-      $(this).addClass('ourstory-hover');
+      $(this).addClass('story-title-hover');
+      $('.book').addClass('book-hover');
+      $('.ourstory').addClass('ourstory-hover');
+    },
+    function () {
+      $(this).removeClass('story-title-hover');
+      $('.book').removeClass('book-hover');
+      $('.ourstory').removeClass('ourstory-hover');
+    }
+  );
+  $('.book').hover(
+    function () {
+      $('.ourstory').addClass('ourstory-hover');
+      $(this).addClass('book-hover');
       $('.story-title').addClass('story-title-hover');
     },
     function () {
-      $(this).removeClass('ourstory-hover');
+      $('.ourstory').removeClass('ourstory-hover');
+      $(this).removeClass('book-hover');
       $('.story-title').removeClass('story-title-hover');
     }
   );
@@ -116,6 +130,30 @@
     function () {
       $(this).removeClass('letter-hover');
       $('.contactus').removeClass('contactus-hover');
+      $('.contact-title').removeClass('contact-title-hover');
+    }
+  );
+  $('.contact-title').hover(
+    function () {
+      $('.letter').addClass('letter-hover');
+      $('.contactus').addClass('contactus-hover');
+      $(this).addClass('contact-title-hover');
+    },
+    function () {
+      $('.letter').removeClass('letter-hover');
+      $('.contactus').removeClass('contactus-hover');
+      $(this).removeClass('contact-title-hover');
+    }
+  );
+  $('.contactus').hover(
+    function () {
+      $('.letter').addClass('letter-hover');
+      $(this).addClass('contactus-hover');
+      $('.contact-title').addClass('contact-title-hover');
+    },
+    function () {
+      $('.letter').removeClass('letter-hover');
+      $(this).removeClass('contactus-hover');
       $('.contact-title').removeClass('contact-title-hover');
     }
   );

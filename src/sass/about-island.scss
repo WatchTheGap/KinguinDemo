@@ -82,6 +82,8 @@
   font-size: 17px;
   top: 272px;
   left: 81px;
+  border-bottom: 40px solid transparent;
+  transition: all .25s ease-in-out;
 }
 .story-title-hover {
   top: 264px;
@@ -101,7 +103,6 @@
   top: 457px;
   left: 10px;
   transition: all .25s ease-in-out;
-
 }
 .contact-title-hover {
   top: 472px;
@@ -152,12 +153,23 @@
 
 .ourstory {
   cursor: pointer;
-  top: 287px;
+  top: 289px;
   left: 40px;
+  transition: all .25s ease-in-out;
 }
 .ourstory-hover {
-  top: 279px;
+  top: 281px;
   left: 25px;
+}
+.book {
+  cursor: pointer;
+  top: 286px;
+  left: 72px;
+  transition: all .25s ease-in-out;
+}
+.book-hover {
+  top: 278px;
+  left: 55px;
 }
 
 #advisors {
@@ -169,7 +181,6 @@
   top: 368px;
   left: 0;
   transition: all .25s ease-in-out;
-
 }
 .contactus-hover {
   top: 383px;
@@ -177,10 +188,10 @@
 }
 
 .letter {
+  cursor: pointer;
   top: 401px;
   left: 25px;
   transition: all .25s ease-in-out;
-
 }
 .letter-hover {
   top: 410px;

@@ -67,37 +67,65 @@
       right: 0;
 
       .team-title {
-        top: 245px;
+        top: 319px;
       }
       .figures {
-        top: 0;
+        top: 72px;
         left: 0;
       }
       .figures-mobile {
-        top: 150px;
+        top: 222px;
         left: 100px;
         height: 85px;
       }
       .company-title {
-        top: 60px;
-        left: 255px;
+        top: 155px;
+        left: 265px;
+      }
+      .company-penguin {
+        top: 50px;
+        left: 260px;
       }
       .story-title {
         transform: rotate(-30deg) skew(30deg);
         text-shadow: -2px -1px 0 #84bf4f;
-        top: 315px;
+        top: 407px;
         left: 120px;
         font-size: 19px;
+        border-bottom: none;
       }
       .advisors-title {
-        top: 245px;
+        top: 317px;
       }
       .contact-title {
         font-size: 17px;
-        top: 445px;
+        top: 517px;
         left: 160px;
       }
-
+      .advisor-block {
+        top: 239px;
+        left: 235px;
+      }
+      .advisors-title {
+        transform: skewY(30deg);
+        top: 304px;
+        left: 243px;
+      }
+      .bulb-mobile {
+        top: 214px;
+        left: 275px;
+        height: 65px;
+      }
+      .book-mobile {
+        top: 342px;
+        left: 15px;
+        height: 80px;
+      }
+      .letter {
+        top: 451px;
+        left: 211px;
+        height: 75px;
+      }
     }
 
 }
