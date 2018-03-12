@@ -1,18 +1,84 @@
 (function() {
   'use strict';
 
+
+
+      //***************************************************
+      //EMAIL TRIGGERED POPUPS
+      //***************************************************
+
+      function getQueryParam(param) {
+        var url = window.location.href;
+        param = param.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + param + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+        if (results && results[2]) {
+          return decodeURIComponent(results[2].replace(/\+/g, " "));
+        } else {
+          return false;
+        }
+      }
+
+      $(document).ready(function () {
+        var query = getQueryParam('cb');
+        switch (query) {
+          case 'aml-eth':
+            blur();
+            $('#aml-eth-popup').removeClass('hide');
+            break;
+          case "aml-btc":
+            blur();
+            $('#aml-btc-popup').removeClass('hide');
+            break;
+          case ('kyc-eth'):
+            blur();
+            $('#investor-popup').removeClass('hide');
+            break;
+          case ('kyc-btc'):
+            blur();
+            $('#investor-popup').removeClass('hide');
+            break;
+          case ('kyc-usd'):
+            blur();
+            $('#investor-popup').removeClass('hide');
+            break;
+          case ('kyc-eur'):
+            blur();
+            $('#investor-popup').removeClass('hide');
+        }
+      });
+
+      //***************************************************
+
+
   $('#notify-form').submit(function () {
     alert('Success!');
+    // TODO: REPLACE THIS WITH A BETTER MESSAGE AND OR CUSTOM POPUP
   });
+
+
 
   $('.currency-form', '#signup-form', '#personal-data-form', '#company-data-form', '#funding-form', '#bank-info-form').submit(function (e) {
     e.preventDefault();
   });
 
-    let currencyType;
+  function uuidv4() {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+      var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+      return v.toString(16);
+    });
+  }
+
+  console.log(uuidv4());
+
+  let uid = uuidv4();
+  console.log(uid);
+
+    let currencyType = 'ETH';
     let donationAmt = 0;
     let name;
     let userEmail;
+
 
 
     function createProfile(userProfile) {
@@ -21,10 +87,10 @@
         return;
       }
       $.ajax({
-        url: "https://api.kinguin.io/api/create-profile/kyc",
+        url: "https://api.kinguin.io/api/create-profile/aml",
         type: "POST",
         data: {
-          "uid": name + "1234",
+          "uid": uid,
           "username": name,
           "email": userEmail,
           "currency": currencyType,
@@ -111,7 +177,7 @@
   let kycProfile = function kycProfile() {
     var uid = getQueryParam("uid");
     $.ajax({
-      url: "https://api.kinguin.io/api/update-profile/kyc/:" + uid,
+      url: "https://api.kinguin.io/api/update-profile/kyc/" + uid,
       type: "PUT",
       data: {
         "FULL NAME": fullName,
@@ -189,7 +255,7 @@
     var uid = getQueryParam("uid");
     var ual = getQueryParam("ual");
     $.ajax({
-      url: "https://api.kinguin.io/api/update-profile:" + uid,
+      url: "https://api.kinguin.io/api/update-profile" + uid,
       type: "PUT",
       data: {
         "UNIQUE AML LINK": ual,

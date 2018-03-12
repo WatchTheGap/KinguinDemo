@@ -98,8 +98,14 @@
   transform: skewY(30deg);
   color: #c39f8e;
   font-size: 11px;
-  top: 448px;
-  left: 8px;
+  top: 457px;
+  left: 10px;
+  transition: all .25s ease-in-out;
+
+}
+.contact-title-hover {
+  top: 472px;
+  left: -15px;
 }
 
 
@@ -162,16 +168,21 @@
 .contactus {
   top: 368px;
   left: 0;
+  transition: all .25s ease-in-out;
+
 }
 .contactus-hover {
-  left: -20px;
+  top: 383px;
+  left: -25px;
 }
 
 .letter {
   top: 401px;
   left: 25px;
+  transition: all .25s ease-in-out;
+
 }
 .letter-hover {
-  top: 415px;
+  top: 410px;
   left: 0;
 }

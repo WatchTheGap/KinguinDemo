@@ -107,14 +107,16 @@
     }
   );
 
-  $('.contactus').hover(
+  $('.letter').hover(
     function () {
-      $(this).addClass('contactus-hover');
-      $('.letter').addClass('letter-hover');
+      $(this).addClass('letter-hover');
+      $('.contactus').addClass('contactus-hover');
+      $('.contact-title').addClass('contact-title-hover');
     },
     function () {
-      $(this).removeClass('contactus-hover');
-      $('.letter').removeClass('letter-hover');
+      $(this).removeClass('letter-hover');
+      $('.contactus').removeClass('contactus-hover');
+      $('.contact-title').removeClass('contact-title-hover');
     }
   );
 
