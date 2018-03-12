@@ -140,26 +140,37 @@
     //EMAIL TRIGGERED POPUPS
     //***************************************************
 
-    $(document).ready(function () {
-      var name = "cb";
+    function getQueryParam(param) {
       var url = window.location.href;
-      name = name.replace(/[\[\]]/g, "\\$&");
-      console.log(name);
-      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+      param = param.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + param + "(=([^&#]*)|&|#|$)"),
         results = regex.exec(url);
       if (results && results[2]) {
-        var query = decodeURIComponent(results[2].replace(/\+/g, " "));
-        if (query === "aml-eth") {
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+      } else {
+        return false;
+      }
+
+    }
+
+    $(document).ready(function () {
+      var query = getQueryParam("cb");
+      switch (query) {
+        case "aml-eth":
           blur();
           $('#aml-eth-popup').removeClass('hide');
-        } else if (query === "aml-btc") {
+          break;
+        case "aml-btc":
           blur();
           $('#aml-btc-popup').removeClass('hide');
-        } else if (query === 'kyc-usd' || 'kyc-eur') {
+          break;
+        case ('kyc-usd'):
           blur();
           $('#investor-popup').removeClass('hide');
-        }
-        console.log(query);
+          break;
+        case ('kyc-eur'):
+          blur();
+          $('#investor-popup').removeClass('hide');
       }
     });
 

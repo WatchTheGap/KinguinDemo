@@ -96,5 +96,26 @@
       $('.bulb').removeClass('bulb-hover');
     }
   );
+  $('.advisor-block').hover(
+    function () {
+      $('.advisor-block').addClass('advisor-block-hover');
+      $('.bulb').addClass('bulb-hover');
+    },
+    function () {
+      $('.advisor-block').removeClass('advisor-block-hover');
+      $('.bulb').removeClass('bulb-hover');
+    }
+  );
+
+  $('.contactus').hover(
+    function () {
+      $(this).addClass('contactus-hover');
+      $('.letter').addClass('letter-hover');
+    },
+    function () {
+      $(this).removeClass('contactus-hover');
+      $('.letter').removeClass('letter-hover');
+    }
+  );
 
 }());

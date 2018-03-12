@@ -104,13 +104,14 @@
 
 
 .advisor-block {
+  cursor: pointer;
   top: 333px;
   left: 251px;
   width: 118px;
   height: 103px;
 }
 .advisor-block-hover {
-  top: 320px;
+  top: 328px;
   border-bottom: 30px solid transparent;
 }
 .bulb {
@@ -158,23 +159,19 @@
   left: 122px;
 }
 
-#contactus {
-  background-image: url('img/ContactUs.png');
-  width: 241px;
-  height: 117px;
-  top: 382px;
+.contactus {
+  top: 368px;
   left: 0;
-  // TODO: the pencil looks weird here...
-  &:hover {
-    background-image: url('img/ContactUs_hover.png');
-    width: 257px;
-    height: 128px;
-    left: -20px;
-  }
-  &::before {
-    content: url('img/ContactUs_hover.png');
-    width:0;
-    height:0;
-    visibility: hidden;
-  }
+}
+.contactus-hover {
+  left: -20px;
+}
+
+.letter {
+  top: 401px;
+  left: 25px;
+}
+.letter-hover {
+  top: 415px;
+  left: 0;
 }

@@ -23,9 +23,6 @@
       $.ajax({
         url: "https://api.kinguin.io/api/create-profile/kyc",
         type: "POST",
-        headers: {
-          "Authorization": "Basic a2luZ3VpbjpLIzg3Z3VpIQ=="
-        },
         data: {
           "uid": name + "1234",
           "username": name,
@@ -112,12 +109,10 @@
 
 
   let kycProfile = function kycProfile() {
+    var uid = getQueryParam("uid");
     $.ajax({
-      url: "https://api.kinguin.io/api/update-profile/kyc/:testUser1234",
+      url: "https://api.kinguin.io/api/update-profile/kyc/:" + uid,
       type: "PUT",
-      headers: {
-        "Authorization": "Basic a2luZ3VpbjpLIzg3Z3VpIQ=="
-      },
       data: {
         "FULL NAME": fullName,
         "COMPANY NAME": company,
@@ -127,7 +122,7 @@
         "COUNTRY": country,
         "NATIONAL ID PICTURE": identImg,
         "ADDRESS VERIFICATION DOCUMENT": addressDoc,
-        "UID": "testUser1234",
+        "UID": uid || "",
         "EMAIL": userEmail
       }
     });
@@ -182,6 +177,56 @@
     });
     kycProfile();
     console.log(fullName, company, regID, nationality, address, zip, country);
+  });
+
+  let ethEmail;
+  let btcEmail;
+  let ethSend;
+  let ethRec = 'n/a';
+  let btcSend = 'n/a';
+
+  let sendAML = function sendAML() {
+    var uid = getQueryParam("uid");
+    var ual = getQueryParam("ual");
+    $.ajax({
+      url: "https://api.kinguin.io/api/update-profile:" + uid,
+      type: "PUT",
+      data: {
+        "UNIQUE AML LINK": ual,
+        "ETH SENDING ADDRESS": ethSend,
+        "ETH RECEIVING ADDRESS": ethRec,
+        "BTC SENDING ADDRESS": btcSend
+      }
+    });
+    $('#islands-wrapper').removeClass('blur');
+    alert('AML SUCCESS');
+  };
+
+  $('#aml-eth-continue').click(function (e) {
+    e.preventDefault();
+    $('#eth-email').val(function () {
+      ethEmail = this.value;
+    });
+    $('#eth-send').val(function () {
+      ethSend = this.value;
+    });
+    $('#eth-rec').val(function () {
+      ethRec = this.value;
+    });
+    sendAML();
+    // TODO: ADD THANK YOU POPUP
+  });
+
+  $('#aml-btc-continue').click(function (e) {
+    e.preventDefault();
+    $('#btc-email').val(function () {
+      btcEmail = this.value;
+    });
+    $('#btc-send').val(function () {
+      btcSend = this.value;
+    });
+    sendAML();
+    // TODO: ADD THANK YOU POPUP
   });
 
 }());
