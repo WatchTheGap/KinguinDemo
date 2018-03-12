@@ -91,7 +91,7 @@
   transform: skewY(-30deg);
   color: #111111;
   font-size: 9px;
-  top: 389px;
+  top: 398px;
   left: 319px;
 }
 .contact-title {
@@ -102,25 +102,36 @@
   left: 8px;
 }
 
-#bulb {
-  background-image: url('img/Bulb.png');
-  top: 313px;
+
+.advisor-block {
+  top: 333px;
   left: 251px;
   width: 118px;
-  height: 124px;
-  &:hover {
-    background-image: url('img/Bulb_hover.png');
-    top: 259px;
-    left: 248px;
-    width: 127px;
-    height: 178px;
-  }
+  height: 103px;
+}
+.advisor-block-hover {
+  top: 320px;
+  border-bottom: 30px solid transparent;
+}
+.bulb {
+  background-image: url('img/Bulb.png');
+  top: 313px;
+  left: 294px;
+  width: 35px;
+  height: 60px;
   &::before {
     content: url('img/Bulb_hover.png');
     width:0;
     height:0;
     visibility: hidden;
   }
+}
+.bulb-hover {
+  background-image: url('img/Bulb_hover.png');
+  top: 259px;
+  left: 248px;
+  width: 127px;
+  height: 137px;
 }
 
 .company {
@@ -133,21 +144,9 @@
 }
 
 .ourstory {
-
+  cursor: pointer;
   top: 287px;
   left: 40px;
-  // width: 201px;
-  // height: 181px;
-
-  //   width: 217px;
-  //   height: 193px;
-  // }
-  // &::before {
-  //   content: url('img/OurStory_hover.png');
-  //   width:0;
-  //   height:0;
-  //   visibility: hidden;
-  // }
 }
 .ourstory-hover {
   top: 279px;

@@ -50,9 +50,13 @@
     $('#company-popup').toggleClass('hide');
   });
 
-  $('#ourstory').click(function() {
+  $('.ourstory').click(function() {
     blur();
-    $('#ourstory-popup').toggleClass('hide');
+    $('#ourstory-popup').removeClass('hide');
+  });
+  $('.story-title').click(function() {
+    blur();
+    $('#ourstory-popup').removeClass('hide');
   });
 
   $('#contactus').click(function() {
@@ -130,5 +134,41 @@
     $('#islands-wrapper').removeClass('blur');
     $('.popup-bg').hide();
   });
+
+
+    //***************************************************
+    //EMAIL TRIGGERED POPUPS
+    //***************************************************
+
+    $(document).ready(function () {
+      var name = "cb";
+      var url = window.location.href;
+      name = name.replace(/[\[\]]/g, "\\$&");
+      console.log(name);
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+      if (results && results[2]) {
+        var query = decodeURIComponent(results[2].replace(/\+/g, " "));
+        if (query === "aml-eth") {
+          blur();
+          $('#aml-eth-popup').removeClass('hide');
+        } else if (query === "aml-btc") {
+          blur();
+          $('#aml-btc-popup').removeClass('hide');
+        } else if (query === 'kyc-usd' || 'kyc-eur') {
+          blur();
+          $('#investor-popup').removeClass('hide');
+        }
+        console.log(query);
+      }
+    });
+
+
+
+
+
+
+    //***************************************************
+
 
 }());

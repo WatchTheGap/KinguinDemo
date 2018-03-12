@@ -17,7 +17,7 @@
 
     function createProfile(userProfile) {
       if (name.length < 1 || userEmail.length < 1) {
-        alert('omg this field is required.');
+        alert('Please fill out the required fields.');
         return;
       }
       $.ajax({
@@ -99,5 +99,88 @@
       });
 //*******************************************************
 
+  let fullName;
+  let company = 'none';
+  let regID = 'none';
+  let nationality;
+  let address;
+  let zip;
+  let country;
+  let identImg = 'no image';
+  let addressDoc = 'no image';
+
+
+
+  let kycProfile = function kycProfile() {
+    $.ajax({
+      url: 'api/update-profile/kyc/:uid',
+      type: 'PUT',
+      headers: {
+        "Authorization": "Basic a2luZ3VpbjpLIzg3Z3VpIQ=="
+      },
+      data: {
+        "FULL NAME": fullName,
+        "COMPANY NAME": company,
+        "COMPANY REG.ID": regID,
+        "NATIONALITY": nationality,
+        "ADDRESS": address,
+        "COUNTRY": country,
+        "NATIONAL ID PICTURE": identImg,
+        "ADDRESS VERIFICATION DOCUMENT": addressDoc,
+        "UID": 'testingUID_001',
+        "EMAIL": userEmail
+      }
+    });
+    alert('GIRL LOOKIT DAT AJAX');
+  };
+
+
+  $('#investor-private-continue').click(function (e) {
+    e.preventDefault();
+    $('#full-name').val(function () {
+      fullName = this.value;
+    });
+    $('#nationality').val(function () {
+      nationality = this.value;
+    });
+    $('#address').val(function () {
+      address = this.value;
+    });
+    $('#zip-code').val(function () {
+      zip = this.value;
+    });
+    $('#country').val(function () {
+      country = this.value;
+    });
+    kycProfile();
+    console.log(fullName, nationality, address, zip, country);
+  });
+
+  $('#investor-company-continue').click(function (e) {
+    e.preventDefault();
+    $('#c-full-name').val(function () {
+      fullName = this.value;
+    });
+    $('#company-name').val(function () {
+      company = this.value;
+    });
+    $('#reg-id').val(function () {
+      regID = this.value;
+    });
+    $('#c-nationality').val(function () {
+      nationality = this.value;
+    });
+    $('#c-address').val(function () {
+      address = this.value;
+    });
+    $('#c-zip-code').val(function () {
+      zip = this.value;
+    });
+    $('#c-country').val(function () {
+      country = this.value;
+    });
+    kycProfile();
+    console.log(fullName, company, regID, nationality, address, zip, country);
+  });
 
 }());

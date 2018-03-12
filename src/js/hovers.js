@@ -76,4 +76,25 @@
     }
   );
 
+  $('.bulb').hover(
+    function () {
+      $('.advisor-block').addClass('advisor-block-hover');
+      $('.bulb').addClass('bulb-hover');
+    },
+    function () {
+      $('.advisor-block').removeClass('advisor-block-hover');
+      $('.bulb').removeClass('bulb-hover');
+    }
+  );
+  $('.advisors-title').hover(
+    function () {
+      $('.advisor-block').addClass('advisor-block-hover');
+      $('.bulb').addClass('bulb-hover');
+    },
+    function () {
+      $('.advisor-block').removeClass('advisor-block-hover');
+      $('.bulb').removeClass('bulb-hover');
+    }
+  );
+
 }());
