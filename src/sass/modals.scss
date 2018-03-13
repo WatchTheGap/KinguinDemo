@@ -281,6 +281,33 @@
 //************************************
 //*** POPUPS *********
 //************************************
+
+#airdrop-popup {
+  &::before, &::after {
+    border-bottom: 10px solid #6bb0d2;
+  }
+  .modal-header {
+    background-color: #0088cc;
+    border-top: 10px solid #6bb0d2;
+  }
+  .modal-body {
+    min-height: 500px;
+    .input-wrapper {
+      width: 70%;
+      margin: 3% 15%;
+    }
+    input::placeholder {
+      font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
+      font-size: 15px;
+      text-align: left;
+      color: #9c9b9b;
+      padding-left: 10px;
+    }
+    input {
+      height: 50px;
+    }
+  }
+}
 #advisors-popup {
   &::before, &::after {
     border-bottom: 10px solid #8ac0d4;

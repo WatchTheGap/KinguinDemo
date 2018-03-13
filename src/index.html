@@ -220,56 +220,48 @@
 
     <!-- MODALS -->
 
-    <div class='popup-wrapper'>
-
-            <div id='consent-popup' class='popup hide popup-outer-wrapper'>
-              <div class='popup-inner-wrapper'>
-                <section class='modal-header'>
-                  <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-                  <h1>DO YOU AGREE?</h1>
-                </section>
-                <section class='modal-body'>
-                  <div class='checkbox-row'>
-                    <div class='checkbox-wrapper'>
-                      <div class='input-wrapper'>
-                        <div class='pixel-input'>
-                          <input id='tos-check' type='checkbox' required>
-                          <label for='tos-check'></label>
-                        </div>
-                      </div>
-                    </div>
-                    <p>Check here to confirm that you have read, understand and agree to the <a href='docs/KINGUIN_DOT_IO_TOS.pdf' target='_blank'>Terms of Use</a>.</p>
-                  </div>
-
-                <div class='checkbox-row'>
-                  <div class='checkbox-wrapper'>
-                    <div class='input-wrapper'>
-                      <div class='pixel-input'>
-                        <input id='pp-check' type='checkbox' required>
-                        <label for='pp-check'></label>
-                      </div>
-                    </div>
-                  </div>
-                  <p>Check here to confirm that you consent to giving us your personal information in accordance with our <a href='docs/KINGUIN_DOT_IO_PRIVACY_POLICY.pdf' target='_blank'>Privacy Policy</a>.</p>
-                </div>
-
-                <div class='input-wrapper continue-btn'>
+    <div class='popup-wrapper'> <!-- CONSENT POPUP -->
+      <div id='consent-popup' class='popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>DO YOU AGREE?</h1>
+          </section>
+          <section class='modal-body'>
+            <div class='checkbox-row'>
+              <div class='checkbox-wrapper'>
+                <div class='input-wrapper'>
                   <div class='pixel-input'>
-                    <input type='submit' name='consent-submit' value='I AGREE'>
+                    <input id='tos-check' type='checkbox' required>
+                    <label for='tos-check'></label>
                   </div>
                 </div>
-
-
-                </section>
-                <section class='modal-footer'>
-
-                </section>
+              </div>
+              <p>Check here to confirm that you have read, understand and agree to the <a href='docs/KINGUIN_DOT_IO_TOS.pdf' target='_blank'>Terms of Use</a>.</p>
+            </div>
+            <div class='checkbox-row'>
+              <div class='checkbox-wrapper'>
+                <div class='input-wrapper'>
+                  <div class='pixel-input'>
+                    <input id='pp-check' type='checkbox' required>
+                    <label for='pp-check'></label>
+                  </div>
+                </div>
+              </div>
+              <p>Check here to confirm that you consent to giving us your personal information in accordance with our <a href='docs/KINGUIN_DOT_IO_PRIVACY_POLICY.pdf' target='_blank'>Privacy Policy</a>.</p>
+            </div>
+            <div class='input-wrapper continue-btn'>
+              <div class='pixel-input'>
+                <input type='submit' name='consent-submit' value='I AGREE'>
               </div>
             </div>
+          </section>
+          <section class='modal-footer'></section>
+        </div>
+      </div>
     </div>
       <!-- Landing Island Popups -->
-    <div class='popup-wrapper'>
-
+    <div class='popup-wrapper'> <!-- NOTIFY ME POPUP -->
       <div id='notify-popup' class='popup hide popup-outer-wrapper'>
         <div class='popup-inner-wrapper'>
           <section class='modal-header'>
@@ -292,6 +284,49 @@
             </form>
           </section>
           <section class='modal-footer'></section>
+        </div>
+      </div>
+    </div>
+
+    <div class='popup-wrapper'> <!-- AIRDROP ME POPUP -->
+      <div id='airdrop-popup' class='popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>AIRDROP</h1>
+          </section>
+          <section class='modal-body'>
+            <form class='' action='' method='post'>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input type='text' name='telegram-email' placeholder='email' required>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input type='text' name='telegram-id' placeholder='telegram id'>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input type='text' name='referal-id' placeholder='referal id'>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input type='text' name='erc20' placeholder='erc20 wallet address'>
+                </div>
+              </div>
+              <div class='input-wrapper continue-btn'>
+                <div class='pixel-input'>
+                  <input type='submit' name='telegram-submit' value='REGISTER'>
+                </div>
+              </div>
+            </form>
+          </section>
+          <section class='modal-footer'>
+
+          </section>
         </div>
       </div>
     </div>

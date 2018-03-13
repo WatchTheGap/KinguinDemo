@@ -176,8 +176,9 @@
 
   let kycProfile = function kycProfile() {
     var uid = getQueryParam("uid");
+    var hash = getQueryParam("hash");
     $.ajax({
-      url: "https://api.kinguin.io/api/update-profile/kyc/" + uid,
+      url: "https://api.kinguin.io/api/update-profile/kyc/" + uid + "/" + hash,
       type: "PUT",
       data: {
         "FULL NAME": fullName,
@@ -255,7 +256,7 @@
     var uid = getQueryParam("uid");
     var ual = getQueryParam("ual");
     $.ajax({
-      url: "https://api.kinguin.io/api/update-profile" + uid,
+      url: "https://api.kinguin.io/api/update-profile" + uid + "/" + hash,
       type: "PUT",
       data: {
         "UNIQUE AML LINK": ual,
