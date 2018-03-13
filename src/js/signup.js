@@ -1,63 +1,25 @@
 (function() {
   'use strict';
 
+//*** OPEN THE SIGNUP FLOW FROM MAIN SITE ***//
   $('#go-btn').click(function () {
     $('#pre-ico-popup').removeClass('hide');
     $('.popup-bg').show();
     $('#islands-wrapper').addClass('blur');
   });
 
+//*** INVESTOR CHOOSES CRYPTO CURRENCY ***//
+//*** GO TO SELECT BTC/ETC & ENTER AMOUNT ***//
   $('#signup-button-crypto').click(function () {
     $('#signup-popup').addClass('hide');
     $('#choose-crypto-popup').removeClass('hide');
   });
 
+//*** INVESTOR CHOOSES USD OR EUROS ***//
+//*** GO TO SELECT USD/EUR & ENTER AMOUNT ***//
   $('#signup-button-fiat').click(function () {
     $('#signup-popup').addClass('hide');
     $('#choose-fiat-popup').removeClass('hide');
-  });
-
-
-
-  $('#fiat-continue').click(function () {
-    $('input[name=donation-amt]').val(function () {
-      localStorage.setItem('donationAmt', this.value);
-    });
-    $('#choose-fiat-popup').removeClass('hide');
-    $('#kyc-popup').addClass('hide');
-  });
-
-  $('#kyc-continue').click(function () {
-    $('input[name=name-kyc]').val(function () {
-      localStorage.setItem('name', this.value);
-    });
-    $('input[name=user-email-kyc]').val(function () {
-      localStorage.setItem('userEmail', this.value);
-    });
-    $('#investor-popup').removeClass('hide');
-    $('#kyc-popup').addClass('hide');
-    console.log(localStorage);
-  });
-
-  $('#investor-button-private').click(function () {
-    $('#investor-private-popup').removeClass('hide');
-    $('#investor-popup').addClass('hide');
-  });
-
-  $('#investor-button-company').click(function () {
-    console.log('HALLO');
-    $('#investor-company-popup').removeClass('hide');
-    $('#investor-popup').addClass('hide');
-  });
-
-  $('#investor-private-continue').click(function () {
-    $('#investor-private-popup').toggleClass('hide');
-    $('#islands').removeClass('blur');
-  });
-
-  $('#investor-company-continue').click(function () {
-    $('#investor-company-popup').toggleClass('hide');
-    $('#islands').removeClass('blur');
   });
 
 

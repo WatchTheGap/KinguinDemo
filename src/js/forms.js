@@ -21,7 +21,10 @@
 
   $(document).ready(function () {
     var query = getQueryParam('cb');
-    switch (query.toLowerCase()) {
+    if (typeof query !== 'undefined') {
+      query = query.toLowerCase();
+    }
+    switch (query) {
       case 'aml-eth':
       blur();
       $('#aml-eth-popup').removeClass('hide');
@@ -59,6 +62,8 @@
     e.preventDefault();
   });
 
+  //******************************************************
+
   function uuidv4() {
     return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
       var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
@@ -79,7 +84,7 @@
       return;
     }
     $.ajax({
-      url: "https://api.kinguin.io/api/create-profile/aml",
+      url: "https://api.kinguin.io/api/create-profile",
       type: "POST",
       data: {
         "uid": uid,
@@ -88,49 +93,36 @@
         "currency": currencyType,
         "amount": donationAmt
       }
-    })
-    .done(function handleResponse(response) {
-      alert('profile creation successful');
-      return response.data;
-    })
-    .error( function handleError(err) {
-      hasError = true;
-      alert(err.status, ' create profile failed');
     });
     $('#confirmation-popup').removeClass('hide');
   }
 
+  //*** SELECTOR BUTTONS FOR CURRENCY TYPES ***//
   $('#BTC-select').click(function () {
     currencyType = 'BTC';
     $('.left-select').addClass('selected')
     .siblings('.right-select').removeClass('selected');
     $('.currency-placeholder').text('BTC');
   });
-
   $('#ETH-select').click(function () {
     currencyType = 'ETH';
     $('.right-select').addClass('selected')
     .siblings('.left-select').removeClass('selected');
     $('.currency-placeholder').text('ETH');
-
   });
-
   $('#USD-select').focus(function () {
     currencyType = 'USD';
     $('.left-select').addClass('selected')
     .siblings('.right-select').removeClass('selected');
     $('.currency-placeholder').text('USD');
-
   });
-
   $('#EUR-select').focus(function () {
     currencyType = 'EUR';
     $('.right-select').addClass('selected')
     .siblings('.left-select').removeClass('selected');
     $('.currency-placeholder').text('EUR');
-
   });
-
+  //********************************************
 
   $('#crypto-continue').click(function (e) {
     e.preventDefault();
@@ -141,7 +133,7 @@
     $('#aml-popup').removeClass('hide');
   });
 
-
+  //*** FOR CRYPTO AMOUNT UNDER $2K ONLY ***//
   $('#aml-continue').click(function (e) {
     e.preventDefault();
     $('input[name=name]').val(function () {
@@ -150,45 +142,107 @@
     $('input[name=user-email]').val(function () {
       userEmail = this.value;
     });
-    $('#aml-eth-popup').addClass('hide');
     createProfile();
     $('#aml-popup').addClass('hide');
   });
 
+  //*** INVESTOR SELECTS USD/EUR, INPUTS AMOUNT ***//
+  //*** FIAT ALWAYS GOES TO KYC POPUP ***//
+  $('#fiat-continue').click(function () {
+    $('input[name=donation-amt]').val(function () {
+      donationAmt = this.value;
+    });
+    $('#choose-fiat-popup').addClass('hide');
+    $('#kyc-popup').removeClass('hide');
+  });
 
+  //*** FOR CRYPTO OVER $2K & ALL FIAT ***//
+  //*** INVESTOR INPUTS NAME & EMAIL ***//
+  //*** CREATE USER PROFILE **//
+  //*** CONFIRMATION POPUP, GO TO EMAIL ***//
+  $('#kyc-continue').click(function () {
+    $('input[name=name-kyc]').val(function () {
+      name = this.value;
+    });
+    $('input[name=user-email-kyc]').val(function () {
+      userEmail = this.value;
+    });
+    createProfile();
+    $('#kyc-popup').addClass('hide');
+  });
+
+  //*** CLOSE CONFIRMATION POPUP ***//
   $('input[name="confirm-close"]').click(function (e) {
     e.preventDefault();
     $('#confirmation-popup').addClass('hide');
   });
-  //*******************************************************
 
+  //*******************************************************
+  let profileType = 'PRIVATE';
   let fullName;
   let company = 'none';
   let regID = 'none';
-  let address = {};
+  let country = 0;
+  let buildingNo = 'none';
+  let apartmentNo = 'none';
+  let streetPre = 'none';
+  let street;
+  let city;
   let zip;
-  let country;
+  let postOffice = 'none';
   let identImg = 'no image';
   let addressDoc = 'no image';
+  //************************************************
+  //************************************************
 
-  let fileUpload = function fileUpload() {
+//************************************************
+
+$('#file-upload-submit').click(function (e) {
+  e.preventDefault();
+  var uid = getQueryParam("uid");
+  var hash = getQueryParam("hash");
+  console.log('inside file upload click');
+    var element = $("#upload-test");
+    if (element.length === 0 || (typeof element[0].files === 'undefined') || element[0].files.length == 0) {
+      return;
+    }
+
+
+    var regex = /\.(\w+)$/g;
+    var match = regex.exec(element[0].files[0].name);
+    if (match.length < 2 || match[1].length === 0) {
+      alert('upload must have a file extension');
+      // $(".update_profile_error").first()[0].innerHTML = "Upload must have a file extension";
+      return;
+    }
+    var file_ext = match[1];
+
+    var content_types = {
+      "jpeg": "image/jpeg",
+      "jpg": "image/jpeg",
+      "png": "image/png",
+      "webp": "image/webp"
+    };
+
+    if (typeof content_types[file_ext] === 'undefined') {
+      alert('image must be jpeg or png');
+      // $(".update_profile_error").first()[0].innerHTML = "Image must be a JPEG or PNG";
+      return;
+    }
+
     $.ajax({
       url: "https://api.kinguin.io/api/filestore/" + uid + "/" + hash,
       type: "POST",
-      data: {
-        "addr_verify_doc": addressDoc
-      }
-    })
-    .done(function handleResponse(response) {
-      alert('file upload success');
-      return response.data;
-    })
-    .error(function handleError(err) {
-      hasError = true;
-      alert(err.status, ' file upload failed');
-      return err.status;
+      data: element[0].files[0],
+      processData: false,
+      contentType: content_types[file_ext]
+    }).then(function (r) {
+      console.log("look a thing ", r.data, r.status);
     });
-  };
+  });
+
+//************************************************
+//************************************************
 
   let kycProfile = function kycProfile() {
     var uid = getQueryParam("uid");
@@ -196,47 +250,70 @@
     $.ajax({
       url: "https://api.kinguin.io/api/update-profile/kyc/" + uid + "/" + hash,
       type: "PUT",
-      data: {
+      contentType: "application/json; charset=utf-8",
+      data: JSON.stringify({
+        "profile_type": profileType,
         "full_name": fullName,
         "company_name": company,
         "company_reg_id": regID,
-        "address": address,
+        "address": {
+          "street": street,
+          "street_prefix": streetPre,
+          "building_no": buildingNo,
+          "apartment_no": apartmentNo,
+          "city": city,
+          "postcode": zip,
+          "post_office": postOffice,
+          "country_id": country
+        },
         "country_id": country,
         "uid": uid || "",
-        "email": userEmail
-      }
-    })
-    .done(function handleResponse(response) {
-      fileUpload();
-      alert('profile update success');
-      return response.data;
-    })
-    .error(function handleError(err) {
-      hasError = true;
-      alert(err.status, ' profile update failed');
-      return err.status;
+        "email": userEmail,
+        "addr_verify_doc": addressDoc
+      })
     });
     $('#islands-wrapper').removeClass('blur');
   };
 
+
+  //*** INVESTOR SELECTS INDIVIDUAL PROFILE ***//
+    $('#investor-button-private').click(function () {
+      profileType = "PRIVATE";
+      $('#investor-private-popup').removeClass('hide');
+      $('#investor-popup').addClass('hide');
+    });
+
+    //*** INVESTOR SELECTS COMPANY PROFILE ***//
+    $('#investor-button-company').click(function () {
+      profileType = "BUSINESS";
+      $('#investor-company-popup').removeClass('hide');
+      $('#investor-popup').addClass('hide');
+    });
 
   $('#investor-private-continue').click(function (e) {
     e.preventDefault();
     $('#full-name').val(function () {
       fullName = this.value;
     });
-    $('#nationality').val(function () {
-      nationality = this.value;
+    $('#country').val(function () {
+      country = this.value;
     });
-    $('#address').val(function () {
-      address = this.value;
+    $('#apartment-no').val(function () {
+      apartmentNo = this.value;
+    });
+    $('#building-no').val(function () {
+      buildingNo = this.value;
+    });
+    $('#street').val(function () {
+      street = this.value;
+    });
+    $('#city').val(function () {
+      city = this.value;
     });
     $('#zip-code').val(function () {
       zip = this.value;
     });
-    $('#country').val(function () {
-      country = this.value;
-    });
+
     kycProfile();
   });
 
@@ -251,11 +328,17 @@
     $('#reg-id').val(function () {
       regID = this.value;
     });
-    $('#c-nationality').val(function () {
-      nationality = this.value;
+    $('#c-apartment-no').val(function () {
+      apartmentNo = this.value;
     });
-    $('#c-address').val(function () {
-      address = this.value;
+    $('#c-building-no').val(function () {
+      buildingNo = this.value;
+    });
+    $('#c-street').val(function () {
+      street = this.value;
+    });
+    $('#c-city').val(function () {
+      city = this.value;
     });
     $('#c-zip-code').val(function () {
       zip = this.value;
@@ -283,16 +366,8 @@
         "addr_receive_eth": ethRec,
         "addr_send_btc": btcSend
       }
-    })
-    .done(function handleResponse(response) {
-      alert('AML SUCCESS');
-      return response.data;
-    })
-    .error(function handleError(err) {
-      hasError = true;
-      alert(err.status, ' amp send failed');
-      return err.status;
     });
+
     $('#islands-wrapper').removeClass('blur');
   };
 
