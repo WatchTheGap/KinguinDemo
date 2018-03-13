@@ -21,7 +21,7 @@
 
       $(document).ready(function () {
         var query = getQueryParam('cb');
-        switch (query) {
+        switch (query.toLowerCase()) {
           case 'aml-eth':
             blur();
             $('#aml-eth-popup').removeClass('hide');
@@ -165,14 +165,31 @@
   let fullName;
   let company = 'none';
   let regID = 'none';
-  let nationality;
-  let address;
+  let address = {};
   let zip;
   let country;
   let identImg = 'no image';
   let addressDoc = 'no image';
 
+  let hasError = false;
 
+let fileUpload = function fileUpload() {
+  $.ajax({
+    url: "https://api.kinguin.io/api/filestore/" + uid + "/" + hash,
+    type: "POST",
+    data: {
+      "addr_verify_doc": addressDoc
+    }
+  })
+  .done(function handleResponse(response) {
+    return response.data;
+  })
+  .error(function handleError(err) {
+    hasError = true;
+    alert(err.status);
+    return err.status;
+  });
+};
 
   let kycProfile = function kycProfile() {
     var uid = getQueryParam("uid");
@@ -181,20 +198,25 @@
       url: "https://api.kinguin.io/api/update-profile/kyc/" + uid + "/" + hash,
       type: "PUT",
       data: {
-        "FULL NAME": fullName,
-        "COMPANY NAME": company,
-        "COMPANY REG.ID": regID,
-        "NATIONALITY": nationality,
-        "ADDRESS": address,
-        "COUNTRY": country,
-        "NATIONAL ID PICTURE": identImg,
-        "ADDRESS VERIFICATION DOCUMENT": addressDoc,
-        "UID": uid || "",
-        "EMAIL": userEmail
+        "full_name": fullName,
+        "company_name": company,
+        "company_reg_id": regID,
+        "address": address,
+        "country_id": country,
+        "uid": uid || "",
+        "email": userEmail
       }
+    })
+    .done(function handleResponse(response) {
+      fileUpload();
+      return response.data;
+    })
+    .error(function handleError(err) {
+      hasError = true;
+      alert(err.status);
+      return err.status;
     });
     $('#islands-wrapper').removeClass('blur');
-    alert('GIRL LOOKIT DAT AJAX');
   };
 
 
@@ -254,19 +276,26 @@
 
   let sendAML = function sendAML() {
     var uid = getQueryParam("uid");
-    var ual = getQueryParam("ual");
+    var hash = getQueryParam("hash");
     $.ajax({
       url: "https://api.kinguin.io/api/update-profile" + uid + "/" + hash,
       type: "PUT",
       data: {
-        "UNIQUE AML LINK": ual,
-        "ETH SENDING ADDRESS": ethSend,
-        "ETH RECEIVING ADDRESS": ethRec,
-        "BTC SENDING ADDRESS": btcSend
+        "addr_send_eth": ethSend,
+        "addr_receive_eth": ethRec,
+        "addr_send_btc": btcSend
       }
+    })
+    .done(function handleResponse(response) {
+      alert('AML SUCCESS');
+      return response.data;
+    })
+    .error(function handleError(err) {
+      hasError = true;
+      alert(err.status);
+      return err.status;
     });
     $('#islands-wrapper').removeClass('blur');
-    alert('AML SUCCESS');
   };
 
   $('#aml-eth-continue').click(function (e) {

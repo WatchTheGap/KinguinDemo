@@ -282,6 +282,18 @@
 //*** POPUPS *********
 //************************************
 
+#alt-roadmap-popup {
+  background-image: url('img/Roadmap_R.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: none;
+  .popup-inner-wrapper {
+    background-color: transparent;
+    height: 2160px;
+    width: 2160px;
+  }
+}
+
 #airdrop-popup {
   &::before, &::after {
     border-bottom: 10px solid #6bb0d2;
