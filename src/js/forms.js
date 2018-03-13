@@ -1,62 +1,59 @@
 (function() {
   'use strict';
 
+  let hasError = false;
 
+  //***************************************************
+  //EMAIL TRIGGERED POPUPS
+  //***************************************************
 
-      //***************************************************
-      //EMAIL TRIGGERED POPUPS
-      //***************************************************
+  function getQueryParam(param) {
+    var url = window.location.href;
+    param = param.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + param + "(=([^&#]*)|&|#|$)"),
+    results = regex.exec(url);
+    if (results && results[2]) {
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+    } else {
+      return false;
+    }
+  }
 
-      function getQueryParam(param) {
-        var url = window.location.href;
-        param = param.replace(/[\[\]]/g, "\\$&");
-        var regex = new RegExp("[?&]" + param + "(=([^&#]*)|&|#|$)"),
-          results = regex.exec(url);
-        if (results && results[2]) {
-          return decodeURIComponent(results[2].replace(/\+/g, " "));
-        } else {
-          return false;
-        }
-      }
+  $(document).ready(function () {
+    var query = getQueryParam('cb');
+    switch (query.toLowerCase()) {
+      case 'aml-eth':
+      blur();
+      $('#aml-eth-popup').removeClass('hide');
+      break;
+      case "aml-btc":
+      blur();
+      $('#aml-btc-popup').removeClass('hide');
+      break;
+      case ('kyc-eth'):
+      blur();
+      $('#investor-popup').removeClass('hide');
+      break;
+      case ('kyc-btc'):
+      blur();
+      $('#investor-popup').removeClass('hide');
+      break;
+      case ('kyc-usd'):
+      blur();
+      $('#investor-popup').removeClass('hide');
+      break;
+      case ('kyc-eur'):
+      blur();
+      $('#investor-popup').removeClass('hide');
+    }
+  });
 
-      $(document).ready(function () {
-        var query = getQueryParam('cb');
-        switch (query.toLowerCase()) {
-          case 'aml-eth':
-            blur();
-            $('#aml-eth-popup').removeClass('hide');
-            break;
-          case "aml-btc":
-            blur();
-            $('#aml-btc-popup').removeClass('hide');
-            break;
-          case ('kyc-eth'):
-            blur();
-            $('#investor-popup').removeClass('hide');
-            break;
-          case ('kyc-btc'):
-            blur();
-            $('#investor-popup').removeClass('hide');
-            break;
-          case ('kyc-usd'):
-            blur();
-            $('#investor-popup').removeClass('hide');
-            break;
-          case ('kyc-eur'):
-            blur();
-            $('#investor-popup').removeClass('hide');
-        }
-      });
-
-      //***************************************************
-
+  //***************************************************
 
   $('#notify-form').submit(function () {
     alert('Success!');
     // TODO: REPLACE THIS WITH A BETTER MESSAGE AND OR CUSTOM POPUP
   });
-
-
 
   $('.currency-form', '#signup-form', '#personal-data-form', '#company-data-form', '#funding-form', '#bank-info-form').submit(function (e) {
     e.preventDefault();
@@ -69,98 +66,101 @@
     });
   }
 
-  console.log(uuidv4());
-
   let uid = uuidv4();
-  console.log(uid);
 
-    let currencyType = 'ETH';
-    let donationAmt = 0;
-    let name;
-    let userEmail;
+  let currencyType = 'ETH';
+  let donationAmt = 0;
+  let name;
+  let userEmail;
 
-
-
-    function createProfile(userProfile) {
-      if (name.length < 1 || userEmail.length < 1) {
-        alert('Please fill out the required fields.');
-        return;
-      }
-      $.ajax({
-        url: "https://api.kinguin.io/api/create-profile/aml",
-        type: "POST",
-        data: {
-          "uid": uid,
-          "username": name,
-          "email": userEmail,
-          "currency": currencyType,
-          "amount": donationAmt
-        }
-      });
-      $('#confirmation-popup').removeClass('hide');
+  function createProfile(userProfile) {
+    if (name.length < 1 || userEmail.length < 1) {
+      alert('Please fill out the required fields.');
+      return;
     }
-
-    $('#BTC-select').click(function () {
-      currencyType = 'BTC';
-      $('.left-select').addClass('selected')
-        .siblings('.right-select').removeClass('selected');
-      $('.currency-placeholder').text('BTC');
+    $.ajax({
+      url: "https://api.kinguin.io/api/create-profile/aml",
+      type: "POST",
+      data: {
+        "uid": uid,
+        "username": name,
+        "email": userEmail,
+        "currency": currencyType,
+        "amount": donationAmt
+      }
+    })
+    .done(function handleResponse(response) {
+      alert('profile creation successful');
+      return response.data;
+    })
+    .error( function handleError(err) {
+      hasError = true;
+      alert(err.status, ' create profile failed');
     });
+    $('#confirmation-popup').removeClass('hide');
+  }
 
-    $('#ETH-select').click(function () {
-      currencyType = 'ETH';
-      $('.right-select').addClass('selected')
-      .siblings('.left-select').removeClass('selected');
-      $('.currency-placeholder').text('ETH');
+  $('#BTC-select').click(function () {
+    currencyType = 'BTC';
+    $('.left-select').addClass('selected')
+    .siblings('.right-select').removeClass('selected');
+    $('.currency-placeholder').text('BTC');
+  });
 
+  $('#ETH-select').click(function () {
+    currencyType = 'ETH';
+    $('.right-select').addClass('selected')
+    .siblings('.left-select').removeClass('selected');
+    $('.currency-placeholder').text('ETH');
+
+  });
+
+  $('#USD-select').focus(function () {
+    currencyType = 'USD';
+    $('.left-select').addClass('selected')
+    .siblings('.right-select').removeClass('selected');
+    $('.currency-placeholder').text('USD');
+
+  });
+
+  $('#EUR-select').focus(function () {
+    currencyType = 'EUR';
+    $('.right-select').addClass('selected')
+    .siblings('.left-select').removeClass('selected');
+    $('.currency-placeholder').text('EUR');
+
+  });
+
+
+  $('#crypto-continue').click(function (e) {
+    e.preventDefault();
+    $('input[name=crypto-amt]').val(function () {
+      donationAmt = this.value;
     });
+    $('#choose-crypto-popup').addClass('hide');
+    $('#aml-popup').removeClass('hide');
+  });
 
-    $('#USD-select').focus(function () {
-      currencyType = 'USD';
-      $('.left-select').addClass('selected')
-      .siblings('.right-select').removeClass('selected');
-      $('.currency-placeholder').text('USD');
 
+  $('#aml-continue').click(function (e) {
+    e.preventDefault();
+    $('input[name=name]').val(function () {
+      name = this.value;
     });
-
-    $('#EUR-select').focus(function () {
-      currencyType = 'EUR';
-      $('.right-select').addClass('selected')
-        .siblings('.left-select').removeClass('selected');
-        $('.currency-placeholder').text('EUR');
-
+    $('input[name=user-email]').val(function () {
+      userEmail = this.value;
     });
+    $('#aml-eth-popup').addClass('hide');
+    createProfile();
+    $('#aml-popup').addClass('hide');
+  });
 
 
-    $('#crypto-continue').click(function (e) {
-      e.preventDefault();
-      $('input[name=crypto-amt]').val(function () {
-        donationAmt = this.value;
-      });
-      $('#choose-crypto-popup').addClass('hide');
-      $('#aml-popup').removeClass('hide');
-    });
-
-
-      $('#aml-continue').click(function (e) {
-        e.preventDefault();
-        $('input[name=name]').val(function () {
-          name = this.value;
-        });
-        $('input[name=user-email]').val(function () {
-          userEmail = this.value;
-        });
-        $('#aml-eth-popup').addClass('hide');
-        createProfile();
-        $('#aml-popup').addClass('hide');
-      });
-
-
-      $('input[name="confirm-close"]').click(function (e) {
-        e.preventDefault();
-        $('#confirmation-popup').addClass('hide');
-      });
-//*******************************************************
+  $('input[name="confirm-close"]').click(function (e) {
+    e.preventDefault();
+    $('#confirmation-popup').addClass('hide');
+  });
+  //*******************************************************
 
   let fullName;
   let company = 'none';
@@ -171,25 +171,24 @@
   let identImg = 'no image';
   let addressDoc = 'no image';
 
-  let hasError = false;
-
-let fileUpload = function fileUpload() {
-  $.ajax({
-    url: "https://api.kinguin.io/api/filestore/" + uid + "/" + hash,
-    type: "POST",
-    data: {
-      "addr_verify_doc": addressDoc
-    }
-  })
-  .done(function handleResponse(response) {
-    return response.data;
-  })
-  .error(function handleError(err) {
-    hasError = true;
-    alert(err.status);
-    return err.status;
-  });
-};
+  let fileUpload = function fileUpload() {
+    $.ajax({
+      url: "https://api.kinguin.io/api/filestore/" + uid + "/" + hash,
+      type: "POST",
+      data: {
+        "addr_verify_doc": addressDoc
+      }
+    })
+    .done(function handleResponse(response) {
+      alert('file upload success');
+      return response.data;
+    })
+    .error(function handleError(err) {
+      hasError = true;
+      alert(err.status, ' file upload failed');
+      return err.status;
+    });
+  };
 
   let kycProfile = function kycProfile() {
     var uid = getQueryParam("uid");
@@ -209,11 +208,12 @@ let fileUpload = function fileUpload() {
     })
     .done(function handleResponse(response) {
       fileUpload();
+      alert('profile update success');
       return response.data;
     })
     .error(function handleError(err) {
       hasError = true;
-      alert(err.status);
+      alert(err.status, ' profile update failed');
       return err.status;
     });
     $('#islands-wrapper').removeClass('blur');
@@ -238,7 +238,6 @@ let fileUpload = function fileUpload() {
       country = this.value;
     });
     kycProfile();
-    console.log(fullName, nationality, address, zip, country);
   });
 
   $('#investor-company-continue').click(function (e) {
@@ -265,7 +264,6 @@ let fileUpload = function fileUpload() {
       country = this.value;
     });
     kycProfile();
-    console.log(fullName, company, regID, nationality, address, zip, country);
   });
 
   let ethEmail;
@@ -292,7 +290,7 @@ let fileUpload = function fileUpload() {
     })
     .error(function handleError(err) {
       hasError = true;
-      alert(err.status);
+      alert(err.status, ' amp send failed');
       return err.status;
     });
     $('#islands-wrapper').removeClass('blur');
