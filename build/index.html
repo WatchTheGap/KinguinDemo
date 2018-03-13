@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kinguin ICO Digital Strategy</title>
+    <title>Kinguin.io: ICO March 30th</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -87,10 +87,10 @@
 
         <div class='savings-sign'>
           <p>community savings</p>
-          <h1>$175,464,578</h1>
+          <!-- <h1>$175,464,578</h1> -->
 
-          <!-- <h1 class='mobile-hide'>$175,464,578</h1> -->
-          <!-- <h1 class='mobile-show'>$175 MIL</h1> -->
+          <h1 class='mobile-hide'>$175,464,578</h1>
+          <h1 class='mobile-show'>$175 MIL</h1>
 
         </div>
 
@@ -154,19 +154,43 @@
 
       <div class='' id='about-island'>
         <img id='cloud1' class='mobile-hide' src='img/cloud.png' alt='clouds'>
-        <div id='team' class='mobile-hide'></div>
-        <div id='company' class='mobile-hide'></div>
-        <div id='contactus' class='mobile-hide'></div>
-        <div id='ourstory' class='mobile-hide'></div>
+        <img id='about-block' class='mobile-hide' src='img/About.png' alt=''>
+
+        <!-- <div id='team' class='mobile-hide'>
+        </div> -->
+        <img class='team mobile-hide' src='img/Team_hover.png' alt=''>
+        <img class='shadows mobile-hide' src='img/Shadows.png' alt=''>
+        <img class='figures mobile-hide' src='img/Team_figures.png' alt=''>
+        <img class='figures-mobile mobile-show' src='img/figures_mobile.png' alt=''>
+
+        <img class='company mobile-hide' src='img/Company.png' alt=''>
+        <img class='company-penguin' src='img/Company_penguin.png' alt=''>
+      <img class='contactus mobile-hide' src='img/ContactUs.png' alt''>
+        <!-- <div id='ourstory' class='mobile-hide'>
+        </div> -->
+        <img class='ourstory mobile-hide' src='img/OurStory.png' alt=''>
         <img id='advisors' class='mobile-hide' src='img/Advisors.png'>
-        <div id='bulb' class='mobile-hide'></div>
+        <img class='advisor-block' src='img/Advisor_block.png' alt=''>
+        <img class='book mobile-hide' src='img/Book.png' alt="">
+        <img class='book-mobile mobile-show' src='img/Book_mobile.png' alt="">
+        <img class='letter' src='img/Letter.png' alt="">
+
+        <div class='bulb mobile-hide'>
+        </div>
+        <img class=' bulb-mobile mobile-show' src='img/Bulb_mobile.png' alt=''>
         <img id='stairs-top' class='mobile-hide' src='img/Landing_About_Stairs.png' alt='floating stairs'>
         <img id='stairs-mid' class='mobile-hide' src='img/Middle_Stairs.png' alt='floating stairs'>
         <img id='cloud2' class='mobile-hide' src='img/cloud.png' alt='clouds'>
 
+        <p class='titles team-title'>TEAM</p>
+        <p class='titles company-title'>COMPANY</p>
+        <p class='titles story-title'>OUR STORY</p>
+        <p class='titles advisors-title'>ADVISORS</p>
+        <p class='titles contact-title'>CONTACT US</p>
+
       </div>
 
-      <div class='mobile-hide' id='strategy-island'>
+      <div class='' id='strategy-island'>
         <img id='tiny-cloud' class='mobile-hide' src='img/cloud.png' alt='clouds'>
         <img id='stairs-end' class='mobile-hide' src='img/Info_Strategy_Stairs.png' alt='floating stairs'>
         <img id='strategy-b' src='img/Strategy_B.png' alt='strategy and analysis'>
@@ -184,7 +208,7 @@
 
       </div>
 
-      <div class='mobile-hide' id='info-island'>
+      <div class='' id='info-island'>
         <img id='info-block' src='img/Info_block.png'>
         <div id='tokens'></div>
         <a href='docs/KINGUIN_DOT_IO_Whitepaper_2.1.1.pdf' target='_blank'><div id='whitepaper'></div></a>
@@ -195,9 +219,49 @@
     </div> <!-- for bluring -->
 
     <!-- MODALS -->
-      <!-- Landing Island Popups -->
-    <div class='popup-wrapper'>
 
+    <div class='popup-wrapper'> <!-- CONSENT POPUP -->
+      <div id='consent-popup' class='popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>DO YOU AGREE?</h1>
+          </section>
+          <section class='modal-body'>
+            <div class='checkbox-row'>
+              <div class='checkbox-wrapper'>
+                <div class='input-wrapper'>
+                  <div class='pixel-input'>
+                    <input id='tos-check' type='checkbox' required>
+                    <label for='tos-check'></label>
+                  </div>
+                </div>
+              </div>
+              <p>Check here to confirm that you have read, understand and agree to the <a href='docs/KINGUIN_DOT_IO_TOS.pdf' target='_blank'>Terms of Use</a>.</p>
+            </div>
+            <div class='checkbox-row'>
+              <div class='checkbox-wrapper'>
+                <div class='input-wrapper'>
+                  <div class='pixel-input'>
+                    <input id='pp-check' type='checkbox' required>
+                    <label for='pp-check'></label>
+                  </div>
+                </div>
+              </div>
+              <p>Check here to confirm that you consent to giving us your personal information in accordance with our <a href='docs/KINGUIN_DOT_IO_PRIVACY_POLICY.pdf' target='_blank'>Privacy Policy</a>.</p>
+            </div>
+            <div class='input-wrapper continue-btn'>
+              <div class='pixel-input'>
+                <input type='submit' name='consent-submit' value='I AGREE'>
+              </div>
+            </div>
+          </section>
+          <section class='modal-footer'></section>
+        </div>
+      </div>
+    </div>
+      <!-- Landing Island Popups -->
+    <div class='popup-wrapper'> <!-- NOTIFY ME POPUP -->
       <div id='notify-popup' class='popup hide popup-outer-wrapper'>
         <div class='popup-inner-wrapper'>
           <section class='modal-header'>
@@ -224,8 +288,73 @@
       </div>
     </div>
 
+    <div class='popup-wrapper'> <!-- AIRDROP ME POPUP -->
+      <div id='airdrop-popup' class='popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>AIRDROP</h1>
+          </section>
+          <section class='modal-body'>
+            <form class='' action='' method='post'>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input type='text' name='telegram-email' placeholder='email' required>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input type='text' name='telegram-id' placeholder='telegram id'>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input type='text' name='referal-id' placeholder='referal id'>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input type='text' name='erc20' placeholder='erc20 wallet address'>
+                </div>
+              </div>
+              <div class='input-wrapper continue-btn'>
+                <div class='pixel-input'>
+                  <input type='submit' name='telegram-submit' value='REGISTER'>
+                </div>
+              </div>
+            </form>
+          </section>
+          <section class='modal-footer'>
+
+          </section>
+        </div>
+      </div>
+    </div>
+
            <!-- signups -->
-    <div class='signup-wrapper'>
+    <div class='popup-wrapper'>
+      <div id='confirmation-popup' class='signup-corners popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header signup'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>SIGN UP TO PRE-ICO</h1>
+          </section>
+          <section class='modal-body'>
+            <h1>SUCCESS!</h1>
+            <p>Your account has been created.</p>
+            <p>Please check your email and follow the confirmation link to continue the signup process.</p>
+            <div class='input-wrapper continue-btn'>
+              <div class='pixel-input'>
+                <input type='submit' name='confirm-close' value='CLOSE'>
+              </div>
+            </div>
+          </section>
+          <section class='modal-footer'></section>
+        </div>
+      </div>
+    </div>
+
+    <div class='popup-wrapper-short'>
 
       <div id='signup-popup' class='signup-corners popup hide popup-outer-wrapper'>
         <div class='popup-inner-wrapper'>
@@ -270,12 +399,12 @@
             <form class='currency-form' method='post'>
               <h4>choose crypto</h4>
               <div class='selector-buttons'>
-                <div class='input-wrapper left-select selected'>
+                <div class='input-wrapper left-select '>
                   <div class='pixel-input'>
-                    <button  id='BTC-select' type='button' name="BTC-select"></button>
+                    <button  id='BTC-select' type='button' name="BTC-select" disabled></button>
                   </div>
                 </div>
-                <div class='input-wrapper right-select'>
+                <div class='input-wrapper right-select selected'>
                   <div class='pixel-input'>
                     <button id='ETH-select' type='button' name='ETH-select'></button>
                   </div>
@@ -284,8 +413,8 @@
               <h4>input amount</h4>
               <div class='input-wrapper currency-amt'>
                 <div class='pixel-input'>
-                  <input type='text' name='crypto-amt' placeholder='0'>
-                  <p class='currency-placeholder'>BTC</p>
+                  <input type='text' name='crypto-amt' placeholder='0' required>
+                  <p class='currency-placeholder'>ETH</p>
                 </div>
               </div>
               <div id='crypto-continue' class='input-wrapper continue-btn'>
@@ -325,7 +454,7 @@
               <h2>input amount</h2>
               <div class='input-wrapper currency-amt'>
                 <div class='pixel-input'>
-                  <input type='text' name='donation-amt'  placeholder='0'>
+                  <input type='text' name='donation-amt'  placeholder='0' required>
                   <p class='currency-placeholder'>USD</p>
                 </div>
               </div>
@@ -353,12 +482,12 @@
             <form id='signup-form' method='post'>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input type='text' align='center' name='name-kyc' placeholder='YOUR NAME'>
+                  <input type='text' align='center' name='name-kyc' placeholder='YOUR NAME' required>
                 </div>
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input type='email' name='user-email-kyc' placeholder='YOUR EMAIL'>
+                  <input type='email' name='user-email-kyc' placeholder='YOUR EMAIL' required>
                 </div>
               </div>
               <div id='kyc-continue' class='input-wrapper'>
@@ -483,7 +612,7 @@
             <form id='company-data-form' method='post'>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='full-name' type='text' align='center' name='name' placeholder='FULL NAME'>
+                  <input id='c-full-name' type='text' align='center' name='name' placeholder='FULL NAME'>
                 </div>
               </div>
               <div class='input-wrapper'>
@@ -498,7 +627,7 @@
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <select id='nationality' type='select' name='nationality' placeholder='NATIONALITY'>
+                  <select id='c-nationality' type='select' name='nationality' placeholder='NATIONALITY'>
                     <option value='klingon'>klingon</option>
                     <option value='human'>human</option>
                     <option value='cardassian'>cardassian</option>
@@ -507,17 +636,17 @@
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='address' type='text' name='address' placeholder='STREET ADDRESS'>
+                  <input id='c-address' type='text' name='address' placeholder='STREET ADDRESS'>
                 </div>
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='zip-code' type='text' name='zip-code' placeholder='ZIP'>
+                  <input id='c-zip-code' type='text' name='zip-code' placeholder='ZIP'>
                 </div>
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='country' type='text' name='country' placeholder='COUNTRY'>
+                  <input id='c-country' type='text' name='country' placeholder='COUNTRY'>
                 </div>
               </div>
 
@@ -620,11 +749,6 @@
               <div class='input-wrapper'>
                 <div class='pixel-input'>
                   <input id='btc-send' type='text' name='btc-send' placeholder='BTC SENDING ADDRESS'>
-                </div>
-              </div>
-              <div class='input-wrapper'>
-                <div class='pixel-input'>
-                  <input id='btc-rec' type='text' name='btc-rec' placeholder='BTC RECEIVING ADDRESS'>
                 </div>
               </div>
               <div id='aml-btc-continue' class='input-wrapper continue-btn'>
