@@ -295,7 +295,10 @@ console.log(formData);
         "addr_verify_doc": addressDoc
       })
     });
-    $('#islands-wrapper').removeClass('blur');
+    $('.popup').addClass('hide');
+    $('.email-popup-bg').hide();
+    $('#confirmation-popup').removeClass('hide');
+    $('.popup-bg').show();
   };
 
 
@@ -338,6 +341,7 @@ console.log(formData);
     });
 
     kycProfile();
+
   });
 
   $('#investor-company-continue').click(function (e) {
@@ -370,6 +374,8 @@ console.log(formData);
       country = this.value;
     });
     kycProfile();
+    $('#investor-company-popup').addClass('hide');
+    $('.email-popup-bg').hide();
   });
 
   let ethEmail;
@@ -391,7 +397,10 @@ console.log(formData);
       }
     });
 
-    $('#islands-wrapper').removeClass('blur');
+    $('.popup').addClass('hide');
+    $('.email-popup-bg').hide();
+    $('#confirmation-popup').removeClass('hide');
+    $('.popup-bg').show();
   };
 
   $('#aml-eth-continue').click(function (e) {
