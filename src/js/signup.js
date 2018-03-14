@@ -58,4 +58,17 @@ let fiat = false;
       $('#signup-popup').removeClass('hide');
     }
   });
+
+  $('#investor-private-popup .back-btn').click(function (e) {
+    e.preventDefault();
+    $('#investor-private-popup').addClass('hide');
+    $('#investor-popup').removeClass('hide');
+  });
+
+  $('#investor-company-popup .back-btn').click(function (e) {
+    e.preventDefault();
+    $('#investor-company-popup').addClass('hide');
+    $('#investor-popup').removeClass('hide');
+  });
+  
 }());
