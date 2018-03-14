@@ -33,6 +33,14 @@
       blur();
       $('#aml-btc-popup').removeClass('hide');
       break;
+      case "aml-usd":
+      blur();
+      $('#aml-fiat-popup').removeClass('hide');
+      break;
+      case "aml-eur":
+      blur();
+      $('#aml-fiat-popup').removeClass('hide');
+      break;
       case ('kyc-eth'):
       blur();
       $('#investor-popup').removeClass('hide');
@@ -130,6 +138,8 @@
       donationAmt = this.value;
     });
     $('#choose-crypto-popup').addClass('hide');
+    // TODO: THIS RIGHT HERE NEEDS TO BE TRIGGERED BY
+    // HOW MUCH MUNNIES ARE IN THE DONATION AMOUNT
     $('#aml-popup').removeClass('hide');
   });
 
@@ -351,7 +361,7 @@ $('#file-upload-submit').click(function (e) {
 
   let ethEmail;
   let btcEmail;
-  let ethSend;
+  let ethSend = 'n/a';
   let ethRec = 'n/a';
   let btcSend = 'n/a';
 
@@ -359,7 +369,7 @@ $('#file-upload-submit').click(function (e) {
     var uid = getQueryParam("uid");
     var hash = getQueryParam("hash");
     $.ajax({
-      url: "https://api.kinguin.io/api/update-profile" + uid + "/" + hash,
+      url: "https://api.kinguin.io/api/update-profile/aml/" + uid + "/" + hash,
       type: "PUT",
       data: {
         "addr_send_eth": ethSend,
@@ -373,9 +383,6 @@ $('#file-upload-submit').click(function (e) {
 
   $('#aml-eth-continue').click(function (e) {
     e.preventDefault();
-    $('#eth-email').val(function () {
-      ethEmail = this.value;
-    });
     $('#eth-send').val(function () {
       ethSend = this.value;
     });
@@ -388,11 +395,17 @@ $('#file-upload-submit').click(function (e) {
 
   $('#aml-btc-continue').click(function (e) {
     e.preventDefault();
-    $('#btc-email').val(function () {
-      btcEmail = this.value;
-    });
     $('#btc-send').val(function () {
       btcSend = this.value;
+    });
+    sendAML();
+    // TODO: ADD THANK YOU POPUP
+  });
+
+  $('#aml-fiat-continue').click(function (e) {
+    e.preventDefault();
+    $('#fiat-eth-rec').val(function () {
+      ethRec = this.value;
     });
     sendAML();
     // TODO: ADD THANK YOU POPUP

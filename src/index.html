@@ -407,7 +407,7 @@
               <div class='selector-buttons'>
                 <div class='input-wrapper left-select '>
                   <div class='pixel-input'>
-                    <button  id='BTC-select' type='button' name="BTC-select" disabled></button>
+                    <button  id='BTC-select' type='button' name="BTC-select"></button>
                   </div>
                 </div>
                 <div class='input-wrapper right-select selected'>
@@ -834,9 +834,8 @@
                   <input id='zip-code' type='text' name='zip-code' placeholder='ZIP'>
                 </div>
               </div>
-              <div class='input-wrapper file-upload up-left'>
+              <!-- <div class='input-wrapper file-upload up-left'>
                 <div class='pixel-input'>
-                  <!-- TODO: add file upload via jquery -->
                   <img src='img/upload_arrow.png' alt='arrow'>
                   <input id='ident-img' type='file'>
                   <label for='ident-img'><p>UPLOAD</p></label>
@@ -844,12 +843,11 @@
               </div>
               <div class='input-wrapper file-upload up-right'>
                 <div class='pixel-input'>
-                  <!-- TODO: add file upload via jquery -->
                   <img src='img/upload_arrow.png' alt='arrow'>
                   <input id='address-doc' type='file'>
                   <label for='address-doc'><p>UPLOAD</p></label>
                 </div>
-              </div>
+              </div> -->
               <div id='investor-private-continue' class='input-wrapper continue-btn'>
                 <div class='pixel-input'>
                   <input type='submit' value='continue'>
@@ -1146,17 +1144,17 @@
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='c-apartment-no' type='text' name='apartment-no' placeholder='APT 3O3'>
+                  <input id='c-apartment-no' type='text' name='c-apartment-no' placeholder='APT 3O3'>
                 </div>
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='c-building-no' type='text' name='building-no' placeholder='1337'>
+                  <input id='c-building-no' type='text' name='c-building-no' placeholder='1337'>
                 </div>
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='c-street' type='text' name='street' placeholder='LEGENDARY ST'>
+                  <input id='c-street' type='text' name='c-street' placeholder='LEGENDARY ST'>
                 </div>
               </div>
               <div class='input-wrapper'>
@@ -1183,7 +1181,7 @@
       </div>
 
 <!-- FILE UPLOAD TESTING POPUP -->
-      <div id='file-upload-popup' class='popup popup-outer-wrapper'>
+      <div id='file-upload-popup' class='popup hide popup-outer-wrapper'>
         <div class='popup-inner-wrapper'>
           <section class='modal-header'>
             <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
@@ -1254,11 +1252,6 @@
             <form id='signup-form' method='post'>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='eth-email' type='email' align='center' name='email' placeholder='YOUR EMAIL'>
-                </div>
-              </div>
-              <div class='input-wrapper'>
-                <div class='pixel-input'>
                   <input id='eth-send' type='text' name='eth-send' placeholder='ETH SENDING ADDRESS'>
                 </div>
               </div>
@@ -1291,15 +1284,37 @@
             <form id='signup-form' method='post'>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='btc-email' type='email' align='center' name='email' placeholder='YOUR EMAIL'>
-                </div>
-              </div>
-              <div class='input-wrapper'>
-                <div class='pixel-input'>
                   <input id='btc-send' type='text' name='btc-send' placeholder='BTC SENDING ADDRESS'>
                 </div>
               </div>
               <div id='aml-btc-continue' class='input-wrapper continue-btn'>
+                <div class='pixel-input'>
+                  <input type='submit' value='continue'>
+                </div>
+              </div>
+            </form>
+          </section>
+          <section class='modal-footer'>
+            <img id='progress-bar' src='img/Progress_Bar_3.png' alt='progress bar'>
+          </section>
+        </div>
+      </div>
+
+      <div id='aml-fiat-popup' class='signup-corners popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header signup'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>SIGN UP TO PRE-ICO</h1>
+          </section>
+          <section id='aml-fiat-body' class='modal-body signup-body'>
+            <h3>enter aml data</h3>
+            <form id='signup-form' method='post'>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input id='fiat-eth-rec' type='text' name='fiat-eth-rec' placeholder='FIAT ETH RECEIVING ADDRESS'>
+                </div>
+              </div>
+              <div id='aml-fiat-continue' class='input-wrapper continue-btn'>
                 <div class='pixel-input'>
                   <input type='submit' value='continue'>
                 </div>
