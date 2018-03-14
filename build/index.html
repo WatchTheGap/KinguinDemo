@@ -562,7 +562,7 @@
           </section>
           <section id='investor-private-body' class='modal-body signup-body'>
             <h3>fill in data</h3>
-            <form id='personal-data-form' method='post'>
+            <form id='personal-data-form' method='post' name='personal-data-form'>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
                   <input id='full-name' type='text' align='center' name='name' placeholder='FULL NAME'>
@@ -851,20 +851,24 @@
                   <input id='zip-code' type='text' name='zip-code' placeholder='ZIP'>
                 </div>
               </div>
-              <!-- <div class='input-wrapper file-upload up-left'>
-                <div class='pixel-input'>
-                  <img src='img/upload_arrow.png' alt='arrow'>
-                  <input id='ident-img' type='file'>
-                  <label for='ident-img'><p>UPLOAD</p></label>
+              
+              <div class='upload-blocks'>
+                <div class='input-wrapper file-upload up-left'>
+                  <div class='pixel-input'>
+                    <img src='img/upload_arrow.png' alt='arrow'>
+                    <input id='ident-img' type='file' name='ident-img'>
+                    <label for='ident-img'><p>UPLOAD</p></label>
+                  </div>
+                </div>
+                <div class='input-wrapper file-upload up-right'>
+                  <div class='pixel-input'>
+                    <img src='img/upload_arrow.png' alt='arrow'>
+                    <input id='address-doc' type='file' name='address-doc'>
+                    <label for='address-doc'><p>UPLOAD</p></label>
+                  </div>
                 </div>
               </div>
-              <div class='input-wrapper file-upload up-right'>
-                <div class='pixel-input'>
-                  <img src='img/upload_arrow.png' alt='arrow'>
-                  <input id='address-doc' type='file'>
-                  <label for='address-doc'><p>UPLOAD</p></label>
-                </div>
-              </div> -->
+
               <div id='investor-private-continue' class='input-wrapper continue-btn'>
                 <div class='pixel-input'>
                   <input type='submit' value='continue'>
@@ -1206,35 +1210,6 @@
           </section>
         </div>
       </div>
-
-<!-- FILE UPLOAD TESTING POPUP -->
-      <div id='file-upload-popup' class='popup hide popup-outer-wrapper'>
-        <div class='popup-inner-wrapper'>
-          <section class='modal-header'>
-            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-          </section>
-          <section class='modal-body'>
-            <form class="file-upload-form" action="index.html" method="post">
-              <div class='input-wrapper file-upload up-right'>
-                <div class='pixel-input'>
-                  <!-- TODO: add file upload via jquery -->
-                  <img src='img/upload_arrow.png' alt='arrow'>
-                  <input id='upload-test' type='file'>
-                  <label for='address-doc'><p>UPLOAD</p></label>
-                </div>
-              </div>
-              <div id='file-upload-submit' class='input-wrapper continue-btn'>
-                <div class='pixel-input'>
-                  <input type='submit' value='continue'>
-                </div>
-              </div>
-            </form>
-          </section>
-          <section class='modal-footer'></section>
-        </div>
-      </div>
-<!-- ************* -->
-
 
       <div id='aml-popup' class='signup-corners popup hide popup-outer-wrapper'>
         <div class='popup-inner-wrapper'>
@@ -1862,6 +1837,8 @@
       </div>
     </div>
     <!--**************************-->
+
+    <footer><p>Copyright 2018 Kinguin Limited, All Rights Reserved</p></footer>
 
     <!-- Scripts -->
     <script src='jquery.min.js'></script>

@@ -111,8 +111,31 @@
     $('#islands-wrapper').addClass('blur');
   };
 
+
   //***************************************************
-  //EMAIL TRIGGERED POPUPS
+  //***TEXT FOR CONFIRMATION POPUPS
+  //***************************************************
+  let phaseOne = {
+    'title': 'Success!',
+    'subtitle': 'Your account has been created.',
+    'body': 'Please check your email and follow the confirmation link to continue the signup process.'
+  };
+
+  let phaseTwo = {
+    'title': 'Level Two Complete!',
+    'subtitle': 'We have received your proof of identity documentation.',
+    'body': 'Watch your email for your approval link and prepare to advance to Level Three.'
+  };
+
+  let phaseThree = {
+    'title': 'Quest Complete!',
+    'subtitle': 'Thank you for joining us in the Kinguin.io ICO!',
+    'body': 'What happens next?'
+  };
+
+
+  //***************************************************
+  //***EMAIL TRIGGERED POPUPS
   //***************************************************
 
   function getQueryParam(param) {
@@ -320,51 +343,32 @@
 
 //************************************************
 
-$('#file-upload-submit').click(function (e) {
-  e.preventDefault();
-  var uid = getQueryParam("uid");
-  var hash = getQueryParam("hash");
-  console.log('inside file upload click');
-    var element = $("#upload-test");
-    if (element.length === 0 || (typeof element[0].files === 'undefined') || element[0].files.length == 0) {
-      return;
-    }
+var form = document.forms.namedItem("personal-data-form");
 
+ var send = function() {
+   var data = new FormData(form);
 
-    var regex = /\.(\w+)$/g;
-    var match = regex.exec(element[0].files[0].name);
-    if (match.length < 2 || match[1].length === 0) {
-      alert('upload must have a file extension');
-      // $(".update_profile_error").first()[0].innerHTML = "Upload must have a file extension";
-      return;
-    }
-    var file_ext = match[1];
+   var uid = getQueryParam("uid");
+   var hash = getQueryParam("hash");
 
-    // if (typeof content_types[file_ext] === 'undefined') {
-    //   alert('image must be jpeg or png');
-    //   // $(".update_profile_error").first()[0].innerHTML = "Image must be a JPEG or PNG";
-    //   return;
-    // }
+   var settings = {
+     "async": true,
+     "crossDomain": true,
+     "url": "https://api.kinguin.io/api/filestore/"+uid+"/"+hash,
+     "method": "POST",
+     "headers": {
+     },
+     "processData": false,
+     "contentType": false,
+     "mimeType": "multipart/form-data",
+     "data": data
+   };
 
-    var formData = new FormData();
-    jQuery.each($('#upload-test')[0].files, function(i, file) {
-        formData.append('file-'+i, file);
-    });
-
-console.log(formData);
-
-    $.ajax({
-      url: "https://api.kinguin.io/api/filestore/" + uid + "/" + hash,
-      type: "POST",
-      data: formData,
-      // data: element[0].files[0],
-      processData: false,
-      contentType: false,
-      enctype: 'multipart/form-data'
-    }).then(function (r) {
-      console.log("look a thing ", r.data, r.status);
-    });
-  });
+   $.ajax(settings).done(function (response) {
+     console.log(response);
+   });
+   return false;
+ };
 
 
 //************************************************
@@ -452,6 +456,7 @@ console.log(formData);
       return;
     } else {
       kycProfile();
+      send();
       $('#investor-private-popup').addClass('hide');
       $('.email-popup-bg').hide();
     }
@@ -591,24 +596,28 @@ console.log(formData);
     e.preventDefault();
     $('.helper').show();
     $('.helper').find('h2').text(amlHelper.title).siblings('p').text(amlHelper.text);
+    $('.helper-popup-bg').show();
   });
 
   $('#aml-eth-popup .modal-body a').click(function (e) {
     e.preventDefault();
     $('.helper').show();
     $('.helper').find('h2').text(amlDataHelper.title).siblings('p').text(amlDataHelper.text);
+    $('.helper-popup-bg').show();
   });
 
   $('#aml-btc-popup .modal-body a').click(function (e) {
     e.preventDefault();
     $('.helper').show();
     $('.helper').find('h2').text(amlDataHelper.title).siblings('p').text(amlDataHelper.text);
+    $('.helper-popup-bg').show();
   });
 
   $('#aml-fiat-popup .modal-body a').click(function (e) {
     e.preventDefault();
     $('.helper').show();
     $('.helper').find('h2').text(amlDataHelper.title).siblings('p').text(amlDataHelper.text);
+    $('.helper-popup-bg').show();
   });
 
   $('.helper-popup-bg').click(function () {
