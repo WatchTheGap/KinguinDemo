@@ -1289,17 +1289,6 @@ input:active, button:active, select:active {
 #signup-form input, #personal-data-form input,
 #company-data-form input, #funding-form input {
   height: 50px; }
-#signup-form #ident-img, #signup-form #address-doc, #personal-data-form #ident-img, #personal-data-form #address-doc,
-#company-data-form #ident-img,
-#company-data-form #address-doc, #funding-form #ident-img, #funding-form #address-doc {
-  cursor: pointer;
-  position: absolute;
-  top: -5px;
-  left: 0;
-  opacity: 0;
-  background-color: green;
-  height: 120px;
-  width: 200px; }
 #signup-form select, #personal-data-form select,
 #company-data-form select, #funding-form select {
   cursor: pointer;
@@ -1328,6 +1317,13 @@ input:active, button:active, select:active {
   justify-content: space-between;
   width: 70%;
   margin: auto; }
+#signup-form .upload-text, #personal-data-form .upload-text,
+#company-data-form .upload-text, #funding-form .upload-text {
+  text-align: center;
+  color: #9c9b9b;
+  font-size: 20px;
+  width: 50%;
+  margin: 3% 0; }
 #signup-form .file-upload, #personal-data-form .file-upload,
 #company-data-form .file-upload, #funding-form .file-upload {
   height: 100%;
@@ -1347,6 +1343,14 @@ input:active, button:active, select:active {
   #signup-form .file-upload p, #personal-data-form .file-upload p,
   #company-data-form .file-upload p, #funding-form .file-upload p {
     margin: 0; }
+  #signup-form .file-upload input, #personal-data-form .file-upload input,
+  #company-data-form .file-upload input, #funding-form .file-upload input {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: inherit;
+    opacity: 0; }
 #signup-form #kyc-continue, #personal-data-form #kyc-continue,
 #company-data-form #kyc-continue, #funding-form #kyc-continue {
   width: 70%;

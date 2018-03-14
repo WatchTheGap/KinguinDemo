@@ -260,16 +260,7 @@ input:active, button:active, select:active {
   input {
     height: 50px;
   }
-  #ident-img, #address-doc {
-    cursor: pointer;
-    position: absolute;
-    top: -5px;
-    left: 0;
-    opacity: 0;
-    background-color: green;
-    height: 120px;
-    width: 200px;
-  }
+
   select {
     cursor: pointer;
     height: 50px;
@@ -300,6 +291,13 @@ input:active, button:active, select:active {
     width: 70%;
     margin: auto;
   }
+  .upload-text {
+    text-align: center;
+    color: #9c9b9b;
+    font-size: 20px;
+    width: 50%;
+    margin: 3% 0;
+  }
 
   .file-upload{
     height: 100%;
@@ -318,6 +316,14 @@ input:active, button:active, select:active {
     }
     p {
       margin: 0;
+    }
+    input {
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: inherit;
+      opacity: 0;
     }
   }
 
