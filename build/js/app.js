@@ -129,7 +129,7 @@
 
   $(document).ready(function () {
     var query = getQueryParam('cb');
-    if (typeof query !== 'undefined') {
+    if (typeof query === 'string') {
       query = query.toLowerCase();
     }
     switch (query) {
