@@ -142,6 +142,8 @@
     $('#islands-wrapper').removeClass('blur');
     $('.popup-bg').hide();
     $('.email-popup-bg').hide();
+    $('.helper-popup-bg').hide();
+    $('.helper').hide();
   });
 
 

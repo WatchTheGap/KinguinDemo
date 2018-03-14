@@ -140,6 +140,22 @@
   h2, h3, nav {
     text-align: center;
   }
+  a {
+    font-family: '04b_03', monospace;
+    margin: 0;
+    color: #9ac4bf;
+    text-decoration: none;
+    text-align: center;
+    &:visited {
+      color: #c8dfdc;
+    }
+    h6 {
+      font-family: inherit;
+      margin: 20px;
+      font-size: 12px;
+    }
+  }
+
 }
 
 .modal-footer {
