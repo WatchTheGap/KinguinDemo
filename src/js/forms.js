@@ -240,8 +240,8 @@ $('#file-upload-submit').click(function (e) {
     //   return;
     // }
 
-let formData = new FormData();
-formData.append('image', $('#upload-test')[0].files[0]);
+let formData = new FormData($(".file-upload-form"));
+console.log(formData);
 
     $.ajax({
       url: "https://api.kinguin.io/api/filestore/" + uid + "/" + hash,
@@ -254,6 +254,7 @@ formData.append('image', $('#upload-test')[0].files[0]);
       console.log("look a thing ", r.data, r.status);
     });
   });
+
 
 //************************************************
 //************************************************
