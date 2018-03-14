@@ -29,24 +29,28 @@
     e.preventDefault();
     $('.helper').show();
     $('.helper').find('h2').text(amlHelper.title).siblings('p').text(amlHelper.text);
+    $('.helper-popup-bg').show();
   });
 
   $('#aml-eth-popup .modal-body a').click(function (e) {
     e.preventDefault();
     $('.helper').show();
     $('.helper').find('h2').text(amlDataHelper.title).siblings('p').text(amlDataHelper.text);
+    $('.helper-popup-bg').show();
   });
 
   $('#aml-btc-popup .modal-body a').click(function (e) {
     e.preventDefault();
     $('.helper').show();
     $('.helper').find('h2').text(amlDataHelper.title).siblings('p').text(amlDataHelper.text);
+    $('.helper-popup-bg').show();
   });
 
   $('#aml-fiat-popup .modal-body a').click(function (e) {
     e.preventDefault();
     $('.helper').show();
     $('.helper').find('h2').text(amlDataHelper.title).siblings('p').text(amlDataHelper.text);
+    $('.helper-popup-bg').show();
   });
 
   $('.helper-popup-bg').click(function () {
