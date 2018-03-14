@@ -39,6 +39,9 @@
       let crystalName = 'Stephen A. Crystal, ESQ';
       let crystalBio = "<p>Stephen is an attorney and investor focusing on gaming and esports.</p><p>He has spent 25 years directly involved in all aspects of the casino and gaming technology industry as well as I-Gaming and esports worldwide. As an attorney he has represented public and private gaming companies before various state regulatory bodies and jurisdictions. Stephen has also been the President and CEO of numerous casino holding and public gaming technology companies, employing thousands of employees. Lastly, Stephen is an active investor and advisor on over $2 Billion dollars of project finance and mergers and acquisitions in the casino/gaming technology/I-Gaming/esports and energy and utility spaces.</p>";
 
+      let shulginName = 'Alexander Shulgin';
+      let shulginBio = '<p>Shulgin Bio</p>'
+
       if ($(this).find('h5').is(':contains("John Lee")')) {
         $('#advisors-popup .more-info-text').find('h3').text(leeName).siblings('.bio-text').empty('.bio-text').append(leeBio);
       } else if ($(this).find('h5').is(':contains("Jens Hilgers")')){
@@ -57,6 +60,8 @@
         $('#advisors-popup .more-info-text').find('h3').text(haoName).siblings('.bio-text').empty('.bio-text').append(haoBio);
       } else if ($(this).find('h5').is(':contains("Stephen Crystal")')) {
         $('#advisors-popup .more-info-text').find('h3').text(crystalName).siblings('.bio-text').empty('.bio-text').append(crystalBio);
+      } else if ($(this).find('h5').is(':contains("Alexander Shulgin")')) {
+        $('#advisors-popup .more-info-text').find('h3').text(shulginName).siblings('.bio-text').empty('.bio-text').append(shulginBio);
       }
     }
   });
@@ -828,11 +833,19 @@ $('#file-upload-submit').click(function (e) {
 
 // *** About Island ***
 
-  $('#bulb').click(function() {
+  $('.bulb').click(function() {
     blur();
-    $('#advisors-popup').toggleClass('hide');
+    $('#advisors-popup').removeClass('hide');
   });
-
+  $('.advisor-block').click(function() {
+    blur();
+    $('#advisors-popup').removeClass('hide');
+  });
+  $('.advisors-title').click(function() {
+    blur();
+    $('#advisors-popup').removeClass('hide');
+  });
+  
   $('.team-title').click(function() {
     blur();
     $('#team-popup').removeClass('hide');
@@ -844,11 +857,11 @@ $('#file-upload-submit').click(function (e) {
 
   $('.company-title').click(function() {
     blur();
-    $('#company-popup').toggleClass('hide');
+    $('#company-popup').removeClass('hide');
   });
   $('.company-penguin').click(function () {
     blur();
-    $('#company-popup').toggleClass('hide');
+    $('#company-popup').removeClass('hide');
   });
 
   $('.ourstory').click(function() {
@@ -862,14 +875,14 @@ $('#file-upload-submit').click(function (e) {
 
   $('#contactus').click(function() {
     blur();
-    $('#contactus-popup').toggleClass('hide');
+    $('#contactus-popup').removeClass('hide');
   });
 
 // *** Landing Island ***
 
   $('#notify-btn').click(function() {
     blur();
-    $('#notify-popup').toggleClass('hide');
+    $('#notify-popup').removeClass('hide');
   });
 
   $('.info-panel').click(function () {
@@ -886,34 +899,34 @@ $('#file-upload-submit').click(function (e) {
 
   $('#tokens').click(function() {
     blur();
-    $('#tokens-popup').toggleClass('hide');
+    $('#tokens-popup').removeClass('hide');
   });
 
   $('#market').click(function() {
     blur();
-    $('#market-popup').toggleClass('hide');
+    $('#market-popup').removeClass('hide');
   });
 
 
 // *** Strategy Island ***
   $('#problem-solution').click(function () {
     blur();
-    $('#problem-solution-popup').toggleClass('hide');
+    $('#problem-solution-popup').removeClass('hide');
   });
 
   $('#distribution').click(function () {
     blur();
-    $('#distribution-popup').toggleClass('hide');
+    $('#distribution-popup').removeClass('hide');
   });
 
   $('#projections').click(function () {
     blur();
-    $('#projections-popup').toggleClass('hide');
+    $('#projections-popup').removeClass('hide');
   });
 
   $('#roadmap').click(function () {
     blur();
-    $('#roadmap2-popup').toggleClass('hide');
+    $('#roadmap2-popup').removeClass('hide');
     $('#close-x-1').removeClass('hide');
   });
   $('#close-x-1').click(function () {
@@ -925,7 +938,7 @@ $('#file-upload-submit').click(function (e) {
 
   $('#why-now').click(function() {
     blur();
-    $('#why-now-popup').toggleClass('hide');
+    $('#why-now-popup').removeClass('hide');
   });
 
 // *** Basic ***

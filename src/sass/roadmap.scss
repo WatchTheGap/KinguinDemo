@@ -1,0 +1,19 @@
+#roadmap-full {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-image: url('img/Roadmap_H.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@media screen and (max-width: 900px) {
+  #roadmap-full {
+    background-size: cover;
+    background-image: url('img/Roadmap_V.jpg');
+    background-position: left;
+    overflow-x: scroll;
+  }
+}

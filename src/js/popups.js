@@ -27,11 +27,19 @@
 
 // *** About Island ***
 
-  $('#bulb').click(function() {
+  $('.bulb').click(function() {
     blur();
-    $('#advisors-popup').toggleClass('hide');
+    $('#advisors-popup').removeClass('hide');
   });
-
+  $('.advisor-block').click(function() {
+    blur();
+    $('#advisors-popup').removeClass('hide');
+  });
+  $('.advisors-title').click(function() {
+    blur();
+    $('#advisors-popup').removeClass('hide');
+  });
+  
   $('.team-title').click(function() {
     blur();
     $('#team-popup').removeClass('hide');
@@ -43,11 +51,11 @@
 
   $('.company-title').click(function() {
     blur();
-    $('#company-popup').toggleClass('hide');
+    $('#company-popup').removeClass('hide');
   });
   $('.company-penguin').click(function () {
     blur();
-    $('#company-popup').toggleClass('hide');
+    $('#company-popup').removeClass('hide');
   });
 
   $('.ourstory').click(function() {
@@ -61,14 +69,14 @@
 
   $('#contactus').click(function() {
     blur();
-    $('#contactus-popup').toggleClass('hide');
+    $('#contactus-popup').removeClass('hide');
   });
 
 // *** Landing Island ***
 
   $('#notify-btn').click(function() {
     blur();
-    $('#notify-popup').toggleClass('hide');
+    $('#notify-popup').removeClass('hide');
   });
 
   $('.info-panel').click(function () {
@@ -85,34 +93,34 @@
 
   $('#tokens').click(function() {
     blur();
-    $('#tokens-popup').toggleClass('hide');
+    $('#tokens-popup').removeClass('hide');
   });
 
   $('#market').click(function() {
     blur();
-    $('#market-popup').toggleClass('hide');
+    $('#market-popup').removeClass('hide');
   });
 
 
 // *** Strategy Island ***
   $('#problem-solution').click(function () {
     blur();
-    $('#problem-solution-popup').toggleClass('hide');
+    $('#problem-solution-popup').removeClass('hide');
   });
 
   $('#distribution').click(function () {
     blur();
-    $('#distribution-popup').toggleClass('hide');
+    $('#distribution-popup').removeClass('hide');
   });
 
   $('#projections').click(function () {
     blur();
-    $('#projections-popup').toggleClass('hide');
+    $('#projections-popup').removeClass('hide');
   });
 
   $('#roadmap').click(function () {
     blur();
-    $('#roadmap2-popup').toggleClass('hide');
+    $('#roadmap2-popup').removeClass('hide');
     $('#close-x-1').removeClass('hide');
   });
   $('#close-x-1').click(function () {
@@ -124,7 +132,7 @@
 
   $('#why-now').click(function() {
     blur();
-    $('#why-now-popup').toggleClass('hide');
+    $('#why-now-popup').removeClass('hide');
   });
 
 // *** Basic ***
