@@ -443,7 +443,18 @@ console.log(formData);
       zip = this.value;
     });
 
-    kycProfile();
+    if (country === "999") {
+      console.log();
+      alert("Nice try. We know you're in another castle.");
+      return;
+    } else if (country.length < 1) {
+      alert("Please select your country");
+      return;
+    } else {
+      kycProfile();
+      $('#investor-private-popup').addClass('hide');
+      $('.email-popup-bg').hide();
+    }
 
   });
 
@@ -476,9 +487,20 @@ console.log(formData);
     $('#c-country').val(function () {
       country = this.value;
     });
-    kycProfile();
-    $('#investor-company-popup').addClass('hide');
-    $('.email-popup-bg').hide();
+
+    if (country === "999") {
+      console.log();
+      alert("Nice try. We know you're in another castle.");
+      return;
+    } else if (country.length < 1) {
+      alert("Please select your country");
+      return;
+    } else {
+      kycProfile();
+      $('#investor-company-popup').addClass('hide');
+      $('.email-popup-bg').hide();
+    }
+
   });
 
   let ethEmail;
