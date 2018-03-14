@@ -100,9 +100,9 @@
   'use strict';
 
   let hasError = false;
-  
+
   let blur = function blur() {
-    $('.popup-bg').show();
+    $('.email-popup-bg').show();
     $('#islands-wrapper').addClass('blur');
   };
 

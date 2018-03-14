@@ -23,6 +23,10 @@
   bottom: 0;
 }
 
+.email-popup-bg {
+  @extend .popup-bg;
+}
+
 .popup-wrapper {
   @extend .centered;
   z-index: 2;

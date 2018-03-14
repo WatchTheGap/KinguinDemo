@@ -185,7 +185,7 @@ header {
   left: 50%;
   transform: translate(-50%, -50%); }
 
-.popup-bg {
+.popup-bg, .email-popup-bg {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -1356,13 +1356,15 @@ input:active, button:active, select:active {
   margin: 5% 15%; }
 
 #confirmation-popup .modal-body, #confirmation-popup #why-now-popup .modal-footer, #why-now-popup #confirmation-popup .modal-footer {
-  height: 300px;
-  text-align: center; }
+  text-align: center;
+  padding: 5%; }
   #confirmation-popup .modal-body p, #confirmation-popup #why-now-popup .modal-footer p, #why-now-popup #confirmation-popup .modal-footer p {
     font-size: 20px; }
   #confirmation-popup .modal-body h1, #confirmation-popup #why-now-popup .modal-footer h1, #why-now-popup #confirmation-popup .modal-footer h1 {
     font-family: '04b_03', monospace;
     font-size: 36px; }
+#confirmation-popup .modal-footer {
+  min-height: 200px; }
 
 #about-island {
   top: 0;

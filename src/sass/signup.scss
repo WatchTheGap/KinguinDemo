@@ -383,8 +383,8 @@ input:active, button:active, select:active {
 
 #confirmation-popup {
   .modal-body {
-    height: 300px;
     text-align: center;
+    padding: 5%;
     p {
       font-size: 20px;
     }
@@ -392,5 +392,8 @@ input:active, button:active, select:active {
       font-family: '04b_03', monospace;
       font-size: 36px;
     }
+  }
+  .modal-footer {
+    min-height: 200px;
   }
 }
