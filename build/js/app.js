@@ -295,6 +295,9 @@
   $('input[name="confirm-close"]').click(function (e) {
     e.preventDefault();
     $('#confirmation-popup').addClass('hide');
+    $('.email-poppup-bg').hide();
+    $('.popup-bg').hide();
+    $('#islands-wrapper').removeClass('blur');
   });
 
   //*******************************************************
@@ -343,7 +346,11 @@ $('#file-upload-submit').click(function (e) {
     //   return;
     // }
 
-let formData = new FormData($(".file-upload-form"));
+    var formData = new FormData();
+    jQuery.each($('#upload-test')[0].files, function(i, file) {
+        formData.append('file-'+i, file);
+    });
+
 console.log(formData);
 
     $.ajax({
@@ -353,6 +360,7 @@ console.log(formData);
       // data: element[0].files[0],
       processData: false,
       contentType: false,
+      enctype: 'multipart/form-data'
     }).then(function (r) {
       console.log("look a thing ", r.data, r.status);
     });
