@@ -246,9 +246,11 @@
       donationAmt = this.value;
     });
     $('#choose-crypto-popup').addClass('hide');
-    // TODO: THIS RIGHT HERE NEEDS TO BE TRIGGERED BY
-    // HOW MUCH MUNNIES ARE IN THE DONATION AMOUNT
-    $('#aml-popup').removeClass('hide');
+    if (donationAmt >= 2000) {
+      $('#kyc-popup').removeClass('hide');
+    } else {
+      $('#aml-popup').removeClass('hide');
+    }
   });
 
   //*** FOR CRYPTO AMOUNT UNDER $2K ONLY ***//
@@ -335,25 +337,22 @@ $('#file-upload-submit').click(function (e) {
     }
     var file_ext = match[1];
 
-    var content_types = {
-      "jpeg": "image/jpeg",
-      "jpg": "image/jpeg",
-      "png": "image/png",
-      "webp": "image/webp"
-    };
+    // if (typeof content_types[file_ext] === 'undefined') {
+    //   alert('image must be jpeg or png');
+    //   // $(".update_profile_error").first()[0].innerHTML = "Image must be a JPEG or PNG";
+    //   return;
+    // }
 
-    if (typeof content_types[file_ext] === 'undefined') {
-      alert('image must be jpeg or png');
-      // $(".update_profile_error").first()[0].innerHTML = "Image must be a JPEG or PNG";
-      return;
-    }
+let formData = new FormData();
+formData.append('image', $('#upload-test')[0].files[0]);
 
     $.ajax({
       url: "https://api.kinguin.io/api/filestore/" + uid + "/" + hash,
       type: "POST",
-      data: element[0].files[0],
+      data: formData,
+      // data: element[0].files[0],
       processData: false,
-      contentType: content_types[file_ext]
+      contentType: false,
     }).then(function (r) {
       console.log("look a thing ", r.data, r.status);
     });
@@ -845,7 +844,7 @@ $('#file-upload-submit').click(function (e) {
     blur();
     $('#advisors-popup').removeClass('hide');
   });
-  
+
   $('.team-title').click(function() {
     blur();
     $('#team-popup').removeClass('hide');
@@ -947,6 +946,7 @@ $('#file-upload-submit').click(function (e) {
     $(this).closest('.popup-outer-wrapper').addClass('hide');
     $('#islands-wrapper').removeClass('blur');
     $('.popup-bg').hide();
+    $('.email-popup-bg').hide();
   });
 
 
@@ -1031,6 +1031,8 @@ let fiat = false;
   $('#signup-button-crypto').click(function () {
     fiat = false;
     $('#signup-popup').addClass('hide');
+    $('.popup-bg').hide();
+    $('.email-popup-bg').show();
     $('#choose-crypto-popup').removeClass('hide');
   });
 
@@ -1039,6 +1041,8 @@ let fiat = false;
   $('#signup-button-fiat').click(function () {
     fiat = true;
     $('#signup-popup').addClass('hide');
+    $('.popup-bg').hide();
+    $('.email-popup-bg').show();
     $('#choose-fiat-popup').removeClass('hide');
   });
 
@@ -1085,7 +1089,7 @@ let fiat = false;
     $('#investor-company-popup').addClass('hide');
     $('#investor-popup').removeClass('hide');
   });
-  
+
 }());
 
 (function() {

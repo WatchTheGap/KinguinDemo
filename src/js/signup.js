@@ -16,6 +16,8 @@ let fiat = false;
   $('#signup-button-crypto').click(function () {
     fiat = false;
     $('#signup-popup').addClass('hide');
+    $('.popup-bg').hide();
+    $('.email-popup-bg').show();
     $('#choose-crypto-popup').removeClass('hide');
   });
 
@@ -24,6 +26,8 @@ let fiat = false;
   $('#signup-button-fiat').click(function () {
     fiat = true;
     $('#signup-popup').addClass('hide');
+    $('.popup-bg').hide();
+    $('.email-popup-bg').show();
     $('#choose-fiat-popup').removeClass('hide');
   });
 
@@ -70,5 +74,5 @@ let fiat = false;
     $('#investor-company-popup').addClass('hide');
     $('#investor-popup').removeClass('hide');
   });
-  
+
 }());

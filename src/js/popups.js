@@ -39,7 +39,7 @@
     blur();
     $('#advisors-popup').removeClass('hide');
   });
-  
+
   $('.team-title').click(function() {
     blur();
     $('#team-popup').removeClass('hide');
@@ -141,6 +141,7 @@
     $(this).closest('.popup-outer-wrapper').addClass('hide');
     $('#islands-wrapper').removeClass('blur');
     $('.popup-bg').hide();
+    $('.email-popup-bg').hide();
   });
 
 
