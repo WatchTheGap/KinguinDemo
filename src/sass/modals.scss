@@ -278,6 +278,34 @@
   }
 }
 
+.back-btn {
+  position: absolute;
+  background-color: #9ac4bf;
+  height: 30px;
+  width: 50px;
+  bottom: 10%;
+  left: 5%;
+  &::before, &::after {
+    border-bottom: 5px solid #c8dfdc;
+  }
+  .pixel-input {
+    background-color: inherit;
+    height: 40px;
+    width: 30px;
+    &::before, &::after {
+      border-top: 5px solid #617976;
+    }
+    input {
+      cursor: pointer;
+      border-top: 5px solid #c8dfdc;
+      border-bottom: 5px solid #617976;
+      height: inherit;
+      background-color: inherit;
+      font-size: 30px;
+    }
+  }
+}
+
 //************************************
 //*** POPUPS *********
 //************************************

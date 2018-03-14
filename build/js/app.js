@@ -100,6 +100,11 @@
   'use strict';
 
   let hasError = false;
+  
+  let blur = function blur() {
+    $('.popup-bg').show();
+    $('#islands-wrapper').addClass('blur');
+  };
 
   //***************************************************
   //EMAIL TRIGGERED POPUPS
@@ -1000,7 +1005,8 @@ $('#file-upload-submit').click(function (e) {
 
 //*** OPEN THE SIGNUP FLOW FROM MAIN SITE ***//
   $('#go-btn').click(function () {
-    $('#pre-ico-popup').removeClass('hide');
+    // $('#pre-ico-popup').removeClass('hide');
+    $('#signup-popup').removeClass('hide');
     $('.popup-bg').show();
     $('#islands-wrapper').addClass('blur');
   });

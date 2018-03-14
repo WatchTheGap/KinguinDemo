@@ -2,6 +2,11 @@
   'use strict';
 
   let hasError = false;
+  
+  let blur = function blur() {
+    $('.popup-bg').show();
+    $('#islands-wrapper').addClass('blur');
+  };
 
   //***************************************************
   //EMAIL TRIGGERED POPUPS
