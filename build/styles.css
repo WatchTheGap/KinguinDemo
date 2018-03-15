@@ -1036,52 +1036,48 @@ header {
   text-align: center;
   height: 150px; }
 
-#consent-popup::before, #consent-popup::after {
-  border-bottom: 10px solid #f68888; }
-#consent-popup .modal-header {
-  background-color: #ef5e5e;
-  border-top: 10px solid #f68888; }
-#consent-popup .modal-body, #consent-popup #why-now-popup .modal-footer, #why-now-popup #consent-popup .modal-footer {
-  height: 300px; }
-  #consent-popup .modal-body .checkbox-row, #consent-popup #why-now-popup .modal-footer .checkbox-row, #why-now-popup #consent-popup .modal-footer .checkbox-row {
-    margin-top: 3%;
+.consent-boxes {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+  flex-wrap: wrap; }
+  .consent-boxes .checkbox-row {
     display: flex;
     align-items: center;
-    flex-wrap: wrap; }
-    #consent-popup .modal-body .checkbox-row .input-wrapper, #consent-popup #why-now-popup .modal-footer .checkbox-row .input-wrapper, #why-now-popup #consent-popup .modal-footer .checkbox-row .input-wrapper {
-      margin: 0 25%;
-      float: right;
-      height: 25px; }
-    #consent-popup .modal-body .checkbox-row .pixel-input, #consent-popup #why-now-popup .modal-footer .checkbox-row .pixel-input, #why-now-popup #consent-popup .modal-footer .checkbox-row .pixel-input {
-      padding: 2px 14px; }
-    #consent-popup .modal-body .checkbox-row input[type='checkbox'], #consent-popup #why-now-popup .modal-footer .checkbox-row input[type='checkbox'], #why-now-popup #consent-popup .modal-footer .checkbox-row input[type='checkbox'] {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%; }
+    .consent-boxes .checkbox-row .pixel-input {
+      padding: 0 12px; }
+    .consent-boxes .checkbox-row input[type='checkbox'] {
       visibility: hidden;
       margin: 0;
       padding: 0; }
-    #consent-popup .modal-body .checkbox-row input[type='checkbox']:checked + label, #consent-popup #why-now-popup .modal-footer .checkbox-row input[type='checkbox']:checked + label, #why-now-popup #consent-popup .modal-footer .checkbox-row input[type='checkbox']:checked + label {
+    .consent-boxes .checkbox-row input[type='checkbox']:checked + label {
       background-image: url("img/Close.png");
       background-size: 15px;
       background-position: center;
       background-repeat: no-repeat; }
-    #consent-popup .modal-body .checkbox-row label, #consent-popup #why-now-popup .modal-footer .checkbox-row label, #why-now-popup #consent-popup .modal-footer .checkbox-row label {
+    .consent-boxes .checkbox-row label {
       display: block;
-      height: 26px;
-      width: 28px;
+      height: 100%;
+      width: 100%;
       position: absolute;
       top: 0px;
-      left: 5px; }
-    #consent-popup .modal-body .checkbox-row a, #consent-popup #why-now-popup .modal-footer .checkbox-row a, #why-now-popup #consent-popup .modal-footer .checkbox-row a {
+      left: 0px; }
+    .consent-boxes .checkbox-row a {
       text-decoration: none; }
-      #consent-popup .modal-body .checkbox-row a:hover, #consent-popup #why-now-popup .modal-footer .checkbox-row a:hover, #why-now-popup #consent-popup .modal-footer .checkbox-row a:hover {
+      .consent-boxes .checkbox-row a:hover {
         color: #ef5e5e; }
-      #consent-popup .modal-body .checkbox-row a:visited, #consent-popup #why-now-popup .modal-footer .checkbox-row a:visited, #why-now-popup #consent-popup .modal-footer .checkbox-row a:visited {
+      .consent-boxes .checkbox-row a:visited {
         color: grey; }
-    #consent-popup .modal-body .checkbox-row .checkbox-wrapper, #consent-popup #why-now-popup .modal-footer .checkbox-row .checkbox-wrapper, #why-now-popup #consent-popup .modal-footer .checkbox-row .checkbox-wrapper {
-      width: 25%;
-      margin-bottom: 5px; }
-    #consent-popup .modal-body .checkbox-row p, #consent-popup #why-now-popup .modal-footer .checkbox-row p, #why-now-popup #consent-popup .modal-footer .checkbox-row p {
-      width: 60%;
-      min-height: 3em; }
+    .consent-boxes .checkbox-row .checkbox-wrapper {
+      margin: 10px; }
+    .consent-boxes .checkbox-row p {
+      width: 75%;
+      font-family: '04b_03', monospace;
+      margin: 10px; }
 
 input, button, select,
 input:focus, button:focus, select:focus,
@@ -1092,6 +1088,15 @@ input:active, button:active, select:active {
 #signup-popup {
   height: auto;
   width: 700px; }
+
+#kyc-popup .modal-footer .button-wrapper {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  margin-top: 3%; }
+  #kyc-popup .modal-footer .button-wrapper .continue-btn {
+    width: 100%;
+    margin: 10px; }
 
 .signup-corners::before, .signup-corners::after {
   border-bottom: 10px solid #c8dfdc; }

@@ -365,7 +365,7 @@ var form = document.forms.namedItem("personal-data-form");
    };
 
    $.ajax(settings).done(function (response) {
-     console.log(response);
+     kycProfile();
    });
    return false;
  };
@@ -455,7 +455,6 @@ var form = document.forms.namedItem("personal-data-form");
       alert("Please select your country");
       return;
     } else {
-      kycProfile();
       send();
       $('#investor-private-popup').addClass('hide');
       $('.email-popup-bg').hide();

@@ -10,6 +10,21 @@ input:active, button:active, select:active {
   width: 700px;
 }
 
+#kyc-popup {
+  .modal-footer {
+    .button-wrapper {
+      display: flex;
+      width: 70%;
+      margin: auto;
+      margin-top: 3%;
+      .continue-btn {
+        width: 100%;
+        margin: 10px;
+      }
+    }
+  }
+}
+
 .signup-corners::before, .signup-corners::after{
   border-bottom: 10px solid #c8dfdc;
 }
@@ -55,7 +70,6 @@ input:active, button:active, select:active {
   button {
     cursor: pointer;
   }
-
 }
 
 .currency-form {
