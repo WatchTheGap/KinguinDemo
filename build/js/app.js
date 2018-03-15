@@ -208,9 +208,9 @@
     $('.confirm-body').text(mailingList.body);
   });
 
-  $('.currency-form', '#signup-form', '#personal-data-form', '#company-data-form', '#funding-form', '#bank-info-form').submit(function (e) {
-    e.preventDefault();
-  });
+  // $('.currency-form', '#signup-form', '#personal-data-form', '#company-data-form', '#funding-form', '#bank-info-form').submit(function (e) {
+  //   e.preventDefault();
+  // });
 
   //******************************************************
 
@@ -230,14 +230,18 @@
 
   function createProfile(userProfile) {
     if (name.length < 1 || userEmail.length < 1) {
-      alert('Please fill out the required fields.');
+      $('#kyc-popup .alert-msg').text('Please fill out the required fields.');
+      $('input[name="user-email-kyc"]').val(userEmail);
+      $('input[name="name-kyc"]').val(name);
       return;
     }
 
 
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!re.test(String(userEmail).toLowerCase())) {
-      alert('Please enter a valid email.');
+      $('#kyc-popup .alert-msg').text('Please enter a valid email address.');
+      $('input[name="user-email-kyc"]').val(userEmail);
+      $('input[name="name-kyc"]').val(name);
       return;
     }
 
@@ -254,6 +258,7 @@
     })
     .done(function () {
       $('#aml-popup').addClass('hide');
+      $('#kyc-popup').addClass('hide');
       $('#confirmation-popup').removeClass('hide');
       $('.confirm-title').text(phaseOne.title);
       ('.confirm-subtitle').text(phaseOne.subtitle);
@@ -393,9 +398,10 @@
     });
     if ($('#tos-check').is(':checked') && $('#pp-check').is(':checked')) {
       createProfile();
-      $('#kyc-popup').addClass('hide');
     } else {
       $('#kyc-popup .alert-msg').text('* Please accept our Terms & Conditions.');
+      $('input[name="user-email-kyc"]').val(userEmail);
+      $('input[name="name-kyc"]').val(name);
       return;
     }
 
