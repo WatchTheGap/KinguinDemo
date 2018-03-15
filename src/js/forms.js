@@ -281,7 +281,7 @@
       $('#kyc-popup .alert-msg').text('* Please accept our Terms & Conditions.');
       return;
     }
-  
+
   });
 
   //*** CLOSE CONFIRMATION POPUP ***//
@@ -578,6 +578,9 @@
     e.preventDefault();
     $('#btc-send').val(function () {
       btcSend = this.value;
+    });
+    $('#eth-rec').val(function () {
+      ethRec = this.value;
     });
     sendAML();
   });
