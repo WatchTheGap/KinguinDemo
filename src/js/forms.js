@@ -125,6 +125,13 @@
   let name;
   let userEmail;
 
+  if (currencyType === 'BTC' || 'ETH') {
+    fiat = false;
+  }
+  if (currencyType === 'USD' || 'EUR') {
+    fiat = true;
+  }
+
   function createProfile(userProfile) {
     if (name.length < 1 || userEmail.length < 1) {
       $('#kyc-popup .alert-msg').text('Please fill out the required fields.');
@@ -272,10 +279,12 @@
     });
     if (currencyType === 'USD' && donationAmt < 5000) {
       $('#choose-fiat-popup .alert-msg').text('* a minimum donation of $5,000 USD is required.');
+      $('input[name="donation-amt"]').val(donationAmt);
       return;
     }
     if (currencyType === 'EUR' && donationAmt < 4000) {
       $('#choose-fiat-popup .alert-msg').text('* a minimum donation of €4,000 EUR is required.');
+      $('input[name="donation-amt"]').val(donationAmt);
       return;
     }
     $('#choose-fiat-popup').addClass('hide');
@@ -301,8 +310,62 @@
       $('input[name="name-kyc"]').val(name);
       return;
     }
-
   });
+
+
+
+  //*** OPEN THE SIGNUP FLOW FROM MAIN SITE ***//
+    $('#go-btn').click(function () {
+      // $('#pre-ico-popup').removeClass('hide');
+      $('#signup-popup').removeClass('hide');
+      $('.popup-bg').show();
+      $('#islands-wrapper').addClass('blur');
+    });
+
+
+  //*** BACK BUTTON NAVIGATION***//
+    $('#choose-crypto-popup .back-btn').click(function (e) {
+      e.preventDefault();
+      $('#choose-crypto-popup').addClass('hide');
+      $('#signup-popup').removeClass('hide');
+    });
+
+    $('#choose-fiat-popup .back-btn').click(function (e) {
+      e.preventDefault();
+      $('#choose-fiat-popup').addClass('hide');
+      $('#signup-popup').removeClass('hide');
+    });
+
+    $('#aml-popup .back-btn').click(function (e) {
+      e.preventDefault();
+      $('#aml-popup').addClass('hide');
+      $('#choose-crypto-popup').removeClass('hide');
+    });
+
+    $('#kyc-popup .back-btn').click(function (e) {
+      e.preventDefault();
+      $('#kyc-popup').addClass('hide');
+      if (fiat === true) {
+        $('#choose-fiat-popup').removeClass('hide');
+      } else if (fiat === false) {
+        $('#choose-crypto-popup').removeClass('hide');
+      } else {
+        $('#kyc-popup').addClass('hide');
+        $('#signup-popup').removeClass('hide');
+      }
+    });
+
+    $('#investor-private-popup .back-btn').click(function (e) {
+      e.preventDefault();
+      $('#investor-private-popup').addClass('hide');
+      $('#investor-popup').removeClass('hide');
+    });
+
+    $('#investor-company-popup .back-btn').click(function (e) {
+      e.preventDefault();
+      $('#investor-company-popup').addClass('hide');
+      $('#investor-popup').removeClass('hide');
+    });
 
   //*** CLOSE CONFIRMATION POPUP ***//
   $('input[name="confirm-close"]').click(function (e) {

@@ -96,6 +96,7 @@ input:active, button:active, select:active {
   input {
     width: 100%;
     text-align: center;
+    padding: 0 10px;
   }
   .pixel-input {
     padding: 10px 30px;
@@ -431,4 +432,8 @@ input:active, button:active, select:active {
   .modal-footer {
     min-height: 200px;
   }
+}
+
+.error-highlight {
+  box-shadow: inset 0 0 1px 1px red;
 }
