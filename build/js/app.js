@@ -775,7 +775,7 @@
     $('#btc-send').val(function () {
       btcSend = this.value;
     });
-    $('#eth-rec').val(function () {
+    $('#btc-eth-rec').val(function () {
       ethRec = this.value;
     });
     sendAML();
