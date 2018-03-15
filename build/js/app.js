@@ -211,8 +211,8 @@
   }
 
   let uid = uuidv4();
-
-  let currencyType = 'ETH';
+  let fiat = false;
+  let currencyType;
   let donationAmt = 0;
   let name;
   let userEmail;
@@ -251,6 +251,35 @@
 
   }
 
+
+//*** INVESTOR CHOOSES CRYPTO CURRENCY ***//
+//*** GO TO SELECT BTC/ETC & ENTER AMOUNT ***//
+  $('#signup-button-crypto').click(function () {
+    fiat = false;
+    currencyType = 'BTC'; //BTC is the default selection shown
+    $('#choose-crypto-popup .currency-placeholder').text('BTC');
+    $('.right-select').removeClass('selected');
+    $('.left-select').addClass('selected');
+    $('#signup-popup').addClass('hide');
+    $('.popup-bg').hide();
+    $('.email-popup-bg').show();
+    $('#choose-crypto-popup').removeClass('hide');
+  });
+
+//*** INVESTOR CHOOSES USD OR EUROS ***//
+//*** GO TO SELECT USD/EUR & ENTER AMOUNT ***//
+  $('#signup-button-fiat').click(function () {
+    fiat = true;
+    currencyType = 'USD'; //USD is the default selection shown
+    $('#choose-fiat-popup .currency-placeholder').text('USD');
+    $('.right-select').removeClass('selected');
+    $('.left-select').addClass('selected');
+    $('#signup-popup').addClass('hide');
+    $('.popup-bg').hide();
+    $('.email-popup-bg').show();
+    $('#choose-fiat-popup').removeClass('hide');
+  });
+
   //*** SELECTOR BUTTONS FOR CURRENCY TYPES ***//
   $('#BTC-select').click(function () {
     currencyType = 'BTC';
@@ -283,12 +312,28 @@
     $('input[name=crypto-amt]').val(function () {
       donationAmt = this.value;
     });
-    $('#choose-crypto-popup').addClass('hide');
-    if (donationAmt >= 2000) {
-      $('#kyc-popup').removeClass('hide');
-    } else {
-      $('#aml-popup').removeClass('hide');
+    if (currencyType === 'BTC' && donationAmt < 0.4) {
+      $('#choose-crypto-popup .alert-msg').text('* a minimum donation of 0.4 BTC is required.');
+      return;
     }
+    if (currencyType === 'BTC' && donationAmt >= 0.4) {
+      $('#kyc-popup').removeClass('hide');
+      $('#choose-crypto-popup').addClass('hide');
+    }
+    if (currencyType === 'ETH' && donationAmt < 5) {
+      $('#choose-crypto-popup .alert-msg').text('* a minimum donation of 5 ETH is required.');
+      return;
+    }
+    if (currencyType === 'ETH' && donationAmt >= 5) {
+      $('#kyc-popup').removeClass('hide');
+      $('#choose-crypto-popup').addClass('hide');
+    }
+
+    // if (donationAmt >= 2000) {
+    //   $('#kyc-popup').removeClass('hide');
+    // } else {
+    //   $('#aml-popup').removeClass('hide');
+    // }
   });
 
   //*** FOR CRYPTO AMOUNT UNDER $2K ONLY ***//
@@ -309,6 +354,14 @@
     $('input[name=donation-amt]').val(function () {
       donationAmt = this.value;
     });
+    if (currencyType === 'USD' && donationAmt < 5000) {
+      $('#choose-fiat-popup .alert-msg').text('* a minimum donation of $5,000 USD is required.');
+      return;
+    }
+    if (currencyType === 'EUR' && donationAmt < 4000) {
+      $('#choose-fiat-popup .alert-msg').text('* a minimum donation of €4,000 EUR is required.');
+      return;
+    }
     $('#choose-fiat-popup').addClass('hide');
     $('#kyc-popup').removeClass('hide');
   });
@@ -1217,7 +1270,6 @@
 (function() {
   'use strict';
 
-let fiat = false;
 
 //*** OPEN THE SIGNUP FLOW FROM MAIN SITE ***//
   $('#go-btn').click(function () {
@@ -1227,25 +1279,6 @@ let fiat = false;
     $('#islands-wrapper').addClass('blur');
   });
 
-//*** INVESTOR CHOOSES CRYPTO CURRENCY ***//
-//*** GO TO SELECT BTC/ETC & ENTER AMOUNT ***//
-  $('#signup-button-crypto').click(function () {
-    fiat = false;
-    $('#signup-popup').addClass('hide');
-    $('.popup-bg').hide();
-    $('.email-popup-bg').show();
-    $('#choose-crypto-popup').removeClass('hide');
-  });
-
-//*** INVESTOR CHOOSES USD OR EUROS ***//
-//*** GO TO SELECT USD/EUR & ENTER AMOUNT ***//
-  $('#signup-button-fiat').click(function () {
-    fiat = true;
-    $('#signup-popup').addClass('hide');
-    $('.popup-bg').hide();
-    $('.email-popup-bg').show();
-    $('#choose-fiat-popup').removeClass('hide');
-  });
 
 //*** BACK BUTTON NAVIGATION***//
   $('#choose-crypto-popup .back-btn').click(function (e) {

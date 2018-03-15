@@ -1,7 +1,6 @@
 (function() {
   'use strict';
 
-let fiat = false;
 
 //*** OPEN THE SIGNUP FLOW FROM MAIN SITE ***//
   $('#go-btn').click(function () {
@@ -11,25 +10,6 @@ let fiat = false;
     $('#islands-wrapper').addClass('blur');
   });
 
-//*** INVESTOR CHOOSES CRYPTO CURRENCY ***//
-//*** GO TO SELECT BTC/ETC & ENTER AMOUNT ***//
-  $('#signup-button-crypto').click(function () {
-    fiat = false;
-    $('#signup-popup').addClass('hide');
-    $('.popup-bg').hide();
-    $('.email-popup-bg').show();
-    $('#choose-crypto-popup').removeClass('hide');
-  });
-
-//*** INVESTOR CHOOSES USD OR EUROS ***//
-//*** GO TO SELECT USD/EUR & ENTER AMOUNT ***//
-  $('#signup-button-fiat').click(function () {
-    fiat = true;
-    $('#signup-popup').addClass('hide');
-    $('.popup-bg').hide();
-    $('.email-popup-bg').show();
-    $('#choose-fiat-popup').removeClass('hide');
-  });
 
 //*** BACK BUTTON NAVIGATION***//
   $('#choose-crypto-popup .back-btn').click(function (e) {

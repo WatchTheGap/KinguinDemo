@@ -5,6 +5,14 @@ input:active, button:active, select:active {
   border: none;
 }
 
+.alert-msg {
+  text-align: center;
+  font-family: '04b_03', monospace;
+  color: red;
+  font-size: 14px;
+  margin: -15px 0 0 0;
+}
+
 #signup-popup {
   height: auto;
   width: 700px;

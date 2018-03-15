@@ -368,12 +368,12 @@
             <form class='currency-form' method='post'>
               <h4>choose crypto</h4>
               <div class='selector-buttons'>
-                <div class='input-wrapper left-select '>
+                <div class='input-wrapper left-select selected'>
                   <div class='pixel-input'>
                     <button  id='BTC-select' type='button' name="BTC-select"></button>
                   </div>
                 </div>
-                <div class='input-wrapper right-select selected'>
+                <div class='input-wrapper right-select'>
                   <div class='pixel-input'>
                     <button id='ETH-select' type='button' name='ETH-select'></button>
                   </div>
@@ -383,7 +383,7 @@
               <div class='input-wrapper currency-amt'>
                 <div class='pixel-input'>
                   <input type='text' name='crypto-amt' placeholder='0' required>
-                  <p class='currency-placeholder'>ETH</p>
+                  <p class='currency-placeholder'>BTC</p>
                 </div>
               </div>
               <div id='crypto-continue' class='input-wrapper continue-btn'>
@@ -394,6 +394,7 @@
             </form>
           </section>
           <section class='modal-footer'>
+            <p class='alert-msg'></p>
             <div class='input-wrapper back-btn'>
               <div class='pixel-input'>
                 <input type='submit' value='<'>
@@ -411,8 +412,8 @@
             <h1>SIGN UP TO PRE-ICO</h1>
           </section>
           <section id='choose-fiat-body' class='modal-body signup-body'>
-            <h3>choose currency</h3>
             <form class='currency-form' method='post'>
+              <h4>choose currency</h4>
               <div class='selector-buttons'>
                 <div class='input-wrapper left-select selected'>
                   <div class='pixel-input'>
@@ -425,7 +426,7 @@
                   </div>
                 </div>
               </div>
-              <h2>input amount</h2>
+              <h4>input amount</h4>
               <div class='input-wrapper currency-amt'>
                 <div class='pixel-input'>
                   <input type='text' name='donation-amt'  placeholder='0' required>
@@ -440,6 +441,7 @@
             </form>
           </section>
           <section class='modal-footer'>
+            <p class='alert-msg'></p>
             <div class='input-wrapper back-btn'>
               <div class='pixel-input'>
                 <input type='submit' value='<'>
@@ -1205,7 +1207,7 @@
         </div>
       </div>
 
-      <div id='aml-popup' class='signup-corners popup  popup-outer-wrapper'>
+      <div id='aml-popup' class='signup-corners popup hide popup-outer-wrapper'>
         <div class='popup-inner-wrapper'>
           <section class='modal-header signup'>
             <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
