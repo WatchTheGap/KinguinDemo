@@ -450,7 +450,7 @@
         </div>
       </div>
 
-      <div id='kyc-popup' class='signup-corners popup  popup-outer-wrapper'>
+      <div id='kyc-popup' class='signup-corners popup hide popup-outer-wrapper'>
         <div class='popup-inner-wrapper'>
 
           <section class='modal-header signup'>
@@ -476,31 +476,29 @@
 
           </section>
           <div class="consent-boxes">
-
-                <div class='checkbox-row'>
-                  <div class='checkbox-wrapper'>
-                    <div class='input-wrapper'>
-                      <div class='pixel-input'>
-                        <input id='tos-check' type='checkbox' required>
-                        <label for='tos-check'></label>
-                      </div>
-                    </div>
+            <div class='checkbox-row'>
+              <div class='checkbox-wrapper'>
+                <div class='input-wrapper'>
+                  <div class='pixel-input'>
+                    <input id='tos-check' type='checkbox' required>
+                    <label for='tos-check'></label>
                   </div>
-                  <p>Check here to confirm that you have read, understand and agree to the <a href='docs/KINGUIN_DOT_IO_TOS.pdf' target='_blank'>Terms of Use</a>.</p>
                 </div>
-                <div class='checkbox-row'>
-                  <div class='checkbox-wrapper'>
-                    <div class='input-wrapper'>
-                      <div class='pixel-input'>
-                        <input id='pp-check' type='checkbox' required>
-                        <label for='pp-check'></label>
-                      </div>
-                    </div>
-                  </div>
-                  <p>Check here to confirm that you consent to giving us your personal information in accordance with our <a href='docs/KINGUIN_DOT_IO_PRIVACY_POLICY.pdf' target='_blank'>Privacy Policy</a>.</p>
-                </div>
-
+              </div>
+              <p>Check here to confirm that you have read, understand and agree to the <a href='docs/KINGUIN_DOT_IO_TOS.pdf' target='_blank'>Terms of Use</a>.</p>
             </div>
+            <div class='checkbox-row'>
+              <div class='checkbox-wrapper'>
+                <div class='input-wrapper'>
+                  <div class='pixel-input'>
+                    <input id='pp-check' type='checkbox' required>
+                    <label for='pp-check'></label>
+                  </div>
+                </div>
+              </div>
+              <p>Check here to confirm that you consent to giving us your personal information in accordance with our <a href='docs/KINGUIN_DOT_IO_PRIVACY_POLICY.pdf' target='_blank'>Privacy Policy</a>.</p>
+            </div>
+          </div>
           <section class='modal-footer'>
             <div class='button-wrapper'>
               <div id='kyc-continue' class='input-wrapper continue-btn'>
@@ -1207,7 +1205,7 @@
         </div>
       </div>
 
-      <div id='aml-popup' class='signup-corners popup hide popup-outer-wrapper'>
+      <div id='aml-popup' class='signup-corners popup  popup-outer-wrapper'>
         <div class='popup-inner-wrapper'>
           <section class='modal-header signup'>
             <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
@@ -1227,14 +1225,40 @@
                   <input type='email' name='user-email' placeholder='YOUR EMAIL'>
                 </div>
               </div>
+            </form>
+          </section>
+          <div class="consent-boxes">
+            <div class='checkbox-row'>
+              <div class='checkbox-wrapper'>
+                <div class='input-wrapper'>
+                  <div class='pixel-input'>
+                    <input id='tos-check' type='checkbox' required>
+                    <label for='tos-check'></label>
+                  </div>
+                </div>
+              </div>
+              <p>Check here to confirm that you have read, understand and agree to the <a href='docs/KINGUIN_DOT_IO_TOS.pdf' target='_blank'>Terms of Use</a>.</p>
+            </div>
+            <div class='checkbox-row'>
+              <div class='checkbox-wrapper'>
+                <div class='input-wrapper'>
+                  <div class='pixel-input'>
+                    <input id='pp-check' type='checkbox' required>
+                    <label for='pp-check'></label>
+                  </div>
+                </div>
+              </div>
+              <p>Check here to confirm that you consent to giving us your personal information in accordance with our <a href='docs/KINGUIN_DOT_IO_PRIVACY_POLICY.pdf' target='_blank'>Privacy Policy</a>.</p>
+            </div>
+          </div>
+          <section class='modal-footer'>
+            <div class='button-wrapper'>
               <div id='aml-continue' class='input-wrapper continue-btn'>
                 <div class='pixel-input'>
                   <input type='submit' value='continue'>
                 </div>
               </div>
-            </form>
-          </section>
-          <section class='modal-footer'>
+            </div>
             <div class='input-wrapper back-btn'>
               <div class='pixel-input'>
                 <input type='submit' value='<'>
