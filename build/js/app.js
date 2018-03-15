@@ -1005,7 +1005,6 @@
   $('.popup-bg').click(function () {
     $('.popup').addClass('hide');
     $('.popup-bg').hide();
-    console.log("test");
     $('#islands-wrapper').removeClass('blur');
     $('.info-clicked').addClass('info-panel').removeClass('info-clicked');
   });
@@ -1113,7 +1112,6 @@
     $('#roadmap2-popup').addClass('hide');
     $('#islands-wrapper').removeClass('blur');
     $('.popup-bg').hide();
-    console.log("what the fuck")
   });
 
   $('#why-now').click(function() {
