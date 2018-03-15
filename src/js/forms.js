@@ -119,6 +119,13 @@
       alert('Please fill out the required fields.');
       return;
     }
+
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!re.test(String(userEmail).toLowerCase())) {
+      alert('Please enter a valid email.');
+      return;
+    }
+
     $.ajax({
       url: "https://api.kinguin.io/api/create-profile",
       type: "POST",
@@ -130,6 +137,7 @@
         "amount": donationAmt
       }
     });
+    $('#aml-popup').addClass('hide');
     $('#confirmation-popup').removeClass('hide');
   }
 
@@ -183,7 +191,6 @@
       userEmail = this.value;
     });
     createProfile();
-    $('#aml-popup').addClass('hide');
   });
 
   //*** INVESTOR SELECTS USD/EUR, INPUTS AMOUNT ***//
@@ -240,7 +247,7 @@
 
 //************************************************
 
-var form = document.forms.namedItem("personal-data-form");
+ var form = document.forms.namedItem("personal-data-form");
 
  var send = function() {
    var data = new FormData(form);
@@ -323,85 +330,144 @@ var form = document.forms.namedItem("personal-data-form");
   $('#investor-private-continue').click(function (e) {
     e.preventDefault();
     $('#full-name').val(function () {
-      fullName = this.value;
+      return fullName = this.value;
     });
     $('#country').val(function () {
-      country = this.value;
+      return country = this.value;
     });
     $('#apartment-no').val(function () {
-      apartmentNo = this.value;
+      return apartmentNo = this.value;
     });
     $('#building-no').val(function () {
-      buildingNo = this.value;
+      return buildingNo = this.value;
     });
     $('#street').val(function () {
-      street = this.value;
+      return street = this.value;
     });
     $('#city').val(function () {
-      city = this.value;
+      return city = this.value;
     });
     $('#zip-code').val(function () {
-      zip = this.value;
+      return zip = this.value;
     });
 
     if (country === "999") {
       console.log();
-      alert("Nice try. We know you're in another castle.");
+      alert("Nice try. We know you're in another castle. (You must select a country)");
       return;
-    } else if (country.length < 1) {
+    } 
+    if (country.length < 1) {
       alert("Please select your country");
       return;
-    } else {
-      kycProfile();
-      send();
-      $('#investor-private-popup').addClass('hide');
-      $('.email-popup-bg').hide();
     }
+
+    if ((typeof fullName !== 'string') || fullName === "none" || fullName.length === 0) {
+      alert("Please enter your name.");
+      return;
+    }
+    if ((typeof buildingNo !== 'string') || buildingNo === "none" || buildingNo.length === 0) {
+      alert("Please enter the building number of your address.");
+      return;
+    }
+    if ((typeof street !== 'string') || street === "none" || street.length === 0) {
+      alert("Please enter the street name of your address.");
+      return;
+    }
+    if ((typeof city !== 'string') || city === "none" || city.length === 0) {
+      alert("Please enter the city of your address..");
+      return;
+    }
+    if ((typeof zip !== 'string') || zip === "none" || zip.length === 0) {
+      alert("Please enter the zip of your address.");
+      return;
+    }
+    if (new FormData(form).getAll("ident-img")[0].size === 0 || new FormData(form).getAll("address-doc")[0].size === 0) {
+      alert("You must supply proof of identity and proof of address.");
+      return;
+    }
+    if ((typeof apartmentNo !== 'string') || apartmentNo === "none" || apartmentNo.length === 0) {
+      apartmentNo = 'none';
+    }
+
+    kycProfile();
+    send();
+    $('#investor-private-popup').addClass('hide');
+    $('.email-popup-bg').hide();
 
   });
 
   $('#investor-company-continue').click(function (e) {
     e.preventDefault();
     $('#c-full-name').val(function () {
-      fullName = this.value;
+      return fullName = this.value;
     });
     $('#company-name').val(function () {
-      company = this.value;
+      return company = this.value;
     });
     $('#reg-id').val(function () {
-      regID = this.value;
+      return regID = this.value;
     });
     $('#c-apartment-no').val(function () {
-      apartmentNo = this.value;
+      return apartmentNo = this.value;
     });
     $('#c-building-no').val(function () {
-      buildingNo = this.value;
+      return buildingNo = this.value;
     });
     $('#c-street').val(function () {
-      street = this.value;
+      return street = this.value;
     });
     $('#c-city').val(function () {
-      city = this.value;
+      return city = this.value;
     });
     $('#c-zip-code').val(function () {
-      zip = this.value;
+      return zip = this.value;
     });
     $('#c-country').val(function () {
-      country = this.value;
+      return country = this.value;
     });
 
     if (country === "999") {
       console.log();
-      alert("Nice try. We know you're in another castle.");
+      alert("Nice try. We know you're in another castle. (You must select a country)");
       return;
-    } else if (country.length < 1) {
+    } 
+    if (country.length < 1) {
       alert("Please select your country");
       return;
-    } else {
-      kycProfile();
-      $('#investor-company-popup').addClass('hide');
-      $('.email-popup-bg').hide();
     }
+
+    if ((typeof fullName !== 'string') || fullName === "none" || fullName.length === 0) {
+      alert("Please enter your name.");
+      return;
+    }
+    if ((typeof company !== 'string') || company === "none" || company.length === 0) {
+      alert("Please enter a company name.");
+      return;
+    }
+    if ((typeof regID !== 'string') || regID === "none" || regID.length === 0) {
+      alert("Please enter a company registration ID.");
+      return;
+    }
+    if ((typeof buildingNo !== 'string') || buildingNo === "none" || buildingNo.length === 0) {
+      alert("Please enter the building number of your address.");
+      return;
+    }
+    if ((typeof street !== 'string') || street === "none" || street.length === 0) {
+      alert("Please enter the street name of your address.");
+      return;
+    }
+    if ((typeof city !== 'string') || city === "none" || city.length === 0) {
+      alert("Please enter the city of your address..");
+      return;
+    }
+    if ((typeof zip !== 'string') || zip === "none" || zip.length === 0) {
+      alert("Please enter the zip of your address.");
+      return;
+    }
+
+    kycProfile();
+    $('#investor-company-popup').addClass('hide');
+    $('.email-popup-bg').hide();
 
   });
 
