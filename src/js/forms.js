@@ -120,6 +120,7 @@
       return;
     }
 
+
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!re.test(String(userEmail).toLowerCase())) {
       alert('Please enter a valid email.');
@@ -136,9 +137,15 @@
         "currency": currencyType,
         "amount": donationAmt
       }
+    })
+    .done(function () {
+      $('#aml-popup').addClass('hide');
+      $('#confirmation-popup').removeClass('hide');
+    })
+    .fail(function () {
+      alert('Something went wrong! :(');
     });
-    $('#aml-popup').addClass('hide');
-    $('#confirmation-popup').removeClass('hide');
+
   }
 
   //*** SELECTOR BUTTONS FOR CURRENCY TYPES ***//
@@ -270,6 +277,8 @@
 
    $.ajax(settings).done(function (response) {
      kycProfile();
+   }).fail(function () {
+     alert('Something went wrong! =(');
    });
    return false;
  };
@@ -305,11 +314,17 @@
         "email": userEmail,
         "addr_verify_doc": addressDoc
       })
+    })
+    .done(function () {
+      $('.popup').addClass('hide');
+      $('.email-popup-bg').hide();
+      $('#confirmation-popup').removeClass('hide');
+      $('.popup-bg').show();
+    })
+    .fail(function () {
+      alert('Something went wrong! :(');
     });
-    $('.popup').addClass('hide');
-    $('.email-popup-bg').hide();
-    $('#confirmation-popup').removeClass('hide');
-    $('.popup-bg').show();
+
   };
 
 
@@ -492,12 +507,16 @@
         "addr_receive_eth": ethRec,
         "addr_send_btc": btcSend
       }
+    }).done(function () {
+      $('.popup').addClass('hide');
+      $('.email-popup-bg').hide();
+      $('#confirmation-popup').removeClass('hide');
+      $('.popup-bg').show();
+    })
+    .fail(function () {
+      alert('Something went wrong! :(');
     });
 
-    $('.popup').addClass('hide');
-    $('.email-popup-bg').hide();
-    $('#confirmation-popup').removeClass('hide');
-    $('.popup-bg').show();
   };
 
   $('#aml-eth-continue').click(function (e) {
@@ -509,7 +528,6 @@
       ethRec = this.value;
     });
     sendAML();
-    // TODO: ADD THANK YOU POPUP
   });
 
   $('#aml-btc-continue').click(function (e) {
@@ -518,7 +536,6 @@
       btcSend = this.value;
     });
     sendAML();
-    // TODO: ADD THANK YOU POPUP
   });
 
   $('#aml-fiat-continue').click(function (e) {
@@ -527,7 +544,6 @@
       ethRec = this.value;
     });
     sendAML();
-    // TODO: ADD THANK YOU POPUP
   });
 
 }());
