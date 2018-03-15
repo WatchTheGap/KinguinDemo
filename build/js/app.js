@@ -194,7 +194,9 @@
       case ('kyc-eur'):
       blur();
       $('#investor-popup').removeClass('hide');
+      break;
     }
+
   });
 
   //***************************************************
@@ -305,13 +307,13 @@
     .siblings('.left-select').removeClass('selected');
     $('.currency-placeholder').text('ETH');
   });
-  $('#USD-select').focus(function () {
+  $('#USD-select').click(function () {
     currencyType = 'USD';
     $('.left-select').addClass('selected')
     .siblings('.right-select').removeClass('selected');
     $('.currency-placeholder').text('USD');
   });
-  $('#EUR-select').focus(function () {
+  $('#EUR-select').click(function () {
     currencyType = 'EUR';
     $('.right-select').addClass('selected')
     .siblings('.left-select').removeClass('selected');
