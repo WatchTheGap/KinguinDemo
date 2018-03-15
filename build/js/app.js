@@ -115,6 +115,13 @@
   //***************************************************
   //***TEXT FOR CONFIRMATION POPUPS
   //***************************************************
+
+  let mailingList = {
+    'title': 'Success!',
+    'subtitle': 'Thank you for signing up to our mailing list!',
+    'body': 'Please check your email and click the confirmation link to complete the process.'
+  };
+
   let phaseOne = {
     'title': 'Success!',
     'subtitle': 'Your account has been created.',
@@ -193,8 +200,10 @@
   //***************************************************
 
   $('#notify-form').submit(function () {
-    alert('Success!');
-    // TODO: REPLACE THIS WITH A BETTER MESSAGE AND OR CUSTOM POPUP
+    $('#mailinglist-popup').removeClass('hide');
+    $('.confirm-title').text(mailingList.title);
+    $('.confirm-subtitle').text(mailingList.subtitle);
+    $('.confirm-body').text(mailingList.body);
   });
 
   $('.currency-form', '#signup-form', '#personal-data-form', '#company-data-form', '#funding-form', '#bank-info-form').submit(function (e) {
@@ -244,6 +253,9 @@
     .done(function () {
       $('#aml-popup').addClass('hide');
       $('#confirmation-popup').removeClass('hide');
+      $('.confirm-title').text(phaseOne.title);
+      ('.confirm-subtitle').text(phaseOne.subtitle);
+      ('.confirm-body').text(phaseOne.body);
     })
     .fail(function () {
       alert('Something went wrong! :(');
@@ -391,7 +403,8 @@
   $('input[name="confirm-close"]').click(function (e) {
     e.preventDefault();
     $('#confirmation-popup').addClass('hide');
-    $('.email-poppup-bg').hide();
+    $('#mailinglist-popup').addClass('hide');
+    $('.email-popup-bg').hide();
     $('.popup-bg').hide();
     $('#islands-wrapper').removeClass('blur');
   });
@@ -481,6 +494,9 @@
       $('.popup').addClass('hide');
       $('.email-popup-bg').hide();
       $('#confirmation-popup').removeClass('hide');
+      $('.confirm-title').text(phaseTwo.title);
+      $('.confirm-subtitle').text(phaseTwo.subtitle);
+      $('.confirm-body').text(phaseTwo.body);
       $('.popup-bg').show();
     })
     .fail(function () {
@@ -658,6 +674,9 @@
       $('.popup').addClass('hide');
       $('.email-popup-bg').hide();
       $('#confirmation-popup').removeClass('hide');
+      $('.confirm-title').text(phaseThree.title);
+      $('.confirm-subtitle').text(phaseThree.subtitle);
+      $('.confirm-body').text(phaseThree.body);
       $('.popup-bg').show();
     })
     .fail(function () {
