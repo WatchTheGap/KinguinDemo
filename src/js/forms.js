@@ -92,6 +92,12 @@
       blur();
       $('#investor-popup').removeClass('hide');
       break;
+      case('roadmap'):
+      $('#roadmap2-popup').removeClass('hide');
+      $('#close-x-1').removeClass('hide');
+      $('.popup-bg').show();
+      $('#islands-wrapper').addClass('blur');
+      break;
     }
 
   });
@@ -273,7 +279,8 @@
 
   //*** INVESTOR SELECTS USD/EUR, INPUTS AMOUNT ***//
   //*** FIAT ALWAYS GOES TO KYC POPUP ***//
-  $('#fiat-continue').click(function () {
+  $('#fiat-continue').click(function (e) {
+    e.preventDefault();
     $('input[name=donation-amt]').val(function () {
       donationAmt = this.value;
     });
