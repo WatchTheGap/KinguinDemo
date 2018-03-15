@@ -377,8 +377,14 @@
     $('input[name=user-email-kyc]').val(function () {
       userEmail = this.value;
     });
-    createProfile();
-    $('#kyc-popup').addClass('hide');
+    if ($('#tos-check').is(':checked') && $('#pp-check').is(':checked')) {
+      createProfile();
+      $('#kyc-popup').addClass('hide');
+    } else {
+      $('#kyc-popup .alert-msg').text('* Please accept our Terms & Conditions.');
+      return;
+    }
+  
   });
 
   //*** CLOSE CONFIRMATION POPUP ***//
