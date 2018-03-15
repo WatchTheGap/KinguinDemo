@@ -111,10 +111,6 @@
     $('.confirm-body').text(mailingList.body);
   });
 
-  // $('.currency-form', '#signup-form', '#personal-data-form', '#company-data-form', '#funding-form', '#bank-info-form').submit(function (e) {
-  //   e.preventDefault();
-  // });
-
   //******************************************************
 
   function uuidv4() {
