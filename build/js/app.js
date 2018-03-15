@@ -530,10 +530,6 @@
     if (country.length < 1) {
       alert("Please select your country");
       return;
-    } else {
-      send();
-      $('#investor-private-popup').addClass('hide');
-      $('.email-popup-bg').hide();
     }
 
     if ((typeof fullName !== 'string') || fullName === "none" || fullName.length === 0) {
@@ -564,7 +560,6 @@
       apartmentNo = 'none';
     }
 
-    kycProfile();
     send();
     $('#investor-private-popup').addClass('hide');
     $('.email-popup-bg').hide();
@@ -601,16 +596,6 @@
       return country = this.value;
     });
 
-    if (country === "999") {
-      console.log();
-      alert("Nice try. We know you're in another castle. (You must select a country)");
-      return;
-    }
-    if (country.length < 1) {
-      alert("Please select your country");
-      return;
-    }
-
     if ((typeof fullName !== 'string') || fullName === "none" || fullName.length === 0) {
       alert("Please enter your name.");
       return;
@@ -640,7 +625,7 @@
       return;
     }
 
-    kycProfile();
+    send();
     $('#investor-company-popup').addClass('hide');
     $('.email-popup-bg').hide();
 
