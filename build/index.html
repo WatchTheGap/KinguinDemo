@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kinguin.io: ICO March 30th</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115384013-1"></script>
+
+<script>
+
+ window.dataLayer = window.dataLayer || [];
+
+ function gtag(){dataLayer.push(arguments);}
+
+ gtag('js', new Date());
+
+
+ gtag('config', 'UA-115384013-1');
+
+</script>
+
   </head>
   <body>
 
@@ -51,6 +69,8 @@
 
     <!-- for closing popups on click outside -->
     <div class='popup-bg'></div>
+    <div class='email-popup-bg'></div>
+
 
     <div class='roadmap-wrapper'>
       <div id='roadmap2-popup' class='popup hide'>
@@ -87,10 +107,10 @@
 
         <div class='savings-sign'>
           <p>community savings</p>
-          <h1>$175,464,578</h1>
+          <!-- <h1>$175,464,578</h1> -->
 
-          <!-- <h1 class='mobile-hide'>$175,464,578</h1> -->
-          <!-- <h1 class='mobile-show'>$175 MIL</h1> -->
+          <h1 class='mobile-hide'>$175,464,578</h1>
+          <h1 class='mobile-show'>$175 MIL</h1>
 
         </div>
 
@@ -154,19 +174,43 @@
 
       <div class='' id='about-island'>
         <img id='cloud1' class='mobile-hide' src='img/cloud.png' alt='clouds'>
-        <div id='team' class='mobile-hide'></div>
-        <div id='company' class='mobile-hide'></div>
-        <div id='contactus' class='mobile-hide'></div>
-        <div id='ourstory' class='mobile-hide'></div>
+        <img id='about-block' class='mobile-hide' src='img/About.png' alt=''>
+
+        <!-- <div id='team' class='mobile-hide'>
+        </div> -->
+        <img class='team mobile-hide' src='img/Team_hover.png' alt=''>
+        <img class='shadows mobile-hide' src='img/Shadows.png' alt=''>
+        <img class='figures mobile-hide' src='img/Team_figures.png' alt=''>
+        <img class='figures-mobile mobile-show' src='img/figures_mobile.png' alt=''>
+
+        <img class='company mobile-hide' src='img/Company.png' alt=''>
+        <img class='company-penguin' src='img/Company_penguin.png' alt=''>
+      <img class='contactus mobile-hide' src='img/ContactUs.png' alt''>
+        <!-- <div id='ourstory' class='mobile-hide'>
+        </div> -->
+        <img class='ourstory mobile-hide' src='img/OurStory.png' alt=''>
         <img id='advisors' class='mobile-hide' src='img/Advisors.png'>
-        <div id='bulb' class='mobile-hide'></div>
+        <img class='advisor-block' src='img/Advisor_block.png' alt=''>
+        <img class='book mobile-hide' src='img/Book.png' alt="">
+        <img class='book-mobile mobile-show' src='img/Book_mobile.png' alt="">
+        <img class='letter' src='img/Letter.png' alt="">
+
+        <div class='bulb mobile-hide'>
+        </div>
+        <img class=' bulb-mobile mobile-show' src='img/Bulb_mobile.png' alt=''>
         <img id='stairs-top' class='mobile-hide' src='img/Landing_About_Stairs.png' alt='floating stairs'>
         <img id='stairs-mid' class='mobile-hide' src='img/Middle_Stairs.png' alt='floating stairs'>
         <img id='cloud2' class='mobile-hide' src='img/cloud.png' alt='clouds'>
 
+        <p class='titles team-title'>TEAM</p>
+        <p class='titles company-title'>COMPANY</p>
+        <p class='titles story-title'>OUR STORY</p>
+        <p class='titles advisors-title'>ADVISORS</p>
+        <p class='titles contact-title'>CONTACT US</p>
+
       </div>
 
-      <div class='mobile-hide' id='strategy-island'>
+      <div class='' id='strategy-island'>
         <img id='tiny-cloud' class='mobile-hide' src='img/cloud.png' alt='clouds'>
         <img id='stairs-end' class='mobile-hide' src='img/Info_Strategy_Stairs.png' alt='floating stairs'>
         <img id='strategy-b' src='img/Strategy_B.png' alt='strategy and analysis'>
@@ -184,7 +228,7 @@
 
       </div>
 
-      <div class='mobile-hide' id='info-island'>
+      <div class='' id='info-island'>
         <img id='info-block' src='img/Info_block.png'>
         <div id='tokens'></div>
         <a href='docs/KINGUIN_DOT_IO_Whitepaper_2.1.1.pdf' target='_blank'><div id='whitepaper'></div></a>
@@ -195,9 +239,16 @@
     </div> <!-- for bluring -->
 
     <!-- MODALS -->
-      <!-- Landing Island Popups -->
-    <div class='popup-wrapper'>
 
+    <div id='alt-roadmap-popup' class='hide popup popup-outer-wrapper'>
+      <div class='popup-inner-wrapper'>
+
+      </div>
+    </div>
+
+
+      <!-- Landing Island Popups -->
+    <div class='popup-wrapper'> <!-- NOTIFY ME POPUP -->
       <div id='notify-popup' class='popup hide popup-outer-wrapper'>
         <div class='popup-inner-wrapper'>
           <section class='modal-header'>
@@ -224,8 +275,95 @@
       </div>
     </div>
 
+    <div class='popup-wrapper'> <!-- MAILING LIST CONFIRMATION POPUP -->
+      <div id='mailinglist-popup' class='hide popup  popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>NOTIFY ME</h1>
+          </section>
+          <section class='modal-body'>
+            <h1 class='confirm-title'></h1>
+            <p class='confirm-subtitle'></p>
+            <p class='confirm-body'></p>
+            <div class='input-wrapper continue-btn'>
+              <div class='pixel-input'>
+                <input type='submit' name='confirm-close' value='CLOSE'>
+              </div>
+            </div>
+          </section>
+          <section class='modal-footer'></section>
+        </div>
+      </div>
+    </div>
+
+    <div class='popup-wrapper'> <!-- AIRDROP POPUP -->
+      <div id='airdrop-popup' class='popup hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>AIRDROP</h1>
+          </section>
+          <section class='modal-body'>
+            <form class='' action='' method='post'>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input type='text' name='telegram-email' placeholder='email' required>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input type='text' name='telegram-id' placeholder='telegram id'>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input type='text' name='referal-id' placeholder='referal id'>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input type='text' name='erc20' placeholder='erc20 wallet address'>
+                </div>
+              </div>
+              <div class='input-wrapper continue-btn'>
+                <div class='pixel-input'>
+                  <input type='submit' name='telegram-submit' value='REGISTER'>
+                </div>
+              </div>
+            </form>
+          </section>
+          <section class='modal-footer'>
+
+          </section>
+        </div>
+      </div>
+    </div>
+
            <!-- signups -->
-    <div class='signup-wrapper'>
+    <div class='popup-wrapper'> <!-- CONFIRMATION POPUP -->
+      <div id='confirmation-popup' class='signup-corners hide popup  popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header signup'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>SIGN UP TO PRE-ICO</h1>
+          </section>
+          <section class='modal-body'>
+            <h1 class='confirm-title'>SUCCESS!</h1>
+            <p class='confirm-subtitle'>Your account has been created.</p>
+            <p class='confirm-body'>Please check your email and follow the confirmation link to continue the signup process.</p>
+            <div class='input-wrapper continue-btn'>
+              <div class='pixel-input'>
+                <input type='submit' name='confirm-close' value='CLOSE'>
+              </div>
+            </div>
+          </section>
+          <section class='modal-footer'></section>
+        </div>
+      </div>
+    </div>
+
+    <div class='popup-wrapper-short'>
 
       <div id='signup-popup' class='signup-corners popup hide popup-outer-wrapper'>
         <div class='popup-inner-wrapper'>
@@ -284,7 +422,7 @@
               <h4>input amount</h4>
               <div class='input-wrapper currency-amt'>
                 <div class='pixel-input'>
-                  <input type='text' name='crypto-amt' placeholder='0'>
+                  <input type='text' name='crypto-amt' placeholder='0' required>
                   <p class='currency-placeholder'>BTC</p>
                 </div>
               </div>
@@ -296,6 +434,12 @@
             </form>
           </section>
           <section class='modal-footer'>
+            <p class='alert-msg'></p>
+            <div class='input-wrapper back-btn'>
+              <div class='pixel-input'>
+                <input type='submit' value='<'>
+              </div>
+            </div>
             <img id='progress-bar' src='img/Progress_Bar_1.png' alt='progress bar'>
           </section>
         </div>
@@ -308,8 +452,8 @@
             <h1>SIGN UP TO PRE-ICO</h1>
           </section>
           <section id='choose-fiat-body' class='modal-body signup-body'>
-            <h3>choose currency</h3>
             <form class='currency-form' method='post'>
+              <h4>choose currency</h4>
               <div class='selector-buttons'>
                 <div class='input-wrapper left-select selected'>
                   <div class='pixel-input'>
@@ -322,10 +466,10 @@
                   </div>
                 </div>
               </div>
-              <h2>input amount</h2>
+              <h4>input amount</h4>
               <div class='input-wrapper currency-amt'>
                 <div class='pixel-input'>
-                  <input type='text' name='donation-amt'  placeholder='0'>
+                  <input type='text' name='donation-amt'  placeholder='0' required>
                   <p class='currency-placeholder'>USD</p>
                 </div>
               </div>
@@ -337,6 +481,12 @@
             </form>
           </section>
           <section class='modal-footer'>
+            <p class='alert-msg'></p>
+            <div class='input-wrapper back-btn'>
+              <div class='pixel-input'>
+                <input type='submit' value='<'>
+              </div>
+            </div>
             <img id='progress-bar' src='img/Progress_Bar_1.png' alt='progress bar'>
           </section>
         </div>
@@ -344,31 +494,67 @@
 
       <div id='kyc-popup' class='signup-corners popup hide popup-outer-wrapper'>
         <div class='popup-inner-wrapper'>
+
           <section class='modal-header signup'>
             <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
             <h1>SIGN UP TO PRE-ICO</h1>
           </section>
-          <section id='kyc-body' class='modal-body signup-body'>
+          <section class='modal-body signup-body'>
             <h3>begin kyc process</h3>
-            <form id='signup-form' method='post'>
+            <a href=#><h6>What's this?</h6></a>
+            <form id='signup-form'>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input type='text' align='center' name='name-kyc' placeholder='YOUR NAME'>
+                  <input type='text' align='center' name='name-kyc' placeholder='YOUR NAME' required>
                 </div>
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input type='email' name='user-email-kyc' placeholder='YOUR EMAIL'>
+                  <input type='email' name='user-email-kyc' placeholder='YOUR EMAIL' required>
                 </div>
               </div>
-              <div id='kyc-continue' class='input-wrapper'>
-                <div class='pixel-input'>
-                  <input type='submit' value='continue'>
-                </div>
-              </div>
+
             </form>
+
           </section>
+          <div class="consent-boxes">
+            <p class='alert-msg'></p>
+            <div class='checkbox-row'>
+              <div class='checkbox-wrapper'>
+                <div class='input-wrapper'>
+                  <div class='pixel-input'>
+                    <input id='tos-check' type='checkbox' required>
+                    <label for='tos-check'></label>
+                  </div>
+                </div>
+              </div>
+              <p>Check here to confirm that you have read, understand and agree to the <a href='docs/KINGUIN_DOT_IO_TOS.pdf' target='_blank'>Terms of Use</a>.</p>
+            </div>
+            <div class='checkbox-row'>
+              <div class='checkbox-wrapper'>
+                <div class='input-wrapper'>
+                  <div class='pixel-input'>
+                    <input id='pp-check' type='checkbox' required>
+                    <label for='pp-check'></label>
+                  </div>
+                </div>
+              </div>
+              <p>Check here to confirm that you consent to giving us your personal information in accordance with our <a href='docs/KINGUIN_DOT_IO_PRIVACY_POLICY.pdf' target='_blank'>Privacy Policy</a>.</p>
+            </div>
+          </div>
           <section class='modal-footer'>
+            <div class='button-wrapper'>
+              <div id='kyc-continue' class='input-wrapper continue-btn'>
+                <div class='pixel-input'>
+                  <input type='button' value='continue'>
+                </div>
+              </div>
+            </div>
+            <div class='input-wrapper back-btn'>
+              <div class='pixel-input'>
+                <input type='button' value='<'>
+              </div>
+            </div>
             <img id='progress-bar' src='img/Progress_Bar_2.png' alt='progress bar'>
           </section>
         </div>
@@ -377,7 +563,6 @@
       <div id='investor-popup' class='signup-corners popup hide popup-outer-wrapper'>
         <div class='popup-inner-wrapper'>
           <section id='signup-header' class='modal-header signup'>
-            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
             <h1>SIGN UP TO PRE-ICO</h1>
           </section>
           <section id='signup-body' class='modal-body signup-body'>
@@ -406,12 +591,11 @@
       <div id='investor-private-popup' class='signup-corners popup hide popup-outer-wrapper'>
         <div class='popup-inner-wrapper'>
           <section class='modal-header signup'>
-            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
             <h1>SIGN UP TO PRE-ICO</h1>
           </section>
           <section id='investor-private-body' class='modal-body signup-body'>
             <h3>fill in data</h3>
-            <form id='personal-data-form' method='post'>
+            <form id='personal-data-form' method='post' name='personal-data-form'>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
                   <input id='full-name' type='text' align='center' name='name' placeholder='FULL NAME'>
@@ -419,16 +603,280 @@
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <select id='nationality' type='select' name='nationality' placeholder='NATIONALITY'>
-                    <option value='klingon'>klingon</option>
-                    <option value='human'>human</option>
-                    <option value='cardassian'>cardassian</option>
+                  <select id='country' type='select' name='country' placeholder='COUNTRY'>
+                    <option value="1">Afghanistan</option>
+                    <option value="2">Åland Islands</option>
+                    <option value="3">Albania</option>
+                    <option value="4">Algeria</option>
+                    <option value="5">American Samoa</option>
+                    <option value="6">Andorra</option>
+                    <option value="7">Angola</option>
+                    <option value="8">Anguilla and Barbuda</option>
+                    <option value="9">Antarctica</option>
+                    <option value="10">Antigua</option>
+                    <option value="11">Argentina</option>
+                    <option value="12">Armenia</option>
+                    <option value="13">Aruba</option>
+                    <option value="14">Australia</option>
+                    <option value="15">Austria</option>
+                    <option value="16">Azerbaijan</option>
+                    <option value="17">Bahamas</option>
+                    <option value="18">Bahrain</option>
+                    <option value="19">Bangladesh</option>
+                    <option value="20">Barbados</option>
+                    <option value="21">Belarus</option>
+                    <option value="22">Belgium</option>
+                    <option value="23">Belize</option>
+                    <option value="24">Benin</option>
+                    <option value="25">Bermuda</option>
+                    <option value="26">Bhutan</option>
+                    <option value="27">Bolivia (Plurinational State of)</option>
+                    <option value="28">Bonaire, Sint Eustatius and Saba</option>
+                    <option value="29">Bosnia and Herzegovina</option>
+                    <option value="30">Botswana</option>
+                    <option value="31">Bouvet Island</option>
+                    <option value="32">Brazil</option>
+                    <option value="33">British Indian Ocean Territory</option>
+                    <option value="34">Brunei Darussalam</option>
+                    <option value="35">Bulgaria</option>
+                    <option value="36">Burkina</option>
+                    <option value="37">Burundi</option>
+                    <option value="38">Cabo Verde</option>
+                    <option value="39">Cambodia</option>
+                    <option value="40">Cameroon</option>
+                    <option value="41">Canada</option>
+                    <option value="42">Cayman Islands</option>
+                    <option value="43">Central African Republic</option>
+                    <option value="44">Chad</option>
+                    <option value="45">Chile</option>
+                    <option value="46">China</option>
+                    <option value="47">Christmas Island</option>
+                    <option value="48">Cocos (Keeling) Islands</option>
+                    <option value="49">Colombia</option>
+                    <option value="50">Comoros</option>
+                    <option value="51">Congo</option>
+                    <option value="52">Congo (Democratic Republic of the)</option>
+                    <option value="53">Cook Islands</option>
+                    <option value="54">Costa Rica</option>
+                    <option value="55">Côte d'Ivoire</option>
+                    <option value="56">Croatia</option>
+                    <option value="57">Cuba</option>
+                    <option value="58">Curaçao</option>
+                    <option value="59">Cyprus</option>
+                    <option value="60">Czech Republic</option>
+                    <option value="61">Denmark</option>
+                    <option value="62">Djibouti</option>
+                    <option value="63">Dominica</option>
+                    <option value="64">Dominican Republic</option>
+                    <option value="65">Ecuador</option>
+                    <option value="66">Egypt</option>
+                    <option value="67">El Salvador</option>
+                    <option value="68">Equatorial Guinea</option>
+                    <option value="69">Eritrea</option>
+                    <option value="70">Estonia</option>
+                    <option value="71">Ethiopia</option>
+                    <option value="72">Falkland Islands (Malvinas)</option>
+                    <option value="73">Faroe Islands</option>
+                    <option value="74">Fiji</option>
+                    <option value="75">Finland</option>
+                    <option value="76">France</option>
+                    <option value="77">French Guiana</option>
+                    <option value="78">French Polynesia</option>
+                    <option value="79">French Southern Territories</option>
+                    <option value="80">Gabon</option>
+                    <option value="81">Gambia</option>
+                    <option value="82">Georgia</option>
+                    <option value="83">Germany</option>
+                    <option value="84">Ghana</option>
+                    <option value="85">Gibraltar</option>
+                    <option value="86">Greece</option>
+                    <option value="87">Greenland</option>
+                    <option value="88">Grenada</option>
+                    <option value="89">Guadeloupe</option>
+                    <option value="90">Guam</option>
+                    <option value="91">Guatemala</option>
+                    <option value="92">Guernsey</option>
+                    <option value="93">Guinea</option>
+                    <option value="94">Guinea-Bissau</option>
+                    <option value="95">Guyana</option>
+                    <option value="96">Haiti</option>
+                    <option value="97">Heard Island and McDonald Islands</option>
+                    <option value="98">Holy See (Vatican City State)</option>
+                    <option value="99">Honduras</option>
+                    <option value="100">Hong Kong</option>
+                    <option value="101">Hungary</option>
+                    <option value="999" selected="selected">Hyrule</option>
+                    <option value="102">Iceland</option>
+                    <option value="103">India</option>
+                    <option value="104">Indonesia</option>
+                    <option value="105">Iran</option>
+                    <option value="106">Iraq</option>
+                    <option value="107">Ireland</option>
+                    <option value="108">Isle of Man</option>
+                    <option value="109">Israel</option>
+                    <option value="110">Italy</option>
+                    <option value="111">Jamaica</option>
+                    <option value="112">Japan</option>
+                    <option value="113">Jersey</option>
+                    <option value="114">Jordan</option>
+                    <option value="115">Kazakhstan</option>
+                    <option value="116">Kenya</option>
+                    <option value="117">Kiribati</option>
+                    <option value="118">Korea (Democratic People's Republic of)</option>
+                    <option value="119">Korea (Republic of)</option>
+                    <option value="120">Kuwait</option>
+                    <option value="121">Kyrgyzstan</option>
+                    <option value="122">Lao People's Democratic Republic</option>
+                    <option value="123">Latvia</option>
+                    <option value="124">Lebanon</option>
+                    <option value="125">Lesotho</option>
+                    <option value="126">Liberia</option>
+                    <option value="127">Libya</option>
+                    <option value="128">Liechtenstein</option>
+                    <option value="129">Lithuania</option>
+                    <option value="130">Luxembourg</option>
+                    <option value="131">Macao</option>
+                    <option value="132">Macedonia (the former Yugoslav Republic of)</option>
+                    <option value="133">Madagascar</option>
+                    <option value="134">Malawi</option>
+                    <option value="135">Malaysia</option>
+                    <option value="136">Maldives</option>
+                    <option value="137">Mali</option>
+                    <option value="138">Malta</option>
+                    <option value="139">Marshall Islands</option>
+                    <option value="140">Martinique</option>
+                    <option value="141">Mauritania</option>
+                    <option value="142">Mauritius</option>
+                    <option value="143">Mayotte</option>
+                    <option value="144">Mexico</option>
+                    <option value="145">Micronesia (Federated States of)</option>
+                    <option value="146">Moldova</option>
+                    <option value="147">Monaco</option>
+                    <option value="148">Mongolia</option>
+                    <option value="149">Montenegro</option>
+                    <option value="150">Montserrat</option>
+                    <option value="151">Morocco</option>
+                    <option value="152">Mozambique</option>
+                    <option value="153">Myanmar</option>
+                    <option value="154">Namibia</option>
+                    <option value="155">Nauru</option>
+                    <option value="156">Nepal</option>
+                    <option value="157">Netherlands</option>
+                    <option value="158">New Caledonia</option>
+                    <option value="159">New Zealand</option>
+                    <option value="160">Nicaragua</option>
+                    <option value="161">Niger</option>
+                    <option value="162">Nigeria</option>
+                    <option value="163">Niue</option>
+                    <option value="164">Norfolk Island</option>
+                    <option value="165">Northern Mariana Islands</option>
+                    <option value="166">Norway</option>
+                    <option value="167">Oman</option>
+                    <option value="168">Pakistan</option>
+                    <option value="169">Palau</option>
+                    <option value="170">Palestine, State of</option>
+                    <option value="171">Panama</option>
+                    <option value="172">Papua New Guinea</option>
+                    <option value="173">Paraguay</option>
+                    <option value="174">Peru</option>
+                    <option value="175">Philippines</option>
+                    <option value="176">Pitcairn</option>
+                    <option value="177">Poland</option>
+                    <option value="178">Portugal</option>
+                    <option value="179">Puerto Rico</option>
+                    <option value="180">Qatar</option>
+                    <option value="181">Réunion</option>
+                    <option value="182">Romania</option>
+                    <option value="183">Russian Federation</option>
+                    <option value="184">Rwanda</option>
+                    <option value="185">Saint Barthélemy</option>
+                    <option value="186">Saint Helena, Ascension and Tristan da Cunha</option>
+                    <option value="187">Saint Kitts and Nevis</option>
+                    <option value="188">Saint Lucia</option>
+                    <option value="189">Saint Martin (French part)</option>
+                    <option value="190">Saint Pierre and Miquelon</option>
+                    <option value="191">Saint Vincent and the Grenadines</option>
+                    <option value="192">Samoa</option>
+                    <option value="193">San Marino</option>
+                    <option value="194">Sao Tome and Principe</option>
+                    <option value="195">Saudi Arabia</option>
+                    <option value="196">Senegal</option>
+                    <option value="197">Serbia</option>
+                    <option value="198">Seychelles</option>
+                    <option value="199">Sierra Leone</option>
+                    <option value="200">Singapore</option>
+                    <option value="201">Sint Maarten (Dutch part)</option>
+                    <option value="202">Slovakia</option>
+                    <option value="203">Slovenia</option>
+                    <option value="204">Solomon Islands</option>
+                    <option value="203">Slovenia</option>
+                    <option value="204">Solomon</option>
+                    <option value="205">Somalia</option>
+                    <option value="206">South Africa</option>
+                    <option value="207">South Georgia and the South Sandwich Islands</option>
+                    <option value="208">South Sudan</option>
+                    <option value="209">Spain</option>
+                    <option value="210">Sri Lanka</option>
+                    <option value="211">Sudan</option>
+                    <option value="212">Suriname</option>
+                    <option value="213">Svalbard and Jan Mayen</option>
+                    <option value="214">Swaziland</option>
+                    <option value="215">Sweden</option>
+                    <option value="216">Switzerland</option>
+                    <option value="217">Syrian Arab Republic</option>
+                    <option value="218">Taiwan, Province of China</option>
+                    <option value="219">Tajikistan</option>
+                    <option value="220">Tanzania, United Republic of</option>
+                    <option value="221">Thailand</option>
+                    <option value="222">Timor-Leste</option>
+                    <option value="223">Togo</option>
+                    <option value="224">Tokelau</option>
+                    <option value="225">Tonga</option>
+                    <option value="226">Trinidad and Tobago</option>
+                    <option value="227">Tunisia</option>
+                    <option value="228">Turkey</option>
+                    <option value="229">Turkmenistan</option>
+                    <option value="230">Turks and Caicos Islands</option>
+                    <option value="231">Tuvalu</option>
+                    <option value="232">Uganda</option>
+                    <option value="233">Ukraine</option>
+                    <option value="234">United Arab Emirates</option>
+                    <option value="235">United Kingdom</option>
+                    <option value="236">United States Minor Outlying Islands</option>
+                    <option value="237">United States of America</option>
+                    <option value="238">Uruguay</option>
+                    <option value="239">Uzbekistan</option>
+                    <option value="240">Vanuatu</option>
+                    <option value="241">Venezuela (Bolivarian Republic of)</option>
+                    <option value="242">Vietnam</option>
+                    <option value="243">Virgin Islands (British)</option>
+                    <option value="244">Virgin Islands (U.S.)</option>
+                    <option value="245">Wallis and Futuna</option>
+                    <option value="246">Western Sahara</option>
+                    <option value="247">Yemen</option>
+                    <option value="248">Zambia</option>
+                    <option value="249">Zimbabwe</option>
                   </select>
                 </div>
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='address' type='text' name='address' placeholder='STREET ADDRESS'>
+                  <input id='apartment-no' type='text' name='apartment-no' placeholder='APT 3O3'>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input id='building-no' type='text' name='building-no' placeholder='1337'>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input id='street' type='text' name='street' placeholder='LEGENDARY ST'>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input id='city' type='text' name='city' placeholder='CITY'>
                 </div>
               </div>
               <div class='input-wrapper'>
@@ -436,29 +884,28 @@
                   <input id='zip-code' type='text' name='zip-code' placeholder='ZIP'>
                 </div>
               </div>
-              <div class='input-wrapper'>
-                <div class='pixel-input'>
-                  <input id='country' type='text' name='country' placeholder='COUNTRY'>
+
+              <div class='upload-blocks'>
+                <div class='input-wrapper file-upload up-left'>
+                  <div class='pixel-input'>
+                    <img src='img/upload_arrow.png' alt='arrow'>
+                    <input type='file' name='ident-img'>
+                    <label for='ident-img'><p>UPLOAD</p></label>
+                  </div>
+                </div>
+                <div class='input-wrapper file-upload up-right'>
+                  <div class='pixel-input'>
+                    <img src='img/upload_arrow.png' alt='arrow'>
+                    <input type='file' name='address-doc'>
+                    <label for='address-doc'><p>UPLOAD</p></label>
+                  </div>
                 </div>
               </div>
-              <div class='input-wrapper file-upload up-left'>
-                <div class='pixel-input'>
-                  <!-- TODO: add file upload via jquery -->
-                  <!-- <input id='ident-img' type='file' name='ident-img'> -->
-                  <img src='img/upload_arrow.png' alt='arrow'>
-                  <input id='ident-img' type='file'>
-                  <label for='ident-img'><p>UPLOAD</p></label>
-                </div>
+              <div class='upload-blocks'>
+                <h1 class='up-left upload-text'>national id picture</h1>
+                <h1 class='up-right upload-text'>address verification document</h1>
               </div>
-              <div class='input-wrapper file-upload up-right'>
-                <div class='pixel-input'>
-                  <!-- TODO: add file upload via jquery -->
-                  <!-- <input id='address-doc' type='file' name='address-doc' placeholder='UPLOAD'> -->
-                  <img src='img/upload_arrow.png' alt='arrow'>
-                  <input id='address-doc' type='file'>
-                  <label for='address-doc'><p>UPLOAD</p></label>
-                </div>
-              </div>
+
               <div id='investor-private-continue' class='input-wrapper continue-btn'>
                 <div class='pixel-input'>
                   <input type='submit' value='continue'>
@@ -467,6 +914,11 @@
             </form>
           </section>
           <section class='modal-footer'>
+            <div class='input-wrapper back-btn'>
+              <div class='pixel-input'>
+                <input type='submit' value='<'>
+              </div>
+            </div>
             <img id='progress-bar' src='img/Progress_Bar_2.png' alt='progress bar'>
           </section>
         </div>
@@ -475,7 +927,6 @@
       <div id='investor-company-popup' class='signup-corners popup hide popup-outer-wrapper'>
         <div class='popup-inner-wrapper'>
           <section class='modal-header signup'>
-            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
             <h1>SIGN UP TO PRE-ICO</h1>
           </section>
           <section id='investor-company-body' class='modal-body signup-body'>
@@ -483,7 +934,7 @@
             <form id='company-data-form' method='post'>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='full-name' type='text' align='center' name='name' placeholder='FULL NAME'>
+                  <input id='c-full-name' type='text' align='center' name='name' placeholder='FULL NAME'>
                 </div>
               </div>
               <div class='input-wrapper'>
@@ -498,29 +949,287 @@
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <select id='nationality' type='select' name='nationality' placeholder='NATIONALITY'>
-                    <option value='klingon'>klingon</option>
-                    <option value='human'>human</option>
-                    <option value='cardassian'>cardassian</option>
+                  <select id='c-country' type='select' name='c-country' placeholder='country'>
+                    <option value="1">Afghanistan</option>
+                    <option value="2">Åland Islands</option>
+                    <option value="3">Albania</option>
+                    <option value="4">Algeria</option>
+                    <option value="5">American Samoa</option>
+                    <option value="6">Andorra</option>
+                    <option value="7">Angola</option>
+                    <option value="8">Anguilla and Barbuda</option>
+                    <option value="9">Antarctica</option>
+                    <option value="10">Antigua</option>
+                    <option value="11">Argentina</option>
+                    <option value="12">Armenia</option>
+                    <option value="13">Aruba</option>
+                    <option value="14">Australia</option>
+                    <option value="15">Austria</option>
+                    <option value="16">Azerbaijan</option>
+                    <option value="17">Bahamas</option>
+                    <option value="18">Bahrain</option>
+                    <option value="19">Bangladesh</option>
+                    <option value="20">Barbados</option>
+                    <option value="21">Belarus</option>
+                    <option value="22">Belgium</option>
+                    <option value="23">Belize</option>
+                    <option value="24">Benin</option>
+                    <option value="25">Bermuda</option>
+                    <option value="26">Bhutan</option>
+                    <option value="27">Bolivia (Plurinational State of)</option>
+                    <option value="28">Bonaire, Sint Eustatius and Saba</option>
+                    <option value="29">Bosnia and Herzegovina</option>
+                    <option value="30">Botswana</option>
+                    <option value="31">Bouvet Island</option>
+                    <option value="32">Brazil</option>
+                    <option value="33">British Indian Ocean Territory</option>
+                    <option value="34">Brunei Darussalam</option>
+                    <option value="35">Bulgaria</option>
+                    <option value="36">Burkina</option>
+                    <option value="37">Burundi</option>
+                    <option value="38">Cabo Verde</option>
+                    <option value="39">Cambodia</option>
+                    <option value="40">Cameroon</option>
+                    <option value="41">Canada</option>
+                    <option value="42">Cayman Islands</option>
+                    <option value="43">Central African Republic</option>
+                    <option value="44">Chad</option>
+                    <option value="45">Chile</option>
+                    <option value="46">China</option>
+                    <option value="47">Christmas Island</option>
+                    <option value="48">Cocos (Keeling) Islands</option>
+                    <option value="49">Colombia</option>
+                    <option value="50">Comoros</option>
+                    <option value="51">Congo</option>
+                    <option value="52">Congo (Democratic Republic of the)</option>
+                    <option value="53">Cook Islands</option>
+                    <option value="54">Costa Rica</option>
+                    <option value="55">Côte d'Ivoire</option>
+                    <option value="56">Croatia</option>
+                    <option value="57">Cuba</option>
+                    <option value="58">Curaçao</option>
+                    <option value="59">Cyprus</option>
+                    <option value="60">Czech Republic</option>
+                    <option value="61">Denmark</option>
+                    <option value="62">Djibouti</option>
+                    <option value="63">Dominica</option>
+                    <option value="64">Dominican Republic</option>
+                    <option value="65">Ecuador</option>
+                    <option value="66">Egypt</option>
+                    <option value="67">El Salvador</option>
+                    <option value="68">Equatorial Guinea</option>
+                    <option value="69">Eritrea</option>
+                    <option value="70">Estonia</option>
+                    <option value="71">Ethiopia</option>
+                    <option value="72">Falkland Islands (Malvinas)</option>
+                    <option value="73">Faroe Islands</option>
+                    <option value="74">Fiji</option>
+                    <option value="75">Finland</option>
+                    <option value="76">France</option>
+                    <option value="77">French Guiana</option>
+                    <option value="78">French Polynesia</option>
+                    <option value="79">French Southern Territories</option>
+                    <option value="80">Gabon</option>
+                    <option value="81">Gambia</option>
+                    <option value="82">Georgia</option>
+                    <option value="83">Germany</option>
+                    <option value="84">Ghana</option>
+                    <option value="85">Gibraltar</option>
+                    <option value="86">Greece</option>
+                    <option value="87">Greenland</option>
+                    <option value="88">Grenada</option>
+                    <option value="89">Guadeloupe</option>
+                    <option value="90">Guam</option>
+                    <option value="91">Guatemala</option>
+                    <option value="92">Guernsey</option>
+                    <option value="93">Guinea</option>
+                    <option value="94">Guinea-Bissau</option>
+                    <option value="95">Guyana</option>
+                    <option value="96">Haiti</option>
+                    <option value="97">Heard Island and McDonald Islands</option>
+                    <option value="98">Holy See (Vatican City State)</option>
+                    <option value="99">Honduras</option>
+                    <option value="100">Hong Kong</option>
+                    <option value="101">Hungary</option>
+                    <option value="999" selected="selected">Hyrule</option>
+                    <option value="102">Iceland</option>
+                    <option value="103">India</option>
+                    <option value="104">Indonesia</option>
+                    <option value="105">Iran</option>
+                    <option value="106">Iraq</option>
+                    <option value="107">Ireland</option>
+                    <option value="108">Isle of Man</option>
+                    <option value="109">Israel</option>
+                    <option value="110">Italy</option>
+                    <option value="111">Jamaica</option>
+                    <option value="112">Japan</option>
+                    <option value="113">Jersey</option>
+                    <option value="114">Jordan</option>
+                    <option value="115">Kazakhstan</option>
+                    <option value="116">Kenya</option>
+                    <option value="117">Kiribati</option>
+                    <option value="118">Korea (Democratic People's Republic of)</option>
+                    <option value="119">Korea (Republic of)</option>
+                    <option value="120">Kuwait</option>
+                    <option value="121">Kyrgyzstan</option>
+                    <option value="122">Lao People's Democratic Republic</option>
+                    <option value="123">Latvia</option>
+                    <option value="124">Lebanon</option>
+                    <option value="125">Lesotho</option>
+                    <option value="126">Liberia</option>
+                    <option value="127">Libya</option>
+                    <option value="128">Liechtenstein</option>
+                    <option value="129">Lithuania</option>
+                    <option value="130">Luxembourg</option>
+                    <option value="131">Macao</option>
+                    <option value="132">Macedonia (the former Yugoslav Republic of)</option>
+                    <option value="133">Madagascar</option>
+                    <option value="134">Malawi</option>
+                    <option value="135">Malaysia</option>
+                    <option value="136">Maldives</option>
+                    <option value="137">Mali</option>
+                    <option value="138">Malta</option>
+                    <option value="139">Marshall Islands</option>
+                    <option value="140">Martinique</option>
+                    <option value="141">Mauritania</option>
+                    <option value="142">Mauritius</option>
+                    <option value="143">Mayotte</option>
+                    <option value="144">Mexico</option>
+                    <option value="145">Micronesia (Federated States of)</option>
+                    <option value="146">Moldova</option>
+                    <option value="147">Monaco</option>
+                    <option value="148">Mongolia</option>
+                    <option value="149">Montenegro</option>
+                    <option value="150">Montserrat</option>
+                    <option value="151">Morocco</option>
+                    <option value="152">Mozambique</option>
+                    <option value="153">Myanmar</option>
+                    <option value="154">Namibia</option>
+                    <option value="155">Nauru</option>
+                    <option value="156">Nepal</option>
+                    <option value="157">Netherlands</option>
+                    <option value="158">New Caledonia</option>
+                    <option value="159">New Zealand</option>
+                    <option value="160">Nicaragua</option>
+                    <option value="161">Niger</option>
+                    <option value="162">Nigeria</option>
+                    <option value="163">Niue</option>
+                    <option value="164">Norfolk Island</option>
+                    <option value="165">Northern Mariana Islands</option>
+                    <option value="166">Norway</option>
+                    <option value="167">Oman</option>
+                    <option value="168">Pakistan</option>
+                    <option value="169">Palau</option>
+                    <option value="170">Palestine, State of</option>
+                    <option value="171">Panama</option>
+                    <option value="172">Papua New Guinea</option>
+                    <option value="173">Paraguay</option>
+                    <option value="174">Peru</option>
+                    <option value="175">Philippines</option>
+                    <option value="176">Pitcairn</option>
+                    <option value="177">Poland</option>
+                    <option value="178">Portugal</option>
+                    <option value="179">Puerto Rico</option>
+                    <option value="180">Qatar</option>
+                    <option value="181">Réunion</option>
+                    <option value="182">Romania</option>
+                    <option value="183">Russian Federation</option>
+                    <option value="184">Rwanda</option>
+                    <option value="185">Saint Barthélemy</option>
+                    <option value="186">Saint Helena, Ascension and Tristan da Cunha</option>
+                    <option value="187">Saint Kitts and Nevis</option>
+                    <option value="188">Saint Lucia</option>
+                    <option value="189">Saint Martin (French part)</option>
+                    <option value="190">Saint Pierre and Miquelon</option>
+                    <option value="191">Saint Vincent and the Grenadines</option>
+                    <option value="192">Samoa</option>
+                    <option value="193">San Marino</option>
+                    <option value="194">Sao Tome and Principe</option>
+                    <option value="195">Saudi Arabia</option>
+                    <option value="196">Senegal</option>
+                    <option value="197">Serbia</option>
+                    <option value="198">Seychelles</option>
+                    <option value="199">Sierra Leone</option>
+                    <option value="200">Singapore</option>
+                    <option value="201">Sint Maarten (Dutch part)</option>
+                    <option value="202">Slovakia</option>
+                    <option value="203">Slovenia</option>
+                    <option value="204">Solomon Islands</option>
+                    <option value="203">Slovenia</option>
+                    <option value="204">Solomon</option>
+                    <option value="205">Somalia</option>
+                    <option value="206">South Africa</option>
+                    <option value="207">South Georgia and the South Sandwich Islands</option>
+                    <option value="208">South Sudan</option>
+                    <option value="209">Spain</option>
+                    <option value="210">Sri Lanka</option>
+                    <option value="211">Sudan</option>
+                    <option value="212">Suriname</option>
+                    <option value="213">Svalbard and Jan Mayen</option>
+                    <option value="214">Swaziland</option>
+                    <option value="215">Sweden</option>
+                    <option value="216">Switzerland</option>
+                    <option value="217">Syrian Arab Republic</option>
+                    <option value="218">Taiwan, Province of China</option>
+                    <option value="219">Tajikistan</option>
+                    <option value="220">Tanzania, United Republic of</option>
+                    <option value="221">Thailand</option>
+                    <option value="222">Timor-Leste</option>
+                    <option value="223">Togo</option>
+                    <option value="224">Tokelau</option>
+                    <option value="225">Tonga</option>
+                    <option value="226">Trinidad and Tobago</option>
+                    <option value="227">Tunisia</option>
+                    <option value="228">Turkey</option>
+                    <option value="229">Turkmenistan</option>
+                    <option value="230">Turks and Caicos Islands</option>
+                    <option value="231">Tuvalu</option>
+                    <option value="232">Uganda</option>
+                    <option value="233">Ukraine</option>
+                    <option value="234">United Arab Emirates</option>
+                    <option value="235">United Kingdom</option>
+                    <option value="236">United States Minor Outlying Islands</option>
+                    <option value="237">United States of America</option>
+                    <option value="238">Uruguay</option>
+                    <option value="239">Uzbekistan</option>
+                    <option value="240">Vanuatu</option>
+                    <option value="241">Venezuela (Bolivarian Republic of)</option>
+                    <option value="242">Vietnam</option>
+                    <option value="243">Virgin Islands (British)</option>
+                    <option value="244">Virgin Islands (U.S.)</option>
+                    <option value="245">Wallis and Futuna</option>
+                    <option value="246">Western Sahara</option>
+                    <option value="247">Yemen</option>
+                    <option value="248">Zambia</option>
+                    <option value="249">Zimbabwe</option>
                   </select>
                 </div>
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='address' type='text' name='address' placeholder='STREET ADDRESS'>
+                  <input id='c-apartment-no' type='text' name='c-apartment-no' placeholder='APT 3O3'>
                 </div>
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='zip-code' type='text' name='zip-code' placeholder='ZIP'>
+                  <input id='c-building-no' type='text' name='c-building-no' placeholder='1337'>
                 </div>
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='country' type='text' name='country' placeholder='COUNTRY'>
+                  <input id='c-street' type='text' name='c-street' placeholder='LEGENDARY ST'>
                 </div>
               </div>
-
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input id='c-city' type='text' name='city' placeholder='CITY'>
+                </div>
+              </div>
+              <div class='input-wrapper'>
+                <div class='pixel-input'>
+                  <input id='c-zip-code' type='text' name='c-zip-code' placeholder='ZIP'>
+                </div>
+              </div>
               <div id='investor-company-continue' class='input-wrapper continue-btn'>
                 <div class='pixel-input'>
                   <input type='submit' value='continue'>
@@ -529,6 +1238,11 @@
             </form>
           </section>
           <section class='modal-footer'>
+            <div class='input-wrapper back-btn'>
+              <div class='pixel-input'>
+                <input type='submit' value='<'>
+              </div>
+            </div>
             <img id='progress-bar' src='img/Progress_Bar_2.png' alt='progress bar'>
           </section>
         </div>
@@ -542,6 +1256,7 @@
           </section>
           <section id='aml-body' class='modal-body signup-body'>
             <h3>begin aml process</h3>
+            <a href=#><h6>What's this?</h6></a>
             <form id='signup-form' method='post'>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
@@ -553,14 +1268,45 @@
                   <input type='email' name='user-email' placeholder='YOUR EMAIL'>
                 </div>
               </div>
+            </form>
+          </section>
+          <div class="consent-boxes">
+            <div class='checkbox-row'>
+              <div class='checkbox-wrapper'>
+                <div class='input-wrapper'>
+                  <div class='pixel-input'>
+                    <input id='tos-check' type='checkbox' required>
+                    <label for='tos-check'></label>
+                  </div>
+                </div>
+              </div>
+              <p>Check here to confirm that you have read, understand and agree to the <a href='docs/KINGUIN_DOT_IO_TOS.pdf' target='_blank'>Terms of Use</a>.</p>
+            </div>
+            <div class='checkbox-row'>
+              <div class='checkbox-wrapper'>
+                <div class='input-wrapper'>
+                  <div class='pixel-input'>
+                    <input id='pp-check' type='checkbox' required>
+                    <label for='pp-check'></label>
+                  </div>
+                </div>
+              </div>
+              <p>Check here to confirm that you consent to giving us your personal information in accordance with our <a href='docs/KINGUIN_DOT_IO_PRIVACY_POLICY.pdf' target='_blank'>Privacy Policy</a>.</p>
+            </div>
+          </div>
+          <section class='modal-footer'>
+            <div class='button-wrapper'>
               <div id='aml-continue' class='input-wrapper continue-btn'>
                 <div class='pixel-input'>
                   <input type='submit' value='continue'>
                 </div>
               </div>
-            </form>
-          </section>
-          <section class='modal-footer'>
+            </div>
+            <div class='input-wrapper back-btn'>
+              <div class='pixel-input'>
+                <input type='submit' value='<'>
+              </div>
+            </div>
             <img id='progress-bar' src='img/Progress_Bar_3.png' alt='progress bar'>
           </section>
         </div>
@@ -574,12 +1320,8 @@
           </section>
           <section id='aml-eth-body' class='modal-body signup-body'>
             <h3>enter aml data</h3>
+            <a href=#><h6>What's this?</h6></a>
             <form id='signup-form' method='post'>
-              <div class='input-wrapper'>
-                <div class='pixel-input'>
-                  <input id='eth-email' type='email' align='center' name='email' placeholder='YOUR EMAIL'>
-                </div>
-              </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
                   <input id='eth-send' type='text' name='eth-send' placeholder='ETH SENDING ADDRESS'>
@@ -611,12 +1353,8 @@
           </section>
           <section id='aml-btc-body' class='modal-body signup-body'>
             <h3>enter aml data</h3>
+            <a href=#><h6>What's this?</h6></a>
             <form id='signup-form' method='post'>
-              <div class='input-wrapper'>
-                <div class='pixel-input'>
-                  <input id='btc-email' type='email' align='center' name='email' placeholder='YOUR EMAIL'>
-                </div>
-              </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
                   <input id='btc-send' type='text' name='btc-send' placeholder='BTC SENDING ADDRESS'>
@@ -624,7 +1362,7 @@
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='btc-rec' type='text' name='btc-rec' placeholder='BTC RECEIVING ADDRESS'>
+                  <input id='eth-rec' type='text' name='eth-rec' placeholder='ETH RECEIVING ADDRESS'>
                 </div>
               </div>
               <div id='aml-btc-continue' class='input-wrapper continue-btn'>
@@ -640,124 +1378,34 @@
         </div>
       </div>
 
-      <div id='btc-fund-popup' class='signup-corners popup hide popup-outer-wrapper'>
+      <div id='aml-fiat-popup' class='signup-corners popup hide popup-outer-wrapper'>
         <div class='popup-inner-wrapper'>
           <section class='modal-header signup'>
             <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
             <h1>SIGN UP TO PRE-ICO</h1>
           </section>
-          <section id='btc-fund-body' class='modal-body signup-body'>
-            <h3>btc funding address</h3>
-            <form id='funding-form' method='post'>
+          <section id='aml-fiat-body' class='modal-body signup-body'>
+            <h3>enter aml data</h3>
+            <a href=#><h6>What's this?</h6></a>
+            <form id='signup-form' method='post'>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='btc-fund' type='text' align='center' name='btc-fun' placeholder='314159265359'>
+                  <input id='fiat-eth-rec' type='text' name='fiat-eth-rec' placeholder='FIAT ETH RECEIVING ADDRESS'>
                 </div>
               </div>
-              <div id='copy-btn' class='input-wrapper blue-btn'>
+              <div id='aml-fiat-continue' class='input-wrapper continue-btn'>
                 <div class='pixel-input'>
-                  <a href="#">COPY TO CLIPBOARD</a>
-                </div>
-              </div>
-              <div id='btc-fund-continue' class='input-wrapper continue-btn'>
-                <div class='pixel-input'>
-                  <a href="#">CLOSE WINDOW</a>
+                  <input type='submit' value='continue'>
                 </div>
               </div>
             </form>
           </section>
           <section class='modal-footer'>
-            <img id='progress-bar' src='img/Progress_Bar_4.png' alt='progress bar'>
+            <img id='progress-bar' src='img/Progress_Bar_3.png' alt='progress bar'>
           </section>
         </div>
       </div>
 
-      <div id='eth-fund-popup' class='signup-corners popup hide popup-outer-wrapper'>
-        <div class='popup-inner-wrapper'>
-          <section class='modal-header signup'>
-            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-            <h1>SIGN UP TO PRE-ICO</h1>
-          </section>
-          <section id='eth-fund-body' class='modal-body signup-body'>
-            <h3>eth smart contract address</h3>
-            <form id='funding-form' method='post'>
-              <div class='input-wrapper'>
-                <div class='pixel-input'>
-                  <input id='eth-fund' type='text' align='center' name='eth-fund' placeholder='314159265359'>
-                </div>
-              </div>
-              <div id='copy-btn' class='input-wrapper blue-btn'>
-                <div class='pixel-input'>
-                  <a href="#">COPY TO CLIPBOARD</a>
-                </div>
-              </div>
-              <div id='eth-fund-continue' class='input-wrapper continue-btn'>
-                <div class='pixel-input'>
-                  <a href="#">CLOSE WINDOW</a>
-                </div>
-              </div>
-            </form>
-          </section>
-          <section class='modal-footer'>
-            <img id='progress-bar' src='img/Progress_Bar_4.png' alt='progress bar'>
-          </section>
-        </div>
-      </div>
-
-      <div id='bank-info-popup'class='signup-corners popup hide popup-outer-wrapper'>
-        <div class='popup-inner-wrapper'>
-          <section class='modal-header signup'>
-            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-            <h1>SIGN UP TO PRE-ICO</h1>
-          </section>
-          <section id='bank-info-body' class='modal-body signup-body'>
-            <h3>bank transfer information</h3>
-            <form id='bank-info-form' method='post'>
-              <label for='acct-num'>account number</label>
-              <div class='input-wrapper bank-input'>
-                <div class='pixel-input'>
-                  <input id='acct-num' type='number' align='center' name='acct-num' placeholder='000.000.000'>
-                </div>
-              </div>
-              <div class='input-wrapper copy-sm'>
-                <div class='pixel-input'>
-                  <a href="#">COPY</a>
-                </div>
-              </div>
-              <label for='reg-num'>registration number</label>
-              <div class='input-wrapper bank-input'>
-                <div class='pixel-input'>
-                  <input id='reg-num' type='number' align='center' name='reg-num' placeholder='0000'>
-                </div>
-              </div>
-              <div class='input-wrapper copy-sm'>
-                <div class='pixel-input'>
-                  <a href="#">COPY</a>
-                </div>
-              </div>
-              <label for='transfer-ref'>transfer reference (add this in the description)</label>
-              <div class='input-wrapper bank-input'>
-                <div class='pixel-input'>
-                  <input id='transfer-ref' type='number' align='center' name='transfer-ref' placeholder='0000'>
-                </div>
-              </div>
-              <div class='input-wrapper copy-sm'>
-                <div class='pixel-input'>
-                  <a href="#">COPY</a>
-                </div>
-              </div>
-              <div id='bank-info-continue' class='input-wrapper continue-btn'>
-                <div class='pixel-input'>
-                  <a href="#">close window</a>
-                </div>
-              </div>
-            </form>
-          </section>
-          <section class='modal-footer'>
-            <img id='progress-bar' src='img/Progress_Bar_4.png' alt='progress bar'>
-          </section>
-        </div>
-      </div>
     </div>
       <!--**************************-->
       <!-- About Island Popups -->
@@ -944,6 +1592,10 @@
                 <img class='avatar' src='img/StephenCrystal.png' alt='Stephen Crystal'>
                 <h5>Stephen Crystal</h5>
               </div>
+              <div class='advisor'>
+                <img class='avatar' src='img/AlexanderShulgin.png' alt='Alexander Shulgin'>
+                <h5>Alexander Shulgin</h5>
+              </div>
             </div>
           </section>
           <section class='modal-footer'>
@@ -1023,104 +1675,6 @@
           </section>
         </div>
       </div>
-
-      <div id='roadmap-popup' class='popup hide popup-outer-wrapper wide-pop'>
-        <div class='popup-inner-wrapper'>
-          <section class='modal-header'>
-            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-            <h1>ROADMAP</h1>
-          </section>
-          <section class='modal-body'>
-            <div class='node-row'>
-              <div id='project-start-node' class='node-wrapper'>
-                <div class='roadmap-node node-inactive'>
-                  <div class='inner-node'>
-                    <p>Q3</p>
-                    <h3>2017</h3>
-                  </div>
-                </div>
-                <h4>PROJECT START</h4>
-              </div>
-              <img src='img/roadmap-arrow.png' alt='arrow'>
-              <div id='announcement-node' class='node-wrapper'>
-                <div class='roadmap-node node-inactive'>
-                  <div class='inner-node'>
-                    <p>Q3</p>
-                    <h3>2017</h3>
-                  </div>
-                </div>
-                <h4>ANNOUNCEMENT</4>
-                </div>
-                <img src='img/roadmap-arrow.png' alt='arrow'>
-                <div id='pre-ico-node' class='node-wrapper'>
-                  <div class='roadmap-node node-inactive'>
-                    <div class='inner-node'>
-                      <p>Q4</p>
-                      <h3> 2017</h3>
-                    </div>
-                  </div>
-                  <h4>PRE-ICO</h4>
-                </div>
-                <img src='img/roadmap-arrow.png' alt='arrow'>
-                <div id='ico-opens-node' class='node-wrapper'>
-                  <div class='roadmap-node node-inactive'>
-                    <div class='inner-node'>
-                      <p>Q1</p>
-                      <h3>2018</h3>
-                    </div>
-                  </div>
-                  <h4>ICO OPENS</h4>
-                </div>
-              </div>
-              <img src='img/roadmap-next-line.png' alt='arrow to next row'>
-              <div class='node-row'>
-                <div id-'ico-closes-node' class='node-wrapper'>
-                  <div class='roadmap-node node-inactive'>
-                    <div class='inner-node'>
-                      <p>Q1</p>
-                      <h3>2018</h3>
-                    </div>
-                  </div>
-                  <h4>ICO CLOSES</h4>
-                </div>
-                <img src='img/roadmap-arrow.png' alt='arrow'>
-                <div id='marketplace-transitions-node' class='node-wrapper'>
-                  <div class='roadmap-node node-inactive'>
-                    <div class='inner-node'>
-                      <p>Q2</p>
-                      <h3>2018</h3>
-                    </div>
-                  </div>
-                  <h4>MARKETPLACE TRANSITIONS</h4>
-                </div>
-                <img src='img/roadmap-arrow.png' alt='arrow'>
-                <div id ='community-share-node' class='node-wrapper'>
-                  <div class='roadmap-node node-inactive'>
-                    <div class='inner-node'>
-                      <p>Q2</p>
-                      <h3>2018</h3>
-                    </div>
-                  </div>
-                  <h4>COMMUNITY SHARE</h4>
-                </div>
-                <img src='img/roadmap-arrow.png' alt='arrow'>
-                <div id='transition-end-node' class='node-wrapper'>
-                  <div class='roadmap-node node-inactive'>
-                    <div class='inner-node'>
-                      <p>Q2</p>
-                      <h3>2020</h3>
-                    </div>
-                  </div>
-                  <h4>TRANSITION END</h4>
-                </div>
-              </div>
-            </section>
-            <section class='modal-footer'>
-              <h2>PROJECT START</h2>
-              <p>text text text</p>
-            </section>
-          </div>
-        </div>
 
       <div id='projections-popup' class='popup hide popup-outer-wrapper wide-pop'>
         <div class='popup-inner-wrapper'>
@@ -1226,7 +1780,35 @@
       </div>
     </div>
 
+    <!--**************************-->
 
+    <!-- Helper Text Popups -->
+    <div class='helper-popup-bg'></div>
+
+    <div class='popup-wrapper'>
+      <div class='popup popup-outer-wrapper helper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>What is This<span style='font-size: 1.5em;'>?</span></h1>
+          </section>
+          <section class='modal-body'>
+            <h2></h2>
+            <p></p>
+          </section>
+          <section class='modal-footer'>
+            <div class='input-wrapper continue-btn'>
+              <div class='pixel-input'>
+                <input class='helper-close' type='submit' name='helper-close' value='okay, got it.'>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!--**************************-->
+
+    <footer><p>Copyright 2018 Kinguin Limited, All Rights Reserved</p></footer>
 
     <!-- Scripts -->
     <script src='jquery.min.js'></script>

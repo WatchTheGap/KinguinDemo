@@ -5,9 +5,32 @@ input:active, button:active, select:active {
   border: none;
 }
 
+.alert-msg {
+  text-align: center;
+  font-family: '04b_03', monospace;
+  color: red;
+  font-size: 14px;
+  margin: -15px 0 0 0;
+}
+
 #signup-popup {
   height: auto;
   width: 700px;
+}
+
+#kyc-popup, #aml-popup {
+  .modal-footer {
+    .button-wrapper {
+      display: flex;
+      width: 70%;
+      margin: auto;
+      margin-top: 3%;
+      .continue-btn {
+        width: 100%;
+        margin: 10px;
+      }
+    }
+  }
 }
 
 .signup-corners::before, .signup-corners::after{
@@ -55,7 +78,6 @@ input:active, button:active, select:active {
   button {
     cursor: pointer;
   }
-
 }
 
 .currency-form {
@@ -74,6 +96,7 @@ input:active, button:active, select:active {
   input {
     width: 100%;
     text-align: center;
+    padding: 0 10px;
   }
   .pixel-input {
     padding: 10px 30px;
@@ -260,16 +283,7 @@ input:active, button:active, select:active {
   input {
     height: 50px;
   }
-  #ident-img, #address-doc {
-    cursor: pointer;
-    position: absolute;
-    top: -5px;
-    left: 0;
-    opacity: 0;
-    background-color: green;
-    height: 120px;
-    width: 200px;
-  }
+
   select {
     cursor: pointer;
     height: 50px;
@@ -288,22 +302,36 @@ input:active, button:active, select:active {
   }
 
   .up-left{
-    margin: 3% 0% 3% 15%;
+    margin: 3% 2% 3% 0;
   }
 
   .up-right {
-    margin: 3% 0% 3% 2%;
+    margin: 3% 0 3% 2%;
+  }
+  .upload-blocks {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+  }
+  .upload-text {
+    text-align: center;
+    color: #9c9b9b;
+    font-size: 20px;
+    width: 50%;
+    margin: 3% 0;
   }
 
   .file-upload{
-    width: 34%;
+    height: 100%;
     font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     label {
       text-align: center;
     }
     color: #9c9b9b;
     .pixel-input {
-      height: 120px;
+      height: 100%;
+      padding: 5%;
     }
     img {
       width: 40%;
@@ -311,6 +339,14 @@ input:active, button:active, select:active {
     }
     p {
       margin: 0;
+    }
+    input {
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: inherit;
+      opacity: 0;
     }
   }
 
@@ -383,8 +419,8 @@ input:active, button:active, select:active {
 
 #confirmation-popup {
   .modal-body {
-    height: 300px;
     text-align: center;
+    padding: 5%;
     p {
       font-size: 20px;
     }
@@ -393,4 +429,11 @@ input:active, button:active, select:active {
       font-size: 36px;
     }
   }
+  .modal-footer {
+    min-height: 200px;
+  }
+}
+
+.error-highlight {
+  box-shadow: inset 0 0 1px 1px red;
 }

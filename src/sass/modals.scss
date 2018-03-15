@@ -23,12 +23,17 @@
   bottom: 0;
 }
 
+.email-popup-bg {
+  @extend .popup-bg;
+}
+
 .popup-wrapper {
   @extend .centered;
   z-index: 2;
 }
 
 .popup-wrapper-short {
+  z-index: 2;
   position: absolute;
   top: 20vh;
   left: 50vh;
@@ -41,6 +46,7 @@
 }
 
 .signup-wrapper {
+  z-index: 2;
   margin: 20px 25vw;
   .popup-outer-wrapper {
     width: 50vh;
@@ -134,6 +140,22 @@
   h2, h3, nav {
     text-align: center;
   }
+  a {
+    font-family: '04b_03', monospace;
+    margin: 0;
+    color: #9ac4bf;
+    text-decoration: none;
+    text-align: center;
+    &:visited {
+      color: #c8dfdc;
+    }
+    h6 {
+      font-family: inherit;
+      margin: 20px;
+      font-size: 12px;
+    }
+  }
+
 }
 
 .modal-footer {
@@ -276,9 +298,76 @@
   }
 }
 
+.back-btn {
+  position: absolute;
+  background-color: #9ac4bf;
+  height: 30px;
+  width: 50px;
+  bottom: 10%;
+  left: 5%;
+  &::before, &::after {
+    border-bottom: 5px solid #c8dfdc;
+  }
+  .pixel-input {
+    background-color: inherit;
+    height: 40px;
+    width: 30px;
+    &::before, &::after {
+      border-top: 5px solid #617976;
+    }
+    input {
+      cursor: pointer;
+      border-top: 5px solid #c8dfdc;
+      border-bottom: 5px solid #617976;
+      height: inherit;
+      background-color: inherit;
+      font-size: 30px;
+    }
+  }
+}
+
 //************************************
 //*** POPUPS *********
 //************************************
+
+#alt-roadmap-popup {
+  background-image: url('img/Roadmap_R.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: none;
+  .popup-inner-wrapper {
+    background-color: transparent;
+    height: 2160px;
+    width: 2160px;
+  }
+}
+
+#airdrop-popup {
+  &::before, &::after {
+    border-bottom: 10px solid #6bb0d2;
+  }
+  .modal-header {
+    background-color: #0088cc;
+    border-top: 10px solid #6bb0d2;
+  }
+  .modal-body {
+    min-height: 500px;
+    .input-wrapper {
+      width: 70%;
+      margin: 3% 15%;
+    }
+    input::placeholder {
+      font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
+      font-size: 15px;
+      text-align: left;
+      color: #9c9b9b;
+      padding-left: 10px;
+    }
+    input {
+      height: 50px;
+    }
+  }
+}
 #advisors-popup {
   &::before, &::after {
     border-bottom: 10px solid #8ac0d4;
@@ -1014,29 +1103,21 @@
   }
 }
 
-#consent-popup {
-  &::before, &::after {
-    border-bottom: 10px solid #f68888;
-  }
-  .modal-header {
-    background-color: #ef5e5e;
-    border-top: 10px solid #f68888;
-  }
-  .modal-body {
-    height: 300px;
-
+.consent-boxes {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+  flex-wrap: wrap;
     .checkbox-row {
-      margin-top: 3%;
       display: flex;
       align-items: center;
+      justify-content: space-between;
       flex-wrap: wrap;
-      .input-wrapper {
-        margin: 0 25%;
-        float: right;
-        height: 25px;
-      }
+      width: 100%;
+
       .pixel-input {
-        padding: 2px 14px;
+        padding: 0 12px;
       }
       input[type='checkbox'] {
         visibility: hidden;
@@ -1051,11 +1132,11 @@
       }
       label {
         display: block;
-          height: 26px;
-          width: 28px;
+          height: 100%;
+          width: 100%;
           position: absolute;
           top: 0px;
-          left: 5px;
+          left: 0px;
       }
       a {
         text-decoration: none;
@@ -1067,13 +1148,13 @@
         }
       }
       .checkbox-wrapper {
-        width: 25%;
-        margin-bottom: 5px;
+        margin: 10px;
       }
       p {
-        width: 60%;
-        min-height: 3em;
+        width: 85%;
+        font-family: '04b_03', monospace;
+        margin: 10px;
       }
     }
-  }
+
 }
