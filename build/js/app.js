@@ -720,6 +720,9 @@
       alert("Please enter the zip of your address.");
       return;
     }
+    if ((typeof apartmentNo !== 'string') || apartmentNo === "none" || apartmentNo.length === 0) {
+      apartmentNo = 'none';
+    }
 
     send();
     $('#investor-company-popup').addClass('hide');
