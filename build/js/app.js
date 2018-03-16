@@ -111,6 +111,11 @@
     $('#islands-wrapper').addClass('blur');
   };
 
+  $(document).ajaxStart(function(){
+      $("#loader").removeClass('hide');
+  });
+
+
 
   //***************************************************
   //***TEXT FOR CONFIRMATION POPUPS
@@ -266,6 +271,7 @@
       }
     })
     .done(function () {
+      $("#loader").addClass('hide');
       $('#aml-popup').addClass('hide');
       $('#kyc-popup').addClass('hide');
       $('#confirmation-popup').removeClass('hide');
@@ -525,6 +531,7 @@
    };
 
    $.ajax(settings).done(function (response) {
+     $("#loader").addClass('hide');
      kycProfile();
    }).fail(function () {
      alert('Something went wrong! =(');
@@ -565,6 +572,7 @@
       })
     })
     .done(function () {
+      $("#loader").addClass('hide');
       $('.popup').addClass('hide');
       $('.email-popup-bg').hide();
       $('#confirmation-popup').removeClass('hide');
@@ -748,6 +756,7 @@
         "addr_send_btc": btcSend
       }
     }).done(function () {
+      $("#loader").addClass('hide');
       $('.popup').addClass('hide');
       $('.email-popup-bg').hide();
       $('#confirmation-popup').removeClass('hide');
