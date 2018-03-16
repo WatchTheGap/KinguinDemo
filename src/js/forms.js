@@ -553,15 +553,16 @@
       alert("Please enter the zip of your address.");
       return;
     }
-    if (new FormData(form).getAll("ident-img")[0].size === 0 || new FormData(form).getAll("address-doc")[0].size === 0) {
-      alert("You must supply proof of identity and proof of address.");
-      return;
-    }
+    // if (new FormData(form).getAll("ident-img")[0].size === 0 || new FormData(form).getAll("address-doc")[0].size === 0) {
+    //   alert("You must supply proof of identity and proof of address.");
+    //   return;
+    // }
     if ((typeof apartmentNo !== 'string') || apartmentNo === "none" || apartmentNo.length === 0) {
       apartmentNo = 'none';
     }
 
-    send();
+    //send();
+    kycProfile();
     $('#investor-private-popup').addClass('hide');
     $('.email-popup-bg').hide();
 
@@ -629,7 +630,8 @@
       apartmentNo = 'none';
     }
 
-    send();
+    //send();
+    kycProfile();
     $('#investor-company-popup').addClass('hide');
     $('.email-popup-bg').hide();
 
