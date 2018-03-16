@@ -1406,7 +1406,8 @@ header {
       top: 0px;
       left: 0px; }
     .consent-boxes .checkbox-row a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: black; }
       .consent-boxes .checkbox-row a:hover {
         color: #ef5e5e; }
       .consent-boxes .checkbox-row a:visited {
