@@ -321,11 +321,8 @@
     }
   });
 
-
-
   //*** OPEN THE SIGNUP FLOW FROM MAIN SITE ***//
     $('#go-btn').click(function () {
-      // $('#pre-ico-popup').removeClass('hide');
       $('#signup-popup').removeClass('hide');
       $('.popup-bg').show();
       $('#islands-wrapper').addClass('blur');
