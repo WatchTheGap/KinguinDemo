@@ -178,6 +178,7 @@
     })
     .fail(function () {
       alert('Something went wrong! :(');
+      $("#loader").addClass('hide');
     });
 
   }
@@ -429,6 +430,7 @@
      kycProfile();
    }).fail(function () {
      alert('Something went wrong! =(');
+     $("#loader").addClass('hide');
    });
    return false;
  };
@@ -477,6 +479,7 @@
     })
     .fail(function () {
       alert('Something went wrong! :(');
+      $("#loader").addClass('hide');
     });
 
   };
@@ -662,6 +665,7 @@
     })
     .fail(function () {
       alert('Something went wrong! :(');
+      $("#loader").addClass('hide');
     });
 
   };
