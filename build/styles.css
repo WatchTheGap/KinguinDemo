@@ -1,6 +1,5 @@
 #loader {
-  -webkit-animation: spin 1s linear infinite;
-          animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
   height: 10px;
   width: 10px;
   position: fixed;
@@ -9,143 +8,61 @@
   margin: -5px;
   z-index: 999; }
 
-@-webkit-keyframes spin {
-  0% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
-  6.25% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
-  12.5% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
-  18.75% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
-  25% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
-  31.25% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
-  37.5% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px transparent, -10px -30px transparent; }
-  43.75% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px transparent; }
-  50% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
-  56.25% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
-  62.5% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
-  68.75% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
-  75% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
-  81.25% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px #000, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
-  87.5% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px #000, -10px -30px #000; }
-  93.75% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px #000; }
-  100% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; } }
-
 @keyframes spin {
   0% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
+    box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
   6.25% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
+    box-shadow: 0px -30px transparent, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
   12.5% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
+    box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
   18.75% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
+    box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
   25% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
+    box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
   31.25% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
+    box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
   37.5% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px transparent, -10px -30px transparent; }
+    box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px transparent, -10px -30px transparent; }
   43.75% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px transparent; }
+    box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px transparent; }
   50% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
+    box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
   56.25% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
+    box-shadow: 0px -30px #000, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
   62.5% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
+    box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
   68.75% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
+    box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
   75% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
+    box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
   81.25% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px #000, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
+    box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
   87.5% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px #000, -10px -30px #000; }
+    box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px #000, -10px -30px #000; }
   93.75% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px #000; }
+    box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px #000; }
   100% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; } }
+    box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; } }
 .social-media-wrapper {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
   padding: 20px 25px;
   position: absolute;
   top: 335px;
   left: 441px;
-  -webkit-transform: skewY(-30deg);
-          transform: skewY(-30deg);
+  transform: skewY(-30deg);
   width: 200px;
   height: 140px;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
   .social-media-wrapper a {
     display: inline;
     width: 25%;
     text-align: center; }
 
 .social-hover {
-  -webkit-filter: drop-shadow(-2px -2px 0 #56463e);
-          filter: drop-shadow(-2px -2px 0 #56463e);
-  -webkit-transform: translate(2px, 2px);
-          transform: translate(2px, 2px); }
+  filter: drop-shadow(-2px -2px 0 #56463e);
+  transform: translate(2px, 2px); }
 
 .social-icons {
   width: 100%;
@@ -171,7 +88,6 @@
   font-weight: normal;
   font-style: normal; }
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff99b3), to(#ffe27d));
   background: linear-gradient(#ff99b3, #ffe27d);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -192,8 +108,6 @@ footer {
 
 .wrapper-island {
   margin: 160px 10%;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   min-width: 80%; }
 
@@ -294,18 +208,9 @@ header {
   height: 80px;
   font-family: '04b_03', monospace;
   text-transform: uppercase;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-     -moz-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 100vw; }
   header h1 {
     width: 100%;
@@ -342,15 +247,13 @@ header {
   display: none; }
 
 .blur {
-  -webkit-filter: blur(5px);
-          filter: blur(5px); }
+  filter: blur(5px); }
 
 .centered, .popup-wrapper, .scale-pop {
   position: fixed;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%); }
 
 .popup-bg, .email-popup-bg, .helper-popup-bg {
   position: fixed;
@@ -372,8 +275,7 @@ header {
   left: 50vh; }
 
 .scale-pop {
-  -webkit-transform: translate(-50%, -50%) scale(0.75);
-          transform: translate(-50%, -50%) scale(0.75);
+  transform: translate(-50%, -50%) scale(0.75);
   z-index: 2; }
 
 .signup-wrapper {
@@ -391,9 +293,7 @@ header {
   float: left;
   border-left: 10px solid black;
   border-right: 10px solid black;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: white; }
   .popup-outer-wrapper::before {
     top: -10px;
@@ -479,9 +379,7 @@ header {
   border-left: 5px solid black;
   border-right: 5px solid black;
   float: left;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: white;
   position: relative; }
   .input-wrapper::before {
@@ -510,22 +408,6 @@ header {
       border: none;
       height: 30px;
       width: 100%; }
-      .input-wrapper .pixel-input input::-webkit-input-placeholder {
-        font-family: '04b_03', monospace;
-        color: #b5b5b5;
-        font-size: 14px; }
-      .input-wrapper .pixel-input input::-moz-placeholder {
-        font-family: '04b_03', monospace;
-        color: #b5b5b5;
-        font-size: 14px; }
-      .input-wrapper .pixel-input input:-ms-input-placeholder {
-        font-family: '04b_03', monospace;
-        color: #b5b5b5;
-        font-size: 14px; }
-      .input-wrapper .pixel-input input::-ms-input-placeholder {
-        font-family: '04b_03', monospace;
-        color: #b5b5b5;
-        font-size: 14px; }
       .input-wrapper .pixel-input input::placeholder {
         font-family: '04b_03', monospace;
         color: #b5b5b5;
@@ -537,22 +419,6 @@ header {
       border: none;
       width: 455px;
       height: 200px; }
-      .input-wrapper .pixel-input textarea::-webkit-input-placeholder {
-        font-family: '04b_03', monospace;
-        color: #b5b5b5;
-        font-size: 14px; }
-      .input-wrapper .pixel-input textarea::-moz-placeholder {
-        font-family: '04b_03', monospace;
-        color: #b5b5b5;
-        font-size: 14px; }
-      .input-wrapper .pixel-input textarea:-ms-input-placeholder {
-        font-family: '04b_03', monospace;
-        color: #b5b5b5;
-        font-size: 14px; }
-      .input-wrapper .pixel-input textarea::-ms-input-placeholder {
-        font-family: '04b_03', monospace;
-        color: #b5b5b5;
-        font-size: 14px; }
       .input-wrapper .pixel-input textarea::placeholder {
         font-family: '04b_03', monospace;
         color: #b5b5b5;
@@ -566,24 +432,22 @@ header {
   position: absolute;
   background: black; }
 
-.red-btn, .team-member .input-wrapper, #signup-form #kyc-continue, #personal-data-form #kyc-continue,
+.red-btn, .team-member .input-wrapper, #signup-form #kyc-continue, #personal-data-form #kyc-continue, #kyc-upload-popup .modal-body form #kyc-continue, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue,
 #company-data-form #kyc-continue, #funding-form #kyc-continue, #signup-button-crypto, #signup-button-fiat, #investor-button-private, #investor-button-company, .continue-btn {
   width: 40%;
   display: inline-block;
   background-color: #ef5e5e; }
-  .red-btn .pixel-input, .team-member .input-wrapper .pixel-input, #signup-form #kyc-continue .pixel-input, #personal-data-form #kyc-continue .pixel-input,
+  .red-btn .pixel-input, .team-member .input-wrapper .pixel-input, #signup-form #kyc-continue .pixel-input, #personal-data-form #kyc-continue .pixel-input, #kyc-upload-popup .modal-body form #kyc-continue .pixel-input, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue .pixel-input, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue .pixel-input,
   #company-data-form #kyc-continue .pixel-input, #funding-form #kyc-continue .pixel-input, #signup-button-crypto .pixel-input, #signup-button-fiat .pixel-input, #investor-button-private .pixel-input, #investor-button-company .pixel-input, .continue-btn .pixel-input {
     background-color: #ef5e5e;
     padding: 0px; }
-  .red-btn a, .team-member .input-wrapper a, #signup-form #kyc-continue a, #personal-data-form #kyc-continue a,
-  #company-data-form #kyc-continue a, #funding-form #kyc-continue a, #signup-button-crypto a, #signup-button-fiat a, #investor-button-private a, #investor-button-company a, .continue-btn a, .red-btn input, .team-member .input-wrapper input, #signup-form #kyc-continue input, #personal-data-form #kyc-continue input,
-  #company-data-form #kyc-continue input, #funding-form #kyc-continue input, #signup-button-crypto input, #signup-button-fiat input, #investor-button-private input, #investor-button-company input, .continue-btn input, .red-btn input:active, .team-member .input-wrapper input:active, #signup-form #kyc-continue input:active, #personal-data-form #kyc-continue input:active,
-  #company-data-form #kyc-continue input:active, #funding-form #kyc-continue input:active, #signup-button-crypto input:active, #signup-button-fiat input:active, #investor-button-private input:active, #investor-button-company input:active, .continue-btn input:active, .red-btn input:focus, .team-member .input-wrapper input:focus, #signup-form #kyc-continue input:focus, #personal-data-form #kyc-continue input:focus,
+  .red-btn a, .team-member .input-wrapper a, #signup-form #kyc-continue a, #personal-data-form #kyc-continue a, #kyc-upload-popup .modal-body form #kyc-continue a, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue a, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue a,
+  #company-data-form #kyc-continue a, #funding-form #kyc-continue a, #signup-button-crypto a, #signup-button-fiat a, #investor-button-private a, #investor-button-company a, .continue-btn a, .red-btn input, .team-member .input-wrapper input, #signup-form #kyc-continue input, #personal-data-form #kyc-continue input, #kyc-upload-popup .modal-body form #kyc-continue input, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue input, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue input,
+  #company-data-form #kyc-continue input, #funding-form #kyc-continue input, #signup-button-crypto input, #signup-button-fiat input, #investor-button-private input, #investor-button-company input, .continue-btn input, .red-btn input:active, .team-member .input-wrapper input:active, #signup-form #kyc-continue input:active, #personal-data-form #kyc-continue input:active, #kyc-upload-popup .modal-body form #kyc-continue input:active, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue input:active, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue input:active,
+  #company-data-form #kyc-continue input:active, #funding-form #kyc-continue input:active, #signup-button-crypto input:active, #signup-button-fiat input:active, #investor-button-private input:active, #investor-button-company input:active, .continue-btn input:active, .red-btn input:focus, .team-member .input-wrapper input:focus, #signup-form #kyc-continue input:focus, #personal-data-form #kyc-continue input:focus, #kyc-upload-popup .modal-body form #kyc-continue input:focus, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue input:focus, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue input:focus,
   #company-data-form #kyc-continue input:focus, #funding-form #kyc-continue input:focus, #signup-button-crypto input:focus, #signup-button-fiat input:focus, #investor-button-private input:focus, #investor-button-company input:focus, .continue-btn input:focus {
     cursor: pointer;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     font-family: '04b_03', monospace;
     text-transform: uppercase;
     text-decoration: none;
@@ -594,14 +458,14 @@ header {
     display: block;
     padding: 30px 10px;
     background-color: inherit; }
-  .red-btn h3, .team-member .input-wrapper h3, #signup-form #kyc-continue h3, #personal-data-form #kyc-continue h3,
+  .red-btn h3, .team-member .input-wrapper h3, #signup-form #kyc-continue h3, #personal-data-form #kyc-continue h3, #kyc-upload-popup .modal-body form #kyc-continue h3, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue h3, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue h3,
   #company-data-form #kyc-continue h3, #funding-form #kyc-continue h3, #signup-button-crypto h3, #signup-button-fiat h3, #investor-button-private h3, #investor-button-company h3, .continue-btn h3 {
     margin: 10px; }
-  .red-btn img, .team-member .input-wrapper img, #signup-form #kyc-continue img, #personal-data-form #kyc-continue img,
+  .red-btn img, .team-member .input-wrapper img, #signup-form #kyc-continue img, #personal-data-form #kyc-continue img, #kyc-upload-popup .modal-body form #kyc-continue img, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue img, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue img,
   #company-data-form #kyc-continue img, #funding-form #kyc-continue img, #signup-button-crypto img, #signup-button-fiat img, #investor-button-private img, #investor-button-company img, .continue-btn img {
     min-height: 61px; }
-  .red-btn::before, .team-member .input-wrapper::before, #signup-form #kyc-continue::before, #personal-data-form #kyc-continue::before,
-  #company-data-form #kyc-continue::before, #funding-form #kyc-continue::before, #signup-button-crypto::before, #signup-button-fiat::before, #investor-button-private::before, #investor-button-company::before, .continue-btn::before, .red-btn::after, .team-member .input-wrapper::after, #signup-form #kyc-continue::after, #personal-data-form #kyc-continue::after,
+  .red-btn::before, .team-member .input-wrapper::before, #signup-form #kyc-continue::before, #personal-data-form #kyc-continue::before, #kyc-upload-popup .modal-body form #kyc-continue::before, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue::before, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue::before,
+  #company-data-form #kyc-continue::before, #funding-form #kyc-continue::before, #signup-button-crypto::before, #signup-button-fiat::before, #investor-button-private::before, #investor-button-company::before, .continue-btn::before, .red-btn::after, .team-member .input-wrapper::after, #signup-form #kyc-continue::after, #personal-data-form #kyc-continue::after, #kyc-upload-popup .modal-body form #kyc-continue::after, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue::after, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue::after,
   #company-data-form #kyc-continue::after, #funding-form #kyc-continue::after, #signup-button-crypto::after, #signup-button-fiat::after, #investor-button-private::after, #investor-button-company::after, .continue-btn::after {
     border-bottom: 5px solid #f68888; }
 
@@ -614,9 +478,7 @@ header {
     background-color: #9ac4bf;
     padding: 0px; }
   .blue-btn a, #bank-info-form .copy-sm a {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     font-size: 15px;
     text-transform: uppercase;
@@ -672,30 +534,6 @@ header {
   #airdrop-popup .modal-body .input-wrapper, #airdrop-popup #why-now-popup .modal-footer .input-wrapper, #why-now-popup #airdrop-popup .modal-footer .input-wrapper {
     width: 70%;
     margin: 3% 15%; }
-  #airdrop-popup .modal-body input::-webkit-input-placeholder, #airdrop-popup #why-now-popup .modal-footer input::-webkit-input-placeholder, #why-now-popup #airdrop-popup .modal-footer input::-webkit-input-placeholder {
-    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-    font-size: 15px;
-    text-align: left;
-    color: #9c9b9b;
-    padding-left: 10px; }
-  #airdrop-popup .modal-body input::-moz-placeholder, #airdrop-popup #why-now-popup .modal-footer input::-moz-placeholder, #why-now-popup #airdrop-popup .modal-footer input::-moz-placeholder {
-    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-    font-size: 15px;
-    text-align: left;
-    color: #9c9b9b;
-    padding-left: 10px; }
-  #airdrop-popup .modal-body input:-ms-input-placeholder, #airdrop-popup #why-now-popup .modal-footer input:-ms-input-placeholder, #why-now-popup #airdrop-popup .modal-footer input:-ms-input-placeholder {
-    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-    font-size: 15px;
-    text-align: left;
-    color: #9c9b9b;
-    padding-left: 10px; }
-  #airdrop-popup .modal-body input::-ms-input-placeholder, #airdrop-popup #why-now-popup .modal-footer input::-ms-input-placeholder, #why-now-popup #airdrop-popup .modal-footer input::-ms-input-placeholder {
-    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-    font-size: 15px;
-    text-align: left;
-    color: #9c9b9b;
-    padding-left: 10px; }
   #airdrop-popup .modal-body input::placeholder, #airdrop-popup #why-now-popup .modal-footer input::placeholder, #why-now-popup #airdrop-popup .modal-footer input::placeholder {
     font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     font-size: 15px;
@@ -722,22 +560,10 @@ header {
 
 .avatar-row, .team-row {
   text-align: center;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-     -moz-box-orient: horizontal;
-     -moz-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: center;
   margin: 3% auto; }
 
 .avatar {
@@ -745,14 +571,9 @@ header {
   width: 90px;
   border-radius: 50%;
   border: 5px solid transparent;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 2px;
-  -webkit-box-flex: 1;
-     -moz-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1; }
+  flex: 1; }
 
 .avatar-selected {
   border: 5px solid #5f8db0; }
@@ -773,8 +594,7 @@ header {
     font-style: italic; }
 
 .team-row {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   margin: 0; }
 
 .team-member {
@@ -804,13 +624,8 @@ header {
     padding: 5px;
     outline: none;
     background-color: white;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-    -webkit-box-flex: 1;
-       -moz-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    box-sizing: border-box;
+    flex: 1;
     border-radius: 50%;
     margin: 0 -10px; }
   .team-member .team-active {
@@ -835,8 +650,7 @@ header {
 
 .more-info-text {
   border-top: 10px solid #b5b5b5;
-  -webkit-box-shadow: inset 0px 10px 0px 0px white;
-          box-shadow: inset 0px 10px 0px 0px white;
+  box-shadow: inset 0px 10px 0px 0px white;
   background-color: #e0e0e0;
   padding: 20px;
   margin: -10px; }
@@ -866,14 +680,8 @@ header {
   margin: 5% 10%;
   text-align: center;
   padding: 0;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-     -moz-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  justify-content: space-between; }
   .dates-row li {
     cursor: pointer;
     display: inline;
@@ -916,27 +724,11 @@ header {
   #contactus-popup .modal-body input[type='email'], #contactus-popup #why-now-popup .modal-footer input[type='email'], #why-now-popup #contactus-popup .modal-footer input[type='email'] {
     padding: 20px 25px;
     width: inherit; }
-    #contactus-popup .modal-body input[type='email']::-webkit-input-placeholder, #contactus-popup #why-now-popup .modal-footer input[type='email']::-webkit-input-placeholder, #why-now-popup #contactus-popup .modal-footer input[type='email']::-webkit-input-placeholder {
-      font-size: 16px; }
-    #contactus-popup .modal-body input[type='email']::-moz-placeholder, #contactus-popup #why-now-popup .modal-footer input[type='email']::-moz-placeholder, #why-now-popup #contactus-popup .modal-footer input[type='email']::-moz-placeholder {
-      font-size: 16px; }
-    #contactus-popup .modal-body input[type='email']:-ms-input-placeholder, #contactus-popup #why-now-popup .modal-footer input[type='email']:-ms-input-placeholder, #why-now-popup #contactus-popup .modal-footer input[type='email']:-ms-input-placeholder {
-      font-size: 16px; }
-    #contactus-popup .modal-body input[type='email']::-ms-input-placeholder, #contactus-popup #why-now-popup .modal-footer input[type='email']::-ms-input-placeholder, #why-now-popup #contactus-popup .modal-footer input[type='email']::-ms-input-placeholder {
-      font-size: 16px; }
     #contactus-popup .modal-body input[type='email']::placeholder, #contactus-popup #why-now-popup .modal-footer input[type='email']::placeholder, #why-now-popup #contactus-popup .modal-footer input[type='email']::placeholder {
       font-size: 16px; }
   #contactus-popup .modal-body textarea, #contactus-popup #why-now-popup .modal-footer textarea, #why-now-popup #contactus-popup .modal-footer textarea {
     padding: 20px 25px;
     width: inherit; }
-    #contactus-popup .modal-body textarea::-webkit-input-placeholder, #contactus-popup #why-now-popup .modal-footer textarea::-webkit-input-placeholder, #why-now-popup #contactus-popup .modal-footer textarea::-webkit-input-placeholder {
-      font-size: 16px; }
-    #contactus-popup .modal-body textarea::-moz-placeholder, #contactus-popup #why-now-popup .modal-footer textarea::-moz-placeholder, #why-now-popup #contactus-popup .modal-footer textarea::-moz-placeholder {
-      font-size: 16px; }
-    #contactus-popup .modal-body textarea:-ms-input-placeholder, #contactus-popup #why-now-popup .modal-footer textarea:-ms-input-placeholder, #why-now-popup #contactus-popup .modal-footer textarea:-ms-input-placeholder {
-      font-size: 16px; }
-    #contactus-popup .modal-body textarea::-ms-input-placeholder, #contactus-popup #why-now-popup .modal-footer textarea::-ms-input-placeholder, #why-now-popup #contactus-popup .modal-footer textarea::-ms-input-placeholder {
-      font-size: 16px; }
     #contactus-popup .modal-body textarea::placeholder, #contactus-popup #why-now-popup .modal-footer textarea::placeholder, #why-now-popup #contactus-popup .modal-footer textarea::placeholder {
       font-size: 16px; }
   #contactus-popup .modal-body .continue-btn, #contactus-popup #why-now-popup .modal-footer .continue-btn, #why-now-popup #contactus-popup .modal-footer .continue-btn {
@@ -985,22 +777,6 @@ header {
       width: 100%;
       text-align: center;
       font-size: 20px; }
-      #notify-popup .modal-body .input-wrapper input[type='email']::-webkit-input-placeholder, #notify-popup #why-now-popup .modal-footer .input-wrapper input[type='email']::-webkit-input-placeholder, #why-now-popup #notify-popup .modal-footer .input-wrapper input[type='email']::-webkit-input-placeholder {
-        font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-        font-size: 15px;
-        text-align: center; }
-      #notify-popup .modal-body .input-wrapper input[type='email']::-moz-placeholder, #notify-popup #why-now-popup .modal-footer .input-wrapper input[type='email']::-moz-placeholder, #why-now-popup #notify-popup .modal-footer .input-wrapper input[type='email']::-moz-placeholder {
-        font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-        font-size: 15px;
-        text-align: center; }
-      #notify-popup .modal-body .input-wrapper input[type='email']:-ms-input-placeholder, #notify-popup #why-now-popup .modal-footer .input-wrapper input[type='email']:-ms-input-placeholder, #why-now-popup #notify-popup .modal-footer .input-wrapper input[type='email']:-ms-input-placeholder {
-        font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-        font-size: 15px;
-        text-align: center; }
-      #notify-popup .modal-body .input-wrapper input[type='email']::-ms-input-placeholder, #notify-popup #why-now-popup .modal-footer .input-wrapper input[type='email']::-ms-input-placeholder, #why-now-popup #notify-popup .modal-footer .input-wrapper input[type='email']::-ms-input-placeholder {
-        font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-        font-size: 15px;
-        text-align: center; }
       #notify-popup .modal-body .input-wrapper input[type='email']::placeholder, #notify-popup #why-now-popup .modal-footer .input-wrapper input[type='email']::placeholder, #why-now-popup #notify-popup .modal-footer .input-wrapper input[type='email']::placeholder {
         font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
         font-size: 15px;
@@ -1042,8 +818,7 @@ header {
     border-bottom: none;
     text-transform: uppercase;
     min-height: 150px;
-    -webkit-font-kerning: none;
-            font-kerning: none;
+    font-kerning: none;
     padding: 0; }
     #tokens-popup .modal-footer table {
       width: 680px;
@@ -1148,50 +923,22 @@ header {
     font-size: 18px; }
 
 .node-row {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-     -moz-box-orient: horizontal;
-     -moz-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-     -moz-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
   .node-row img {
     height: 15px;
     width: 33px;
     margin-bottom: 20px; }
 
 .node-wrapper {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
   width: 90px;
   margin: auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-     -moz-box-orient: vertical;
-     -moz-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
   .node-wrapper h4 {
     min-height: 2em;
     margin: 0 0 0 6px; }
@@ -1215,28 +962,12 @@ header {
   width: inherit;
   border-radius: 50%;
   border: 3px solid white;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #9eb1bb;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-     -moz-box-orient: vertical;
-     -moz-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
   .inner-node h3 {
     margin: 0 0 0 6px;
     font-size: 26px; }
@@ -1256,9 +987,7 @@ header {
 
 .why-tabs {
   list-style: none;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 45%;
   margin: -16px 0 -20px 0;
   padding: 0; }
@@ -1269,12 +998,9 @@ header {
   padding: 0 40px;
   border-top: 5px solid white;
   border-bottom: 5px solid #6e959f;
-  -webkit-box-shadow: 0 0 0 4px black;
-          box-shadow: 0 0 0 4px black;
+  box-shadow: 0 0 0 4px black;
   height: 90px;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #cee1e6;
   font-family: '04b_03', monospace;
   font-size: 24px;
@@ -1283,8 +1009,7 @@ header {
   text-align: left; }
 
 .why-active, .last-active {
-  -webkit-box-shadow: 0 4px 0 0 black;
-          box-shadow: 0 4px 0 0 black;
+  box-shadow: 0 4px 0 0 black;
   border: none;
   background-color: white;
   cursor: default; }
@@ -1294,14 +1019,12 @@ header {
   border: none;
   border-top: 5px solid white;
   margin: 0 0 0 -30px;
-  -webkit-box-shadow: 0px 10px 0 0px #6e959f, 2px -2px 0 2px black, 4px 10px 0px 0px black;
-          box-shadow: 0px 10px 0 0px #6e959f, 2px -2px 0 2px black, 4px 10px 0px 0px black; }
+  box-shadow: 0px 10px 0 0px #6e959f, 2px -2px 0 2px black, 4px 10px 0px 0px black; }
 
 .last-active {
   line-height: 90px;
   margin-bottom: -1px;
-  -webkit-box-shadow: 0px 10px 0 0 #b5b5b5;
-          box-shadow: 0px 10px 0 0 #b5b5b5; }
+  box-shadow: 0px 10px 0 0 #b5b5b5; }
 
 .why-info-text {
   width: 45%;
@@ -1359,33 +1082,16 @@ header {
   height: 150px; }
 
 .consent-boxes {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 70%;
   margin: auto;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  flex-wrap: wrap; }
   .consent-boxes .checkbox-row {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-       -moz-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-       -moz-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%; }
     .consent-boxes .checkbox-row .pixel-input {
       padding: 0 12px; }
@@ -1437,9 +1143,6 @@ input:active, button:active, select:active {
   width: 700px; }
 
 #kyc-popup .modal-footer .button-wrapper, #aml-popup .modal-footer .button-wrapper {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
   width: 70%;
   margin: auto;
@@ -1467,26 +1170,6 @@ input:active, button:active, select:active {
     width: 100%;
     text-align: center;
     margin-top: 10%; }
-  .signup-body form input::-webkit-input-placeholder {
-    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-    font-size: 15px;
-    text-align: center;
-    color: #9ac4bf; }
-  .signup-body form input::-moz-placeholder {
-    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-    font-size: 15px;
-    text-align: center;
-    color: #9ac4bf; }
-  .signup-body form input:-ms-input-placeholder {
-    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-    font-size: 15px;
-    text-align: center;
-    color: #9ac4bf; }
-  .signup-body form input::-ms-input-placeholder {
-    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-    font-size: 15px;
-    text-align: center;
-    color: #9ac4bf; }
   .signup-body form input::placeholder {
     font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     font-size: 15px;
@@ -1586,18 +1269,6 @@ input:active, button:active, select:active {
     .currency-form .currency-amt input {
       text-align: left;
       width: 70%; }
-      .currency-form .currency-amt input::-webkit-input-placeholder {
-        color: black;
-        text-align: left; }
-      .currency-form .currency-amt input::-moz-placeholder {
-        color: black;
-        text-align: left; }
-      .currency-form .currency-amt input:-ms-input-placeholder {
-        color: black;
-        text-align: left; }
-      .currency-form .currency-amt input::-ms-input-placeholder {
-        color: black;
-        text-align: left; }
       .currency-form .currency-amt input::placeholder {
         color: black;
         text-align: left; }
@@ -1630,34 +1301,6 @@ input:active, button:active, select:active {
       height: 40px; }
       #bank-info-form .bank-input .pixel-input input {
         height: 40px; }
-        #bank-info-form .bank-input .pixel-input input::-webkit-input-placeholder {
-          font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-          font-size: 15px;
-          text-align: left;
-          color: #9c9b9b;
-          padding: 20px;
-          height: 40px; }
-        #bank-info-form .bank-input .pixel-input input::-moz-placeholder {
-          font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-          font-size: 15px;
-          text-align: left;
-          color: #9c9b9b;
-          padding: 20px;
-          height: 40px; }
-        #bank-info-form .bank-input .pixel-input input:-ms-input-placeholder {
-          font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-          font-size: 15px;
-          text-align: left;
-          color: #9c9b9b;
-          padding: 20px;
-          height: 40px; }
-        #bank-info-form .bank-input .pixel-input input::-ms-input-placeholder {
-          font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-          font-size: 15px;
-          text-align: left;
-          color: #9c9b9b;
-          padding: 20px;
-          height: 40px; }
         #bank-info-form .bank-input .pixel-input input::placeholder {
           font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
           font-size: 15px;
@@ -1674,95 +1317,45 @@ input:active, button:active, select:active {
       text-align: center; }
 
 #signup-form #btc-fund-continue,
-#signup-form #eth-fund-continue, #personal-data-form #btc-fund-continue,
+#signup-form #eth-fund-continue, #personal-data-form #btc-fund-continue, #kyc-upload-popup .modal-body form #btc-fund-continue, #kyc-upload-popup #why-now-popup .modal-footer form #btc-fund-continue, #why-now-popup #kyc-upload-popup .modal-footer form #btc-fund-continue,
 #personal-data-form #eth-fund-continue,
+#kyc-upload-popup .modal-body form #eth-fund-continue,
+#kyc-upload-popup #why-now-popup .modal-footer form #eth-fund-continue,
+#why-now-popup #kyc-upload-popup .modal-footer form #eth-fund-continue,
 #company-data-form #btc-fund-continue,
 #company-data-form #eth-fund-continue, #funding-form #btc-fund-continue,
 #funding-form #eth-fund-continue {
   margin-top: 25%; }
-#signup-form #aml-continue, #signup-form #aml-eth-continue, #signup-form #aml-btc-continue, #personal-data-form #aml-continue, #personal-data-form #aml-eth-continue, #personal-data-form #aml-btc-continue,
+#signup-form #aml-continue, #signup-form #aml-eth-continue, #signup-form #aml-btc-continue, #personal-data-form #aml-continue, #kyc-upload-popup .modal-body form #aml-continue, #kyc-upload-popup #why-now-popup .modal-footer form #aml-continue, #why-now-popup #kyc-upload-popup .modal-footer form #aml-continue, #personal-data-form #aml-eth-continue, #kyc-upload-popup .modal-body form #aml-eth-continue, #kyc-upload-popup #why-now-popup .modal-footer form #aml-eth-continue, #why-now-popup #kyc-upload-popup .modal-footer form #aml-eth-continue, #personal-data-form #aml-btc-continue, #kyc-upload-popup .modal-body form #aml-btc-continue, #kyc-upload-popup #why-now-popup .modal-footer form #aml-btc-continue, #why-now-popup #kyc-upload-popup .modal-footer form #aml-btc-continue,
 #company-data-form #aml-continue,
 #company-data-form #aml-eth-continue,
 #company-data-form #aml-btc-continue, #funding-form #aml-continue, #funding-form #aml-eth-continue, #funding-form #aml-btc-continue {
   margin-top: 10%; }
-#signup-form #btc-fund::-webkit-input-placeholder,
-#signup-form #eth-fund::-webkit-input-placeholder, #personal-data-form #btc-fund::-webkit-input-placeholder,
-#personal-data-form #eth-fund::-webkit-input-placeholder,
-#company-data-form #btc-fund::-webkit-input-placeholder,
-#company-data-form #eth-fund::-webkit-input-placeholder, #funding-form #btc-fund::-webkit-input-placeholder,
-#funding-form #eth-fund::-webkit-input-placeholder {
-  text-align: center; }
-#signup-form #btc-fund::-moz-placeholder,
-#signup-form #eth-fund::-moz-placeholder, #personal-data-form #btc-fund::-moz-placeholder,
-#personal-data-form #eth-fund::-moz-placeholder,
-#company-data-form #btc-fund::-moz-placeholder,
-#company-data-form #eth-fund::-moz-placeholder, #funding-form #btc-fund::-moz-placeholder,
-#funding-form #eth-fund::-moz-placeholder {
-  text-align: center; }
-#signup-form #btc-fund:-ms-input-placeholder,
-#signup-form #eth-fund:-ms-input-placeholder, #personal-data-form #btc-fund:-ms-input-placeholder,
-#personal-data-form #eth-fund:-ms-input-placeholder,
-#company-data-form #btc-fund:-ms-input-placeholder,
-#company-data-form #eth-fund:-ms-input-placeholder, #funding-form #btc-fund:-ms-input-placeholder,
-#funding-form #eth-fund:-ms-input-placeholder {
-  text-align: center; }
-#signup-form #btc-fund::-ms-input-placeholder,
-#signup-form #eth-fund::-ms-input-placeholder, #personal-data-form #btc-fund::-ms-input-placeholder,
-#personal-data-form #eth-fund::-ms-input-placeholder,
-#company-data-form #btc-fund::-ms-input-placeholder,
-#company-data-form #eth-fund::-ms-input-placeholder, #funding-form #btc-fund::-ms-input-placeholder,
-#funding-form #eth-fund::-ms-input-placeholder {
-  text-align: center; }
 #signup-form #btc-fund::placeholder,
-#signup-form #eth-fund::placeholder, #personal-data-form #btc-fund::placeholder,
+#signup-form #eth-fund::placeholder, #personal-data-form #btc-fund::placeholder, #kyc-upload-popup .modal-body form #btc-fund::placeholder, #kyc-upload-popup #why-now-popup .modal-footer form #btc-fund::placeholder, #why-now-popup #kyc-upload-popup .modal-footer form #btc-fund::placeholder,
 #personal-data-form #eth-fund::placeholder,
+#kyc-upload-popup .modal-body form #eth-fund::placeholder,
+#kyc-upload-popup #why-now-popup .modal-footer form #eth-fund::placeholder,
+#why-now-popup #kyc-upload-popup .modal-footer form #eth-fund::placeholder,
 #company-data-form #btc-fund::placeholder,
 #company-data-form #eth-fund::placeholder, #funding-form #btc-fund::placeholder,
 #funding-form #eth-fund::placeholder {
   text-align: center; }
-#signup-form .input-wrapper, #personal-data-form .input-wrapper,
+#signup-form .input-wrapper, #personal-data-form .input-wrapper, #kyc-upload-popup .modal-body form .input-wrapper, #kyc-upload-popup #why-now-popup .modal-footer form .input-wrapper, #why-now-popup #kyc-upload-popup .modal-footer form .input-wrapper,
 #company-data-form .input-wrapper, #funding-form .input-wrapper {
   width: 70%;
   margin: 3% 15%; }
-#signup-form input::-webkit-input-placeholder, #personal-data-form input::-webkit-input-placeholder,
-#company-data-form input::-webkit-input-placeholder, #funding-form input::-webkit-input-placeholder {
-  font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-  font-size: 15px;
-  text-align: left;
-  color: #9c9b9b;
-  padding-left: 10px; }
-#signup-form input::-moz-placeholder, #personal-data-form input::-moz-placeholder,
-#company-data-form input::-moz-placeholder, #funding-form input::-moz-placeholder {
-  font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-  font-size: 15px;
-  text-align: left;
-  color: #9c9b9b;
-  padding-left: 10px; }
-#signup-form input:-ms-input-placeholder, #personal-data-form input:-ms-input-placeholder,
-#company-data-form input:-ms-input-placeholder, #funding-form input:-ms-input-placeholder {
-  font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-  font-size: 15px;
-  text-align: left;
-  color: #9c9b9b;
-  padding-left: 10px; }
-#signup-form input::-ms-input-placeholder, #personal-data-form input::-ms-input-placeholder,
-#company-data-form input::-ms-input-placeholder, #funding-form input::-ms-input-placeholder {
-  font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-  font-size: 15px;
-  text-align: left;
-  color: #9c9b9b;
-  padding-left: 10px; }
-#signup-form input::placeholder, #personal-data-form input::placeholder,
+#signup-form input::placeholder, #personal-data-form input::placeholder, #kyc-upload-popup .modal-body form input::placeholder, #kyc-upload-popup #why-now-popup .modal-footer form input::placeholder, #why-now-popup #kyc-upload-popup .modal-footer form input::placeholder,
 #company-data-form input::placeholder, #funding-form input::placeholder {
   font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
   font-size: 15px;
   text-align: left;
   color: #9c9b9b;
   padding-left: 10px; }
-#signup-form input, #personal-data-form input,
+#signup-form input, #personal-data-form input, #kyc-upload-popup .modal-body form input, #kyc-upload-popup #why-now-popup .modal-footer form input, #why-now-popup #kyc-upload-popup .modal-footer form input,
 #company-data-form input, #funding-form input {
   height: 50px; }
-#signup-form select, #personal-data-form select,
+#signup-form select, #personal-data-form select, #kyc-upload-popup .modal-body form select, #kyc-upload-popup #why-now-popup .modal-footer form select, #why-now-popup #kyc-upload-popup .modal-footer form select,
 #company-data-form select, #funding-form select {
   cursor: pointer;
   height: 50px;
@@ -1773,56 +1366,53 @@ input:active, button:active, select:active {
   text-align: left;
   color: #9c9b9b;
   width: 100%; }
-  #signup-form select:focus, #personal-data-form select:focus,
+  #signup-form select:focus, #personal-data-form select:focus, #kyc-upload-popup .modal-body form select:focus, #kyc-upload-popup #why-now-popup .modal-footer form select:focus, #why-now-popup #kyc-upload-popup .modal-footer form select:focus,
   #company-data-form select:focus, #funding-form select:focus {
     font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     font-size: 15px;
     width: 100%; }
-#signup-form .up-left, #personal-data-form .up-left,
+#signup-form .up-left, #personal-data-form .up-left, #kyc-upload-popup .modal-body form .up-left, #kyc-upload-popup #why-now-popup .modal-footer form .up-left, #why-now-popup #kyc-upload-popup .modal-footer form .up-left,
 #company-data-form .up-left, #funding-form .up-left {
-  margin: 3% 2% 3% 0; }
-#signup-form .up-right, #personal-data-form .up-right,
+  margin: 0; }
+#signup-form .up-right, #personal-data-form .up-right, #kyc-upload-popup .modal-body form .up-right, #kyc-upload-popup #why-now-popup .modal-footer form .up-right, #why-now-popup #kyc-upload-popup .modal-footer form .up-right,
 #company-data-form .up-right, #funding-form .up-right {
-  margin: 3% 0 3% 2%; }
-#signup-form .upload-blocks, #personal-data-form .upload-blocks,
+  margin: 0; }
+#signup-form .upload-blocks, #personal-data-form .upload-blocks, #kyc-upload-popup .modal-body form .upload-blocks, #kyc-upload-popup #why-now-popup .modal-footer form .upload-blocks, #why-now-popup #kyc-upload-popup .modal-footer form .upload-blocks,
 #company-data-form .upload-blocks, #funding-form .upload-blocks {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-     -moz-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 70%;
   margin: auto; }
-#signup-form .upload-text, #personal-data-form .upload-text,
+#signup-form .upload-text, #personal-data-form .upload-text, #kyc-upload-popup .modal-body form .upload-text, #kyc-upload-popup #why-now-popup .modal-footer form .upload-text, #why-now-popup #kyc-upload-popup .modal-footer form .upload-text,
 #company-data-form .upload-text, #funding-form .upload-text {
   text-align: center;
   color: #9c9b9b;
   font-size: 20px;
-  width: 50%;
+  width: 48%;
   margin: 3% 0; }
-#signup-form .file-upload, #personal-data-form .file-upload,
+#signup-form .file-upload, #personal-data-form .file-upload, #kyc-upload-popup .modal-body form .file-upload, #kyc-upload-popup #why-now-popup .modal-footer form .file-upload, #why-now-popup #kyc-upload-popup .modal-footer form .file-upload,
 #company-data-form .file-upload, #funding-form .file-upload {
   height: 100%;
   font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
+  min-width: 48%;
+  max-width: 48%;
   color: #9c9b9b; }
-  #signup-form .file-upload label, #personal-data-form .file-upload label,
+  #signup-form .file-upload label, #personal-data-form .file-upload label, #kyc-upload-popup .modal-body form .file-upload label, #kyc-upload-popup #why-now-popup .modal-footer form .file-upload label, #why-now-popup #kyc-upload-popup .modal-footer form .file-upload label,
   #company-data-form .file-upload label, #funding-form .file-upload label {
     text-align: center; }
-  #signup-form .file-upload .pixel-input, #personal-data-form .file-upload .pixel-input,
+  #signup-form .file-upload .pixel-input, #personal-data-form .file-upload .pixel-input, #kyc-upload-popup .modal-body form .file-upload .pixel-input, #kyc-upload-popup #why-now-popup .modal-footer form .file-upload .pixel-input, #why-now-popup #kyc-upload-popup .modal-footer form .file-upload .pixel-input,
   #company-data-form .file-upload .pixel-input, #funding-form .file-upload .pixel-input {
     height: 100%;
     padding: 5%; }
-  #signup-form .file-upload img, #personal-data-form .file-upload img,
+  #signup-form .file-upload img, #personal-data-form .file-upload img, #kyc-upload-popup .modal-body form .file-upload img, #kyc-upload-popup #why-now-popup .modal-footer form .file-upload img, #why-now-popup #kyc-upload-popup .modal-footer form .file-upload img,
   #company-data-form .file-upload img, #funding-form .file-upload img {
     width: 40%;
     margin: 7% 30%; }
-  #signup-form .file-upload p, #personal-data-form .file-upload p,
+  #signup-form .file-upload p, #personal-data-form .file-upload p, #kyc-upload-popup .modal-body form .file-upload p, #kyc-upload-popup #why-now-popup .modal-footer form .file-upload p, #why-now-popup #kyc-upload-popup .modal-footer form .file-upload p,
   #company-data-form .file-upload p, #funding-form .file-upload p {
-    margin: 0; }
-  #signup-form .file-upload input, #personal-data-form .file-upload input,
+    margin: 0;
+    min-height: 3em; }
+  #signup-form .file-upload input, #personal-data-form .file-upload input, #kyc-upload-popup .modal-body form .file-upload input, #kyc-upload-popup #why-now-popup .modal-footer form .file-upload input, #why-now-popup #kyc-upload-popup .modal-footer form .file-upload input,
   #company-data-form .file-upload input, #funding-form .file-upload input {
     cursor: pointer;
     position: absolute;
@@ -1830,11 +1420,11 @@ input:active, button:active, select:active {
     left: 0;
     height: inherit;
     opacity: 0; }
-#signup-form #kyc-continue, #personal-data-form #kyc-continue,
+#signup-form #kyc-continue, #personal-data-form #kyc-continue, #kyc-upload-popup .modal-body form #kyc-continue, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue,
 #company-data-form #kyc-continue, #funding-form #kyc-continue {
   width: 70%;
   margin-top: 10%; }
-  #signup-form #kyc-continue a, #signup-form #kyc-continue input, #signup-form #kyc-continue input:active, #personal-data-form #kyc-continue a, #personal-data-form #kyc-continue input, #personal-data-form #kyc-continue input:active,
+  #signup-form #kyc-continue a, #signup-form #kyc-continue input, #signup-form #kyc-continue input:active, #personal-data-form #kyc-continue a, #kyc-upload-popup .modal-body form #kyc-continue a, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue a, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue a, #personal-data-form #kyc-continue input, #kyc-upload-popup .modal-body form #kyc-continue input, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue input, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue input, #personal-data-form #kyc-continue input:active, #kyc-upload-popup .modal-body form #kyc-continue input:active, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue input:active, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue input:active,
   #company-data-form #kyc-continue a,
   #company-data-form #kyc-continue input,
   #company-data-form #kyc-continue input:active, #funding-form #kyc-continue a, #funding-form #kyc-continue input, #funding-form #kyc-continue input:active {
@@ -1893,8 +1483,31 @@ input:active, button:active, select:active {
   min-height: 200px; }
 
 .error-highlight {
-  -webkit-box-shadow: inset 0 0 1px 1px red;
-          box-shadow: inset 0 0 1px 1px red; }
+  box-shadow: inset 0 0 1px 1px red; }
+
+#kyc-upload-popup::before, #kyc-upload-popup::after {
+  border-bottom: 10px solid #c8dfdc; }
+#kyc-upload-popup .modal-header {
+  background-color: #9ac4bf;
+  border-top: 10px solid #c8dfdc; }
+  #kyc-upload-popup .modal-header h1 {
+    color: black; }
+#kyc-upload-popup .modal-body .kyc-upload-info, #kyc-upload-popup #why-now-popup .modal-footer .kyc-upload-info, #why-now-popup #kyc-upload-popup .modal-footer .kyc-upload-info {
+  width: 80%;
+  margin: 5% auto;
+  text-align: center; }
+#kyc-upload-popup .modal-footer {
+  height: 100px; }
+  #kyc-upload-popup .modal-footer .continue-btn {
+    margin: 0 5%; }
+
+.upload-ready {
+  background-color: #93d558; }
+  .upload-ready .pixel-input {
+    background-color: inherit; }
+  .upload-ready p {
+    color: white;
+    word-wrap: break-word; }
 
 #about-island {
   top: 0;
@@ -1908,7 +1521,6 @@ input:active, button:active, select:active {
 .figures {
   top: 0;
   left: 150px;
-  -webkit-transition: top .25s ease-in-out;
   transition: top .25s ease-in-out; }
 
 .figures-hover {
@@ -1918,7 +1530,6 @@ input:active, button:active, select:active {
   top: 56px;
   left: 152px;
   opacity: 0;
-  -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
 
 .shadows-hover {
@@ -1928,7 +1539,6 @@ input:active, button:active, select:active {
 .team {
   top: 14px;
   left: 0;
-  -webkit-transition: top .25s ease-in-out;
   transition: top .25s ease-in-out; }
 
 .team-hover {
@@ -1937,13 +1547,11 @@ input:active, button:active, select:active {
 
 .team-title {
   height: 30px;
-  -webkit-transform: skewY(30deg);
-          transform: skewY(30deg);
+  transform: skewY(30deg);
   color: #c39f8e;
   font-size: 30px;
   top: 205px;
   left: 65px;
-  -webkit-transition: top .25s ease-in-out;
   transition: top .25s ease-in-out; }
 
 .team-title-hover {
@@ -1952,13 +1560,11 @@ input:active, button:active, select:active {
 
 .company-title {
   height: 17px;
-  -webkit-transform: skewY(-30deg);
-          transform: skewY(-30deg);
+  transform: skewY(-30deg);
   color: #ebcda3;
   font-size: 17px;
   top: 205px;
   left: 375px;
-  -webkit-transition: top .25s ease-in-out;
   transition: top .25s ease-in-out; }
 
 .company-title-hover {
@@ -1968,7 +1574,6 @@ input:active, button:active, select:active {
 .company-penguin {
   top: 105px;
   left: 373px;
-  -webkit-transition: top .25s ease-in-out;
   transition: top .25s ease-in-out; }
 
 .company-penguin-hover {
@@ -1976,14 +1581,12 @@ input:active, button:active, select:active {
   border-bottom: 30px solid transparent; }
 
 .story-title {
-  -webkit-transform: skewY(-30deg);
-          transform: skewY(-30deg);
+  transform: skewY(-30deg);
   color: white;
   font-size: 17px;
   top: 272px;
   left: 81px;
   border-bottom: 40px solid transparent;
-  -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
 
 .story-title-hover {
@@ -1991,21 +1594,18 @@ input:active, button:active, select:active {
   left: 65px; }
 
 .advisors-title {
-  -webkit-transform: skewY(-30deg);
-          transform: skewY(-30deg);
+  transform: skewY(-30deg);
   color: #111111;
   font-size: 9px;
   top: 398px;
   left: 319px; }
 
 .contact-title {
-  -webkit-transform: skewY(30deg);
-          transform: skewY(30deg);
+  transform: skewY(30deg);
   color: #c39f8e;
   font-size: 11px;
   top: 457px;
   left: 10px;
-  -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
 
 .contact-title-hover {
@@ -2045,7 +1645,6 @@ input:active, button:active, select:active {
 .company {
   top: 65px;
   left: 161px;
-  -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
 
 .company-hover {
@@ -2055,7 +1654,6 @@ input:active, button:active, select:active {
   cursor: pointer;
   top: 289px;
   left: 40px;
-  -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
 
 .ourstory-hover {
@@ -2066,7 +1664,6 @@ input:active, button:active, select:active {
   cursor: pointer;
   top: 286px;
   left: 72px;
-  -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
 
 .book-hover {
@@ -2080,7 +1677,6 @@ input:active, button:active, select:active {
 .contactus {
   top: 368px;
   left: 0;
-  -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
 
 .contactus-hover {
@@ -2091,7 +1687,6 @@ input:active, button:active, select:active {
   cursor: pointer;
   top: 401px;
   left: 25px;
-  -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
 
 .letter-hover {
@@ -2162,8 +1757,7 @@ input:active, button:active, select:active {
 
 .countdown-sign {
   font-family: '04b_03', monospace;
-  -webkit-transform: skewY(-30deg);
-          transform: skewY(-30deg);
+  transform: skewY(-30deg);
   width: 110px;
   height: 160px;
   top: 123px;
@@ -2171,16 +1765,9 @@ input:active, button:active, select:active {
   text-align: center;
   text-transform: uppercase;
   padding: 5px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  flex-wrap: wrap;
+  justify-content: center; }
   .countdown-sign p {
     font-size: 10px; }
 
@@ -2199,8 +1786,7 @@ input:active, button:active, select:active {
 
 .savings-sign {
   font-family: '04b_03', monospace;
-  -webkit-transform: skewY(30deg);
-          transform: skewY(30deg);
+  transform: skewY(30deg);
   width: 185px;
   height: 70px;
   text-align: center;
@@ -2255,7 +1841,6 @@ input:active, button:active, select:active {
   left: 122px;
   width: 280px;
   height: 401px;
-  -webkit-transition: top .25s ease-in-out;
   transition: top .25s ease-in-out; }
   #tokens:hover {
     top: -187px; }
@@ -2306,7 +1891,6 @@ input:active, button:active, select:active {
   left: 159px;
   width: 321px;
   height: 371px;
-  -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
   #problem-solution:hover {
     background-image: url("img/Problem_hover.png");
@@ -2326,7 +1910,6 @@ input:active, button:active, select:active {
   left: 39px;
   width: 241px;
   height: 186px;
-  -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
   #roadmap:hover {
     top: 196px;
@@ -2411,8 +1994,7 @@ input:active, button:active, select:active {
   min-width: 400px;
   max-width: 400px;
   min-height: 400px;
-  -webkit-box-shadow: 20px 40px 50px black;
-          box-shadow: 20px 40px 50px black; }
+  box-shadow: 20px 40px 50px black; }
   .helper::before, .helper::after {
     border-bottom: 10px solid #c4e880; }
   .helper .modal-header {
@@ -2503,8 +2085,7 @@ input:active, button:active, select:active {
       top: 50px;
       left: 260px; }
     #about-island .story-title {
-      -webkit-transform: rotate(-30deg) skew(30deg);
-              transform: rotate(-30deg) skew(30deg);
+      transform: rotate(-30deg) skew(30deg);
       text-shadow: -2px -1px 0 #84bf4f;
       top: 407px;
       left: 120px;
@@ -2520,8 +2101,7 @@ input:active, button:active, select:active {
       top: 239px;
       left: 235px; }
     #about-island .advisors-title {
-      -webkit-transform: skewY(30deg);
-              transform: skewY(30deg);
+      transform: skewY(30deg);
       top: 304px;
       left: 243px; }
     #about-island .bulb-mobile {

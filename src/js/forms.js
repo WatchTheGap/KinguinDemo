@@ -696,4 +696,27 @@
     sendAML();
   });
 
+  //*** UPLOAD ONLY POPUP ***//
+
+  let addDoc1;
+  let idImg1;
+
+  $('input[name="address-doc-1"]').change(function (e) {
+    addDoc1 = e.target.files[0].name;
+    $('label[for="address-doc-1"]').find('p').text(addDoc1);
+    $(this).closest('.file-upload').addClass('upload-ready');
+  });
+
+  $('input[name="ident-img-1"]').change(function (e) {
+    idImg1 = e.target.files[0].name;
+    $('label[for="ident-img-1"]').find('p').text(idImg1);
+    $(this).closest('.file-upload').addClass('upload-ready');
+  });
+
+  $('input[name="kyc-upload-submit"]').click(function () {
+    send();
+  });
+
+  //*************************//
+
 }());
