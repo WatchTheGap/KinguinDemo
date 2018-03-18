@@ -42,6 +42,11 @@
     'body': 'What happens next?'
   };
 
+  let fileUpload = {
+    'title': 'Success!',
+    'subtitle': 'Your profile has been updated with your identification documents.',
+    'body': 'Our KYC team is currently reviewing your credentials. Please allow 1-2 business days for the review process to be completed. You will receive notification via email of your approval status.'
+  };
 
   //***************************************************
   //***EMAIL TRIGGERED POPUPS
@@ -96,6 +101,10 @@
       case ('kyc-eur'):
       blur();
       $('#investor-popup').removeClass('hide');
+      break;
+      case ('upload'):
+      blur();
+      $('kyc-upload-popup').removeClass('hide');
       break;
       case('roadmap'):
       $('#roadmap2-popup').removeClass('hide');
@@ -436,6 +445,44 @@
  };
 
 
+ var sendFilesOnly = function() {
+   //*** removed calling kycProfile() ***
+   //*** added new confirmation popup after success ***
+   var data = new FormData(form);
+
+   var uid = getQueryParam("uid");
+   var hash = getQueryParam("hash");
+
+   var settings = {
+     "async": true,
+     "crossDomain": true,
+     "url": "https://api.kinguin.io/api/filestore/"+uid+"/"+hash,
+     "method": "POST",
+     "headers": {
+     },
+     "processData": false,
+     "contentType": false,
+     "mimeType": "multipart/form-data",
+     "data": data
+   };
+
+   $.ajax(settings).done(function (response) {
+     $('#loader').addClass('hide');
+     $('#kyc-upload-popup').addClass('hide');
+     $('#confirmation-popup').removeClass('hide');
+     $('.confirm-title').text(fileUpload.title);
+     $('.confirm-subtitle').text(fileUpload.subtitle);
+     $('.confirm-body').text(fileUpload.body);
+     $('.popup-bg').show();
+   }).fail(function () {
+     alert('Something went wrong! =(');
+     $("#loader").addClass('hide');
+   });
+   return false;
+ };
+
+
+
 //************************************************
 //************************************************
 
@@ -718,7 +765,7 @@
   });
 
   $('input[name="kyc-upload-submit"]').click(function () {
-    send();
+    sendFilesOnly();
   });
 
   //*************************//
