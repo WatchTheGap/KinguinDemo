@@ -850,14 +850,27 @@
     sendAML();
   });
 
-  //*** UPLOAD ONLY POPUP ***//
-
+  //*** UPLOAD BUTTON - UPLOAD READY***//
+  let addDoc;
   let addDoc1;
+  let idImg;
   let idImg1;
+
+  $('input[name="address-doc"]').change(function (e) {
+    addDoc = e.target.files[0].name;
+    $('label[for="address-doc"]').find('p').text(addDoc);
+    $(this).closest('.file-upload').addClass('upload-ready');
+  });
 
   $('input[name="address-doc-1"]').change(function (e) {
     addDoc1 = e.target.files[0].name;
     $('label[for="address-doc-1"]').find('p').text(addDoc1);
+    $(this).closest('.file-upload').addClass('upload-ready');
+  });
+
+  $('input[name="ident-img"]').change(function (e) {
+    idImg = e.target.files[0].name;
+    $('label[for="ident-img"]').find('p').text(idImg);
     $(this).closest('.file-upload').addClass('upload-ready');
   });
 
@@ -867,6 +880,8 @@
     $(this).closest('.file-upload').addClass('upload-ready');
   });
 
+
+//*** SEND FILES ONLY ***//
   $('input[name="kyc-upload-submit"]').click(function () {
     sendFilesOnly();
   });
