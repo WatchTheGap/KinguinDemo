@@ -1,0 +1,41 @@
+.helper-popup-bg {
+  @extend .popup-bg;
+}
+
+.helper {
+  display: none;
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 400px;
+  box-shadow: 20px 40px 50px black;
+
+  &::before, &::after {
+    border-bottom: 10px solid #c4e880;
+  }
+
+  .modal-header {
+    background-color: #93d558;
+    border-top: 10px solid #c4e880;
+    height: 60px;
+    h1 {
+      font-size: 20px;
+      margin: 5px 20px;
+    }
+    #close-x {
+      height: 20px;
+      width: 20px;
+    }
+  }
+  .modal-body {
+    min-height: 200px;
+    h2 {
+      font-size: 18px;
+    }
+  }
+  .modal-footer {
+    min-height: 70px;
+    .continue-btn {
+      margin: 0 5%;
+    }
+  }
+}

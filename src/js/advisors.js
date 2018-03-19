@@ -39,6 +39,9 @@
       let crystalName = 'Stephen A. Crystal, ESQ';
       let crystalBio = "<p>Stephen is an attorney and investor focusing on gaming and esports.</p><p>He has spent 25 years directly involved in all aspects of the casino and gaming technology industry as well as I-Gaming and esports worldwide. As an attorney he has represented public and private gaming companies before various state regulatory bodies and jurisdictions. Stephen has also been the President and CEO of numerous casino holding and public gaming technology companies, employing thousands of employees. Lastly, Stephen is an active investor and advisor on over $2 Billion dollars of project finance and mergers and acquisitions in the casino/gaming technology/I-Gaming/esports and energy and utility spaces.</p>";
 
+      let shulginName = 'Alexander Shulgin';
+      let shulginBio = '<p>Alexander is a one of a kind Russian Siberian musician, he has composed 50+ #1 chart toppers and successfully combines creative thinking with business. He manages GRUPPA KOMPANIY FAMILIA, which specializes in blockchain, new media, publishing, and entertainment investments. Recognized as one of the world’s leading visionaries in the digital disruption of the world economy, as well as blockchain technology, the creative economy, media, entertainment and sports. Considered an expert in the crypto world, he has invested in many leading companies such as Bitfury, DotBlockchainMedia and more. Alexander is a member of the Expert Council under the Prime Minister of the Russian Federation, where he has been awarded the Order of the Medal “Professionalism and Business Reputation.” He furthermore serves as advisor to high profile crypto companies and regulators.</p>';
+
       if ($(this).find('h5').is(':contains("John Lee")')) {
         $('#advisors-popup .more-info-text').find('h3').text(leeName).siblings('.bio-text').empty('.bio-text').append(leeBio);
       } else if ($(this).find('h5').is(':contains("Jens Hilgers")')){
@@ -57,6 +60,8 @@
         $('#advisors-popup .more-info-text').find('h3').text(haoName).siblings('.bio-text').empty('.bio-text').append(haoBio);
       } else if ($(this).find('h5').is(':contains("Stephen Crystal")')) {
         $('#advisors-popup .more-info-text').find('h3').text(crystalName).siblings('.bio-text').empty('.bio-text').append(crystalBio);
+      } else if ($(this).find('h5').is(':contains("Alexander Shulgin")')) {
+        $('#advisors-popup .more-info-text').find('h3').text(shulginName).siblings('.bio-text').empty('.bio-text').append(shulginBio);
       }
     }
   });

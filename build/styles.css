@@ -1,3 +1,119 @@
+#loader {
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+  height: 10px;
+  width: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -5px;
+  z-index: 999; }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
+            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
+  6.25% {
+    -webkit-box-shadow: 0px -30px transparent, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
+            box-shadow: 0px -30px transparent, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
+  12.5% {
+    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
+            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
+  18.75% {
+    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
+            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
+  25% {
+    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
+            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
+  31.25% {
+    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
+            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
+  37.5% {
+    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px transparent, -10px -30px transparent;
+            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px transparent, -10px -30px transparent; }
+  43.75% {
+    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px transparent;
+            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px transparent; }
+  50% {
+    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
+            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
+  56.25% {
+    -webkit-box-shadow: 0px -30px #000, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
+            box-shadow: 0px -30px #000, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
+  62.5% {
+    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
+            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
+  68.75% {
+    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
+            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
+  75% {
+    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
+            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
+  81.25% {
+    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px #000, -20px -20px #000, -10px -30px #000;
+            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
+  87.5% {
+    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px #000, -10px -30px #000;
+            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px #000, -10px -30px #000; }
+  93.75% {
+    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px #000;
+            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px #000; }
+  100% {
+    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
+            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; } }
+
+@keyframes spin {
+  0% {
+    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
+            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
+  6.25% {
+    -webkit-box-shadow: 0px -30px transparent, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
+            box-shadow: 0px -30px transparent, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
+  12.5% {
+    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
+            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
+  18.75% {
+    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
+            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
+  25% {
+    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
+            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
+  31.25% {
+    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
+            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
+  37.5% {
+    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px transparent, -10px -30px transparent;
+            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px transparent, -10px -30px transparent; }
+  43.75% {
+    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px transparent;
+            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px transparent; }
+  50% {
+    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
+            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
+  56.25% {
+    -webkit-box-shadow: 0px -30px #000, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
+            box-shadow: 0px -30px #000, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
+  62.5% {
+    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
+            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
+  68.75% {
+    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
+            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
+  75% {
+    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
+            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
+  81.25% {
+    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px #000, -20px -20px #000, -10px -30px #000;
+            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
+  87.5% {
+    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px #000, -10px -30px #000;
+            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px #000, -10px -30px #000; }
+  93.75% {
+    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px #000;
+            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px #000; }
+  100% {
+    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
+            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; } }
 .social-media-wrapper {
   display: -webkit-box;
   display: -moz-box;
@@ -62,6 +178,18 @@ body {
   margin: 0;
   padding: 0; }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  padding: 0 20px; }
+  footer p {
+    color: rgba(0, 0, 0, 0.25); }
+
+.mobile-show {
+  display: none; }
+
 .wrapper-island {
   margin: 160px 10%;
   width: -webkit-fit-content;
@@ -74,6 +202,13 @@ body {
   .islands img, #about-island img, #landing-island img, #info-island img, #strategy-island img, .islands div, #about-island div, #landing-island div, #info-island div, #strategy-island div, .islands a div, #about-island a div, #landing-island a div, #info-island a div, #strategy-island a div {
     position: absolute;
     background-repeat: no-repeat; }
+
+.titles {
+  font-family: '04b_03', monospace;
+  text-align: center;
+  position: absolute;
+  cursor: pointer;
+  margin: 0; }
 
 #stairs-top {
   top: 277px;
@@ -121,6 +256,22 @@ body {
   height: 111px;
   width: auto; }
 
+#roadmap-full {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-image: url("img/Roadmap_H.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+
+@media screen and (max-width: 900px) {
+  #roadmap-full {
+    background-size: cover;
+    background-image: url("img/Roadmap_V.jpg");
+    background-position: left;
+    overflow-x: scroll; } }
 #kinguin-logo {
   height: 58px;
   padding-left: 10vw; }
@@ -201,7 +352,7 @@ header {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
 
-.popup-bg {
+.popup-bg, .email-popup-bg, .helper-popup-bg {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -215,6 +366,7 @@ header {
   z-index: 2; }
 
 .popup-wrapper-short {
+  z-index: 2;
   position: absolute;
   top: 20vh;
   left: 50vh; }
@@ -225,6 +377,7 @@ header {
   z-index: 2; }
 
 .signup-wrapper {
+  z-index: 2;
   margin: 20px 25vw; }
   .signup-wrapper .popup-outer-wrapper {
     width: 50vh;
@@ -301,6 +454,18 @@ header {
     min-height: 100px; }
   .modal-body h2, #why-now-popup .modal-footer h2, .modal-body h3, #why-now-popup .modal-footer h3, .modal-body nav, #why-now-popup .modal-footer nav {
     text-align: center; }
+  .modal-body a, #why-now-popup .modal-footer a {
+    font-family: '04b_03', monospace;
+    margin: 0;
+    color: #9ac4bf;
+    text-decoration: none;
+    text-align: center; }
+    .modal-body a:visited, #why-now-popup .modal-footer a:visited {
+      color: #c8dfdc; }
+    .modal-body a h6, #why-now-popup .modal-footer a h6 {
+      font-family: inherit;
+      margin: 20px;
+      font-size: 12px; }
 
 .modal-footer {
   font-family: '04b_03', monospace;
@@ -401,19 +566,19 @@ header {
   position: absolute;
   background: black; }
 
-.red-btn, .team-member .input-wrapper, #signup-form #kyc-continue, #personal-data-form #kyc-continue,
+.red-btn, .team-member .input-wrapper, #signup-form #kyc-continue, #personal-data-form #kyc-continue, #kyc-upload-popup .modal-body form #kyc-continue, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue,
 #company-data-form #kyc-continue, #funding-form #kyc-continue, #signup-button-crypto, #signup-button-fiat, #investor-button-private, #investor-button-company, .continue-btn {
   width: 40%;
   display: inline-block;
   background-color: #ef5e5e; }
-  .red-btn .pixel-input, .team-member .input-wrapper .pixel-input, #signup-form #kyc-continue .pixel-input, #personal-data-form #kyc-continue .pixel-input,
+  .red-btn .pixel-input, .team-member .input-wrapper .pixel-input, #signup-form #kyc-continue .pixel-input, #personal-data-form #kyc-continue .pixel-input, #kyc-upload-popup .modal-body form #kyc-continue .pixel-input, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue .pixel-input, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue .pixel-input,
   #company-data-form #kyc-continue .pixel-input, #funding-form #kyc-continue .pixel-input, #signup-button-crypto .pixel-input, #signup-button-fiat .pixel-input, #investor-button-private .pixel-input, #investor-button-company .pixel-input, .continue-btn .pixel-input {
     background-color: #ef5e5e;
     padding: 0px; }
-  .red-btn a, .team-member .input-wrapper a, #signup-form #kyc-continue a, #personal-data-form #kyc-continue a,
-  #company-data-form #kyc-continue a, #funding-form #kyc-continue a, #signup-button-crypto a, #signup-button-fiat a, #investor-button-private a, #investor-button-company a, .continue-btn a, .red-btn input, .team-member .input-wrapper input, #signup-form #kyc-continue input, #personal-data-form #kyc-continue input,
-  #company-data-form #kyc-continue input, #funding-form #kyc-continue input, #signup-button-crypto input, #signup-button-fiat input, #investor-button-private input, #investor-button-company input, .continue-btn input, .red-btn input:active, .team-member .input-wrapper input:active, #signup-form #kyc-continue input:active, #personal-data-form #kyc-continue input:active,
-  #company-data-form #kyc-continue input:active, #funding-form #kyc-continue input:active, #signup-button-crypto input:active, #signup-button-fiat input:active, #investor-button-private input:active, #investor-button-company input:active, .continue-btn input:active, .red-btn input:focus, .team-member .input-wrapper input:focus, #signup-form #kyc-continue input:focus, #personal-data-form #kyc-continue input:focus,
+  .red-btn a, .team-member .input-wrapper a, #signup-form #kyc-continue a, #personal-data-form #kyc-continue a, #kyc-upload-popup .modal-body form #kyc-continue a, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue a, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue a,
+  #company-data-form #kyc-continue a, #funding-form #kyc-continue a, #signup-button-crypto a, #signup-button-fiat a, #investor-button-private a, #investor-button-company a, .continue-btn a, .red-btn input, .team-member .input-wrapper input, #signup-form #kyc-continue input, #personal-data-form #kyc-continue input, #kyc-upload-popup .modal-body form #kyc-continue input, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue input, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue input,
+  #company-data-form #kyc-continue input, #funding-form #kyc-continue input, #signup-button-crypto input, #signup-button-fiat input, #investor-button-private input, #investor-button-company input, .continue-btn input, .red-btn input:active, .team-member .input-wrapper input:active, #signup-form #kyc-continue input:active, #personal-data-form #kyc-continue input:active, #kyc-upload-popup .modal-body form #kyc-continue input:active, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue input:active, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue input:active,
+  #company-data-form #kyc-continue input:active, #funding-form #kyc-continue input:active, #signup-button-crypto input:active, #signup-button-fiat input:active, #investor-button-private input:active, #investor-button-company input:active, .continue-btn input:active, .red-btn input:focus, .team-member .input-wrapper input:focus, #signup-form #kyc-continue input:focus, #personal-data-form #kyc-continue input:focus, #kyc-upload-popup .modal-body form #kyc-continue input:focus, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue input:focus, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue input:focus,
   #company-data-form #kyc-continue input:focus, #funding-form #kyc-continue input:focus, #signup-button-crypto input:focus, #signup-button-fiat input:focus, #investor-button-private input:focus, #investor-button-company input:focus, .continue-btn input:focus {
     cursor: pointer;
     -webkit-box-sizing: border-box;
@@ -429,14 +594,14 @@ header {
     display: block;
     padding: 30px 10px;
     background-color: inherit; }
-  .red-btn h3, .team-member .input-wrapper h3, #signup-form #kyc-continue h3, #personal-data-form #kyc-continue h3,
+  .red-btn h3, .team-member .input-wrapper h3, #signup-form #kyc-continue h3, #personal-data-form #kyc-continue h3, #kyc-upload-popup .modal-body form #kyc-continue h3, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue h3, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue h3,
   #company-data-form #kyc-continue h3, #funding-form #kyc-continue h3, #signup-button-crypto h3, #signup-button-fiat h3, #investor-button-private h3, #investor-button-company h3, .continue-btn h3 {
     margin: 10px; }
-  .red-btn img, .team-member .input-wrapper img, #signup-form #kyc-continue img, #personal-data-form #kyc-continue img,
+  .red-btn img, .team-member .input-wrapper img, #signup-form #kyc-continue img, #personal-data-form #kyc-continue img, #kyc-upload-popup .modal-body form #kyc-continue img, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue img, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue img,
   #company-data-form #kyc-continue img, #funding-form #kyc-continue img, #signup-button-crypto img, #signup-button-fiat img, #investor-button-private img, #investor-button-company img, .continue-btn img {
     min-height: 61px; }
-  .red-btn::before, .team-member .input-wrapper::before, #signup-form #kyc-continue::before, #personal-data-form #kyc-continue::before,
-  #company-data-form #kyc-continue::before, #funding-form #kyc-continue::before, #signup-button-crypto::before, #signup-button-fiat::before, #investor-button-private::before, #investor-button-company::before, .continue-btn::before, .red-btn::after, .team-member .input-wrapper::after, #signup-form #kyc-continue::after, #personal-data-form #kyc-continue::after,
+  .red-btn::before, .team-member .input-wrapper::before, #signup-form #kyc-continue::before, #personal-data-form #kyc-continue::before, #kyc-upload-popup .modal-body form #kyc-continue::before, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue::before, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue::before,
+  #company-data-form #kyc-continue::before, #funding-form #kyc-continue::before, #signup-button-crypto::before, #signup-button-fiat::before, #investor-button-private::before, #investor-button-company::before, .continue-btn::before, .red-btn::after, .team-member .input-wrapper::after, #signup-form #kyc-continue::after, #personal-data-form #kyc-continue::after, #kyc-upload-popup .modal-body form #kyc-continue::after, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue::after, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue::after,
   #company-data-form #kyc-continue::after, #funding-form #kyc-continue::after, #signup-button-crypto::after, #signup-button-fiat::after, #investor-button-private::after, #investor-button-company::after, .continue-btn::after {
     border-bottom: 5px solid #f68888; }
 
@@ -463,6 +628,82 @@ header {
     padding: 15px; }
   .blue-btn::before, #bank-info-form .copy-sm::before, .blue-btn::after, #bank-info-form .copy-sm::after {
     border-bottom: 5px solid #c8dfdc; }
+
+.back-btn {
+  position: absolute;
+  background-color: #9ac4bf;
+  height: 30px;
+  width: 50px;
+  bottom: 10%;
+  left: 5%; }
+  .back-btn::before, .back-btn::after {
+    border-bottom: 5px solid #c8dfdc; }
+  .back-btn .pixel-input {
+    background-color: inherit;
+    height: 40px;
+    width: 30px; }
+    .back-btn .pixel-input::before, .back-btn .pixel-input::after {
+      border-top: 5px solid #617976; }
+    .back-btn .pixel-input input {
+      cursor: pointer;
+      border-top: 5px solid #c8dfdc;
+      border-bottom: 5px solid #617976;
+      height: inherit;
+      background-color: inherit;
+      font-size: 30px; }
+
+#alt-roadmap-popup {
+  background-image: url("img/Roadmap_R.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: none; }
+  #alt-roadmap-popup .popup-inner-wrapper {
+    background-color: transparent;
+    height: 2160px;
+    width: 2160px; }
+
+#airdrop-popup::before, #airdrop-popup::after {
+  border-bottom: 10px solid #6bb0d2; }
+#airdrop-popup .modal-header {
+  background-color: #0088cc;
+  border-top: 10px solid #6bb0d2; }
+#airdrop-popup .modal-body, #airdrop-popup #why-now-popup .modal-footer, #why-now-popup #airdrop-popup .modal-footer {
+  min-height: 500px; }
+  #airdrop-popup .modal-body .input-wrapper, #airdrop-popup #why-now-popup .modal-footer .input-wrapper, #why-now-popup #airdrop-popup .modal-footer .input-wrapper {
+    width: 70%;
+    margin: 3% 15%; }
+  #airdrop-popup .modal-body input::-webkit-input-placeholder, #airdrop-popup #why-now-popup .modal-footer input::-webkit-input-placeholder, #why-now-popup #airdrop-popup .modal-footer input::-webkit-input-placeholder {
+    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
+    font-size: 15px;
+    text-align: left;
+    color: #9c9b9b;
+    padding-left: 10px; }
+  #airdrop-popup .modal-body input::-moz-placeholder, #airdrop-popup #why-now-popup .modal-footer input::-moz-placeholder, #why-now-popup #airdrop-popup .modal-footer input::-moz-placeholder {
+    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
+    font-size: 15px;
+    text-align: left;
+    color: #9c9b9b;
+    padding-left: 10px; }
+  #airdrop-popup .modal-body input:-ms-input-placeholder, #airdrop-popup #why-now-popup .modal-footer input:-ms-input-placeholder, #why-now-popup #airdrop-popup .modal-footer input:-ms-input-placeholder {
+    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
+    font-size: 15px;
+    text-align: left;
+    color: #9c9b9b;
+    padding-left: 10px; }
+  #airdrop-popup .modal-body input::-ms-input-placeholder, #airdrop-popup #why-now-popup .modal-footer input::-ms-input-placeholder, #why-now-popup #airdrop-popup .modal-footer input::-ms-input-placeholder {
+    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
+    font-size: 15px;
+    text-align: left;
+    color: #9c9b9b;
+    padding-left: 10px; }
+  #airdrop-popup .modal-body input::placeholder, #airdrop-popup #why-now-popup .modal-footer input::placeholder, #why-now-popup #airdrop-popup .modal-footer input::placeholder {
+    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
+    font-size: 15px;
+    text-align: left;
+    color: #9c9b9b;
+    padding-left: 10px; }
+  #airdrop-popup .modal-body input, #airdrop-popup #why-now-popup .modal-footer input, #why-now-popup #airdrop-popup .modal-footer input {
+    height: 50px; }
 
 #advisors-popup::before, #advisors-popup::after {
   border-bottom: 10px solid #8ac0d4; }
@@ -1117,11 +1358,95 @@ header {
   text-align: center;
   height: 150px; }
 
+.consent-boxes {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .consent-boxes .checkbox-row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%; }
+    .consent-boxes .checkbox-row .pixel-input {
+      padding: 0 12px; }
+    .consent-boxes .checkbox-row input[type='checkbox'] {
+      visibility: hidden;
+      margin: 0;
+      padding: 0; }
+    .consent-boxes .checkbox-row input[type='checkbox']:checked + label {
+      background-image: url("img/Close.png");
+      background-size: 15px;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .consent-boxes .checkbox-row label {
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px; }
+    .consent-boxes .checkbox-row a {
+      text-decoration: none;
+      color: black; }
+      .consent-boxes .checkbox-row a:hover {
+        color: #ef5e5e; }
+      .consent-boxes .checkbox-row a:visited {
+        color: grey; }
+    .consent-boxes .checkbox-row .checkbox-wrapper {
+      margin: 10px; }
+    .consent-boxes .checkbox-row p {
+      width: 85%;
+      font-family: '04b_03', monospace;
+      margin: 10px; }
+
 input, button, select,
 input:focus, button:focus, select:focus,
 input:active, button:active, select:active {
   outline: none;
   border: none; }
+
+.alert-msg {
+  text-align: center;
+  font-family: '04b_03', monospace;
+  color: red;
+  font-size: 14px;
+  margin: -15px 0 0 0; }
+
+#signup-popup {
+  height: auto;
+  width: 700px; }
+
+#kyc-popup .modal-footer .button-wrapper, #aml-popup .modal-footer .button-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  margin: auto;
+  margin-top: 3%; }
+  #kyc-popup .modal-footer .button-wrapper .continue-btn, #aml-popup .modal-footer .button-wrapper .continue-btn {
+    width: 100%;
+    margin: 10px; }
 
 .signup-corners::before, .signup-corners::after {
   border-bottom: 10px solid #c8dfdc; }
@@ -1192,7 +1517,8 @@ input:active, button:active, select:active {
     font-size: 20px; }
   .currency-form input {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    padding: 0 10px; }
   .currency-form .pixel-input {
     padding: 10px 30px; }
   .currency-form #BTC-select {
@@ -1348,106 +1674,113 @@ input:active, button:active, select:active {
       text-align: center; }
 
 #signup-form #btc-fund-continue,
-#signup-form #eth-fund-continue, #personal-data-form #btc-fund-continue,
+#signup-form #eth-fund-continue, #personal-data-form #btc-fund-continue, #kyc-upload-popup .modal-body form #btc-fund-continue, #kyc-upload-popup #why-now-popup .modal-footer form #btc-fund-continue, #why-now-popup #kyc-upload-popup .modal-footer form #btc-fund-continue,
 #personal-data-form #eth-fund-continue,
+#kyc-upload-popup .modal-body form #eth-fund-continue,
+#kyc-upload-popup #why-now-popup .modal-footer form #eth-fund-continue,
+#why-now-popup #kyc-upload-popup .modal-footer form #eth-fund-continue,
 #company-data-form #btc-fund-continue,
 #company-data-form #eth-fund-continue, #funding-form #btc-fund-continue,
 #funding-form #eth-fund-continue {
   margin-top: 25%; }
-#signup-form #aml-continue, #signup-form #aml-eth-continue, #signup-form #aml-btc-continue, #personal-data-form #aml-continue, #personal-data-form #aml-eth-continue, #personal-data-form #aml-btc-continue,
+#signup-form #aml-continue, #signup-form #aml-eth-continue, #signup-form #aml-btc-continue, #personal-data-form #aml-continue, #kyc-upload-popup .modal-body form #aml-continue, #kyc-upload-popup #why-now-popup .modal-footer form #aml-continue, #why-now-popup #kyc-upload-popup .modal-footer form #aml-continue, #personal-data-form #aml-eth-continue, #kyc-upload-popup .modal-body form #aml-eth-continue, #kyc-upload-popup #why-now-popup .modal-footer form #aml-eth-continue, #why-now-popup #kyc-upload-popup .modal-footer form #aml-eth-continue, #personal-data-form #aml-btc-continue, #kyc-upload-popup .modal-body form #aml-btc-continue, #kyc-upload-popup #why-now-popup .modal-footer form #aml-btc-continue, #why-now-popup #kyc-upload-popup .modal-footer form #aml-btc-continue,
 #company-data-form #aml-continue,
 #company-data-form #aml-eth-continue,
 #company-data-form #aml-btc-continue, #funding-form #aml-continue, #funding-form #aml-eth-continue, #funding-form #aml-btc-continue {
   margin-top: 10%; }
 #signup-form #btc-fund::-webkit-input-placeholder,
-#signup-form #eth-fund::-webkit-input-placeholder, #personal-data-form #btc-fund::-webkit-input-placeholder,
+#signup-form #eth-fund::-webkit-input-placeholder, #personal-data-form #btc-fund::-webkit-input-placeholder, #kyc-upload-popup .modal-body form #btc-fund::-webkit-input-placeholder, #kyc-upload-popup #why-now-popup .modal-footer form #btc-fund::-webkit-input-placeholder, #why-now-popup #kyc-upload-popup .modal-footer form #btc-fund::-webkit-input-placeholder,
 #personal-data-form #eth-fund::-webkit-input-placeholder,
+#kyc-upload-popup .modal-body form #eth-fund::-webkit-input-placeholder,
+#kyc-upload-popup #why-now-popup .modal-footer form #eth-fund::-webkit-input-placeholder,
+#why-now-popup #kyc-upload-popup .modal-footer form #eth-fund::-webkit-input-placeholder,
 #company-data-form #btc-fund::-webkit-input-placeholder,
 #company-data-form #eth-fund::-webkit-input-placeholder, #funding-form #btc-fund::-webkit-input-placeholder,
 #funding-form #eth-fund::-webkit-input-placeholder {
   text-align: center; }
 #signup-form #btc-fund::-moz-placeholder,
-#signup-form #eth-fund::-moz-placeholder, #personal-data-form #btc-fund::-moz-placeholder,
+#signup-form #eth-fund::-moz-placeholder, #personal-data-form #btc-fund::-moz-placeholder, #kyc-upload-popup .modal-body form #btc-fund::-moz-placeholder, #kyc-upload-popup #why-now-popup .modal-footer form #btc-fund::-moz-placeholder, #why-now-popup #kyc-upload-popup .modal-footer form #btc-fund::-moz-placeholder,
 #personal-data-form #eth-fund::-moz-placeholder,
+#kyc-upload-popup .modal-body form #eth-fund::-moz-placeholder,
+#kyc-upload-popup #why-now-popup .modal-footer form #eth-fund::-moz-placeholder,
+#why-now-popup #kyc-upload-popup .modal-footer form #eth-fund::-moz-placeholder,
 #company-data-form #btc-fund::-moz-placeholder,
 #company-data-form #eth-fund::-moz-placeholder, #funding-form #btc-fund::-moz-placeholder,
 #funding-form #eth-fund::-moz-placeholder {
   text-align: center; }
 #signup-form #btc-fund:-ms-input-placeholder,
-#signup-form #eth-fund:-ms-input-placeholder, #personal-data-form #btc-fund:-ms-input-placeholder,
+#signup-form #eth-fund:-ms-input-placeholder, #personal-data-form #btc-fund:-ms-input-placeholder, #kyc-upload-popup .modal-body form #btc-fund:-ms-input-placeholder, #kyc-upload-popup #why-now-popup .modal-footer form #btc-fund:-ms-input-placeholder, #why-now-popup #kyc-upload-popup .modal-footer form #btc-fund:-ms-input-placeholder,
 #personal-data-form #eth-fund:-ms-input-placeholder,
+#kyc-upload-popup .modal-body form #eth-fund:-ms-input-placeholder,
+#kyc-upload-popup #why-now-popup .modal-footer form #eth-fund:-ms-input-placeholder,
+#why-now-popup #kyc-upload-popup .modal-footer form #eth-fund:-ms-input-placeholder,
 #company-data-form #btc-fund:-ms-input-placeholder,
 #company-data-form #eth-fund:-ms-input-placeholder, #funding-form #btc-fund:-ms-input-placeholder,
 #funding-form #eth-fund:-ms-input-placeholder {
   text-align: center; }
 #signup-form #btc-fund::-ms-input-placeholder,
-#signup-form #eth-fund::-ms-input-placeholder, #personal-data-form #btc-fund::-ms-input-placeholder,
+#signup-form #eth-fund::-ms-input-placeholder, #personal-data-form #btc-fund::-ms-input-placeholder, #kyc-upload-popup .modal-body form #btc-fund::-ms-input-placeholder, #kyc-upload-popup #why-now-popup .modal-footer form #btc-fund::-ms-input-placeholder, #why-now-popup #kyc-upload-popup .modal-footer form #btc-fund::-ms-input-placeholder,
 #personal-data-form #eth-fund::-ms-input-placeholder,
+#kyc-upload-popup .modal-body form #eth-fund::-ms-input-placeholder,
+#kyc-upload-popup #why-now-popup .modal-footer form #eth-fund::-ms-input-placeholder,
+#why-now-popup #kyc-upload-popup .modal-footer form #eth-fund::-ms-input-placeholder,
 #company-data-form #btc-fund::-ms-input-placeholder,
 #company-data-form #eth-fund::-ms-input-placeholder, #funding-form #btc-fund::-ms-input-placeholder,
 #funding-form #eth-fund::-ms-input-placeholder {
   text-align: center; }
 #signup-form #btc-fund::placeholder,
-#signup-form #eth-fund::placeholder, #personal-data-form #btc-fund::placeholder,
+#signup-form #eth-fund::placeholder, #personal-data-form #btc-fund::placeholder, #kyc-upload-popup .modal-body form #btc-fund::placeholder, #kyc-upload-popup #why-now-popup .modal-footer form #btc-fund::placeholder, #why-now-popup #kyc-upload-popup .modal-footer form #btc-fund::placeholder,
 #personal-data-form #eth-fund::placeholder,
+#kyc-upload-popup .modal-body form #eth-fund::placeholder,
+#kyc-upload-popup #why-now-popup .modal-footer form #eth-fund::placeholder,
+#why-now-popup #kyc-upload-popup .modal-footer form #eth-fund::placeholder,
 #company-data-form #btc-fund::placeholder,
 #company-data-form #eth-fund::placeholder, #funding-form #btc-fund::placeholder,
 #funding-form #eth-fund::placeholder {
   text-align: center; }
-#signup-form .input-wrapper, #personal-data-form .input-wrapper,
+#signup-form .input-wrapper, #personal-data-form .input-wrapper, #kyc-upload-popup .modal-body form .input-wrapper, #kyc-upload-popup #why-now-popup .modal-footer form .input-wrapper, #why-now-popup #kyc-upload-popup .modal-footer form .input-wrapper,
 #company-data-form .input-wrapper, #funding-form .input-wrapper {
   width: 70%;
   margin: 3% 15%; }
-#signup-form input::-webkit-input-placeholder, #personal-data-form input::-webkit-input-placeholder,
+#signup-form input::-webkit-input-placeholder, #personal-data-form input::-webkit-input-placeholder, #kyc-upload-popup .modal-body form input::-webkit-input-placeholder, #kyc-upload-popup #why-now-popup .modal-footer form input::-webkit-input-placeholder, #why-now-popup #kyc-upload-popup .modal-footer form input::-webkit-input-placeholder,
 #company-data-form input::-webkit-input-placeholder, #funding-form input::-webkit-input-placeholder {
   font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
   font-size: 15px;
   text-align: left;
   color: #9c9b9b;
   padding-left: 10px; }
-#signup-form input::-moz-placeholder, #personal-data-form input::-moz-placeholder,
+#signup-form input::-moz-placeholder, #personal-data-form input::-moz-placeholder, #kyc-upload-popup .modal-body form input::-moz-placeholder, #kyc-upload-popup #why-now-popup .modal-footer form input::-moz-placeholder, #why-now-popup #kyc-upload-popup .modal-footer form input::-moz-placeholder,
 #company-data-form input::-moz-placeholder, #funding-form input::-moz-placeholder {
   font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
   font-size: 15px;
   text-align: left;
   color: #9c9b9b;
   padding-left: 10px; }
-#signup-form input:-ms-input-placeholder, #personal-data-form input:-ms-input-placeholder,
+#signup-form input:-ms-input-placeholder, #personal-data-form input:-ms-input-placeholder, #kyc-upload-popup .modal-body form input:-ms-input-placeholder, #kyc-upload-popup #why-now-popup .modal-footer form input:-ms-input-placeholder, #why-now-popup #kyc-upload-popup .modal-footer form input:-ms-input-placeholder,
 #company-data-form input:-ms-input-placeholder, #funding-form input:-ms-input-placeholder {
   font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
   font-size: 15px;
   text-align: left;
   color: #9c9b9b;
   padding-left: 10px; }
-#signup-form input::-ms-input-placeholder, #personal-data-form input::-ms-input-placeholder,
+#signup-form input::-ms-input-placeholder, #personal-data-form input::-ms-input-placeholder, #kyc-upload-popup .modal-body form input::-ms-input-placeholder, #kyc-upload-popup #why-now-popup .modal-footer form input::-ms-input-placeholder, #why-now-popup #kyc-upload-popup .modal-footer form input::-ms-input-placeholder,
 #company-data-form input::-ms-input-placeholder, #funding-form input::-ms-input-placeholder {
   font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
   font-size: 15px;
   text-align: left;
   color: #9c9b9b;
   padding-left: 10px; }
-#signup-form input::placeholder, #personal-data-form input::placeholder,
+#signup-form input::placeholder, #personal-data-form input::placeholder, #kyc-upload-popup .modal-body form input::placeholder, #kyc-upload-popup #why-now-popup .modal-footer form input::placeholder, #why-now-popup #kyc-upload-popup .modal-footer form input::placeholder,
 #company-data-form input::placeholder, #funding-form input::placeholder {
   font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
   font-size: 15px;
   text-align: left;
   color: #9c9b9b;
   padding-left: 10px; }
-#signup-form input, #personal-data-form input,
+#signup-form input, #personal-data-form input, #kyc-upload-popup .modal-body form input, #kyc-upload-popup #why-now-popup .modal-footer form input, #why-now-popup #kyc-upload-popup .modal-footer form input,
 #company-data-form input, #funding-form input {
   height: 50px; }
-#signup-form #ident-img, #signup-form #address-doc, #personal-data-form #ident-img, #personal-data-form #address-doc,
-#company-data-form #ident-img,
-#company-data-form #address-doc, #funding-form #ident-img, #funding-form #address-doc {
-  cursor: pointer;
-  position: absolute;
-  top: -5px;
-  left: 0;
-  opacity: 0;
-  background-color: green;
-  height: 120px;
-  width: 200px; }
-#signup-form select, #personal-data-form select,
+#signup-form select, #personal-data-form select, #kyc-upload-popup .modal-body form select, #kyc-upload-popup #why-now-popup .modal-footer form select, #why-now-popup #kyc-upload-popup .modal-footer form select,
 #company-data-form select, #funding-form select {
   cursor: pointer;
   height: 50px;
@@ -1458,40 +1791,71 @@ input:active, button:active, select:active {
   text-align: left;
   color: #9c9b9b;
   width: 100%; }
-  #signup-form select:focus, #personal-data-form select:focus,
+  #signup-form select:focus, #personal-data-form select:focus, #kyc-upload-popup .modal-body form select:focus, #kyc-upload-popup #why-now-popup .modal-footer form select:focus, #why-now-popup #kyc-upload-popup .modal-footer form select:focus,
   #company-data-form select:focus, #funding-form select:focus {
     font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     font-size: 15px;
     width: 100%; }
-#signup-form .up-left, #personal-data-form .up-left,
+#signup-form .up-left, #personal-data-form .up-left, #kyc-upload-popup .modal-body form .up-left, #kyc-upload-popup #why-now-popup .modal-footer form .up-left, #why-now-popup #kyc-upload-popup .modal-footer form .up-left,
 #company-data-form .up-left, #funding-form .up-left {
-  margin: 3% 0% 3% 15%; }
-#signup-form .up-right, #personal-data-form .up-right,
+  margin: 0; }
+#signup-form .up-right, #personal-data-form .up-right, #kyc-upload-popup .modal-body form .up-right, #kyc-upload-popup #why-now-popup .modal-footer form .up-right, #why-now-popup #kyc-upload-popup .modal-footer form .up-right,
 #company-data-form .up-right, #funding-form .up-right {
-  margin: 3% 0% 3% 2%; }
-#signup-form .file-upload, #personal-data-form .file-upload,
+  margin: 0; }
+#signup-form .upload-blocks, #personal-data-form .upload-blocks, #kyc-upload-popup .modal-body form .upload-blocks, #kyc-upload-popup #why-now-popup .modal-footer form .upload-blocks, #why-now-popup #kyc-upload-popup .modal-footer form .upload-blocks,
+#company-data-form .upload-blocks, #funding-form .upload-blocks {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+  margin: auto; }
+#signup-form .upload-text, #personal-data-form .upload-text, #kyc-upload-popup .modal-body form .upload-text, #kyc-upload-popup #why-now-popup .modal-footer form .upload-text, #why-now-popup #kyc-upload-popup .modal-footer form .upload-text,
+#company-data-form .upload-text, #funding-form .upload-text {
+  text-align: center;
+  color: #9c9b9b;
+  font-size: 20px;
+  width: 48%;
+  margin: 3% 0; }
+#signup-form .file-upload, #personal-data-form .file-upload, #kyc-upload-popup .modal-body form .file-upload, #kyc-upload-popup #why-now-popup .modal-footer form .file-upload, #why-now-popup #kyc-upload-popup .modal-footer form .file-upload,
 #company-data-form .file-upload, #funding-form .file-upload {
-  width: 34%;
+  height: 100%;
   font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
+  min-width: 48%;
+  max-width: 48%;
   color: #9c9b9b; }
-  #signup-form .file-upload label, #personal-data-form .file-upload label,
+  #signup-form .file-upload label, #personal-data-form .file-upload label, #kyc-upload-popup .modal-body form .file-upload label, #kyc-upload-popup #why-now-popup .modal-footer form .file-upload label, #why-now-popup #kyc-upload-popup .modal-footer form .file-upload label,
   #company-data-form .file-upload label, #funding-form .file-upload label {
     text-align: center; }
-  #signup-form .file-upload .pixel-input, #personal-data-form .file-upload .pixel-input,
+  #signup-form .file-upload .pixel-input, #personal-data-form .file-upload .pixel-input, #kyc-upload-popup .modal-body form .file-upload .pixel-input, #kyc-upload-popup #why-now-popup .modal-footer form .file-upload .pixel-input, #why-now-popup #kyc-upload-popup .modal-footer form .file-upload .pixel-input,
   #company-data-form .file-upload .pixel-input, #funding-form .file-upload .pixel-input {
-    height: 120px; }
-  #signup-form .file-upload img, #personal-data-form .file-upload img,
+    height: 100%;
+    padding: 5%; }
+  #signup-form .file-upload img, #personal-data-form .file-upload img, #kyc-upload-popup .modal-body form .file-upload img, #kyc-upload-popup #why-now-popup .modal-footer form .file-upload img, #why-now-popup #kyc-upload-popup .modal-footer form .file-upload img,
   #company-data-form .file-upload img, #funding-form .file-upload img {
     width: 40%;
     margin: 7% 30%; }
-  #signup-form .file-upload p, #personal-data-form .file-upload p,
+  #signup-form .file-upload p, #personal-data-form .file-upload p, #kyc-upload-popup .modal-body form .file-upload p, #kyc-upload-popup #why-now-popup .modal-footer form .file-upload p, #why-now-popup #kyc-upload-popup .modal-footer form .file-upload p,
   #company-data-form .file-upload p, #funding-form .file-upload p {
-    margin: 0; }
-#signup-form #kyc-continue, #personal-data-form #kyc-continue,
+    margin: 0;
+    min-height: 3em; }
+  #signup-form .file-upload input, #personal-data-form .file-upload input, #kyc-upload-popup .modal-body form .file-upload input, #kyc-upload-popup #why-now-popup .modal-footer form .file-upload input, #why-now-popup #kyc-upload-popup .modal-footer form .file-upload input,
+  #company-data-form .file-upload input, #funding-form .file-upload input {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: inherit;
+    opacity: 0; }
+#signup-form #kyc-continue, #personal-data-form #kyc-continue, #kyc-upload-popup .modal-body form #kyc-continue, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue,
 #company-data-form #kyc-continue, #funding-form #kyc-continue {
   width: 70%;
   margin-top: 10%; }
-  #signup-form #kyc-continue a, #signup-form #kyc-continue input, #signup-form #kyc-continue input:active, #personal-data-form #kyc-continue a, #personal-data-form #kyc-continue input, #personal-data-form #kyc-continue input:active,
+  #signup-form #kyc-continue a, #signup-form #kyc-continue input, #signup-form #kyc-continue input:active, #personal-data-form #kyc-continue a, #kyc-upload-popup .modal-body form #kyc-continue a, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue a, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue a, #personal-data-form #kyc-continue input, #kyc-upload-popup .modal-body form #kyc-continue input, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue input, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue input, #personal-data-form #kyc-continue input:active, #kyc-upload-popup .modal-body form #kyc-continue input:active, #kyc-upload-popup #why-now-popup .modal-footer form #kyc-continue input:active, #why-now-popup #kyc-upload-popup .modal-footer form #kyc-continue input:active,
   #company-data-form #kyc-continue a,
   #company-data-form #kyc-continue input,
   #company-data-form #kyc-continue input:active, #funding-form #kyc-continue a, #funding-form #kyc-continue input, #funding-form #kyc-continue input:active {
@@ -1538,107 +1902,246 @@ input:active, button:active, select:active {
   width: 70%;
   margin: 5% 15%; }
 
+#confirmation-popup .modal-body, #confirmation-popup #why-now-popup .modal-footer, #why-now-popup #confirmation-popup .modal-footer {
+  text-align: center;
+  padding: 5%; }
+  #confirmation-popup .modal-body p, #confirmation-popup #why-now-popup .modal-footer p, #why-now-popup #confirmation-popup .modal-footer p {
+    font-size: 20px; }
+  #confirmation-popup .modal-body h1, #confirmation-popup #why-now-popup .modal-footer h1, #why-now-popup #confirmation-popup .modal-footer h1 {
+    font-family: '04b_03', monospace;
+    font-size: 36px; }
+#confirmation-popup .modal-footer {
+  min-height: 200px; }
+
+.error-highlight {
+  -webkit-box-shadow: inset 0 0 1px 1px red;
+          box-shadow: inset 0 0 1px 1px red; }
+
+#kyc-upload-popup::before, #kyc-upload-popup::after {
+  border-bottom: 10px solid #c8dfdc; }
+#kyc-upload-popup .modal-header {
+  background-color: #9ac4bf;
+  border-top: 10px solid #c8dfdc; }
+  #kyc-upload-popup .modal-header h1 {
+    color: black; }
+#kyc-upload-popup .modal-body .kyc-upload-info, #kyc-upload-popup #why-now-popup .modal-footer .kyc-upload-info, #why-now-popup #kyc-upload-popup .modal-footer .kyc-upload-info {
+  width: 80%;
+  margin: 3% auto 5% auto;
+  text-align: center; }
+#kyc-upload-popup .modal-footer {
+  height: 100px; }
+  #kyc-upload-popup .modal-footer .continue-btn {
+    margin: 0 5%; }
+
+.upload-ready {
+  background-color: #93d558; }
+  .upload-ready .pixel-input {
+    background-color: inherit; }
+  .upload-ready p {
+    color: white;
+    word-wrap: break-word; }
+
 #about-island {
   top: 0;
   left: 0; }
   #about-island div {
     cursor: pointer; }
 
-#bulb {
-  background-image: url("img/Bulb.png");
-  top: 313px;
+#about-block {
+  top: 14px; }
+
+.figures {
+  top: 0;
+  left: 150px;
+  -webkit-transition: top .25s ease-in-out;
+  transition: top .25s ease-in-out; }
+
+.figures-hover {
+  top: -80px; }
+
+.shadows {
+  top: 56px;
+  left: 152px;
+  opacity: 0;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out; }
+
+.shadows-hover {
+  top: 0;
+  opacity: 1; }
+
+.team {
+  top: 14px;
+  left: 0;
+  -webkit-transition: top .25s ease-in-out;
+  transition: top .25s ease-in-out; }
+
+.team-hover {
+  top: -31px;
+  left: 0; }
+
+.team-title {
+  height: 30px;
+  -webkit-transform: skewY(30deg);
+          transform: skewY(30deg);
+  color: #c39f8e;
+  font-size: 30px;
+  top: 205px;
+  left: 65px;
+  -webkit-transition: top .25s ease-in-out;
+  transition: top .25s ease-in-out; }
+
+.team-title-hover {
+  top: 160px;
+  height: 200px; }
+
+.company-title {
+  height: 17px;
+  -webkit-transform: skewY(-30deg);
+          transform: skewY(-30deg);
+  color: #ebcda3;
+  font-size: 17px;
+  top: 205px;
+  left: 375px;
+  -webkit-transition: top .25s ease-in-out;
+  transition: top .25s ease-in-out; }
+
+.company-title-hover {
+  top: 188px;
+  height: 70px; }
+
+.company-penguin {
+  top: 105px;
+  left: 373px;
+  -webkit-transition: top .25s ease-in-out;
+  transition: top .25s ease-in-out; }
+
+.company-penguin-hover {
+  top: 75px;
+  border-bottom: 30px solid transparent; }
+
+.story-title {
+  -webkit-transform: skewY(-30deg);
+          transform: skewY(-30deg);
+  color: white;
+  font-size: 17px;
+  top: 272px;
+  left: 81px;
+  border-bottom: 40px solid transparent;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out; }
+
+.story-title-hover {
+  top: 264px;
+  left: 65px; }
+
+.advisors-title {
+  -webkit-transform: skewY(-30deg);
+          transform: skewY(-30deg);
+  color: #111111;
+  font-size: 9px;
+  top: 398px;
+  left: 319px; }
+
+.contact-title {
+  -webkit-transform: skewY(30deg);
+          transform: skewY(30deg);
+  color: #c39f8e;
+  font-size: 11px;
+  top: 457px;
+  left: 10px;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out; }
+
+.contact-title-hover {
+  top: 472px;
+  left: -15px; }
+
+.advisor-block {
+  cursor: pointer;
+  top: 333px;
   left: 251px;
   width: 118px;
-  height: 124px; }
-  #bulb:hover {
-    background-image: url("img/Bulb_hover.png");
-    top: 259px;
-    left: 248px;
-    width: 127px;
-    height: 178px; }
-  #bulb::before {
+  height: 103px; }
+
+.advisor-block-hover {
+  top: 328px;
+  border-bottom: 30px solid transparent; }
+
+.bulb {
+  background-image: url("img/Bulb.png");
+  top: 313px;
+  left: 294px;
+  width: 35px;
+  height: 60px; }
+  .bulb::before {
     content: url("img/Bulb_hover.png");
     width: 0;
     height: 0;
     visibility: hidden; }
 
-#company {
-  background-image: url("img/Company.png");
+.bulb-hover {
+  background-image: url("img/Bulb_hover.png");
+  top: 259px;
+  left: 248px;
+  width: 127px;
+  height: 137px; }
+
+.company {
   top: 65px;
   left: 161px;
-  width: 361px;
-  height: 366px;
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
-  #company:hover {
-    background-image: url("img/Company_hover.png");
-    top: 50px;
-    left: 161px;
-    width: 361px;
-    height: 366px; }
-  #company::before {
-    content: url("img/Company_hover.png");
-    width: 0;
-    height: 0;
-    visibility: hidden; }
 
-#ourstory {
-  background-image: image();
-  background-image: url("img/OurStory.png");
-  top: 249px;
-  left: 42px;
-  width: 201px;
-  height: 181px; }
-  #ourstory:hover {
-    background-image: url("img/OurStory_hover.png");
-    top: 238px;
-    left: 28px;
-    width: 217px;
-    height: 193px; }
-  #ourstory::before {
-    content: url("img/OurStory_hover.png");
-    width: 0;
-    height: 0;
-    visibility: hidden; }
+.company-hover {
+  top: 50px; }
 
-#team {
-  background-image: url("img/Team.png");
-  top: 0;
-  left: 0;
-  width: 482px;
-  height: 361px; }
-  #team:hover {
-    background-image: url("img/Team_hover.png");
-    top: -35px;
-    left: 0;
-    width: 323px;
-    height: 395px; }
-  #team::before {
-    content: url("img/Team_hover.png");
-    width: 0;
-    height: 0;
-    visibility: hidden; }
+.ourstory {
+  cursor: pointer;
+  top: 289px;
+  left: 40px;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out; }
+
+.ourstory-hover {
+  top: 281px;
+  left: 25px; }
+
+.book {
+  cursor: pointer;
+  top: 286px;
+  left: 72px;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out; }
+
+.book-hover {
+  top: 278px;
+  left: 55px; }
 
 #advisors {
   top: 290px;
   left: 122px; }
 
-#contactus {
-  background-image: url("img/ContactUs.png");
-  width: 241px;
-  height: 117px;
-  top: 382px;
+.contactus {
+  top: 368px;
+  left: 0;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out; }
+
+.contactus-hover {
+  top: 383px;
+  left: -25px; }
+
+.letter {
+  cursor: pointer;
+  top: 401px;
+  left: 25px;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out; }
+
+.letter-hover {
+  top: 410px;
   left: 0; }
-  #contactus:hover {
-    background-image: url("img/ContactUs_hover.png");
-    width: 257px;
-    height: 128px;
-    left: -20px; }
-  #contactus::before {
-    content: url("img/ContactUs_hover.png");
-    width: 0;
-    height: 0;
-    visibility: hidden; }
 
 #landing-island {
   top: -151px;
@@ -1947,5 +2450,146 @@ input:active, button:active, select:active {
     width: 0;
     height: 0;
     visibility: hidden; }
+
+.helper {
+  display: none;
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 400px;
+  -webkit-box-shadow: 20px 40px 50px black;
+          box-shadow: 20px 40px 50px black; }
+  .helper::before, .helper::after {
+    border-bottom: 10px solid #c4e880; }
+  .helper .modal-header {
+    background-color: #93d558;
+    border-top: 10px solid #c4e880;
+    height: 60px; }
+    .helper .modal-header h1 {
+      font-size: 20px;
+      margin: 5px 20px; }
+    .helper .modal-header #close-x {
+      height: 20px;
+      width: 20px; }
+  .helper .modal-body, .helper #why-now-popup .modal-footer, #why-now-popup .helper .modal-footer {
+    min-height: 200px; }
+    .helper .modal-body h2, .helper #why-now-popup .modal-footer h2, #why-now-popup .helper .modal-footer h2 {
+      font-size: 18px; }
+  .helper .modal-footer {
+    min-height: 70px; }
+    .helper .modal-footer .continue-btn {
+      margin: 0 5%; }
+
+@media only screen and (max-width: 600px) {
+  .mobile-hide {
+    display: none; }
+
+  .mobile-show {
+    display: block; }
+
+  #landing-island {
+    top: -160px;
+    left: -10px;
+    background-image: url("img/Landing_Mobile.png");
+    width: 350px;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    #landing-island .countdown-sign {
+      width: 110px;
+      height: 160px;
+      top: 32px;
+      left: 16px; }
+    #landing-island #notify-btn {
+      top: 227px;
+      left: 52px; }
+    #landing-island .info-panel {
+      top: 354px;
+      left: 5px; }
+    #landing-island .info-clicked {
+      background-image: url("img/Info_Click_Mobile.png");
+      background-color: white;
+      width: 280px;
+      height: 420px;
+      background-size: contain;
+      border: 20px solid white;
+      top: 300px;
+      left: 0; }
+    #landing-island .savings-sign {
+      top: 150px;
+      left: 155px; }
+    #landing-island #go-btn {
+      top: 338px;
+      left: 173px; }
+    #landing-island .social-media-wrapper {
+      top: 415px;
+      left: 173PX; }
+
+  #about-island {
+    background-image: url("img/About_Mobile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 400px;
+    height: 1500px;
+    top: -200px;
+    right: 0; }
+    #about-island .team-title {
+      top: 319px; }
+    #about-island .figures {
+      top: 72px;
+      left: 0; }
+    #about-island .figures-mobile {
+      top: 222px;
+      left: 100px;
+      height: 85px; }
+    #about-island .company-title {
+      top: 155px;
+      left: 265px; }
+    #about-island .company-penguin {
+      top: 50px;
+      left: 260px; }
+    #about-island .story-title {
+      -webkit-transform: rotate(-30deg) skew(30deg);
+              transform: rotate(-30deg) skew(30deg);
+      text-shadow: -2px -1px 0 #84bf4f;
+      top: 407px;
+      left: 120px;
+      font-size: 19px;
+      border-bottom: none; }
+    #about-island .advisors-title {
+      top: 317px; }
+    #about-island .contact-title {
+      font-size: 17px;
+      top: 517px;
+      left: 160px; }
+    #about-island .advisor-block {
+      top: 239px;
+      left: 235px; }
+    #about-island .advisors-title {
+      -webkit-transform: skewY(30deg);
+              transform: skewY(30deg);
+      top: 304px;
+      left: 243px; }
+    #about-island .bulb-mobile {
+      top: 214px;
+      left: 275px;
+      height: 65px; }
+    #about-island .book-mobile {
+      top: 342px;
+      left: 15px;
+      height: 80px; }
+    #about-island .letter {
+      top: 451px;
+      left: 211px;
+      height: 75px; }
+
+  #info-island {
+    height: 800px;
+    top: -900px;
+    left: -50px; }
+
+  #strategy-island {
+    height: 800px;
+    top: -900px;
+    left: -50px; } }
 
 /*# sourceMappingURL=styles.css.map */

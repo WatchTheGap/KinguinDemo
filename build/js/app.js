@@ -39,6 +39,9 @@
       let crystalName = 'Stephen A. Crystal, ESQ';
       let crystalBio = "<p>Stephen is an attorney and investor focusing on gaming and esports.</p><p>He has spent 25 years directly involved in all aspects of the casino and gaming technology industry as well as I-Gaming and esports worldwide. As an attorney he has represented public and private gaming companies before various state regulatory bodies and jurisdictions. Stephen has also been the President and CEO of numerous casino holding and public gaming technology companies, employing thousands of employees. Lastly, Stephen is an active investor and advisor on over $2 Billion dollars of project finance and mergers and acquisitions in the casino/gaming technology/I-Gaming/esports and energy and utility spaces.</p>";
 
+      let shulginName = 'Alexander Shulgin';
+      let shulginBio = '<p>Alexander is a one of a kind Russian Siberian musician, he has composed 50+ #1 chart toppers and successfully combines creative thinking with business. He manages GRUPPA KOMPANIY FAMILIA, which specializes in blockchain, new media, publishing, and entertainment investments. Recognized as one of the world’s leading visionaries in the digital disruption of the world economy, as well as blockchain technology, the creative economy, media, entertainment and sports. Considered an expert in the crypto world, he has invested in many leading companies such as Bitfury, DotBlockchainMedia and more. Alexander is a member of the Expert Council under the Prime Minister of the Russian Federation, where he has been awarded the Order of the Medal “Professionalism and Business Reputation.” He furthermore serves as advisor to high profile crypto companies and regulators.</p>';
+
       if ($(this).find('h5').is(':contains("John Lee")')) {
         $('#advisors-popup .more-info-text').find('h3').text(leeName).siblings('.bio-text').empty('.bio-text').append(leeBio);
       } else if ($(this).find('h5').is(':contains("Jens Hilgers")')){
@@ -57,6 +60,8 @@
         $('#advisors-popup .more-info-text').find('h3').text(haoName).siblings('.bio-text').empty('.bio-text').append(haoBio);
       } else if ($(this).find('h5').is(':contains("Stephen Crystal")')) {
         $('#advisors-popup .more-info-text').find('h3').text(crystalName).siblings('.bio-text').empty('.bio-text').append(crystalBio);
+      } else if ($(this).find('h5').is(':contains("Alexander Shulgin")')) {
+        $('#advisors-popup .more-info-text').find('h3').text(shulginName).siblings('.bio-text').empty('.bio-text').append(shulginBio);
       }
     }
   });
@@ -99,80 +104,842 @@
 (function() {
   'use strict';
 
+  let hasError = false;
+
+  let blur = function blur() {
+    $('.email-popup-bg').show();
+    $('#islands-wrapper').addClass('blur');
+  };
+
+  $(document).ajaxStart(function(){
+      $("#loader").removeClass('hide');
+  });
+
+
+
+  //***************************************************
+  //***TEXT FOR CONFIRMATION POPUPS
+  //***************************************************
+
+  let mailingList = {
+    'title': 'Success!',
+    'subtitle': 'Thank you for signing up to our mailing list!',
+    'body': 'Please check your email and click the confirmation link to complete the process.'
+  };
+
+  let phaseOne = {
+    'title': 'Success!',
+    'subtitle': 'Your account has been created.',
+    'body': 'Please check your email and follow the confirmation link to continue the signup process.'
+  };
+
+  let phaseTwo = {
+    'title': 'Level Two Complete!',
+    'subtitle': 'We have received your proof of identity documentation.',
+    'body': 'Watch your email for your approval link and prepare to advance to Level Three.'
+  };
+
+  let phaseThree = {
+    'title': 'Quest Complete!',
+    'subtitle': 'Thank you for joining us in the Kinguin.io ICO!',
+    'body': 'What happens next?'
+  };
+
+  let fileUpload = {
+    'title': 'Success!',
+    'subtitle': 'Your profile has been updated with your identification documents.',
+    'body': 'Our KYC team is currently reviewing your credentials. Please allow 1-2 business days for the review process to be completed. You will receive notification via email of your approval status.'
+  };
+
+  //***************************************************
+  //***EMAIL TRIGGERED POPUPS
+  //***************************************************
+
+  function getQueryParam(param) {
+    var url = window.location.href;
+    param = param.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + param + "(=([^&#]*)|&|#|$)"),
+    results = regex.exec(url);
+    if (results && results[2]) {
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+    } else {
+      return false;
+    }
+  }
+
+  $(document).ready(function () {
+    var query = getQueryParam('cb');
+    if (typeof query === 'string') {
+      query = query.toLowerCase();
+    }
+    switch (query) {
+      case 'aml-eth':
+      blur();
+      $('#aml-eth-popup').removeClass('hide');
+      break;
+      case "aml-btc":
+      blur();
+      $('#aml-btc-popup').removeClass('hide');
+      break;
+      case "aml-usd":
+      blur();
+      $('#aml-fiat-popup').removeClass('hide');
+      break;
+      case "aml-eur":
+      blur();
+      $('#aml-fiat-popup').removeClass('hide');
+      break;
+      case ('kyc-eth'):
+      blur();
+      $('#investor-popup').removeClass('hide');
+      break;
+      case ('kyc-btc'):
+      blur();
+      $('#investor-popup').removeClass('hide');
+      break;
+      case ('kyc-usd'):
+      blur();
+      $('#investor-popup').removeClass('hide');
+      break;
+      case ('kyc-eur'):
+      blur();
+      $('#investor-popup').removeClass('hide');
+      break;
+      case ('upload'):
+      blur();
+      $('#kyc-upload-popup').removeClass('hide');
+      break;
+      case('roadmap'):
+      $('#roadmap2-popup').removeClass('hide');
+      $('#close-x-1').removeClass('hide');
+      $('.popup-bg').show();
+      $('#islands-wrapper').addClass('blur');
+      break;
+    }
+
+  });
+
+  //***************************************************
+
   $('#notify-form').submit(function () {
-    alert('Success!');
+    $('#mailinglist-popup').removeClass('hide');
+    $('.confirm-title').text(mailingList.title);
+    $('.confirm-subtitle').text(mailingList.subtitle);
+    $('.confirm-body').text(mailingList.body);
   });
 
-  $('.currency-form', '#signup-form', '#personal-data-form', '#company-data-form', '#funding-form', '#bank-info-form').submit(function (e) {
+  //******************************************************
+
+  function uuidv4() {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+      var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+      return v.toString(16);
+    });
+  }
+
+  let uid = uuidv4();
+  let fiat = false;
+  let currencyType;
+  let donationAmt = 0;
+  let name;
+  let userEmail;
+
+  if (currencyType === 'BTC' || 'ETH') {
+    fiat = false;
+  }
+  if (currencyType === 'USD' || 'EUR') {
+    fiat = true;
+  }
+
+  function createProfile(userProfile) {
+    if (name.length < 1 || userEmail.length < 1) {
+      $('#kyc-popup .alert-msg').text('Please fill out the required fields.');
+      $('input[name="user-email-kyc"]').val(userEmail);
+      $('input[name="name-kyc"]').val(name);
+      return;
+    }
+
+
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!re.test(String(userEmail).toLowerCase())) {
+      $('#kyc-popup .alert-msg').text('Please enter a valid email address.');
+      $('input[name="user-email-kyc"]').val(userEmail);
+      $('input[name="name-kyc"]').val(name);
+      return;
+    }
+
+    $.ajax({
+      url: "https://api.kinguin.io/api/create-profile",
+      type: "POST",
+      data: {
+        "uid": uid,
+        "username": name,
+        "email": userEmail,
+        "currency": currencyType,
+        "amount": donationAmt
+      }
+    })
+    .done(function () {
+      $("#loader").addClass('hide');
+      $('#aml-popup').addClass('hide');
+      $('#kyc-popup').addClass('hide');
+      $('#confirmation-popup').removeClass('hide');
+      $('.confirm-title').text(phaseOne.title);
+      ('.confirm-subtitle').text(phaseOne.subtitle);
+      ('.confirm-body').text(phaseOne.body);
+    })
+    .fail(function () {
+      alert('Something went wrong! :(');
+      $("#loader").addClass('hide');
+    });
+
+  }
+
+
+//*** INVESTOR CHOOSES CRYPTO CURRENCY ***//
+//*** GO TO SELECT BTC/ETC & ENTER AMOUNT ***//
+  $('#signup-button-crypto').click(function () {
+    fiat = false;
+    currencyType = 'BTC'; //BTC is the default selection shown
+    $('#choose-crypto-popup .currency-placeholder').text('BTC');
+    $('.right-select').removeClass('selected');
+    $('.left-select').addClass('selected');
+    $('#signup-popup').addClass('hide');
+    $('.popup-bg').hide();
+    $('.email-popup-bg').show();
+    $('#choose-crypto-popup').removeClass('hide');
+  });
+
+//*** INVESTOR CHOOSES USD OR EUROS ***//
+//*** GO TO SELECT USD/EUR & ENTER AMOUNT ***//
+  $('#signup-button-fiat').click(function () {
+    fiat = true;
+    currencyType = 'USD'; //USD is the default selection shown
+    $('#choose-fiat-popup .currency-placeholder').text('USD');
+    $('.right-select').removeClass('selected');
+    $('.left-select').addClass('selected');
+    $('#signup-popup').addClass('hide');
+    $('.popup-bg').hide();
+    $('.email-popup-bg').show();
+    $('#choose-fiat-popup').removeClass('hide');
+  });
+
+  //*** SELECTOR BUTTONS FOR CURRENCY TYPES ***//
+  $('#BTC-select').click(function () {
+    currencyType = 'BTC';
+    $('.left-select').addClass('selected')
+    .siblings('.right-select').removeClass('selected');
+    $('.currency-placeholder').text('BTC');
+  });
+  $('#ETH-select').click(function () {
+    currencyType = 'ETH';
+    $('.right-select').addClass('selected')
+    .siblings('.left-select').removeClass('selected');
+    $('.currency-placeholder').text('ETH');
+  });
+  $('#USD-select').click(function () {
+    currencyType = 'USD';
+    $('.left-select').addClass('selected')
+    .siblings('.right-select').removeClass('selected');
+    $('.currency-placeholder').text('USD');
+  });
+  $('#EUR-select').click(function () {
+    currencyType = 'EUR';
+    $('.right-select').addClass('selected')
+    .siblings('.left-select').removeClass('selected');
+    $('.currency-placeholder').text('EUR');
+  });
+  //********************************************
+
+  $('#crypto-continue').click(function (e) {
     e.preventDefault();
+    $('input[name=crypto-amt]').val(function () {
+      donationAmt = this.value;
+    });
+    if (currencyType === 'BTC' && donationAmt < 0.4) {
+      $('#choose-crypto-popup .alert-msg').text('* a minimum donation of 0.4 BTC is required.');
+      return;
+    }
+    if (currencyType === 'BTC' && donationAmt >= 0.4) {
+      $('#kyc-popup').removeClass('hide');
+      $('#choose-crypto-popup').addClass('hide');
+    }
+    if (currencyType === 'ETH' && donationAmt < 5) {
+      $('#choose-crypto-popup .alert-msg').text('* a minimum donation of 5 ETH is required.');
+      return;
+    }
+    if (currencyType === 'ETH' && donationAmt >= 5) {
+      $('#kyc-popup').removeClass('hide');
+      $('#choose-crypto-popup').addClass('hide');
+    }
+
+    // if (donationAmt >= 2000) {
+    //   $('#kyc-popup').removeClass('hide');
+    // } else {
+    //   $('#aml-popup').removeClass('hide');
+    // }
   });
 
-    let currencyType;
-    let donationAmt;
-    let name;
-    let userEmail;
+  //*** FOR CRYPTO AMOUNT UNDER $2K ONLY ***//
+  $('#aml-continue').click(function (e) {
+    e.preventDefault();
+    $('input[name=name]').val(function () {
+      name = this.value;
+    });
+    $('input[name=user-email]').val(function () {
+      userEmail = this.value;
+    });
+    createProfile();
+  });
 
-    $('#BTC-select').click(function () {
-      currencyType = 'BTC';
-      localStorage.setItem('currency', currencyType);
-      $('.left-select').addClass('selected')
-        .siblings('.right-select').removeClass('selected');
-      $('.currency-placeholder').text('BTC');
+  //*** INVESTOR SELECTS USD/EUR, INPUTS AMOUNT ***//
+  //*** FIAT ALWAYS GOES TO KYC POPUP ***//
+  $('#fiat-continue').click(function (e) {
+    e.preventDefault();
+    $('input[name=donation-amt]').val(function () {
+      donationAmt = this.value;
+    });
+    if (currencyType === 'USD' && donationAmt < 5000) {
+      $('#choose-fiat-popup .alert-msg').text('* a minimum donation of $5,000 USD is required.');
+      $('input[name="donation-amt"]').val(donationAmt);
+      return;
+    }
+    if (currencyType === 'EUR' && donationAmt < 4000) {
+      $('#choose-fiat-popup .alert-msg').text('* a minimum donation of €4,000 EUR is required.');
+      $('input[name="donation-amt"]').val(donationAmt);
+      return;
+    }
+    $('#choose-fiat-popup').addClass('hide');
+    $('#kyc-popup').removeClass('hide');
+  });
+
+  //*** FOR CRYPTO OVER $2K & ALL FIAT ***//
+  //*** INVESTOR INPUTS NAME & EMAIL ***//
+  //*** CREATE USER PROFILE **//
+  //*** CONFIRMATION POPUP, GO TO EMAIL ***//
+  $('#kyc-continue').click(function () {
+    $('input[name=name-kyc]').val(function () {
+      name = this.value;
+    });
+    $('input[name=user-email-kyc]').val(function () {
+      userEmail = this.value;
+    });
+    if ($('#tos-check').is(':checked') && $('#pp-check').is(':checked')) {
+      createProfile();
+    } else {
+      $('#kyc-popup .alert-msg').text('* Please accept our Terms & Conditions.');
+      $('input[name="user-email-kyc"]').val(userEmail);
+      $('input[name="name-kyc"]').val(name);
+      return;
+    }
+  });
+
+  //*** OPEN THE SIGNUP FLOW FROM MAIN SITE ***//
+    $('#go-btn').click(function () {
+      $('#signup-popup').removeClass('hide');
+      $('.popup-bg').show();
+      $('#islands-wrapper').addClass('blur');
     });
 
-    $('#ETH-select').click(function () {
-      currencyType = 'ETH';
-      localStorage.setItem('currency', currencyType);
-      $('.right-select').addClass('selected')
-      .siblings('.left-select').removeClass('selected');
-      $('.currency-placeholder').text('ETH');
 
+  //*** BACK BUTTON NAVIGATION***//
+    $('#choose-crypto-popup .back-btn').click(function (e) {
+      e.preventDefault();
+      $('#choose-crypto-popup').addClass('hide');
+      $('#signup-popup').removeClass('hide');
     });
 
-    $('#USD-select').focus(function () {
-      currencyType = 'USD';
-      localStorage.setItem('currency', currencyType);
-      $('.left-select').addClass('selected')
-      .siblings('.right-select').removeClass('selected');
-      $('.currency-placeholder').text('USD');
-
+    $('#choose-fiat-popup .back-btn').click(function (e) {
+      e.preventDefault();
+      $('#choose-fiat-popup').addClass('hide');
+      $('#signup-popup').removeClass('hide');
     });
 
-    $('#EUR-select').focus(function () {
-      currencyType = 'EUR';
-      localStorage.setItem('currency', currencyType);
-      $('.right-select').addClass('selected')
-        .siblings('.left-select').removeClass('selected');
-        $('.currency-placeholder').text('EUR');
-
+    $('#aml-popup .back-btn').click(function (e) {
+      e.preventDefault();
+      $('#aml-popup').addClass('hide');
+      $('#choose-crypto-popup').removeClass('hide');
     });
 
+    $('#kyc-popup .back-btn').click(function (e) {
+      e.preventDefault();
+      $('#kyc-popup').addClass('hide');
+      if (fiat === true) {
+        $('#choose-fiat-popup').removeClass('hide');
+      } else if (fiat === false) {
+        $('#choose-crypto-popup').removeClass('hide');
+      } else {
+        $('#kyc-popup').addClass('hide');
+        $('#signup-popup').removeClass('hide');
+      }
+    });
+
+    $('#investor-private-popup .back-btn').click(function (e) {
+      e.preventDefault();
+      $('#investor-private-popup').addClass('hide');
+      $('#investor-popup').removeClass('hide');
+    });
+
+    $('#investor-company-popup .back-btn').click(function (e) {
+      e.preventDefault();
+      $('#investor-company-popup').addClass('hide');
+      $('#investor-popup').removeClass('hide');
+    });
+
+  //*** CLOSE CONFIRMATION POPUP ***//
+  $('input[name="confirm-close"]').click(function (e) {
+    e.preventDefault();
+    $('#confirmation-popup').addClass('hide');
+    $('#mailinglist-popup').addClass('hide');
+    $('.email-popup-bg').hide();
+    $('.popup-bg').hide();
+    $('#islands-wrapper').removeClass('blur');
+  });
+
+  //*******************************************************
+  let profileType = 'PRIVATE';
+  let fullName;
+  let company = 'none';
+  let regID = 'none';
+  let country = 0;
+  let buildingNo = 'none';
+  let apartmentNo = 'none';
+  let streetPre = 'none';
+  let street;
+  let city;
+  let zip;
+  let postOffice = 'none';
+  let identImg = 'no image';
+  let addressDoc = 'no image';
+  //************************************************
+  //************************************************
+
+//************************************************
+
+ var form = document.forms.namedItem("personal-data-form");
+
+ var send = function() {
+   var data = new FormData(form);
+
+   var uid = getQueryParam("uid");
+   var hash = getQueryParam("hash");
+
+   var settings = {
+     "async": true,
+     "crossDomain": true,
+     "url": "https://api.kinguin.io/api/filestore/"+uid+"/"+hash,
+     "method": "POST",
+     "headers": {
+     },
+     "processData": false,
+     "contentType": false,
+     "mimeType": "multipart/form-data",
+     "data": data
+   };
+
+   $.ajax(settings).done(function (response) {
+     $("#loader").addClass('hide');
+     kycProfile();
+   }).fail(function () {
+     alert('Something went wrong! =(');
+     $("#loader").addClass('hide');
+   });
+   return false;
+ };
+
+ var uploadOnlyForm = document.forms.namedItem("upload-only-form");
+ var sendFilesOnly = function() {
+   //*** removed calling kycProfile() ***
+   //*** added new confirmation popup after success ***
+   var data = new FormData(uploadOnlyForm);
+
+   var uid = getQueryParam("uid");
+   var hash = getQueryParam("hash");
+
+   var settings = {
+     "async": true,
+     "crossDomain": true,
+     "url": "https://api.kinguin.io/api/filestore/"+uid+"/"+hash,
+     "method": "POST",
+     "headers": {
+     },
+     "processData": false,
+     "contentType": false,
+     "mimeType": "multipart/form-data",
+     "data": data
+   };
+
+   $.ajax(settings).done(function (response) {
+     $('#loader').addClass('hide');
+     $('#kyc-upload-popup').addClass('hide');
+     $('#confirmation-popup').removeClass('hide');
+     $('.confirm-title').text(fileUpload.title);
+     $('.confirm-subtitle').text(fileUpload.subtitle);
+     $('.confirm-body').text(fileUpload.body);
+     $('.popup-bg').show();
+   }).fail(function () {
+     alert('Something went wrong! =(');
+     $("#loader").addClass('hide');
+   });
+   return false;
+ };
 
 
-    //
-    // $('#choose-fiat-popup input').keypress(function (e) {
-    //   if (e.which == 13) {
-    //     $('#fiat-continue').click();
-    //     console.log(localStorage);
-    //   }
-    // });
-    //
-    //
-    //
-    // $('#aml-popup input').keypress(function (e) {
-    //   if (e.which == 13) {
-    //     $('#aml-continue').click();
-    //     console.log(localStorage);
-    //   }
-    // });
-    //
-    //
-    // $('#kyc-popup input').keypress(function (e) {
-    //   if (e.which == 13) {
-    //     $('#kyc-continue').click();
-    //     console.log(localStorage);
-    //   }
-    // });
+
+//************************************************
+//************************************************
+
+  let kycProfile = function kycProfile() {
+    var uid = getQueryParam("uid");
+    var hash = getQueryParam("hash");
+    $.ajax({
+      url: "https://api.kinguin.io/api/update-profile/kyc/" + uid + "/" + hash,
+      type: "PUT",
+      contentType: "application/json; charset=utf-8",
+      data: JSON.stringify({
+        "profile_type": profileType,
+        "full_name": fullName,
+        "company_name": company,
+        "company_reg_id": regID,
+        "address": {
+          "street": street,
+          "street_prefix": streetPre,
+          "building_no": buildingNo,
+          "apartment_no": apartmentNo,
+          "city": city,
+          "postcode": zip,
+          "post_office": postOffice,
+          "country_id": country
+        },
+        "country_id": country,
+        "uid": uid || "",
+        "email": userEmail,
+        "addr_verify_doc": addressDoc
+      })
+    })
+    .done(function () {
+      $("#loader").addClass('hide');
+      $('.popup').addClass('hide');
+      $('.email-popup-bg').hide();
+      $('#confirmation-popup').removeClass('hide');
+      $('.confirm-title').text(phaseTwo.title);
+      $('.confirm-subtitle').text(phaseTwo.subtitle);
+      $('.confirm-body').text(phaseTwo.body);
+      $('.popup-bg').show();
+    })
+    .fail(function () {
+      alert('Something went wrong! :(');
+      $("#loader").addClass('hide');
+    });
+
+  };
+
+
+  //*** INVESTOR SELECTS INDIVIDUAL PROFILE ***//
+    $('#investor-button-private').click(function () {
+      profileType = "PRIVATE";
+      $('#investor-private-popup').removeClass('hide');
+      $('#investor-popup').addClass('hide');
+    });
+
+    //*** INVESTOR SELECTS COMPANY PROFILE ***//
+    $('#investor-button-company').click(function () {
+      profileType = "BUSINESS";
+      $('#investor-company-popup').removeClass('hide');
+      $('#investor-popup').addClass('hide');
+    });
+
+  $('#investor-private-continue').click(function (e) {
+    e.preventDefault();
+    $('#full-name').val(function () {
+      return fullName = this.value;
+    });
+    $('#country').val(function () {
+      return country = this.value;
+    });
+    $('#apartment-no').val(function () {
+      return apartmentNo = this.value;
+    });
+    $('#building-no').val(function () {
+      return buildingNo = this.value;
+    });
+    $('#street').val(function () {
+      return street = this.value;
+    });
+    $('#city').val(function () {
+      return city = this.value;
+    });
+    $('#zip-code').val(function () {
+      return zip = this.value;
+    });
+
+    if (country === "999") {
+      console.log();
+      alert("Nice try. We know you're in another castle. (You must select a country)");
+      return;
+    }
+    if (country.length < 1) {
+      alert("Please select your country");
+      return;
+    }
+
+    if ((typeof fullName !== 'string') || fullName === "none" || fullName.length === 0) {
+      alert("Please enter your name.");
+      return;
+    }
+    if ((typeof buildingNo !== 'string') || buildingNo === "none" || buildingNo.length === 0) {
+      alert("Please enter the building number of your address.");
+      return;
+    }
+    if ((typeof street !== 'string') || street === "none" || street.length === 0) {
+      alert("Please enter the street name of your address.");
+      return;
+    }
+    if ((typeof city !== 'string') || city === "none" || city.length === 0) {
+      alert("Please enter the city of your address..");
+      return;
+    }
+    if ((typeof zip !== 'string') || zip === "none" || zip.length === 0) {
+      alert("Please enter the zip of your address.");
+      return;
+    }
+    if (new FormData(form).getAll("ident-img")[0].size === 0 || new FormData(form).getAll("address-doc")[0].size === 0) {
+      alert("You must supply proof of identity and proof of address.");
+      return;
+    }
+    if ((typeof apartmentNo !== 'string') || apartmentNo === "none" || apartmentNo.length === 0) {
+      apartmentNo = 'none';
+    }
+
+    send();
+    $('#investor-private-popup').addClass('hide');
+    $('.email-popup-bg').hide();
+
+  });
+
+  $('#investor-company-continue').click(function (e) {
+    e.preventDefault();
+    $('#c-full-name').val(function () {
+      return fullName = this.value;
+    });
+    $('#company-name').val(function () {
+      return company = this.value;
+    });
+    $('#reg-id').val(function () {
+      return regID = this.value;
+    });
+    $('#c-apartment-no').val(function () {
+      return apartmentNo = this.value;
+    });
+    $('#c-building-no').val(function () {
+      return buildingNo = this.value;
+    });
+    $('#c-street').val(function () {
+      return street = this.value;
+    });
+    $('#c-city').val(function () {
+      return city = this.value;
+    });
+    $('#c-zip-code').val(function () {
+      return zip = this.value;
+    });
+    $('#c-country').val(function () {
+      return country = this.value;
+    });
+
+    if ((typeof fullName !== 'string') || fullName === "none" || fullName.length === 0) {
+      alert("Please enter your name.");
+      return;
+    }
+    if ((typeof company !== 'string') || company === "none" || company.length === 0) {
+      alert("Please enter a company name.");
+      return;
+    }
+    if ((typeof regID !== 'string') || regID === "none" || regID.length === 0) {
+      alert("Please enter a company registration ID.");
+      return;
+    }
+    if ((typeof buildingNo !== 'string') || buildingNo === "none" || buildingNo.length === 0) {
+      alert("Please enter the building number of your address.");
+      return;
+    }
+    if ((typeof street !== 'string') || street === "none" || street.length === 0) {
+      alert("Please enter the street name of your address.");
+      return;
+    }
+    if ((typeof city !== 'string') || city === "none" || city.length === 0) {
+      alert("Please enter the city of your address..");
+      return;
+    }
+    if ((typeof zip !== 'string') || zip === "none" || zip.length === 0) {
+      alert("Please enter the zip of your address.");
+      return;
+    }
+    if ((typeof apartmentNo !== 'string') || apartmentNo === "none" || apartmentNo.length === 0) {
+      apartmentNo = 'none';
+    }
+
+    //send();
+    kycProfile();
+    $('#investor-company-popup').addClass('hide');
+    $('.email-popup-bg').hide();
+
+  });
+
+  let ethEmail;
+  let btcEmail;
+  let ethSend = 'n/a';
+  let ethRec = 'n/a';
+  let btcSend = 'n/a';
+
+  let sendAML = function sendAML() {
+    var uid = getQueryParam("uid");
+    var hash = getQueryParam("hash");
+    $.ajax({
+      url: "https://api.kinguin.io/api/update-profile/aml/" + uid + "/" + hash,
+      type: "PUT",
+      data: {
+        "addr_send_eth": ethSend,
+        "addr_receive_eth": ethRec,
+        "addr_send_btc": btcSend
+      }
+    }).done(function () {
+      $("#loader").addClass('hide');
+      $('.popup').addClass('hide');
+      $('.email-popup-bg').hide();
+      $('#confirmation-popup').removeClass('hide');
+      $('.confirm-title').text(phaseThree.title);
+      $('.confirm-subtitle').text(phaseThree.subtitle);
+      $('.confirm-body').text(phaseThree.body);
+      $('.popup-bg').show();
+    })
+    .fail(function () {
+      alert('Something went wrong! :(');
+      $("#loader").addClass('hide');
+    });
+
+  };
+
+  $('#aml-eth-continue').click(function (e) {
+    e.preventDefault();
+    $('#eth-send').val(function () {
+      ethSend = this.value;
+    });
+    $('#eth-rec').val(function () {
+      ethRec = this.value;
+    });
+    sendAML();
+  });
+
+  $('#aml-btc-continue').click(function (e) {
+    e.preventDefault();
+    $('#btc-send').val(function () {
+      btcSend = this.value;
+    });
+    $('#btc-eth-rec').val(function () {
+      ethRec = this.value;
+    });
+    sendAML();
+  });
+
+  $('#aml-fiat-continue').click(function (e) {
+    e.preventDefault();
+    $('#fiat-eth-rec').val(function () {
+      ethRec = this.value;
+    });
+    sendAML();
+  });
+
+  //*** UPLOAD ONLY POPUP ***//
+
+  let addDoc1;
+  let idImg1;
+
+  $('input[name="address-doc-1"]').change(function (e) {
+    addDoc1 = e.target.files[0].name;
+    $('label[for="address-doc-1"]').find('p').text(addDoc1);
+    $(this).closest('.file-upload').addClass('upload-ready');
+  });
+
+  $('input[name="ident-img-1"]').change(function (e) {
+    idImg1 = e.target.files[0].name;
+    $('label[for="ident-img-1"]').find('p').text(idImg1);
+    $(this).closest('.file-upload').addClass('upload-ready');
+  });
+
+  $('input[name="kyc-upload-submit"]').click(function () {
+    sendFilesOnly();
+  });
+
+  //*************************//
+
+}());
+
+(function() {
+  'use strict';
+
+
+  let kycHelper = {
+    'title': 'Know Your Customer',
+    'text': 'Know Your Customer (KYC) processes have been established worldwide in order to reduce fraud, money laundering and scams. In simpler terms: KYC is a request for proof of your identity. It’s a security check. It’s like passing through the TSA check at an airport, just a lot more friendly and a whole lot less theatrical. Unlike the TSA, we are genuinely sorry for the inconvenience, but we are required to do this.'
+  };
+
+  let amlHelper = {
+    'title': 'Anti-Money Laundering',
+    'text': 'Kinguin is required to comply with Anti-Money Laundering (AML) rules. The purpose of AML is to detect and avoid suspicious activity including money laundering, terrorist financing, securities fraud and market manipulation. All bad things. We don’t like bad things.'
+  };
+
+  let amlDataHelper = {
+    'title': 'Enter AML Data',
+    'text': 'what is aml data?'
+  };
+
+
+  $('#kyc-popup .modal-body a').click(function (e) {
+    e.preventDefault();
+    $('.helper').show();
+    $('.helper').find('h2').text(kycHelper.title).siblings('p').text(kycHelper.text);
+    $('.helper-popup-bg').show();
+  });
+
+  $('#aml-popup .modal-body a').click(function (e) {
+    e.preventDefault();
+    $('.helper').show();
+    $('.helper').find('h2').text(amlHelper.title).siblings('p').text(amlHelper.text);
+    $('.helper-popup-bg').show();
+  });
+
+  $('#aml-eth-popup .modal-body a').click(function (e) {
+    e.preventDefault();
+    $('.helper').show();
+    $('.helper').find('h2').text(amlDataHelper.title).siblings('p').text(amlDataHelper.text);
+    $('.helper-popup-bg').show();
+  });
+
+  $('#aml-btc-popup .modal-body a').click(function (e) {
+    e.preventDefault();
+    $('.helper').show();
+    $('.helper').find('h2').text(amlDataHelper.title).siblings('p').text(amlDataHelper.text);
+    $('.helper-popup-bg').show();
+  });
+
+  $('#aml-fiat-popup .modal-body a').click(function (e) {
+    e.preventDefault();
+    $('.helper').show();
+    $('.helper').find('h2').text(amlDataHelper.title).siblings('p').text(amlDataHelper.text);
+    $('.helper-popup-bg').show();
+  });
+
+  $('.helper-popup-bg').click(function () {
+    $('.helper').hide();
+    $('.helper-popup-bg').hide();
+  });
+
+  $('.helper-close').click(function (e) {
+    e.preventDefault();
+    $('.helper').hide();
+    $('.helper-popup-bg').hide();
+  });
 
 }());
 
@@ -186,7 +953,156 @@
       $(this).find('.social-icons').removeClass('social-hover').find('.social-paths').removeClass('path-hover');
     }
   );
-  
+
+  $('.team-title').hover(
+    function () {
+      $(this).addClass('team-title-hover');
+      $('.team').addClass('team-hover');
+      $('.figures').addClass('figures-hover');
+      $('.shadows').addClass('shadows-hover');
+    },
+    function () {
+      $(this).removeClass('team-title-hover');
+      $('.team').removeClass('team-hover');
+      $('.figures').removeClass('figures-hover');
+      $('.shadows').removeClass('shadows-hover');
+    }
+  );
+
+  // $('.figures').hover(
+  //   function () {
+  //     $(this).addClass('figures-hover');
+  //     $('.team').addClass('team-hover');
+  //     $('.team-title').addClass('team-title-hover');
+  //     $('.shadows').addClass('shadows-hover');
+  //   },
+  //   function () {
+  //     $(this).removeClass('figures-hover');
+  //     $('.team').removeClass('team-hover');
+  //     $('.team-title').removeClass('team-title-hover');
+  //     $('.shadows').removeClass('shadows-hover');
+  //   }
+  // );
+
+  $('.company-title').hover(
+    function () {
+      $(this).addClass('company-title-hover');
+      $('.company').addClass('company-hover');
+      $('.company-penguin').addClass('company-penguin-hover');
+    },
+    function () {
+      $(this).removeClass('company-title-hover');
+      $('.company').removeClass('company-hover');
+      $('.company-penguin').removeClass('company-penguin-hover');
+    }
+  );
+
+  $('.company-penguin').hover(
+    function () {
+      $(this).addClass('company-penguin-hover');
+      $('.company').addClass('company-hover');
+      $('.company-title').addClass('company-title-hover');
+    },
+    function () {
+      $(this).removeClass('company-penguin-hover');
+      $('.company').removeClass('company-hover');
+      $('.company-title').removeClass('company-title-hover');
+    }
+  );
+
+  $('.story-title').hover(
+    function () {
+      $(this).addClass('story-title-hover');
+      $('.book').addClass('book-hover');
+      $('.ourstory').addClass('ourstory-hover');
+    },
+    function () {
+      $(this).removeClass('story-title-hover');
+      $('.book').removeClass('book-hover');
+      $('.ourstory').removeClass('ourstory-hover');
+    }
+  );
+  $('.book').hover(
+    function () {
+      $('.ourstory').addClass('ourstory-hover');
+      $(this).addClass('book-hover');
+      $('.story-title').addClass('story-title-hover');
+    },
+    function () {
+      $('.ourstory').removeClass('ourstory-hover');
+      $(this).removeClass('book-hover');
+      $('.story-title').removeClass('story-title-hover');
+    }
+  );
+
+  $('.bulb').hover(
+    function () {
+      $('.advisor-block').addClass('advisor-block-hover');
+      $('.bulb').addClass('bulb-hover');
+    },
+    function () {
+      $('.advisor-block').removeClass('advisor-block-hover');
+      $('.bulb').removeClass('bulb-hover');
+    }
+  );
+  $('.advisors-title').hover(
+    function () {
+      $('.advisor-block').addClass('advisor-block-hover');
+      $('.bulb').addClass('bulb-hover');
+    },
+    function () {
+      $('.advisor-block').removeClass('advisor-block-hover');
+      $('.bulb').removeClass('bulb-hover');
+    }
+  );
+  $('.advisor-block').hover(
+    function () {
+      $('.advisor-block').addClass('advisor-block-hover');
+      $('.bulb').addClass('bulb-hover');
+    },
+    function () {
+      $('.advisor-block').removeClass('advisor-block-hover');
+      $('.bulb').removeClass('bulb-hover');
+    }
+  );
+
+  $('.letter').hover(
+    function () {
+      $(this).addClass('letter-hover');
+      $('.contactus').addClass('contactus-hover');
+      $('.contact-title').addClass('contact-title-hover');
+    },
+    function () {
+      $(this).removeClass('letter-hover');
+      $('.contactus').removeClass('contactus-hover');
+      $('.contact-title').removeClass('contact-title-hover');
+    }
+  );
+  $('.contact-title').hover(
+    function () {
+      $('.letter').addClass('letter-hover');
+      $('.contactus').addClass('contactus-hover');
+      $(this).addClass('contact-title-hover');
+    },
+    function () {
+      $('.letter').removeClass('letter-hover');
+      $('.contactus').removeClass('contactus-hover');
+      $(this).removeClass('contact-title-hover');
+    }
+  );
+  $('.contactus').hover(
+    function () {
+      $('.letter').addClass('letter-hover');
+      $(this).addClass('contactus-hover');
+      $('.contact-title').addClass('contact-title-hover');
+    },
+    function () {
+      $('.letter').removeClass('letter-hover');
+      $(this).removeClass('contactus-hover');
+      $('.contact-title').removeClass('contact-title-hover');
+    }
+  );
+
 }());
 
 (function() {
@@ -249,7 +1165,7 @@
     } else if ($(this).is(':contains("advisors")')) {
       $('#advisors-popup').removeClass('hide');
     } else if ($(this).is(':contains("pre-ico")')) {
-      $('#pre-ico-popup').removeClass('hide');
+      $('#signup-popup').removeClass('hide');
     } else if ($(this).is(':contains("contact")')) {
       $('#contactus-popup').removeClass('hide');
     } else {
@@ -339,36 +1255,56 @@
 
 // *** About Island ***
 
-  $('#bulb').click(function() {
+  $('.bulb').click(function() {
     blur();
-    $('#advisors-popup').toggleClass('hide');
+    $('#advisors-popup').removeClass('hide');
+  });
+  $('.advisor-block').click(function() {
+    blur();
+    $('#advisors-popup').removeClass('hide');
+  });
+  $('.advisors-title').click(function() {
+    blur();
+    $('#advisors-popup').removeClass('hide');
   });
 
-  $('#team').click(function() {
+  $('.team-title').click(function() {
     blur();
-    $('#team-popup').toggleClass('hide');
+    $('#team-popup').removeClass('hide');
+  });
+  $('.figures-mobile').click(function () {
+    blur();
+    $('#team-popup').removeClass('hide');
   });
 
-  $('#company').click(function() {
+  $('.company-title').click(function() {
     blur();
-    $('#company-popup').toggleClass('hide');
+    $('#company-popup').removeClass('hide');
+  });
+  $('.company-penguin').click(function () {
+    blur();
+    $('#company-popup').removeClass('hide');
   });
 
-  $('#ourstory').click(function() {
+  $('.ourstory').click(function() {
     blur();
-    $('#ourstory-popup').toggleClass('hide');
+    $('#ourstory-popup').removeClass('hide');
+  });
+  $('.story-title').click(function() {
+    blur();
+    $('#ourstory-popup').removeClass('hide');
   });
 
   $('#contactus').click(function() {
     blur();
-    $('#contactus-popup').toggleClass('hide');
+    $('#contactus-popup').removeClass('hide');
   });
 
 // *** Landing Island ***
 
   $('#notify-btn').click(function() {
     blur();
-    $('#notify-popup').toggleClass('hide');
+    $('#notify-popup').removeClass('hide');
   });
 
   $('.info-panel').click(function () {
@@ -385,34 +1321,34 @@
 
   $('#tokens').click(function() {
     blur();
-    $('#tokens-popup').toggleClass('hide');
+    $('#tokens-popup').removeClass('hide');
   });
 
   $('#market').click(function() {
     blur();
-    $('#market-popup').toggleClass('hide');
+    $('#market-popup').removeClass('hide');
   });
 
 
 // *** Strategy Island ***
   $('#problem-solution').click(function () {
     blur();
-    $('#problem-solution-popup').toggleClass('hide');
+    $('#problem-solution-popup').removeClass('hide');
   });
 
   $('#distribution').click(function () {
     blur();
-    $('#distribution-popup').toggleClass('hide');
+    $('#distribution-popup').removeClass('hide');
   });
 
   $('#projections').click(function () {
     blur();
-    $('#projections-popup').toggleClass('hide');
+    $('#projections-popup').removeClass('hide');
   });
 
   $('#roadmap').click(function () {
     blur();
-    $('#roadmap2-popup').toggleClass('hide');
+    $('#roadmap2-popup').removeClass('hide');
     $('#close-x-1').removeClass('hide');
   });
   $('#close-x-1').click(function () {
@@ -424,16 +1360,20 @@
 
   $('#why-now').click(function() {
     blur();
-    $('#why-now-popup').toggleClass('hide');
+    $('#why-now-popup').removeClass('hide');
   });
 
 // *** Basic ***
   $('.close-popup').click(function(e) {
     e.preventDefault();
-    $(this).closest('.popup-outer-wrapper').toggleClass('hide');
+    $(this).closest('.popup-outer-wrapper').addClass('hide');
     $('#islands-wrapper').removeClass('blur');
     $('.popup-bg').hide();
+    $('.email-popup-bg').hide();
+    $('.helper-popup-bg').hide();
+    $('.helper').hide();
   });
+
 
 }());
 
@@ -494,87 +1434,6 @@
       .siblings('p').text('TRANSITION END TRANSITION END TRANSITION END');
     $('.node-row').find('.node-active').addClass('node-inactive').removeClass('node-active');
     $(this).find('.roadmap-node').addClass('node-active').removeClass('node-inactive');
-  });
-
-}());
-
-(function() {
-  'use strict';
-
-  $('#go-btn').click(function () {
-    $('#pre-ico-popup').toggleClass('hide');
-    $('.popup-bg').show();
-    $('#islands-wrapper').addClass('blur');
-  });
-
-  $('#signup-button-crypto').click(function () {
-    $('#signup-popup').toggleClass('hide');
-    $('#choose-crypto-popup').toggleClass('hide');
-  });
-
-  $('#signup-button-fiat').click(function () {
-    $('#signup-popup').toggleClass('hide');
-    $('#choose-fiat-popup').toggleClass('hide');
-  });
-
-  $('#crypto-continue').click(function () {
-    $('input[name=crypto-amt]').val(function () {
-      localStorage.setItem('donationAmt', this.value);
-    });
-    $('#choose-crypto-popup').toggleClass('hide');
-    $('#aml-popup').toggleClass('hide');
-    console.log(localStorage);
-  });
-
-  $('#fiat-continue').click(function () {
-    $('input[name=donation-amt]').val(function () {
-      localStorage.setItem('donationAmt', this.value);
-    });
-    $('#choose-fiat-popup').toggleClass('hide');
-    $('#kyc-popup').toggleClass('hide');
-  });
-
-  $('#kyc-continue').click(function () {
-    $('input[name=name-kyc]').val(function () {
-      localStorage.setItem('name', this.value);
-    });
-    $('input[name=user-email-kyc]').val(function () {
-      localStorage.setItem('userEmail', this.value);
-    });
-    $('#investor-popup').toggleClass('hide');
-    $('#kyc-popup').toggleClass('hide');
-  });
-
-  $('#investor-button-private').click(function () {
-    $('#investor-private-popup').toggleClass('hide');
-    $('#investor-popup').toggleClass('hide');
-  });
-
-  $('#investor-button-company').click(function () {
-    $('#investor-company-popup').toggleClass('hide');
-    $('#investor-popup').toggleClass('hide');
-  });
-
-  $('#investor-private-continue').click(function () {
-    $('#investor-private-popup').toggleClass('hide');
-    $('#islands').removeClass('blur');
-  });
-
-  $('#investor-company-continue').click(function () {
-    $('#investor-company-popup').toggleClass('hide');
-    $('#islands').removeClass('blur');
-  });
-
-  $('#aml-continue').click(function (e) {
-    e.preventDefault();
-    $('input[name=name]').val(function () {
-      localStorage.setItem('name', this.value);
-    });
-    $('input[name=user-email]').val(function () {
-      localStorage.setItem('userEmail', this.value);
-    });
-    $('#aml-eth-popup').toggleClass('hide');
-    $('#aml-popup').toggleClass('hide');
   });
 
 }());
