@@ -104,7 +104,7 @@
       break;
       case ('upload'):
       blur();
-      $('kyc-upload-popup').removeClass('hide');
+      $('#kyc-upload-popup').removeClass('hide');
       break;
       case('roadmap'):
       $('#roadmap2-popup').removeClass('hide');
@@ -444,11 +444,11 @@
    return false;
  };
 
-
+ var uploadOnlyForm = document.forms.namedItem("upload-only-form");
  var sendFilesOnly = function() {
    //*** removed calling kycProfile() ***
    //*** added new confirmation popup after success ***
-   var data = new FormData(form);
+   var data = new FormData(uploadOnlyForm);
 
    var uid = getQueryParam("uid");
    var hash = getQueryParam("hash");
