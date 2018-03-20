@@ -1949,12 +1949,27 @@ input:active, button:active, select:active {
 
 #about-block {
   top: 14px; }
+  #about-block::before {
+    content: url("img/About.png");
+    width: 0;
+    height: 0;
+    visibility: hidden; }
 
 .figures {
   top: 0;
   left: 150px;
   -webkit-transition: top .25s ease-in-out;
   transition: top .25s ease-in-out; }
+  .figures::before {
+    content: url("img/Team_figures.png");
+    width: 0;
+    height: 0;
+    visibility: hidden; }
+  .figures::after {
+    content: url("img/figures_mobile.png");
+    width: 0;
+    height: 0;
+    visibility: hidden; }
 
 .figures-hover {
   top: -80px; }
@@ -1965,6 +1980,11 @@ input:active, button:active, select:active {
   opacity: 0;
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
+  .shadows::before {
+    content: url("img/Shadows.png");
+    width: 0;
+    height: 0;
+    visibility: hidden; }
 
 .shadows-hover {
   top: 0;
@@ -1975,6 +1995,11 @@ input:active, button:active, select:active {
   left: 0;
   -webkit-transition: top .25s ease-in-out;
   transition: top .25s ease-in-out; }
+  .team::before {
+    content: url("img/Team_hover.png");
+    width: 0;
+    height: 0;
+    visibility: hidden; }
 
 .team-hover {
   top: -31px;
@@ -2015,6 +2040,11 @@ input:active, button:active, select:active {
   left: 373px;
   -webkit-transition: top .25s ease-in-out;
   transition: top .25s ease-in-out; }
+  .company-penguin::before {
+    content: url("img/Company_penguin.png");
+    width: 0;
+    height: 0;
+    visibility: hidden; }
 
 .company-penguin-hover {
   top: 75px;
@@ -2063,6 +2093,11 @@ input:active, button:active, select:active {
   left: 251px;
   width: 118px;
   height: 103px; }
+  .advisor-block::before {
+    content: url("img/Advisor_block.png");
+    width: 0;
+    height: 0;
+    visibility: hidden; }
 
 .advisor-block-hover {
   top: 328px;
@@ -2092,6 +2127,11 @@ input:active, button:active, select:active {
   left: 161px;
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
+  .company::before {
+    content: url("img/Company.png");
+    width: 0;
+    height: 0;
+    visibility: hidden; }
 
 .company-hover {
   top: 50px; }
@@ -2102,6 +2142,11 @@ input:active, button:active, select:active {
   left: 40px;
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
+  .ourstory::before {
+    content: url("img/OurStory.png");
+    width: 0;
+    height: 0;
+    visibility: hidden; }
 
 .ourstory-hover {
   top: 281px;
@@ -2113,6 +2158,11 @@ input:active, button:active, select:active {
   left: 72px;
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
+  .book::before {
+    content: url("img/Book.png");
+    width: 0;
+    height: 0;
+    visibility: hidden; }
 
 .book-hover {
   top: 278px;
@@ -2127,6 +2177,11 @@ input:active, button:active, select:active {
   left: 0;
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
+  .contactus::before {
+    content: url("img/ContactUs.png");
+    width: 0;
+    height: 0;
+    visibility: hidden; }
 
 .contactus-hover {
   top: 383px;
