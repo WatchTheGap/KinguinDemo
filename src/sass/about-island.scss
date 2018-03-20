@@ -8,11 +8,29 @@
 }
 #about-block {
   top: 14px;
+  &::before {
+    content: url('img/About.png');
+    width:0;
+    height:0;
+    visibility: hidden;
+  }
 }
 .figures {
   top: 0;
   left: 150px;
   transition: top .25s ease-in-out;
+  &::before {
+    content: url('img/Team_figures.png');
+    width:0;
+    height:0;
+    visibility: hidden;
+  }
+  &::after {
+    content: url('img/figures_mobile.png');
+    width:0;
+    height:0;
+    visibility: hidden;
+  }
 }
 .figures-hover {
   top: -80px;
@@ -23,6 +41,12 @@
   left: 152px;
   opacity: 0;
   transition: all .25s ease-in-out;
+  &::before {
+    content: url('img/Shadows.png');
+    width:0;
+    height:0;
+    visibility: hidden;
+  }
 }
 .shadows-hover {
   top: 0;
@@ -32,11 +56,16 @@
   top: 14px;
   left: 0;
   transition: top .25s ease-in-out;
+  &::before {
+    content: url('img/Team_hover.png');
+    width:0;
+    height:0;
+    visibility: hidden;
+  }
 }
 .team-hover {
   top: -31px;
   left: 0;
-
 }
 
 .team-title {
@@ -70,6 +99,12 @@
   top: 105px;
   left: 373px;
   transition: top .25s ease-in-out;
+  &::before {
+    content: url('img/Company_penguin.png');
+    width:0;
+    height:0;
+    visibility: hidden;
+  }
 }
 .company-penguin-hover {
   top: 75px;
@@ -116,6 +151,12 @@
   left: 251px;
   width: 118px;
   height: 103px;
+  &::before {
+    content: url('img/Advisor_block.png');
+    width:0;
+    height:0;
+    visibility: hidden;
+  }
 }
 .advisor-block-hover {
   top: 328px;
@@ -146,6 +187,12 @@
   top: 65px;
   left: 161px;
   transition: all .25s ease-in-out;
+  &::before {
+    content: url('img/Company.png');
+    width:0;
+    height:0;
+    visibility: hidden;
+  }
 }
 .company-hover {
   top: 50px;
@@ -156,6 +203,12 @@
   top: 289px;
   left: 40px;
   transition: all .25s ease-in-out;
+  &::before {
+    content: url('img/OurStory.png');
+    width:0;
+    height:0;
+    visibility: hidden;
+  }
 }
 .ourstory-hover {
   top: 281px;
@@ -166,6 +219,12 @@
   top: 286px;
   left: 72px;
   transition: all .25s ease-in-out;
+  &::before {
+    content: url('img/Book.png');
+    width:0;
+    height:0;
+    visibility: hidden;
+  }
 }
 .book-hover {
   top: 278px;
@@ -181,6 +240,12 @@
   top: 368px;
   left: 0;
   transition: all .25s ease-in-out;
+  &::before {
+    content: url('img/ContactUs.png');
+    width:0;
+    height:0;
+    visibility: hidden;
+  }
 }
 .contactus-hover {
   top: 383px;
