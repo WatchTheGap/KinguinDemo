@@ -168,8 +168,6 @@
       return;
     }
 
-
-
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!re.test(String(userEmail).toLowerCase())) {
       $('#kyc-popup .alert-msg').text('Please enter a valid email address.');
@@ -570,30 +568,29 @@
 
   $('#investor-private-continue').click(function (e) {
     e.preventDefault();
-    $('#full-name').val(function () {
+    $('input[name="full-name"]').val(function () {
       return fullName = this.value;
     });
-    $('#country').val(function () {
+    $('input[name="country"]').val(function () {
       return country = this.value;
     });
-    $('#apartment-no').val(function () {
+    $('input[name="apartment-no"]').val(function () {
       return apartmentNo = this.value;
     });
-    $('#building-no').val(function () {
+    $('input[name="building-no"]').val(function () {
       return buildingNo = this.value;
     });
-    $('#street').val(function () {
+    $('input[name="street"]').val(function () {
       return street = this.value;
     });
-    $('#city').val(function () {
+    $('input[name="city"]').val(function () {
       return city = this.value;
     });
-    $('#zip-code').val(function () {
+    $('input[name="zip-code"]').val(function () {
       return zip = this.value;
     });
 
     if (country === "999") {
-      console.log();
       alert("Nice try. We know you're in another castle. (You must select a country)");
       return;
     }
@@ -638,31 +635,31 @@
 
   $('#investor-company-continue').click(function (e) {
     e.preventDefault();
-    $('#c-full-name').val(function () {
+    $('input[name="c-full-name"]').val(function () {
       return fullName = this.value;
     });
-    $('#company-name').val(function () {
+    $('input[name="company-name"]').val(function () {
       return company = this.value;
     });
-    $('#reg-id').val(function () {
+    $('input[name="reg-id"]').val(function () {
       return regID = this.value;
     });
-    $('#c-apartment-no').val(function () {
+    $('input[name="c-apartment-no"]').val(function () {
       return apartmentNo = this.value;
     });
-    $('#c-building-no').val(function () {
+    $('input[name="c-building-no"]').val(function () {
       return buildingNo = this.value;
     });
-    $('#c-street').val(function () {
+    $('input[name="c-street"]').val(function () {
       return street = this.value;
     });
-    $('#c-city').val(function () {
+    $('input[name="c-city"]').val(function () {
       return city = this.value;
     });
-    $('#c-zip-code').val(function () {
+    $('input[name="c-zip-code"]').val(function () {
       return zip = this.value;
     });
-    $('#c-country').val(function () {
+    $('input[name="c-country"]').val(function () {
       return country = this.value;
     });
 
@@ -763,7 +760,7 @@
 
   $('#aml-fiat-continue').click(function (e) {
     e.preventDefault();
-    $('#fiat-eth-rec').val(function () {
+    $('input[name="fiat-eth-rec"]').val(function () {
       ethRec = this.value;
     });
     sendAML();
