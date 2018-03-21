@@ -96,7 +96,6 @@ input:active, button:active, select:active {
   input {
     width: 100%;
     text-align: center;
-    padding: 0 10px;
   }
   .pixel-input {
     padding: 10px 30px;
@@ -189,9 +188,14 @@ input:active, button:active, select:active {
   .currency-amt {
     width: 90%;
     margin: 0 5%;
+    .pixel-input {
+      padding: 0;
+    }
     input {
+      width: 94%;
+      margin: 2% 3%;
+      background-color: transparent;
       text-align: left;
-      width: 70%;
       &::placeholder {
         color: black;
         text-align: left;
@@ -202,9 +206,9 @@ input:active, button:active, select:active {
   .currency-placeholder {
     margin: 0;
     text-align: right;
-    float: right;
-    width: 20%;
-    padding-top: 5px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
   }
 }
 
@@ -281,7 +285,8 @@ input:active, button:active, select:active {
     padding-left: 10px;
   }
   input {
-    height: 50px;
+    width: 94%;
+    margin: 2% 3%;
   }
 
   select {

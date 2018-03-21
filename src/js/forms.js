@@ -149,9 +149,15 @@
   }
 
   function createProfile(userProfile) {
-    if (name.length < 1 || userEmail.length < 1) {
+    if (name.length < 1) {
       $('#kyc-popup .alert-msg').text('Please fill out the required fields.');
       $('input[name="user-email-kyc"]').val(userEmail);
+      $('input[name="name-kyc"]').val(name).addClass('field-fix');
+      return;
+    }
+    if (userEmail.length < 1) {
+      $('#kyc-popup .alert-msg').text('Please fill out the required fields.');
+      $('input[name="user-email-kyc"]').val(userEmail).addClass('field-fix');
       $('input[name="name-kyc"]').val(name);
       return;
     }
@@ -160,7 +166,7 @@
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!re.test(String(userEmail).toLowerCase())) {
       $('#kyc-popup .alert-msg').text('Please enter a valid email address.');
-      $('input[name="user-email-kyc"]').val(userEmail);
+      $('input[name="user-email-kyc"]').val(userEmail).addCLass('field-fix');
       $('input[name="name-kyc"]').val(name);
       return;
     }
@@ -255,6 +261,7 @@
     });
     if (currencyType === 'BTC' && donationAmt < 0.4) {
       $('#choose-crypto-popup .alert-msg').text('* a minimum donation of 0.4 BTC is required.');
+      $('input[name="crypto-amt"]').val(donationAmt).addClass('field-fix');
       return;
     }
     if (currencyType === 'BTC' && donationAmt >= 0.4) {
@@ -263,6 +270,7 @@
     }
     if (currencyType === 'ETH' && donationAmt < 5) {
       $('#choose-crypto-popup .alert-msg').text('* a minimum donation of 5 ETH is required.');
+      $('input[name="crypto-amt"]').val(donationAmt).addClass('field-fix');
       return;
     }
     if (currencyType === 'ETH' && donationAmt >= 5) {
@@ -298,17 +306,24 @@
     });
     if (currencyType === 'USD' && donationAmt < 5000) {
       $('#choose-fiat-popup .alert-msg').text('* a minimum donation of $5,000 USD is required.');
-      $('input[name="donation-amt"]').val(donationAmt);
+      $('input[name="donation-amt"]').val(donationAmt).addClass('field-fix');
       return;
     }
     if (currencyType === 'EUR' && donationAmt < 4000) {
       $('#choose-fiat-popup .alert-msg').text('* a minimum donation of €4,000 EUR is required.');
-      $('input[name="donation-amt"]').val(donationAmt);
+      $('input[name="donation-amt"]').val(donationAmt).addClass('field-fix');
       return;
     }
     $('#choose-fiat-popup').addClass('hide');
     $('#kyc-popup').removeClass('hide');
   });
+
+  $('input[type="text"]').click(function () {
+    $(this).removeClass('field-fix');
+  });
+  $('input[type="email"]').click(function () {
+      $(this).removeClass('field-fix');
+    });
 
   //*** FOR CRYPTO OVER $2K & ALL FIAT ***//
   //*** INVESTOR INPUTS NAME & EMAIL ***//
