@@ -149,18 +149,25 @@
   }
 
   function createProfile(userProfile) {
-    if (name.length < 1) {
+    if (name.length < 1 && userEmail.length < 1) {
+      $('input[name="name-kyc"]').val(name).addClass('field-fix');
+      $('input[name="user-email-kyc"]').val(userEmail).addClass('field-fix');
       $('#kyc-popup .alert-msg').text('Please fill out the required fields.');
+      return;
+    }
+    if (name.length < 1) {
+      $('#kyc-popup .alert-msg').text('Please enter your name.');
       $('input[name="user-email-kyc"]').val(userEmail);
       $('input[name="name-kyc"]').val(name).addClass('field-fix');
       return;
     }
     if (userEmail.length < 1) {
-      $('#kyc-popup .alert-msg').text('Please fill out the required fields.');
+      $('#kyc-popup .alert-msg').text('Please enter your email address.');
       $('input[name="user-email-kyc"]').val(userEmail).addClass('field-fix');
       $('input[name="name-kyc"]').val(name);
       return;
     }
+
 
 
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;

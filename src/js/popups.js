@@ -67,7 +67,15 @@
     $('#ourstory-popup').removeClass('hide');
   });
 
-  $('#contactus').click(function() {
+  $('.contactus').click(function() {
+    blur();
+    $('#contactus-popup').removeClass('hide');
+  });
+  $('.letter').click(function () {
+    blur();
+    $('#contactus-popup').removeClass('hide');
+  });
+  $('.contact-title').click(function () {
     blur();
     $('#contactus-popup').removeClass('hide');
   });
