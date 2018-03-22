@@ -811,6 +811,7 @@
   let teleId;
   let teleRefId;
   let teleWallet;
+  let kingRef = {};
 
   let airdrop = function airdrop() {
 
@@ -825,11 +826,17 @@
       }
     }).done(function (response) {
       console.log(response);
+      kingRef = response;
+      console.log(kingRef.referral_id);
       alert('success!');
       $("#loader").addClass('hide');
+      $('#airdrop-popup').addClass('hide');
+      $('#referral-link-popup').removeClass('hide');
+      $('.personal-airdrop-link').attr('href', 'https://kinguin.io/airdrop/ref=' + kingRef.referral_id).find('h1').text('https://kinguin.io/airdrop/ref=' + kingRef.referral_id);
+
     }).fail(function () {
       $("#loader").addClass('hide');
-      alert('#SAD');
+      alert('Something went wrong! :(');
     });
   };
 
@@ -846,7 +853,6 @@
     $('input[name="tele-eth"]').val(function () {
       teleWallet = this.value;
     });
-    console.log(teleEmail, teleId, teleRefId, teleWallet);
     airdrop();
 
   });
