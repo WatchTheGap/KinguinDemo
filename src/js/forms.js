@@ -802,6 +802,57 @@
     sendFilesOnly();
   });
 
-  //*************************//
+//*************************//
+
+
+//*** AIRDROP SIGNUP ***//
+
+  let teleEmail;
+  let teleId;
+  let teleRefId;
+  let teleWallet;
+
+  let airdrop = function airdrop() {
+
+    $.ajax({
+      url: "https://api.kinguin.io/airdrop/signup",
+      type: "PUT",
+      data: {
+        "email": teleEmail,
+        "eth_wallet": teleWallet,
+        "telegram_id": teleId,
+        "referred_by": teleRefId
+      }
+    }).done(function (response) {
+      console.log(response);
+      alert('success!');
+      $("#loader").addClass('hide');
+    }).fail(function () {
+      $("#loader").addClass('hide');
+      alert('#SAD');
+    });
+  };
+
+  $('input[name="telegram-submit"]').click(function () {
+    $('input[name="telegram-email"]').val(function () {
+      teleEmail = this.value;
+    });
+    $('input[name="telegram-id"]').val(function () {
+      teleId = this.value;
+    });
+    $('input[name="referral-id"]').val(function () {
+      teleRefId = this.value;
+    });
+    $('input[name="tele-eth"]').val(function () {
+      teleWallet = this.value;
+    });
+    console.log(teleEmail, teleId, teleRefId, teleWallet);
+    airdrop();
+
+  });
+
+  new ClipboardJS('.clippy');
+
+
 
 }());

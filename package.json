@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/Kinguin-io/digital_strategy#readme",
   "dependencies": {
+    "clipboard": "^2.0.0",
     "jquery": "^3.3.1"
   }
 }

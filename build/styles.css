@@ -691,48 +691,54 @@ header {
     height: 2160px;
     width: 2160px; }
 
-#airdrop-popup::before, #airdrop-popup::after {
+input[name='airdrop-link-hidden'] {
+  border: 1px solid black; }
+
+.airdrop::before, .airdrop::after {
   border-bottom: 10px solid #6bb0d2; }
-#airdrop-popup .modal-header {
+.airdrop .modal-header {
   background-color: #0088cc;
   border-top: 10px solid #6bb0d2; }
-#airdrop-popup .modal-body, #airdrop-popup #why-now-popup .modal-footer, #why-now-popup #airdrop-popup .modal-footer {
+.airdrop .modal-body, .airdrop #why-now-popup .modal-footer, #why-now-popup .airdrop .modal-footer {
   min-height: 500px; }
-  #airdrop-popup .modal-body .input-wrapper, #airdrop-popup #why-now-popup .modal-footer .input-wrapper, #why-now-popup #airdrop-popup .modal-footer .input-wrapper {
+  .airdrop .modal-body .input-wrapper, .airdrop #why-now-popup .modal-footer .input-wrapper, #why-now-popup .airdrop .modal-footer .input-wrapper {
     width: 70%;
     margin: 3% 15%; }
-  #airdrop-popup .modal-body input::-webkit-input-placeholder, #airdrop-popup #why-now-popup .modal-footer input::-webkit-input-placeholder, #why-now-popup #airdrop-popup .modal-footer input::-webkit-input-placeholder {
+  .airdrop .modal-body input::-webkit-input-placeholder, .airdrop #why-now-popup .modal-footer input::-webkit-input-placeholder, #why-now-popup .airdrop .modal-footer input::-webkit-input-placeholder {
     font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     font-size: 15px;
     text-align: left;
     color: #9c9b9b;
     padding-left: 10px; }
-  #airdrop-popup .modal-body input::-moz-placeholder, #airdrop-popup #why-now-popup .modal-footer input::-moz-placeholder, #why-now-popup #airdrop-popup .modal-footer input::-moz-placeholder {
+  .airdrop .modal-body input::-moz-placeholder, .airdrop #why-now-popup .modal-footer input::-moz-placeholder, #why-now-popup .airdrop .modal-footer input::-moz-placeholder {
     font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     font-size: 15px;
     text-align: left;
     color: #9c9b9b;
     padding-left: 10px; }
-  #airdrop-popup .modal-body input:-ms-input-placeholder, #airdrop-popup #why-now-popup .modal-footer input:-ms-input-placeholder, #why-now-popup #airdrop-popup .modal-footer input:-ms-input-placeholder {
+  .airdrop .modal-body input:-ms-input-placeholder, .airdrop #why-now-popup .modal-footer input:-ms-input-placeholder, #why-now-popup .airdrop .modal-footer input:-ms-input-placeholder {
     font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     font-size: 15px;
     text-align: left;
     color: #9c9b9b;
     padding-left: 10px; }
-  #airdrop-popup .modal-body input::-ms-input-placeholder, #airdrop-popup #why-now-popup .modal-footer input::-ms-input-placeholder, #why-now-popup #airdrop-popup .modal-footer input::-ms-input-placeholder {
+  .airdrop .modal-body input::-ms-input-placeholder, .airdrop #why-now-popup .modal-footer input::-ms-input-placeholder, #why-now-popup .airdrop .modal-footer input::-ms-input-placeholder {
     font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     font-size: 15px;
     text-align: left;
     color: #9c9b9b;
     padding-left: 10px; }
-  #airdrop-popup .modal-body input::placeholder, #airdrop-popup #why-now-popup .modal-footer input::placeholder, #why-now-popup #airdrop-popup .modal-footer input::placeholder {
+  .airdrop .modal-body input::placeholder, .airdrop #why-now-popup .modal-footer input::placeholder, #why-now-popup .airdrop .modal-footer input::placeholder {
     font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     font-size: 15px;
     text-align: left;
     color: #9c9b9b;
     padding-left: 10px; }
-  #airdrop-popup .modal-body input, #airdrop-popup #why-now-popup .modal-footer input, #why-now-popup #airdrop-popup .modal-footer input {
+  .airdrop .modal-body input, .airdrop #why-now-popup .modal-footer input, #why-now-popup .airdrop .modal-footer input {
     height: 50px; }
+
+#referral-link-popup .modal-body, #referral-link-popup #why-now-popup .modal-footer, #why-now-popup #referral-link-popup .modal-footer {
+  min-height: 100px; }
 
 #advisors-popup::before, #advisors-popup::after {
   border-bottom: 10px solid #8ac0d4; }

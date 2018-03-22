@@ -66,6 +66,16 @@ module.exports = function (grunt){
             expand: true
           }
         ]
+      },
+      clipboard: {
+        files: [
+          {
+            cwd: 'node_modules/clipboard/dist/',
+            src: ['clipboard.min.js'],
+            dest: 'build/',
+            expand: true
+          }
+        ]
       }
     },
     sass: {
