@@ -363,8 +363,9 @@ border: 1px solid black;
     border-top: 10px solid #6bb0d2;
   }
   .modal-body {
-    min-height: 500px;
-    .input-wrapper {
+    padding: 10% 0;
+    height: 400px;
+   .input-wrapper {
       width: 70%;
       margin: 3% 15%;
     }
@@ -379,13 +380,16 @@ border: 1px solid black;
       height: 50px;
     }
   }
+  .modal-footer {
+    min-height: 5px;
+  }
 }
 
 #referral-link-popup {
   max-width: none;
   .modal-body {
-    min-height: 100px;
-  }
+    height: 5em;
+    padding-bottom: 2em;  }
   .modal-footer {
     min-height: 150px;
   }

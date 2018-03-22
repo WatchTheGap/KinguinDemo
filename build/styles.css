@@ -700,7 +700,8 @@ input[name='airdrop-link-hidden'] {
   background-color: #0088cc;
   border-top: 10px solid #6bb0d2; }
 .airdrop .modal-body, .airdrop #why-now-popup .modal-footer, #why-now-popup .airdrop .modal-footer {
-  min-height: 500px; }
+  padding: 10% 0;
+  height: 400px; }
   .airdrop .modal-body .input-wrapper, .airdrop #why-now-popup .modal-footer .input-wrapper, #why-now-popup .airdrop .modal-footer .input-wrapper {
     width: 70%;
     margin: 3% 15%; }
@@ -736,9 +737,16 @@ input[name='airdrop-link-hidden'] {
     padding-left: 10px; }
   .airdrop .modal-body input, .airdrop #why-now-popup .modal-footer input, #why-now-popup .airdrop .modal-footer input {
     height: 50px; }
+.airdrop .modal-footer {
+  min-height: 5px; }
 
-#referral-link-popup .modal-body, #referral-link-popup #why-now-popup .modal-footer, #why-now-popup #referral-link-popup .modal-footer {
-  min-height: 100px; }
+#referral-link-popup {
+  max-width: none; }
+  #referral-link-popup .modal-body, #referral-link-popup #why-now-popup .modal-footer, #why-now-popup #referral-link-popup .modal-footer {
+    height: 5em;
+    padding-bottom: 2em; }
+  #referral-link-popup .modal-footer {
+    min-height: 150px; }
 
 #advisors-popup::before, #advisors-popup::after {
   border-bottom: 10px solid #8ac0d4; }
