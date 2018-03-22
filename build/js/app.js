@@ -961,6 +961,24 @@
 
   new ClipboardJS('.clippy');
 
+  let referrals;
+  //hisnjhysloofkqipvbkcypytjlfhcrfz
+
+  let getRefs = function getRefs() {
+    let airdropRef = getQueryParam('airdrop-ref');
+    $.ajax({
+      url: "https://api.kinguin.io/airdrop/signup/?referral_id=" + airdropRef,
+      type: "GET"
+    }).done(function (response) {
+      $("#loader").addClass('hide');
+      console.log('response ', response);
+      referrals = response;
+    });
+  };
+
+  $('input[name=check-krowns]').click(function () {
+    getRefs();
+  });
 
 
 }());
