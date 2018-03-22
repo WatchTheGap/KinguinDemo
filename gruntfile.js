@@ -45,7 +45,7 @@ module.exports = function (grunt){
         files: [
           {
             cwd: 'src/docs/',
-            src: ['*.pdf', '*.zip'],
+            src: ['*.pdf', '*.zip', '*.png'],
             dest: 'build/docs/',
             expand: true
           }
