@@ -382,8 +382,12 @@ border: 1px solid black;
 }
 
 #referral-link-popup {
+  max-width: none;
   .modal-body {
     min-height: 100px;
+  }
+  .modal-footer {
+    min-height: 150px;
   }
 }
 
