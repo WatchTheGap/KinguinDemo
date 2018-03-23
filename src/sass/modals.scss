@@ -395,6 +395,17 @@ border: 1px solid black;
   }
 }
 
+#check-refs-popup {
+  .modal-body {
+    height: auto;
+    h1 {
+      text-align: center;
+      font-size: 80px;
+      margin: 0;
+    }
+  }
+}
+
 #advisors-popup {
   &::before, &::after {
     border-bottom: 10px solid #8ac0d4;

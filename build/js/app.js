@@ -931,7 +931,7 @@
       $("#loader").addClass('hide');
       $('#airdrop-popup').addClass('hide');
       $('#referral-link-popup').removeClass('hide');
-      $('.personal-airdrop-link').attr('href', 'https://kinguin.io/?airdrop-ref=' + kingRef.referral_id).find('h1').text('https://kinguin.io/?airdrop-ref=' + kingRef.referral_id);
+      $('.personal-airdrop-link').attr('href', 'https://kinguin.io/?airdrop=referrals&ref-id=' + kingRef.referral_id).find('h1').text('https://kinguin.io/?airdrop=referrals&ref-id=' + kingRef.referral_id);
     }).fail(function () {
       $("#loader").addClass('hide');
       alert('Something went wrong! :(');
@@ -958,22 +958,34 @@
   new ClipboardJS('.clippy');
 
   let referrals;
-  //hisnjhysloofkqipvbkcypytjlfhcrfz
 
   let getRefs = function getRefs() {
-    let airdropRef = getQueryParam('airdrop-ref');
+    let refId = getQueryParam('ref-id');
     $.ajax({
-      url: "https://api.kinguin.io/airdrop/signup/?referral_id=" + airdropRef,
+      url: "https://api.kinguin.io/airdrop/signup/?referral_id=" + refId,
       type: "GET"
     }).done(function (response) {
       $("#loader").addClass('hide');
-      console.log('response ', response);
       referrals = response;
+      $('#check-refs-popup').removeClass('hide').find('.modal-body h1').text(referrals);
     });
   };
 
-  $('input[name=check-krowns]').click(function () {
-    getRefs();
+  $(document).ready(function () {
+    var drop = getQueryParam('airdrop');
+    if (typeof drop === 'string') {
+      drop = drop.toLowerCase();
+    }
+    switch(drop) {
+      case ('signup'):
+      blur();
+      teleRefId = getQueryParam('ref-id');
+      $('#airdrop-popup').removeClass('hide').find('input[name="referral-id"]').val(teleRefId);
+      break;
+      case ('referrals'):
+      getRefs();
+      break;
+    }
   });
 
 
