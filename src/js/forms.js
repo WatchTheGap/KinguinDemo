@@ -829,7 +829,8 @@
       $('#airdrop-popup').addClass('hide');
       $('#referral-link-popup').removeClass('hide');
       $('.personal-airdrop-link').attr('href', 'https://kinguin.io/?airdrop=signup&ref-id=' + kingRef.referral_id).find('h1').text('https://kinguin.io/?airdrop=signup&ref-id=' + kingRef.referral_id);
-    }).fail(function () {
+    }).fail(function (err) {
+      console.log(err);
       $("#loader").addClass('hide');
       alert('Something went wrong! :(');
     });
