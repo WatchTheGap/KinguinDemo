@@ -926,9 +926,7 @@
         "referred_by": teleRefId
       }
     }).done(function (response) {
-      console.log(response);
       kingRef = response;
-      console.log(kingRef.referral_id);
       alert('success!');
       $("#loader").addClass('hide');
       $('#airdrop-popup').addClass('hide');
