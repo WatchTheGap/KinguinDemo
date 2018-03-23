@@ -876,7 +876,8 @@
     }).done(function (response) {
       $("#loader").addClass('hide');
       referrals = response;
-      $('#check-refs-popup').removeClass('hide').find('.modal-body h1').text(referrals);
+      $('.popup-bg').show();
+      $('#islands-wrapper').addClass('blur');      $('#check-refs-popup').removeClass('hide').find('.modal-body h1').text(referrals);
     });
   };
 
