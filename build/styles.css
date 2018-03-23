@@ -691,9 +691,6 @@ header {
     height: 2160px;
     width: 2160px; }
 
-input[name='airdrop-link-hidden'] {
-  border: 1px solid black; }
-
 .airdrop::before, .airdrop::after {
   border-bottom: 10px solid #6bb0d2; }
 .airdrop .modal-header {
