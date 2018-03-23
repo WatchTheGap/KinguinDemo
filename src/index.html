@@ -295,18 +295,20 @@
       </div>
     </div>
 
-    <div class='popup-wrapper'> <!-- AIRDROP POPUP -->
-      <div id='airdrop-popup' class='popup hide popup-outer-wrapper'>
+    <div class='popup-wrapper'> <!-- AIRDROP POPUPS -->
+      <div id='airdrop-popup' class='popup airdrop hide popup-outer-wrapper'>
         <div class='popup-inner-wrapper'>
           <section class='modal-header'>
             <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
-            <h1>AIRDROP</h1>
+            <h1>KINGUIN.IO AIRDROP</h1>
           </section>
           <section class='modal-body'>
+            <p class='alert-msg'></p>
+
             <form class='' action='' method='post'>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input type='text' name='telegram-email' placeholder='email' required>
+                  <input type='email' name='telegram-email' placeholder='email' required>
                 </div>
               </div>
               <div class='input-wrapper'>
@@ -316,12 +318,7 @@
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input type='text' name='referal-id' placeholder='referal id'>
-                </div>
-              </div>
-              <div class='input-wrapper'>
-                <div class='pixel-input'>
-                  <input type='text' name='erc20' placeholder='erc20 wallet address'>
+                  <input type='text' name='tele-eth' placeholder='erc-23 wallet address'>
                 </div>
               </div>
               <div class='input-wrapper continue-btn'>
@@ -336,13 +333,55 @@
           </section>
         </div>
       </div>
+
+      <div id='referral-link-popup' class='popup airdrop hide popup-outer-wrapper'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>KINGUIN.IO AIRDROP</h1>
+          </section>
+          <section class='modal-body'>
+            <h2>ACHIEVEMENT UNLOCKED</h2>
+            <p>You have successfully signed up for the <a href='https://kinguin.io'>Kinguin.io</a> Airdrop! Please make sure you are in the <a href='https://t.me/KinguinICOPublic'>Kinguin.io Telegram</a> group for the duration of the Kinguin.io Airdrop otherwise you will forfeit your Krowns.</p>
+            <a class='personal-airdrop-link' href="#">
+              <h1></h1>
+            </a>
+          </section>
+          <section class='modal-footer'>
+            <div class='input-wrapper continue-btn'>
+              <div class='pixel-input'>
+                <input class='clippy' type='button' name='copy-link' value='COPY LINK TO CLIPBOARD' data-clipboard-target='.personal-airdrop-link'>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div id='check-refs-popup' class='popup popup-outer-wrapper hide airdrop'>
+        <div class='popup-inner-wrapper'>
+          <section class='modal-header'>
+            <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
+            <h1>KINGUIN.IO AIRDROP</h1>
+          </section>
+          <section class='modal-body'>
+            <h2>TOTAL REFERRALS:</h2>
+            <h1></h1>
+          </section>
+          <section class='modal-footer'>
+
+          </section>
+        </div>
+      </div>
+
+
+
     </div>
 
            <!-- signups -->
     <div class='popup-wrapper'> <!-- CONFIRMATION POPUP -->
-      <div id='confirmation-popup' class='signup-corners hide popup  popup-outer-wrapper'>
+      <div id='confirmation-popup' class='signup-series  popup hide popup-outer-wrapper'>
         <div class='popup-inner-wrapper'>
-          <section class='modal-header signup'>
+          <section class='modal-header'>
             <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
             <h1>SIGN UP TO PRE-ICO</h1>
           </section>
@@ -391,7 +430,7 @@
                 </a>
               </div>
             </div>
-            <img id='progress-bar' src='img/Progress_Bar_1.png' alt='progress bar'>
+            <img class='progress-bar' src='img/Progress_Bar_1.png' alt='progress bar'>
           </section>
         </div>
       </div>
@@ -438,7 +477,7 @@
                 <input type='submit' value='<'>
               </div>
             </div>
-            <img id='progress-bar' src='img/Progress_Bar_1.png' alt='progress bar'>
+            <img class='progress-bar' src='img/Progress_Bar_1.png' alt='progress bar'>
           </section>
         </div>
       </div>
@@ -485,7 +524,7 @@
                 <input type='submit' value='<'>
               </div>
             </div>
-            <img id='progress-bar' src='img/Progress_Bar_1.png' alt='progress bar'>
+            <img class='progress-bar' src='img/Progress_Bar_1.png' alt='progress bar'>
           </section>
         </div>
       </div>
@@ -553,7 +592,7 @@
                 <input type='button' value='<'>
               </div>
             </div>
-            <img id='progress-bar' src='img/Progress_Bar_2.png' alt='progress bar'>
+            <img class='progress-bar' src='img/Progress_Bar_2.png' alt='progress bar'>
           </section>
         </div>
       </div>
@@ -581,27 +620,27 @@
                 </a>
               </div>
             </div>
-            <img id='progress-bar' src='img/Progress_Bar_2.png' alt='progress bar'>
+            <img class='progress-bar' src='img/Progress_Bar_2.png' alt='progress bar'>
           </section>
         </div>
       </div>
 
-      <div id='investor-private-popup' class='signup-corners popup  hide popup-outer-wrapper'>
+      <div id='investor-private-popup' class='signup-corners popup hide popup-outer-wrapper'>
         <div class='popup-inner-wrapper'>
           <section class='modal-header signup'>
             <h1>SIGN UP TO PRE-ICO</h1>
           </section>
-          <section id='investor-private-body' class='modal-body signup-body'>
+          <section class='modal-body signup-body'>
             <h3>fill in data</h3>
             <form id='personal-data-form' method='post' name='personal-data-form'>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='full-name' type='text' align='center' name='name' placeholder='FULL NAME'>
+                  <input type='text' align='center' name='full-name' placeholder='FULL NAME'>
                 </div>
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <select id='country' type='select' name='country' placeholder='COUNTRY'>
+                  <select type='select' name='country' placeholder='COUNTRY'>
                     <option value="1">Afghanistan</option>
                     <option value="2">Åland Islands</option>
                     <option value="3">Albania</option>
@@ -859,27 +898,27 @@
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='apartment-no' type='text' name='apartment-no' placeholder='APT 3O3'>
+                  <input type='text' name='apartment-no' placeholder='APT 3O3'>
                 </div>
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='building-no' type='text' name='building-no' placeholder='1337'>
+                  <input type='text' name='building-no' placeholder='1337'>
                 </div>
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='street' type='text' name='street' placeholder='LEGENDARY ST'>
+                  <input type='text' name='street' placeholder='LEGENDARY ST'>
                 </div>
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='city' type='text' name='city' placeholder='CITY'>
+                  <input type='text' name='city' placeholder='CITY'>
                 </div>
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='zip-code' type='text' name='zip-code' placeholder='ZIP'>
+                  <input type='text' name='zip-code' placeholder='ZIP'>
                 </div>
               </div>
               <div class='upload-blocks'>
@@ -916,7 +955,7 @@
                 <input type='submit' value='<'>
               </div>
             </div>
-            <img id='progress-bar' src='img/Progress_Bar_2.png' alt='progress bar'>
+            <img class='progress-bar' src='img/Progress_Bar_2.png' alt='progress bar'>
           </section>
         </div>
       </div>
@@ -926,27 +965,27 @@
           <section class='modal-header signup'>
             <h1>SIGN UP TO PRE-ICO</h1>
           </section>
-          <section id='investor-company-body' class='modal-body signup-body'>
+          <section class='modal-body signup-body'>
             <h3>fill in data</h3>
             <form id='company-data-form' method='post'>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='c-full-name' type='text' align='center' name='name' placeholder='FULL NAME'>
+                  <input type='text' align='center' name='c-full-name' placeholder='FULL NAME'>
                 </div>
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='company-name' type='text' align='center' name='company-name' placeholder='COMPANY NAME'>
+                  <input type='text' align='center' name='company-name' placeholder='COMPANY NAME'>
                 </div>
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='reg-id' type='text' align='center' name='reg-id' placeholder='COMPANY REG. ID'>
+                  <input type='text' align='center' name='reg-id' placeholder='COMPANY REG. ID'>
                 </div>
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <select id='c-country' type='select' name='c-country' placeholder='country'>
+                  <select type='select' name='c-country' placeholder='country'>
                     <option value="1">Afghanistan</option>
                     <option value="2">Åland Islands</option>
                     <option value="3">Albania</option>
@@ -1204,27 +1243,27 @@
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='c-apartment-no' type='text' name='c-apartment-no' placeholder='APT 3O3'>
+                  <input type='text' name='c-apartment-no' placeholder='APT 3O3'>
                 </div>
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='c-building-no' type='text' name='c-building-no' placeholder='1337'>
+                  <input type='text' name='c-building-no' placeholder='1337'>
                 </div>
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='c-street' type='text' name='c-street' placeholder='LEGENDARY ST'>
+                  <input type='text' name='c-street' placeholder='LEGENDARY ST'>
                 </div>
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='c-city' type='text' name='city' placeholder='CITY'>
+                  <input type='text' name='c-city' placeholder='CITY'>
                 </div>
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='c-zip-code' type='text' name='c-zip-code' placeholder='ZIP'>
+                  <input type='text' name='c-zip-code' placeholder='ZIP'>
                 </div>
               </div>
               <div id='investor-company-continue' class='input-wrapper continue-btn'>
@@ -1240,7 +1279,7 @@
                 <input type='submit' value='<'>
               </div>
             </div>
-            <img id='progress-bar' src='img/Progress_Bar_2.png' alt='progress bar'>
+            <img class='progress-bar' src='img/Progress_Bar_2.png' alt='progress bar'>
           </section>
         </div>
       </div>
@@ -1251,7 +1290,7 @@
             <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
             <h1>SIGN UP TO PRE-ICO</h1>
           </section>
-          <section id='aml-body' class='modal-body signup-body'>
+          <section class='modal-body signup-body'>
             <h3>begin aml process</h3>
             <a href=#><h6>What's this?</h6></a>
             <form id='signup-form' method='post'>
@@ -1304,7 +1343,7 @@
                 <input type='submit' value='<'>
               </div>
             </div>
-            <img id='progress-bar' src='img/Progress_Bar_3.png' alt='progress bar'>
+            <img class='progress-bar' src='img/Progress_Bar_3.png' alt='progress bar'>
           </section>
         </div>
       </div>
@@ -1321,12 +1360,12 @@
             <form id='signup-form' method='post'>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='eth-send' type='text' name='eth-send' placeholder='ETH SENDING ADDRESS'>
+                  <input id='eth-send' class='ph-center' type='text' name='eth-send' placeholder='ETH SENDING ADDRESS'>
                 </div>
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='eth-rec' type='text' name='eth-rec' placeholder='ETH RECEIVING ADDRESS'>
+                  <input id='eth-rec' class='ph-center' type='text' name='eth-rec' placeholder='ETH RECEIVING ADDRESS'>
                 </div>
               </div>
               <div id='aml-eth-continue' class='input-wrapper continue-btn'>
@@ -1337,7 +1376,7 @@
             </form>
           </section>
           <section class='modal-footer'>
-            <img id='progress-bar' src='img/Progress_Bar_3.png' alt='progress bar'>
+            <img class='progress-bar' src='img/Progress_Bar_4.png' alt='progress bar'>
           </section>
         </div>
       </div>
@@ -1354,12 +1393,12 @@
             <form id='signup-form' method='post'>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='btc-send' type='text' name='btc-send' placeholder='BTC SENDING ADDRESS'>
+                  <input id='btc-send' class='ph-center' type='text' name='btc-send' placeholder='BTC SENDING ADDRESS'>
                 </div>
               </div>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='btc-eth-rec' type='text' name='btc-eth-rec' placeholder='ETH RECEIVING ADDRESS'>
+                  <input id='btc-eth-rec' class='ph-center' type='text' name='btc-eth-rec' placeholder='ETH RECEIVING ADDRESS'>
                 </div>
               </div>
               <div id='aml-btc-continue' class='input-wrapper continue-btn'>
@@ -1370,24 +1409,24 @@
             </form>
           </section>
           <section class='modal-footer'>
-            <img id='progress-bar' src='img/Progress_Bar_3.png' alt='progress bar'>
+            <img class='progress-bar' src='img/Progress_Bar_4.png' alt='progress bar'>
           </section>
         </div>
       </div>
 
-      <div id='aml-fiat-popup' class='signup-corners popup hide popup-outer-wrapper'>
+      <div id='aml-fiat-popup' class='signup-series popup hide popup-outer-wrapper'>
         <div class='popup-inner-wrapper'>
-          <section class='modal-header signup'>
+          <section class='modal-header'>
             <a class='close-popup' href='#'><img id='close-x' src='img/Close.png' alt='close window x'></a>
             <h1>SIGN UP TO PRE-ICO</h1>
           </section>
-          <section id='aml-fiat-body' class='modal-body signup-body'>
+          <section class='modal-body'>
             <h3>enter aml data</h3>
             <a href=#><h6>What's this?</h6></a>
-            <form id='signup-form' method='post'>
+            <form class='signup-form' method='post'>
               <div class='input-wrapper'>
                 <div class='pixel-input'>
-                  <input id='fiat-eth-rec' type='text' name='fiat-eth-rec' placeholder='FIAT ETH RECEIVING ADDRESS'>
+                  <input class='ph-center' type='text' name='fiat-eth-rec' placeholder='FIAT ETH RECEIVING ADDRESS'>
                 </div>
               </div>
               <div id='aml-fiat-continue' class='input-wrapper continue-btn'>
@@ -1398,12 +1437,12 @@
             </form>
           </section>
           <section class='modal-footer'>
-            <img id='progress-bar' src='img/Progress_Bar_3.png' alt='progress bar'>
+            <img class='progress-bar' src='img/Progress_Bar_4.png' alt='progress bar'>
           </section>
         </div>
       </div>
 
-      <div id='kyc-upload-popup' class='hide popup popup-outer-wrapper'>
+      <div id='kyc-upload-popup' class='signup-series hide popup popup-outer-wrapper'>
         <div class='popup-inner-wrapper'>
           <section class='modal-header'>
             <h1>upload your files</h1>
@@ -1835,6 +1874,7 @@
     <!-- Scripts -->
     <script src='jquery.min.js'></script>
     <script src='jquery.preload.js'></script>
+    <script src='clipboard.min.js'></script>
     <script src='js/app.js'></script>
     <!--**************************-->
 

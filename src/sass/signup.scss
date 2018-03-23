@@ -18,6 +18,56 @@ input:active, button:active, select:active {
   width: 700px;
 }
 
+.signup-series {
+  &::before, &::after {
+    border-bottom: 10px solid #c8dfdc;
+  }
+  .modal-header {
+    background-color: #9ac4bf;
+    border-top: 10px solid #c8dfdc;
+    h1 {
+      color: black;
+    }
+  }
+  .modal-body {
+    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
+    overflow: auto;
+    form {
+      h4 {
+        font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
+        font-size: 20px;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin-top: 10%;
+      }
+      input::placeholder {
+        font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
+        font-size: 15px;
+        text-align: center;
+        color: #9c9b9b;
+      }
+    }
+    h2 {
+      font-family: '04b_03', monospace;
+      font-size: 20px;
+      width: 75%;
+      margin: 5% auto;
+      height: 5em;
+    }
+    h3 {
+      font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
+      font-size: 20px;
+    }
+    button {
+      cursor: pointer;
+    }
+  }
+  .modal-footer {
+
+  }
+}
+
 #kyc-popup, #aml-popup {
   .modal-footer {
     .button-wrapper {
@@ -96,7 +146,6 @@ input:active, button:active, select:active {
   input {
     width: 100%;
     text-align: center;
-    padding: 0 10px;
   }
   .pixel-input {
     padding: 10px 30px;
@@ -189,9 +238,14 @@ input:active, button:active, select:active {
   .currency-amt {
     width: 90%;
     margin: 0 5%;
+    .pixel-input {
+      padding: 0;
+    }
     input {
+      width: 94%;
+      margin: 10px 3%;
+      background-color: transparent;
       text-align: left;
-      width: 70%;
       &::placeholder {
         color: black;
         text-align: left;
@@ -202,73 +256,18 @@ input:active, button:active, select:active {
   .currency-placeholder {
     margin: 0;
     text-align: right;
-    float: right;
-    width: 20%;
-    padding-top: 5px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
   }
 }
 
-#bank-info-form {
-  .continue-btn {
-    margin: 20% 0 0 0;
-    width: 100%;
-    a {
-      padding: 10px;
-    }
-  }
-  margin: 5% 15%;
-  min-height: 200px;
-  label {
-    font-family: '04b_03', monospace;
-    font-size: 15px;
-    margin: 20px 0 0 10px;
-    width: 100%;
-    display: inline-block;
-  }
-  .bank-input {
-    margin: 3% 0;
-    width: 70%;
-    float: left;
-    .pixel-input {
-      height: 40px;
-      input {
-        height: 40px;
-        &::placeholder {
-          font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-          font-size: 15px;
-          text-align: left;
-          color: #9c9b9b;
-          padding: 20px;
-          height: 40px;
-        }
-      }
-    }
-  }
-  .copy-sm {
-    width: 25%;
-    float: right;
-    margin: 3% 0;
-    @extend .blue-btn;
-    a{
-      padding: 10px;
-      text-align: center;
-    }
-  }
-}
+
 
 #signup-form, #personal-data-form,
-#company-data-form, #funding-form {
-  #btc-fund-continue,
-  #eth-fund-continue  {
-    margin-top: 25%;
-  }
-  #aml-continue, #aml-eth-continue, #aml-btc-continue{
-    margin-top: 10%;
-  }
-  #btc-fund::placeholder,
-  #eth-fund::placeholder {
-    text-align: center;
-  }
+#company-data-form, #funding-form,
+.signup-form {
+
   .input-wrapper {
     width: 70%;
     margin: 3% 15%;
@@ -278,10 +277,18 @@ input:active, button:active, select:active {
     font-size: 15px;
     text-align: left;
     color: #9c9b9b;
-    padding-left: 10px;
   }
-  input {
-    height: 50px;
+  input[type='text'], input[type='email'] {
+    width: 94%;
+    margin: 10px 3%;
+  }
+  input[type='submit'] {
+    width: 100%;
+    margin: 0;
+  }
+
+  .ph-center::placeholder {
+    text-align: center;
   }
 
   select {
@@ -411,29 +418,28 @@ input:active, button:active, select:active {
       padding: 0;
       height: inherit;
       border-top: 5px solid #f68888;
+      width: 100%;
+      margin: 0;
     }
   }
 }
 
-#progress-bar {
+.progress-bar {
   width: 70%;
   margin: 5% 15%;
 }
 
 #confirmation-popup {
   .modal-body {
+    font-family: '04b_03', monospace;
     text-align: center;
     padding: 5%;
     p {
       font-size: 20px;
     }
     h1 {
-      font-family: '04b_03', monospace;
       font-size: 36px;
     }
-  }
-  .modal-footer {
-    min-height: 200px;
   }
 }
 
@@ -442,18 +448,10 @@ input:active, button:active, select:active {
 }
 
 #kyc-upload-popup {
-  &::before, &::after {
-    border-bottom: 10px solid #c8dfdc;
-  }
-  .modal-header {
-    background-color: #9ac4bf;
-    border-top: 10px solid #c8dfdc;
-    h1 {
-      color: black;
-    }
-  }
+
   .modal-body {
     .kyc-upload-info {
+      font-family: '04b_03', monospace;
       width: 80%;
       margin: 3% auto 5% auto;
       text-align: center;
@@ -464,7 +462,8 @@ input:active, button:active, select:active {
   }
   .modal-footer {
     .continue-btn {
-      margin: 0 5%;
+      margin: 0 15%;
+      width: 70%;
     }
     height: 100px;
   }

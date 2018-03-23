@@ -252,18 +252,29 @@
   }
 
   function createProfile(userProfile) {
-    if (name.length < 1 || userEmail.length < 1) {
+    if (name.length < 1 && userEmail.length < 1) {
+      $('input[name="name-kyc"]').val(name).addClass('field-fix');
+      $('input[name="user-email-kyc"]').val(userEmail).addClass('field-fix');
       $('#kyc-popup .alert-msg').text('Please fill out the required fields.');
+      return;
+    }
+    if (name.length < 1) {
+      $('#kyc-popup .alert-msg').text('Please enter your name.');
       $('input[name="user-email-kyc"]').val(userEmail);
+      $('input[name="name-kyc"]').val(name).addClass('field-fix');
+      return;
+    }
+    if (userEmail.length < 1) {
+      $('#kyc-popup .alert-msg').text('Please enter your email address.');
+      $('input[name="user-email-kyc"]').val(userEmail).addClass('field-fix');
       $('input[name="name-kyc"]').val(name);
       return;
     }
 
-
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!re.test(String(userEmail).toLowerCase())) {
       $('#kyc-popup .alert-msg').text('Please enter a valid email address.');
-      $('input[name="user-email-kyc"]').val(userEmail);
+      $('input[name="user-email-kyc"]').val(userEmail).addCLass('field-fix');
       $('input[name="name-kyc"]').val(name);
       return;
     }
@@ -358,6 +369,7 @@
     });
     if (currencyType === 'BTC' && donationAmt < 0.4) {
       $('#choose-crypto-popup .alert-msg').text('* a minimum donation of 0.4 BTC is required.');
+      $('input[name="crypto-amt"]').val(donationAmt).addClass('field-fix');
       return;
     }
     if (currencyType === 'BTC' && donationAmt >= 0.4) {
@@ -366,6 +378,7 @@
     }
     if (currencyType === 'ETH' && donationAmt < 5) {
       $('#choose-crypto-popup .alert-msg').text('* a minimum donation of 5 ETH is required.');
+      $('input[name="crypto-amt"]').val(donationAmt).addClass('field-fix');
       return;
     }
     if (currencyType === 'ETH' && donationAmt >= 5) {
@@ -401,17 +414,24 @@
     });
     if (currencyType === 'USD' && donationAmt < 5000) {
       $('#choose-fiat-popup .alert-msg').text('* a minimum donation of $5,000 USD is required.');
-      $('input[name="donation-amt"]').val(donationAmt);
+      $('input[name="donation-amt"]').val(donationAmt).addClass('field-fix');
       return;
     }
     if (currencyType === 'EUR' && donationAmt < 4000) {
       $('#choose-fiat-popup .alert-msg').text('* a minimum donation of €4,000 EUR is required.');
-      $('input[name="donation-amt"]').val(donationAmt);
+      $('input[name="donation-amt"]').val(donationAmt).addClass('field-fix');
       return;
     }
     $('#choose-fiat-popup').addClass('hide');
     $('#kyc-popup').removeClass('hide');
   });
+
+  $('input[type="text"]').click(function () {
+    $(this).removeClass('field-fix');
+  });
+  $('input[type="email"]').click(function () {
+      $(this).removeClass('field-fix');
+    });
 
   //*** FOR CRYPTO OVER $2K & ALL FIAT ***//
   //*** INVESTOR INPUTS NAME & EMAIL ***//
@@ -651,30 +671,29 @@
 
   $('#investor-private-continue').click(function (e) {
     e.preventDefault();
-    $('#full-name').val(function () {
+    $('input[name="full-name"]').val(function () {
       return fullName = this.value;
     });
-    $('#country').val(function () {
+    $('input[name="country"]').val(function () {
       return country = this.value;
     });
-    $('#apartment-no').val(function () {
+    $('input[name="apartment-no"]').val(function () {
       return apartmentNo = this.value;
     });
-    $('#building-no').val(function () {
+    $('input[name="building-no"]').val(function () {
       return buildingNo = this.value;
     });
-    $('#street').val(function () {
+    $('input[name="street"]').val(function () {
       return street = this.value;
     });
-    $('#city').val(function () {
+    $('input[name="city"]').val(function () {
       return city = this.value;
     });
-    $('#zip-code').val(function () {
+    $('input[name="zip-code"]').val(function () {
       return zip = this.value;
     });
 
     if (country === "999") {
-      console.log();
       alert("Nice try. We know you're in another castle. (You must select a country)");
       return;
     }
@@ -715,31 +734,31 @@
 
   $('#investor-company-continue').click(function (e) {
     e.preventDefault();
-    $('#c-full-name').val(function () {
+    $('input[name="c-full-name"]').val(function () {
       return fullName = this.value;
     });
-    $('#company-name').val(function () {
+    $('input[name="company-name"]').val(function () {
       return company = this.value;
     });
-    $('#reg-id').val(function () {
+    $('input[name="reg-id"]').val(function () {
       return regID = this.value;
     });
-    $('#c-apartment-no').val(function () {
+    $('input[name="c-apartment-no"]').val(function () {
       return apartmentNo = this.value;
     });
-    $('#c-building-no').val(function () {
+    $('input[name="c-building-no"]').val(function () {
       return buildingNo = this.value;
     });
-    $('#c-street').val(function () {
+    $('input[name="c-street"]').val(function () {
       return street = this.value;
     });
-    $('#c-city').val(function () {
+    $('input[name="c-city"]').val(function () {
       return city = this.value;
     });
-    $('#c-zip-code').val(function () {
+    $('input[name="c-zip-code"]').val(function () {
       return zip = this.value;
     });
-    $('#c-country').val(function () {
+    $('input[name="c-country"]').val(function () {
       return country = this.value;
     });
 
@@ -840,7 +859,7 @@
 
   $('#aml-fiat-continue').click(function (e) {
     e.preventDefault();
-    $('#fiat-eth-rec').val(function () {
+    $('input[name="fiat-eth-rec"]').val(function () {
       ethRec = this.value;
     });
     sendAML();
@@ -882,7 +901,107 @@
     sendFilesOnly();
   });
 
-  //*************************//
+//*************************//
+
+
+//*** AIRDROP SIGNUP ***//
+
+  let teleEmail;
+  let teleId;
+  let teleRefId;
+  let teleWallet;
+  let kingRef = {};
+
+  let airdrop = function airdrop() {
+
+    $.ajax({
+      url: "https://api.kinguin.io/airdrop/signup",
+      type: "PUT",
+      timeout: 0,
+      dataType: 'json',
+      data: {
+        "email": teleEmail,
+        "eth_wallet": teleWallet,
+        "telegram_id": teleId,
+        "referred_by": teleRefId
+      }
+    }).done(function (response) {
+      kingRef = response;
+      alert('success!');
+      $("#loader").addClass('hide');
+      $('#airdrop-popup').addClass('hide');
+      $('#referral-link-popup').removeClass('hide');
+      $('.personal-airdrop-link').attr('href', 'https://kinguin.io/?airdrop=signup&ref-id=' + kingRef.referral_id).find('h1').text('https://kinguin.io/?airdrop=signup&ref-id=' + kingRef.referral_id);
+    }).fail(function (err) {
+      err = JSON.parse(err.responseText);
+      var errorText = "";
+      for (var i in err) {
+        var e = err[i];
+        if (typeof e === 'object' && e.constructor === Array) {
+          var text = i+": ";
+          for (var ii=0;ii<e.length;ii++) {
+            text += e[ii]+"<br />";
+          }
+          text += "<br />";
+          errorText += text;
+        }
+      }
+      $(".alert-msg").html(errorText);
+      $("#loader").addClass('hide');
+    });
+  };
+
+  $('input[name="telegram-submit"]').click(function (e) {
+    e.preventDefault();
+    $('input[name="telegram-email"]').val(function () {
+      teleEmail = this.value;
+    });
+    $('input[name="telegram-id"]').val(function () {
+      teleId = this.value;
+    });
+    $('input[name="tele-eth"]').val(function () {
+      teleWallet = this.value;
+    });
+    airdrop();
+  });
+
+  new ClipboardJS('.clippy');
+
+  let referrals;
+
+  let getRefs = function getRefs() {
+    let refId = getQueryParam('ref-id');
+    $.ajax({
+      url: "https://api.kinguin.io/airdrop/signup/?referral_id=" + refId,
+      type: "GET"
+    }).done(function (response) {
+      $("#loader").addClass('hide');
+      referrals = response;
+      $('.popup-bg').show();
+      $('#islands-wrapper').addClass('blur');      $('#check-refs-popup').removeClass('hide').find('.modal-body h1').text(referrals);
+    });
+  };
+
+  $(document).ready(function () {
+    var drop = getQueryParam('airdrop');
+    if (typeof drop === 'string') {
+      drop = drop.toLowerCase();
+    }
+    switch(drop) {
+      case ('signup'):
+      blur();
+      teleRefId = getQueryParam('ref-id');
+      if (teleRefId === false) {
+        teleRefId = '';
+      }
+      $('#airdrop-popup').removeClass('hide');
+      break;
+      case ('referrals'):
+      getRefs();
+      break;
+    }
+  });
+
 
 }());
 
@@ -1306,7 +1425,15 @@
     $('#ourstory-popup').removeClass('hide');
   });
 
-  $('#contactus').click(function() {
+  $('.contactus').click(function() {
+    blur();
+    $('#contactus-popup').removeClass('hide');
+  });
+  $('.letter').click(function () {
+    blur();
+    $('#contactus-popup').removeClass('hide');
+  });
+  $('.contact-title').click(function () {
     blur();
     $('#contactus-popup').removeClass('hide');
   });
