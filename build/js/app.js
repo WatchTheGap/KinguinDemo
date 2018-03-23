@@ -927,7 +927,6 @@
       }
     }).done(function (response) {
       kingRef = response;
-      alert('success!');
       $("#loader").addClass('hide');
       $('#airdrop-popup').addClass('hide');
       $('#referral-link-popup').removeClass('hide');
