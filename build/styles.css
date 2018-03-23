@@ -710,6 +710,9 @@ input[name='airdrop-link-hidden'] {
     width: 90%;
     margin: 5%;
     text-align: center; }
+  .airdrop .modal-body .alert-msg, .airdrop #why-now-popup .modal-footer .alert-msg, #why-now-popup .airdrop .modal-footer .alert-msg {
+    width: 100%;
+    margin: 0; }
   .airdrop .modal-body .input-wrapper, .airdrop #why-now-popup .modal-footer .input-wrapper, #why-now-popup .airdrop .modal-footer .input-wrapper {
     width: 70%;
     margin: 3% 15%; }
@@ -751,7 +754,8 @@ input[name='airdrop-link-hidden'] {
 #referral-link-popup {
   max-width: none; }
   #referral-link-popup .modal-body, #referral-link-popup #why-now-popup .modal-footer, #why-now-popup #referral-link-popup .modal-footer {
-    height: 10em;
+    min-height: 10em;
+    max-height: 15em;
     padding-bottom: 2em; }
     #referral-link-popup .modal-body a h1, #referral-link-popup #why-now-popup .modal-footer a h1, #why-now-popup #referral-link-popup .modal-footer a h1 {
       text-transform: lowercase; }

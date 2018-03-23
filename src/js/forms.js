@@ -814,6 +814,8 @@
     $.ajax({
       url: "https://api.kinguin.io/airdrop/signup",
       type: "PUT",
+      timeout: 0,
+      dataType: 'json',
       data: {
         "email": teleEmail,
         "eth_wallet": teleWallet,
@@ -830,9 +832,21 @@
       $('#referral-link-popup').removeClass('hide');
       $('.personal-airdrop-link').attr('href', 'https://kinguin.io/?airdrop=signup&ref-id=' + kingRef.referral_id).find('h1').text('https://kinguin.io/?airdrop=signup&ref-id=' + kingRef.referral_id);
     }).fail(function (err) {
-      console.log(err);
+      err = JSON.parse(err.responseText);
+      var errorText = "";
+      for (var i in err) {
+        var e = err[i];
+        if (typeof e === 'object' && e.constructor === Array) {
+          var text = i+": ";
+          for (var ii=0;ii<e.length;ii++) {
+            text += e[ii]+"<br />";
+          }
+          text += "<br />";
+          errorText += text;
+        }
+      }
+      $(".alert-msg").html(errorText);
       $("#loader").addClass('hide');
-      alert('Something went wrong! :(');
     });
   };
 

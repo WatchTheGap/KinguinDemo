@@ -374,6 +374,10 @@ border: 1px solid black;
       margin: 5%;
       text-align: center;
     }
+    .alert-msg {
+      width: 100%;
+      margin: 0;
+    }
     padding: 10% 0;
     height: 400px;
    .input-wrapper {
@@ -399,7 +403,8 @@ border: 1px solid black;
 #referral-link-popup {
   max-width: none;
   .modal-body {
-    height: 10em;
+    min-height: 10em;
+    max-height: 15em;
     padding-bottom: 2em;
     a h1 {
       text-transform: lowercase;
