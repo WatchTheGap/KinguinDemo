@@ -19,7 +19,7 @@
 
   let docsHelper = {
     'title': 'Identification Verification Documents',
-    'text': 'We currently only accept documents in .jpg or .png format. No PDFs. As much as we love them, cat pics are not an acceptable form of identification. Uploading non-essential photographs will greatly delay your approval procecss and puts an unnecessary strain on our hardworking staff. We appreciate your cooperation in adhering to these guidelines.'
+    'text': 'We currently only accept documents in .jpg or .png format. No PDFs. As much as we love them, cat pics are not an acceptable form of identification. Uploading non-essential photographs will greatly delay your approval process and puts an unnecessary strain on our hardworking staff. We appreciate your cooperation in adhering to these guidelines.'
   };
 
 
