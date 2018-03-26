@@ -4,17 +4,17 @@
 
   let kycHelper = {
     'title': 'Know Your Customer',
-    'text': 'Know Your Customer (KYC) processes have been established worldwide in order to reduce fraud, money laundering and scams. In simpler terms: KYC is a request for proof of your identity. It’s a security check. It’s like passing through the TSA check at an airport, just a lot more friendly and a whole lot less theatrical. Unlike the TSA, we are genuinely sorry for the inconvenience, but we are required to do this.'
+    'text': 'Know Your Customer (KYC) processes have been established worldwide in order to reduce fraud, money laundering, and scams. In simpler terms: KYC is a request for proof of your identity. It’s a required security check. It’s like passing through the TSA check at an airport, just a lot more friendly and a whole lot less theatrical.'
   };
 
   let amlHelper = {
     'title': 'Anti-Money Laundering',
-    'text': 'Kinguin is required to comply with Anti-Money Laundering (AML) rules. The purpose of AML is to detect and avoid suspicious activity including money laundering, terrorist financing, securities fraud and market manipulation. All bad things. We don’t like bad things.'
+    'text': 'Kinguin is required to comply with Anti-Money Laundering (AML) rules. The purpose of AML is to detect and avoid suspicious activity including money laundering, terrorist financing, securities fraud, and market manipulation. All bad things. We don’t like bad things.'
   };
 
   let amlDataHelper = {
     'title': 'Enter AML Data',
-    'text': 'what is aml data?'
+    'text': 'Please enter your BTC or ETH sending and receiving addresses. This information can be found in whichever cryptocurrency wallet you happen to use (such as Coinbase). As a courtesy reminder, it is advisable to create new sending and receiving addresses for each transaction, lest your coinage fall into the figurative cracks of doom.'
   };
 
 
