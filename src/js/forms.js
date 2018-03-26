@@ -571,7 +571,7 @@
     $('input[name="full-name"]').val(function () {
       return fullName = this.value;
     });
-    $('input[name="country"]').val(function () {
+    $('select[name="country"]').val(function () {
       return country = this.value;
     });
     $('input[name="apartment-no"]').val(function () {
@@ -655,7 +655,7 @@
     $('input[name="c-zip-code"]').val(function () {
       return zip = this.value;
     });
-    $('input[name="c-country"]').val(function () {
+    $('select[name="c-country"]').val(function () {
       return country = this.value;
     });
 
