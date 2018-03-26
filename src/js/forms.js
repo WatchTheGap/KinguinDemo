@@ -20,32 +20,32 @@
 
   let mailingList = {
     'title': 'Success!',
-    'subtitle': 'Thank you for signing up to our mailing list!',
-    'body': 'Please check your email and click the confirmation link to complete the process.'
+    'subtitle': 'Mail time! Thank you for signing up to our mailing list.',
+    'body': 'Please check your email and click the confirmation link to complete the process. A new window will open. Look into it.'
   };
 
   let phaseOne = {
     'title': 'Success!',
     'subtitle': 'Your account has been created.',
-    'body': 'Please check your email and follow the confirmation link to continue the signup process.'
+    'body': "Great success! Now it's time to get some shiny new Krowns. Kindly check your email and follow the confirmation link to continue the signup process."
   };
 
   let phaseTwo = {
     'title': 'Level Two Complete!',
     'subtitle': 'We have received your proof of identity documentation.',
-    'body': 'Watch your email for your approval link and prepare to advance to Level Three.'
+    'body': 'Watch your email for the approval link and prepare to advance to Level Three.'
   };
 
   let phaseThree = {
     'title': 'Quest Complete!',
     'subtitle': 'Thank you for joining us in the Kinguin.io ICO!',
-    'body': 'What happens next?'
+    'body': 'IC-Oh, snap! Welcome to the Kinguin family. Keep an eye on your inbox for further clanedestine communications.'
   };
 
   let fileUpload = {
     'title': 'Success!',
     'subtitle': 'Your profile has been updated with your identification documents.',
-    'body': 'Our KYC team is currently reviewing your credentials. Please allow 1-2 business days for the review process to be completed. You will receive notification via email of your approval status.'
+    'body': 'Our KYC team is currently reviewing your credentials. Please allow 1-2 business days for the review process to be completed. You will receive notification via email of your approval status. Sound alright to you?'
   };
 
   //***************************************************
