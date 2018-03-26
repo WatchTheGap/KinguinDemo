@@ -17,6 +17,11 @@
     'text': 'Please enter your BTC or ETH sending and receiving addresses. This information can be found in whichever cryptocurrency wallet you happen to use (such as Coinbase). As a courtesy reminder, it is advisable to create new sending and receiving addresses for each transaction, lest your coinage fall into the figurative cracks of doom.'
   };
 
+  let docsHelper = {
+    'title': 'Identification Verification Documents',
+    'text': 'We currently only accept documents in .jpg or .png format. No PDFs. As much as we love them, cat pics are not an acceptable form of identification. Uploading non-essential photographs will greatly delay your approval procecss and puts an unnecessary strain on our hardworking staff. We appreciate your cooperation in adhering to these guidelines.'
+  };
+
 
   $('#kyc-popup .modal-body a').click(function (e) {
     e.preventDefault();
@@ -51,6 +56,12 @@
     $('.helper').show();
     $('.helper').find('h2').text(amlDataHelper.title).siblings('p').text(amlDataHelper.text);
     $('.helper-popup-bg').show();
+  });
+
+  $('#investor-private-popup .upload-blocks a').click(function (e) {
+    e.preventDefault();
+    $('.helper').show();
+    $('.helper').find('h2').text(docsHelper.title).siblings('p').text(docsHelper.text);
   });
 
   $('.helper-popup-bg').click(function () {
