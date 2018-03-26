@@ -1064,10 +1064,11 @@
     $('.helper-popup-bg').show();
   });
 
-  $('#investor-private-popup .upload-blocks a').click(function (e) {
+  $('#investor-private-popup .modal-body a').click(function (e) {
     e.preventDefault();
     $('.helper').show();
     $('.helper').find('h2').text(docsHelper.title).siblings('p').text(docsHelper.text);
+    $('.helper-popup-bg').show();
   });
 
   $('.helper-popup-bg').click(function () {
