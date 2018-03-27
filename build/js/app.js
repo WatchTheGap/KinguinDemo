@@ -998,9 +998,37 @@
       case ('referrals'):
       getRefs();
       break;
+      case('links'):
+      blur();
+      $('#get-links-popup').removeClass('hide');
     }
   });
 
+  let links;
+  let teleUsername;
+
+  let teleLinks = function teleLinks() {
+    $.ajax({
+      url: "https://api.kinguin.io/airdrop/getlinks/telegram/" + teleUsername,
+      type: "GET"
+    }).done(function (response) {
+      $("#loader").addClass('hide');
+      links = JSON.parse(response);
+      $('.personal-link').attr('href', links.referral_link).find('p').text(links.referral_link);
+      $('.referral-check-link').attr('href', links.progress_link).find('p').text(links.progress_link);
+    }).fail(function (err) {
+      $("#loader").addClass('hide');
+      alert('Something went wrong! :(');
+    });
+  };
+
+  $('input[name="get-links"]').click(function (e) {
+    e.preventDefault();
+    $('input[name="manual-tele-id"]').val(function () {
+      teleUsername = this.value;
+      teleLinks();
+    });
+  });
 
 }());
 
