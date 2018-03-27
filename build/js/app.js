@@ -1309,6 +1309,8 @@
       $('#signup-popup').removeClass('hide');
     } else if ($(this).is(':contains("contact")')) {
       $('#contactus-popup').removeClass('hide');
+    } else if ($(this).is(':contains("airdrop")')) {
+      $('#airdrop-popup').removeClass('hide');
     } else {
       return;
     }
