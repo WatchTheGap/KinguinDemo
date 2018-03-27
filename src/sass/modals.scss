@@ -628,6 +628,7 @@
   }
 }
 //************************************
+
 #contactus-popup {
   &::before, &::after {
     border-bottom: 10px solid #c4e880;
@@ -638,52 +639,28 @@
   }
   .modal-body {
     padding: 5% 10%;
-    // height: 400px;
-    .input-wrapper {
-      margin: 5% 0;
-    }
-    a {
-      text-decoration: none;
-      color: black;
-    }
+
     p {
       text-align: center;
       font-size: 20px;
     }
-    h2 {
-      font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-      text-align: center;
-      font-size: 30px;
-    }
-    input[type='email'] {
-      padding: 20px 25px;
-      width: inherit;
-      &::placeholder {
-        font-size: 16px;
-      }
-    }
-    textarea {
-      padding: 20px 25px;
-      width: inherit;
-      &::placeholder {
-        font-size: 16px;
-      }
-    }
-    .continue-btn {
-      margin: 5% 0;
-      width: 40%;
-      height: 52px;
-      .pixel-input {
-        height: 62px;
-        input[type='submit'] {
-          font-family: '04b_03', monospace;
-          font-size: 22px;
-        }
-      }
-    }
+
+
+
   }
   .modal-footer {
     min-height: 20px;
+    padding: 5% 10%;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    h2 {
+      font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
+      text-align: center;
+      margin: 0;
+      font-size: 20px;
+    }
   }
 }
 
