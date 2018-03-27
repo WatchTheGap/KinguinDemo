@@ -2566,6 +2566,9 @@ input:active, button:active, select:active {
     .helper .modal-footer .continue-btn {
       margin: 0 5%; }
 
+.helper-wide {
+  max-width: 600px; }
+
 @media only screen and (max-width: 600px) {
   .mobile-hide {
     display: none; }
