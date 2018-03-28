@@ -847,18 +847,42 @@
     });
   };
 
+  // $('input[name="telegram-submit"]').click(function (e) {
+  //   e.preventDefault();
+  //   $('input[name="telegram-email"]').val(function () {
+  //     teleEmail = this.value;
+  //   });
+  //   $('input[name="telegram-id"]').val(function () {
+  //     teleId = this.value;
+  //   });
+  //   $('input[name="tele-eth"]').val(function () {
+  //     teleWallet = this.value;
+  //   });
+  //   airdrop();
+  // });
+
+  let kinguinDrop = function kinguinDrop() {
+    $.ajax({ // TODO: THIS WILL ALL CHANGE PROBABLY...
+      url: "https://api.kinguin.io/airdrop/signup",
+      type: "PUT",
+      data: {
+        "email": teleEmail,
+        "telegram_id": teleId
+      }
+    }).done(function (response) {
+      $("#loader").addClass('hide');
+      console.log(response);
+
+    }).fail(function (err) {
+      $("#loader").addClass('hide');
+      console.log(err);
+
+    });
+  };
+
   $('input[name="telegram-submit"]').click(function (e) {
     e.preventDefault();
-    $('input[name="telegram-email"]').val(function () {
-      teleEmail = this.value;
-    });
-    $('input[name="telegram-id"]').val(function () {
-      teleId = this.value;
-    });
-    $('input[name="tele-eth"]').val(function () {
-      teleWallet = this.value;
-    });
-    airdrop();
+    kinguinDrop();
   });
 
   new ClipboardJS('.clippy');
@@ -898,6 +922,16 @@
       case('links'):
       blur();
       $('#get-links-popup').removeClass('hide');
+    }
+    var kinguin = getQueryParam('kinguin');
+    if (typeof kinguin === 'string') {
+      kinguin = kinguin.toLowerCase();
+    }
+    switch(kinguin) {
+      case ('drop'):
+      blur();
+      $('#airdrop-popup').removeClass('hide');
+      break;
     }
   });
 

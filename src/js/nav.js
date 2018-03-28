@@ -61,7 +61,7 @@
       $('#signup-popup').removeClass('hide');
     } else if ($(this).is(':contains("contact")')) {
       $('#contactus-popup').removeClass('hide');
-    } else if ($(this).is(':contains("airdrop")')) {
+    } else if ($(this).is(':contains("drop")')) {
       $('#airdrop-popup').removeClass('hide');
     } else {
       return;
