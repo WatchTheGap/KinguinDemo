@@ -698,6 +698,30 @@
   }
 }
 
+#chat-popup {
+  #close-x {
+    top: 0px;
+    right: 20px;
+  }
+  .modal-header {
+    background-color: #358AD9; // TODO: this color probably needs to move to borders;
+    height: 5px;
+    padding: 0;
+  }
+  .modal-body {
+    background-color: transparent;
+    height: 80vh;
+    margin: -1px -10px -20px -30px;
+    padding: 0 0 0 20px;
+  }
+  .modal-footer {
+    background-color: #f5f5f5;
+  }
+  iframe {
+    border: none;
+  }
+}
+
 //************************************
 #company-popup {
   &::before, &::after {

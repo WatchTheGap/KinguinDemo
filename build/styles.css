@@ -1025,6 +1025,23 @@ header {
 #contactus-popup .modal-footer {
   min-height: 40px; }
 
+#chat-popup #close-x {
+  top: 0px;
+  right: 20px; }
+#chat-popup .modal-header {
+  background-color: #358AD9;
+  height: 5px;
+  padding: 0; }
+#chat-popup .modal-body, #chat-popup #why-now-popup .modal-footer, #why-now-popup #chat-popup .modal-footer {
+  background-color: transparent;
+  height: 80vh;
+  margin: -1px -10px -20px -30px;
+  padding: 0 0 0 20px; }
+#chat-popup .modal-footer {
+  background-color: #f5f5f5; }
+#chat-popup iframe {
+  border: none; }
+
 #company-popup::before, #company-popup::after {
   border-bottom: 10px solid #dfba9d; }
 #company-popup .modal-header {
