@@ -766,6 +766,9 @@ header {
     font-size: 80px;
     margin: 0; }
 
+#get-links-popup .continue-btn {
+  margin-bottom: 10%; }
+
 #advisors-popup::before, #advisors-popup::after {
   border-bottom: 10px solid #8ac0d4; }
 #advisors-popup .modal-header {

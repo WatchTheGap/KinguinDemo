@@ -3,7 +3,7 @@
 
   function countdown() {
 
-  			let endTime = new Date("30 March 2018 9:56:00");
+  			let endTime = new Date("12 April 2018 00:00:00");
   			endTime = (Date.parse(endTime) / 1000);
 
   			let now = new Date();

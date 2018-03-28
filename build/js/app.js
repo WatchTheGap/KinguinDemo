@@ -73,7 +73,7 @@
 
   function countdown() {
 
-  			let endTime = new Date("30 March 2018 9:56:00");
+  			let endTime = new Date("12 April 2018 00:00:00");
   			endTime = (Date.parse(endTime) / 1000);
 
   			let now = new Date();
@@ -998,9 +998,37 @@
       case ('referrals'):
       getRefs();
       break;
+      case('links'):
+      blur();
+      $('#get-links-popup').removeClass('hide');
     }
   });
 
+  let links;
+  let teleUsername;
+
+  let teleLinks = function teleLinks() {
+    $.ajax({
+      url: "https://api.kinguin.io/airdrop/getlinks/telegram/" + teleUsername,
+      type: "GET"
+    }).done(function (response) {
+      $("#loader").addClass('hide');
+      links = JSON.parse(response);
+      $('.personal-link').attr('href', links.referral_link).find('p').text(links.referral_link);
+      $('.referral-check-link').attr('href', links.progress_link).find('p').text(links.progress_link);
+    }).fail(function (err) {
+      $("#loader").addClass('hide');
+      alert('Something went wrong! :(');
+    });
+  };
+
+  $('input[name="get-links"]').click(function (e) {
+    e.preventDefault();
+    $('input[name="manual-tele-id"]').val(function () {
+      teleUsername = this.value;
+      teleLinks();
+    });
+  });
 
 }());
 
@@ -1309,6 +1337,8 @@
       $('#signup-popup').removeClass('hide');
     } else if ($(this).is(':contains("contact")')) {
       $('#contactus-popup').removeClass('hide');
+    } else if ($(this).is(':contains("airdrop")')) {
+      $('#airdrop-popup').removeClass('hide');
     } else {
       return;
     }
