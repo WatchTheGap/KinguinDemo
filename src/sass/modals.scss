@@ -644,27 +644,33 @@
     border-top: 10px solid #c4e880;
   }
   .modal-body {
+    display: flex;
+    flex-direction: column;
     padding: 5% 10%;
+    height: 300px;
+    a {
+      flex-grow: 1;
+    }
+    .chat-btn {
+      background-color: cyan;
+      width: 70%;
+      margin: 5% 15%;
+      &::before, &::after {
+        border-bottom: 5px solid blue;
+      }
 
+      .pixel-input {
+        background-color: inherit;
+        height: 75px;
+        input {
+          background-color: inherit;
+          border-top: 5px solid blue;
+          height: inherit;
+        }
+      }
+    }
     p {
       text-align: center;
-      font-size: 20px;
-    }
-
-
-
-  }
-  .modal-footer {
-    min-height: 20px;
-    padding: 5% 10%;
-    a {
-      text-decoration: none;
-      color: black;
-    }
-    h2 {
-      font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-      text-align: center;
-      margin: 0;
       font-size: 20px;
     }
   }
