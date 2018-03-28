@@ -646,33 +646,55 @@
   .modal-body {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 5% 10%;
     height: 300px;
-    a {
+    .contact-block-1 {
       flex-grow: 1;
     }
+    .contact-block-2 {
+      flex-grow: 2;
+    }
+    a {
+      align-items: center;
+      color: black;
+      // margin: 3% 0 5% 0;
+      h2 {
+        font-size: 36px;
+        margin: 0;
+      }
+    }
+    p {
+      margin: 0px;
+      text-align: center;
+      font-size: 20px;
+    }
     .chat-btn {
-      background-color: cyan;
+      background-color: #9ac4bf;
       width: 70%;
       margin: 5% 15%;
       &::before, &::after {
-        border-bottom: 5px solid blue;
+        border-bottom: 5px solid #c8dfdc;
       }
-
       .pixel-input {
         background-color: inherit;
         height: 75px;
         input {
+          cursor: pointer;
           background-color: inherit;
-          border-top: 5px solid blue;
+          border-top: 5px solid #c8dfdc;
           height: inherit;
+          font-size: 26px;
+          font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
+          padding-left: 15px;
+          padding-bottom: 5px;
+          color: white;
         }
       }
     }
-    p {
-      text-align: center;
-      font-size: 20px;
-    }
+  }
+  .modal-footer {
+    min-height: 40px;
   }
 }
 
