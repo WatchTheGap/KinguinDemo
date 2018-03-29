@@ -1477,8 +1477,6 @@ header {
        -moz-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     width: 100%; }
     .consent-boxes .checkbox-row .pixel-input {
       padding: 0 12px; }
