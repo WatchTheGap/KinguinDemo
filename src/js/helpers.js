@@ -19,7 +19,7 @@
 
   let docsHelper = {
     'title': 'Identification Verification Documents',
-    'text': 'We currently only accept documents in .jpg or .png format. No PDFs. As much as we love them, cat pics are not an acceptable form of identification. Uploading non-essential photographs will greatly delay your approval process and puts an unnecessary strain on our hardworking staff. We appreciate your cooperation in adhering to these guidelines.'
+    'text': "<p>National ID: Must be government-issued, include your first and last name, and an expiration date. Examples of acceptable documents include a driving license, passport, resident card, or health card.</p><p>Address Verification Document: Proof of address must show your current residence, be dated within the last 90 days, and be issued by an official entity. Examples of acceptable documents include utility bills, bank statements, or a rental invoice.</p><p>We currently only accept documents in .jpg or .png format. No PDFs.</p><p>As much as we love them, cat pics are not an acceptable form of identification. Uploading non-essential photographs will greatly delay your approval process and puts an unnecessary strain on our hardworking staff. We appreciate your cooperation in adhering to these guidelines.</p>"
   };
 
 
@@ -61,7 +61,9 @@
   $('#investor-private-popup .modal-body a').click(function (e) {
     e.preventDefault();
     $('.helper').show();
-    $('.helper').find('h2').text(docsHelper.title).siblings('p').text(docsHelper.text);
+    $('.helper').addClass('helper-wide');
+    $('.helper').find('h2').text(docsHelper.title);
+    $('.helper .modal-body').append(docsHelper.text);
     $('.helper-popup-bg').show();
   });
 
