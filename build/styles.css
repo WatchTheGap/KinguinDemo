@@ -1984,7 +1984,7 @@ input:active, button:active, select:active {
 #kyc-upload-popup .modal-body .kyc-upload-info, #kyc-upload-popup #why-now-popup .modal-footer .kyc-upload-info, #why-now-popup #kyc-upload-popup .modal-footer .kyc-upload-info {
   font-family: '04b_03', monospace;
   width: 80%;
-  margin: 3% auto 5% auto;
+  margin: 3% auto;
   text-align: center; }
 #kyc-upload-popup .modal-footer {
   height: 100px; }
@@ -2592,6 +2592,9 @@ input:active, button:active, select:active {
     min-height: 70px; }
     .helper .modal-footer .continue-btn {
       margin: 0 5%; }
+
+.helper-wide {
+  max-width: 600px; }
 
 @media only screen and (max-width: 600px) {
   .mobile-hide {

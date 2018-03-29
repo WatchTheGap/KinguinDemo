@@ -19,16 +19,16 @@
     }
 
     let viktorName = 'Viktor Wanli';
-    let viktorSubtext = 'Entrepreneur and visionary for gaming and esports ecosystem since 2007.';
-    let viktorBio = '<p>Founder of Kinguin.net, a leading gaming marketplace platform with 7.5 million users and $100MM annual turnover.</p> <p>CEO of Team Kinguin SA, the number one eSport organization in Poland.</p> <p>CEO of Kinguin Franchising Systems, a company created with the purpose of establishing esports hubs around the world.</p>';
+    let viktorSubtext = 'Entrepreneur and visionary for gaming and esports since 2007.';
+    let viktorBio = '<p>Founder of Kinguin.net, a leading gaming marketplace platform with 7.5 million users and $100MM annual turnover.</p> <p>CEO of Team Kinguin SA, the No. 1 eSport organization in Poland.</p> <p>CEO of Kinguin Franchising Systems, a company created for the purpose of establishing esports hubs around the world.</p>';
 
     let nashatName = 'Nashat Wanli';
-    let nashatSubtext = 'Entrepreneurial-spirited and pioneering technologist with over 18 years of international experience implementing technologies.';
-    let nashatBio = '<p>Previous companies include VMware and Sciant. Over 8 years of experience in virtualization.</p>';
+    let nashatSubtext = 'Entrepreneurial-spirited and pioneering technologist more than 18 years of international experience implementing technologies.';
+    let nashatBio = '<p>Previous companies include VMware and Sciant. More than 8 years of experience in virtualization.</p>';
 
     let kimName = 'Kim Rom';
-    let kimSubtext = 'Over 20 years of experience in gaming and esports.';
-    let kimBio = '<p>Former Chief Marketing Officer at Steelseries, and VP of Esports at CBS Interactive.</p> <p>Co-author of several patents related to gaming and player performance.</p>';
+    let kimSubtext = 'More than 20 years of experience in gaming and esports.';
+    let kimBio = '<p>Former Chief Marketing Officer at Steelseries and VP of Esports at CBS Interactive.</p> <p>Co-author of several patents related to gaming and player performance.</p>';
 
     if ($(this).is('#viktor-bio')) {
       $('#team-popup .more-info-text').find('h3').text(viktorName).siblings('h4').text(viktorSubtext).siblings('.bio-text').empty('.bio-text').append(viktorBio);
