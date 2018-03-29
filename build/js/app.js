@@ -1481,6 +1481,13 @@
     $('#contactus-popup').removeClass('hide');
   });
 
+  $('input[name="live-chat"]').click(function () {
+    $('.email-popup-bg').show();
+    $('#islands-wrapper').addClass('blur');
+    $('#contactus-popup').addClass('hide');
+    $('#chat-popup').removeClass('hide');
+  });
+
 // *** Landing Island ***
 
   $('#notify-btn').click(function() {
