@@ -699,10 +699,6 @@
 }
 
 #chat-popup {
-  #close-x {
-    top: 0px;
-    right: 20px;
-  }
   .modal-header {
     background-color: #358AD9; // TODO: this color probably needs to move to borders;
     height: 5px;
@@ -716,6 +712,12 @@
   }
   .modal-footer {
     background-color: #f5f5f5;
+    .close-chat {
+      cursor: pointer;
+      text-align: center;
+      font-size: 16px;
+      margin: 10px 0 5px 0;
+    }
   }
   iframe {
     border: none;

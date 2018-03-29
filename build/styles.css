@@ -1025,9 +1025,6 @@ header {
 #contactus-popup .modal-footer {
   min-height: 40px; }
 
-#chat-popup #close-x {
-  top: 0px;
-  right: 20px; }
 #chat-popup .modal-header {
   background-color: #358AD9;
   height: 5px;
@@ -1039,6 +1036,11 @@ header {
   padding: 0 0 0 20px; }
 #chat-popup .modal-footer {
   background-color: #f5f5f5; }
+  #chat-popup .modal-footer .close-chat {
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0 5px 0; }
 #chat-popup iframe {
   border: none; }
 
