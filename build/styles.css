@@ -707,6 +707,10 @@ header {
     width: 90%;
     margin: 5%;
     text-align: center; }
+  .airdrop .modal-body h3, .airdrop #why-now-popup .modal-footer h3, #why-now-popup .airdrop .modal-footer h3 {
+    font-size: 20px;
+    width: 70%;
+    margin: 0 15% 5% 15%; }
   .airdrop .modal-body .alert-msg, .airdrop #why-now-popup .modal-footer .alert-msg, #why-now-popup .airdrop .modal-footer .alert-msg {
     width: 100%;
     margin: 0; }
