@@ -865,16 +865,26 @@
     $.ajax({ // TODO: THIS WILL ALL CHANGE PROBABLY...
       url: "https://api.kinguin.io/airdrop/signup",
       type: "PUT",
+      timeout: 0,
+      dataType: 'json',
       data: {
         "email": teleEmail,
         "telegram_id": teleId
       }
     }).done(function (response) {
       $("#loader").addClass('hide');
+      $('#airdrop-popup').addClass('hide');
+      $('#confirmation-popup').removeClass('hide').removeClass('signup-series').addClass('airdrop').find('.modal-header h1').text('KINGUIN DROP');           $('.confirm-title').text('Success!');
+      $('.confirm-subtitle').text("You're all set!");
+      $('.confirm-body').text('Keep an eye on your email for your surprise package!');
       console.log(response);
 
     }).fail(function (err) {
       $("#loader").addClass('hide');
+      $('#airdrop-popup').addClass('hide');
+      $('#confirmation-popup').removeClass('hide').removeClass('signup-series').addClass('airdrop').find('.modal-header h1').text('KINGUIN DROP');      $('.confirm-title').text('Oops...');
+      $('.confirm-subtitle').text('Your signup did not go through. ');
+      $('.confirm-body').text('We are currently performing maintenance on our signup process. Please try again later.');
       console.log(err);
 
     });
