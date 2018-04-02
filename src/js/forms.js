@@ -849,12 +849,7 @@
 
   // $('input[name="telegram-submit"]').click(function (e) {
   //   e.preventDefault();
-  //   $('input[name="telegram-email"]').val(function () {
-  //     teleEmail = this.value;
-  //   });
-  //   $('input[name="telegram-id"]').val(function () {
-  //     teleId = this.value;
-  //   });
+
   //   $('input[name="tele-eth"]').val(function () {
   //     teleWallet = this.value;
   //   });
@@ -892,6 +887,12 @@
 
   $('input[name="telegram-submit"]').click(function (e) {
     e.preventDefault();
+    $('input[name="telegram-email"]').val(function () {
+      teleEmail = this.value;
+    });
+    $('input[name="telegram-id"]').val(function () {
+      teleId = this.value;
+    });
     kinguinDrop();
   });
 
