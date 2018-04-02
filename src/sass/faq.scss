@@ -1,0 +1,10 @@
+#faq-popup {
+  width: 80vw;
+  height: 80vh;
+  overflow: scroll;
+  .modal-header {
+    h1 {
+      color: black;
+    }
+  }
+}
