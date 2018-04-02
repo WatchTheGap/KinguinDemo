@@ -105,13 +105,6 @@ footer {
   width: auto;
 }
 
-.awards-link {
-  color: black;
-  &:visited {
-    color: black;
-  }
-}
-
 .awards-cloud {
   position: absolute;
   display: flex;
@@ -127,23 +120,32 @@ footer {
   width: 180px;
   height: 120px;
   font-family: '04b_03', monospace;
+  a {
+    text-decoration: none;
+    color: black;
+    &:visited {
+      color: black;
+    }
+    p {
+      font-size: 10px;
+      margin: 0;
+    }
+    h3 {
+      font-size: 14px;
+      margin: 0;
+    }
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+  }
   .coin {
     width: 20px;
     height: 20px;
     margin: -2px 5px -2px -5px;
   }
-  p {
-    font-size: 10px;
-    margin: 0;
-  }
-  h3 {
-    font-size: 14px;
-    margin: 0;
-  }
-  h1 {
-    font-size: 24px;
-    margin: 0;
-  }
+
+
 }
 
 .spin-coin {

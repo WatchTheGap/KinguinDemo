@@ -256,11 +256,6 @@ footer {
   height: 111px;
   width: auto; }
 
-.awards-link {
-  color: black; }
-  .awards-link:visited {
-    color: black; }
-
 .awards-cloud {
   position: absolute;
   display: -webkit-box;
@@ -287,19 +282,24 @@ footer {
   width: 180px;
   height: 120px;
   font-family: '04b_03', monospace; }
+  .awards-cloud a {
+    text-decoration: none;
+    color: black; }
+    .awards-cloud a:visited {
+      color: black; }
+    .awards-cloud a p {
+      font-size: 10px;
+      margin: 0; }
+    .awards-cloud a h3 {
+      font-size: 14px;
+      margin: 0; }
+    .awards-cloud a h1 {
+      font-size: 24px;
+      margin: 0; }
   .awards-cloud .coin {
     width: 20px;
     height: 20px;
     margin: -2px 5px -2px -5px; }
-  .awards-cloud p {
-    font-size: 10px;
-    margin: 0; }
-  .awards-cloud h3 {
-    font-size: 14px;
-    margin: 0; }
-  .awards-cloud h1 {
-    font-size: 24px;
-    margin: 0; }
 
 .spin-coin {
   -webkit-transform: rotateY(360deg);
