@@ -104,3 +104,48 @@ footer {
   height: 111px;
   width: auto;
 }
+
+.awards-link {
+  color: black;
+  &:visited {
+    color: black;
+  }
+}
+
+.awards-cloud {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  background-image: url('img/Cloud.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  top: 20px;
+  left: 60vw;
+  width: 180px;
+  height: 120px;
+  font-family: '04b_03', monospace;
+  .coin {
+    width: 20px;
+    height: 20px;
+    margin: -2px 5px -2px -5px;
+  }
+  p {
+    font-size: 10px;
+    margin: 0;
+  }
+  h3 {
+    font-size: 14px;
+    margin: 0;
+  }
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+}
+
+.spin-coin {
+  transform: rotateY(360deg);
+}
