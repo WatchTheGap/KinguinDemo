@@ -370,6 +370,11 @@
       margin: 5%;
       text-align: center;
     }
+    h3 {
+      font-size: 20px;
+      width: 70%;
+      margin: 0 15% 5% 15%;
+    }
     .alert-msg {
       width: 100%;
       margin: 0;
@@ -1200,52 +1205,51 @@
   width: 70%;
   margin: auto;
   flex-wrap: wrap;
-    .checkbox-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
+  .checkbox-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 
-      .pixel-input {
-        padding: 0 12px;
+    .pixel-input {
+      padding: 0 12px;
+    }
+    input[type='checkbox'] {
+      visibility: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    input[type='checkbox']:checked + label {
+      background-image: url('img/Close.png');
+      background-size: 15px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    label {
+      display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      &:hover {
+        color: #ef5e5e;
       }
-      input[type='checkbox'] {
-        visibility: hidden;
-        margin: 0;
-        padding: 0;
-      }
-      input[type='checkbox']:checked + label {
-        background-image: url('img/Close.png');
-        background-size: 15px;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-      label {
-        display: block;
-          height: 100%;
-          width: 100%;
-          position: absolute;
-          top: 0px;
-          left: 0px;
-      }
-      a {
-        text-decoration: none;
-        color: black;
-        &:hover {
-          color: #ef5e5e;
-        }
-        &:visited {
-          color: grey;
-        }
-      }
-      .checkbox-wrapper {
-        margin: 10px;
-      }
-      p {
-        width: 85%;
-        font-family: '04b_03', monospace;
-        margin: 10px;
+      &:visited {
+        color: grey;
       }
     }
-
+    .checkbox-wrapper {
+      margin: 10px;
+    }
+    p {
+      width: 85%;
+      font-family: '04b_03', monospace;
+      margin: 10px;
+    }
+  }
 }
