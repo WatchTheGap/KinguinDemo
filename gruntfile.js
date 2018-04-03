@@ -18,6 +18,12 @@ module.exports = function (grunt){
             src: 'roadmap.html',
             dest: 'build/',
             expand: true
+          },
+          {
+            cwd: 'src/',
+            src: 'faq.html',
+            dest: 'build/',
+            expand: true
           }
         ]
       },

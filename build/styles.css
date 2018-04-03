@@ -1,6 +1,5 @@
 #loader {
-  -webkit-animation: spin 1s linear infinite;
-          animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
   height: 10px;
   width: 10px;
   position: fixed;
@@ -9,143 +8,61 @@
   margin: -5px;
   z-index: 999; }
 
-@-webkit-keyframes spin {
-  0% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
-  6.25% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
-  12.5% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
-  18.75% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
-  25% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
-  31.25% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
-  37.5% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px transparent, -10px -30px transparent; }
-  43.75% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px transparent; }
-  50% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
-  56.25% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
-  62.5% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
-  68.75% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
-  75% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
-  81.25% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px #000, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
-  87.5% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px #000, -10px -30px #000; }
-  93.75% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px #000; }
-  100% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; } }
-
 @keyframes spin {
   0% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
+    box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
   6.25% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
+    box-shadow: 0px -30px transparent, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
   12.5% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
+    box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
   18.75% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
+    box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
   25% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
+    box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
   31.25% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
+    box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; }
   37.5% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px transparent, -10px -30px transparent; }
+    box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px #000, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px transparent, -10px -30px transparent; }
   43.75% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px transparent;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px transparent; }
+    box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px #000, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px transparent; }
   50% {
-    -webkit-box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
+    box-shadow: 0px -30px transparent, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px #000, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
   56.25% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
+    box-shadow: 0px -30px #000, 10px -30px transparent, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px #000, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
   62.5% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
+    box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px transparent, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px #000, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
   68.75% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
+    box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px transparent, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px #000, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
   75% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
+    box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px transparent, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px #000, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
   81.25% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px #000, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
+    box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px transparent, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px #000, -20px -20px #000, -10px -30px #000; }
   87.5% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px #000, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px #000, -10px -30px #000; }
+    box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px transparent, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px #000, -10px -30px #000; }
   93.75% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px #000;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px #000; }
+    box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px transparent, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px #000; }
   100% {
-    -webkit-box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent;
-            box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; } }
+    box-shadow: 0px -30px #000, 10px -30px #000, 20px -20px #000, 30px -10px #000, 30px 0px #000, 30px 10px #000, 20px 20px #000, 10px 30px #000, 0px 30px transparent, -10px 30px transparent, -20px 20px transparent, -30px 10px transparent, -30px 0px transparent, -30px -10px transparent, -20px -20px transparent, -10px -30px transparent; } }
 .social-media-wrapper {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
   padding: 20px 25px;
   position: absolute;
   top: 335px;
   left: 441px;
-  -webkit-transform: skewY(-30deg);
-          transform: skewY(-30deg);
+  transform: skewY(-30deg);
   width: 200px;
   height: 140px;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
   .social-media-wrapper a {
     display: inline;
     width: 25%;
     text-align: center; }
 
 .social-hover {
-  -webkit-filter: drop-shadow(-2px -2px 0 #56463e);
-          filter: drop-shadow(-2px -2px 0 #56463e);
-  -webkit-transform: translate(2px, 2px);
-          transform: translate(2px, 2px); }
+  filter: drop-shadow(-2px -2px 0 #56463e);
+  transform: translate(2px, 2px); }
 
 .social-icons {
   width: 100%;
@@ -171,7 +88,6 @@
   font-weight: normal;
   font-style: normal; }
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff99b3), to(#ffe27d));
   background: linear-gradient(#ff99b3, #ffe27d);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -192,8 +108,6 @@ footer {
 
 .wrapper-island {
   margin: 160px 10%;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   min-width: 80%; }
 
@@ -258,20 +172,9 @@ footer {
 
 .awards-cloud {
   position: absolute;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-     -moz-box-orient: vertical;
-     -moz-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   margin: 0;
   background-image: url("img/cloud.png");
   background-repeat: no-repeat;
@@ -302,8 +205,7 @@ footer {
     margin: -2px 5px -2px -5px; }
 
 .spin-coin {
-  -webkit-transform: rotateY(360deg);
-          transform: rotateY(360deg); }
+  transform: rotateY(360deg); }
 
 #roadmap-full {
   height: 100vh;
@@ -343,18 +245,9 @@ header {
   height: 80px;
   font-family: '04b_03', monospace;
   text-transform: uppercase;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-     -moz-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 100vw; }
   header h1 {
     width: 100%;
@@ -391,34 +284,19 @@ header {
   display: none; }
 
 .field-fix {
-  -webkit-box-shadow: inset 0px 0px 1px red;
-          box-shadow: inset 0px 0px 1px red; }
-
-.field-fix::-webkit-input-placeholder {
-  color: red; }
-
-.field-fix::-moz-placeholder {
-  color: red; }
-
-.field-fix:-ms-input-placeholder {
-  color: red; }
-
-.field-fix::-ms-input-placeholder {
-  color: red; }
+  box-shadow: inset 0px 0px 1px red; }
 
 .field-fix::placeholder {
   color: red; }
 
 .blur {
-  -webkit-filter: blur(5px);
-          filter: blur(5px); }
+  filter: blur(5px); }
 
 .centered, .popup-wrapper, .scale-pop {
   position: fixed;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%); }
 
 .popup-bg, .email-popup-bg, .helper-popup-bg {
   position: fixed;
@@ -440,8 +318,7 @@ header {
   left: 50vh; }
 
 .scale-pop {
-  -webkit-transform: translate(-50%, -50%) scale(0.75);
-          transform: translate(-50%, -50%) scale(0.75);
+  transform: translate(-50%, -50%) scale(0.75);
   z-index: 2; }
 
 .signup-wrapper {
@@ -459,9 +336,7 @@ header {
   float: left;
   border-left: 10px solid black;
   border-right: 10px solid black;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: white; }
   .popup-outer-wrapper::before {
     top: -10px;
@@ -547,9 +422,7 @@ header {
   border-left: 5px solid black;
   border-right: 5px solid black;
   float: left;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: white;
   position: relative; }
   .input-wrapper::before {
@@ -578,22 +451,6 @@ header {
       border: none;
       height: 30px;
       width: 100%; }
-      .input-wrapper .pixel-input input::-webkit-input-placeholder {
-        font-family: '04b_03', monospace;
-        color: #b5b5b5;
-        font-size: 20px; }
-      .input-wrapper .pixel-input input::-moz-placeholder {
-        font-family: '04b_03', monospace;
-        color: #b5b5b5;
-        font-size: 20px; }
-      .input-wrapper .pixel-input input:-ms-input-placeholder {
-        font-family: '04b_03', monospace;
-        color: #b5b5b5;
-        font-size: 20px; }
-      .input-wrapper .pixel-input input::-ms-input-placeholder {
-        font-family: '04b_03', monospace;
-        color: #b5b5b5;
-        font-size: 20px; }
       .input-wrapper .pixel-input input::placeholder {
         font-family: '04b_03', monospace;
         color: #b5b5b5;
@@ -605,22 +462,6 @@ header {
       border: none;
       width: 455px;
       height: 200px; }
-      .input-wrapper .pixel-input textarea::-webkit-input-placeholder {
-        font-family: '04b_03', monospace;
-        color: #b5b5b5;
-        font-size: 14px; }
-      .input-wrapper .pixel-input textarea::-moz-placeholder {
-        font-family: '04b_03', monospace;
-        color: #b5b5b5;
-        font-size: 14px; }
-      .input-wrapper .pixel-input textarea:-ms-input-placeholder {
-        font-family: '04b_03', monospace;
-        color: #b5b5b5;
-        font-size: 14px; }
-      .input-wrapper .pixel-input textarea::-ms-input-placeholder {
-        font-family: '04b_03', monospace;
-        color: #b5b5b5;
-        font-size: 14px; }
       .input-wrapper .pixel-input textarea::placeholder {
         font-family: '04b_03', monospace;
         color: #b5b5b5;
@@ -655,9 +496,7 @@ header {
   #company-data-form #kyc-continue input:focus, #funding-form #kyc-continue input:focus,
   .signup-form #kyc-continue input:focus, #signup-button-crypto input:focus, #signup-button-fiat input:focus, #investor-button-private input:focus, #investor-button-company input:focus, .continue-btn input:focus {
     cursor: pointer;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     font-family: '04b_03', monospace;
     text-transform: uppercase;
     text-decoration: none;
@@ -692,9 +531,7 @@ header {
     background-color: #9ac4bf;
     padding: 0px; }
   .blue-btn a {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     font-size: 15px;
     text-transform: uppercase;
@@ -766,30 +603,6 @@ header {
   .airdrop .modal-body .input-wrapper, .airdrop #why-now-popup .modal-footer .input-wrapper, #why-now-popup .airdrop .modal-footer .input-wrapper {
     width: 70%;
     margin: 3% 15%; }
-  .airdrop .modal-body input::-webkit-input-placeholder, .airdrop #why-now-popup .modal-footer input::-webkit-input-placeholder, #why-now-popup .airdrop .modal-footer input::-webkit-input-placeholder {
-    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-    font-size: 15px;
-    text-align: left;
-    color: #9c9b9b;
-    padding-left: 10px; }
-  .airdrop .modal-body input::-moz-placeholder, .airdrop #why-now-popup .modal-footer input::-moz-placeholder, #why-now-popup .airdrop .modal-footer input::-moz-placeholder {
-    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-    font-size: 15px;
-    text-align: left;
-    color: #9c9b9b;
-    padding-left: 10px; }
-  .airdrop .modal-body input:-ms-input-placeholder, .airdrop #why-now-popup .modal-footer input:-ms-input-placeholder, #why-now-popup .airdrop .modal-footer input:-ms-input-placeholder {
-    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-    font-size: 15px;
-    text-align: left;
-    color: #9c9b9b;
-    padding-left: 10px; }
-  .airdrop .modal-body input::-ms-input-placeholder, .airdrop #why-now-popup .modal-footer input::-ms-input-placeholder, #why-now-popup .airdrop .modal-footer input::-ms-input-placeholder {
-    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-    font-size: 15px;
-    text-align: left;
-    color: #9c9b9b;
-    padding-left: 10px; }
   .airdrop .modal-body input::placeholder, .airdrop #why-now-popup .modal-footer input::placeholder, #why-now-popup .airdrop .modal-footer input::placeholder {
     font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     font-size: 15px;
@@ -839,22 +652,10 @@ header {
 
 .avatar-row, .team-row {
   text-align: center;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-     -moz-box-orient: horizontal;
-     -moz-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: center;
   margin: 3% auto; }
 
 .avatar {
@@ -862,14 +663,9 @@ header {
   width: 90px;
   border-radius: 50%;
   border: 5px solid transparent;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 2px;
-  -webkit-box-flex: 1;
-     -moz-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1; }
+  flex: 1; }
 
 .avatar-selected {
   border: 5px solid #5f8db0; }
@@ -890,8 +686,7 @@ header {
     font-style: italic; }
 
 .team-row {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   margin: 0; }
 
 .team-member {
@@ -921,13 +716,8 @@ header {
     padding: 5px;
     outline: none;
     background-color: white;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-    -webkit-box-flex: 1;
-       -moz-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    box-sizing: border-box;
+    flex: 1;
     border-radius: 50%;
     margin: 0 -10px; }
   .team-member .team-active {
@@ -952,8 +742,7 @@ header {
 
 .more-info-text {
   border-top: 10px solid #b5b5b5;
-  -webkit-box-shadow: inset 0px 10px 0px 0px white;
-          box-shadow: inset 0px 10px 0px 0px white;
+  box-shadow: inset 0px 10px 0px 0px white;
   background-color: #e0e0e0;
   padding: 20px;
   margin: -10px; }
@@ -983,14 +772,8 @@ header {
   margin: 5% 10%;
   text-align: center;
   padding: 0;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-     -moz-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  justify-content: space-between; }
   .dates-row li {
     cursor: pointer;
     display: inline;
@@ -1017,37 +800,17 @@ header {
   background-color: #93d558;
   border-top: 10px solid #c4e880; }
 #contactus-popup .modal-body, #contactus-popup #why-now-popup .modal-footer, #why-now-popup #contactus-popup .modal-footer {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-     -moz-box-orient: vertical;
-     -moz-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-     -moz-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 5% 10%;
   height: 300px; }
   #contactus-popup .modal-body .contact-block-1, #contactus-popup #why-now-popup .modal-footer .contact-block-1, #why-now-popup #contactus-popup .modal-footer .contact-block-1 {
-    -webkit-box-flex: 1;
-       -moz-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1; }
+    flex-grow: 1; }
   #contactus-popup .modal-body .contact-block-2, #contactus-popup #why-now-popup .modal-footer .contact-block-2, #why-now-popup #contactus-popup .modal-footer .contact-block-2 {
-    -webkit-box-flex: 2;
-       -moz-box-flex: 2;
-        -ms-flex-positive: 2;
-            flex-grow: 2; }
+    flex-grow: 2; }
   #contactus-popup .modal-body a, #contactus-popup #why-now-popup .modal-footer a, #why-now-popup #contactus-popup .modal-footer a {
-    -webkit-box-align: center;
-       -moz-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     color: black; }
     #contactus-popup .modal-body a h2, #contactus-popup #why-now-popup .modal-footer a h2, #why-now-popup #contactus-popup .modal-footer a h2 {
       font-size: 36px;
@@ -1131,22 +894,6 @@ header {
       width: 100%;
       text-align: center;
       font-size: 20px; }
-      #notify-popup .modal-body .input-wrapper input[type='email']::-webkit-input-placeholder, #notify-popup #why-now-popup .modal-footer .input-wrapper input[type='email']::-webkit-input-placeholder, #why-now-popup #notify-popup .modal-footer .input-wrapper input[type='email']::-webkit-input-placeholder {
-        font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-        font-size: 15px;
-        text-align: center; }
-      #notify-popup .modal-body .input-wrapper input[type='email']::-moz-placeholder, #notify-popup #why-now-popup .modal-footer .input-wrapper input[type='email']::-moz-placeholder, #why-now-popup #notify-popup .modal-footer .input-wrapper input[type='email']::-moz-placeholder {
-        font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-        font-size: 15px;
-        text-align: center; }
-      #notify-popup .modal-body .input-wrapper input[type='email']:-ms-input-placeholder, #notify-popup #why-now-popup .modal-footer .input-wrapper input[type='email']:-ms-input-placeholder, #why-now-popup #notify-popup .modal-footer .input-wrapper input[type='email']:-ms-input-placeholder {
-        font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-        font-size: 15px;
-        text-align: center; }
-      #notify-popup .modal-body .input-wrapper input[type='email']::-ms-input-placeholder, #notify-popup #why-now-popup .modal-footer .input-wrapper input[type='email']::-ms-input-placeholder, #why-now-popup #notify-popup .modal-footer .input-wrapper input[type='email']::-ms-input-placeholder {
-        font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-        font-size: 15px;
-        text-align: center; }
       #notify-popup .modal-body .input-wrapper input[type='email']::placeholder, #notify-popup #why-now-popup .modal-footer .input-wrapper input[type='email']::placeholder, #why-now-popup #notify-popup .modal-footer .input-wrapper input[type='email']::placeholder {
         font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
         font-size: 15px;
@@ -1188,8 +935,7 @@ header {
     border-bottom: none;
     text-transform: uppercase;
     min-height: 150px;
-    -webkit-font-kerning: none;
-            font-kerning: none;
+    font-kerning: none;
     padding: 0; }
     #tokens-popup .modal-footer table {
       width: 680px;
@@ -1294,50 +1040,22 @@ header {
     font-size: 18px; }
 
 .node-row {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-     -moz-box-orient: horizontal;
-     -moz-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-     -moz-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
   .node-row img {
     height: 15px;
     width: 33px;
     margin-bottom: 20px; }
 
 .node-wrapper {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
   width: 90px;
   margin: auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-     -moz-box-orient: vertical;
-     -moz-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
   .node-wrapper h4 {
     min-height: 2em;
     margin: 0 0 0 6px; }
@@ -1361,28 +1079,12 @@ header {
   width: inherit;
   border-radius: 50%;
   border: 3px solid white;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #9eb1bb;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-     -moz-box-orient: vertical;
-     -moz-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
   .inner-node h3 {
     margin: 0 0 0 6px;
     font-size: 26px; }
@@ -1402,9 +1104,7 @@ header {
 
 .why-tabs {
   list-style: none;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 45%;
   margin: -16px 0 -20px 0;
   padding: 0; }
@@ -1415,12 +1115,9 @@ header {
   padding: 0 40px;
   border-top: 5px solid white;
   border-bottom: 5px solid #6e959f;
-  -webkit-box-shadow: 0 0 0 4px black;
-          box-shadow: 0 0 0 4px black;
+  box-shadow: 0 0 0 4px black;
   height: 90px;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #cee1e6;
   font-family: '04b_03', monospace;
   font-size: 24px;
@@ -1429,8 +1126,7 @@ header {
   text-align: left; }
 
 .why-active, .last-active {
-  -webkit-box-shadow: 0 4px 0 0 black;
-          box-shadow: 0 4px 0 0 black;
+  box-shadow: 0 4px 0 0 black;
   border: none;
   background-color: white;
   cursor: default; }
@@ -1440,14 +1136,12 @@ header {
   border: none;
   border-top: 5px solid white;
   margin: 0 0 0 -30px;
-  -webkit-box-shadow: 0px 10px 0 0px #6e959f, 2px -2px 0 2px black, 4px 10px 0px 0px black;
-          box-shadow: 0px 10px 0 0px #6e959f, 2px -2px 0 2px black, 4px 10px 0px 0px black; }
+  box-shadow: 0px 10px 0 0px #6e959f, 2px -2px 0 2px black, 4px 10px 0px 0px black; }
 
 .last-active {
   line-height: 90px;
   margin-bottom: -1px;
-  -webkit-box-shadow: 0px 10px 0 0 #b5b5b5;
-          box-shadow: 0px 10px 0 0 #b5b5b5; }
+  box-shadow: 0px 10px 0 0 #b5b5b5; }
 
 .why-info-text {
   width: 45%;
@@ -1505,31 +1199,15 @@ header {
   height: 150px; }
 
 .consent-boxes {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 70%;
   margin: auto;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  flex-wrap: wrap; }
   .consent-boxes .checkbox-row {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-       -moz-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-       -moz-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
     width: 100%; }
     .consent-boxes .checkbox-row .pixel-input {
       padding: 0 12px; }
@@ -1597,26 +1275,6 @@ input:active, button:active, select:active {
     width: 100%;
     text-align: center;
     margin-top: 10%; }
-  .signup-series .modal-body form input::-webkit-input-placeholder, .signup-series #why-now-popup .modal-footer form input::-webkit-input-placeholder, #why-now-popup .signup-series .modal-footer form input::-webkit-input-placeholder {
-    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-    font-size: 15px;
-    text-align: center;
-    color: #9c9b9b; }
-  .signup-series .modal-body form input::-moz-placeholder, .signup-series #why-now-popup .modal-footer form input::-moz-placeholder, #why-now-popup .signup-series .modal-footer form input::-moz-placeholder {
-    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-    font-size: 15px;
-    text-align: center;
-    color: #9c9b9b; }
-  .signup-series .modal-body form input:-ms-input-placeholder, .signup-series #why-now-popup .modal-footer form input:-ms-input-placeholder, #why-now-popup .signup-series .modal-footer form input:-ms-input-placeholder {
-    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-    font-size: 15px;
-    text-align: center;
-    color: #9c9b9b; }
-  .signup-series .modal-body form input::-ms-input-placeholder, .signup-series #why-now-popup .modal-footer form input::-ms-input-placeholder, #why-now-popup .signup-series .modal-footer form input::-ms-input-placeholder {
-    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-    font-size: 15px;
-    text-align: center;
-    color: #9c9b9b; }
   .signup-series .modal-body form input::placeholder, .signup-series #why-now-popup .modal-footer form input::placeholder, #why-now-popup .signup-series .modal-footer form input::placeholder {
     font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     font-size: 15px;
@@ -1635,9 +1293,6 @@ input:active, button:active, select:active {
     cursor: pointer; }
 
 #kyc-popup .modal-footer .button-wrapper, #aml-popup .modal-footer .button-wrapper {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
   width: 70%;
   margin: auto;
@@ -1665,26 +1320,6 @@ input:active, button:active, select:active {
     width: 100%;
     text-align: center;
     margin-top: 10%; }
-  .signup-body form input::-webkit-input-placeholder {
-    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-    font-size: 15px;
-    text-align: center;
-    color: #9ac4bf; }
-  .signup-body form input::-moz-placeholder {
-    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-    font-size: 15px;
-    text-align: center;
-    color: #9ac4bf; }
-  .signup-body form input:-ms-input-placeholder {
-    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-    font-size: 15px;
-    text-align: center;
-    color: #9ac4bf; }
-  .signup-body form input::-ms-input-placeholder {
-    font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-    font-size: 15px;
-    text-align: center;
-    color: #9ac4bf; }
   .signup-body form input::placeholder {
     font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
     font-size: 15px;
@@ -1787,18 +1422,6 @@ input:active, button:active, select:active {
       margin: 10px 3%;
       background-color: transparent;
       text-align: left; }
-      .currency-form .currency-amt input::-webkit-input-placeholder {
-        color: black;
-        text-align: left; }
-      .currency-form .currency-amt input::-moz-placeholder {
-        color: black;
-        text-align: left; }
-      .currency-form .currency-amt input:-ms-input-placeholder {
-        color: black;
-        text-align: left; }
-      .currency-form .currency-amt input::-ms-input-placeholder {
-        color: black;
-        text-align: left; }
       .currency-form .currency-amt input::placeholder {
         color: black;
         text-align: left; }
@@ -1814,34 +1437,6 @@ input:active, button:active, select:active {
 .signup-form .input-wrapper {
   width: 70%;
   margin: 3% 15%; }
-#signup-form input::-webkit-input-placeholder, #personal-data-form input::-webkit-input-placeholder, #kyc-upload-popup .modal-body form input::-webkit-input-placeholder, #kyc-upload-popup #why-now-popup .modal-footer form input::-webkit-input-placeholder, #why-now-popup #kyc-upload-popup .modal-footer form input::-webkit-input-placeholder,
-#company-data-form input::-webkit-input-placeholder, #funding-form input::-webkit-input-placeholder,
-.signup-form input::-webkit-input-placeholder {
-  font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-  font-size: 15px;
-  text-align: left;
-  color: #9c9b9b; }
-#signup-form input::-moz-placeholder, #personal-data-form input::-moz-placeholder, #kyc-upload-popup .modal-body form input::-moz-placeholder, #kyc-upload-popup #why-now-popup .modal-footer form input::-moz-placeholder, #why-now-popup #kyc-upload-popup .modal-footer form input::-moz-placeholder,
-#company-data-form input::-moz-placeholder, #funding-form input::-moz-placeholder,
-.signup-form input::-moz-placeholder {
-  font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-  font-size: 15px;
-  text-align: left;
-  color: #9c9b9b; }
-#signup-form input:-ms-input-placeholder, #personal-data-form input:-ms-input-placeholder, #kyc-upload-popup .modal-body form input:-ms-input-placeholder, #kyc-upload-popup #why-now-popup .modal-footer form input:-ms-input-placeholder, #why-now-popup #kyc-upload-popup .modal-footer form input:-ms-input-placeholder,
-#company-data-form input:-ms-input-placeholder, #funding-form input:-ms-input-placeholder,
-.signup-form input:-ms-input-placeholder {
-  font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-  font-size: 15px;
-  text-align: left;
-  color: #9c9b9b; }
-#signup-form input::-ms-input-placeholder, #personal-data-form input::-ms-input-placeholder, #kyc-upload-popup .modal-body form input::-ms-input-placeholder, #kyc-upload-popup #why-now-popup .modal-footer form input::-ms-input-placeholder, #why-now-popup #kyc-upload-popup .modal-footer form input::-ms-input-placeholder,
-#company-data-form input::-ms-input-placeholder, #funding-form input::-ms-input-placeholder,
-.signup-form input::-ms-input-placeholder {
-  font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
-  font-size: 15px;
-  text-align: left;
-  color: #9c9b9b; }
 #signup-form input::placeholder, #personal-data-form input::placeholder, #kyc-upload-popup .modal-body form input::placeholder, #kyc-upload-popup #why-now-popup .modal-footer form input::placeholder, #why-now-popup #kyc-upload-popup .modal-footer form input::placeholder,
 #company-data-form input::placeholder, #funding-form input::placeholder,
 .signup-form input::placeholder {
@@ -1861,22 +1456,6 @@ input:active, button:active, select:active {
 .signup-form input[type='submit'] {
   width: 100%;
   margin: 0; }
-#signup-form .ph-center::-webkit-input-placeholder, #personal-data-form .ph-center::-webkit-input-placeholder, #kyc-upload-popup .modal-body form .ph-center::-webkit-input-placeholder, #kyc-upload-popup #why-now-popup .modal-footer form .ph-center::-webkit-input-placeholder, #why-now-popup #kyc-upload-popup .modal-footer form .ph-center::-webkit-input-placeholder,
-#company-data-form .ph-center::-webkit-input-placeholder, #funding-form .ph-center::-webkit-input-placeholder,
-.signup-form .ph-center::-webkit-input-placeholder {
-  text-align: center; }
-#signup-form .ph-center::-moz-placeholder, #personal-data-form .ph-center::-moz-placeholder, #kyc-upload-popup .modal-body form .ph-center::-moz-placeholder, #kyc-upload-popup #why-now-popup .modal-footer form .ph-center::-moz-placeholder, #why-now-popup #kyc-upload-popup .modal-footer form .ph-center::-moz-placeholder,
-#company-data-form .ph-center::-moz-placeholder, #funding-form .ph-center::-moz-placeholder,
-.signup-form .ph-center::-moz-placeholder {
-  text-align: center; }
-#signup-form .ph-center:-ms-input-placeholder, #personal-data-form .ph-center:-ms-input-placeholder, #kyc-upload-popup .modal-body form .ph-center:-ms-input-placeholder, #kyc-upload-popup #why-now-popup .modal-footer form .ph-center:-ms-input-placeholder, #why-now-popup #kyc-upload-popup .modal-footer form .ph-center:-ms-input-placeholder,
-#company-data-form .ph-center:-ms-input-placeholder, #funding-form .ph-center:-ms-input-placeholder,
-.signup-form .ph-center:-ms-input-placeholder {
-  text-align: center; }
-#signup-form .ph-center::-ms-input-placeholder, #personal-data-form .ph-center::-ms-input-placeholder, #kyc-upload-popup .modal-body form .ph-center::-ms-input-placeholder, #kyc-upload-popup #why-now-popup .modal-footer form .ph-center::-ms-input-placeholder, #why-now-popup #kyc-upload-popup .modal-footer form .ph-center::-ms-input-placeholder,
-#company-data-form .ph-center::-ms-input-placeholder, #funding-form .ph-center::-ms-input-placeholder,
-.signup-form .ph-center::-ms-input-placeholder {
-  text-align: center; }
 #signup-form .ph-center::placeholder, #personal-data-form .ph-center::placeholder, #kyc-upload-popup .modal-body form .ph-center::placeholder, #kyc-upload-popup #why-now-popup .modal-footer form .ph-center::placeholder, #why-now-popup #kyc-upload-popup .modal-footer form .ph-center::placeholder,
 #company-data-form .ph-center::placeholder, #funding-form .ph-center::placeholder,
 .signup-form .ph-center::placeholder {
@@ -1910,14 +1489,8 @@ input:active, button:active, select:active {
 #signup-form .upload-blocks, #personal-data-form .upload-blocks, #kyc-upload-popup .modal-body form .upload-blocks, #kyc-upload-popup #why-now-popup .modal-footer form .upload-blocks, #why-now-popup #kyc-upload-popup .modal-footer form .upload-blocks,
 #company-data-form .upload-blocks, #funding-form .upload-blocks,
 .signup-form .upload-blocks {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-     -moz-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 70%;
   margin: auto; }
 #signup-form .upload-text, #personal-data-form .upload-text, #kyc-upload-popup .modal-body form .upload-text, #kyc-upload-popup #why-now-popup .modal-footer form .upload-text, #why-now-popup #kyc-upload-popup .modal-footer form .upload-text,
@@ -2031,8 +1604,7 @@ input:active, button:active, select:active {
     font-size: 36px; }
 
 .error-highlight {
-  -webkit-box-shadow: inset 0 0 1px 1px red;
-          box-shadow: inset 0 0 1px 1px red; }
+  box-shadow: inset 0 0 1px 1px red; }
 
 #kyc-upload-popup .modal-body .kyc-upload-info, #kyc-upload-popup #why-now-popup .modal-footer .kyc-upload-info, #why-now-popup #kyc-upload-popup .modal-footer .kyc-upload-info {
   font-family: '04b_03', monospace;
@@ -2070,7 +1642,6 @@ input:active, button:active, select:active {
 .figures {
   top: 0;
   left: 150px;
-  -webkit-transition: top .25s ease-in-out;
   transition: top .25s ease-in-out; }
   .figures::before {
     content: url("img/Team_figures.png");
@@ -2090,7 +1661,6 @@ input:active, button:active, select:active {
   top: 56px;
   left: 152px;
   opacity: 0;
-  -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
   .shadows::before {
     content: url("img/Shadows.png");
@@ -2105,7 +1675,6 @@ input:active, button:active, select:active {
 .team {
   top: 14px;
   left: 0;
-  -webkit-transition: top .25s ease-in-out;
   transition: top .25s ease-in-out; }
   .team::before {
     content: url("img/Team_hover.png");
@@ -2119,13 +1688,11 @@ input:active, button:active, select:active {
 
 .team-title {
   height: 30px;
-  -webkit-transform: skewY(30deg);
-          transform: skewY(30deg);
+  transform: skewY(30deg);
   color: #c39f8e;
   font-size: 30px;
   top: 205px;
   left: 65px;
-  -webkit-transition: top .25s ease-in-out;
   transition: top .25s ease-in-out; }
 
 .team-title-hover {
@@ -2134,13 +1701,11 @@ input:active, button:active, select:active {
 
 .company-title {
   height: 17px;
-  -webkit-transform: skewY(-30deg);
-          transform: skewY(-30deg);
+  transform: skewY(-30deg);
   color: #ebcda3;
   font-size: 17px;
   top: 205px;
   left: 375px;
-  -webkit-transition: top .25s ease-in-out;
   transition: top .25s ease-in-out; }
 
 .company-title-hover {
@@ -2150,7 +1715,6 @@ input:active, button:active, select:active {
 .company-penguin {
   top: 105px;
   left: 373px;
-  -webkit-transition: top .25s ease-in-out;
   transition: top .25s ease-in-out; }
   .company-penguin::before {
     content: url("img/Company_penguin.png");
@@ -2163,14 +1727,12 @@ input:active, button:active, select:active {
   border-bottom: 30px solid transparent; }
 
 .story-title {
-  -webkit-transform: skewY(-30deg);
-          transform: skewY(-30deg);
+  transform: skewY(-30deg);
   color: white;
   font-size: 17px;
   top: 272px;
   left: 81px;
   border-bottom: 40px solid transparent;
-  -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
 
 .story-title-hover {
@@ -2178,21 +1740,18 @@ input:active, button:active, select:active {
   left: 65px; }
 
 .advisors-title {
-  -webkit-transform: skewY(-30deg);
-          transform: skewY(-30deg);
+  transform: skewY(-30deg);
   color: #111111;
   font-size: 9px;
   top: 398px;
   left: 319px; }
 
 .contact-title {
-  -webkit-transform: skewY(30deg);
-          transform: skewY(30deg);
+  transform: skewY(30deg);
   color: #c39f8e;
   font-size: 11px;
   top: 457px;
   left: 10px;
-  -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
 
 .contact-title-hover {
@@ -2237,7 +1796,6 @@ input:active, button:active, select:active {
 .company {
   top: 65px;
   left: 161px;
-  -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
   .company::before {
     content: url("img/Company.png");
@@ -2252,7 +1810,6 @@ input:active, button:active, select:active {
   cursor: pointer;
   top: 289px;
   left: 40px;
-  -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
   .ourstory::before {
     content: url("img/OurStory.png");
@@ -2268,7 +1825,6 @@ input:active, button:active, select:active {
   cursor: pointer;
   top: 286px;
   left: 72px;
-  -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
   .book::before {
     content: url("img/Book.png");
@@ -2287,7 +1843,6 @@ input:active, button:active, select:active {
 .contactus {
   top: 368px;
   left: 0;
-  -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
   .contactus::before {
     content: url("img/ContactUs.png");
@@ -2303,7 +1858,6 @@ input:active, button:active, select:active {
   cursor: pointer;
   top: 401px;
   left: 25px;
-  -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
 
 .letter-hover {
@@ -2374,8 +1928,7 @@ input:active, button:active, select:active {
 
 .countdown-sign {
   font-family: '04b_03', monospace;
-  -webkit-transform: skewY(-30deg);
-          transform: skewY(-30deg);
+  transform: skewY(-30deg);
   width: 110px;
   height: 160px;
   top: 123px;
@@ -2383,16 +1936,9 @@ input:active, button:active, select:active {
   text-align: center;
   text-transform: uppercase;
   padding: 5px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  flex-wrap: wrap;
+  justify-content: center; }
   .countdown-sign p {
     font-size: 10px; }
 
@@ -2411,8 +1957,7 @@ input:active, button:active, select:active {
 
 .savings-sign {
   font-family: '04b_03', monospace;
-  -webkit-transform: skewY(30deg);
-          transform: skewY(30deg);
+  transform: skewY(30deg);
   width: 185px;
   height: 70px;
   text-align: center;
@@ -2467,7 +2012,6 @@ input:active, button:active, select:active {
   left: 122px;
   width: 280px;
   height: 401px;
-  -webkit-transition: top .25s ease-in-out;
   transition: top .25s ease-in-out; }
   #tokens:hover {
     top: -187px; }
@@ -2518,7 +2062,6 @@ input:active, button:active, select:active {
   left: 159px;
   width: 321px;
   height: 371px;
-  -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
   #problem-solution:hover {
     background-image: url("img/Problem_hover.png");
@@ -2538,7 +2081,6 @@ input:active, button:active, select:active {
   left: 39px;
   width: 241px;
   height: 186px;
-  -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out; }
   #roadmap:hover {
     top: 196px;
@@ -2618,20 +2160,74 @@ input:active, button:active, select:active {
     height: 0;
     visibility: hidden; }
 
+#faq-body {
+  background: none; }
+
+.faq-list {
+  list-style: none;
+  margin-bottom: 100px;
+  margin-top: 40px;
+  padding: 0; }
+
 #faq-popup {
-  width: 80vw;
-  height: 80vh;
-  overflow: scroll; }
-  #faq-popup .modal-header h1 {
-    color: black; }
+  min-width: 100vw;
+  max-width: 1600px;
+  height: 100vh; }
+  #faq-popup .popup-inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 10px 0; }
+  #faq-popup .modal-header {
+    position: relative;
+    height: 50px; }
+    #faq-popup .modal-header h1 {
+      color: black;
+      font-size: 26px; }
+  #faq-popup .modal-body, #faq-popup #why-now-popup .modal-footer, #why-now-popup #faq-popup .modal-footer {
+    position: relative;
+    flex: 2;
+    padding: 20px 40px; }
+    #faq-popup .modal-body iframe, #faq-popup #why-now-popup .modal-footer iframe, #why-now-popup #faq-popup .modal-footer iframe {
+      border: none;
+      overflow-y: scroll; }
+  #faq-popup .modal-footer {
+    position: relative;
+    margin: -10px 0; }
+    #faq-popup .modal-footer p {
+      text-align: center;
+      color: #b5b5b5; }
+
+.top-fade {
+  background: linear-gradient(white, rgba(0, 0, 0, 0));
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  box-sizing: border-box;
+  border: 20px solid transparent;
+  z-index: 2; }
+
+.bottom-fade {
+  background: linear-gradient(rgba(0, 0, 0, 0), white);
+  background-repeat: no-repeat;
+  height: 8em;
+  width: 100%;
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  box-sizing: border-box;
+  border: 20px solid transparent; }
 
 .helper {
   display: none;
   min-width: 400px;
   max-width: 400px;
   min-height: 400px;
-  -webkit-box-shadow: 20px 40px 50px black;
-          box-shadow: 20px 40px 50px black; }
+  box-shadow: 20px 40px 50px black; }
   .helper::before, .helper::after {
     border-bottom: 10px solid #c4e880; }
   .helper .modal-header {
@@ -2725,8 +2321,7 @@ input:active, button:active, select:active {
       top: 50px;
       left: 260px; }
     #about-island .story-title {
-      -webkit-transform: rotate(-30deg) skew(30deg);
-              transform: rotate(-30deg) skew(30deg);
+      transform: rotate(-30deg) skew(30deg);
       text-shadow: -2px -1px 0 #84bf4f;
       top: 407px;
       left: 120px;
@@ -2742,8 +2337,7 @@ input:active, button:active, select:active {
       top: 239px;
       left: 235px; }
     #about-island .advisors-title {
-      -webkit-transform: skewY(30deg);
-              transform: skewY(30deg);
+      transform: skewY(30deg);
       top: 304px;
       left: 243px; }
     #about-island .bulb-mobile {
