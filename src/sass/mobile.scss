@@ -198,6 +198,12 @@
     min-width: 700px;
   }
 
+  #distribution-popup,
+  #why-now-popup,
+  #tokens-popup {
+    min-width: 900px;
+  }
+
   #contactus-popup {
     .modal-body {
       p {

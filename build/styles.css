@@ -2899,6 +2899,11 @@ input:active, button:active, select:active {
   #advisors-popup {
     min-width: 700px; }
 
+  #distribution-popup,
+  #why-now-popup,
+  #tokens-popup {
+    min-width: 900px; }
+
   #contactus-popup .modal-body p, #contactus-popup #why-now-popup .modal-footer p, #why-now-popup #contactus-popup .modal-footer p {
     font-size: 18px; }
   #contactus-popup .modal-body .chat-btn, #contactus-popup #why-now-popup .modal-footer .chat-btn, #why-now-popup #contactus-popup .modal-footer .chat-btn {
