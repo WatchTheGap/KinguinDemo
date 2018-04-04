@@ -2908,6 +2908,17 @@ input:active, button:active, select:active {
     font-size: 26px; }
 
   #ourstory-popup .dates-row li {
-    font-size: 18px; } }
+    font-size: 18px; }
+
+  #problem-solution-popup .modal-body #problem-title span, #problem-solution-popup #why-now-popup .modal-footer #problem-title span, #why-now-popup #problem-solution-popup .modal-footer #problem-title span {
+    top: -15px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  #problem-solution-popup .modal-body #solution-title span, #problem-solution-popup #why-now-popup .modal-footer #solution-title span, #why-now-popup #problem-solution-popup .modal-footer #solution-title span {
+    bottom: -45px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); } }
 
 /*# sourceMappingURL=styles.css.map */

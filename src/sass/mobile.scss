@@ -219,4 +219,24 @@
     }
   }
 
+  #problem-solution-popup {
+    .modal-body {
+      #problem-title  {
+        span {
+          top: -15px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      #solution-title {
+        span {
+          bottom: -45px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+
+
 }
