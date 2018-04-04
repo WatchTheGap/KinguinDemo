@@ -2893,6 +2893,9 @@ input:active, button:active, select:active {
     margin: 10% auto;
     .pixel-input-height: 40px; }
   #notify-popup .modal-body .continue-btn input[type='submit'], #notify-popup #why-now-popup .modal-footer .continue-btn input[type='submit'], #why-now-popup #notify-popup .modal-footer .continue-btn input[type='submit'] {
-    font-size: 30px; } }
+    font-size: 30px; }
+
+  #team-popup {
+    min-width: 700px; } }
 
 /*# sourceMappingURL=styles.css.map */

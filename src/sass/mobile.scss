@@ -177,7 +177,6 @@
   }
 
   #notify-popup {
-
     .modal-body {
       .input-wrapper {
         width: 100%;
@@ -189,14 +188,13 @@
       .continue-btn {
         input[type='submit'] {
           font-size: 30px;
-
         }
       }
-
     }
-
   }
 
-
+  #team-popup {
+    min-width: 700px;
+  }
 
 }
