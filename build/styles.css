@@ -746,8 +746,8 @@ header {
   background-color: #0088cc;
   border-top: 10px solid #6bb0d2; }
 .airdrop .modal-body, .airdrop #why-now-popup .modal-footer, #why-now-popup .airdrop .modal-footer {
-  padding: 10% 0;
-  height: 400px; }
+  padding: 0;
+  height: auto; }
   .airdrop .modal-body a, .airdrop #why-now-popup .modal-footer a, #why-now-popup .airdrop .modal-footer a {
     color: #0088cc; }
     .airdrop .modal-body a:visited, .airdrop #why-now-popup .modal-footer a:visited, #why-now-popup .airdrop .modal-footer a:visited {
@@ -758,8 +758,8 @@ header {
     text-align: center; }
   .airdrop .modal-body h3, .airdrop #why-now-popup .modal-footer h3, #why-now-popup .airdrop .modal-footer h3 {
     font-size: 20px;
-    width: 70%;
-    margin: 0 15% 5% 15%; }
+    width: 80%;
+    margin: 10%; }
   .airdrop .modal-body .alert-msg, .airdrop #why-now-popup .modal-footer .alert-msg, #why-now-popup .airdrop .modal-footer .alert-msg {
     width: 100%;
     margin: 0; }
