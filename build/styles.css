@@ -2905,6 +2905,9 @@ input:active, button:active, select:active {
     margin: 10% auto;
     font-size: 30px; }
   #contactus-popup .modal-body a h2, #contactus-popup #why-now-popup .modal-footer a h2, #why-now-popup #contactus-popup .modal-footer a h2 {
-    font-size: 26px; } }
+    font-size: 26px; }
+
+  #ourstory-popup .dates-row li {
+    font-size: 18px; } }
 
 /*# sourceMappingURL=styles.css.map */
