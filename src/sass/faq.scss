@@ -7,12 +7,30 @@
   margin-bottom: 100px;
   margin-top: 40px;
   padding: 0;
+  li {
+    margin-bottom: 3em;
+  }
+  h3 {
+    font-family: '04b_03', sans-serif;
+    text-transform: uppercase;
+  }
+  p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+  }
+  a {
+    text-decoration: none;
+    color: #164f68;
+    &:visited {
+      color: #666666;
+    }
+  }
 }
 
 #faq-popup {
-  min-width: 100vw;
+  min-width: 90vw;
   max-width: 1600px;
-  height: 100vh;
+  height: 90vh;
   .popup-inner-wrapper {
     display: flex;
     flex-direction: column;
@@ -70,4 +88,13 @@
   left: 0;
   box-sizing: border-box;
   border: 20px solid transparent;
+}
+
+.currency-list {
+  li {
+    margin-bottom: .5em;
+    p {
+      margin: 0;
+    }
+  }
 }
