@@ -193,8 +193,24 @@
     }
   }
 
-  #team-popup {
+  #team-popup, #advisors-popup {
     min-width: 700px;
+  }
+
+  #contactus-popup {
+    .modal-body {
+      p {
+        font-size: 18px;
+      }
+      .chat-btn {
+        width: 100%;
+        margin: 10% auto;
+        font-size: 30px;
+      }
+      a h2 {
+        font-size: 26px;
+      }
+    }
   }
 
 }

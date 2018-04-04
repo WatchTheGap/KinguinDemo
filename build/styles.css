@@ -2895,7 +2895,16 @@ input:active, button:active, select:active {
   #notify-popup .modal-body .continue-btn input[type='submit'], #notify-popup #why-now-popup .modal-footer .continue-btn input[type='submit'], #why-now-popup #notify-popup .modal-footer .continue-btn input[type='submit'] {
     font-size: 30px; }
 
-  #team-popup {
-    min-width: 700px; } }
+  #team-popup, #advisors-popup {
+    min-width: 700px; }
+
+  #contactus-popup .modal-body p, #contactus-popup #why-now-popup .modal-footer p, #why-now-popup #contactus-popup .modal-footer p {
+    font-size: 18px; }
+  #contactus-popup .modal-body .chat-btn, #contactus-popup #why-now-popup .modal-footer .chat-btn, #why-now-popup #contactus-popup .modal-footer .chat-btn {
+    width: 100%;
+    margin: 10% auto;
+    font-size: 30px; }
+  #contactus-popup .modal-body a h2, #contactus-popup #why-now-popup .modal-footer a h2, #why-now-popup #contactus-popup .modal-footer a h2 {
+    font-size: 26px; } }
 
 /*# sourceMappingURL=styles.css.map */
