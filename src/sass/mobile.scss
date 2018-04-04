@@ -193,7 +193,8 @@
     }
   }
 
-  #team-popup, #advisors-popup {
+  #team-popup,
+  #advisors-popup {
     min-width: 700px;
   }
 
@@ -237,6 +238,14 @@
       }
     }
   }
+
+    #projections-popup {
+      .modal-body {
+        img {
+          width: 80vw;
+        }
+      }
+    }
 
 
 }
