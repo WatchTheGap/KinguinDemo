@@ -277,8 +277,8 @@ footer {
   background-repeat: no-repeat;
   background-size: contain;
   text-align: center;
-  top: 20px;
-  left: 60vw;
+  top: 75px;
+  left: 40vw;
   width: 180px;
   height: 120px;
   font-family: '04b_03', monospace; }
@@ -2861,6 +2861,9 @@ input:active, button:active, select:active {
     height: 800px;
     top: -900px;
     left: -50px; }
+
+  .awards-cloud {
+    left: 55vw; }
 
   .popup-wrapper, .scale-pop {
     -webkit-transform: translate(0, 0) scale(1);
