@@ -215,6 +215,11 @@
       $('.popup-bg').show();
       $('#islands-wrapper').addClass('blur');
       break;
+      case ('faq'):
+      $('#faq-popup').removeClass('hide');
+      $('.popup-bg').show();
+      $('#islands-wrapper').addClass('blur');
+      break;
     }
 
   });

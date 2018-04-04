@@ -2860,6 +2860,36 @@ input:active, button:active, select:active {
   #strategy-island {
     height: 800px;
     top: -900px;
-    left: -50px; } }
+    left: -50px; }
+
+  .popup-wrapper, .scale-pop {
+    -webkit-transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(1);
+    top: 100px;
+    left: 2vw; }
+    .popup-wrapper .popup-outer-wrapper, .scale-pop .popup-outer-wrapper {
+      width: 96vw;
+      min-width: 80vw;
+      max-width: 96vw; }
+      .popup-wrapper .popup-outer-wrapper .modal-header, .scale-pop .popup-outer-wrapper .modal-header {
+        height: 80px; }
+        .popup-wrapper .popup-outer-wrapper .modal-header #close-x, .scale-pop .popup-outer-wrapper .modal-header #close-x {
+          top: 5px;
+          right: 15px;
+          height: 20px; }
+        .popup-wrapper .popup-outer-wrapper .modal-header h1, .scale-pop .popup-outer-wrapper .modal-header h1 {
+          font-size: 26px; }
+
+  #faq-popup .modal-header h1 {
+    font-size: 16px;
+    width: 12em;
+    margin: auto; }
+
+  #notify-popup .modal-body .input-wrapper, #notify-popup #why-now-popup .modal-footer .input-wrapper, #why-now-popup #notify-popup .modal-footer .input-wrapper {
+    width: 100%;
+    margin: 10% auto;
+    .pixel-input-height: 40px; }
+  #notify-popup .modal-body .continue-btn input[type='submit'], #notify-popup #why-now-popup .modal-footer .continue-btn input[type='submit'], #why-now-popup #notify-popup .modal-footer .continue-btn input[type='submit'] {
+    font-size: 30px; } }
 
 /*# sourceMappingURL=styles.css.map */
