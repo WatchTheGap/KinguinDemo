@@ -117,6 +117,10 @@
       $('.popup-bg').show();
       $('#islands-wrapper').addClass('blur');
       break;
+      case ('referrals'):
+      blur();
+      $('#signup-popup').removeClass('hide');
+      break;
     }
 
   });
@@ -146,6 +150,7 @@
   let donationAmt = 0;
   let name;
   let userEmail;
+  let icoReferralId = 0;
 
   if (currencyType === 'BTC' || 'ETH') {
     fiat = false;
@@ -182,6 +187,8 @@
       return;
     }
 
+    icoReferralId = getQueryParam("ref-id");
+
     $.ajax({
       url: "https://api.kinguin.io/api/create-profile",
       type: "POST",
@@ -190,7 +197,8 @@
         "username": name,
         "email": userEmail,
         "currency": currencyType,
-        "amount": donationAmt
+        "amount": donationAmt,
+        "referral_user_id":icoReferralId
       }
     })
     .done(function () {
