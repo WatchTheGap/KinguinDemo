@@ -253,7 +253,7 @@
   let donationAmt = 0;
   let name;
   let userEmail;
-  let icoReferralId = 'none';
+  let icoReferralId;
 
   if (currencyType === 'BTC' || 'ETH') {
     fiat = false;
