@@ -139,4 +139,119 @@
     top: -900px;
     left: -50px;
   }
+
+  .awards-cloud {
+    left: 55vw;
+  }
+
+  .popup-wrapper, .scale-pop {
+    transform: translate(0,0) scale(1);
+    top: 100px;
+    left: 2vw;
+    .popup-outer-wrapper {
+      width: 96vw;
+      min-width: 80vw;
+      max-width: 96vw;
+      .modal-header {
+        height: 80px;
+        #close-x {
+          top: 5px;
+          right: 15px;
+          height: 20px;
+        }
+        h1 {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+
+  #faq-popup {
+    .modal-header {
+      h1 {
+        font-size: 16px;
+        width: 12em;
+        margin: auto;
+      }
+    }
+  }
+
+  #notify-popup {
+    .modal-body {
+      .input-wrapper {
+        width: 100%;
+        margin: 10% auto;
+        .pixel-input: {
+          height: 40px;
+        }
+      }
+      .continue-btn {
+        input[type='submit'] {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  #team-popup,
+  #advisors-popup {
+    min-width: 700px;
+  }
+
+  #distribution-popup,
+  #why-now-popup,
+  #tokens-popup {
+    min-width: 900px;
+  }
+
+  #contactus-popup {
+    .modal-body {
+      p {
+        font-size: 18px;
+      }
+      .chat-btn {
+        width: 100%;
+        margin: 10% auto;
+        font-size: 30px;
+      }
+      a h2 {
+        font-size: 26px;
+      }
+    }
+  }
+
+  #ourstory-popup {
+    .dates-row li {
+      font-size: 18px;
+    }
+  }
+
+  #problem-solution-popup {
+    .modal-body {
+      #problem-title  {
+        span {
+          top: -15px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      #solution-title {
+        span {
+          bottom: -45px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+
+    #projections-popup {
+      .modal-body {
+        img {
+          width: 80vw;
+        }
+      }
+    }
+
+
 }

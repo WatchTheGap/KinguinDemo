@@ -112,6 +112,11 @@
       $('.popup-bg').show();
       $('#islands-wrapper').addClass('blur');
       break;
+      case ('faq'):
+      $('#faq-popup').removeClass('hide');
+      $('.popup-bg').show();
+      $('#islands-wrapper').addClass('blur');
+      break;
     }
 
   });
@@ -921,12 +926,13 @@
     }
     switch(drop) {
       case ('signup'):
-      blur();
       teleRefId = getQueryParam('ref-id');
       if (teleRefId === false) {
         teleRefId = '';
       }
       $('#airdrop-popup').removeClass('hide');
+      $('.popup-bg').show();
+      $('#islands-wrapper').addClass('blur');
       break;
       case ('referrals'):
       getRefs();
@@ -941,8 +947,8 @@
     }
     switch(kinguin) {
       case ('drop'):
-      blur();
-      $('#airdrop-popup').removeClass('hide');
+      $('.popup-bg').show();
+      $('#islands-wrapper').addClass('blur');       $('#airdrop-popup').removeClass('hide');
       break;
     }
   });
