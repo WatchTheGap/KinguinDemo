@@ -811,6 +811,25 @@
   }
 }
 
+#mailinglist-popup {
+  @extend #notify-popup;
+  text-align: center;
+  p {
+    font-family: '04b_03', monospace;
+  }
+  .modal-body {
+    .continue-btn {
+      margin: 10%;
+      .pixel-input {
+        height: 50px;
+      }
+    }
+  }
+  .modal-footer {
+    min-height: 60px;
+  }
+}
+
 //************************************
 #tokens-popup {
   width: 700px;
