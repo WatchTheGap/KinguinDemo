@@ -198,7 +198,7 @@
         "email": userEmail,
         "currency": currencyType,
         "amount": donationAmt,
-        "referral_id":icoReferralId
+        "referral_user_id":icoReferralId
       }
     })
     .done(function () {
