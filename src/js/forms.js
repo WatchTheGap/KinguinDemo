@@ -119,6 +119,7 @@
   //***************************************************
 
   $('#notify-form').submit(function () {
+    $('#notify-popup').addClass('hide');
     $('#mailinglist-popup').removeClass('hide');
     $('.confirm-title').text(mailingList.title);
     $('.confirm-subtitle').text(mailingList.subtitle);

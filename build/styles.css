@@ -1108,68 +1108,79 @@ header {
   margin: 0 5%;
   width: 90%; }
 
-#notify-popup::before, #notify-popup::after {
+#notify-popup::before, #mailinglist-popup::before, #notify-popup::after, #mailinglist-popup::after {
   border-bottom: 10px solid #a0dcd4; }
-#notify-popup .modal-header {
+#notify-popup .modal-header, #mailinglist-popup .modal-header {
   background-color: #6ebfb1;
   border-top: 10px solid #a0dcd4; }
-#notify-popup .modal-body, #notify-popup #why-now-popup .modal-footer, #why-now-popup #notify-popup .modal-footer {
+#notify-popup .modal-body, #mailinglist-popup .modal-body, #notify-popup #why-now-popup .modal-footer, #why-now-popup #notify-popup .modal-footer, #mailinglist-popup #why-now-popup .modal-footer, #why-now-popup #mailinglist-popup .modal-footer {
   min-height: 230px;
   margin: auto;
   font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace; }
-  #notify-popup .modal-body h2, #notify-popup #why-now-popup .modal-footer h2, #why-now-popup #notify-popup .modal-footer h2 {
+  #notify-popup .modal-body h2, #mailinglist-popup .modal-body h2, #notify-popup #why-now-popup .modal-footer h2, #why-now-popup #notify-popup .modal-footer h2, #mailinglist-popup #why-now-popup .modal-footer h2, #why-now-popup #mailinglist-popup .modal-footer h2 {
     font-size: 18px;
     line-height: 1.2em; }
-  #notify-popup .modal-body .input-wrapper, #notify-popup #why-now-popup .modal-footer .input-wrapper, #why-now-popup #notify-popup .modal-footer .input-wrapper {
+  #notify-popup .modal-body .input-wrapper, #mailinglist-popup .modal-body .input-wrapper, #notify-popup #why-now-popup .modal-footer .input-wrapper, #why-now-popup #notify-popup .modal-footer .input-wrapper, #mailinglist-popup #why-now-popup .modal-footer .input-wrapper, #why-now-popup #mailinglist-popup .modal-footer .input-wrapper {
     width: 60%;
     margin: 10% 20%; }
-    #notify-popup .modal-body .input-wrapper .pixel-input, #notify-popup #why-now-popup .modal-footer .input-wrapper .pixel-input, #why-now-popup #notify-popup .modal-footer .input-wrapper .pixel-input {
+    #notify-popup .modal-body .input-wrapper .pixel-input, #mailinglist-popup .modal-body .input-wrapper .pixel-input, #notify-popup #why-now-popup .modal-footer .input-wrapper .pixel-input, #why-now-popup #notify-popup .modal-footer .input-wrapper .pixel-input, #mailinglist-popup #why-now-popup .modal-footer .input-wrapper .pixel-input, #why-now-popup #mailinglist-popup .modal-footer .input-wrapper .pixel-input {
       padding: 10px;
       height: 50px; }
-    #notify-popup .modal-body .input-wrapper input[type='email'], #notify-popup #why-now-popup .modal-footer .input-wrapper input[type='email'], #why-now-popup #notify-popup .modal-footer .input-wrapper input[type='email'] {
+    #notify-popup .modal-body .input-wrapper input[type='email'], #mailinglist-popup .modal-body .input-wrapper input[type='email'], #notify-popup #why-now-popup .modal-footer .input-wrapper input[type='email'], #why-now-popup #notify-popup .modal-footer .input-wrapper input[type='email'], #mailinglist-popup #why-now-popup .modal-footer .input-wrapper input[type='email'], #why-now-popup #mailinglist-popup .modal-footer .input-wrapper input[type='email'] {
       height: inherit;
       width: 100%;
       text-align: center;
       font-size: 20px; }
-      #notify-popup .modal-body .input-wrapper input[type='email']::-webkit-input-placeholder, #notify-popup #why-now-popup .modal-footer .input-wrapper input[type='email']::-webkit-input-placeholder, #why-now-popup #notify-popup .modal-footer .input-wrapper input[type='email']::-webkit-input-placeholder {
+      #notify-popup .modal-body .input-wrapper input[type='email']::-webkit-input-placeholder, #mailinglist-popup .modal-body .input-wrapper input[type='email']::-webkit-input-placeholder, #notify-popup #why-now-popup .modal-footer .input-wrapper input[type='email']::-webkit-input-placeholder, #why-now-popup #notify-popup .modal-footer .input-wrapper input[type='email']::-webkit-input-placeholder, #mailinglist-popup #why-now-popup .modal-footer .input-wrapper input[type='email']::-webkit-input-placeholder, #why-now-popup #mailinglist-popup .modal-footer .input-wrapper input[type='email']::-webkit-input-placeholder {
         font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
         font-size: 15px;
         text-align: center; }
-      #notify-popup .modal-body .input-wrapper input[type='email']::-moz-placeholder, #notify-popup #why-now-popup .modal-footer .input-wrapper input[type='email']::-moz-placeholder, #why-now-popup #notify-popup .modal-footer .input-wrapper input[type='email']::-moz-placeholder {
+      #notify-popup .modal-body .input-wrapper input[type='email']::-moz-placeholder, #mailinglist-popup .modal-body .input-wrapper input[type='email']::-moz-placeholder, #notify-popup #why-now-popup .modal-footer .input-wrapper input[type='email']::-moz-placeholder, #why-now-popup #notify-popup .modal-footer .input-wrapper input[type='email']::-moz-placeholder, #mailinglist-popup #why-now-popup .modal-footer .input-wrapper input[type='email']::-moz-placeholder, #why-now-popup #mailinglist-popup .modal-footer .input-wrapper input[type='email']::-moz-placeholder {
         font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
         font-size: 15px;
         text-align: center; }
-      #notify-popup .modal-body .input-wrapper input[type='email']:-ms-input-placeholder, #notify-popup #why-now-popup .modal-footer .input-wrapper input[type='email']:-ms-input-placeholder, #why-now-popup #notify-popup .modal-footer .input-wrapper input[type='email']:-ms-input-placeholder {
+      #notify-popup .modal-body .input-wrapper input[type='email']:-ms-input-placeholder, #mailinglist-popup .modal-body .input-wrapper input[type='email']:-ms-input-placeholder, #notify-popup #why-now-popup .modal-footer .input-wrapper input[type='email']:-ms-input-placeholder, #why-now-popup #notify-popup .modal-footer .input-wrapper input[type='email']:-ms-input-placeholder, #mailinglist-popup #why-now-popup .modal-footer .input-wrapper input[type='email']:-ms-input-placeholder, #why-now-popup #mailinglist-popup .modal-footer .input-wrapper input[type='email']:-ms-input-placeholder {
         font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
         font-size: 15px;
         text-align: center; }
-      #notify-popup .modal-body .input-wrapper input[type='email']::-ms-input-placeholder, #notify-popup #why-now-popup .modal-footer .input-wrapper input[type='email']::-ms-input-placeholder, #why-now-popup #notify-popup .modal-footer .input-wrapper input[type='email']::-ms-input-placeholder {
+      #notify-popup .modal-body .input-wrapper input[type='email']::-ms-input-placeholder, #mailinglist-popup .modal-body .input-wrapper input[type='email']::-ms-input-placeholder, #notify-popup #why-now-popup .modal-footer .input-wrapper input[type='email']::-ms-input-placeholder, #why-now-popup #notify-popup .modal-footer .input-wrapper input[type='email']::-ms-input-placeholder, #mailinglist-popup #why-now-popup .modal-footer .input-wrapper input[type='email']::-ms-input-placeholder, #why-now-popup #mailinglist-popup .modal-footer .input-wrapper input[type='email']::-ms-input-placeholder {
         font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
         font-size: 15px;
         text-align: center; }
-      #notify-popup .modal-body .input-wrapper input[type='email']::placeholder, #notify-popup #why-now-popup .modal-footer .input-wrapper input[type='email']::placeholder, #why-now-popup #notify-popup .modal-footer .input-wrapper input[type='email']::placeholder {
+      #notify-popup .modal-body .input-wrapper input[type='email']::placeholder, #mailinglist-popup .modal-body .input-wrapper input[type='email']::placeholder, #notify-popup #why-now-popup .modal-footer .input-wrapper input[type='email']::placeholder, #why-now-popup #notify-popup .modal-footer .input-wrapper input[type='email']::placeholder, #mailinglist-popup #why-now-popup .modal-footer .input-wrapper input[type='email']::placeholder, #why-now-popup #mailinglist-popup .modal-footer .input-wrapper input[type='email']::placeholder {
         font-family: 'EightBitWonder', '8bit_wondernominal', '04b_03', monospace;
         font-size: 15px;
         text-align: center; }
-  #notify-popup .modal-body .continue-btn, #notify-popup #why-now-popup .modal-footer .continue-btn, #why-now-popup #notify-popup .modal-footer .continue-btn {
+  #notify-popup .modal-body .continue-btn, #mailinglist-popup .modal-body .continue-btn, #notify-popup #why-now-popup .modal-footer .continue-btn, #why-now-popup #notify-popup .modal-footer .continue-btn, #mailinglist-popup #why-now-popup .modal-footer .continue-btn, #why-now-popup #mailinglist-popup .modal-footer .continue-btn {
     width: 80%;
     margin: 0 10%; }
-    #notify-popup .modal-body .continue-btn .pixel-input, #notify-popup #why-now-popup .modal-footer .continue-btn .pixel-input, #why-now-popup #notify-popup .modal-footer .continue-btn .pixel-input {
+    #notify-popup .modal-body .continue-btn .pixel-input, #mailinglist-popup .modal-body .continue-btn .pixel-input, #notify-popup #why-now-popup .modal-footer .continue-btn .pixel-input, #why-now-popup #notify-popup .modal-footer .continue-btn .pixel-input, #mailinglist-popup #why-now-popup .modal-footer .continue-btn .pixel-input, #why-now-popup #mailinglist-popup .modal-footer .continue-btn .pixel-input {
       padding: 0;
       height: 100px; }
-    #notify-popup .modal-body .continue-btn input[type='submit'], #notify-popup #why-now-popup .modal-footer .continue-btn input[type='submit'], #why-now-popup #notify-popup .modal-footer .continue-btn input[type='submit'] {
+    #notify-popup .modal-body .continue-btn input[type='submit'], #mailinglist-popup .modal-body .continue-btn input[type='submit'], #notify-popup #why-now-popup .modal-footer .continue-btn input[type='submit'], #why-now-popup #notify-popup .modal-footer .continue-btn input[type='submit'], #mailinglist-popup #why-now-popup .modal-footer .continue-btn input[type='submit'], #why-now-popup #mailinglist-popup .modal-footer .continue-btn input[type='submit'] {
       margin: 0;
       width: 100%;
       font-family: '04b_03', monospace;
       font-size: 36px;
       background-color: #ef5e5e; }
-#notify-popup .modal-footer {
+#notify-popup .modal-footer, #mailinglist-popup .modal-footer {
   min-height: 160px; }
-  #notify-popup .modal-footer .input-wrapper {
+  #notify-popup .modal-footer .input-wrapper, #mailinglist-popup .modal-footer .input-wrapper {
     width: 80%;
     margin: 0 10%; }
-    #notify-popup .modal-footer .input-wrapper .pixel-input {
+    #notify-popup .modal-footer .input-wrapper .pixel-input, #mailinglist-popup .modal-footer .input-wrapper .pixel-input {
       height: 100px; }
+
+#mailinglist-popup {
+  text-align: center; }
+  #mailinglist-popup p {
+    font-family: '04b_03', monospace; }
+  #mailinglist-popup .modal-body .continue-btn, #mailinglist-popup #why-now-popup .modal-footer .continue-btn, #why-now-popup #mailinglist-popup .modal-footer .continue-btn {
+    margin: 10%; }
+    #mailinglist-popup .modal-body .continue-btn .pixel-input, #mailinglist-popup #why-now-popup .modal-footer .continue-btn .pixel-input, #why-now-popup #mailinglist-popup .modal-footer .continue-btn .pixel-input {
+      height: 50px; }
+  #mailinglist-popup .modal-footer {
+    min-height: 60px; }
 
 #tokens-popup {
   width: 700px; }
