@@ -238,6 +238,16 @@ footer {
   top: -85px;
   left: -75px; }
 
+.announcement-cloud-text {
+  text-align: center;
+  position: absolute;
+  font-family: '04b_03', monospace;
+  text-transform: uppercase;
+  top: -37px;
+  left: -66px; }
+  .announcement-cloud-text p, .announcement-cloud-text h2 {
+    margin: 0; }
+
 #cloud2 {
   top: 476px;
   left: -147px; }
@@ -2766,6 +2776,17 @@ input:active, button:active, select:active {
 
   .mobile-show {
     display: block; }
+
+  .announcement-cloud-mobile {
+    height: 200px; }
+    .announcement-cloud-mobile img {
+      width: 400px;
+      top: 130px;
+      position: absolute;
+      left: 0px; }
+    .announcement-cloud-mobile .announcement-cloud-text {
+      top: 200px;
+      left: 45px; }
 
   #landing-island {
     top: -160px;

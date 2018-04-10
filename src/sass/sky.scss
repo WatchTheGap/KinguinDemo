@@ -83,6 +83,18 @@ footer {
   left: -75px;
 }
 
+.announcement-cloud-text {
+  text-align: center;
+  position: absolute;
+  font-family: '04b_03', monospace;
+  text-transform: uppercase;
+  top: -37px;
+  left: -66px;
+  p, h2 {
+    margin: 0;
+  }
+}
+
 #cloud2 {
   top: 476px;
   left: -147px;

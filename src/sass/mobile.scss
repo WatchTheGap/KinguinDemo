@@ -8,7 +8,19 @@
     display: block;
   }
 
-
+  .announcement-cloud-mobile {
+    height: 200px;
+    img {
+      width: 400px;
+      top: 130px;
+      position: absolute;
+      left: 0px;
+    }
+    .announcement-cloud-text {
+      top: 200px;
+      left: 45px;
+    }
+  }
 
   #landing-island {
     top: -160px;
