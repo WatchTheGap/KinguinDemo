@@ -364,4 +364,22 @@
 
     }
   }
+
+  #aml-eth-popup,
+  #aml-btc-popup {
+    input::placeholder {
+      font-size: 12px;
+    }
+  }
+  #aml-fiat-popup {
+    .signup-form {
+      .input-wrapper {
+        width: 100%;
+        margin: 5% auto;
+      }
+    }
+    input::placeholder {
+      font-size: 10px;
+    }
+  }
 }

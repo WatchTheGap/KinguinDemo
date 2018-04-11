@@ -3042,6 +3042,40 @@ input:active, button:active, select:active {
   #company-data-form .upload-text {
     font-size: 10px;
     width: 40%;
-    margin: 5%; } }
+    margin: 5%; }
+
+  #aml-eth-popup input::-webkit-input-placeholder,
+  #aml-btc-popup input::-webkit-input-placeholder {
+    font-size: 12px; }
+
+  #aml-eth-popup input::-moz-placeholder,
+  #aml-btc-popup input::-moz-placeholder {
+    font-size: 12px; }
+
+  #aml-eth-popup input:-ms-input-placeholder,
+  #aml-btc-popup input:-ms-input-placeholder {
+    font-size: 12px; }
+
+  #aml-eth-popup input::-ms-input-placeholder,
+  #aml-btc-popup input::-ms-input-placeholder {
+    font-size: 12px; }
+
+  #aml-eth-popup input::placeholder,
+  #aml-btc-popup input::placeholder {
+    font-size: 12px; }
+
+  #aml-fiat-popup .signup-form .input-wrapper {
+    width: 100%;
+    margin: 5% auto; }
+  #aml-fiat-popup input::-webkit-input-placeholder {
+    font-size: 10px; }
+  #aml-fiat-popup input::-moz-placeholder {
+    font-size: 10px; }
+  #aml-fiat-popup input:-ms-input-placeholder {
+    font-size: 10px; }
+  #aml-fiat-popup input::-ms-input-placeholder {
+    font-size: 10px; }
+  #aml-fiat-popup input::placeholder {
+    font-size: 10px; } }
 
 /*# sourceMappingURL=styles.css.map */
