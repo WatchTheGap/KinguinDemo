@@ -8,7 +8,24 @@
     display: block;
   }
 
+  #loader {
+    top: 30%;
+    left: 200px;
+  }
 
+  .announcement-cloud-mobile {
+    height: 200px;
+    img {
+      width: 400px;
+      top: 130px;
+      position: absolute;
+      left: 0px;
+    }
+    .announcement-cloud-text {
+      top: 200px;
+      left: 45px;
+    }
+  }
 
   #landing-island {
     top: -160px;
@@ -144,7 +161,7 @@
     left: 55vw;
   }
 
-  .popup-wrapper, .scale-pop {
+  .popup-wrapper, .scale-pop, .popup-wrapper-short {
     transform: translate(0,0) scale(1);
     top: 100px;
     left: 2vw;
@@ -253,5 +270,116 @@
       }
     }
 
+    #signup-popup {
+      #signup-button-crypto,
+      #signup-button-fiat {
+        margin: 5% auto;
+        width: 100%;
+        height: 100px;
+        a {
+          min-height: 0;
+          margin: 0;
+          padding: 0;
+        }
+        img {
+          min-height: 30px;
+          height: 45px;
+          margin: 5px;
+        }
+      }
+    }
 
+    .currency-form {
+      margin: auto;
+      width: 100%;
+      .selector-buttons {
+        width: 100%;
+        margin: auto;
+      }
+      .currency-amt {
+        width: 100%;
+        margin: auto;
+      }
+      .continue-btn {
+        margin: 15% auto;
+        width: 100%;
+      }
+    }
+
+    .progress-bar {
+      opacity: 0;
+      margin: 0;
+    }
+    .back-btn {
+      bottom: 20px;
+      left: 10px;
+    }
+
+    #signup-form {
+      .input-wrapper {
+        width: 100%;
+        margin: 5% auto;
+      }
+    }
+
+    .consent-boxes {
+      width: 100%;
+      margin: auto;
+    }
+#kyc-popup .modal-footer .button-wrapper, #aml-popup .modal-footer .button-wrapper {
+  width: 100%;
+  margin: 5% auto 10% auto;
+}
+
+  #investor-popup {
+    #investor-button-private,
+    #investor-button-company {
+      margin: 5% auto;
+      width: 100%;
+      height: auto;
+      a {
+        min-height: 0;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  #personal-data-form,
+  #company-data-form {
+    .upload-ready p {
+      font-size: 12px;
+    }
+    .input-wrapper {
+      width: 100%;
+      margin: 5% auto;
+    }
+    .upload-blocks {
+      width: 100%;
+    }
+    .upload-text {
+      font-size: 10px;
+      width: 40%;
+      margin: 5%;
+
+    }
+  }
+
+  #aml-eth-popup,
+  #aml-btc-popup {
+    input::placeholder {
+      font-size: 12px;
+    }
+  }
+  #aml-fiat-popup {
+    .signup-form {
+      .input-wrapper {
+        width: 100%;
+        margin: 5% auto;
+      }
+    }
+    input::placeholder {
+      font-size: 10px;
+    }
+  }
 }

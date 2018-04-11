@@ -70,11 +70,13 @@ left: 40px;
 }
 
 #roadmap2-popup {
-  background-image: url('img/roadmap_new.png');
+  background-image: url('img/Roadmap_V_4_11.jpg');
   background-repeat: no-repeat;
   z-index: 2;
   min-height: 746px;
   min-width: 740px;
+  background-size: cover;
+  border: 10px solid black;
 }
 
 #close-x-1 {
