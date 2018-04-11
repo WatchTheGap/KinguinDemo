@@ -2779,6 +2779,10 @@ input:active, button:active, select:active {
   .mobile-show {
     display: block; }
 
+  #loader {
+    top: 30%;
+    left: 200px; }
+
   .announcement-cloud-mobile {
     height: 200px; }
     .announcement-cloud-mobile img {
@@ -2999,6 +3003,29 @@ input:active, button:active, select:active {
 
   .back-btn {
     bottom: 20px;
-    left: 10px; } }
+    left: 10px; }
+
+  #signup-form .input-wrapper {
+    width: 100%;
+    margin: 5% auto; }
+
+  .consent-boxes {
+    width: 100%;
+    margin: auto; }
+
+  #kyc-popup .modal-footer .button-wrapper, #aml-popup .modal-footer .button-wrapper {
+    width: 100%;
+    margin: 5% auto 10% auto; }
+
+  #investor-popup #investor-button-private,
+  #investor-popup #investor-button-company {
+    margin: 5% auto;
+    width: 100%;
+    height: auto; }
+    #investor-popup #investor-button-private a,
+    #investor-popup #investor-button-company a {
+      min-height: 0;
+      margin: 0;
+      padding: 0; } }
 
 /*# sourceMappingURL=styles.css.map */
