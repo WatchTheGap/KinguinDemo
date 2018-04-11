@@ -156,7 +156,7 @@
     left: 55vw;
   }
 
-  .popup-wrapper, .scale-pop {
+  .popup-wrapper, .scale-pop, .popup-wrapper-short {
     transform: translate(0,0) scale(1);
     top: 100px;
     left: 2vw;
@@ -263,6 +263,29 @@
           width: 80vw;
         }
       }
+    }
+
+    #signup-popup {
+      #signup-button-crypto,
+      #signup-button-fiat {
+        margin: 5% auto;
+        width: 100%;
+        height: 100px;
+        a {
+          min-height: 0;
+          margin: 0;
+          padding: 0;
+        }
+        img {
+          min-height: 30px;
+          height: 45px;
+          margin: 5px;
+        }
+      }
+    }
+    .progress-bar {
+      opacity: 0;
+      margin: 0;
     }
 
 

@@ -2899,22 +2899,22 @@ input:active, button:active, select:active {
   .awards-cloud {
     left: 55vw; }
 
-  .popup-wrapper, .scale-pop {
+  .popup-wrapper, .scale-pop, .popup-wrapper-short {
     -webkit-transform: translate(0, 0) scale(1);
             transform: translate(0, 0) scale(1);
     top: 100px;
     left: 2vw; }
-    .popup-wrapper .popup-outer-wrapper, .scale-pop .popup-outer-wrapper {
+    .popup-wrapper .popup-outer-wrapper, .scale-pop .popup-outer-wrapper, .popup-wrapper-short .popup-outer-wrapper {
       width: 96vw;
       min-width: 80vw;
       max-width: 96vw; }
-      .popup-wrapper .popup-outer-wrapper .modal-header, .scale-pop .popup-outer-wrapper .modal-header {
+      .popup-wrapper .popup-outer-wrapper .modal-header, .scale-pop .popup-outer-wrapper .modal-header, .popup-wrapper-short .popup-outer-wrapper .modal-header {
         height: 80px; }
-        .popup-wrapper .popup-outer-wrapper .modal-header #close-x, .scale-pop .popup-outer-wrapper .modal-header #close-x {
+        .popup-wrapper .popup-outer-wrapper .modal-header #close-x, .scale-pop .popup-outer-wrapper .modal-header #close-x, .popup-wrapper-short .popup-outer-wrapper .modal-header #close-x {
           top: 5px;
           right: 15px;
           height: 20px; }
-        .popup-wrapper .popup-outer-wrapper .modal-header h1, .scale-pop .popup-outer-wrapper .modal-header h1 {
+        .popup-wrapper .popup-outer-wrapper .modal-header h1, .scale-pop .popup-outer-wrapper .modal-header h1, .popup-wrapper-short .popup-outer-wrapper .modal-header h1 {
           font-size: 26px; }
 
   #faq-popup .modal-header h1 {
@@ -2962,6 +2962,26 @@ input:active, button:active, select:active {
             transform: translate(-50%, -50%); }
 
   #projections-popup .modal-body img, #projections-popup #why-now-popup .modal-footer img, #why-now-popup #projections-popup .modal-footer img {
-    width: 80vw; } }
+    width: 80vw; }
+
+  #signup-popup #signup-button-crypto,
+  #signup-popup #signup-button-fiat {
+    margin: 5% auto;
+    width: 100%;
+    height: 100px; }
+    #signup-popup #signup-button-crypto a,
+    #signup-popup #signup-button-fiat a {
+      min-height: 0;
+      margin: 0;
+      padding: 0; }
+    #signup-popup #signup-button-crypto img,
+    #signup-popup #signup-button-fiat img {
+      min-height: 30px;
+      height: 45px;
+      margin: 5px; }
+
+  .progress-bar {
+    opacity: 0;
+    margin: 0; } }
 
 /*# sourceMappingURL=styles.css.map */
