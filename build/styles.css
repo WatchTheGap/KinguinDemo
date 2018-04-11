@@ -2980,8 +2980,25 @@ input:active, button:active, select:active {
       height: 45px;
       margin: 5px; }
 
+  .currency-form {
+    margin: auto;
+    width: 100%; }
+    .currency-form .selector-buttons {
+      width: 100%;
+      margin: auto; }
+    .currency-form .currency-amt {
+      width: 100%;
+      margin: auto; }
+    .currency-form .continue-btn {
+      margin: 15% auto;
+      width: 100%; }
+
   .progress-bar {
     opacity: 0;
-    margin: 0; } }
+    margin: 0; }
+
+  .back-btn {
+    bottom: 20px;
+    left: 10px; } }
 
 /*# sourceMappingURL=styles.css.map */
