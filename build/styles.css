@@ -3028,14 +3028,18 @@ input:active, button:active, select:active {
       margin: 0;
       padding: 0; }
 
-  #personal-data-form .upload-ready p, #kyc-upload-popup .modal-body form .upload-ready p, #kyc-upload-popup #why-now-popup .modal-footer form .upload-ready p, #why-now-popup #kyc-upload-popup .modal-footer form .upload-ready p {
+  #personal-data-form .upload-ready p, #kyc-upload-popup .modal-body form .upload-ready p, #kyc-upload-popup #why-now-popup .modal-footer form .upload-ready p, #why-now-popup #kyc-upload-popup .modal-footer form .upload-ready p,
+  #company-data-form .upload-ready p {
     font-size: 12px; }
-  #personal-data-form .input-wrapper, #kyc-upload-popup .modal-body form .input-wrapper, #kyc-upload-popup #why-now-popup .modal-footer form .input-wrapper, #why-now-popup #kyc-upload-popup .modal-footer form .input-wrapper {
+  #personal-data-form .input-wrapper, #kyc-upload-popup .modal-body form .input-wrapper, #kyc-upload-popup #why-now-popup .modal-footer form .input-wrapper, #why-now-popup #kyc-upload-popup .modal-footer form .input-wrapper,
+  #company-data-form .input-wrapper {
     width: 100%;
     margin: 5% auto; }
-  #personal-data-form .upload-blocks, #kyc-upload-popup .modal-body form .upload-blocks, #kyc-upload-popup #why-now-popup .modal-footer form .upload-blocks, #why-now-popup #kyc-upload-popup .modal-footer form .upload-blocks {
+  #personal-data-form .upload-blocks, #kyc-upload-popup .modal-body form .upload-blocks, #kyc-upload-popup #why-now-popup .modal-footer form .upload-blocks, #why-now-popup #kyc-upload-popup .modal-footer form .upload-blocks,
+  #company-data-form .upload-blocks {
     width: 100%; }
-  #personal-data-form .upload-text, #kyc-upload-popup .modal-body form .upload-text, #kyc-upload-popup #why-now-popup .modal-footer form .upload-text, #why-now-popup #kyc-upload-popup .modal-footer form .upload-text {
+  #personal-data-form .upload-text, #kyc-upload-popup .modal-body form .upload-text, #kyc-upload-popup #why-now-popup .modal-footer form .upload-text, #why-now-popup #kyc-upload-popup .modal-footer form .upload-text,
+  #company-data-form .upload-text {
     font-size: 10px;
     width: 40%;
     margin: 5%; } }
