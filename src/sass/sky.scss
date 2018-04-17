@@ -162,6 +162,21 @@ footer {
 
 }
 
-.spin-coin {
-  transform: rotateY(360deg);
+.icoholder-cloud {
+  position: absolute;
+  background-image: url('img/cloud.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  top: 600px;
+  right: 100px;
+  width: 180px;
+  height: 120px;
+  #icoholder-widget-small-black-2851 img {
+    width: 100px;
+    opacity: .5;
+    top: 60px;
+    left: 45px;
+    position: absolute;
+  }
 }

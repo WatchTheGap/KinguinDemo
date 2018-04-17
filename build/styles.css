@@ -313,9 +313,22 @@ footer {
     height: 20px;
     margin: -2px 5px -2px -5px; }
 
-.spin-coin {
-  -webkit-transform: rotateY(360deg);
-          transform: rotateY(360deg); }
+.icoholder-cloud {
+  position: absolute;
+  background-image: url("img/cloud.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  top: 600px;
+  right: 100px;
+  width: 180px;
+  height: 120px; }
+  .icoholder-cloud #icoholder-widget-small-black-2851 img {
+    width: 100px;
+    opacity: .5;
+    top: 60px;
+    left: 45px;
+    position: absolute; }
 
 #roadmap-full {
   height: 100vh;
@@ -2784,6 +2797,10 @@ input:active, button:active, select:active {
   #loader {
     top: 30%;
     left: 200px; }
+
+  .icoholder-cloud {
+    top: 1300px;
+    right: 150px; }
 
   .announcement-cloud-mobile {
     height: 200px; }
