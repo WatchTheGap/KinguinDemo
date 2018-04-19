@@ -1272,3 +1272,33 @@
     }
   }
 }
+
+//*** LIVE CHAT BUTTON FOR MAIN SITE VIEW ***//
+
+.live-chat-main {
+  &::before, &::after {
+    background: #b3ada1;
+    border-bottom: 5px solid #c8dfdc;
+  }
+  background-color: #9ac4bf;
+  margin: 0;
+  position: fixed;
+  bottom: 3vh;
+  right: 1vw;
+  border-left: 5px solid #b3ada1;
+  border-right: 5px solid #b3ada1;
+
+  .pixel-input {
+    &::before, &::after {
+      background: #b3ada1;
+    }
+    background-color: inherit;
+    border-top: 5px solid #b3ada1;
+    border-bottom: 5px solid #b3ada1;
+    input {
+      color: white;
+      border-top: 5px solid #c8dfdc;
+      background-color: inherit;
+    }
+  }
+}
