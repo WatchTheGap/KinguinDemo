@@ -1277,28 +1277,28 @@
 
 .live-chat-main {
   &::before, &::after {
-    background: #9f9889;
-    border-bottom: 5px solid #c8dfdc;
+    background: #398042;
+    border-bottom: 5px solid #c4e880;
   }
-  background-color: #9ac4bf;
+  background-color: #93d558;
   margin: 0;
   position: fixed;
   bottom: 3vh;
   right: 1vw;
-  border-left: 5px solid #9f9889;
-  border-right: 5px solid #9f9889;
+  border-left: 5px solid #398042;
+  border-right: 5px solid #398042;
 
   .pixel-input {
     &::before, &::after {
-      background: #9f9889;
+      background: #398042;
     }
     background-color: inherit;
-    border-top: 5px solid #9f9889;
-    border-bottom: 5px solid #9f9889;
+    border-top: 5px solid #398042;
+    border-bottom: 5px solid #398042;
     input {
       cursor: pointer;
       color: white;
-      border-top: 5px solid #c8dfdc;
+      border-top: 5px solid #c4e880;
       background-color: inherit;
     }
   }
