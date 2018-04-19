@@ -1599,6 +1599,29 @@ header {
       font-family: '04b_03', monospace;
       margin: 10px; }
 
+.live-chat-main {
+  background-color: #9ac4bf;
+  margin: 0;
+  position: fixed;
+  bottom: 3vh;
+  right: 1vw;
+  border-left: 5px solid #9f9889;
+  border-right: 5px solid #9f9889; }
+  .live-chat-main::before, .live-chat-main::after {
+    background: #9f9889;
+    border-bottom: 5px solid #c8dfdc; }
+  .live-chat-main .pixel-input {
+    background-color: inherit;
+    border-top: 5px solid #9f9889;
+    border-bottom: 5px solid #9f9889; }
+    .live-chat-main .pixel-input::before, .live-chat-main .pixel-input::after {
+      background: #9f9889; }
+    .live-chat-main .pixel-input input {
+      cursor: pointer;
+      color: white;
+      border-top: 5px solid #c8dfdc;
+      background-color: inherit; }
+
 input, button, select,
 input:focus, button:focus, select:focus,
 input:active, button:active, select:active {
