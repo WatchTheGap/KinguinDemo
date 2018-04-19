@@ -1600,26 +1600,26 @@ header {
       margin: 10px; }
 
 .live-chat-main {
-  background-color: #9ac4bf;
+  background-color: #93d558;
   margin: 0;
   position: fixed;
   bottom: 3vh;
   right: 1vw;
-  border-left: 5px solid #9f9889;
-  border-right: 5px solid #9f9889; }
+  border-left: 5px solid #398042;
+  border-right: 5px solid #398042; }
   .live-chat-main::before, .live-chat-main::after {
-    background: #9f9889;
-    border-bottom: 5px solid #c8dfdc; }
+    background: #398042;
+    border-bottom: 5px solid #c4e880; }
   .live-chat-main .pixel-input {
     background-color: inherit;
-    border-top: 5px solid #9f9889;
-    border-bottom: 5px solid #9f9889; }
+    border-top: 5px solid #398042;
+    border-bottom: 5px solid #398042; }
     .live-chat-main .pixel-input::before, .live-chat-main .pixel-input::after {
-      background: #9f9889; }
+      background: #398042; }
     .live-chat-main .pixel-input input {
       cursor: pointer;
       color: white;
-      border-top: 5px solid #c8dfdc;
+      border-top: 5px solid #c4e880;
       background-color: inherit; }
 
 input, button, select,
